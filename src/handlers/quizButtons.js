@@ -6,6 +6,7 @@ import {
 } from 'discord.js';
 
 import { pgDb } from '../utils/database.js';
+import { getEconomyData, setEconomyData } from '../utils/economy.js';
 import { logger } from '../utils/logger.js';
 
 const ANSWER_LABELS = {
@@ -14,6 +15,8 @@ const ANSWER_LABELS = {
     C: 'option_c',
     D: 'option_d'
 };
+
+const QUIZ_REWARD = 10;
 
 export const quizAnswerHandler = {
     name: 'quiz',
@@ -24,15 +27,24 @@ export const quizAnswerHandler = {
             await interaction.deferUpdate();
 
             // customId format:
-            // quiz_A_123
+            // quiz:A:123:USER_ID
             //
             // Handler name = quiz
-            // args should contain A and 123
-            const [selectedAnswer, questionId] = args;
+            // args = [answer, questionId, ownerId]
+            const [selectedAnswer, questionId, ownerId] = args;
 
-            if (!selectedAnswer || !questionId) {
+            if (!selectedAnswer || !questionId || !ownerId) {
                 await interaction.followUp({
                     content: '❌ Invalid quiz answer.',
+                    ephemeral: true
+                });
+                return;
+            }
+
+            // Only the person who started the quiz can answer it
+            if (interaction.user.id !== ownerId) {
+                await interaction.followUp({
+                    content: '❌ This quiz belongs to someone else. Use `/quiz` to start your own question.',
                     ephemeral: true
                 });
                 return;
@@ -69,13 +81,70 @@ export const quizAnswerHandler = {
 
             const q = result.rows[0];
 
-            const correctAnswer = String(q.correct_answer).toUpperCase();
+            const correctAnswer = String(q.correct_answer)
+                .trim()
+                .toUpperCase();
+
+            if (!['A', 'B', 'C', 'D'].includes(correctAnswer)) {
+                logger.error(
+                    `Quiz question ${q.id} has an invalid correct_answer: ${q.correct_answer}`
+                );
+
+                await interaction.followUp({
+                    content: '❌ This quiz question has an invalid answer configured.',
+                    ephemeral: true
+                });
+                return;
+            }
+
             const isCorrect = answer === correctAnswer;
 
             const correctColumn = ANSWER_LABELS[correctAnswer];
             const correctText = q[correctColumn];
 
-            // Disable buttons after answering
+            let newBalance = null;
+
+            // Correct answers award $10 to the existing universal economy wallet
+            if (isCorrect) {
+                const guildId = interaction.guildId;
+                const userId = interaction.user.id;
+
+                const userData = await getEconomyData(
+                    client,
+                    guildId,
+                    userId
+                );
+
+                if (!userData) {
+                    throw new Error(
+                        `Failed to load economy data for quiz reward. User: ${userId}`
+                    );
+                }
+
+                userData.wallet = (userData.wallet || 0) + QUIZ_REWARD;
+
+                await setEconomyData(
+                    client,
+                    guildId,
+                    userId,
+                    userData
+                );
+
+                newBalance = userData.wallet;
+
+                logger.info('[ECONOMY_TRANSACTION] Quiz reward earned', {
+                    userId,
+                    guildId,
+                    questionId: q.id,
+                    amount: QUIZ_REWARD,
+                    newWallet: newBalance,
+                    timestamp: new Date().toISOString()
+                });
+            }
+
+            // Disable all buttons after the owner answers.
+            // Correct answer = green.
+            // Incorrect selected answer = red.
             const disabledRow = new ActionRowBuilder().addComponents(
                 ['A', 'B', 'C', 'D'].map(letter => {
                     const column = ANSWER_LABELS[letter];
@@ -89,7 +158,9 @@ export const quizAnswerHandler = {
                     }
 
                     return new ButtonBuilder()
-                        .setCustomId(`quiz:${letter}:${q.id}`)
+                        .setCustomId(
+                            `quiz:${letter}:${q.id}:${ownerId}`
+                        )
                         .setLabel(`${letter}. ${q[column]}`)
                         .setStyle(style)
                         .setDisabled(true);
@@ -104,7 +175,7 @@ export const quizAnswerHandler = {
                 )
                 .setDescription(
                     isCorrect
-                        ? `You earned **${q.points ?? 10} points!**`
+                        ? `You earned **$${QUIZ_REWARD}**!\n\n💰 New Balance: **$${newBalance.toLocaleString()}**`
                         : `The correct answer was **${correctAnswer}. ${correctText}**`
                 )
                 .addFields({
@@ -112,10 +183,12 @@ export const quizAnswerHandler = {
                     value: q.explanation || 'No explanation provided.'
                 });
 
+            // Update the original quiz so the buttons cannot be used again
             await interaction.editReply({
                 components: [disabledRow]
             });
 
+            // Send the answer result
             await interaction.followUp({
                 embeds: [resultEmbed]
             });
@@ -136,7 +209,10 @@ export const quizAnswerHandler = {
                     });
                 }
             } catch (replyError) {
-                logger.error('Failed to send quiz error response:', replyError);
+                logger.error(
+                    'Failed to send quiz error response:',
+                    replyError
+                );
             }
         }
     }
