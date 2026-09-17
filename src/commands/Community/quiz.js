@@ -56,22 +56,22 @@ export default {
 
             const row = new ActionRowBuilder().addComponents(
                 new ButtonBuilder()
-                    .setCustomId(`quiz_A_${q.id}`)
+                    .setCustomId(`quiz:A:${q.id}`)
                     .setLabel(`A. ${q.option_a}`)
                     .setStyle(ButtonStyle.Primary),
 
                 new ButtonBuilder()
-                    .setCustomId(`quiz_B_${q.id}`)
+                    .setCustomId(`quiz:B:${q.id}`)
                     .setLabel(`B. ${q.option_b}`)
                     .setStyle(ButtonStyle.Primary),
 
                 new ButtonBuilder()
-                    .setCustomId(`quiz_C_${q.id}`)
+                    .setCustomId(`quiz:C:${q.id}`)
                     .setLabel(`C. ${q.option_c}`)
                     .setStyle(ButtonStyle.Primary),
 
                 new ButtonBuilder()
-                    .setCustomId(`quiz_D_${q.id}`)
+                    .setCustomId(`quiz:D:${q.id}`)
                     .setLabel(`D. ${q.option_d}`)
                     .setStyle(ButtonStyle.Primary)
             );
