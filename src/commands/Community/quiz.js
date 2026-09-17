@@ -1,12 +1,11 @@
 import {
     SlashCommandBuilder,
     ActionRowBuilder,
-    ButtonBuilder,
-    ButtonStyle,
+    StringSelectMenuBuilder,
+    StringSelectMenuOptionBuilder,
     EmbedBuilder
 } from 'discord.js';
 
-import { pgDb } from '../../utils/database.js';
 import { logger } from '../../utils/logger.js';
 
 export default {
@@ -14,7 +13,7 @@ export default {
 
     data: new SlashCommandBuilder()
         .setName('quiz')
-        .setDescription('Answer a random nursing question!'),
+        .setDescription('Study nursing and health science questions!'),
 
     category: 'Community',
 
@@ -22,59 +21,50 @@ export default {
         try {
             await interaction.deferReply();
 
-            // Grab one random question from PostgreSQL
-            const result = await pgDb.pool.query(`
-                SELECT *
-                FROM quiz_questions
-                ORDER BY RANDOM()
-                LIMIT 1
-            `);
-
-            if (result.rows.length === 0) {
-                return interaction.editReply(
-                    '❌ There are no quiz questions in the database yet.'
-                );
-            }
-
-            const q = result.rows[0];
-
             const embed = new EmbedBuilder()
-                .setTitle('🩺 Nursing Quiz')
-                .setDescription(`**${q.question}**`)
-                .addFields(
-                    {
-                        name: 'Category',
-                        value: q.category || 'General',
-                        inline: true
-                    },
-                    {
-                        name: 'Difficulty',
-                        value: q.difficulty || 'Normal',
-                        inline: true
-                    }
+                .setTitle('🩺 Nursing Study Quiz')
+                .setDescription(
+                    '**Choose what you would like to study.**\n\n' +
+                    'You can choose a specific subject or select Random for a question from any subject.'
                 );
 
-            const row = new ActionRowBuilder().addComponents(
-                new ButtonBuilder()
-                    .setCustomId(`quiz:A:${q.id}:${interaction.user.id}`)
-                    .setLabel(`A. ${q.option_a}`)
-                    .setStyle(ButtonStyle.Primary),
+            const subjectMenu = new StringSelectMenuBuilder()
+                .setCustomId('quiz-subject-select')
+                .setPlaceholder('Choose a subject...')
+                .addOptions(
+                    new StringSelectMenuOptionBuilder()
+                        .setLabel('Random')
+                        .setDescription('Question from any subject')
+                        .setValue('random')
+                        .setEmoji('🎲'),
 
-                new ButtonBuilder()
-                    .setCustomId(`quiz:B:${q.id}:${interaction.user.id}`)
-                    .setLabel(`B. ${q.option_b}`)
-                    .setStyle(ButtonStyle.Primary),
+                    new StringSelectMenuOptionBuilder()
+                        .setLabel('Anatomy & Physiology')
+                        .setDescription('Study the human body and its systems')
+                        .setValue('anatomy_physiology')
+                        .setEmoji('🫀'),
 
-                new ButtonBuilder()
-                    .setCustomId(`quiz:C:${q.id}:${interaction.user.id}`)
-                    .setLabel(`C. ${q.option_c}`)
-                    .setStyle(ButtonStyle.Primary),
+                    new StringSelectMenuOptionBuilder()
+                        .setLabel('Microbiology')
+                        .setDescription('Study microorganisms and pathogens')
+                        .setValue('microbiology')
+                        .setEmoji('🦠'),
 
-                new ButtonBuilder()
-                    .setCustomId(`quiz:D:${q.id}:${interaction.user.id}`)
-                    .setLabel(`D. ${q.option_d}`)
-                    .setStyle(ButtonStyle.Primary)
-            );
+                    new StringSelectMenuOptionBuilder()
+                        .setLabel('Nursing')
+                        .setDescription('Study nursing concepts and patient care')
+                        .setValue('nursing')
+                        .setEmoji('🩺'),
+
+                    new StringSelectMenuOptionBuilder()
+                        .setLabel('TEAS')
+                        .setDescription('Practice ATI TEAS-style material')
+                        .setValue('teas')
+                        .setEmoji('📚')
+                );
+
+            const row = new ActionRowBuilder()
+                .addComponents(subjectMenu);
 
             await interaction.editReply({
                 embeds: [embed],
@@ -85,9 +75,11 @@ export default {
             logger.error('Quiz command error:', error);
 
             if (interaction.deferred || interaction.replied) {
-                await interaction.editReply(
-                    '❌ Something went wrong while loading the quiz.'
-                );
+                await interaction.editReply({
+                    content: '❌ Something went wrong while loading the quiz.',
+                    embeds: [],
+                    components: []
+                });
             } else {
                 await interaction.reply({
                     content: '❌ Something went wrong while loading the quiz.',
