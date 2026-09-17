@@ -56,24 +56,24 @@ export default {
 
             const row = new ActionRowBuilder().addComponents(
                 new ButtonBuilder()
-                    .setCustomId(`quiz:A:${q.id}`)
+                    .setCustomId(`quiz:A:${q.id}:${interaction.user.id}`)
                     .setLabel(`A. ${q.option_a}`)
                     .setStyle(ButtonStyle.Primary),
 
                 new ButtonBuilder()
-                    .setCustomId(`quiz:B:${q.id}`)
+                    .setCustomId(`quiz:B:${q.id}:${interaction.user.id}`)
                     .setLabel(`B. ${q.option_b}`)
                     .setStyle(ButtonStyle.Primary),
 
                 new ButtonBuilder()
-                    .setCustomId(`quiz:C:${q.id}`)
+                    .setCustomId(`quiz:C:${q.id}:${interaction.user.id}`)
                     .setLabel(`C. ${q.option_c}`)
                     .setStyle(ButtonStyle.Primary),
 
                 new ButtonBuilder()
                     .setCustomId(`quiz:D:${q.id}`)
                     .setLabel(`D. ${q.option_d}`)
-                    .setStyle(ButtonStyle.Primary)
+                    .setCustomId(`quiz:D:${q.id}:${interaction.user.id}`)
             );
 
             await interaction.editReply({
