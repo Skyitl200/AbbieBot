@@ -1,0 +1,67 @@
+[
+  {
+    "subject": "Anatomy & Physiology",
+    "category": "Endocrine System",
+    "difficulty": "easy",
+    "question": "Which hormone lowers blood calcium levels?",
+    "option_a": "Parathyroid hormone",
+    "option_b": "Calcitonin",
+    "option_c": "Aldosterone",
+    "option_d": "Cortisol",
+    "correct_answer": "B",
+    "explanation": "Calcitonin helps lower blood calcium levels by reducing bone resorption and promoting calcium storage in bone.",
+    "points": 10
+  },
+  {
+    "subject": "Anatomy & Physiology",
+    "category": "Endocrine System",
+    "difficulty": "easy",
+    "question": "Which cells of the pancreas secrete insulin?",
+    "option_a": "Alpha cells",
+    "option_b": "Delta cells",
+    "option_c": "Beta cells",
+    "option_d": "Acinar cells",
+    "correct_answer": "C",
+    "explanation": "Beta cells in the pancreatic islets secrete insulin, which helps lower blood glucose levels.",
+    "points": 10
+  },
+  {
+    "subject": "Anatomy & Physiology",
+    "category": "Endocrine System",
+    "difficulty": "easy",
+    "question": "Which hormone primarily increases water reabsorption by the kidneys?",
+    "option_a": "ADH",
+    "option_b": "TSH",
+    "option_c": "Insulin",
+    "option_d": "Calcitonin",
+    "correct_answer": "A",
+    "explanation": "Antidiuretic hormone (ADH) increases water reabsorption in the kidneys, helping the body conserve water.",
+    "points": 10
+  },
+  {
+    "subject": "Anatomy & Physiology",
+    "category": "Endocrine System",
+    "difficulty": "medium",
+    "question": "Which hormone stimulates the thyroid gland to release thyroid hormones?",
+    "option_a": "ACTH",
+    "option_b": "FSH",
+    "option_c": "TSH",
+    "option_d": "ADH",
+    "correct_answer": "C",
+    "explanation": "Thyroid-stimulating hormone (TSH) is released by the anterior pituitary and stimulates the thyroid gland to produce and release thyroid hormones.",
+    "points": 10
+  },
+  {
+    "subject": "Anatomy & Physiology",
+    "category": "Endocrine System",
+    "difficulty": "medium",
+    "question": "Which hormone causes the kidneys to retain more sodium?",
+    "option_a": "Calcitonin",
+    "option_b": "Aldosterone",
+    "option_c": "Glucagon",
+    "option_d": "Melatonin",
+    "correct_answer": "B",
+    "explanation": "Aldosterone acts on the kidneys to increase sodium reabsorption. Water tends to follow sodium, which helps increase blood volume.",
+    "points": 10
+  }
+]
