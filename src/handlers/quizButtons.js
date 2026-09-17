@@ -89,7 +89,7 @@ export const quizAnswerHandler = {
                     }
 
                     return new ButtonBuilder()
-                        .setCustomId(`quiz_${letter}_${q.id}`)
+                        .setCustomId(`quiz:${letter}:${q.id}`)
                         .setLabel(`${letter}. ${q[column]}`)
                         .setStyle(style)
                         .setDisabled(true);
