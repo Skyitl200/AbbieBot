@@ -71,9 +71,9 @@ export default {
                     .setStyle(ButtonStyle.Primary),
 
                 new ButtonBuilder()
-                    .setCustomId(`quiz:D:${q.id}`)
-                    .setLabel(`D. ${q.option_d}`)
                     .setCustomId(`quiz:D:${q.id}:${interaction.user.id}`)
+                    .setLabel(`D. ${q.option_d}`)
+                    .setStyle(ButtonStyle.Primary)
             );
 
             await interaction.editReply({
