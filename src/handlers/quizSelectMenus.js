@@ -12,6 +12,7 @@ import { logger } from '../utils/logger.js';
 
 const SUBJECT_SELECT_ID = 'quiz-subject-select';
 const CATEGORY_SELECT_ID = 'quiz-category-select';
+const COUNT_SELECT_ID = 'quiz-count-select';
 
 const SUBJECTS = {
     random: {
@@ -138,7 +139,7 @@ function buildAPCategoryMenu() {
         .setTitle('🫀 Anatomy & Physiology')
         .setDescription(
             '**Choose the body system you would like to study.**\n\n' +
-            'Or choose Random A&P for a question from any A&P topic.'
+            'Or choose Random A&P for questions from any A&P topic.'
         );
 
     const menu = new StringSelectMenuBuilder()
@@ -151,6 +152,54 @@ function buildAPCategoryMenu() {
                     .setValue(value)
                     .setEmoji(category.emoji)
             )
+        );
+
+    const row = new ActionRowBuilder()
+        .addComponents(menu);
+
+    return {
+        embeds: [embed],
+        components: [row]
+    };
+}
+
+function buildQuestionCountMenu(selectedCategory) {
+    const category = AP_CATEGORIES[selectedCategory];
+
+    const embed = new EmbedBuilder()
+        .setTitle('📚 Quiz Length')
+        .setDescription(
+            `**${category.emoji} ${category.label}**\n\n` +
+            'How many questions would you like to do?'
+        );
+
+    const menu = new StringSelectMenuBuilder()
+        .setCustomId(COUNT_SELECT_ID)
+        .setPlaceholder('Choose number of questions...')
+        .addOptions(
+            new StringSelectMenuOptionBuilder()
+                .setLabel('1 Question')
+                .setDescription('Quick practice question')
+                .setValue(`${selectedCategory}|1`)
+                .setEmoji('1️⃣'),
+
+            new StringSelectMenuOptionBuilder()
+                .setLabel('5 Questions')
+                .setDescription('Short practice session')
+                .setValue(`${selectedCategory}|5`)
+                .setEmoji('5️⃣'),
+
+            new StringSelectMenuOptionBuilder()
+                .setLabel('20 Questions')
+                .setDescription('Full study session')
+                .setValue(`${selectedCategory}|20`)
+                .setEmoji('📝'),
+
+            new StringSelectMenuOptionBuilder()
+                .setLabel('50 Questions')
+                .setDescription('Challenge yourself')
+                .setValue(`${selectedCategory}|50`)
+                .setEmoji('🔥')
         );
 
     const row = new ActionRowBuilder()
@@ -181,7 +230,7 @@ export const quizSubjectSelectMenu = {
                 return;
             }
 
-            // Anatomy & Physiology opens the second topic menu
+            // Anatomy & Physiology opens body-system menu
             if (selectedSubject === 'anatomy_physiology') {
                 await interaction.editReply(
                     buildAPCategoryMenu()
@@ -191,7 +240,6 @@ export const quizSubjectSelectMenu = {
 
             let result;
 
-            // Random = question from absolutely any subject
             if (selectedSubject === 'random') {
                 result = await pgDb.pool.query(`
                     SELECT *
@@ -200,9 +248,8 @@ export const quizSubjectSelectMenu = {
                     LIMIT 1
                 `);
             } else {
-                // Other subjects currently give a random question
-                // from that subject.
-                const subjectName = SUBJECTS[selectedSubject].label;
+                const subjectName =
+                    SUBJECTS[selectedSubject].label;
 
                 result = await pgDb.pool.query(
                     `
@@ -218,7 +265,8 @@ export const quizSubjectSelectMenu = {
 
             if (result.rows.length === 0) {
                 await interaction.followUp({
-                    content: `❌ There are no questions available for **${SUBJECTS[selectedSubject].label}** yet.`,
+                    content:
+                        `❌ There are no questions available for **${SUBJECTS[selectedSubject].label}** yet.`,
                     ephemeral: true
                 });
                 return;
@@ -234,11 +282,15 @@ export const quizSubjectSelectMenu = {
             );
 
         } catch (error) {
-            logger.error('Quiz subject select error:', error);
+            logger.error(
+                'Quiz subject select error:',
+                error
+            );
 
             try {
                 await interaction.followUp({
-                    content: '❌ Something went wrong while loading that quiz subject.',
+                    content:
+                        '❌ Something went wrong while loading that quiz subject.',
                     ephemeral: true
                 });
             } catch (replyError) {
@@ -260,11 +312,73 @@ export const quizCategorySelectMenu = {
         try {
             await interaction.deferUpdate();
 
-            const selectedCategory = interaction.values[0];
+            const selectedCategory =
+                interaction.values[0];
 
             if (!AP_CATEGORIES[selectedCategory]) {
                 await interaction.followUp({
-                    content: '❌ Invalid Anatomy & Physiology topic.',
+                    content:
+                        '❌ Invalid Anatomy & Physiology topic.',
+                    ephemeral: true
+                });
+                return;
+            }
+
+            // Instead of immediately loading a question,
+            // ask how many questions the student wants.
+            await interaction.editReply(
+                buildQuestionCountMenu(selectedCategory)
+            );
+
+        } catch (error) {
+            logger.error(
+                'Quiz category select error:',
+                error
+            );
+
+            try {
+                await interaction.followUp({
+                    content:
+                        '❌ Something went wrong while loading that A&P topic.',
+                    ephemeral: true
+                });
+            } catch (replyError) {
+                logger.error(
+                    'Failed to send quiz category error response:',
+                    replyError
+                );
+            }
+        }
+    }
+};
+
+// THIRD MENU:
+// Choose how many questions
+export const quizCountSelectMenu = {
+    name: COUNT_SELECT_ID,
+
+    async execute(interaction) {
+        try {
+            await interaction.deferUpdate();
+
+            const selectedValue =
+                interaction.values[0];
+
+            const [
+                selectedCategory,
+                countString
+            ] = selectedValue.split('|');
+
+            const questionCount =
+                Number.parseInt(countString, 10);
+
+            if (
+                !AP_CATEGORIES[selectedCategory] ||
+                ![1, 5, 20, 50].includes(questionCount)
+            ) {
+                await interaction.followUp({
+                    content:
+                        '❌ Invalid quiz selection.',
                     ephemeral: true
                 });
                 return;
@@ -272,7 +386,6 @@ export const quizCategorySelectMenu = {
 
             let result;
 
-            // Random A&P = any question whose subject is A&P
             if (selectedCategory === 'random_ap') {
                 result = await pgDb.pool.query(
                     `
@@ -280,9 +393,12 @@ export const quizCategorySelectMenu = {
                     FROM quiz_questions
                     WHERE LOWER(subject) = LOWER($1)
                     ORDER BY RANDOM()
-                    LIMIT 1
+                    LIMIT $2
                     `,
-                    ['Anatomy & Physiology']
+                    [
+                        'Anatomy & Physiology',
+                        questionCount
+                    ]
                 );
             } else {
                 const categoryName =
@@ -295,11 +411,12 @@ export const quizCategorySelectMenu = {
                     WHERE LOWER(subject) = LOWER($1)
                     AND LOWER(category) = LOWER($2)
                     ORDER BY RANDOM()
-                    LIMIT 1
+                    LIMIT $3
                     `,
                     [
                         'Anatomy & Physiology',
-                        categoryName
+                        categoryName,
+                        questionCount
                     ]
                 );
             }
@@ -313,6 +430,13 @@ export const quizCategorySelectMenu = {
                 return;
             }
 
+            /*
+             * For now we display the FIRST question.
+             *
+             * In the next step we will store the entire
+             * result.rows array as a quiz session so the bot
+             * can move through Question 1/20, 2/20, etc.
+             */
             const q = result.rows[0];
 
             await interaction.editReply(
@@ -323,16 +447,20 @@ export const quizCategorySelectMenu = {
             );
 
         } catch (error) {
-            logger.error('Quiz category select error:', error);
+            logger.error(
+                'Quiz count select error:',
+                error
+            );
 
             try {
                 await interaction.followUp({
-                    content: '❌ Something went wrong while loading that A&P topic.',
+                    content:
+                        '❌ Something went wrong while starting the quiz.',
                     ephemeral: true
                 });
             } catch (replyError) {
                 logger.error(
-                    'Failed to send quiz category error response:',
+                    'Failed to send quiz count error response:',
                     replyError
                 );
             }
@@ -343,6 +471,7 @@ export const quizCategorySelectMenu = {
 export {
     SUBJECT_SELECT_ID,
     CATEGORY_SELECT_ID,
+    COUNT_SELECT_ID,
     SUBJECTS,
     AP_CATEGORIES
 };
