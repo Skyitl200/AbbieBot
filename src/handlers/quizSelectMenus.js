@@ -10,6 +10,11 @@ import {
 import { pgDb } from '../utils/database.js';
 import { logger } from '../utils/logger.js';
 
+import {
+    createQuizSession,
+    getCurrentQuestion
+} from '../utils/quizSessions.js';
+
 const SUBJECT_SELECT_ID = 'quiz-subject-select';
 const CATEGORY_SELECT_ID = 'quiz-category-select';
 const COUNT_SELECT_ID = 'quiz-count-select';
@@ -95,9 +100,20 @@ const ANSWER_LABELS = {
     D: 'option_d'
 };
 
-function buildQuestionMessage(q, ownerId) {
+/*
+ * Creates the question card.
+ *
+ * Example:
+ * Question 1 / 20
+ */
+function buildQuestionMessage(
+    q,
+    ownerId,
+    current = 1,
+    total = 1
+) {
     const embed = new EmbedBuilder()
-        .setTitle('🩺 Nursing Quiz')
+        .setTitle(`🩺 Question ${current} / ${total}`)
         .setDescription(`**${q.question}**`)
         .addFields(
             {
@@ -115,15 +131,22 @@ function buildQuestionMessage(q, ownerId) {
                 value: q.difficulty || 'Normal',
                 inline: true
             }
-        );
+        )
+        .setFooter({
+            text: `Progress: ${current} of ${total}`
+        });
 
     const answerRow = new ActionRowBuilder().addComponents(
         ['A', 'B', 'C', 'D'].map(letter => {
             const column = ANSWER_LABELS[letter];
 
             return new ButtonBuilder()
-                .setCustomId(`quiz:${letter}:${q.id}:${ownerId}`)
-                .setLabel(`${letter}. ${q[column]}`)
+                .setCustomId(
+                    `quiz:${letter}:${q.id}:${ownerId}`
+                )
+                .setLabel(
+                    `${letter}. ${q[column]}`
+                )
                 .setStyle(ButtonStyle.Primary);
         })
     );
@@ -134,6 +157,9 @@ function buildQuestionMessage(q, ownerId) {
     };
 }
 
+/*
+ * Anatomy & Physiology category menu
+ */
 function buildAPCategoryMenu() {
     const embed = new EmbedBuilder()
         .setTitle('🫀 Anatomy & Physiology')
@@ -146,11 +172,12 @@ function buildAPCategoryMenu() {
         .setCustomId(CATEGORY_SELECT_ID)
         .setPlaceholder('Choose an A&P topic...')
         .addOptions(
-            Object.entries(AP_CATEGORIES).map(([value, category]) =>
-                new StringSelectMenuOptionBuilder()
-                    .setLabel(category.label)
-                    .setValue(value)
-                    .setEmoji(category.emoji)
+            Object.entries(AP_CATEGORIES).map(
+                ([value, category]) =>
+                    new StringSelectMenuOptionBuilder()
+                        .setLabel(category.label)
+                        .setValue(value)
+                        .setEmoji(category.emoji)
             )
         );
 
@@ -163,8 +190,12 @@ function buildAPCategoryMenu() {
     };
 }
 
+/*
+ * Question-count menu
+ */
 function buildQuestionCountMenu(selectedCategory) {
-    const category = AP_CATEGORIES[selectedCategory];
+    const category =
+        AP_CATEGORIES[selectedCategory];
 
     const embed = new EmbedBuilder()
         .setTitle('📚 Quiz Length')
@@ -175,30 +206,48 @@ function buildQuestionCountMenu(selectedCategory) {
 
     const menu = new StringSelectMenuBuilder()
         .setCustomId(COUNT_SELECT_ID)
-        .setPlaceholder('Choose number of questions...')
+        .setPlaceholder(
+            'Choose number of questions...'
+        )
         .addOptions(
             new StringSelectMenuOptionBuilder()
                 .setLabel('1 Question')
-                .setDescription('Quick practice question')
-                .setValue(`${selectedCategory}|1`)
+                .setDescription(
+                    'Quick practice question'
+                )
+                .setValue(
+                    `${selectedCategory}|1`
+                )
                 .setEmoji('1️⃣'),
 
             new StringSelectMenuOptionBuilder()
                 .setLabel('5 Questions')
-                .setDescription('Short practice session')
-                .setValue(`${selectedCategory}|5`)
+                .setDescription(
+                    'Short practice session'
+                )
+                .setValue(
+                    `${selectedCategory}|5`
+                )
                 .setEmoji('5️⃣'),
 
             new StringSelectMenuOptionBuilder()
                 .setLabel('20 Questions')
-                .setDescription('Full study session')
-                .setValue(`${selectedCategory}|20`)
+                .setDescription(
+                    'Full study session'
+                )
+                .setValue(
+                    `${selectedCategory}|20`
+                )
                 .setEmoji('📝'),
 
             new StringSelectMenuOptionBuilder()
                 .setLabel('50 Questions')
-                .setDescription('Challenge yourself')
-                .setValue(`${selectedCategory}|50`)
+                .setDescription(
+                    'Challenge yourself'
+                )
+                .setValue(
+                    `${selectedCategory}|50`
+                )
                 .setEmoji('🔥')
         );
 
@@ -211,8 +260,13 @@ function buildQuestionCountMenu(selectedCategory) {
     };
 }
 
-// FIRST MENU:
-// /quiz -> choose subject
+/*
+ * FIRST MENU
+ *
+ * /quiz
+ * ↓
+ * Choose subject
+ */
 export const quizSubjectSelectMenu = {
     name: SUBJECT_SELECT_ID,
 
@@ -220,55 +274,76 @@ export const quizSubjectSelectMenu = {
         try {
             await interaction.deferUpdate();
 
-            const selectedSubject = interaction.values[0];
+            const selectedSubject =
+                interaction.values[0];
 
             if (!SUBJECTS[selectedSubject]) {
                 await interaction.followUp({
-                    content: '❌ Invalid quiz subject.',
+                    content:
+                        '❌ Invalid quiz subject.',
                     ephemeral: true
                 });
+
                 return;
             }
 
-            // Anatomy & Physiology opens body-system menu
-            if (selectedSubject === 'anatomy_physiology') {
+            /*
+             * A&P opens the body-system menu.
+             */
+            if (
+                selectedSubject ===
+                'anatomy_physiology'
+            ) {
                 await interaction.editReply(
                     buildAPCategoryMenu()
                 );
+
                 return;
             }
 
+            /*
+             * Keep the existing behavior
+             * for Random, Microbiology,
+             * Nursing and TEAS for now.
+             */
             let result;
 
             if (selectedSubject === 'random') {
-                result = await pgDb.pool.query(`
-                    SELECT *
-                    FROM quiz_questions
-                    ORDER BY RANDOM()
-                    LIMIT 1
-                `);
+                result =
+                    await pgDb.pool.query(`
+                        SELECT *
+                        FROM quiz_questions
+                        ORDER BY RANDOM()
+                        LIMIT 1
+                    `);
             } else {
                 const subjectName =
-                    SUBJECTS[selectedSubject].label;
+                    SUBJECTS[
+                        selectedSubject
+                    ].label;
 
-                result = await pgDb.pool.query(
-                    `
-                    SELECT *
-                    FROM quiz_questions
-                    WHERE LOWER(subject) = LOWER($1)
-                    ORDER BY RANDOM()
-                    LIMIT 1
-                    `,
-                    [subjectName]
-                );
+                result =
+                    await pgDb.pool.query(
+                        `
+                        SELECT *
+                        FROM quiz_questions
+                        WHERE LOWER(subject) = LOWER($1)
+                        ORDER BY RANDOM()
+                        LIMIT 1
+                        `,
+                        [subjectName]
+                    );
             }
 
-            if (result.rows.length === 0) {
+            if (
+                result.rows.length === 0
+            ) {
                 await interaction.followUp({
                     content:
                         `❌ There are no questions available for **${SUBJECTS[selectedSubject].label}** yet.`,
                     ephemeral: true
                 });
+
                 return;
             }
 
@@ -277,7 +352,9 @@ export const quizSubjectSelectMenu = {
             await interaction.editReply(
                 buildQuestionMessage(
                     q,
-                    interaction.user.id
+                    interaction.user.id,
+                    1,
+                    1
                 )
             );
 
@@ -303,8 +380,13 @@ export const quizSubjectSelectMenu = {
     }
 };
 
-// SECOND MENU:
-// Anatomy & Physiology -> choose body system
+/*
+ * SECOND MENU
+ *
+ * Anatomy & Physiology
+ * ↓
+ * Choose body system
+ */
 export const quizCategorySelectMenu = {
     name: CATEGORY_SELECT_ID,
 
@@ -315,19 +397,28 @@ export const quizCategorySelectMenu = {
             const selectedCategory =
                 interaction.values[0];
 
-            if (!AP_CATEGORIES[selectedCategory]) {
+            if (
+                !AP_CATEGORIES[
+                    selectedCategory
+                ]
+            ) {
                 await interaction.followUp({
                     content:
                         '❌ Invalid Anatomy & Physiology topic.',
                     ephemeral: true
                 });
+
                 return;
             }
 
-            // Instead of immediately loading a question,
-            // ask how many questions the student wants.
+            /*
+             * After selecting a body system,
+             * ask how many questions they want.
+             */
             await interaction.editReply(
-                buildQuestionCountMenu(selectedCategory)
+                buildQuestionCountMenu(
+                    selectedCategory
+                )
             );
 
         } catch (error) {
@@ -352,8 +443,17 @@ export const quizCategorySelectMenu = {
     }
 };
 
-// THIRD MENU:
-// Choose how many questions
+/*
+ * THIRD MENU
+ *
+ * Choose:
+ * 1
+ * 5
+ * 20
+ * 50
+ *
+ * Then create the quiz session.
+ */
 export const quizCountSelectMenu = {
     name: COUNT_SELECT_ID,
 
@@ -370,79 +470,146 @@ export const quizCountSelectMenu = {
             ] = selectedValue.split('|');
 
             const questionCount =
-                Number.parseInt(countString, 10);
+                Number.parseInt(
+                    countString,
+                    10
+                );
 
             if (
-                !AP_CATEGORIES[selectedCategory] ||
-                ![1, 5, 20, 50].includes(questionCount)
+                !AP_CATEGORIES[
+                    selectedCategory
+                ] ||
+                ![1, 5, 20, 50].includes(
+                    questionCount
+                )
             ) {
                 await interaction.followUp({
                     content:
                         '❌ Invalid quiz selection.',
                     ephemeral: true
                 });
+
                 return;
             }
 
             let result;
 
-            if (selectedCategory === 'random_ap') {
-                result = await pgDb.pool.query(
-                    `
-                    SELECT *
-                    FROM quiz_questions
-                    WHERE LOWER(subject) = LOWER($1)
-                    ORDER BY RANDOM()
-                    LIMIT $2
-                    `,
-                    [
-                        'Anatomy & Physiology',
-                        questionCount
-                    ]
-                );
+            /*
+             * RANDOM A&P
+             */
+            if (
+                selectedCategory ===
+                'random_ap'
+            ) {
+                result =
+                    await pgDb.pool.query(
+                        `
+                        SELECT *
+                        FROM quiz_questions
+                        WHERE LOWER(subject) = LOWER($1)
+                        ORDER BY RANDOM()
+                        LIMIT $2
+                        `,
+                        [
+                            'Anatomy & Physiology',
+                            questionCount
+                        ]
+                    );
             } else {
+                /*
+                 * SPECIFIC BODY SYSTEM
+                 */
                 const categoryName =
-                    AP_CATEGORIES[selectedCategory].label;
+                    AP_CATEGORIES[
+                        selectedCategory
+                    ].label;
 
-                result = await pgDb.pool.query(
-                    `
-                    SELECT *
-                    FROM quiz_questions
-                    WHERE LOWER(subject) = LOWER($1)
-                    AND LOWER(category) = LOWER($2)
-                    ORDER BY RANDOM()
-                    LIMIT $3
-                    `,
-                    [
-                        'Anatomy & Physiology',
-                        categoryName,
-                        questionCount
-                    ]
-                );
+                result =
+                    await pgDb.pool.query(
+                        `
+                        SELECT *
+                        FROM quiz_questions
+                        WHERE LOWER(subject) = LOWER($1)
+                        AND LOWER(category) = LOWER($2)
+                        ORDER BY RANDOM()
+                        LIMIT $3
+                        `,
+                        [
+                            'Anatomy & Physiology',
+                            categoryName,
+                            questionCount
+                        ]
+                    );
             }
 
-            if (result.rows.length === 0) {
+            /*
+             * No questions found
+             */
+            if (
+                result.rows.length === 0
+            ) {
                 await interaction.followUp({
                     content:
                         `❌ There are no questions available for **${AP_CATEGORIES[selectedCategory].label}** yet.`,
                     ephemeral: true
                 });
+
                 return;
             }
 
             /*
-             * For now we display the FIRST question.
+             * CREATE THE QUIZ SESSION
              *
-             * In the next step we will store the entire
-             * result.rows array as a quiz session so the bot
-             * can move through Question 1/20, 2/20, etc.
+             * This saves ALL of the selected
+             * questions instead of only
+             * remembering question #1.
              */
-            const q = result.rows[0];
+            const session =
+                createQuizSession({
+                    guildId:
+                        interaction.guildId,
 
+                    userId:
+                        interaction.user.id,
+
+                    questions:
+                        result.rows,
+
+                    category:
+                        selectedCategory
+                });
+
+            /*
+             * Get question #1.
+             */
+            const q =
+                getCurrentQuestion(
+                    session
+                );
+
+            if (!q) {
+                await interaction.followUp({
+                    content:
+                        '❌ Could not start the quiz session.',
+                    ephemeral: true
+                });
+
+                return;
+            }
+
+            /*
+             * Display:
+             *
+             * Question 1 / 5
+             * Question 1 / 20
+             * etc.
+             */
             await interaction.editReply(
                 buildQuestionMessage(
                     q,
-                    interaction.user.id
+                    interaction.user.id,
+                    1,
+                    session.questions.length
                 )
             );
 
