@@ -4,8 +4,8 @@ import { CAREER_ROLES } from '../commands/Career_roles/careerroles.js';
 export default {
     name: Events.MessageReactionAdd,
 
-    async execute(reaction, user, client) {
-        try {
+async execute(reaction, user, details, client) {
+    try {
             // Ignore AbbieBot and other bots.
             if (user.bot) return;
 
