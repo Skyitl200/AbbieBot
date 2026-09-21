@@ -214,4 +214,41 @@ async function sendLevelUpAnnouncement(
       ? guild.channels.cache.get(config.levelUpChannel)
       : guild.systemChannel;
 
-    if (!levelUpChannel || !
+    if (!levelUpChannel || !levelUpChannel.isTextBased()) {
+      return;
+    }
+
+    const permissions = levelUpChannel.permissionsFor(guild.members.me);
+
+    if (
+      !permissions ||
+      !permissions.has(['SendMessages', 'EmbedLinks'])
+    ) {
+      logger.warn(
+        `Missing permissions to send levelup message in ${levelUpChannel.id}`
+      );
+      return;
+    }
+
+    const message = config.levelUpMessage
+      .replace(/{user}/g, member.toString())
+      .replace(/{level}/g, levelData.level)
+      .replace(/{xp}/g, levelData.xp)
+      .replace(
+        /{xpNeeded}/g,
+        getXpForLevel(levelData.level + 1)
+      );
+
+    await levelUpChannel.send(message).catch(error => {
+      logger.error(
+        `Failed to send level up message in channel ${levelUpChannel.id}:`,
+        error
+      );
+    });
+  } catch (error) {
+    logger.error(
+      'Error sending level up announcement:',
+      error
+    );
+  }
+}
