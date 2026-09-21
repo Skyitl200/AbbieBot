@@ -43,7 +43,14 @@ export const addXp = wrapServiceBoundary(async function addXp(client, guild, mem
       logger.info(`🎉 ${member.user.tag} leveled up to level ${levelData.level} in ${guild.name}`);
 
       if (config.roleRewards && config.roleRewards[levelData.level]) {
-        await awardRoleReward(guild, member, config.roleRewards[levelData.level], levelData.level);
+  await awardRoleReward(
+    guild,
+    member,
+    config.roleRewards[levelData.level],
+    levelData.level,
+    config.roleRewards
+  );
+}
       }
     }
 
@@ -89,23 +96,64 @@ export const addXp = wrapServiceBoundary(async function addXp(client, guild, mem
   userMessage: 'Failed to award XP. Please try again.',
 });
 
-async function awardRoleReward(guild, member, roleId, level) {
+async function awardRoleReward(
+  guild,
+  member,
+  roleId,
+  level,
+  roleRewards
+) {
   try {
-    const role = guild.roles.cache.get(roleId);
+    const role =
+      guild.roles.cache.get(roleId) ||
+      await guild.roles.fetch(roleId).catch(() => null);
 
     if (!role) {
-      logger.warn(`Role ${roleId} not found for level ${level} reward in guild ${guild.id}`);
+      logger.warn(
+        `Role ${roleId} not found for level ${level} reward in guild ${guild.id}`
+      );
       return;
     }
 
-    if (member.roles.cache.has(roleId)) {
-      return;
+    // Get every role configured as a leveling reward.
+    const levelRoleIds = Object.values(roleRewards || {});
+
+    // Find old leveling roles the member currently has.
+    // Do NOT remove the new role we're about to give them.
+    const oldLevelRoles = member.roles.cache.filter(
+      memberRole =>
+        levelRoleIds.includes(memberRole.id) &&
+        memberRole.id !== roleId
+    );
+
+    // Remove previous level roles.
+    if (oldLevelRoles.size > 0) {
+      await member.roles.remove(
+        oldLevelRoles,
+        `Replacing previous level role with Level ${level}`
+      );
+
+      logger.info(
+        `🧹 Removed ${oldLevelRoles.size} previous level role(s) from ${member.user.tag}`
+      );
     }
 
-    await member.roles.add(role, `Level ${level} reward`);
-    logger.info(`✅ Awarded role ${role.name} to ${member.user.tag} for reaching level ${level}`);
+    // Give the new level role.
+    if (!member.roles.cache.has(roleId)) {
+      await member.roles.add(
+        role,
+        `Level ${level} reward`
+      );
+
+      logger.info(
+        `✅ Awarded role ${role.name} to ${member.user.tag} for reaching level ${level}`
+      );
+    }
   } catch (error) {
-    logger.error(`Failed to award role reward to ${member.user.id}:`, error);
+    logger.error(
+      `Failed to update level reward role for ${member.user.id}:`,
+      error
+    );
   }
 }
 
