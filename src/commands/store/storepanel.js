@@ -104,7 +104,7 @@ export default {
         content: '✅ BiologyHQ Store panel posted successfully.'
       });
 
-      logger.info('BiologyHQ Store panel posted', {
+      logger.info('BiologyHQ Store panel posted successfully', {
         userId: interaction.user.id,
         guildId: interaction.guildId,
         channelId: interaction.channelId
