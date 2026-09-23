@@ -116,7 +116,8 @@ class TitanBot extends Client {
   }
 
   startWebServer() {
-    const app = express();
+  const app = express();
+
     const configuredPort = Number(this.config.api?.port || process.env.PORT || 3000);
     const maxPortRetryAttempts = Number(process.env.PORT_RETRY_ATTEMPTS || 5);
     const host = process.env.WEB_HOST || '0.0.0.0';
@@ -161,7 +162,16 @@ class TitanBot extends Client {
       requestCounts.set(ip, times);
       next();
     });
+app.post('/paypal/webhook', express.json(), async (req, res) => {
+  try {
+    console.log('PayPal webhook received:', req.body?.event_type);
 
+    return res.status(200).json({ received: true });
+  } catch (error) {
+    console.error('PayPal webhook error:', error);
+    return res.status(500).json({ error: 'Webhook processing failed' });
+  }
+});
     app.get('/health', (req, res) => {
       const dbStatus = this.db?.getStatus?.() || { isDegraded: 'unknown' };
       const status = {
