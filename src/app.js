@@ -17,7 +17,7 @@ import { initializeMusic } from './services/music/riffySetup.js';
 import { shutdownMusic } from './services/music/playerHandler.js';
 import pkg from '../package.json' with { type: 'json' };
 import { EXPECTED_SCHEMA_VERSION, EXPECTED_SCHEMA_LABEL } from './config/database/schemaVersion.js';
-
+import { verifyPayPalWebhook } from './services/paypal/paypalService.js';
 class TitanBot extends Client {
   constructor() {
     super({
@@ -164,11 +164,23 @@ class TitanBot extends Client {
     });
 app.post('/paypal/webhook', express.json(), async (req, res) => {
   try {
-    console.log('PayPal webhook received:', req.body?.event_type);
+    const event = req.body;
+
+    const isVerified = await verifyPayPalWebhook(req.headers, event);
+
+    if (!isVerified) {
+      logger.warn('Rejected unverified PayPal webhook');
+      return res.status(400).json({ error: 'Invalid PayPal webhook signature' });
+    }
+
+    logger.info(`Verified PayPal webhook: ${event?.event_type}`, {
+      eventId: event?.id,
+      subscriptionId: event?.resource?.id,
+    });
 
     return res.status(200).json({ received: true });
   } catch (error) {
-    console.error('PayPal webhook error:', error);
+    logger.error('PayPal webhook processing failed:', error);
     return res.status(500).json({ error: 'Webhook processing failed' });
   }
 });
