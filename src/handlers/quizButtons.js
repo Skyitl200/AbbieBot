@@ -1,6 +1,5 @@
 import {
     ActionRowBuilder,
-    AttachmentBuilder,
     ButtonBuilder,
     ButtonStyle,
     EmbedBuilder
@@ -32,8 +31,7 @@ const ANSWER_LABELS = {
 };
 
 const QUIZ_REWARD = 10;
-const MERIT_REWARD_GIF =
-    './src/assets/merit/MeritCoins.gif';
+
 
 /*
  * Build a normal quiz question.
@@ -408,7 +406,7 @@ export const quizAnswerHandler = {
             )
             .setDescription(
                 isCorrect
-                    ? `<a:MeritCoins:1553709164012900404> You earned **+${QUIZ_REWARD} Merit Points**!\n\n<a:ManyMerits:1553716009456898098> New Balance: **${newBalance.toLocaleString()} Merit Points**`
+                    ? `<a:MeritCoins:1553709164012900404> You earned **+${QUIZ_REWARD} Merit Coins**!\n\n<a:ManyMerits:1553716009456898098> New Balance: **${newBalance.toLocaleString()} Merit Coins**`
                     : `The correct answer was **${correctAnswer}. ${correctText}**`
             )
             .addFields({
@@ -460,7 +458,7 @@ export const quizAnswerHandler = {
         )
         .setDescription(
             isCorrect
-                ? `<a:MeritCoins:1553709164012900404> You earned **+${QUIZ_REWARD} Merit Points**!\n<a:ManyMerits:1553716009456898098> New Balance: **${newBalance.toLocaleString()} Merit Points**`
+                ? `<a:MeritCoins:1553709164012900404> You earned **+${QUIZ_REWARD} Merit Coins**!\n<a:ManyMerits:1553716009456898098> New Balance: **${newBalance.toLocaleString()} Merit Coins**`
                 : `The correct answer was **${correctAnswer}. ${correctText}**`
         )
         .addFields(
@@ -478,7 +476,7 @@ export const quizAnswerHandler = {
                     `Question **${progress.current} / ${progress.total}**\n` +
                     `✅ Correct: **${progress.correct}**\n` +
                     `❌ Incorrect: **${progress.incorrect}**\n` +
-                    `<a:MeritCoins:1553709164012900404> Merit Earned: **${progress.moneyEarned} Merit Points**`
+                    `<a:MeritCoins:1553709164012900404> Merit Coins Earned So Far: **${progress.moneyEarned} Merit Coins**`
             }
         );
 
@@ -568,11 +566,11 @@ export const quizAnswerHandler = {
                                 `${finalIncorrect}`,
                             inline: true
                         },
-                        {
+{
     name:
-        '🀥 Merit Earned',
+        '<a:MeritCoins:1553709164012900404> Total Merit Coins Earned',
     value:
-        `${session.moneyEarned} Merit Points`,
+        `${session.moneyEarned} Merit Coins`,
     inline: true
 }
                     )
@@ -590,10 +588,7 @@ export const quizAnswerHandler = {
     embeds: [
         resultEmbed,
         finalEmbed
-    ],
-    files: isCorrect
-        ? [MERIT_REWARD_GIF]
-        : []
+    ]
 });
 
 
