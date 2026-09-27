@@ -427,7 +427,6 @@ export const quizAnswerHandler = {
 
     return;
 }
-            }
 
 
             /*
@@ -505,18 +504,15 @@ export const quizAnswerHandler = {
                         );
 
 
-                await interaction.followUp({
+                
+    await interaction.followUp({
     embeds: [
         resultEmbed
     ],
     components: [
         nextRow
-    ],
-    files: isCorrect
-        ? [MERIT_REWARD_GIF]
-        : []
+    ]
 });
-
                 return;
             }
 
