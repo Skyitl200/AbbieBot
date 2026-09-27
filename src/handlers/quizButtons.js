@@ -399,37 +399,34 @@ export const quizAnswerHandler = {
              * preserve old behavior.
              */
             if (!session) {
-                const resultEmbed =
-                    new EmbedBuilder()
-                        .setTitle(
-                            isCorrect
-                                ? '✅ Correct!'
-                                : '❌ Incorrect'
-                        )
-                        .setDescription(
-                            isCorrect
-                                ? `You earned **+${QUIZ_REWARD} Merit Points**!\n\n🀥 New Balance: **${newBalance.toLocaleString()} Merit Points**`
-                                : `The correct answer was **${correctAnswer}. ${correctText}**`
-                        )
-                        .addFields({
-                            name:
-                                'Explanation',
-                            value:
-                                q.explanation ||
-                                'No explanation provided.'
-                        });
+    const resultEmbed =
+        new EmbedBuilder()
+            .setTitle(
+                isCorrect
+                    ? '✅ Correct!'
+                    : '❌ Incorrect'
+            )
+            .setDescription(
+                isCorrect
+                    ? `<a:MeritCoins:1553709164012900404> You earned **+${QUIZ_REWARD} Merit Points**!\n\n<a:ManyMerits:1553716009456898098> New Balance: **${newBalance.toLocaleString()} Merit Points**`
+                    : `The correct answer was **${correctAnswer}. ${correctText}**`
+            )
+            .addFields({
+                name:
+                    'Explanation',
+                value:
+                    q.explanation ||
+                    'No explanation provided.'
+            });
 
+    await interaction.followUp({
+        embeds: [
+            resultEmbed
+        ]
+    });
 
-                await interaction.followUp({
-    embeds: [
-        resultEmbed
-    ],
-    files: isCorrect
-        ? [MERIT_REWARD_GIF]
-        : []
-});
-
-                return;
+    return;
+}
             }
 
 
@@ -456,36 +453,35 @@ export const quizAnswerHandler = {
              * RESULT EMBED
              */
             const resultEmbed =
-                new EmbedBuilder()
-                    .setTitle(
-                        isCorrect
-                            ? '✅ Correct!'
-                            : '❌ Incorrect'
-                    )
-                    .setDescription(
-    isCorrect
-        ? `You earned **+${QUIZ_REWARD} Merit Points**!\n🀥 New Balance: **${newBalance.toLocaleString()} Merit Points**`
-        : `The correct answer was **${correctAnswer}. ${correctText}**`
-)
-                    .addFields(
-                        {
-                            name:
-                                'Explanation',
-                            value:
-                                q.explanation ||
-                                'No explanation provided.'
-                        },
-                        {
-                            name:
-                                'Quiz Progress',
-                            value:
-                                `Question **${progress.current} / ${progress.total}**\n` +
-                                `✅ Correct: **${progress.correct}**\n` +
-                                `❌ Incorrect: **${progress.incorrect}**\n` +
-                                `🀥 Merit Earned: **${progress.moneyEarned} Merit Points**`
-                        }
-                    );
-
+    new EmbedBuilder()
+        .setTitle(
+            isCorrect
+                ? '✅ Correct!'
+                : '❌ Incorrect'
+        )
+        .setDescription(
+            isCorrect
+                ? `<a:MeritCoins:1553709164012900404> You earned **+${QUIZ_REWARD} Merit Points**!\n<a:ManyMerits:1553716009456898098> New Balance: **${newBalance.toLocaleString()} Merit Points**`
+                : `The correct answer was **${correctAnswer}. ${correctText}**`
+        )
+        .addFields(
+            {
+                name:
+                    'Explanation',
+                value:
+                    q.explanation ||
+                    'No explanation provided.'
+            },
+            {
+                name:
+                    'Quiz Progress',
+                value:
+                    `Question **${progress.current} / ${progress.total}**\n` +
+                    `✅ Correct: **${progress.correct}**\n` +
+                    `❌ Incorrect: **${progress.incorrect}**\n` +
+                    `<a:MeritCoins:1553709164012900404> Merit Earned: **${progress.moneyEarned} Merit Points**`
+            }
+        );
 
             /*
              * MORE QUESTIONS REMAIN
