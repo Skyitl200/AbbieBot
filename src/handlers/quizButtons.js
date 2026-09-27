@@ -1,5 +1,6 @@
 import {
     ActionRowBuilder,
+    AttachmentBuilder,
     ButtonBuilder,
     ButtonStyle,
     EmbedBuilder
@@ -31,7 +32,8 @@ const ANSWER_LABELS = {
 };
 
 const QUIZ_REWARD = 10;
-
+const MERIT_REWARD_GIF =
+    './src/assets/merit/MeritCoins.gif';
 
 /*
  * Build a normal quiz question.
@@ -406,7 +408,7 @@ export const quizAnswerHandler = {
                         )
                         .setDescription(
                             isCorrect
-                                ? `You earned **$${QUIZ_REWARD}**!\n\n💰 New Balance: **$${newBalance.toLocaleString()}**`
+                                ? `You earned **+${QUIZ_REWARD} Merit Points**!\n\n🀥 New Balance: **${newBalance.toLocaleString()} Merit Points**`
                                 : `The correct answer was **${correctAnswer}. ${correctText}**`
                         )
                         .addFields({
@@ -419,10 +421,13 @@ export const quizAnswerHandler = {
 
 
                 await interaction.followUp({
-                    embeds: [
-                        resultEmbed
-                    ]
-                });
+    embeds: [
+        resultEmbed
+    ],
+    files: isCorrect
+        ? [MERIT_REWARD_GIF]
+        : []
+});
 
                 return;
             }
@@ -458,9 +463,10 @@ export const quizAnswerHandler = {
                             : '❌ Incorrect'
                     )
                     .setDescription(
-                        isCorrect
-                            ? `You earned **$${QUIZ_REWARD}**!\n\n💰 New Balance: **$${newBalance.toLocaleString()}**`
-                            : `The correct answer was **${correctAnswer}. ${correctText}**`
+    isCorrect
+        ? `You earned **+${QUIZ_REWARD} Merit Points**!\n🀥 New Balance: **${newBalance.toLocaleString()} Merit Points**`
+        : `The correct answer was **${correctAnswer}. ${correctText}**`
+)
                     )
                     .addFields(
                         {
@@ -477,7 +483,7 @@ export const quizAnswerHandler = {
                                 `Question **${progress.current} / ${progress.total}**\n` +
                                 `✅ Correct: **${progress.correct}**\n` +
                                 `❌ Incorrect: **${progress.incorrect}**\n` +
-                                `💰 Earned: **$${progress.moneyEarned}**`
+                                `🀥 Merit Earned: **${progress.moneyEarned} Merit Points**`
                         }
                     );
 
@@ -505,13 +511,16 @@ export const quizAnswerHandler = {
 
 
                 await interaction.followUp({
-                    embeds: [
-                        resultEmbed
-                    ],
-                    components: [
-                        nextRow
-                    ]
-                });
+    embeds: [
+        resultEmbed
+    ],
+    components: [
+        nextRow
+    ],
+    files: isCorrect
+        ? [MERIT_REWARD_GIF]
+        : []
+});
 
                 return;
             }
@@ -569,12 +578,12 @@ export const quizAnswerHandler = {
                             inline: true
                         },
                         {
-                            name:
-                                '💰 Total Earned',
-                            value:
-                                `$${session.moneyEarned}`,
-                            inline: true
-                        }
+    name:
+        '🀥 Merit Earned',
+    value:
+        `${session.moneyEarned} Merit Points`,
+    inline: true
+}
                     )
                     .setFooter({
                         text:
@@ -587,11 +596,14 @@ export const quizAnswerHandler = {
              * question first.
              */
             await interaction.followUp({
-                embeds: [
-                    resultEmbed,
-                    finalEmbed
-                ]
-            });
+    embeds: [
+        resultEmbed,
+        finalEmbed
+    ],
+    files: isCorrect
+        ? [MERIT_REWARD_GIF]
+        : []
+});
 
 
             /*
