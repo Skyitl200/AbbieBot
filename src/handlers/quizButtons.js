@@ -467,7 +467,6 @@ export const quizAnswerHandler = {
         ? `You earned **+${QUIZ_REWARD} Merit Points**!\n🀥 New Balance: **${newBalance.toLocaleString()} Merit Points**`
         : `The correct answer was **${correctAnswer}. ${correctText}**`
 )
-                    )
                     .addFields(
                         {
                             name:
