@@ -130,47 +130,47 @@ export default {
             'Select a subject or course'
         )
         .addOptions(
-            {
-                label: 'Anatomy & Physiology I',
-                value: 'anatomy_1',
-                emoji: '🦴'
-            },
-            {
-                label: 'Anatomy & Physiology II',
-                value: 'anatomy_2',
-                emoji: '🫀'
-            },
-            {
-                label: 'Microbiology',
-                value: 'microbiology',
-                emoji: '🦠'
-            },
-            {
-                label: 'TEAS',
-                value: 'teas',
-                emoji: '📚'
-            },
-             {
-    label: 'Program',
-    value: 'program',
-    emoji: '🎓'
-}
-        );
-            {
-                label: 'Chemistry',
-                value: 'chemistry',
-                emoji: '🧪'
-            },
-            {
-    label: 'Physics',
-    value: 'physics',
-    emoji: '⚛️'
-},
-            {
-                label: 'Math',
-                value: 'math',
-                emoji: '📐'
-            },
+    {
+        label: 'Anatomy & Physiology I',
+        value: 'anatomy_1',
+        emoji: '🦴'
+    },
+    {
+        label: 'Anatomy & Physiology II',
+        value: 'anatomy_2',
+        emoji: '🫀'
+    },
+    {
+        label: 'Microbiology',
+        value: 'microbiology',
+        emoji: '🦠'
+    },
+    {
+        label: 'TEAS',
+        value: 'teas',
+        emoji: '📚'
+    },
+    {
+        label: 'Program',
+        value: 'program',
+        emoji: '🎓'
+    },
+    {
+        label: 'Chemistry',
+        value: 'chemistry',
+        emoji: '🧪'
+    },
+    {
+        label: 'Physics',
+        value: 'physics',
+        emoji: '⚛️'
+    },
+    {
+        label: 'Math',
+        value: 'math',
+        emoji: '📐'
+    }
+);
            
 
 const subjectRow =
