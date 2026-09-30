@@ -1,6 +1,8 @@
 import {
     SlashCommandBuilder,
-    EmbedBuilder
+    EmbedBuilder,
+    StringSelectMenuBuilder,
+    ActionRowBuilder
 } from 'discord.js';
 
 import {
@@ -119,19 +121,71 @@ export default {
             isSubscriber
                 ? '⭐ Subscriber — Unlimited'
                 : 'LFG post started.';
+        const subjectMenu =
+    new StringSelectMenuBuilder()
+        .setCustomId(
+            `lfg_subject:${interaction.user.id}`
+        )
+        .setPlaceholder(
+            'Select a subject or course'
+        )
+        .addOptions(
+            {
+                label: 'Anatomy & Physiology I',
+                value: 'anatomy_1',
+                emoji: '🦴'
+            },
+            {
+                label: 'Anatomy & Physiology II',
+                value: 'anatomy_2',
+                emoji: '🫀'
+            },
+            {
+                label: 'Microbiology',
+                value: 'microbiology',
+                emoji: '🦠'
+            },
+            {
+                label: 'TEAS',
+                value: 'teas',
+                emoji: '📚'
+            },
+            {
+                label: 'Chemistry',
+                value: 'chemistry',
+                emoji: '🧪'
+            },
+            {
+                label: 'Math',
+                value: 'math',
+                emoji: '📐'
+            },
+            {
+                label: 'Other',
+                value: 'other',
+                emoji: '📝'
+            }
+        );
+
+const subjectRow =
+    new ActionRowBuilder()
+        .addComponents(subjectMenu);
 
         return interaction.reply({
-            embeds: [
-                new EmbedBuilder()
-                    .setTitle(
-                        '🔎 Looking For Group'
-                    )
-                    .setDescription(
-                        `${remainingText}\n\n` +
-                        `The LFG creation menu will appear here.`
-                    )
-            ],
-            ephemeral: true
-        });
+    embeds: [
+        new EmbedBuilder()
+            .setTitle(
+                '🔎 Looking For Group'
+            )
+            .setDescription(
+                `${remainingText}\n\n` +
+                `**Step 1:** Select the subject or course you want to study.`
+            )
+    ],
+    components: [
+        subjectRow
+    ],
+    ephemeral: true
+});
     }
 };
