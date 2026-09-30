@@ -161,10 +161,10 @@ export default {
                 emoji: '📐'
             },
             {
-                label: 'Other',
-                value: 'other',
-                emoji: '📝'
-            }
+    label: 'Program',
+    value: 'program',
+    emoji: '🎓'
+}
         );
 
 const subjectRow =
