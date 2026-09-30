@@ -150,22 +150,28 @@ export default {
                 value: 'teas',
                 emoji: '📚'
             },
+             {
+    label: 'Program',
+    value: 'program',
+    emoji: '🎓'
+}
+        );
             {
                 label: 'Chemistry',
                 value: 'chemistry',
                 emoji: '🧪'
             },
             {
+    label: 'Physics',
+    value: 'physics',
+    emoji: '⚛️'
+},
+            {
                 label: 'Math',
                 value: 'math',
                 emoji: '📐'
             },
-            {
-    label: 'Program',
-    value: 'program',
-    emoji: '🎓'
-}
-        );
+           
 
 const subjectRow =
     new ActionRowBuilder()
