@@ -1172,24 +1172,26 @@ export async function getTemporaryChannelInfo(client, guildId, channelId) {
 
 export function formatChannelName(template, variables) {
     let formatted = template;
-    
+
     const replacements = {
-    '{username}': variables.username || 'User',
-    '{user_tag}': variables.userTag || 'User#0000',
-    '{displayName}': variables.displayName || 'User',
-    '{display_name}': variables.displayName || 'User',
-    '{guild_name}': variables.guildName || 'Server',
-    '{channel_name}': variables.channelName || 'Voice Channel'
-};
+        '{username}': variables.username || 'User',
+        '{user_tag}': variables.userTag || 'User#0000',
+        '{displayName}': variables.displayName || 'User',
+        '{display_name}': variables.displayName || 'User',
+        '{guild_name}': variables.guildName || 'Server',
+        '{channel_name}': variables.channelName || 'Voice Channel'
     };
-    
+
     for (const [placeholder, value] of Object.entries(replacements)) {
-        formatted = formatted.replace(new RegExp(placeholder.replace(/[{}]/g, '\\$&'), 'g'), value);
+        formatted = formatted.replace(
+            new RegExp(placeholder.replace(/[{}]/g, '\\$&'), 'g'),
+            value
+        );
     }
-    
-    formatted = formatted.replace(/[^\w\s-]/g, '').trim();
-formatted = formatted.substring(0, 100);
-    
+
+    formatted = formatted.replace(/[^\w\s'-]/g, '').trim();
+    formatted = formatted.substring(0, 100);
+
     return formatted || 'Voice Channel';
 }
 
