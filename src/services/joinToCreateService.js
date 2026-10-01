@@ -505,14 +505,14 @@ export async function createTemporaryChannel(guild, member, options = {}) {
             validateBitrate(bitrate / 1000);
         }
 
-        const channelName = formatChannelName(
-    nameTemplate || '{displayName}\'s Study Room',
-    {
-            username: member.user.username,
-            displayName: member.displayName,
-            userTag: member.user.tag,
-            guildName: guild.name
-        });
+        const channelName = nameTemplate
+    ? formatChannelName(nameTemplate, {
+        username: member.user.username,
+        displayName: member.displayName,
+        userTag: member.user.tag,
+        guildName: guild.name
+    })
+    : `${member.displayName}'s Study Room`;
 
         const tempChannel = await guild.channels.create({
             name: channelName,
