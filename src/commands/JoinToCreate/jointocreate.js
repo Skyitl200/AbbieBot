@@ -35,7 +35,7 @@ export default {
                         .setName("channel_name")
                         .setDescription("Select a template for naming temporary voice channels.")
                         .addChoices(
-                            { name: "{username}'s Room (Default)", value: "{username}'s Room" },
+                            { name: "{displayName}'s Study Room (Default)", value: "{displayName}'s Study Room" },
                             { name: "{username}'s Channel", value: "{username}'s Channel" },
                             { name: "{username}'s Lounge", value: "{username}'s Lounge" },
                             { name: "{username}'s Space", value: "{username}'s Space" },
@@ -119,7 +119,9 @@ export default {
 async function handleSetupSubcommand(interaction, client) {
     try {
         const category = interaction.options.getChannel('category');
-        const nameTemplate = interaction.options.getString('channel_name') || "{username}'s Room";
+        const nameTemplate =
+    interaction.options.getString('channel_name') ||
+    "{displayName}'s Study Room";
         const userLimit = interaction.options.getInteger('user_limit') || 0;
         const bitrate = interaction.options.getInteger('bitrate') || 64;
         const guildId = interaction.guild.id;
@@ -367,7 +369,7 @@ async function handleConfigSubcommand(interaction, client) {
 async function handleNameTemplateModal(interaction, triggerChannel, currentConfig, client) {
     try {
         const TEMPLATE_OPTIONS = [
-            { label: "{username}'s Room (Default)", value: "{username}'s Room" },
+            { label: "{displayName}'s Study Room (Default)", value: "{displayName}'s Study Room" },
             { label: "{username}'s Channel",        value: "{username}'s Channel" },
             { label: "{username}'s Lounge",         value: "{username}'s Lounge" },
             { label: "{username}'s Space",          value: "{username}'s Space" },
@@ -381,8 +383,8 @@ async function handleNameTemplateModal(interaction, triggerChannel, currentConfi
 
         const currentTemplate = currentConfig.channelConfig?.nameTemplate
             || currentConfig.channelNameTemplate
-            || "{username}'s Room";
-
+            || "{displayName}'s Study Room";
+        
         const templateSelect = new StringSelectMenuBuilder()
             .setCustomId('template')
             .setPlaceholder('Pick a name template...')
