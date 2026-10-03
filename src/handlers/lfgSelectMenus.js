@@ -1,6 +1,5 @@
 import {
     ActionRowBuilder,
-    EmbedBuilder,
     ModalBuilder,
     TextInputBuilder,
     TextInputStyle
@@ -8,8 +7,8 @@ import {
 
 import { logger } from '../utils/logger.js';
 
-const LFG_SUBJECT_SELECT_ID = 'lfg-subject-select';
-const LFG_DESCRIPTION_MODAL_ID = 'lfg-description-modal';
+const LFG_SUBJECT_SELECT_PREFIX = 'lfg_subject:';
+const LFG_DESCRIPTION_MODAL_PREFIX = 'lfg_description:';
 
 const SUBJECTS = {
     anatomy_1: {
@@ -47,15 +46,13 @@ const SUBJECTS = {
 };
 
 export const lfgSubjectSelectMenu = {
-    name: LFG_SUBJECT_SELECT_ID,
+    name: `${LFG_SUBJECT_SELECT_PREFIX}`,
 
     async execute(interaction) {
         try {
-            const selectedSubject =
-                interaction.values[0];
+            const selectedSubject = interaction.values[0];
 
-            const subject =
-                SUBJECTS[selectedSubject];
+            const subject = SUBJECTS[selectedSubject];
 
             if (!subject) {
                 await interaction.reply({
@@ -66,14 +63,19 @@ export const lfgSubjectSelectMenu = {
                 return;
             }
 
-            const modal =
-                new ModalBuilder()
-                    .setCustomId(
-                        LFG_DESCRIPTION_MODAL_ID
-                    )
-                    .setTitle(
-                        `${subject.label} — LFG`
-                    );
+            /*
+             * Keep the user ID and selected subject
+             * attached to the modal so the next step
+             * knows exactly who created the LFG and
+             * what subject they selected.
+             */
+            const modal = new ModalBuilder()
+                .setCustomId(
+                    `${LFG_DESCRIPTION_MODAL_PREFIX}${interaction.user.id}:${selectedSubject}`
+                )
+                .setTitle(
+                    `${subject.label} — LFG`
+                );
 
             const descriptionInput =
                 new TextInputBuilder()
@@ -121,7 +123,7 @@ export const lfgSubjectSelectMenu = {
 };
 
 export {
-    LFG_SUBJECT_SELECT_ID,
-    LFG_DESCRIPTION_MODAL_ID,
+    LFG_SUBJECT_SELECT_PREFIX,
+    LFG_DESCRIPTION_MODAL_PREFIX,
     SUBJECTS
 };
