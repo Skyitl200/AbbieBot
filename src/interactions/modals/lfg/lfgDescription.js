@@ -1,5 +1,5 @@
 import { logger } from '../../../utils/logger.js';
-import { SUBJECTS } from '../../selectMenus/lfg/lfgSubject.js';
+import { SUBJECTS } from '../../../handlers/lfgSelectMenus.js';
 
 const LFG_DESCRIPTION_MODAL_PREFIX = 'lfg_description:';
 
