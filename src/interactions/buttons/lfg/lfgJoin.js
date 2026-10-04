@@ -61,11 +61,7 @@ export default {
                 member.voice?.channelId ===
                 channel.id
             ) {
-                return interaction.reply({
-                    content:
-                        '🔊 You are already in this Study Room.',
-                    ephemeral: true
-                });
+                return interaction.deferUpdate();
             }
 
             /*
@@ -92,11 +88,8 @@ export default {
             }
 
             /*
-             * Give the person permission to see
-             * and connect to the Study Room.
-             *
-             * This is important even when they
-             * are currently NOT in a VC.
+             * Give the member permission to
+             * connect to the Study Room.
              */
             try {
                 await channel.permissionOverwrites.edit(
@@ -109,7 +102,7 @@ export default {
                 );
             } catch (permissionError) {
                 logger.error(
-                    'Could not give LFG member voice permissions:',
+                    'Could not update LFG member permissions:',
                     permissionError
                 );
 
@@ -121,21 +114,19 @@ export default {
             }
 
             /*
-             * USER IS NOT CURRENTLY IN A VC.
+             * USER IS NOT CURRENTLY IN VOICE.
              *
              * Discord does not allow the bot to
-             * force a completely disconnected user
-             * into voice.
+             * force a disconnected user into voice.
              *
-             * Instead, give them a direct button
-             * to open the Study Room.
+             * Give them a direct Discord channel link.
              */
             if (!member.voice?.channel) {
 
                 const openButton =
                     new ButtonBuilder()
                         .setLabel(
-                            'Open Study Room'
+                            'Join Voice'
                         )
                         .setEmoji('🔊')
                         .setStyle(
@@ -153,7 +144,7 @@ export default {
 
                 return interaction.reply({
                     content:
-                        '🔊 You can join this Study Room from the button below.',
+                        '🔊 Click below to join the Study Room.',
                     components: [
                         row
                     ],
@@ -164,8 +155,7 @@ export default {
             /*
              * User IS already in another VC.
              *
-             * The bot needs Move Members permission
-             * to move them.
+             * Bot needs Move Members.
              */
             const botMember =
                 guild.members.me;
@@ -183,7 +173,7 @@ export default {
             }
 
             /*
-             * Move the member into the LFG room.
+             * Move the member immediately.
              */
             try {
                 await member.voice.setChannel(
@@ -198,16 +188,20 @@ export default {
 
                 return interaction.reply({
                     content:
-                        '❌ I could not move you into the Study Room. Please make sure the bot has **Move Members** permission.',
+                        '❌ I could not move you into the Study Room.',
                     ephemeral: true
                 });
             }
 
-            return interaction.reply({
-                content:
-                    `🔊 You joined **${channel.name}**!`,
-                ephemeral: true
-            });
+            /*
+             * IMPORTANT:
+             *
+             * Do NOT send a confirmation message.
+             *
+             * Simply acknowledge the button interaction
+             * and leave the original LFG post untouched.
+             */
+            return interaction.deferUpdate();
 
         } catch (error) {
             logger.error(
