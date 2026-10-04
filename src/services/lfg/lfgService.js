@@ -32,7 +32,7 @@ export function registerLfgChannel(channel, creatorId) {
 }
 
 /**
- * Use the creator's CURRENT voice channel as
+ * Use the creator's CURRENT Study Room as
  * the LFG Study Room.
  *
  * This function does NOT:
@@ -41,7 +41,8 @@ export function registerLfgChannel(channel, creatorId) {
  * - Move the creator
  * - Delete the existing voice channel
  *
- * The creator is already inside the Study Room.
+ * The creator must already be inside their
+ * actual Study Room.
  */
 export async function createLfgVoiceChannel(
     interaction,
@@ -54,17 +55,53 @@ export async function createLfgVoiceChannel(
         const currentVoiceChannel =
             member.voice?.channel;
 
+        /*
+         * The creator must be in a voice
+         * channel first.
+         */
         if (!currentVoiceChannel) {
             return {
                 success: false,
                 error:
-                    '❌ You must be in a Study Room voice channel before creating an LFG.'
+                    '❌ You must be inside your Study Room before creating an LFG.'
             };
         }
 
         /*
-         * Register the existing Study Room
-         * as the active LFG channel.
+         * IMPORTANT:
+         *
+         * Do NOT allow the Join to Create
+         * trigger channel itself to become
+         * an LFG.
+         *
+         * The trigger channel creates the
+         * actual Study Room. The user must
+         * wait until they are moved into
+         * that Study Room.
+         */
+        const channelName =
+            currentVoiceChannel.name
+                ?.toLowerCase() || '';
+
+        if (
+            channelName.includes(
+                'join to create'
+            )
+        ) {
+            return {
+                success: false,
+                error:
+                    '❌ Please wait until you are moved into your Study Room, then create the LFG.'
+            };
+        }
+
+        /*
+         * The current voice channel is now
+         * the actual Study Room.
+         *
+         * We simply register it as the LFG.
+         *
+         * NO new voice channel is created.
          */
         registerLfgChannel(
             currentVoiceChannel,
@@ -72,12 +109,8 @@ export async function createLfgVoiceChannel(
         );
 
         /*
-         * Make sure the creator has control
-         * over the Study Room.
-         *
-         * This does NOT change the voice channel
-         * limit. The creator can modify that
-         * themselves through Discord.
+         * Give the LFG creator control over
+         * the existing Study Room.
          */
         try {
             await currentVoiceChannel.permissionOverwrites.edit(
@@ -192,7 +225,7 @@ async function transferLfgOwnership(
 
         /*
          * Rename the Study Room to show
-         * who currently owns it.
+         * the new LFG owner.
          */
         const newOwnerName =
             newOwner.displayName ||
@@ -238,12 +271,12 @@ async function transferLfgOwnership(
  *    Transfer LFG ownership.
  *
  * 2. If nobody remains:
- *    Remove the LFG from our tracker.
+ *    Stop tracking the LFG.
  *
  * IMPORTANT:
  * We do NOT delete the voice channel here.
- * The Join to Create system owns the lifecycle
- * of the voice channel itself.
+ * The Join to Create system owns the
+ * voice-channel lifecycle.
  */
 export async function handleLfgVoiceStateUpdate(
     oldState,
@@ -278,8 +311,8 @@ export async function handleLfgVoiceStateUpdate(
         }
 
         /*
-         * Make sure they actually left
-         * the channel.
+         * Make sure the owner actually
+         * left the channel.
          */
         if (
             newState.channelId ===
@@ -289,7 +322,7 @@ export async function handleLfgVoiceStateUpdate(
         }
 
         /*
-         * Find the remaining real users.
+         * Find remaining real users.
          */
         const remainingMembers =
             [...oldChannel.members.values()]
@@ -303,7 +336,7 @@ export async function handleLfgVoiceStateUpdate(
          *
          * Stop tracking the LFG.
          *
-         * We intentionally DO NOT delete
+         * We intentionally do NOT delete
          * the voice channel.
          */
         if (
