@@ -123,7 +123,7 @@ export default {
                 : 'LFG post started.';
         const subjectMenu =
     new StringSelectMenuBuilder()
-        .setCustomId('lfg-subject-select')
+        .setCustomId('lfg_subject')
         .setPlaceholder(
             'Select a subject or course'
         )
