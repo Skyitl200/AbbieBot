@@ -1,5 +1,10 @@
+import {
+    EmbedBuilder
+} from 'discord.js';
+
 import { logger } from '../../../utils/logger.js';
 import { SUBJECTS } from '../../../handlers/lfgSelectMenus.js';
+
 import {
     createLfgVoiceChannel
 } from '../../../services/lfg/lfgService.js';
@@ -30,13 +35,18 @@ export default {
             ) {
                 return interaction.reply({
                     content:
-                        '❌ Your LFG information is incomplete. Please start again with `/lfg`.',
+                        '❌ Invalid LFG request.',
                     ephemeral: true
                 });
             }
 
+            /*
+             * Make sure the person submitting the
+             * modal is the person who created it.
+             */
             if (
-                creatorId !== interaction.user.id
+                creatorId !==
+                interaction.user.id
             ) {
                 return interaction.reply({
                     content:
@@ -56,6 +66,10 @@ export default {
                 });
             }
 
+            /*
+             * Get the description entered by
+             * the creator.
+             */
             const description =
                 interaction.fields.getTextInputValue(
                     'lfg-description'
@@ -63,12 +77,6 @@ export default {
 
             /*
              * Create the temporary Study Room.
-             *
-             * Default:
-             * Maximum 4 people.
-             *
-             * The creator receives Manage Channels
-             * so they can modify the room themselves.
              */
             const result =
                 await createLfgVoiceChannel(
@@ -85,28 +93,62 @@ export default {
                 });
             }
 
+            const channel =
+                result.channel;
+
             /*
-             * Move the creator into their new Study Room.
+             * Move the creator into their new
+             * Study Room.
              */
             try {
-                await interaction.member.voice.setChannel(
-                    result.channel
-                );
-            } catch (moveError) {
-                logger.warn(
-                    `Could not move LFG creator ${interaction.user.id} into Study Room ${result.channel.id}:`,
-                    moveError
+                if (interaction.member.voice) {
+                    await interaction.member.voice.setChannel(
+                        channel
+                    );
+                }
+            } catch (error) {
+                logger.error(
+                    'Could not move LFG creator into Study Room:',
+                    error
                 );
             }
 
+            /*
+             * Create the PUBLIC LFG announcement.
+             *
+             * This is intentionally NOT ephemeral.
+             * Everyone who can see #・LFG・ will see it.
+             */
+            const lfgEmbed =
+                new EmbedBuilder()
+                    .setTitle(
+                        '🔎 LFG Created!'
+                    )
+                    .setDescription(
+                        `${subject.emoji} **${subject.label}**\n\n` +
+                        `📚 **Description:** ${description}\n\n` +
+                        `🔊 **Study Room:** <#${channel.id}>\n` +
+                        `👥 **Maximum:** ${channel.userLimit} people\n\n` +
+                        `The creator controls this Study Room and can change its limit or permissions from Discord.`
+                    );
+
+            /*
+             * interaction.channel is the #・LFG・
+             * channel where the LFG setup began.
+             */
+            await interaction.channel.send({
+                embeds: [
+                    lfgEmbed
+                ]
+            });
+
+            /*
+             * PRIVATE confirmation for the creator.
+             */
             await interaction.reply({
                 content:
-                    `✅ **LFG created!**\n\n` +
-                    `${subject.emoji} **${subject.label}**\n` +
-                    `📝 **Description:** ${description}\n` +
-                    `🔊 **Study Room:** ${result.channel}\n` +
-                    `👥 **Maximum:** 4 people\n\n` +
-                    `You control this Study Room and can change its limit or permissions from Discord.`,
+                    `✅ Your **${subject.label}** LFG has been created!\n\n` +
+                    `🔊 Study Room: <#${channel.id}>`,
                 ephemeral: true
             });
 
