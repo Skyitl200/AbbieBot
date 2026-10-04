@@ -55,7 +55,7 @@ export default {
                 interaction.member;
 
             /*
-             * Already inside the Study Room.
+             * Already inside this Study Room.
              */
             if (
                 member.voice?.channelId ===
@@ -69,7 +69,7 @@ export default {
             }
 
             /*
-             * Check room capacity.
+             * Check capacity.
              */
             const userLimit =
                 channel.userLimit;
@@ -92,11 +92,43 @@ export default {
             }
 
             /*
-             * If the user is NOT in a VC,
-             * Discord will not allow the bot
-             * to force-connect them.
+             * Give the person permission to see
+             * and connect to the Study Room.
              *
-             * Give them a direct channel link instead.
+             * This is important even when they
+             * are currently NOT in a VC.
+             */
+            try {
+                await channel.permissionOverwrites.edit(
+                    member.id,
+                    {
+                        ViewChannel: true,
+                        Connect: true,
+                        Speak: true
+                    }
+                );
+            } catch (permissionError) {
+                logger.error(
+                    'Could not give LFG member voice permissions:',
+                    permissionError
+                );
+
+                return interaction.reply({
+                    content:
+                        '❌ I could not give you permission to join this Study Room.',
+                    ephemeral: true
+                });
+            }
+
+            /*
+             * USER IS NOT CURRENTLY IN A VC.
+             *
+             * Discord does not allow the bot to
+             * force a completely disconnected user
+             * into voice.
+             *
+             * Instead, give them a direct button
+             * to open the Study Room.
              */
             if (!member.voice?.channel) {
 
@@ -121,7 +153,7 @@ export default {
 
                 return interaction.reply({
                     content:
-                        '🔊 You are not currently in a voice channel. Click below to open the Study Room, then connect to it.',
+                        '🔊 You can join this Study Room from the button below.',
                     components: [
                         row
                     ],
@@ -130,7 +162,10 @@ export default {
             }
 
             /*
-             * Bot must have Move Members.
+             * User IS already in another VC.
+             *
+             * The bot needs Move Members permission
+             * to move them.
              */
             const botMember =
                 guild.members.me;
@@ -148,27 +183,7 @@ export default {
             }
 
             /*
-             * Make sure the user can connect.
-             */
-            try {
-                await channel.permissionOverwrites.edit(
-                    member.id,
-                    {
-                        ViewChannel: true,
-                        Connect: true,
-                        Speak: true
-                    }
-                );
-            } catch (permissionError) {
-                logger.error(
-                    'Could not update LFG member permissions:',
-                    permissionError
-                );
-            }
-
-            /*
-             * Move the user from their
-             * current VC into the Study Room.
+             * Move the member into the LFG room.
              */
             try {
                 await member.voice.setChannel(
