@@ -1,4 +1,7 @@
 import {
+    ButtonBuilder,
+    ActionRowBuilder,
+    ButtonStyle,
     PermissionFlagsBits
 } from 'discord.js';
 
@@ -11,12 +14,6 @@ export default {
 
     async execute(interaction) {
         try {
-            /*
-             * Get the Study Room channel ID
-             * from:
-             *
-             * lfg_join:CHANNEL_ID
-             */
             const channelId =
                 interaction.customId.slice(
                     LFG_JOIN_PREFIX.length
@@ -33,17 +30,6 @@ export default {
             const guild =
                 interaction.guild;
 
-            if (!guild) {
-                return interaction.reply({
-                    content:
-                        '❌ This button can only be used inside BiologyHQ.',
-                    ephemeral: true
-                });
-            }
-
-            /*
-             * Find the Study Room.
-             */
             const channel =
                 await guild.channels.fetch(
                     channelId
@@ -57,9 +43,6 @@ export default {
                 });
             }
 
-            /*
-             * Make sure it is a voice channel.
-             */
             if (!channel.isVoiceBased()) {
                 return interaction.reply({
                     content:
@@ -68,33 +51,14 @@ export default {
                 });
             }
 
-            /*
-             * Discord can only move someone
-             * who is already connected to voice.
-             *
-             * If they are not currently in a VC,
-             * Discord will not allow the bot to
-             * place them into one.
-             */
             const member =
                 interaction.member;
 
-            const currentVoiceChannel =
-                member.voice?.channel;
-
-            if (!currentVoiceChannel) {
-                return interaction.reply({
-                    content:
-                        '🔊 **Join a voice channel first**, then click **Join Study Room** again.',
-                    ephemeral: true
-                });
-            }
-
             /*
-             * Already inside this Study Room.
+             * Already inside the Study Room.
              */
             if (
-                currentVoiceChannel.id ===
+                member.voice?.channelId ===
                 channel.id
             ) {
                 return interaction.reply({
@@ -105,8 +69,7 @@ export default {
             }
 
             /*
-             * Check whether the Study Room
-             * is full.
+             * Check room capacity.
              */
             const userLimit =
                 channel.userLimit;
@@ -129,24 +92,51 @@ export default {
             }
 
             /*
-             * Get the bot's GuildMember.
+             * If the user is NOT in a VC,
+             * Discord will not allow the bot
+             * to force-connect them.
+             *
+             * Give them a direct channel link instead.
              */
-            const botMember =
-                guild.members.me;
+            if (!member.voice?.channel) {
 
-            if (!botMember) {
+                const openButton =
+                    new ButtonBuilder()
+                        .setLabel(
+                            'Open Study Room'
+                        )
+                        .setEmoji('🔊')
+                        .setStyle(
+                            ButtonStyle.Link
+                        )
+                        .setURL(
+                            `https://discord.com/channels/${guild.id}/${channel.id}`
+                        );
+
+                const row =
+                    new ActionRowBuilder()
+                        .addComponents(
+                            openButton
+                        );
+
                 return interaction.reply({
                     content:
-                        '❌ I could not find my bot permissions.',
+                        '🔊 You are not currently in a voice channel. Click below to open the Study Room, then connect to it.',
+                    components: [
+                        row
+                    ],
                     ephemeral: true
                 });
             }
 
             /*
-             * The bot needs Move Members.
+             * Bot must have Move Members.
              */
+            const botMember =
+                guild.members.me;
+
             if (
-                !botMember.permissions.has(
+                !botMember?.permissions.has(
                     PermissionFlagsBits.MoveMembers
                 )
             ) {
@@ -158,12 +148,7 @@ export default {
             }
 
             /*
-             * Make sure the user can actually
-             * connect to the Study Room.
-             *
-             * This is especially important because
-             * the Join-to-Create system may have
-             * its own permission overwrites.
+             * Make sure the user can connect.
              */
             try {
                 await channel.permissionOverwrites.edit(
@@ -176,20 +161,14 @@ export default {
                 );
             } catch (permissionError) {
                 logger.error(
-                    'Could not give LFG member voice permissions:',
+                    'Could not update LFG member permissions:',
                     permissionError
                 );
-
-                return interaction.reply({
-                    content:
-                        '❌ I could not give you permission to join this Study Room.',
-                    ephemeral: true
-                });
             }
 
             /*
-             * Move the member into the
-             * Study Room.
+             * Move the user from their
+             * current VC into the Study Room.
              */
             try {
                 await member.voice.setChannel(
@@ -204,14 +183,11 @@ export default {
 
                 return interaction.reply({
                     content:
-                        '❌ I could not move you into the Study Room. Make sure the bot has **Move Members** permission.',
+                        '❌ I could not move you into the Study Room. Please make sure the bot has **Move Members** permission.',
                     ephemeral: true
                 });
             }
 
-            /*
-             * Successful join.
-             */
             return interaction.reply({
                 content:
                     `🔊 You joined **${channel.name}**!`,
