@@ -139,8 +139,8 @@ export default {
                     )
                     .setEmoji('🔊')
                     .setStyle(
-                        ButtonStyle.Primary
-                    );
+    ButtonStyle.Secondary
+);
 
             const buttonRow =
                 new ActionRowBuilder()
