@@ -4,7 +4,7 @@ import { SUBJECTS } from '../../../handlers/lfgSelectMenus.js';
 const LFG_DESCRIPTION_MODAL_PREFIX = 'lfg_description:';
 
 export default {
-    name: LFG_DESCRIPTION_MODAL_PREFIX,
+    name: 'lfg_description',
 
     async execute(interaction) {
         try {
