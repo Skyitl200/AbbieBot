@@ -1,5 +1,8 @@
 import {
-    EmbedBuilder
+    EmbedBuilder,
+    ActionRowBuilder,
+    ButtonBuilder,
+    ButtonStyle
 } from 'discord.js';
 
 import { logger } from '../../../utils/logger.js';
@@ -11,6 +14,17 @@ import {
 
 const LFG_DESCRIPTION_MODAL_PREFIX =
     'lfg_description:';
+
+const SUBJECT_EMOJIS = {
+    anatomy_1: '🦴',
+    anatomy_2: '🫀',
+    microbiology: '🦠',
+    teas: '📚',
+    program: '🎓',
+    chemistry: '🧪',
+    physics: '⚛️',
+    math: '📐'
+};
 
 export default {
     name: 'lfg_description',
@@ -41,7 +55,7 @@ export default {
             /*
              * Make sure the person submitting
              * the modal is the person who
-             * started the LFG.
+             * created the LFG.
              */
             if (
                 creatorId !==
@@ -55,9 +69,7 @@ export default {
             }
 
             const subject =
-                SUBJECTS[
-                    selectedSubject
-                ];
+                SUBJECTS[selectedSubject];
 
             if (!subject) {
                 return interaction.reply({
@@ -76,11 +88,8 @@ export default {
                 );
 
             /*
-             * Register the voice channel
-             * the creator is ALREADY inside.
-             *
-             * This no longer creates a new
-             * voice channel.
+             * Use the Study Room the creator
+             * is already inside.
              */
             const result =
                 await createLfgVoiceChannel(
@@ -101,18 +110,14 @@ export default {
                 result.channel;
 
             /*
-             * IMPORTANT:
-             *
-             * We DO NOT call:
-             *
-             * interaction.member.voice.setChannel()
-             *
-             * because the creator is already
-             * inside the correct Study Room.
+             * Subject emoji.
              */
+            const subjectEmoji =
+                SUBJECT_EMOJIS[selectedSubject] ||
+                '📚';
 
             /*
-             * Create the PUBLIC LFG announcement.
+             * Public LFG announcement.
              */
             const lfgEmbed =
                 new EmbedBuilder()
@@ -120,27 +125,52 @@ export default {
                         '🔎 LFG Created!'
                     )
                     .setDescription(
-                        `${subject.emoji} **${subject.label}**\n\n` +
+                        `${subjectEmoji} **${subject.label}**\n\n` +
                         `📝 **Description:** ${description}\n\n` +
                         `🔊 **Study Room:** <#${channel.id}>\n` +
-                        `👥 **Maximum:** ${channel.userLimit || 0} people\n\n` +
-                        `The creator controls this Study Room and can change its limit or permissions from Discord.`
+                        `👥 **Maximum:** ${channel.userLimit || 4} people`
                     );
 
             /*
-             * Public LFG post.
+             * Join Study Room button.
              *
-             * This is intentionally NOT ephemeral.
+             * The channel ID is stored in
+             * the button custom ID so the
+             * button knows which VC to join.
+             */
+            const joinButton =
+                new ButtonBuilder()
+                    .setCustomId(
+                        `lfg_join:${channel.id}`
+                    )
+                    .setLabel(
+                        'Join Study Room'
+                    )
+                    .setEmoji('🔊')
+                    .setStyle(
+                        ButtonStyle.Primary
+                    );
+
+            const buttonRow =
+                new ActionRowBuilder()
+                    .addComponents(
+                        joinButton
+                    );
+
+            /*
+             * PUBLIC message.
              */
             await interaction.channel.send({
                 embeds: [
                     lfgEmbed
+                ],
+                components: [
+                    buttonRow
                 ]
             });
 
             /*
-             * Private confirmation for
-             * the person who created the LFG.
+             * PRIVATE confirmation.
              */
             await interaction.reply({
                 content:
@@ -155,9 +185,7 @@ export default {
                 error
             );
 
-            if (
-                !interaction.replied
-            ) {
+            if (!interaction.replied) {
                 await interaction.reply({
                     content:
                         '❌ Something went wrong while creating your LFG.',
