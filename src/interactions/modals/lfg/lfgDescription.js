@@ -1,8 +1,5 @@
 import {
-    EmbedBuilder,
-    ActionRowBuilder,
-    ButtonBuilder,
-    ButtonStyle
+    EmbedBuilder
 } from 'discord.js';
 
 import { logger } from '../../../utils/logger.js';
@@ -52,6 +49,10 @@ export default {
                 });
             }
 
+            /*
+             * Make sure the person submitting
+             * the modal is the LFG creator.
+             */
             if (
                 creatorId !==
                 interaction.user.id
@@ -74,16 +75,17 @@ export default {
                 });
             }
 
+            /*
+             * Get the description.
+             */
             const description =
                 interaction.fields.getTextInputValue(
                     'lfg-description'
                 );
 
             /*
-             * Use the Study Room the creator
-             * is already inside.
-             *
-             * This does NOT create another VC.
+             * Register the Study Room that
+             * the creator is already inside.
              */
             const result =
                 await createLfgVoiceChannel(
@@ -104,15 +106,45 @@ export default {
                 result.channel;
 
             /*
-             * Get the emoji for the selected subject.
+             * Create a REAL Discord voice-channel
+             * invite.
+             *
+             * Discord handles the invite UI and
+             * voice joining experience.
+             */
+            let voiceInvite;
+
+            try {
+                voiceInvite =
+                    await channel.createInvite({
+                        maxAge: 0,
+                        maxUses: 0,
+                        unique: true,
+                        reason:
+                            `LFG Study Room created by ${interaction.user.tag}`
+                    });
+            } catch (inviteError) {
+                logger.error(
+                    'Could not create LFG voice invite:',
+                    inviteError
+                );
+
+                return interaction.reply({
+                    content:
+                        '❌ I created the Study Room, but I could not create the Discord voice invite. Please make sure the bot has **Create Invite** permission.',
+                    ephemeral: true
+                });
+            }
+
+            /*
+             * Subject emoji.
              */
             const subjectEmoji =
                 SUBJECT_EMOJIS[selectedSubject] ||
-                subject.emoji ||
                 '📚';
 
             /*
-             * LFG announcement.
+             * LFG information.
              */
             const lfgEmbed =
                 new EmbedBuilder()
@@ -127,48 +159,33 @@ export default {
                     );
 
             /*
-             * Join button.
-             */
-            const joinButton =
-                new ButtonBuilder()
-                    .setCustomId(
-                        `lfg_join:${channel.id}`
-                    )
-                    .setLabel(
-                        'Join Study Room'
-                    )
-                    .setEmoji('🔊')
-                    .setStyle(
-    ButtonStyle.Secondary
-);
-
-            const buttonRow =
-                new ActionRowBuilder()
-                    .addComponents(
-                        joinButton
-                    );
-
-            /*
-             * Public LFG post.
+             * IMPORTANT:
+             *
+             * We do NOT create a custom Join button.
+             *
+             * Sending the actual Discord voice invite
+             * allows Discord to render its native
+             * voice-channel invite UI.
              */
             await interaction.channel.send({
+                content: voiceInvite.url,
                 embeds: [
                     lfgEmbed
-                ],
-                components: [
-                    buttonRow
                 ]
             });
 
             /*
-             * Private confirmation.
+             * Acknowledge the modal without creating
+             * a visible confirmation message.
+             *
+             * The public LFG post above is all the
+             * user needs to see.
              */
-            await interaction.reply({
-                content:
-                    `✅ Your **${subject.label}** LFG has been posted!\n\n` +
-                    `🔊 Study Room: <#${channel.id}>`,
+            await interaction.deferReply({
                 ephemeral: true
             });
+
+            await interaction.deleteReply();
 
         } catch (error) {
             logger.error(
@@ -176,7 +193,8 @@ export default {
                 error
             );
 
-            if (!interaction.replied) {
+            if (!interaction.replied &&
+                !interaction.deferred) {
                 await interaction.reply({
                     content:
                         '❌ Something went wrong while creating your LFG.',
