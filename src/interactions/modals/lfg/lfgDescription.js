@@ -9,25 +9,23 @@ import {
     createLfgVoiceChannel
 } from '../../../services/lfg/lfgService.js';
 
-const LFG_DESCRIPTION_MODAL_PREFIX = 'lfg_description:';
+const LFG_DESCRIPTION_MODAL_PREFIX =
+    'lfg_description:';
 
 export default {
     name: 'lfg_description',
 
-    async execute(interaction, client, args) {
+    async execute(
+        interaction,
+        client,
+        args
+    ) {
         try {
-            /*
-             * The interaction dispatcher already splits:
-             *
-             * lfg_description:USER_ID:SUBJECT
-             *
-             * into:
-             *
-             * args[0] = USER_ID
-             * args[1] = SUBJECT
-             */
-            const creatorId = args?.[0];
-            const selectedSubject = args?.[1];
+            const creatorId =
+                args?.[0];
+
+            const selectedSubject =
+                args?.[1];
 
             if (
                 !creatorId ||
@@ -41,8 +39,9 @@ export default {
             }
 
             /*
-             * Make sure the person submitting the
-             * modal is the person who created it.
+             * Make sure the person submitting
+             * the modal is the person who
+             * started the LFG.
              */
             if (
                 creatorId !==
@@ -56,7 +55,9 @@ export default {
             }
 
             const subject =
-                SUBJECTS[selectedSubject];
+                SUBJECTS[
+                    selectedSubject
+                ];
 
             if (!subject) {
                 return interaction.reply({
@@ -67,8 +68,7 @@ export default {
             }
 
             /*
-             * Get the description entered by
-             * the creator.
+             * Get the description.
              */
             const description =
                 interaction.fields.getTextInputValue(
@@ -76,7 +76,11 @@ export default {
                 );
 
             /*
-             * Create the temporary Study Room.
+             * Register the voice channel
+             * the creator is ALREADY inside.
+             *
+             * This no longer creates a new
+             * voice channel.
              */
             const result =
                 await createLfgVoiceChannel(
@@ -88,7 +92,7 @@ export default {
                 return interaction.reply({
                     content:
                         result.error ||
-                        '❌ I could not create your Study Room.',
+                        '❌ I could not create your LFG.',
                     ephemeral: true
                 });
             }
@@ -97,27 +101,18 @@ export default {
                 result.channel;
 
             /*
-             * Move the creator into their new
-             * Study Room.
+             * IMPORTANT:
+             *
+             * We DO NOT call:
+             *
+             * interaction.member.voice.setChannel()
+             *
+             * because the creator is already
+             * inside the correct Study Room.
              */
-            try {
-                if (interaction.member.voice) {
-                    await interaction.member.voice.setChannel(
-                        channel
-                    );
-                }
-            } catch (error) {
-                logger.error(
-                    'Could not move LFG creator into Study Room:',
-                    error
-                );
-            }
 
             /*
              * Create the PUBLIC LFG announcement.
-             *
-             * This is intentionally NOT ephemeral.
-             * Everyone who can see #・LFG・ will see it.
              */
             const lfgEmbed =
                 new EmbedBuilder()
@@ -126,15 +121,16 @@ export default {
                     )
                     .setDescription(
                         `${subject.emoji} **${subject.label}**\n\n` +
-                        `📚 **Description:** ${description}\n\n` +
+                        `📝 **Description:** ${description}\n\n` +
                         `🔊 **Study Room:** <#${channel.id}>\n` +
-                        `👥 **Maximum:** ${channel.userLimit} people\n\n` +
+                        `👥 **Maximum:** ${channel.userLimit || 0} people\n\n` +
                         `The creator controls this Study Room and can change its limit or permissions from Discord.`
                     );
 
             /*
-             * interaction.channel is the #・LFG・
-             * channel where the LFG setup began.
+             * Public LFG post.
+             *
+             * This is intentionally NOT ephemeral.
              */
             await interaction.channel.send({
                 embeds: [
@@ -143,11 +139,12 @@ export default {
             });
 
             /*
-             * PRIVATE confirmation for the creator.
+             * Private confirmation for
+             * the person who created the LFG.
              */
             await interaction.reply({
                 content:
-                    `✅ Your **${subject.label}** LFG has been created!\n\n` +
+                    `✅ Your **${subject.label}** LFG has been posted!\n\n` +
                     `🔊 Study Room: <#${channel.id}>`,
                 ephemeral: true
             });
@@ -158,7 +155,9 @@ export default {
                 error
             );
 
-            if (!interaction.replied) {
+            if (
+                !interaction.replied
+            ) {
                 await interaction.reply({
                     content:
                         '❌ Something went wrong while creating your LFG.',
