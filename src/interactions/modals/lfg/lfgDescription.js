@@ -1,19 +1,43 @@
 import { logger } from '../../../utils/logger.js';
 import { SUBJECTS } from '../../../handlers/lfgSelectMenus.js';
+import {
+    createLfgVoiceChannel
+} from '../../../services/lfg/lfgService.js';
 
 const LFG_DESCRIPTION_MODAL_PREFIX = 'lfg_description:';
 
 export default {
     name: 'lfg_description',
 
-    async execute(interaction) {
+    async execute(interaction, client, args) {
         try {
-            const parts = interaction.customId.split(':');
+            /*
+             * The interaction dispatcher already splits:
+             *
+             * lfg_description:USER_ID:SUBJECT
+             *
+             * into:
+             *
+             * args[0] = USER_ID
+             * args[1] = SUBJECT
+             */
+            const creatorId = args?.[0];
+            const selectedSubject = args?.[1];
 
-            const creatorId = parts[1];
-            const selectedSubject = parts[2];
+            if (
+                !creatorId ||
+                !selectedSubject
+            ) {
+                return interaction.reply({
+                    content:
+                        '❌ Your LFG information is incomplete. Please start again with `/lfg`.',
+                    ephemeral: true
+                });
+            }
 
-            if (creatorId !== interaction.user.id) {
+            if (
+                creatorId !== interaction.user.id
+            ) {
                 return interaction.reply({
                     content:
                         '❌ This LFG form belongs to someone else.',
@@ -21,7 +45,8 @@ export default {
                 });
             }
 
-            const subject = SUBJECTS[selectedSubject];
+            const subject =
+                SUBJECTS[selectedSubject];
 
             if (!subject) {
                 return interaction.reply({
@@ -37,22 +62,51 @@ export default {
                 );
 
             /*
-             * The next step will use:
+             * Create the temporary Study Room.
              *
-             * - interaction.guild
-             * - interaction.member
-             * - subject
-             * - description
+             * Default:
+             * Maximum 4 people.
              *
-             * to create the temporary Study Room
-             * and the public LFG post.
+             * The creator receives Manage Channels
+             * so they can modify the room themselves.
              */
+            const result =
+                await createLfgVoiceChannel(
+                    interaction,
+                    subject.label
+                );
+
+            if (!result.success) {
+                return interaction.reply({
+                    content:
+                        result.error ||
+                        '❌ I could not create your Study Room.',
+                    ephemeral: true
+                });
+            }
+
+            /*
+             * Move the creator into their new Study Room.
+             */
+            try {
+                await interaction.member.voice.setChannel(
+                    result.channel
+                );
+            } catch (moveError) {
+                logger.warn(
+                    `Could not move LFG creator ${interaction.user.id} into Study Room ${result.channel.id}:`,
+                    moveError
+                );
+            }
 
             await interaction.reply({
                 content:
-                    `✅ **${subject.label}** selected.\n\n` +
-                    `**Description:** ${description}\n\n` +
-                    `Your Study Room creation is next.`,
+                    `✅ **LFG created!**\n\n` +
+                    `${subject.emoji} **${subject.label}**\n` +
+                    `📝 **Description:** ${description}\n` +
+                    `🔊 **Study Room:** ${result.channel}\n` +
+                    `👥 **Maximum:** 4 people\n\n` +
+                    `You control this Study Room and can change its limit or permissions from Discord.`,
                 ephemeral: true
             });
 
