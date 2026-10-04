@@ -52,11 +52,6 @@ export default {
                 });
             }
 
-            /*
-             * Make sure the person submitting
-             * the modal is the person who
-             * created the LFG.
-             */
             if (
                 creatorId !==
                 interaction.user.id
@@ -79,10 +74,6 @@ export default {
                 });
             }
 
-            /*
-             * Get the description entered
-             * by the creator.
-             */
             const description =
                 interaction.fields.getTextInputValue(
                     'lfg-description'
@@ -92,8 +83,7 @@ export default {
              * Use the Study Room the creator
              * is already inside.
              *
-             * This does NOT create another
-             * voice channel.
+             * This does NOT create another VC.
              */
             const result =
                 await createLfgVoiceChannel(
@@ -114,7 +104,7 @@ export default {
                 result.channel;
 
             /*
-             * Subject emoji.
+             * Get the emoji for the selected subject.
              */
             const subjectEmoji =
                 SUBJECT_EMOJIS[selectedSubject] ||
@@ -122,9 +112,7 @@ export default {
                 '📚';
 
             /*
-             * Public LFG announcement.
-             *
-             * Only the useful information is shown.
+             * LFG announcement.
              */
             const lfgEmbed =
                 new EmbedBuilder()
@@ -139,11 +127,7 @@ export default {
                     );
 
             /*
-             * Public Join Study Room button.
-             *
-             * The channel ID is stored in
-             * the custom ID so lfgJoin.js
-             * knows which Study Room to join.
+             * Join button.
              */
             const joinButton =
                 new ButtonBuilder()
@@ -165,11 +149,7 @@ export default {
                     );
 
             /*
-             * PUBLIC LFG POST.
-             *
-             * Everyone who can see #LFG
-             * will see the announcement
-             * and Join button.
+             * Public LFG post.
              */
             await interaction.channel.send({
                 embeds: [
@@ -181,8 +161,7 @@ export default {
             });
 
             /*
-             * PRIVATE confirmation for
-             * the creator only.
+             * Private confirmation.
              */
             await interaction.reply({
                 content:
