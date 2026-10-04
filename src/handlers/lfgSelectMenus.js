@@ -46,7 +46,7 @@ const SUBJECTS = {
 };
 
 export const lfgSubjectSelectMenu = {
-    name: `${LFG_SUBJECT_SELECT_PREFIX}`,
+    name: 'lfg_subject',
 
     async execute(interaction) {
         try {
