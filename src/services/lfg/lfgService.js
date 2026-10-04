@@ -1,14 +1,8 @@
-import {
-    ChannelType,
-    PermissionFlagsBits
-} from 'discord.js';
-
 import { logger } from '../../utils/logger.js';
 
-const DEFAULT_LFG_USER_LIMIT = 4;
-
 /*
- * Tracks active LFG voice channels.
+ * Tracks voice channels that currently have an
+ * active LFG attached to them.
  *
  * channelId -> {
  *     guildId,
@@ -18,7 +12,11 @@ const DEFAULT_LFG_USER_LIMIT = 4;
 const activeLfgChannels = new Map();
 
 /**
- * Register a voice channel as an LFG channel.
+ * Register an existing voice channel as an LFG channel.
+ *
+ * IMPORTANT:
+ * The LFG system does NOT create the voice channel.
+ * The Join to Create Study Room system creates it.
  */
 export function registerLfgChannel(channel, creatorId) {
     if (!channel) {
@@ -34,17 +32,24 @@ export function registerLfgChannel(channel, creatorId) {
 }
 
 /**
- * Create an LFG voice channel.
+ * Use the creator's CURRENT voice channel as
+ * the LFG Study Room.
  *
- * The channel is created in the same category as the
- * creator's current voice channel when possible.
+ * This function does NOT:
+ *
+ * - Create another voice channel
+ * - Move the creator
+ * - Delete the existing voice channel
+ *
+ * The creator is already inside the Study Room.
  */
 export async function createLfgVoiceChannel(
     interaction,
     subjectLabel
 ) {
     try {
-        const member = interaction.member;
+        const member =
+            interaction.member;
 
         const currentVoiceChannel =
             member.voice?.channel;
@@ -53,78 +58,62 @@ export async function createLfgVoiceChannel(
             return {
                 success: false,
                 error:
-                    '❌ You must be in a voice channel before creating an LFG.'
+                    '❌ You must be in a Study Room voice channel before creating an LFG.'
             };
         }
 
-        const guild = interaction.guild;
-
-        const creatorName =
-            member.displayName ||
-            interaction.user.username;
-
-        const channelName =
-            `${creatorName}'s Study Room`;
-
-        const channel =
-            await guild.channels.create({
-                name: channelName,
-                type: ChannelType.GuildVoice,
-
-                parent:
-                    currentVoiceChannel.parentId ||
-                    undefined,
-
-                userLimit:
-                    DEFAULT_LFG_USER_LIMIT,
-
-                permissionOverwrites: [
-                    {
-                        id: guild.roles.everyone.id,
-
-                        allow: [
-                            PermissionFlagsBits.ViewChannel,
-                            PermissionFlagsBits.Connect,
-                            PermissionFlagsBits.Speak
-                        ]
-                    },
-
-                    {
-                        id: interaction.user.id,
-
-                        allow: [
-                            PermissionFlagsBits.ViewChannel,
-                            PermissionFlagsBits.Connect,
-                            PermissionFlagsBits.Speak,
-                            PermissionFlagsBits.MoveMembers,
-                            PermissionFlagsBits.ManageChannels
-                        ]
-                    }
-                ]
-            });
-
+        /*
+         * Register the existing Study Room
+         * as the active LFG channel.
+         */
         registerLfgChannel(
-            channel,
+            currentVoiceChannel,
             interaction.user.id
         );
 
+        /*
+         * Make sure the creator has control
+         * over the Study Room.
+         *
+         * This does NOT change the voice channel
+         * limit. The creator can modify that
+         * themselves through Discord.
+         */
+        try {
+            await currentVoiceChannel.permissionOverwrites.edit(
+                interaction.user.id,
+                {
+                    ViewChannel: true,
+                    Connect: true,
+                    Speak: true,
+                    MoveMembers: true,
+                    ManageChannels: true
+                }
+            );
+        } catch (permissionError) {
+            logger.warn(
+                'Could not update LFG creator permissions:',
+                permissionError
+            );
+        }
+
         return {
             success: true,
-            channel,
+            channel: currentVoiceChannel,
             creatorId: interaction.user.id,
             subjectLabel
         };
 
     } catch (error) {
         logger.error(
-            'Error creating LFG voice channel:',
+            'Error registering current LFG voice channel:',
             error
         );
 
         return {
             success: false,
             error:
-                '❌ I could not create the LFG voice channel.'
+                '❌ I could not register your current Study Room as an LFG.'
         };
     }
 }
@@ -132,26 +121,41 @@ export async function createLfgVoiceChannel(
 /**
  * Remove an LFG channel from tracking.
  */
-export function unregisterLfgChannel(channelId) {
-    activeLfgChannels.delete(channelId);
+export function unregisterLfgChannel(
+    channelId
+) {
+    activeLfgChannels.delete(
+        channelId
+    );
 }
 
 /**
- * Check whether a channel is an active LFG channel.
+ * Check whether a channel is an active LFG.
  */
-export function isLfgChannel(channelId) {
-    return activeLfgChannels.has(channelId);
+export function isLfgChannel(
+    channelId
+) {
+    return activeLfgChannels.has(
+        channelId
+    );
 }
 
 /**
  * Get LFG information for a channel.
  */
-export function getLfgChannelInfo(channelId) {
-    return activeLfgChannels.get(channelId) || null;
+export function getLfgChannelInfo(
+    channelId
+) {
+    return (
+        activeLfgChannels.get(
+            channelId
+        ) || null
+    );
 }
 
 /**
- * Transfer LFG ownership to another member.
+ * Transfer LFG ownership to another
+ * student who remains in the Study Room.
  */
 async function transferLfgOwnership(
     channel,
@@ -160,20 +164,20 @@ async function transferLfgOwnership(
 ) {
     try {
         /*
-         * Remove owner permissions from the
-         * previous creator.
+         * Remove owner permissions from
+         * the previous owner.
          */
         await channel.permissionOverwrites.edit(
             oldCreatorId,
             {
-                ManageChannels: false,
-                MoveMembers: false
+                MoveMembers: false,
+                ManageChannels: false
             }
         );
 
         /*
-         * Give owner permissions to the
-         * new creator.
+         * Give owner permissions to
+         * the new owner.
          */
         await channel.permissionOverwrites.edit(
             newOwner.id,
@@ -187,8 +191,8 @@ async function transferLfgOwnership(
         );
 
         /*
-         * Rename the Study Room so everyone knows
-         * who currently controls it.
+         * Rename the Study Room to show
+         * who currently owns it.
          */
         const newOwnerName =
             newOwner.displayName ||
@@ -199,7 +203,7 @@ async function transferLfgOwnership(
         );
 
         /*
-         * Update our internal ownership tracking.
+         * Update internal LFG ownership.
          */
         activeLfgChannels.set(
             channel.id,
@@ -228,23 +232,24 @@ async function transferLfgOwnership(
 /**
  * Handle LFG voice-state changes.
  *
- * If the creator leaves:
+ * If the LFG owner leaves:
  *
  * 1. If other students remain:
- *    Transfer ownership to one of them.
+ *    Transfer LFG ownership.
  *
  * 2. If nobody remains:
- *    Delete the Study Room.
+ *    Remove the LFG from our tracker.
+ *
+ * IMPORTANT:
+ * We do NOT delete the voice channel here.
+ * The Join to Create system owns the lifecycle
+ * of the voice channel itself.
  */
 export async function handleLfgVoiceStateUpdate(
     oldState,
     newState
 ) {
     try {
-        /*
-         * We only care about the channel
-         * the member LEFT.
-         */
         const oldChannel =
             oldState.channel;
 
@@ -262,8 +267,8 @@ export async function handleLfgVoiceStateUpdate(
         }
 
         /*
-         * Only react when the current owner
-         * leaves the LFG Study Room.
+         * Only react when the current LFG
+         * owner leaves.
          */
         if (
             oldState.member?.id !==
@@ -273,8 +278,8 @@ export async function handleLfgVoiceStateUpdate(
         }
 
         /*
-         * Make sure the creator actually
-         * left the channel.
+         * Make sure they actually left
+         * the channel.
          */
         if (
             newState.channelId ===
@@ -284,16 +289,22 @@ export async function handleLfgVoiceStateUpdate(
         }
 
         /*
-         * Find remaining non-bot members.
+         * Find the remaining real users.
          */
         const remainingMembers =
             [...oldChannel.members.values()]
-                .filter(member => !member.user.bot);
+                .filter(
+                    member =>
+                        !member.user.bot
+                );
 
         /*
          * Nobody remains.
          *
-         * Delete the Study Room.
+         * Stop tracking the LFG.
+         *
+         * We intentionally DO NOT delete
+         * the voice channel.
          */
         if (
             remainingMembers.length === 0
@@ -302,23 +313,18 @@ export async function handleLfgVoiceStateUpdate(
                 oldChannel.id
             );
 
-            if (!oldChannel.deleted) {
-                await oldChannel.delete(
-                    'LFG Study Room became empty'
-                );
-            }
-
             logger.info(
-                `Deleted empty LFG Study Room: ${oldChannel.id}`
+                `LFG ended for empty Study Room: ${oldChannel.id}`
             );
 
             return;
         }
 
         /*
-         * Someone is still in the Study Room.
+         * Someone is still inside.
          *
-         * Transfer ownership.
+         * Transfer LFG ownership to the
+         * first remaining student.
          */
         const newOwner =
             remainingMembers[0];
@@ -338,11 +344,11 @@ export async function handleLfgVoiceStateUpdate(
 }
 
 /**
- * Attach the LFG voice-state listener to the bot.
- *
- * Call this once during bot startup.
+ * Attach the LFG voice-state listener.
  */
-export function initializeLfgService(client) {
+export function initializeLfgService(
+    client
+) {
     client.on(
         'voiceStateUpdate',
         handleLfgVoiceStateUpdate
