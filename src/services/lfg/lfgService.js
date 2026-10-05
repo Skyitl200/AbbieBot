@@ -1,33 +1,19 @@
 import {
-    EmbedBuilder,
-    ButtonBuilder,
     ActionRowBuilder,
-    ButtonStyle
+    StringSelectMenuBuilder
 } from 'discord.js';
 
 import { logger } from '../../../utils/logger.js';
-import { SUBJECTS } from '../../../handlers/lfgSelectMenus.js';
 
 import {
-    createLfgVoiceChannel
-} from '../../../services/lfg/lfgService.js';
+    pendingLfgDescriptions
+} from '../../../handlers/lfgSelectMenus.js';
 
 const LFG_DESCRIPTION_MODAL_PREFIX =
     'lfg_description:';
 
-const LFG_JOIN_PREFIX =
-    'lfg_join:';
-
-const SUBJECT_EMOJIS = {
-    anatomy_1: '🦴',
-    anatomy_2: '🫀',
-    microbiology: '🦠',
-    teas: '📚',
-    program: '🎓',
-    chemistry: '🧪',
-    physics: '⚛️',
-    math: '📐'
-};
+const LFG_CAPACITY_SELECT_PREFIX =
+    'lfg_capacity:';
 
 export default {
     name: 'lfg_description',
@@ -40,13 +26,9 @@ export default {
         try {
 
             /*
-             * Get the LFG creator ID,
-             * selected subject,
-             * and selected maximum capacity.
+             * Modal custom ID format:
              *
-             * Custom ID format:
-             *
-             * lfg_description:USER_ID:SUBJECT:CAPACITY
+             * lfg_description:USER_ID:SUBJECT
              */
             const creatorId =
                 args?.[0];
@@ -54,18 +36,12 @@ export default {
             const selectedSubject =
                 args?.[1];
 
-            const selectedCapacity =
-                Number(args?.[2]);
-
             /*
              * Validate the request.
              */
             if (
                 !creatorId ||
-                !selectedSubject ||
-                ![2, 3, 4, 5].includes(
-                    selectedCapacity
-                )
+                !selectedSubject
             ) {
                 return interaction.reply({
                     content:
@@ -76,7 +52,8 @@ export default {
 
             /*
              * Make sure the person submitting
-             * the modal is the LFG creator.
+             * the modal is the same person who
+             * selected the subject.
              */
             if (
                 creatorId !==
@@ -85,20 +62,6 @@ export default {
                 return interaction.reply({
                     content:
                         '❌ This LFG form belongs to someone else.',
-                    ephemeral: true
-                });
-            }
-
-            /*
-             * Get the selected subject.
-             */
-            const subject =
-                SUBJECTS[selectedSubject];
-
-            if (!subject) {
-                return interaction.reply({
-                    content:
-                        '❌ Invalid LFG subject.',
                     ephemeral: true
                 });
             }
@@ -113,105 +76,98 @@ export default {
                 );
 
             /*
-             * Use the creator's existing
-             * Study Room.
+             * Save the LFG information temporarily.
              *
-             * The selected capacity is applied
-             * to that Study Room.
+             * The capacity selector will use this
+             * information to finish creating the LFG.
              */
-            const result =
-                await createLfgVoiceChannel(
-                    interaction,
-                    subject.label,
-                    selectedCapacity
-                );
-
-            if (!result.success) {
-                return interaction.reply({
-                    content:
-                        result.error ||
-                        '❌ I could not create your LFG.',
-                    ephemeral: true
-                });
-            }
-
-            const channel =
-                result.channel;
+            pendingLfgDescriptions.set(
+                interaction.user.id,
+                {
+                    selectedSubject,
+                    description
+                }
+            );
 
             /*
-             * Get the emoji for the selected subject.
-             */
-            const subjectEmoji =
-                SUBJECT_EMOJIS[selectedSubject] ||
-                '📚';
-
-            /*
-             * Create the public LFG post.
-             */
-            const lfgEmbed =
-                new EmbedBuilder()
-                    .setTitle(
-                        `👥 ${interaction.user.displayName} is looking for a study group!`
-                    )
-                    .setDescription(
-                        `${subjectEmoji} **Subject:** ${subject.label}\n\n` +
-                        `📝 **Description:** ${description}\n\n` +
-                        `👥 **Maximum:** ${selectedCapacity} people\n\n` +
-                        `🔊 **Study Room:** ${channel.name}`
-                    );
-
-            /*
-             * Create the custom LFG Join button.
+             * Create the capacity selector.
              *
-             * This connects to:
+             * The user chooses:
              *
-             * src/interactions/buttons/lfg/lfgJoin.js
-             *
-             * The channel ID is stored directly
-             * in the button custom ID.
+             * 2 people
+             * 3 people
+             * 4 people
+             * 5 people
              */
-            const joinButton =
-                new ButtonBuilder()
+            const capacityMenu =
+                new StringSelectMenuBuilder()
                     .setCustomId(
-                        `${LFG_JOIN_PREFIX}${channel.id}`
+                        `${LFG_CAPACITY_SELECT_PREFIX}${interaction.user.id}`
                     )
-                    .setLabel(
-                        'Join Study Room'
+                    .setPlaceholder(
+                        '👥 Select maximum Study Room size'
                     )
-                    .setEmoji('🔊')
-                    .setStyle(
-                        ButtonStyle.Primary
+                    .addOptions(
+                        {
+                            label:
+                                '2 people',
+                            description:
+                                'Small study group',
+                            value:
+                                '2',
+                            emoji:
+                                '👤'
+                        },
+                        {
+                            label:
+                                '3 people',
+                            description:
+                                'Small study group',
+                            value:
+                                '3',
+                            emoji:
+                                '👥'
+                        },
+                        {
+                            label:
+                                '4 people',
+                            description:
+                                'Medium study group',
+                            value:
+                                '4',
+                            emoji:
+                                '👥'
+                        },
+                        {
+                            label:
+                                '5 people',
+                            description:
+                                'Larger study group',
+                            value:
+                                '5',
+                            emoji:
+                                '👥'
+                        }
                     );
 
-            const buttonRow =
+            const row =
                 new ActionRowBuilder()
                     .addComponents(
-                        joinButton
+                        capacityMenu
                     );
 
             /*
-             * Send the LFG post with the
-             * custom instant-join button.
+             * Ask the creator for the
+             * maximum Study Room size.
              */
-            await interaction.channel.send({
-                embeds: [
-                    lfgEmbed
-                ],
+            await interaction.reply({
+                content:
+                    '👥 **How many people should be allowed in your Study Room?**',
                 components: [
-                    buttonRow
-                ]
-            });
-
-            /*
-             * Acknowledge the modal privately.
-             *
-             * No public confirmation message.
-             */
-            await interaction.deferReply({
+                    row
+                ],
                 ephemeral: true
             });
-
-            await interaction.deleteReply();
 
         } catch (error) {
 
@@ -220,13 +176,17 @@ export default {
                 error
             );
 
+            /*
+             * Only respond if the interaction
+             * has not already been acknowledged.
+             */
             if (
                 !interaction.replied &&
                 !interaction.deferred
             ) {
                 await interaction.reply({
                     content:
-                        '❌ Something went wrong while creating your LFG.',
+                        '❌ Something went wrong while setting up your Study Room.',
                     ephemeral: true
                 });
             }
