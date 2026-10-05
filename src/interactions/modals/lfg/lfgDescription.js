@@ -34,8 +34,13 @@ export default {
         try {
 
             /*
-             * Get the LFG creator ID
-             * and selected subject.
+             * Get the LFG creator ID,
+             * selected subject,
+             * and selected maximum capacity.
+             *
+             * Custom ID format:
+             *
+             * lfg_description:USER_ID:SUBJECT:CAPACITY
              */
             const creatorId =
                 args?.[0];
@@ -43,12 +48,18 @@ export default {
             const selectedSubject =
                 args?.[1];
 
+            const selectedCapacity =
+                Number(args?.[2]);
+
             /*
              * Validate the request.
              */
             if (
                 !creatorId ||
-                !selectedSubject
+                !selectedSubject ||
+                ![2, 3, 4, 5].includes(
+                    selectedCapacity
+                )
             ) {
                 return interaction.reply({
                     content:
@@ -96,17 +107,14 @@ export default {
                 );
 
             /*
-             * Create/register the Study Room.
-             *
-             * The creator is already inside
-             * the Join to Create Study Room,
-             * so the service handles creating
-             * their personal Study Room.
+             * Create the Study Room using
+             * the capacity selected by the user.
              */
             const result =
                 await createLfgVoiceChannel(
                     interaction,
-                    subject.label
+                    subject.label,
+                    selectedCapacity
                 );
 
             if (!result.success) {
@@ -122,11 +130,8 @@ export default {
                 result.channel;
 
             /*
-             * Create a real Discord voice-channel
-             * invite.
-             *
-             * Discord will handle the native
-             * voice invite card.
+             * Create the real Discord
+             * voice-channel invite.
              */
             let voiceInvite;
 
@@ -164,14 +169,6 @@ export default {
 
             /*
              * Create the public LFG post.
-             *
-             * Instead of saying:
-             *
-             * "LFG Created!"
-             *
-             * it now says:
-             *
-             * "Woods is looking for a study group!"
              */
             const lfgEmbed =
                 new EmbedBuilder()
@@ -181,14 +178,12 @@ export default {
                     .setDescription(
                         `${subjectEmoji} **Subject:** ${subject.label}\n\n` +
                         `📝 **Description:** ${description}\n\n` +
-                        `🔊 **Study Room:** <#${channel.id}>\n` +
-                        `👥 **Maximum:** ${channel.userLimit || 4} people`
+                        `👥 **Maximum:** ${selectedCapacity} people\n\n` +
+                        `🔊 **Study Room:** <#${channel.id}>`
                     );
 
             /*
-             * SEND THE LFG POST FIRST.
-             *
-             * This contains the study information.
+             * Send the LFG information first.
              */
             await interaction.channel.send({
                 embeds: [
@@ -197,11 +192,7 @@ export default {
             });
 
             /*
-             * SEND THE VOICE INVITE SECOND.
-             *
-             * Discord will display its native
-             * voice-channel invite underneath
-             * the LFG information.
+             * Send the Discord voice invite underneath.
              */
             await interaction.channel.send({
                 content:
@@ -211,8 +202,7 @@ export default {
             /*
              * Acknowledge the modal privately.
              *
-             * No visible confirmation message
-             * is created for the user.
+             * No visible confirmation message.
              */
             await interaction.deferReply({
                 ephemeral: true
@@ -227,10 +217,6 @@ export default {
                 error
             );
 
-            /*
-             * Only respond if the interaction
-             * has not already been acknowledged.
-             */
             if (
                 !interaction.replied &&
                 !interaction.deferred
