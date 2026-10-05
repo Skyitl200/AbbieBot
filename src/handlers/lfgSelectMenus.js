@@ -221,7 +221,7 @@ export const lfgCapacitySelectMenu = {
         try {
 
             /*
-             * The custom ID is:
+             * Custom ID:
              *
              * lfg_capacity:USER_ID
              */
@@ -231,6 +231,9 @@ export const lfgCapacitySelectMenu = {
             const creatorId =
                 parts[1];
 
+            /*
+             * Validate creator.
+             */
             if (!creatorId) {
 
                 return interaction.reply({
@@ -242,9 +245,8 @@ export const lfgCapacitySelectMenu = {
             }
 
             /*
-             * Make sure the person selecting
-             * the capacity is the person who
-             * created the LFG.
+             * Only the person who created
+             * the LFG can select its capacity.
              */
             if (
                 creatorId !==
@@ -260,13 +262,16 @@ export const lfgCapacitySelectMenu = {
             }
 
             /*
-             * Get the selected capacity.
+             * Get selected capacity.
              */
             const selectedCapacity =
                 Number(
                     interaction.values[0]
                 );
 
+            /*
+             * Only allow 2–5 people.
+             */
             if (
                 ![2, 3, 4, 5].includes(
                     selectedCapacity
@@ -282,8 +287,9 @@ export const lfgCapacitySelectMenu = {
             }
 
             /*
-             * Retrieve the description
-             * saved by lfgDescription.js.
+             * Retrieve the description and
+             * selected subject saved by
+             * lfgDescription.js.
              */
             const pending =
                 pendingLfgDescriptions.get(
@@ -306,6 +312,9 @@ export const lfgCapacitySelectMenu = {
             const description =
                 pending.description;
 
+            /*
+             * Get subject information.
+             */
             const subject =
                 SUBJECTS[selectedSubject];
 
@@ -324,8 +333,8 @@ export const lfgCapacitySelectMenu = {
             }
 
             /*
-             * Create/register the creator's
-             * existing Study Room.
+             * Register the creator's existing
+             * Study Room and apply the capacity.
              */
             const result =
                 await createLfgVoiceChannel(
@@ -349,8 +358,8 @@ export const lfgCapacitySelectMenu = {
                 result.channel;
 
             /*
-             * Make sure the voice channel
-             * uses the selected capacity.
+             * Make absolutely sure the
+             * Study Room has the selected limit.
              */
             try {
 
@@ -368,14 +377,26 @@ export const lfgCapacitySelectMenu = {
             }
 
             /*
-             * Create the LFG embed.
+             * Create the public LFG post.
+             *
+             * Format:
+             *
+             * 👥 Woods is looking for a study group!
+             *
+             * 🫀 Subject: Anatomy & Physiology II
+             *
+             * 📝 Description: TEST
+             *
+             * 👥 Maximum: 3 people
+             *
+             * 🔊 Woods's Study Room
              */
             const lfgEmbed =
                 new EmbedBuilder()
                     .setDescription(
                         `👥 **${interaction.member.displayName} is looking for a study group!**\n\n` +
 
-                        `${subject.emoji} **${subject.label}**\n\n` +
+                        `${subject.emoji} **Subject:** ${subject.label}\n\n` +
 
                         `📝 **Description:** ${description}\n\n` +
 
@@ -385,9 +406,11 @@ export const lfgCapacitySelectMenu = {
                     );
 
             /*
-             * Existing LFG Join button.
+             * Instant Join Voice button.
              *
-             * This uses your lfgJoin.js handler.
+             * The lfgJoin interaction should use
+             * this channel ID to immediately move
+             * the user into the Study Room.
              */
             const joinButton =
                 new ButtonBuilder()
@@ -395,7 +418,7 @@ export const lfgCapacitySelectMenu = {
                         `lfg_join:${channel.id}`
                     )
                     .setLabel(
-                        'Join Voice'
+                        'Join Study Room'
                     )
                     .setEmoji(
                         '🔊'
@@ -426,15 +449,15 @@ export const lfgCapacitySelectMenu = {
             });
 
             /*
-             * Remove the temporary LFG data.
+             * Delete the temporary LFG data.
              */
             pendingLfgDescriptions.delete(
                 interaction.user.id
             );
 
             /*
-             * Remove the select menu
-             * from the user's ephemeral message.
+             * Update the private capacity
+             * selector so it disappears.
              */
             await interaction.update({
                 content:
@@ -466,15 +489,4 @@ export const lfgCapacitySelectMenu = {
 
     }
 
-};
-
-
-/*
- * Export constants and subjects.
- */
-export {
-    LFG_SUBJECT_SELECT_PREFIX,
-    LFG_DESCRIPTION_MODAL_PREFIX,
-    LFG_CAPACITY_SELECT_PREFIX,
-    SUBJECTS
 };
