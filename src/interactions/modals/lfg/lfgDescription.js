@@ -167,12 +167,42 @@ export default {
              * allows Discord to render its native
              * voice-channel invite UI.
              */
-            await interaction.channel.send({
-                content: voiceInvite.url,
-                embeds: [
-                    lfgEmbed
-                ]
-            });
+            /*
+ * LFG information.
+ */
+const lfgEmbed =
+    new EmbedBuilder()
+        .setTitle(
+            `👥 ${interaction.user.displayName} is looking for a study group!`
+        )
+        .setDescription(
+            `${subjectEmoji} **Subject:** ${subject.label}\n\n` +
+            `📝 **Description:** ${description}\n\n` +
+            `🔊 **Study Room:** <#${channel.id}>\n` +
+            `👥 **Maximum:** ${channel.userLimit || 4} people`
+        );
+
+/*
+ * Send the LFG information FIRST.
+ *
+ * This keeps the study information above
+ * the Discord voice invite.
+ */
+await interaction.channel.send({
+    embeds: [
+        lfgEmbed
+    ]
+});
+
+/*
+ * Send the REAL Discord voice invite SECOND.
+ *
+ * Discord will render its native voice
+ * invite card underneath the LFG post.
+ */
+await interaction.channel.send({
+    content: voiceInvite.url
+});
 
             /*
              * Acknowledge the modal without creating
