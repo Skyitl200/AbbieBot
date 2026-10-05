@@ -3,10 +3,17 @@ import {
     ModalBuilder,
     TextInputBuilder,
     TextInputStyle,
-    StringSelectMenuBuilder
+    StringSelectMenuBuilder,
+    EmbedBuilder,
+    ButtonBuilder,
+    ButtonStyle
 } from 'discord.js';
 
 import { logger } from '../utils/logger.js';
+
+import {
+    createLfgVoiceChannel
+} from '../services/lfg/lfgService.js';
 
 const LFG_SUBJECT_SELECT_PREFIX =
     'lfg_subject:';
@@ -17,7 +24,11 @@ const LFG_DESCRIPTION_MODAL_PREFIX =
 const LFG_CAPACITY_SELECT_PREFIX =
     'lfg_capacity:';
 
+/*
+ * LFG subjects.
+ */
 const SUBJECTS = {
+
     anatomy_1: {
         label: 'Anatomy & Physiology I',
         emoji: '🦴'
@@ -60,32 +71,43 @@ const SUBJECTS = {
 };
 
 /*
- * Temporary storage for LFG descriptions
- * while the creator chooses the room size.
+ * Temporarily stores the LFG information
+ * between the description modal and the
+ * capacity selection.
  *
  * userId -> {
- *     subject,
+ *     selectedSubject,
  *     description
  * }
  */
 export const pendingLfgDescriptions =
     new Map();
 
-/**
+
+/*
+ * =========================================================
  * SUBJECT SELECT
+ * =========================================================
  *
- * User selects what they want to study.
+ * User selects:
  *
- * Flow:
+ * 🦴 Anatomy & Physiology I
+ * 🫀 Anatomy & Physiology II
+ * 🦠 Microbiology
+ * 📚 TEAS
+ * 🎓 Program
+ * 🧪 Chemistry
+ * ⚛️ Physics
+ * 📐 Math
  *
- * Subject
- *   ↓
- * Description modal
+ * Then the description modal appears.
  */
 export const lfgSubjectSelectMenu = {
+
     name: 'lfg_subject',
 
     async execute(interaction) {
+
         try {
 
             const selectedSubject =
@@ -95,11 +117,13 @@ export const lfgSubjectSelectMenu = {
                 SUBJECTS[selectedSubject];
 
             if (!subject) {
+
                 return interaction.reply({
                     content:
                         '❌ Invalid LFG subject.',
                     ephemeral: true
                 });
+
             }
 
             /*
@@ -157,55 +181,47 @@ export const lfgSubjectSelectMenu = {
                 !interaction.replied &&
                 !interaction.deferred
             ) {
+
                 await interaction.reply({
                     content:
                         '❌ Something went wrong while setting up your LFG.',
                     ephemeral: true
                 });
+
             }
+
         }
+
     }
+
 };
 
-/**
+
+/*
+ * =========================================================
  * CAPACITY SELECT
+ * =========================================================
  *
- * This is used after the creator
- * submits their description.
+ * After the user submits their description,
+ * they choose:
  *
- * The creator chooses:
+ * 👥 2 people
+ * 👥 3 people
+ * 👥 4 people
+ * 👥 5 people
  *
- * 2 people
- * 3 people
- * 4 people
- * 5 people
+ * This then creates the actual LFG.
  */
 export const lfgCapacitySelectMenu = {
+
     name: 'lfg_capacity',
 
     async execute(interaction) {
+
         try {
 
-            const selectedCapacity =
-                Number(
-                    interaction.values[0]
-                );
-
-            if (
-                ![2, 3, 4, 5].includes(
-                    selectedCapacity
-                )
-            ) {
-                return interaction.reply({
-                    content:
-                        '❌ Invalid Study Room capacity.',
-                    ephemeral: true
-                });
-            }
-
             /*
-             * The capacity select menu's
-             * custom ID contains:
+             * The custom ID is:
              *
              * lfg_capacity:USER_ID
              */
@@ -216,11 +232,13 @@ export const lfgCapacitySelectMenu = {
                 parts[1];
 
             if (!creatorId) {
+
                 return interaction.reply({
                     content:
                         '❌ Invalid LFG request.',
                     ephemeral: true
                 });
+
             }
 
             /*
@@ -232,17 +250,40 @@ export const lfgCapacitySelectMenu = {
                 creatorId !==
                 interaction.user.id
             ) {
+
                 return interaction.reply({
                     content:
                         '❌ This LFG belongs to someone else.',
                     ephemeral: true
                 });
+
             }
 
             /*
-             * Retrieve the description that
-             * was temporarily stored after
-             * the modal was submitted.
+             * Get the selected capacity.
+             */
+            const selectedCapacity =
+                Number(
+                    interaction.values[0]
+                );
+
+            if (
+                ![2, 3, 4, 5].includes(
+                    selectedCapacity
+                )
+            ) {
+
+                return interaction.reply({
+                    content:
+                        '❌ Invalid Study Room capacity.',
+                    ephemeral: true
+                });
+
+            }
+
+            /*
+             * Retrieve the description
+             * saved by lfgDescription.js.
              */
             const pending =
                 pendingLfgDescriptions.get(
@@ -250,36 +291,156 @@ export const lfgCapacitySelectMenu = {
                 );
 
             if (!pending) {
+
                 return interaction.reply({
                     content:
                         '❌ This LFG request has expired. Please create a new LFG.',
                     ephemeral: true
                 });
+
+            }
+
+            const selectedSubject =
+                pending.selectedSubject;
+
+            const description =
+                pending.description;
+
+            const subject =
+                SUBJECTS[selectedSubject];
+
+            if (!subject) {
+
+                pendingLfgDescriptions.delete(
+                    interaction.user.id
+                );
+
+                return interaction.reply({
+                    content:
+                        '❌ The selected LFG subject is no longer valid.',
+                    ephemeral: true
+                });
+
             }
 
             /*
-             * Store the capacity with the
-             * pending LFG information.
+             * Create/register the creator's
+             * existing Study Room.
              */
-            pending.capacity =
-                selectedCapacity;
+            const result =
+                await createLfgVoiceChannel(
+                    interaction,
+                    subject.label,
+                    selectedCapacity
+                );
+
+            if (!result.success) {
+
+                return interaction.reply({
+                    content:
+                        result.error ||
+                        '❌ I could not create your LFG.',
+                    ephemeral: true
+                });
+
+            }
+
+            const channel =
+                result.channel;
 
             /*
-             * The description modal handler
-             * will use this information to
-             * create the LFG.
-             *
-             * We acknowledge the selection.
+             * Make sure the voice channel
+             * uses the selected capacity.
              */
-            await interaction.deferUpdate();
+            try {
+
+                await channel.setUserLimit(
+                    selectedCapacity
+                );
+
+            } catch (capacityError) {
+
+                logger.warn(
+                    'Could not update LFG Study Room capacity:',
+                    capacityError
+                );
+
+            }
 
             /*
-             * IMPORTANT:
-             *
-             * The actual LFG creation is handled
-             * by the LFG capacity interaction.
+             * Create the LFG embed.
              */
-            return;
+            const lfgEmbed =
+                new EmbedBuilder()
+                    .setDescription(
+                        `👥 **${interaction.member.displayName} is looking for a study group!**\n\n` +
+
+                        `${subject.emoji} **${subject.label}**\n\n` +
+
+                        `📝 **Description:** ${description}\n\n` +
+
+                        `👥 **Maximum:** ${selectedCapacity} people\n\n` +
+
+                        `🔊 **${channel.name}**`
+                    );
+
+            /*
+             * Existing LFG Join button.
+             *
+             * This uses your lfgJoin.js handler.
+             */
+            const joinButton =
+                new ButtonBuilder()
+                    .setCustomId(
+                        `lfg_join:${channel.id}`
+                    )
+                    .setLabel(
+                        'Join Voice'
+                    )
+                    .setEmoji(
+                        '🔊'
+                    )
+                    .setStyle(
+                        ButtonStyle.Primary
+                    );
+
+            const buttonRow =
+                new ActionRowBuilder()
+                    .addComponents(
+                        joinButton
+                    );
+
+            /*
+             * Send the completed LFG post.
+             */
+            await interaction.channel.send({
+
+                embeds: [
+                    lfgEmbed
+                ],
+
+                components: [
+                    buttonRow
+                ]
+
+            });
+
+            /*
+             * Remove the temporary LFG data.
+             */
+            pendingLfgDescriptions.delete(
+                interaction.user.id
+            );
+
+            /*
+             * Remove the select menu
+             * from the user's ephemeral message.
+             */
+            await interaction.update({
+                content:
+                    '✅ Your LFG has been created!',
+                components: []
+            });
 
         } catch (error) {
 
@@ -292,16 +453,25 @@ export const lfgCapacitySelectMenu = {
                 !interaction.replied &&
                 !interaction.deferred
             ) {
+
                 await interaction.reply({
                     content:
-                        '❌ Something went wrong while selecting the Study Room size.',
+                        '❌ Something went wrong while creating your LFG.',
                     ephemeral: true
                 });
+
             }
+
         }
+
     }
+
 };
 
+
+/*
+ * Export constants and subjects.
+ */
 export {
     LFG_SUBJECT_SELECT_PREFIX,
     LFG_DESCRIPTION_MODAL_PREFIX,
