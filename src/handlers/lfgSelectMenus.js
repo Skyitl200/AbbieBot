@@ -5,8 +5,6 @@ import {
     TextInputStyle,
     StringSelectMenuBuilder,
     EmbedBuilder,
-    ButtonBuilder,
-    ButtonStyle
 } from 'discord.js';
 
 import { logger } from '../utils/logger.js';
@@ -101,116 +99,6 @@ export const pendingLfgDescriptions =
  * 📐 Math
  *
  * Then the description modal appears.
- */
-export const lfgSubjectSelectMenu = {
-
-    name: 'lfg_subject',
-
-    async execute(interaction) {
-
-        try {
-
-            const selectedSubject =
-                interaction.values[0];
-
-            const subject =
-                SUBJECTS[selectedSubject];
-
-            if (!subject) {
-
-                return interaction.reply({
-                    content:
-                        '❌ Invalid LFG subject.',
-                    ephemeral: true
-                });
-
-            }
-
-            /*
-             * Create the description modal.
-             */
-            const modal =
-                new ModalBuilder()
-                    .setCustomId(
-                        `${LFG_DESCRIPTION_MODAL_PREFIX}${interaction.user.id}:${selectedSubject}`
-                    )
-                    .setTitle(
-                        `${subject.label} — LFG`
-                    );
-
-            const descriptionInput =
-                new TextInputBuilder()
-                    .setCustomId(
-                        'lfg-description'
-                    )
-                    .setLabel(
-                        'What are you looking for?'
-                    )
-                    .setPlaceholder(
-                        'Example: Studying the cardiovascular system for tomorrow\'s exam...'
-                    )
-                    .setStyle(
-                        TextInputStyle.Paragraph
-                    )
-                    .setRequired(true)
-                    .setMinLength(1)
-                    .setMaxLength(500);
-
-            const row =
-                new ActionRowBuilder()
-                    .addComponents(
-                        descriptionInput
-                    );
-
-            modal.addComponents(
-                row
-            );
-
-            await interaction.showModal(
-                modal
-            );
-
-        } catch (error) {
-
-            logger.error(
-                'LFG subject select error:',
-                error
-            );
-
-            if (
-                !interaction.replied &&
-                !interaction.deferred
-            ) {
-
-                await interaction.reply({
-                    content:
-                        '❌ Something went wrong while setting up your LFG.',
-                    ephemeral: true
-                });
-
-            }
-
-        }
-
-    }
-
-};
-
-
-/*
- * =========================================================
- * CAPACITY SELECT
- * =========================================================
- *
- * After the user submits their description,
- * they choose:
- *
- * 👥 2 people
- * 👥 3 people
- * 👥 4 people
- * 👥 5 people
- *
- * This then creates the actual LFG.
  */
 export const lfgCapacitySelectMenu = {
 
@@ -377,6 +265,41 @@ export const lfgCapacitySelectMenu = {
             }
 
             /*
+             * Create a REAL Discord voice invite.
+             *
+             * Discord handles the invite UI
+             * and provides its native
+             * "Join Voice" button.
+             */
+            let voiceInvite;
+
+            try {
+
+                voiceInvite =
+                    await channel.createInvite({
+                        maxAge: 0,
+                        maxUses: 0,
+                        unique: true,
+                        reason:
+                            `LFG Study Room created by ${interaction.user.tag}`
+                    });
+
+            } catch (inviteError) {
+
+                logger.error(
+                    'Could not create LFG voice invite:',
+                    inviteError
+                );
+
+                return interaction.reply({
+                    content:
+                        '❌ The Study Room was created, but I could not create the Discord voice invite. Please make sure the bot has **Create Invite** permission.',
+                    ephemeral: true
+                });
+
+            }
+
+            /*
              * Create the public LFG post.
              *
              * Format:
@@ -406,46 +329,25 @@ export const lfgCapacitySelectMenu = {
                     );
 
             /*
-             * Instant Join Voice button.
-             *
-             * The lfgJoin interaction should use
-             * this channel ID to immediately move
-             * the user into the Study Room.
-             */
-            const joinButton =
-                new ButtonBuilder()
-                    .setCustomId(
-                        `lfg_join:${channel.id}`
-                    )
-                    .setLabel(
-                        'Join Study Room'
-                    )
-                    .setEmoji(
-                        '🔊'
-                    )
-                    .setStyle(
-                        ButtonStyle.Primary
-                    );
-
-            const buttonRow =
-                new ActionRowBuilder()
-                    .addComponents(
-                        joinButton
-                    );
-
-            /*
-             * Send the completed LFG post.
+             * Send the LFG information first.
              */
             await interaction.channel.send({
-
                 embeds: [
                     lfgEmbed
-                ],
-
-                components: [
-                    buttonRow
                 ]
+            });
 
+            /*
+             * Send the REAL Discord voice invite.
+             *
+             * Discord will turn this into its
+             * native invite card with the
+             * Discord-controlled "Join Voice"
+             * button.
+             */
+            await interaction.channel.send({
+                content:
+                    voiceInvite.url
             });
 
             /*
@@ -489,4 +391,5 @@ export const lfgCapacitySelectMenu = {
 
     }
 
+};
 };
