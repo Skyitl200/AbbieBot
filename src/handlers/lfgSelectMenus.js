@@ -4,7 +4,7 @@ import {
     TextInputBuilder,
     TextInputStyle,
     StringSelectMenuBuilder,
-    EmbedBuilder,
+    EmbedBuilder
 } from 'discord.js';
 
 import { logger } from '../utils/logger.js';
@@ -69,8 +69,8 @@ const SUBJECTS = {
 };
 
 /*
- * Temporarily stores the LFG information
- * between the description modal and the
+ * Temporarily stores LFG information
+ * between the description modal and
  * capacity selection.
  *
  * userId -> {
@@ -84,22 +84,125 @@ export const pendingLfgDescriptions =
 
 /*
  * =========================================================
- * SUBJECT SELECT
+ * SUBJECT SELECT MENU
+ * =========================================================
+ */
+
+export const lfgSubjectSelectMenu = {
+
+    name: 'lfg_subject',
+
+    async execute(interaction) {
+
+        try {
+
+            const selectedSubject =
+                interaction.values[0];
+
+            const subject =
+                SUBJECTS[selectedSubject];
+
+            if (!subject) {
+
+                return interaction.reply({
+                    content:
+                        '❌ Invalid LFG subject.',
+                    ephemeral: true
+                });
+
+            }
+
+            /*
+             * Create the description modal.
+             *
+             * Custom ID:
+             *
+             * lfg_description:USER_ID:SUBJECT
+             */
+            const modal =
+                new ModalBuilder()
+                    .setCustomId(
+                        `${LFG_DESCRIPTION_MODAL_PREFIX}${interaction.user.id}:${selectedSubject}`
+                    )
+                    .setTitle(
+                        `${subject.label} — LFG`
+                    );
+
+            const descriptionInput =
+                new TextInputBuilder()
+                    .setCustomId(
+                        'lfg-description'
+                    )
+                    .setLabel(
+                        'What are you looking for?'
+                    )
+                    .setPlaceholder(
+                        'Example: Studying the cardiovascular system for tomorrow\'s exam...'
+                    )
+                    .setStyle(
+                        TextInputStyle.Paragraph
+                    )
+                    .setRequired(true)
+                    .setMinLength(1)
+                    .setMaxLength(500);
+
+            const row =
+                new ActionRowBuilder()
+                    .addComponents(
+                        descriptionInput
+                    );
+
+            modal.addComponents(
+                row
+            );
+
+            await interaction.showModal(
+                modal
+            );
+
+        } catch (error) {
+
+            logger.error(
+                'LFG subject select error:',
+                error
+            );
+
+            if (
+                !interaction.replied &&
+                !interaction.deferred
+            ) {
+
+                await interaction.reply({
+                    content:
+                        '❌ Something went wrong while setting up your LFG.',
+                    ephemeral: true
+                });
+
+            }
+
+        }
+
+    }
+
+};
+
+
+/*
+ * =========================================================
+ * CAPACITY SELECT MENU
  * =========================================================
  *
- * User selects:
+ * User chooses:
  *
- * 🦴 Anatomy & Physiology I
- * 🫀 Anatomy & Physiology II
- * 🦠 Microbiology
- * 📚 TEAS
- * 🎓 Program
- * 🧪 Chemistry
- * ⚛️ Physics
- * 📐 Math
+ * 2 people
+ * 3 people
+ * 4 people
+ * 5 people
  *
- * Then the description modal appears.
+ * Then the existing Study Room is registered
+ * as the LFG and its capacity is updated.
  */
+
 export const lfgCapacitySelectMenu = {
 
     name: 'lfg_capacity',
@@ -120,7 +223,7 @@ export const lfgCapacitySelectMenu = {
                 parts[1];
 
             /*
-             * Validate creator.
+             * Validate creator ID.
              */
             if (!creatorId) {
 
@@ -158,7 +261,12 @@ export const lfgCapacitySelectMenu = {
                 );
 
             /*
-             * Only allow 2–5 people.
+             * Only allow:
+             *
+             * 2
+             * 3
+             * 4
+             * 5
              */
             if (
                 ![2, 3, 4, 5].includes(
@@ -175,9 +283,8 @@ export const lfgCapacitySelectMenu = {
             }
 
             /*
-             * Retrieve the description and
-             * selected subject saved by
-             * lfgDescription.js.
+             * Retrieve the information saved
+             * by lfgDescription.js.
              */
             const pending =
                 pendingLfgDescriptions.get(
@@ -246,8 +353,8 @@ export const lfgCapacitySelectMenu = {
                 result.channel;
 
             /*
-             * Make absolutely sure the
-             * Study Room has the selected limit.
+             * Make sure the Study Room has
+             * the selected maximum capacity.
              */
             try {
 
@@ -267,9 +374,8 @@ export const lfgCapacitySelectMenu = {
             /*
              * Create a REAL Discord voice invite.
              *
-             * Discord handles the invite UI
-             * and provides its native
-             * "Join Voice" button.
+             * Discord handles the native
+             * voice invite card and join UI.
              */
             let voiceInvite;
 
@@ -302,13 +408,13 @@ export const lfgCapacitySelectMenu = {
             /*
              * Create the public LFG post.
              *
-             * Format:
+             * Example:
              *
              * 👥 Woods is looking for a study group!
              *
              * 🫀 Subject: Anatomy & Physiology II
              *
-             * 📝 Description: TEST
+             * 📝 Description: Studying cardiovascular...
              *
              * 👥 Maximum: 3 people
              *
@@ -317,6 +423,7 @@ export const lfgCapacitySelectMenu = {
             const lfgEmbed =
                 new EmbedBuilder()
                     .setDescription(
+
                         `👥 **${interaction.member.displayName} is looking for a study group!**\n\n` +
 
                         `${subject.emoji} **Subject:** ${subject.label}\n\n` +
@@ -326,6 +433,7 @@ export const lfgCapacitySelectMenu = {
                         `👥 **Maximum:** ${selectedCapacity} people\n\n` +
 
                         `🔊 **${channel.name}**`
+
                     );
 
             /*
@@ -340,10 +448,9 @@ export const lfgCapacitySelectMenu = {
             /*
              * Send the REAL Discord voice invite.
              *
-             * Discord will turn this into its
-             * native invite card with the
-             * Discord-controlled "Join Voice"
-             * button.
+             * Discord should render its native
+             * voice-channel invite UI underneath
+             * the LFG information.
              */
             await interaction.channel.send({
                 content:
@@ -351,15 +458,15 @@ export const lfgCapacitySelectMenu = {
             });
 
             /*
-             * Delete the temporary LFG data.
+             * Remove temporary LFG data.
              */
             pendingLfgDescriptions.delete(
                 interaction.user.id
             );
 
             /*
-             * Update the private capacity
-             * selector so it disappears.
+             * Remove the capacity selector
+             * from the user's ephemeral message.
              */
             await interaction.update({
                 content:
@@ -392,4 +499,17 @@ export const lfgCapacitySelectMenu = {
     }
 
 };
+
+
+/*
+ * =========================================================
+ * EXPORTS
+ * =========================================================
+ */
+
+export {
+    LFG_SUBJECT_SELECT_PREFIX,
+    LFG_DESCRIPTION_MODAL_PREFIX,
+    LFG_CAPACITY_SELECT_PREFIX,
+    SUBJECTS
 };
