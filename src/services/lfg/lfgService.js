@@ -11,6 +11,16 @@ import { logger } from '../../utils/logger.js';
  */
 const activeLfgChannels = new Map();
 
+/*
+ * Allowed LFG Study Room capacities.
+ */
+const ALLOWED_LFG_CAPACITIES = [
+    2,
+    3,
+    4,
+    5
+];
+
 /**
  * Register an existing voice channel as an LFG channel.
  *
@@ -18,15 +28,21 @@ const activeLfgChannels = new Map();
  * The LFG system does NOT create the voice channel.
  * The Join to Create Study Room system creates it.
  */
-export function registerLfgChannel(channel, creatorId) {
+export function registerLfgChannel(
+    channel,
+    creatorId
+) {
     if (!channel) {
         return false;
     }
 
-    activeLfgChannels.set(channel.id, {
-        guildId: channel.guild.id,
-        creatorId
-    });
+    activeLfgChannels.set(
+        channel.id,
+        {
+            guildId: channel.guild.id,
+            creatorId
+        }
+    );
 
     return true;
 }
@@ -41,14 +57,16 @@ export function registerLfgChannel(channel, creatorId) {
  * - Move the creator
  * - Delete the existing voice channel
  *
- * The creator must already be inside their
- * actual Study Room.
+ * It simply registers the existing Study Room
+ * and changes its maximum capacity.
  */
 export async function createLfgVoiceChannel(
     interaction,
-    subjectLabel
+    subjectLabel,
+    selectedCapacity
 ) {
     try {
+
         const member =
             interaction.member;
 
@@ -56,14 +74,34 @@ export async function createLfgVoiceChannel(
             member.voice?.channel;
 
         /*
-         * The creator must be in a voice
-         * channel first.
+         * The creator must already be inside
+         * their Study Room.
          */
         if (!currentVoiceChannel) {
             return {
                 success: false,
                 error:
                     '❌ You must be inside your Study Room before creating an LFG.'
+            };
+        }
+
+        /*
+         * Validate the selected capacity.
+         *
+         * Only 2, 3, 4, or 5 people are allowed.
+         */
+        const capacity =
+            Number(selectedCapacity);
+
+        if (
+            !ALLOWED_LFG_CAPACITIES.includes(
+                capacity
+            )
+        ) {
+            return {
+                success: false,
+                error:
+                    '❌ Invalid Study Room capacity. Please choose 2, 3, 4, or 5 people.'
             };
         }
 
@@ -75,9 +113,7 @@ export async function createLfgVoiceChannel(
          * an LFG.
          *
          * The trigger channel creates the
-         * actual Study Room. The user must
-         * wait until they are moved into
-         * that Study Room.
+         * actual Study Room.
          */
         const channelName =
             currentVoiceChannel.name
@@ -96,12 +132,10 @@ export async function createLfgVoiceChannel(
         }
 
         /*
-         * The current voice channel is now
-         * the actual Study Room.
+         * The current voice channel is the
+         * actual Study Room.
          *
-         * We simply register it as the LFG.
-         *
-         * NO new voice channel is created.
+         * We DO NOT create another channel.
          */
         registerLfgChannel(
             currentVoiceChannel,
@@ -109,10 +143,35 @@ export async function createLfgVoiceChannel(
         );
 
         /*
+         * Set the maximum number of people
+         * allowed in the existing Study Room.
+         */
+        try {
+
+            await currentVoiceChannel.setUserLimit(
+                capacity
+            );
+
+        } catch (limitError) {
+
+            logger.error(
+                'Could not set LFG Study Room capacity:',
+                limitError
+            );
+
+            return {
+                success: false,
+                error:
+                    '❌ I could not set the Study Room capacity.'
+            };
+        }
+
+        /*
          * Give the LFG creator control over
          * the existing Study Room.
          */
         try {
+
             await currentVoiceChannel.permissionOverwrites.edit(
                 interaction.user.id,
                 {
@@ -123,21 +182,28 @@ export async function createLfgVoiceChannel(
                     ManageChannels: true
                 }
             );
+
         } catch (permissionError) {
+
             logger.warn(
                 'Could not update LFG creator permissions:',
                 permissionError
             );
         }
 
+        /*
+         * Return the existing Study Room.
+         */
         return {
             success: true,
             channel: currentVoiceChannel,
             creatorId: interaction.user.id,
-            subjectLabel
+            subjectLabel,
+            userLimit: capacity
         };
 
     } catch (error) {
+
         logger.error(
             'Error registering current LFG voice channel:',
             error
@@ -196,6 +262,7 @@ async function transferLfgOwnership(
     newOwner
 ) {
     try {
+
         /*
          * Remove owner permissions from
          * the previous owner.
@@ -253,6 +320,7 @@ async function transferLfgOwnership(
         return true;
 
     } catch (error) {
+
         logger.error(
             'Error transferring LFG ownership:',
             error
@@ -283,6 +351,7 @@ export async function handleLfgVoiceStateUpdate(
     newState
 ) {
     try {
+
         const oldChannel =
             oldState.channel;
 
@@ -342,6 +411,7 @@ export async function handleLfgVoiceStateUpdate(
         if (
             remainingMembers.length === 0
         ) {
+
             activeLfgChannels.delete(
                 oldChannel.id
             );
@@ -369,6 +439,7 @@ export async function handleLfgVoiceStateUpdate(
         );
 
     } catch (error) {
+
         logger.error(
             'Error handling LFG voice state update:',
             error
