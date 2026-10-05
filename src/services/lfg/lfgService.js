@@ -13,6 +13,9 @@ const activeLfgChannels = new Map();
 
 /*
  * Allowed LFG Study Room capacities.
+ *
+ * These represent the TOTAL number of people
+ * allowed in the Study Room, including the creator.
  */
 const ALLOWED_LFG_CAPACITIES = [
     2,
@@ -132,19 +135,11 @@ export async function createLfgVoiceChannel(
         }
 
         /*
-         * The current voice channel is the
-         * actual Study Room.
-         *
-         * We DO NOT create another channel.
-         */
-        registerLfgChannel(
-            currentVoiceChannel,
-            interaction.user.id
-        );
-
-        /*
          * Set the maximum number of people
          * allowed in the existing Study Room.
+         *
+         * The selected capacity includes
+         * the LFG creator.
          */
         try {
 
@@ -162,9 +157,21 @@ export async function createLfgVoiceChannel(
             return {
                 success: false,
                 error:
-                    '❌ I could not set the Study Room capacity.'
+                    '❌ I could not set the Study Room capacity. Please make sure I have permission to manage the Study Room.'
             };
         }
+
+        /*
+         * Register the existing Study Room
+         * as an active LFG.
+         *
+         * This happens AFTER the capacity
+         * has been successfully applied.
+         */
+        registerLfgChannel(
+            currentVoiceChannel,
+            interaction.user.id
+        );
 
         /*
          * Give the LFG creator control over
