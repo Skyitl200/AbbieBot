@@ -1,27 +1,19 @@
 import {
-    EmbedBuilder
+    ActionRowBuilder,
+    StringSelectMenuBuilder
 } from 'discord.js';
 
 import { logger } from '../../../utils/logger.js';
-import { SUBJECTS } from '../../../handlers/lfgSelectMenus.js';
 
 import {
-    createLfgVoiceChannel
-} from '../../../services/lfg/lfgService.js';
+    pendingLfgDescriptions
+} from '../../../handlers/lfgSelectMenus.js';
 
 const LFG_DESCRIPTION_MODAL_PREFIX =
     'lfg_description:';
 
-const SUBJECT_EMOJIS = {
-    anatomy_1: '🦴',
-    anatomy_2: '🫀',
-    microbiology: '🦠',
-    teas: '📚',
-    program: '🎓',
-    chemistry: '🧪',
-    physics: '⚛️',
-    math: '📐'
-};
+const LFG_CAPACITY_SELECT_PREFIX =
+    'lfg_capacity:';
 
 export default {
     name: 'lfg_description',
@@ -34,13 +26,12 @@ export default {
         try {
 
             /*
-             * Get the LFG creator ID,
-             * selected subject,
-             * and selected maximum capacity.
+             * Get the LFG creator ID
+             * and selected subject.
              *
              * Custom ID format:
              *
-             * lfg_description:USER_ID:SUBJECT:CAPACITY
+             * lfg_description:USER_ID:SUBJECT
              */
             const creatorId =
                 args?.[0];
@@ -48,18 +39,12 @@ export default {
             const selectedSubject =
                 args?.[1];
 
-            const selectedCapacity =
-                Number(args?.[2]);
-
             /*
              * Validate the request.
              */
             if (
                 !creatorId ||
-                !selectedSubject ||
-                ![2, 3, 4, 5].includes(
-                    selectedCapacity
-                )
+                !selectedSubject
             ) {
                 return interaction.reply({
                     content:
@@ -70,7 +55,8 @@ export default {
 
             /*
              * Make sure the person submitting
-             * the modal is the LFG creator.
+             * the modal is the person who
+             * originally selected the subject.
              */
             if (
                 creatorId !==
@@ -79,20 +65,6 @@ export default {
                 return interaction.reply({
                     content:
                         '❌ This LFG form belongs to someone else.',
-                    ephemeral: true
-                });
-            }
-
-            /*
-             * Get the selected subject.
-             */
-            const subject =
-                SUBJECTS[selectedSubject];
-
-            if (!subject) {
-                return interaction.reply({
-                    content:
-                        '❌ Invalid LFG subject.',
                     ephemeral: true
                 });
             }
@@ -107,108 +79,88 @@ export default {
                 );
 
             /*
-             * Create the Study Room using
-             * the capacity selected by the user.
+             * Save the description temporarily.
+             *
+             * The capacity selection that comes
+             * next will use this information to
+             * finish creating the LFG.
              */
-            const result =
-                await createLfgVoiceChannel(
-                    interaction,
-                    subject.label,
-                    selectedCapacity
-                );
-
-            if (!result.success) {
-                return interaction.reply({
-                    content:
-                        result.error ||
-                        '❌ I could not create your LFG.',
-                    ephemeral: true
-                });
-            }
-
-            const channel =
-                result.channel;
+            pendingLfgDescriptions.set(
+                interaction.user.id,
+                {
+                    selectedSubject,
+                    description
+                }
+            );
 
             /*
-             * Create the real Discord
-             * voice-channel invite.
+             * Create the capacity selector.
+             *
+             * The user only has to choose one
+             * of four options:
+             *
+             * 2 people
+             * 3 people
+             * 4 people
+             * 5 people
              */
-            let voiceInvite;
-
-            try {
-
-                voiceInvite =
-                    await channel.createInvite({
-                        maxAge: 0,
-                        maxUses: 0,
-                        unique: true,
-                        reason:
-                            `LFG Study Room created by ${interaction.user.tag}`
-                    });
-
-            } catch (inviteError) {
-
-                logger.error(
-                    'Could not create LFG voice invite:',
-                    inviteError
-                );
-
-                return interaction.reply({
-                    content:
-                        '❌ I created the Study Room, but I could not create the Discord voice invite. Please make sure the bot has **Create Invite** permission.',
-                    ephemeral: true
-                });
-            }
-
-            /*
-             * Get the emoji for the selected subject.
-             */
-            const subjectEmoji =
-                SUBJECT_EMOJIS[selectedSubject] ||
-                '📚';
-
-            /*
-             * Create the public LFG post.
-             */
-            const lfgEmbed =
-                new EmbedBuilder()
-                    .setTitle(
-                        `👥 ${interaction.user.displayName} is looking for a study group!`
+            const capacityMenu =
+                new StringSelectMenuBuilder()
+                    .setCustomId(
+                        `${LFG_CAPACITY_SELECT_PREFIX}${interaction.user.id}`
                     )
-                    .setDescription(
-                        `${subjectEmoji} **Subject:** ${subject.label}\n\n` +
-                        `📝 **Description:** ${description}\n\n` +
-                        `👥 **Maximum:** ${selectedCapacity} people\n\n` +
-                        `🔊 **Study Room:** <#${channel.id}>`
+                    .setPlaceholder(
+                        '👥 Select maximum Study Room size'
+                    )
+                    .addOptions(
+                        {
+                            label: '2 people',
+                            description:
+                                'Small study group',
+                            value: '2',
+                            emoji: '👤'
+                        },
+                        {
+                            label: '3 people',
+                            description:
+                                'Small study group',
+                            value: '3',
+                            emoji: '👥'
+                        },
+                        {
+                            label: '4 people',
+                            description:
+                                'Medium study group',
+                            value: '4',
+                            emoji: '👥'
+                        },
+                        {
+                            label: '5 people',
+                            description:
+                                'Larger study group',
+                            value: '5',
+                            emoji: '👥'
+                        }
+                    );
+
+            const row =
+                new ActionRowBuilder()
+                    .addComponents(
+                        capacityMenu
                     );
 
             /*
-             * Send the LFG information first.
+             * Show the capacity selector
+             * privately to the creator.
              */
-            await interaction.channel.send({
-                embeds: [
-                    lfgEmbed
-                ]
-            });
-
-            /*
-             * Send the Discord voice invite underneath.
-             */
-            await interaction.channel.send({
+            await interaction.reply({
                 content:
-                    voiceInvite.url
-            });
-
-            /*
-             * Acknowledge the modal privately.
-             *
-             * No visible confirmation message.
-             */
-            await interaction.deferReply({
+                    '👥 **How many people should be allowed in your Study Room?**',
+                components: [
+                    row
+                ],
                 ephemeral: true
             });
-
-            await interaction.deleteReply();
 
         } catch (error) {
 
@@ -223,7 +175,7 @@ export default {
             ) {
                 await interaction.reply({
                     content:
-                        '❌ Something went wrong while creating your LFG.',
+                        '❌ Something went wrong while setting up your Study Room.',
                     ephemeral: true
                 });
             }
