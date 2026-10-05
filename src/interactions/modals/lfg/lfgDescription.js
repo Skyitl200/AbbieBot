@@ -96,8 +96,7 @@ export default {
             /*
              * Create the capacity selector.
              *
-             * The user only has to choose one
-             * of four options:
+             * The creator can choose:
              *
              * 2 people
              * 3 people
@@ -114,32 +113,44 @@ export default {
                     )
                     .addOptions(
                         {
-                            label: '2 people',
+                            label:
+                                '2 people',
                             description:
                                 'Small study group',
-                            value: '2',
-                            emoji: '👤'
+                            value:
+                                '2',
+                            emoji:
+                                '👤'
                         },
                         {
-                            label: '3 people',
+                            label:
+                                '3 people',
                             description:
                                 'Small study group',
-                            value: '3',
-                            emoji: '👥'
+                            value:
+                                '3',
+                            emoji:
+                                '👥'
                         },
                         {
-                            label: '4 people',
+                            label:
+                                '4 people',
                             description:
                                 'Medium study group',
-                            value: '4',
-                            emoji: '👥'
+                            value:
+                                '4',
+                            emoji:
+                                '👥'
                         },
                         {
-                            label: '5 people',
+                            label:
+                                '5 people',
                             description:
                                 'Larger study group',
-                            value: '5',
-                            emoji: '👥'
+                            value:
+                                '5',
+                            emoji:
+                                '👥'
                         }
                     );
 
