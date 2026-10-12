@@ -29,22 +29,22 @@ const SUBJECTS = {
 
     anatomy_1: {
         label: 'Anatomy & Physiology I',
-        emoji: '🦴'
+        emoji: '<:AP1:1557576078518648842>'
     },
 
     anatomy_2: {
         label: 'Anatomy & Physiology II',
-        emoji: '🫀'
+        emoji: '<:AP2:1557576103256784896>'
     },
 
     microbiology: {
         label: 'Microbiology',
-        emoji: '🦠'
+        emoji: '<:Microbiology:1557576299365671013>'
     },
 
     teas: {
         label: 'TEAS',
-        emoji: '📚'
+        emoji: '<:TEAS:1557576611115565076>'
     },
 
     program: {
@@ -54,20 +54,19 @@ const SUBJECTS = {
 
     chemistry: {
         label: 'Chemistry',
-        emoji: '🧪'
+        emoji: '<:Chemistry:1557576122500120587>'
     },
 
     physics: {
         label: 'Physics',
-        emoji: '⚛️'
+        emoji: '<:Physics:1557576410917507082>'
     },
 
     math: {
         label: 'Math',
-        emoji: '📐'
+        emoji: '<:Math:1558128316253470861>'
     }
 };
-
 /*
  * Temporarily stores LFG information
  * between the description modal and
