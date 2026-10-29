@@ -38,7 +38,8 @@ export default {
 
             const selectedSubject =
                 args?.[1];
-
+const selectedProgram =
+    args?.[2];
             /*
              * Validate the request.
              */
@@ -86,12 +87,13 @@ export default {
              * finish creating the LFG.
              */
             pendingLfgDescriptions.set(
-                interaction.user.id,
-                {
-                    selectedSubject,
-                    description
-                }
-            );
+    interaction.user.id,
+    {
+        selectedSubject,
+        selectedProgram,
+        description
+    }
+);
 
             /*
              * Create the capacity selector.

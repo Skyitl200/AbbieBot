@@ -25,22 +25,16 @@ const CAREER_ROLES = [
         roleId: '1549975552427954217'
     },
     {
-        name: 'X-Ray Tech Student',
+        name: 'Radiologic Technologist Student',
         emojiName: 'XrayTechStudent',
         emojiId: '1550389353740636191',
         roleId: '1549975582312501389'
     },
     {
-        name: 'Ultrasound Tech Student',
+        name: 'Diagnostic Medical Sonography Student',
         emojiName: 'UltrasoundTech',
         emojiId: '1550392240336150548',
         roleId: '1549975653837709323'
-    },
-    {
-        name: 'Radiation Therapist Student',
-        emojiName: 'RadiationTherapist',
-        emojiId: '1550395958251225158',
-        roleId: '1549975782758158376'
     },
     {
         name: 'Respiratory Therapist Student',
@@ -55,9 +49,15 @@ const CAREER_ROLES = [
         roleId: '1549976038245793802'
     },
     {
+        name: 'Physician Assistant Student',
+        emojiName: 'PhysicianAssistant',
+        emojiId: '1565181634230231081',
+        roleId: '1565185621520162896'
+    },
+    {
         name: 'Medical Student',
         emojiName: 'MedicalStudent',
-        emojiId: '1550385070064406628',
+        emojiId: '1565181460384718869',
         roleId: '1550349138606956654'
     }
 ];

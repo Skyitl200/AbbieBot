@@ -6,6 +6,7 @@ import {
     StringSelectMenuBuilder,
     EmbedBuilder
 } from 'discord.js';
+import path from 'node:path';
 
 import { logger } from '../utils/logger.js';
 
@@ -29,22 +30,26 @@ const SUBJECTS = {
 
     anatomy_1: {
         label: 'Anatomy & Physiology I',
-        emoji: '<:AP1:1557576078518648842>'
+        emoji: '<:AP1:1557576078518648842>',
+        image: 'LFGAP1.png'
     },
 
     anatomy_2: {
         label: 'Anatomy & Physiology II',
-        emoji: '<:AP2:1557576103256784896>'
+        emoji: '<:AP2:1557576103256784896>',
+        image: 'LFGAP2.png'
     },
 
     microbiology: {
         label: 'Microbiology',
-        emoji: '<:Microbiology:1557576299365671013>'
+        emoji: '<:Microbiology:1557576299365671013>',
+        image: 'LFGMICROBIOLOGY.png'
     },
 
     teas: {
         label: 'TEAS',
-        emoji: '<:TEAS:1557576611115565076>'
+        emoji: '<:TEAS:1557576611115565076>',
+        image: 'LFGTEAS.png'
     },
 
     program: {
@@ -54,17 +59,79 @@ const SUBJECTS = {
 
     chemistry: {
         label: 'Chemistry',
-        emoji: '<:Chemistry:1557576122500120587>'
+        emoji: '<:Chemistry:1557576122500120587>',
+        image: 'LFGCHEMISTRY.png'
     },
 
     physics: {
         label: 'Physics',
-        emoji: '<:Physics:1557576410917507082>'
+        emoji: '<:Physics:1557576410917507082>',
+        image: 'LFGPHYSICS.png'
     },
 
     math: {
         label: 'Math',
-        emoji: '<:Math:1558128316253470861>'
+        emoji: '<:Math:1558128316253470861>',
+        image: 'LFGMATH.png'
+    }
+
+};
+/*
+ * Healthcare programs.
+ */
+const PROGRAMS = {
+    nursing: {
+        label: 'Nursing School',
+        emoji: '🩺',
+        image: 'LFGRNPROGRAM.png'
+    },
+
+    dental_hygienist: {
+        label: 'Dental Hygienist School',
+        emoji: '🦷',
+        image: 'LFGDENTALHYGIENISTPROGRAM.png'
+    },
+
+    dental_assistant: {
+        label: 'Dental Assistant School',
+        emoji: '🦷',
+        image: 'LFGDENTALASSISTANTPROGRAM.png'
+    },
+
+    radiologic_technologist: {
+        label: 'Radiologic Technologist School',
+        emoji: '🩻',
+        image: 'LFGRADIOLOGICTECHNOLOGISTPROGRAM.png'
+    },
+
+    diagnostic_medical_sonography: {
+        label: 'Diagnostic Medical Sonography',
+        emoji: '🔊',
+        image: 'LFGDIAGNOSTICMEDICALSONOGRAPHYPROGRAM.png'
+    },
+
+    respiratory_therapist: {
+        label: 'Respiratory Therapist School',
+        emoji: '🫁',
+        image: 'LFGRESPIRATORYTHERAPISTPROGRAM.png'
+    },
+
+    physical_therapy_assistant: {
+        label: 'Physical Therapy Assistant School',
+        emoji: '🏃',
+        image: 'LFGPHYSICALTHERAPYASSISTANTPROGRAM.png'
+    },
+
+    physician_assistant: {
+        label: 'Physician Assistant School',
+        emoji: '🩺',
+        image: 'LFGPHYSICIANASSISTANTPROGRAM.png'
+    },
+
+    medical_school: {
+        label: 'Medical School',
+        emoji: '🧑‍⚕️',
+        image: 'LFGMEDICALSCHOOL.png'
     }
 };
 /*
@@ -95,11 +162,50 @@ export const lfgSubjectSelectMenu = {
 
         try {
 
-            const selectedSubject =
-                interaction.values[0];
+const selectedSubject =
+    interaction.values[0];
 
-            const subject =
-                SUBJECTS[selectedSubject];
+const subject =
+    SUBJECTS[selectedSubject];
+
+                /*
+ * If the user selected Program,
+ * show the Healthcare Program dropdown.
+ */
+if (selectedSubject === 'program') {
+
+    const programMenu =
+        new StringSelectMenuBuilder()
+            .setCustomId(
+                `lfg_program:${interaction.user.id}`
+            )
+            .setPlaceholder(
+                'Healthcare Program'
+            )
+            .addOptions(
+                Object.entries(PROGRAMS).map(
+                    ([value, program]) => ({
+                        label: program.label,
+                        value,
+                        emoji: program.emoji
+                    })
+                )
+            );
+
+    const programRow =
+        new ActionRowBuilder()
+            .addComponents(
+                programMenu
+            );
+
+    return interaction.update({
+        content:
+            '🎓 **Healthcare Program**',
+        components: [
+            programRow
+        ]
+    });
+}
 
             if (!subject) {
 
@@ -118,14 +224,14 @@ export const lfgSubjectSelectMenu = {
              *
              * lfg_description:USER_ID:SUBJECT
              */
-            const modal =
-                new ModalBuilder()
-                    .setCustomId(
-                        `${LFG_DESCRIPTION_MODAL_PREFIX}${interaction.user.id}:${selectedSubject}`
-                    )
-                    .setTitle(
-                        `${subject.label} — LFG`
-                    );
+   const modal =
+    new ModalBuilder()
+        .setCustomId(
+            `${LFG_DESCRIPTION_MODAL_PREFIX}${interaction.user.id}:${selectedSubject}`
+        )
+        .setTitle(
+            `${subject.label} - LFG`
+        );
 
             const descriptionInput =
                 new TextInputBuilder()
@@ -201,7 +307,132 @@ export const lfgSubjectSelectMenu = {
  * Then the existing Study Room is registered
  * as the LFG and its capacity is updated.
  */
+/*
+ * =========================================================
+ * HEALTHCARE PROGRAM SELECT MENU
+ * =========================================================
+ */
 
+export const lfgProgramSelectMenu = {
+
+    name: 'lfg_program',
+
+    async execute(interaction) {
+
+        try {
+
+            /*
+             * Custom ID:
+             *
+             * lfg_program:USER_ID
+             */
+
+            const parts =
+                interaction.customId.split(':');
+
+            const creatorId =
+                parts[1];
+
+            const selectedProgram =
+                interaction.values[0];
+
+            /*
+             * Validate creator.
+             */
+            if (
+                !creatorId ||
+                creatorId !== interaction.user.id
+            ) {
+                return interaction.reply({
+                    content:
+                        '❌ This Healthcare Program selection belongs to someone else.',
+                    ephemeral: true
+                });
+            }
+
+            /*
+             * Validate program.
+             */
+            const program =
+                PROGRAMS[selectedProgram];
+
+            if (!program) {
+                return interaction.reply({
+                    content:
+                        '❌ Invalid Healthcare Program.',
+                    ephemeral: true
+                });
+            }
+
+            /*
+             * Create the description modal.
+             *
+             * Custom ID:
+             *
+             * lfg_description:USER_ID:PROGRAM:PROGRAM_VALUE
+             */
+
+            const modal =
+                new ModalBuilder()
+                    .setCustomId(
+                        `${LFG_DESCRIPTION_MODAL_PREFIX}${interaction.user.id}:program:${selectedProgram}`
+                    )
+                    .setTitle(
+                        `${program.label} — LFG`
+                    );
+
+            const descriptionInput =
+                new TextInputBuilder()
+                    .setCustomId(
+                        'lfg-description'
+                    )
+                    .setLabel(
+                        'What are you looking for?'
+                    )
+                    .setPlaceholder(
+                        'Example: Looking for classmates to study with...'
+                    )
+                    .setStyle(
+                        TextInputStyle.Paragraph
+                    )
+                    .setRequired(true)
+                    .setMinLength(1)
+                    .setMaxLength(500);
+
+            const row =
+                new ActionRowBuilder()
+                    .addComponents(
+                        descriptionInput
+                    );
+
+            modal.addComponents(
+                row
+            );
+
+            await interaction.showModal(
+                modal
+            );
+
+        } catch (error) {
+
+            logger.error(
+                'LFG program select error:',
+                error
+            );
+
+            if (
+                !interaction.replied &&
+                !interaction.deferred
+            ) {
+                await interaction.reply({
+                    content:
+                        '❌ Something went wrong while setting up your Healthcare Program LFG.',
+                    ephemeral: true
+                });
+            }
+        }
+    }
+};
 export const lfgCapacitySelectMenu = {
 
     name: 'lfg_capacity',
@@ -300,17 +531,20 @@ export const lfgCapacitySelectMenu = {
 
             }
 
-            const selectedSubject =
-                pending.selectedSubject;
+const selectedSubject =
+    pending.selectedSubject;
 
-            const description =
-                pending.description;
+const selectedProgram =
+    pending.selectedProgram;
 
-            /*
-             * Get subject information.
-             */
-            const subject =
-                SUBJECTS[selectedSubject];
+const description =
+    pending.description;
+
+/*
+ * Get subject information.
+ */
+const subject =
+    SUBJECTS[selectedSubject];
 
             if (!subject) {
 
@@ -419,30 +653,62 @@ export const lfgCapacitySelectMenu = {
              *
              * 🔊 Woods's Study Room
              */
+            const program =
+    selectedProgram
+        ? PROGRAMS[selectedProgram]
+        : null;
+        const lfgImage =
+    program?.image || subject.image;
             const lfgEmbed =
-                new EmbedBuilder()
-                    .setDescription(
+    new EmbedBuilder()
+        .setDescription(
+            `👥 **${interaction.member.displayName} is looking for a study group!**\n\n` +
 
-                        `👥 **${interaction.member.displayName} is looking for a study group!**\n\n` +
+            (
+                subject.label === 'Program' && program
+                    ? `${program.emoji} **Program:** ${program.label}\n\n`
+                    : `${subject.emoji} **Subject:** ${subject.label}\n\n`
+            ) +
 
-                        `${subject.emoji} **Subject:** ${subject.label}\n\n` +
+            `📝 **Description:** ${description}\n\n` +
 
-                        `📝 **Description:** ${description}\n\n` +
+            `👥 **Maximum:** ${selectedCapacity} people\n\n` +
 
-                        `👥 **Maximum:** ${selectedCapacity} people\n\n` +
-
-                        `🔊 **${channel.name}**`
-
-                    );
-
+            `🔊 **${channel.name}**`
+        );
+if (lfgImage) {
+    lfgEmbed.setThumbnail(
+        `attachment://${lfgImage}`
+    );
+}
             /*
              * Send the LFG information first.
              */
-            await interaction.channel.send({
-                embeds: [
-                    lfgEmbed
-                ]
-            });
+            const lfgImagePath = lfgImage
+    ? path.join(
+        process.cwd(),
+        'src',
+        'assets',
+        'lfg',
+        lfgImage
+    )
+    : null;
+
+await interaction.channel.send({
+    embeds: [
+        lfgEmbed
+    ],
+    ...(lfgImagePath
+        ? {
+            files: [
+                {
+                    attachment: lfgImagePath,
+                    name: lfgImage
+                }
+            ]
+        }
+        : {})
+});
 
             /*
              * Send the REAL Discord voice invite.
@@ -510,5 +776,6 @@ export {
     LFG_SUBJECT_SELECT_PREFIX,
     LFG_DESCRIPTION_MODAL_PREFIX,
     LFG_CAPACITY_SELECT_PREFIX,
-    SUBJECTS
+    SUBJECTS,
+    PROGRAMS
 };
