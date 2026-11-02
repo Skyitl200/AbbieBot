@@ -47,6 +47,25 @@ const AP_CATEGORIES = {
         label: 'Random A&P',
         emoji: '🎲'
     },
+    anatomical_terminology: {
+    label: 'Anatomical Terminology',
+    emoji: '🧍'
+},
+
+chemistry_biochemistry: {
+    label: 'Chemistry & Biochemistry',
+    emoji: '🧪'
+},
+
+cells: {
+    label: 'Cells',
+    emoji: '🔬'
+},
+
+tissues: {
+    label: 'Tissues',
+    emoji: '🧫'
+},
     endocrine: {
         label: 'Endocrine System',
         emoji: '🧪'
@@ -210,46 +229,36 @@ function buildQuestionCountMenu(selectedCategory) {
             'Choose number of questions...'
         )
         .addOptions(
-            new StringSelectMenuOptionBuilder()
-                .setLabel('1 Question')
-                .setDescription(
-                    'Quick practice question'
-                )
-                .setValue(
-                    `${selectedCategory}|1`
-                )
-                .setEmoji('1️⃣'),
+    new StringSelectMenuOptionBuilder()
+        .setLabel('5 Questions')
+        .setDescription('Short practice session')
+        .setValue(`${selectedCategory}|5`)
+        .setEmoji('5️⃣'),
 
-            new StringSelectMenuOptionBuilder()
-                .setLabel('5 Questions')
-                .setDescription(
-                    'Short practice session'
-                )
-                .setValue(
-                    `${selectedCategory}|5`
-                )
-                .setEmoji('5️⃣'),
+    new StringSelectMenuOptionBuilder()
+        .setLabel('20 Questions')
+        .setDescription('Full study session')
+        .setValue(`${selectedCategory}|20`)
+        .setEmoji('📝'),
 
-            new StringSelectMenuOptionBuilder()
-                .setLabel('20 Questions')
-                .setDescription(
-                    'Full study session'
-                )
-                .setValue(
-                    `${selectedCategory}|20`
-                )
-                .setEmoji('📝'),
+    new StringSelectMenuOptionBuilder()
+        .setLabel('50 Questions')
+        .setDescription('Challenge yourself')
+        .setValue(`${selectedCategory}|50`)
+        .setEmoji('🔥'),
 
-            new StringSelectMenuOptionBuilder()
-                .setLabel('50 Questions')
-                .setDescription(
-                    'Challenge yourself'
-                )
-                .setValue(
-                    `${selectedCategory}|50`
-                )
-                .setEmoji('🔥')
-        );
+    new StringSelectMenuOptionBuilder()
+        .setLabel('150 Questions')
+        .setDescription('Advanced practice session')
+        .setValue(`${selectedCategory}|150`)
+        .setEmoji('💪'),
+
+    new StringSelectMenuOptionBuilder()
+        .setLabel('600 Questions')
+        .setDescription('Complete question bank challenge')
+        .setValue(`${selectedCategory}|600`)
+        .setEmoji('🏆')
+);
 
     const row = new ActionRowBuilder()
         .addComponents(menu);
@@ -447,10 +456,11 @@ export const quizCategorySelectMenu = {
  * THIRD MENU
  *
  * Choose:
- * 1
  * 5
  * 20
  * 50
+ * 150
+ * 600
  *
  * Then create the quiz session.
  */
@@ -479,9 +489,9 @@ export const quizCountSelectMenu = {
                 !AP_CATEGORIES[
                     selectedCategory
                 ] ||
-                ![1, 5, 20, 50].includes(
-                    questionCount
-                )
+                ![5, 20, 50, 150, 600].includes(
+    questionCount
+)
             ) {
                 await interaction.followUp({
                     content:
