@@ -741,3 +741,15 @@ Circulatory source qualifications applied during authoring:
   S1 and S2 are associated with valve closure and surrounding vibrations.
   Cardiac output is HR × SV for one ventricle; it is not one immutable normal
   value. Additional basic fetal facts follow the developmental objective on slide 4.
+
+## Lecture images
+
+All 10,200 currently authored A&P Lecture questions have a lecture figure
+reference. Shared figures appear with explanations; **Preview figure** opens a
+private optional hint that may contain answer labels. Source lecture and slide
+are displayed separately from the question's source. Matching is automatic, and
+related figures sometimes show broader context rather than the precise process
+being asked about. Existing database questions in other classes are unchanged.
+
+See `study-assets/README.md` and `images.json` for attribution and provenance.
+Run `npm run validate:study:images` to check coverage, citations, sizes and hashes.

@@ -2,6 +2,7 @@ import {
     ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, MessageFlags,
     ModalBuilder, StringSelectMenuBuilder, TextInputBuilder, TextInputStyle,
 } from 'discord.js';
+import { imageForQuestion, addLectureImage, lecturePreview } from './images.js';
 import { STUDY_TOPICS, TOPIC_BY_ID } from './topics.js';
 import { STUDY_CLASSES, CLASS_BY_ID, loadClassCategories, loadClassQuestions } from './catalog.js';
 import { settleStudyReward, COIN_EMOJI, BALANCE_EMOJI } from './rewards.js';
@@ -103,6 +104,7 @@ export function questionMessage(session) {
             ));
         }
     }
+    if (imageForQuestion(q)) components.push(row(button(actionId(session, 'image'), '📖 Preview figure (may show labels)', ButtonStyle.Secondary)));
     const label = session.topicLabel || TOPIC_BY_ID.get(session.topicId)?.label || 'Random A&P';
     return { content: '', embeds: [new EmbedBuilder().setTitle(`Question ${session.index + 1} of ${session.questions.length}`)
         .setDescription(description).setFooter({ text: `${label} • ${TYPE_LABELS[q.type]} • ${q.difficulty} • Score: ${session.score}` })], components };
@@ -131,7 +133,11 @@ export function resultMessage(session, correct) {
     const components = unpaid ? [row(button(actionId(session, 'reward'), '🪙 Retry coins'))]
         : finished ? [row(button(`study:classes:${session.userId}`, '📚 Choose another class', ButtonStyle.Secondary))]
         : [row(button(actionId(session, 'next'), '➡️ Next Question'))];
-    return { content: '', embeds: [embed], components };
+    return addLectureImage({ content: '', embeds: [embed], components }, q);
+}
+
+async function editStudyReply(interaction, payload) {
+    return interaction.editReply({ attachments: [], files: [], ...payload });
 }
 
 async function privateError(interaction, message) {
@@ -146,7 +152,7 @@ export async function handleStudyInteraction(interaction, client, args) {
         if (interaction.user.id !== ownerId) return await privateError(interaction, 'This study test belongs to another student. Use /test to start your own.');
         if (action === 'classes') {
             await interaction.deferUpdate();
-            await interaction.editReply(classMessage(ownerId));
+            await editStudyReply(interaction, classMessage(ownerId));
             return;
         }
         if (action === 'class' || action === 'classpage') {
@@ -154,10 +160,10 @@ export async function handleStudyInteraction(interaction, client, args) {
             if (!CLASS_BY_ID.has(classId)) throw new Error('Unknown study class');
             await interaction.deferUpdate();
             if (classId === 'ap_lecture') {
-                await interaction.editReply(topicMessage(ownerId, await loadQuestionBanks()));
+                await editStudyReply(interaction, topicMessage(ownerId, await loadQuestionBanks()));
             } else {
                 const categories = await loadClassCategories(client, classId);
-                await interaction.editReply(classCategoriesMessage(ownerId, classId, categories, action === 'classpage' ? Number(index) : 0));
+                await editStudyReply(interaction, classCategoriesMessage(ownerId, classId, categories, action === 'classpage' ? Number(index) : 0));
             }
             return;
         }
@@ -170,7 +176,7 @@ export async function handleStudyInteraction(interaction, client, args) {
             const available = category ? category.count : categories.reduce((sum, item) => sum + item.count, 0);
             if (!available) throw new Error('This class has no questions in that category yet.');
             const course = CLASS_BY_ID.get(token);
-            await interaction.editReply(countMessage(ownerId, `${course.label} • ${category?.label || 'Random'}`, available, `study:coursecount:${ownerId}:${token}:${selected}`));
+            await editStudyReply(interaction, countMessage(ownerId, `${course.label} • ${category?.label || 'Random'}`, available, `study:coursecount:${ownerId}:${token}:${selected}`));
             return;
         }
         if (action === 'coursecount') {
@@ -181,7 +187,7 @@ export async function handleStudyInteraction(interaction, client, args) {
             const session = createStudySession(interaction.guildId, ownerId, questions, `class_${token}`);
             session.classId = token;
             session.topicLabel = `${course.label} • ${categories.find(item => item.token === index)?.label || 'Random'}`;
-            await interaction.editReply(questionMessage(session));
+            await editStudyReply(interaction, questionMessage(session));
             return;
         }
         if (action === 'topic') {
@@ -191,7 +197,7 @@ export async function handleStudyInteraction(interaction, client, args) {
             const banks = await loadQuestionBanks();
             const available = topicId === 'random' ? [...banks.values()].flat().length : banks.get(topicId).length;
             if (!available) throw new Error('This topic is still being prepared. Please choose another topic.');
-            await interaction.editReply(countMessage(ownerId, TOPIC_BY_ID.get(topicId)?.label || 'Random A&P', available, `study:count:${ownerId}:${topicId}`));
+            await editStudyReply(interaction, countMessage(ownerId, TOPIC_BY_ID.get(topicId)?.label || 'Random A&P', available, `study:count:${ownerId}:${topicId}`));
             return;
         }
         if (action === 'count') {
@@ -200,12 +206,18 @@ export async function handleStudyInteraction(interaction, client, args) {
             const questions = selectQuestions(banks, token, Number(interaction.values[0]));
             const session = createStudySession(interaction.guildId, ownerId, questions, token);
             session.classId = 'ap_lecture';
-            await interaction.editReply(questionMessage(session));
+            await editStudyReply(interaction, questionMessage(session));
             return;
         }
         const session = getStudySession(interaction.guildId, ownerId, token);
         checkStudyAction(session, index, revision);
         const q = session.questions[session.index];
+        if (action === 'image') {
+            if (!imageForQuestion(q)) throw new Error('This question has no lecture figure.');
+            await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+            await editStudyReply(interaction, lecturePreview(q));
+            return;
+        }
         if (action !== 'next' && action !== 'reward' && session.answered) throw new Error('This question has already been answered.');
         if (action === 'blank') {
             if (q.type !== 'fill_blank') throw new Error('This question does not accept a typed answer');
@@ -222,7 +234,7 @@ export async function handleStudyInteraction(interaction, client, args) {
             const pending = settleStudyReward(session, client);
             await interaction.deferUpdate();
             await pending;
-            await interaction.editReply(resultMessage(session, true));
+            await editStudyReply(interaction, resultMessage(session, true));
             return;
         } else if (action === 'next') {
             nextStudyQuestion(session);
@@ -243,11 +255,11 @@ export async function handleStudyInteraction(interaction, client, args) {
             const pending = settleStudyReward(session, client);
             await interaction.deferUpdate();
             await pending;
-            await interaction.editReply(resultMessage(session, correct));
+            await editStudyReply(interaction, resultMessage(session, correct));
             return;
         }
         await interaction.deferUpdate();
-        await interaction.editReply(payload);
+        await editStudyReply(interaction, payload);
     } catch (error) {
         // Log the detailed failure; malformed banks should never be presented as student answers.
         const { logger } = await import('../../utils/logger.js');
