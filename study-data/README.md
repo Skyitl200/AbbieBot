@@ -1,7 +1,7 @@
 # Anatomy study questions: work in progress
 
 The requested final bank is **23 topics × 600 questions = 13,800**. The current
-bank contains **12,000 questions**:
+bank contains **12,600 questions**:
 
 | Topic | Multiple choice | Fill in the blank | Ordering | Total |
 | --- | ---: | ---: | ---: | ---: |
@@ -23,13 +23,14 @@ bank contains **12,000 questions**:
 | Blood Vessels | 384 | 156 | 60 | 600 |
 | Lymphatic System | 380 | 160 | 60 | 600 |
 | Respiratory System | 380 | 160 | 60 | 600 |
+| Digestive System | 380 | 160 | 60 | 600 |
 | Immune System | 452 | 102 | 46 | 600 |
 | Urinary System | 453 | 92 | 55 | 600 |
 
-The other 3 new topic banks are not yet populated. **1,800 questions remain**
+The other 2 new topic banks are not yet populated. **1,200 questions remain**
 to reach the requested total. Anatomical Directions, Basic Chemistry, Living Cells,
-Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Blood Vessels, Lymphatic System, Respiratory System, Autonomic Nervous System, Immune System, and Urinary
-System have reached their 600-question targets; the other 3 topics remain
+Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Blood Vessels, Lymphatic System, Respiratory System, Digestive System, Autonomic Nervous System, Immune System, and Urinary
+System have reached their 600-question targets; the other 2 topics remain
 incomplete. These are authored
 study drafts, not a claim of independent medical review. The
 existing `quiz-data` files and database rows have been retained until replacements
@@ -747,7 +748,7 @@ Circulatory source qualifications applied during authoring:
 
 ## Lecture images
 
-All 12,000 currently authored A&P Lecture questions have a lecture figure
+All 12,600 currently authored A&P Lecture questions have a lecture figure
 reference. Shared figures appear with explanations; **Preview figure** opens a
 private optional hint that may contain answer labels. Source lecture and slide
 are displayed separately from the question's source. Matching is automatic, and
@@ -777,8 +778,8 @@ study draft, not independent medical review.
 
 Rebuild the new bank with `python scripts/study-authoring/blood_vessels.py`;
 run `python scripts/buildStudyImageIndex.py --extend` to add new figure references
-while preserving mappings for existing questions. Three topics remain empty:
-Digestive System, Water & Fluid Balance, and Reproductive System.
+while preserving mappings for existing questions. Two topics remain empty:
+Water & Fluid Balance and Reproductive System.
 
 
 ### Lymphatic System
@@ -841,4 +842,40 @@ Author-specified `figure_slide` hints must resolve to an actual source image. Al
 study drafts, not independent medical review.
 
 Validation: `npm run validate:study:complete -- --topics=respiratory`,
+`npm run validate:study:images`, and `npm run test:study`.
+
+
+### Digestive System
+
+The Digestive System bank adds 600 introductory exercises: 380 multiple choice,
+160 fill-in-the-blank, and 60 three-step ordering tasks. It covers alimentary
+canal and accessory organs, tissue layers, motility, digestive secretions,
+macronutrient breakdown, absorption, colonic function, and hepatic/biliary routes.
+Short medical examples include reflux, B12 handling, pancreatic secretion,
+gallstones, and malabsorption. No calculation sweeps or conversion drills are used.
+
+Related exercises revisit concepts through identification, functional facts,
+missing details, and applications; they are not 600 distinct biological facts.
+Clinical extensions and corrections beyond the slide wording are marked in
+source metadata. Rebuild with `python scripts/study-authoring/digestive.py`.
+
+Clarifications include the three usual mucosal components, variable serosa versus
+adventitia coverage, regional retroperitoneal exceptions, G-cell gastrin secretion,
+heartburn versus GERD, cecum versus appendix, and four principal colon regions.
+Classic hepatic lobules center on a central vein; blood and bile use separate
+routes. Bile is produced by liver and stored in gallbladder; emulsification is
+not enzymatic hydrolysis. Long-chain lipids often enter lymph first, whereas
+many sugars and amino acids enter portal blood. Not all pancreatic enzymes are
+zymogens. Simple antacids neutralize acid, while acid-suppression medicines act
+through distinct targets. The bank avoids absolute toxin-free-liver claims and
+the claim that life after stomach removal is impossible.
+
+Every question includes a source-linked lecture figure. Actual cited diagram
+slides are preferred, and related figures are labeled as broader context where
+needed. Gallstone items explicitly use the biliary-duct anatomy figure because
+the gallstone slide has no image. All 12,000 previously published question-image
+mappings are preserved.
+These are authored study drafts, not independent medical review.
+
+Validation: `npm run validate:study:complete -- --topics=digestive`,
 `npm run validate:study:images`, and `npm run test:study`.
