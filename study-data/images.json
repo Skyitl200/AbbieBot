@@ -11881,6 +11881,568 @@
           "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
         }
       ]
+    },
+    "8b04ee5d7b831ae47920": {
+      "file": "8b04ee5d7b831ae47920.jpg",
+      "width": 555,
+      "height": 789,
+      "bytes": 91282,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        555,
+        789
+      ],
+      "original_sha256": "fe6ebb947ca919bab59cf0b11c2d07ae2bf165f021c476d6ed9490b00cf2b71d",
+      "sha256": "8b04ee5d7b831ae4792023d95338e5ab6bd8db68a2dc32656954ee3486c8eaf7",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 38,
+          "alt": "This figure shows the structure and the different organs in the female reproductive system. The top panel shows the lateral view and the bottom panel shows the anterior view.",
+          "slide_text": "2-Female Reproductive Anatomy",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 38,
+          "alt": "",
+          "slide_text": "2-Female Reproductive Anatomy",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 40,
+          "alt": "The panel shows the lateral view and the bottom panel shows the anterior view.",
+          "slide_text": "1-Ovaries\nThe ovaries are the female gonads.\nTwo regions:\nOuter portion (the cortex) is composed of a tissue framework called the ovarian stroma that forms the bulk of the adult ovary.\nThe inner ovarian medulla is the site of blood vessels, lymph vessels, and the nerves of the ovary.\nEasy concepts",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "843f5db9eba961ea38ec": {
+      "file": "843f5db9eba961ea38ec.jpg",
+      "width": 818,
+      "height": 393,
+      "bytes": 83646,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        818,
+        393
+      ],
+      "original_sha256": "28650c4df939a434fac565abd73672b1ec7ebb2c4603db5f89028985aa9cfea4",
+      "sha256": "843f5db9eba961ea38ecca5e0c3e7ccdfc1658fe0eaebdb74cb7879d7039ce14",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 42,
+          "alt": "This diagram shows the uterus and ovaries in the center. To the left is a micrograph showing the ultrastructure of the ovaries and to the right is a micrograph showing the ultrastructure of the uterus.",
+          "slide_text": "The Uterine Tubes\nAlso called fallopian tubes or oviducts.\nServe as the conduit of the oocyte from the ovary to the uterus.\nFour sections:\nThe isthmus: narrow medial end that is connected to the uterus. \nAmpulla: fertilization site.\nThe infundibulum: medial part\nFimbriae; slender and finger-like projections. Receive oocyte from ovary\nEasy concepts",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 43,
+          "alt": "This diagram shows the uterus and ovaries in the center. The right is a micrograph showing the ultrastructure of the uterus.",
+          "slide_text": "The Uterus\nA muscular organ that nourishes and supports the growing embryo.\nThree sections.\nFundus the superior portion of the uterus. \nThe body is the middle section \nThe cervix is the narrow inferior portion of the uterus that projects into the vagina. Produces mucus secretions that can facilitate sperm movement through the reproductive tract.\n\n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 45,
+          "alt": "This diagram shows the uterus and ovaries in the center. The right is a micrograph showing the ultrastructure of the uterus.",
+          "slide_text": "1-The Uterus Wall\nThree layers. \nThe serous membrane, or perimetrium: covers the exterior portion of the uterus.\nMyometrium: A thick layer of smooth muscle responsible for uterine contractions.  \nThe endometrium innermost layer contains a connective tissue lining.\nConsists of two layers: the stratum basalis and the stratum functionalis (the basal and functional layers).",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "829b09184e4304e423ff": {
+      "file": "829b09184e4304e423ff.jpg",
+      "width": 690,
+      "height": 578,
+      "bytes": 54395,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        690,
+        578
+      ],
+      "original_sha256": "49fe3b9cd4a4a09d8c7b9b9a4139903169d144440652fb6fafad49ea8738bbcc",
+      "sha256": "829b09184e4304e423ff7dfca170f8611ac3bb48ca0c8dda2ea8943c937f8b12",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 54,
+          "alt": "This flowchart shows the formation of oocytes in the female. The top half of the flowchart is before birth and the bottom half is after puberty. A callout to the left also shows the eggs before and after sperm penetration.",
+          "slide_text": "1-Follicular phase: Oogenesis\nGametogenesis in females is called oogenesis.\nBegins with the ovarian stem cells, or oogonia.\nOogonia form primary oocytes in the fetal ovary prior to birth.\nThe primary oocytes stop developing until the puberty",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 55,
+          "alt": "This flowchart shows the formation of oocytes in the female. The top half of the flowchart is before birth and the bottom half is after puberty. A callout to the left also shows the eggs before and after sperm penetration.",
+          "slide_text": "2-Follicular phase: Oogenesis\nAfter puberty, each month several of the primary oocytes undergo a second division, giving a secondary oocyte. \nUltimately, one or two at maximum will turn into an ovum that is ready for fertilization.\n Ovulation is the release of an oocyte from the ovary",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "016d895265449b6796ee": {
+      "file": "016d895265449b6796ee.jpg",
+      "width": 743,
+      "height": 686,
+      "bytes": 123976,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        743,
+        686
+      ],
+      "original_sha256": "0b3a72c39e1c1c745b8895bb236a587cecd957e0d32f235409a6b19a9660a6c1",
+      "sha256": "016d895265449b6796ee303af0ef0ca8d7cde0c7795b34236988bbacc8e1ff9c",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 9,
+          "alt": "This diagram shows the cross section of the testis.",
+          "slide_text": "1-The Testes\nThe male reproductive organ.\nProduce both sperm and androgens, such as testosterone, and are active throughout the reproductive lifespan of the male.\nSurrounded by tough dense connective tissue called tunica which forms septa that separates lobules.  ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 10,
+          "alt": "This diagram shows the cross section of the testis.",
+          "slide_text": "2-The Testes\nWithin the lobules, sperm develop in structures called seminiferous tubules form the bulk of each testis.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 11,
+          "alt": "This diagram shows the cross section of the testis.",
+          "slide_text": "3-The Testes\nSeminiferous tubules contain several cell types\nSpermatogenic (sperms forming) cells. These are the main cells. \nSertoli cells. Supporting cells that secret molecules to promote sperm production\nInterstitial cells located between the seminiferous tubules. \nProduce testosterone which is important in sperm maturation",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 12,
+          "alt": "This diagram shows the cross section of the testis.",
+          "slide_text": "4-The Testes\nDeveloped sperms move to straight tubules and from there into a fine meshwork of tubules called the rete testes.\nSperms then move to efferent ductules then to epididymis. ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 13,
+          "alt": "This diagram shows the cross section of the testis.",
+          "slide_text": "5-The Testes\nEpididymis has head, body and tail.\nSperms enter at the head and move toward the tail.\nThrough this movement, sperms mature. \nAt the tail, sperms are stored until ejaculation",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "27486ecc3c69b5a8ba55": {
+      "file": "27486ecc3c69b5a8ba55.jpg",
+      "width": 800,
+      "height": 352,
+      "bytes": 59890,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        800,
+        352
+      ],
+      "original_sha256": "f154f6a2d831a40473ab28d5a4ee76e804285e3d13ea63cb8bdfa2b9cc7d0d31",
+      "sha256": "27486ecc3c69b5a8ba55cd68a472ad39e4f0a84d87cfd8064921f10a6c3e24bd",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 8,
+          "alt": "This figure shows the scrotum and testes. The left panel shows the external view of the scrotum, the middle panel shows the muscle layer and the right panel shows the deep tissues of the scrotum.",
+          "slide_text": "Scrotum\nA skin-covered muscular sack called the that extends from the body behind the penis and contains testes \nThis location is important in sperm production in the testes  which are kept 2 to 4°C below body temperature.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "5459527bbecab7d5effc": {
+      "file": "5459527bbecab7d5effc.jpg",
+      "width": 822,
+      "height": 594,
+      "bytes": 113141,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        822,
+        594
+      ],
+      "original_sha256": "794195e79513985d117da6cc32c112164ec3f83e4f923f432c4089529eb85bdc",
+      "sha256": "5459527bbecab7d5effccd0a529cc9184e28c7582329e7d1a78a0aba761cbbca",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 15,
+          "alt": "The panel shows a micrograph with the cross section of a seminiferous tubule.",
+          "slide_text": "1-Spermatogenesis\nThe process of forming sperms\nBegins at puberty, after which time sperm are produced constantly throughout a man’s life.\nOne production cycle, from spermatogonia through formed sperm, takes approximately 64 days. \nA new cycle starts approximately every 16 days",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 16,
+          "alt": "The panel shows a micrograph with the cross section of a seminiferous tubule.",
+          "slide_text": "2-Spermatogenesis\nMitosis of a spermatogonial stem cell involves a single cell division that results in two identical, diploid daughter cells (spermatogonia to primary spermatocyte). \nMeiosis has two rounds of cell division: primary spermatocyte to secondary spermatocyte, and then secondary spermatocyte to spermatid. \nThis produces four haploid daughter cells (spermatids).",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "c5db5c702d5c1a649053": {
+      "file": "c5db5c702d5c1a649053.jpg",
+      "width": 727,
+      "height": 198,
+      "bytes": 29719,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        727,
+        198
+      ],
+      "original_sha256": "bb8c1aa88c3ccd940f2d97922ea691f60466ae4b7634ccd9e2d6f8099fd43c4a",
+      "sha256": "c5db5c702d5c1a649053d84d43d7233e657bbbe25a69e1347e09ad94aa42355e",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 17,
+          "alt": "This diagram shows the structure of sperm; the major parts are labeled.",
+          "slide_text": "Structure of Formed Sperm\nSperm have a distinctive head, mid-piece, and tail region.\nThe head contains the extremely compact haploid nucleus with very little cytoplasm.\nThe midpiece is filled with mitochondria. ATP produced by these mitochondria will power the flagellum\nThe flagellum enables the movement of the entire sperm cell.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "3ed4f129d38811c56dba": {
+      "file": "3ed4f129d38811c56dba.jpg",
+      "width": 1058,
+      "height": 713,
+      "bytes": 129720,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1058,
+        713
+      ],
+      "original_sha256": "e1cce41c42a1883ba3d46c8b271e15511af99c090abdb4e6e485eecb3ec473ae",
+      "sha256": "3ed4f129d38811c56dbab59f47b0f3c400456f0f5e7e62730b4b19e48db78517",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 32,
+          "alt": "This figure shows the steps in the regulation of testosterone production. The top panel shows the hypothalamus and the bottom panel shows two micrographs. The left micrograph is that of sertoli cells and the right micrograph is that of Leydig cells.",
+          "slide_text": "2-Control of Testosterone",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "76b7545e89e95b330541": {
+      "file": "76b7545e89e95b330541.jpg",
+      "width": 805,
+      "height": 876,
+      "bytes": 148036,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        805,
+        876
+      ],
+      "original_sha256": "dd90e56841d86a9174acad566f6383cb110f39314726e4ce6adf55ebbadab01d",
+      "sha256": "76b7545e89e95b3305414d92ba99208db9b2a238a47c2a0de190d28bdeff1e63",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 6,
+          "alt": "The panel shows the lateral view of the male reproductive system and the major parts are labeled.",
+          "slide_text": "1-Male Reproductive System\nThe structures of the male reproductive system include the testes, the epididymis, the penis, and the ducts and glands that produce and carry semen.\nEasy concepts",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 7,
+          "alt": "The panel shows the lateral view of the male reproductive system and the major parts are labeled.",
+          "slide_text": "2-Male Reproductive System\nTestes (within scrotum) produce sperm\nSperm delivered to exterior through systemof ducts \nEpididymis  ductus deferens  ejaculatory duct  urethra\nEasy concepts",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 18,
+          "alt": "The panel shows the lateral view of the male reproductive system and the major parts are labeled.",
+          "slide_text": "Sperm Transport-Duct System\nDuring ejaculation, sperm exit the tail of the epididymis and are pushed to the ductus deferens (also called the vas deferens). \nAt the end of ductus deferens, the sperms enter the ejaculatory duct where they mix with semen.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 19,
+          "alt": "The panel shows the lateral view of the male reproductive system and the major parts are labeled.",
+          "slide_text": "Seminal Vesicles\nGlands that contribute approximately 60 percent of the semen volume. \nSeminal vesicle fluid contains large amounts of fructose, which is used by the sperm mitochondria to generate ATP.\nSemen is transported to the ejaculatory duct. ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 20,
+          "alt": "The panel shows the lateral view of the male reproductive system and the major parts are labeled.",
+          "slide_text": "Prostate Gland\nAnterior to the rectum at the base of the bladder surrounding the prostatic urethra.\nIt excretes an alkaline, milky fluid to semen that is critical to decoagulate the semen following ejaculation.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 22,
+          "alt": "The panel shows the lateral view of the male reproductive system and the major parts are labeled.",
+          "slide_text": "Bulbourethral Glands\nTwo glands release a thick, salty fluid that lubricates the end of the urethra and the vagina, and helps to clean urine residues from the penile urethra. \nTheir fluid is released after the male becomes sexually aroused, and shortly before the release of the semen. \nIt is therefore sometimes called pre-ejaculate.  ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 23,
+          "alt": "The panel shows the lateral view of the male reproductive system and the major parts are labeled.",
+          "slide_text": "1-The Penis\nThe penis is the male organ of copulation (sexual intercourse).\nIt is flaccid for non-sexual actions, such as urination.\nThe shaft of the penis surrounds the urethra.\nThe shaft is composed of three column-like chambers of erectile tissue that span the length of the shaft.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "8940132f25ad87d9af84": {
+      "file": "8940132f25ad87d9af84.jpg",
+      "width": 619,
+      "height": 1059,
+      "bytes": 116454,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        619,
+        1059
+      ],
+      "original_sha256": "15116458b004e1306e0ba8cd848dda2729344b311b9d70aaf2372fa029b60ede",
+      "sha256": "8940132f25ad87d9af84a76ac96d1a834c4adc6728f79f20f310f6673f2ab44b",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 63,
+          "alt": "The image shows the uterine cycle phases.",
+          "slide_text": "2-The Uterine (Menstrual) Cycle  \nThe Menses Phase: the phase during which the lining is shed; that is, the days that the woman menstruates.\nFive days in average.\nOccurs during the early days of the follicular phase of the ovarian cycle when progesterone, FSH, and LH levels are low .\nEasy concepts",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 64,
+          "alt": "The image shows the uterine cycle phases.",
+          "slide_text": "3-The Uterine (Menstrual) Cycle  \nProliferative Phase: \nStarts once menstrual flow ceases.\nThe endometrium begins to proliferate again, marking the beginning of the proliferative phase\nIt occurs when the tertiary follicles begin to produce increased amounts of estrogen. ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 65,
+          "alt": "The image shows the uterine cycle phases.",
+          "slide_text": "4-The Uterine (Menstrual) Cycle  \nProliferative Phase: \nRising estrogen concentrations stimulate the endometrial lining to rebuild.\nThe elevated estrogen levels stimulates the LH surge that will trigger ovulation. \nIn a typical 28-day menstrual cycle, ovulation occurs on day 14. \nOvulation marks the end of the proliferative phase as well as the end of the follicular phase.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 66,
+          "alt": "The image shows the uterine cycle phases.",
+          "slide_text": "5-The Uterine (Menstrual) Cycle  \nSecretory phase\nIn the ovary, and after ovulation, corpus luteum produce progesterone.\nIn the uterus, this marks the beginning of secretory phase of the menstrual cycle.\nThe endometrial lining prepares for implantation \nThe endometrial glands secrete a fluid rich in glycogen which will nourish cells of the fertilized egg. \nAt the same time, the spiral arteries develop to provide blood to the thickened functional layer.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 67,
+          "alt": "The image shows the uterine cycle phases.",
+          "slide_text": "6-The Uterine (Menstrual) Cycle  \nSecretory phase\nIf no pregnancy occurs within approximately 10 to 12 days, the corpus luteum will degrade into the corpus albicans. \nLevels of both estrogen and progesterone will fall, and the endometrium will grow thinner. \nThe endometrial tissue will die, resulting in menses—or the first day of the next cycle.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 68,
+          "alt": "The top panel of this image shows the stages in the follicular phase and how one follicle is selected at the end of this phase. The middle part of this image shows the ovarian cycle phases and the uterine cycle phases. The bottom panel shows the levels of different hormones as a function of time.",
+          "slide_text": "The Ovarian and Uterine Cycles\nBoth cycles happening at the same time at two different locations.\nDifferent hormones play different roles in each location.\nMain hormones are LH, FSH, Estrogen and Progesterone. \nSeveral negative and positive feedback loops regulate the production of these hormones. ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 69,
+          "alt": "The top part of this image shows the ovarian cycle phases and the uterine cycle phases. The bottom panel shows the levels of different hormones as a function of time.",
+          "slide_text": "1-Effects of Hormones\nFSH and LH: \nBoth hormones levels peak just prior to ovulation. \nDuring follicular phase they stimulate follicles to grow.\nDuring ovulation: promote one of them to release the egg.\nDuring luteal phase, LH stimulates formation of corpus luteum and therefore promote progesterone production",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 70,
+          "alt": "The top part of this image shows the ovarian cycle phases and the uterine cycle phases. The bottom panel shows the levels of different hormones as a function of time.",
+          "slide_text": "2-Effects of Hormones\nEstrogen: \nPromote oogenesis and follicle growth in ovary\nExert anabolic effect on female reproductive tract\nSupport rapid short-lived growth spurts at puberty\nInduce secondary sex characteristics\nGrowth of breasts\nIncreased deposit of subcutaneous fat (hips and breasts)\nWidening and lightening of pelvis",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 71,
+          "alt": "The top part of this image shows the ovarian cycle phases and the uterine cycle phases. The bottom panel shows the levels of different hormones as a function of time.",
+          "slide_text": "Progesterone:\nWorks with estrogen to establish and regulate uterine cycle\nPromotes changes in cervical mucus\nPrevent developing more than one oocyte per ovarian cycle.\nEffects of placental progesterone during pregnancy\nInhibits uterine motility\nHelps prepare breasts for lactation\n3-Effects of Hormones",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "d38c30fabd458835bdb2": {
+      "file": "d38c30fabd458835bdb2.jpg",
+      "width": 781,
+      "height": 718,
+      "bytes": 157961,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        781,
+        718
+      ],
+      "original_sha256": "933bd31c5dd2069b34d9fde18c6e8186d4fdafdc2b8101f4e5563a68a6567824",
+      "sha256": "d38c30fabd458835bdb2e689db9e5d1990d0b658acbc9cf637d49d9b00586c63",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 24,
+          "alt": "This multipart diagram shows the cross section of the penis. The top left panel shows the lateral view of the flaccid penis and the top right panel shows the transverse view.",
+          "slide_text": "2-The Penis\nEach of the two larger lateral chambers is called a corpus cavernosum. Together, these make up the bulk of the penis.\nThe corpus spongiosum is a smaller chamber that surrounds the spongy urethra.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 25,
+          "alt": "This multipart diagram shows the cross section of the penis. The top left panel shows the lateral view of the flaccid penis and the top right panel shows the transverse view.",
+          "slide_text": "3-The Penis\nThe end of the penis, called the glans penis, has a high concentration of nerve endings, resulting in very sensitive skin that influences the likelihood of ejaculation. \nThe skin from the shaft extends down over the glans and forms a collar called the prepuce (or foreskin). Removed by circumcision, for religious or social or medical reasons.\nRemoving it reduces the risk of HIV infections",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 26,
+          "alt": "This multipart diagram shows the cross section of the penis. The left panel shows the lateral view of the erect penis and the bottom right panel shows the transverse view.",
+          "slide_text": "4-The Penis\nErections are the result of vasocongestion, or enlargement of the tissues because of more arterial blood flowing into the penis than is leaving in the veins.\nDuring sexual arousal, nitric oxide (NO) is released from nerve endings near blood vessels within the corpora cavernosa and spongiosum. \n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 27,
+          "alt": "This multipart diagram shows the cross section of the penis. The left panel shows the lateral view of the erect penis and the bottom right panel shows the transverse view.",
+          "slide_text": "5-The Penis\nRelease of NO results in relaxation of the smooth muscles that surround the penile arteries, causing them to dilate. \nThis dilation increases the amount of blood that can enter the penis. \nBlood fills the erectile chambers. \n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "797b655b8062c0d1d844": {
+      "file": "797b655b8062c0d1d844.png",
+      "width": 800,
+      "height": 655,
+      "bytes": 523306,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        800,
+        655
+      ],
+      "original_sha256": "6b60898098f23774056fdfb9bb53a77ebdfc9e783ad0ae72fa91d95bb1fd9ff7",
+      "sha256": "797b655b8062c0d1d844f12c3f31bcff841e477be25ab2478eaba0cc289a2d31",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 39,
+          "alt": "The panel shows the lateral view and the bottom panel shows the anterior view.",
+          "slide_text": "Vagina\nmuscular canal (approximately 10 cm long) that serves as the entrance to the reproductive tract.\nIt also serves as the exit from the uterus during menses and childbirth.\nthe superior portion of the vagina—called the fornix—meets the uterine cervix.\nEasy concepts\nBy BruceBlaus. When using this image in external sources it can be cited as:Blausen.com staff (2014). \"Medical gallery of Blausen Medical 2014\". WikiJournal of Medicine 1 (2). DOI:10.15347/wjm/2014.010. ISSN 2002-4436. - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=29600451",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "0ec5551ffdae47edf0ab": {
+      "file": "0ec5551ffdae47edf0ab.jpg",
+      "width": 500,
+      "height": 284,
+      "bytes": 37329,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        500,
+        284
+      ],
+      "original_sha256": "d4e2a4e0a4b7f30859a57e1069a617b1b60c9e428496e3f6b381f4096fefb323",
+      "sha256": "0ec5551ffdae47edf0ab66a307ec8bc489a25613035734cfcaba9e3dca0d25d4",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 41,
+          "alt": "The panel shows the lateral view of the ovary.",
+          "slide_text": "2-Ovaries\nEasy concepts\nOocytes develop within the outer layer of this stroma, each surrounded by supporting cells. \nThis grouping of an oocyte and its supporting cells is called a follicle.\nThe development of an oocyte happens through what is known as ovarian cycle.\nBy Kimanh Nguyen - https://mla-lima.wikispaces.com/Anatomy+of+the+Ovaries?responseToken=01fcd85f07c85da7489dd7e2a01e82bf0, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=71030506",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 52,
+          "alt": "The panel shows the lateral view of the ovary.",
+          "slide_text": "1-The Ovarian Cycle\nA set of changes in a female’s oocytes and ovarian follicles.\nRoughly 28-day cycle.\nTwo phases: \nFollicular phase: includes oogenesis (the production of female gametes) and folliculogenesis (the growth and development of ovarian follicles); both happening at the same time.\nLuteal phase: the post-ovulatory phase\nBy Kimanh Nguyen - https://mla-lima.wikispaces.com/Anatomy+of+the+Ovaries?responseToken=01fcd85f07c85da7489dd7e2a01e82bf0, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=71030506",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "917ed018740ed616c175": {
+      "file": "917ed018740ed616c175.jpg",
+      "width": 725,
+      "height": 954,
+      "bytes": 145712,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        725,
+        954
+      ],
+      "original_sha256": "3098e0b7e57ff874b3040d73623a9def6a22de9a3cdf005ebf32a50ec336ab5d",
+      "sha256": "917ed018740ed616c175b12cfb1f0af6e8884f36698c30c975e1b039b10293f5",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 57,
+          "alt": "This multipart figure shows how follicles are generated. The panel shows the first three stages of folliculogenesis. In each stage, the major cell types are labeled.",
+          "slide_text": "2-Follicular phase: Folliculogenesis\nPrimordial follicles are present in newborn females and have only a single flat layer of support cells.\nAfter puberty, a few primordial follicles will develop into primary follicles and later a secondary follicle. \nSecondary follicle contains more than one layer of supporting cells",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 58,
+          "alt": "This multipart figure shows how follicles are generated. The panel shows the last three stages of folliculogenesis. In each stage, the major cell types are labeled.",
+          "slide_text": "3-Follicular phase: Folliculogenesis\nSecondary follicle will keep growing into a tertiary follicle. \nContains antrum which holds follicular fluid.\nSeveral follicles reach the tertiary stage at the same time, and most of these will undergo death.\nOne tertiary follicle will continue to grow and develop until ovulation",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 60,
+          "alt": ". The panel shows the first three stages of folliculogenesis. In each stage, the major cell types are labeled.",
+          "slide_text": "1-Luteal phase\nThe follicle that released its oocyte turns into a new endocrine structure called the corpus luteum, a term meaning “yellowish body”.\nIn case of pregnancy, corpus luteum will release progesterone.  \nSustained progesterone levels are important in maintain pregnancy. ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "c49108b6a9ce8d78ebd1": {
+      "file": "c49108b6a9ce8d78ebd1.jpg",
+      "width": 697,
+      "height": 347,
+      "bytes": 63900,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        697,
+        347
+      ],
+      "original_sha256": "86110621efb9634f57d8345902652b9a454ed2b136be57b64bf11b79081a1fbd",
+      "sha256": "c49108b6a9ce8d78ebd181234d4c576cd9d41e1e426fa0df9ffd54a51d7107b7",
+      "occurrences": [
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 47,
+          "alt": "This figure shows the anatomy of the breast. The left panel shows the front view and the right panel shows the side view. The main parts are labeled.",
+          "slide_text": "1-The Breasts\nConsidered accessory organs of the female reproductive system.\nThe function of the breasts is to supply milk to an infant in a process called lactation.\nThe external features of the breast include a nipple surrounded by a pigmented areola\n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Reproductive System Chapter 26.pptx",
+          "slide": 48,
+          "alt": "This figure shows  the side view of the breast. The left panel shows the front view and the right panel shows the side view. The main parts are labeled.",
+          "slide_text": "2-The Breasts\nBreast milk is produced by the mammary glands.\nMilk-secreting cells cluster in structures called alveoli. Several alveoli are grouped in lobule that surrounded by fat tissue.\nMilk exits the lobule through lactiferous ducts which extend to a lactiferous sinus. \n15 to 20 lactiferous ducts open on the surface of the nipple.\n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
     }
   },
   "questions": {
@@ -93481,6 +94043,4806 @@
       "source": {
         "file": "Nervous System and Nervous Tissue Chapter 12.pptx",
         "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0001": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 38
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0002": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0003": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0004": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0005": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0006": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0007": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0008": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0009": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0010": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0011": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0012": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0013": {
+      "asset": "27486ecc3c69b5a8ba55",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0014": {
+      "asset": "27486ecc3c69b5a8ba55",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0015": {
+      "asset": "27486ecc3c69b5a8ba55",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0016": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0017": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0018": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0019": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0020": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0021": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0022": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 10
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0023": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 10
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0024": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 10
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0025": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0026": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0027": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0028": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0029": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0030": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0031": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0032": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0033": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0034": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0035": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0036": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0037": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0038": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0039": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0040": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0041": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0042": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0043": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0044": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0045": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0046": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0047": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0048": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0049": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0050": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0051": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0052": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0053": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0054": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0055": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0056": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0057": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0058": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0059": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0060": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0061": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0062": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0063": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0064": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0065": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0066": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0067": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0068": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0069": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0070": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0071": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0072": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0073": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0074": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0075": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0076": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0077": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0078": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0079": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0080": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0081": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0082": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0083": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0084": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0085": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 22
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0086": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 22
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0087": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0088": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 7
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0089": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 7
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0090": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0091": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0092": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0093": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0094": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 7
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0095": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 7
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0096": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 7
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0097": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0098": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0099": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0100": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0101": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0102": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0103": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 22
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0104": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 22
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0105": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 22
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0106": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0107": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0108": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0109": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0110": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0111": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0112": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0113": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0114": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0115": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0116": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0117": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0118": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0119": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0120": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0121": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0122": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0123": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0124": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0125": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0126": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0127": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0128": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0129": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0130": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0131": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0132": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0133": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0134": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0135": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0136": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0137": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0138": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0139": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0140": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0141": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0142": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0143": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0144": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0145": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0146": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0147": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0148": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 70
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0149": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 70
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0150": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 70
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0151": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 23
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0152": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 23
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0153": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 23
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0154": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0155": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0156": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0157": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0158": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0159": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0160": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0161": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0162": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0163": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0164": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0165": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0166": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0167": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0168": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0169": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0170": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0171": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0172": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0173": {
+      "asset": "27486ecc3c69b5a8ba55",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0174": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0175": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0176": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0177": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0178": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0179": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0180": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0181": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0182": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0183": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0184": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0185": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0186": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0187": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0188": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0189": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0190": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0191": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0192": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0193": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0194": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0195": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0196": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0197": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0198": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0199": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0200": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0201": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0202": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0203": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0204": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0205": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0206": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0207": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0208": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0209": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0210": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0211": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0212": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0213": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0214": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0215": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0216": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0217": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0218": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0219": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0220": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0221": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0222": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0223": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0224": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0225": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0226": {
+      "asset": "0ec5551ffdae47edf0ab",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0227": {
+      "asset": "0ec5551ffdae47edf0ab",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0228": {
+      "asset": "0ec5551ffdae47edf0ab",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0229": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0230": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0231": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0232": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0233": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0234": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0235": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0236": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0237": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0238": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0239": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0240": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0241": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0242": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0243": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0244": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0245": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0246": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0247": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0248": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0249": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0250": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0251": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0252": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0253": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0254": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0255": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0256": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0257": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0258": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0259": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0260": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0261": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0262": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0263": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0264": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0265": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0266": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0267": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0268": {
+      "asset": "0ec5551ffdae47edf0ab",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0269": {
+      "asset": "0ec5551ffdae47edf0ab",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0270": {
+      "asset": "0ec5551ffdae47edf0ab",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0271": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0272": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0273": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0274": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0275": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0276": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0277": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0278": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0279": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0280": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0281": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0282": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0283": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0284": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0285": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0286": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 70
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0287": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 70
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0288": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 70
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0289": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 71
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0290": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 71
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0291": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 71
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0292": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 68
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0293": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 68
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0294": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 68
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0295": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0296": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0297": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0298": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 63
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0299": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 63
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0300": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 63
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0301": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 64
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0302": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 64
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0303": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 64
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0304": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0305": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0306": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0307": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0308": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0309": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0310": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0311": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0312": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0313": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0314": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0315": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0316": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0317": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0318": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0319": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0320": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0321": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0322": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0323": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0324": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0325": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0326": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0327": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0328": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0329": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0330": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0331": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0332": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0333": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0334": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0335": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0336": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0337": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0338": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0339": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0340": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0341": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0342": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0343": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0344": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0345": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0346": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0347": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0348": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0349": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0350": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0351": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0352": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0353": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0354": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0355": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0356": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0357": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0358": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0359": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0360": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0361": {
+      "asset": "27486ecc3c69b5a8ba55",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0362": {
+      "asset": "27486ecc3c69b5a8ba55",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0363": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0364": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0365": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0366": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0367": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0368": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0369": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0370": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0371": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0372": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0373": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0374": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0375": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0376": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0377": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0378": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0379": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0380": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0381": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0382": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0383": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0384": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0385": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 22
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0386": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 22
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0387": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0388": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0389": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0390": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0391": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0392": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0393": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0394": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0395": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0396": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0397": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0398": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0399": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0400": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0401": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0402": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0403": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0404": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0405": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0406": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0407": {
+      "asset": "0ec5551ffdae47edf0ab",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 52
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0408": {
+      "asset": "0ec5551ffdae47edf0ab",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 52
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0409": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0410": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0411": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0412": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0413": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0414": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0415": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0416": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0417": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0418": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0419": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0420": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0421": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0422": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0423": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0424": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0425": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0426": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 68
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0427": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0428": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0429": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0430": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0431": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0432": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0433": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0434": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0435": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0436": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0437": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0438": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0439": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0440": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0441": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0442": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0443": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0444": {
+      "asset": "27486ecc3c69b5a8ba55",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0445": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0446": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0447": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0448": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0449": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0450": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0451": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0452": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0453": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0454": {
+      "asset": "c5db5c702d5c1a649053",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0455": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0456": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0457": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0458": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0459": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0460": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0461": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0462": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0463": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0464": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0465": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0466": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0467": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0468": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0469": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0470": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0471": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0472": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0473": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0474": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0475": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0476": {
+      "asset": "8b04ee5d7b831ae47920",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0477": {
+      "asset": "0ec5551ffdae47edf0ab",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0478": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0479": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0480": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0481": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0482": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0483": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0484": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0485": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0486": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0487": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 68
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0488": {
+      "asset": "0ec5551ffdae47edf0ab",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0489": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 64
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0490": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0491": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0492": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0493": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 69
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0494": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0495": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0496": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0497": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0498": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0499": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0500": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0501": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0502": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0503": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0504": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0505": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0506": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0507": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0508": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0509": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0510": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0511": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0512": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0513": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0514": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0515": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0516": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0517": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0518": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0519": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0520": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0521": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0522": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0523": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0524": {
+      "asset": "d38c30fabd458835bdb2",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0525": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0526": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0527": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0528": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0529": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0530": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0531": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0532": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0533": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0534": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 57
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0535": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0536": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0537": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0538": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0539": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0540": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0541": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0542": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0543": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0544": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0545": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 67
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0546": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0547": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0548": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0549": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0550": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0551": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0552": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0553": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0554": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 66
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0555": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0556": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0557": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0558": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0559": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0560": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0561": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0562": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0563": {
+      "asset": "016d895265449b6796ee",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0564": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0565": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0566": {
+      "asset": "5459527bbecab7d5effc",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0567": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0568": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0569": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0570": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 22
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0571": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 20
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0572": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0573": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0574": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0575": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0576": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0577": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0578": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0579": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 68
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0580": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 60
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0581": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 65
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0582": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 71
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0583": {
+      "asset": "8940132f25ad87d9af84",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 71
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0584": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0585": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0586": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0587": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0588": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0589": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 43
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0590": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0591": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0592": {
+      "asset": "76b7545e89e95b330541",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 22
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0593": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0594": {
+      "asset": "797b655b8062c0d1d844",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0595": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0596": {
+      "asset": "843f5db9eba961ea38ec",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0597": {
+      "asset": "829b09184e4304e423ff",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 55
+      },
+      "match": "related-slide"
+    },
+    "reproductive-0598": {
+      "asset": "c49108b6a9ce8d78ebd1",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0599": {
+      "asset": "917ed018740ed616c175",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 58
+      },
+      "match": "cited-slide"
+    },
+    "reproductive-0600": {
+      "asset": "3ed4f129d38811c56dba",
+      "source": {
+        "file": "Reproductive System Chapter 26.pptx",
+        "slide": 32
       },
       "match": "related-slide"
     },

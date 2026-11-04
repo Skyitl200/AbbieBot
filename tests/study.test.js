@@ -171,16 +171,15 @@ test('bank validation reports missing content and rejects duplicated prompts', a
     } finally { await rm(directory, { recursive: true, force: true }); }
 });
 
-test('actual banks are valid and their incompleteness is detected', async () => {
-    const banks = await loadQuestionBanks();
-    const total = [...banks.values()].reduce((n, questions) => n + questions.length, 0);
-    if (total < 13800) await assert.rejects(loadQuestionBanks(undefined, { complete: true }), /expected 600/);
-    else await loadQuestionBanks(undefined, { complete: true });
+test('all 23 authored topics meet the complete 13,800-question target', async () => {
+    const banks = await loadQuestionBanks(undefined, { complete: true });
+    assert.equal(banks.size, 23);
+    assert.equal([...banks.values()].reduce((n, questions) => n + questions.length, 0), 13800);
 });
 
 test('completed banks each supply 600 different questions in all three formats', async () => {
     const banks = await loadQuestionBanks();
-    for (const topicId of ['anatomical_directions', 'basic_chemistry', 'living_cells', 'tissues', 'integumentary', 'skeletal', 'joints', 'muscular', 'nervous_tissue', 'central_nervous', 'special_senses', 'endocrine', 'blood_cells', 'circulatory', 'blood_vessels', 'lymphatic', 'respiratory', 'digestive', 'fluid_balance', 'autonomic_nervous', 'immune', 'urinary']) {
+    for (const topicId of ['anatomical_directions', 'basic_chemistry', 'living_cells', 'tissues', 'integumentary', 'skeletal', 'joints', 'muscular', 'nervous_tissue', 'central_nervous', 'special_senses', 'endocrine', 'blood_cells', 'circulatory', 'blood_vessels', 'lymphatic', 'respiratory', 'digestive', 'fluid_balance', 'reproductive', 'autonomic_nervous', 'immune', 'urinary']) {
         const bank = banks.get(topicId);
         assert.equal(bank.length, 600, topicId);
         const selected = selectQuestions(banks, topicId, 600);

@@ -1,7 +1,7 @@
-# Anatomy study questions: work in progress
+# Anatomy and physiology study questions
 
 The requested final bank is **23 topics × 600 questions = 13,800**. The current
-bank contains **13,200 questions**:
+bank contains **13,800 questions**:
 
 | Topic | Multiple choice | Fill in the blank | Ordering | Total |
 | --- | ---: | ---: | ---: | ---: |
@@ -27,15 +27,13 @@ bank contains **13,200 questions**:
 | Immune System | 452 | 102 | 46 | 600 |
 | Urinary System | 453 | 92 | 55 | 600 |
 | Water & Fluid Balance | 380 | 160 | 60 | 600 |
+| Reproductive System | 380 | 160 | 60 | 600 |
+| **Total** | **9495** | **3009** | **1296** | **13,800** |
 
-The remaining new topic bank is not yet populated. **600 questions remain**
-to reach the requested total. Anatomical Directions, Basic Chemistry, Living Cells,
-Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Blood Vessels, Lymphatic System, Respiratory System, Digestive System, Water & Fluid Balance, Autonomic Nervous System, Immune System, and Urinary
-System have reached their 600-question targets; Reproductive System remains
-incomplete. These are authored
-study drafts, not a claim of independent medical review. The
-existing `quiz-data` files and database rows have been retained until replacements
-are ready; this directory is the new mixed-format bank for `/test`.
+All **23 topics have reached 600 questions**. These are authored study drafts,
+not a claim of independent medical review. The legacy `quiz-data` files and
+database rows are retained for compatibility and other classes; the default
+`/test` → Anatomy and Physiology Lecture flow uses the new banks in this directory.
 
 The active formats are **multiple choice, fill in the blank, and ordering**.
 All 3,205 former select-all items were replaced with single-answer questions,
@@ -59,7 +57,7 @@ and are not displayed as earned. These rewards require persistent storage;
 in-memory fallback does not claim a saved award. DM practice earns no coins.
 
 Run `npm run validate:study` for actual counts. `npm run validate:study:complete`
-must fail until every topic has exactly 600 questions and all three formats.
+now passes for all 23 banks and remains a regression check for the full target.
 Structural validation cannot establish medical accuracy; review the questions,
 answer keys, plausible distractors, explanations, and slide references before
 publishing complete banks. Do not inflate counts with shuffled copies, superficial
@@ -120,8 +118,8 @@ per-file limit. Their compressed replacements are now accessible:
 
 The extraction script maps these upload names to the original topic filenames
 for stable question provenance and records both names in the extraction manifest.
-No source-file uploads remain blocked. The full 600-question banks remain
-unfinished; accessible sources do not imply completed question authoring.
+No source-file uploads remain blocked. All 23 authoring targets are met;
+structural completion does not imply independent medical review.
 
 Author questions directly, without wording such as “based on the slides.” The
 user permits related medical terminology and real-world applications to expand
@@ -749,7 +747,7 @@ Circulatory source qualifications applied during authoring:
 
 ## Lecture images
 
-All 13,200 currently authored A&P Lecture questions have a lecture figure
+All 13,800 currently authored A&P Lecture questions have a lecture figure
 reference. Shared figures appear with explanations; **Preview figure** opens a
 private optional hint that may contain answer labels. Source lecture and slide
 are displayed separately from the question's source. Matching is automatic, and
@@ -779,7 +777,7 @@ study draft, not independent medical review.
 
 Rebuild the new bank with `python scripts/study-authoring/blood_vessels.py`;
 run `python scripts/buildStudyImageIndex.py --extend` to add new figure references
-while preserving mappings for existing questions. One topic remains empty: Reproductive System.
+while preserving mappings for existing questions. All 23 topic banks are populated.
 
 
 ### Lymphatic System
@@ -920,3 +918,43 @@ drafts, not independent medical review.
 
 Validation: `npm run validate:study:complete -- --topics=fluid_balance`,
 `npm run validate:study:images`, and `npm run test:study`.
+
+
+### Reproductive System and full-bank completion
+
+The final bank adds 600 introductory Reproductive System exercises: 380 multiple
+choice, 160 fill-in-the-blank, and 60 three-step ordering tasks. It covers gonads,
+gamete development and transport, reproductive endocrine feedback, ovarian and
+uterine cycles, implantation concepts, breast anatomy, and lactation. Related
+exercises revisit concepts through identification, functional facts, missing
+details, and applications; they are not 600 distinct biological facts. Extensions
+and corrections beyond the lecture wording are marked in source metadata.
+Rebuild using `python scripts/study-authoring/reproductive.py`.
+
+Clarifications include Leydig cells between seminiferous tubules, selective
+inhibin-FSH feedback, the membranous urethral segment, and variable cycle timing.
+Ovulation normally releases a secondary oocyte arrested in metaphase II, and
+meiosis II completes with fertilization-related activation. The infundibulum is
+the lateral tubal funnel; the uterine lining is epithelium, not vascular
+endothelium. Corpus-luteum progesterone is present in ordinary nonpregnant luteal
+phases. Prostatic fluid should not simply be called universally alkaline.
+Prolactin-mediated synthesis is distinguished from oxytocin-mediated ejection.
+Cancer examples distinguish a normal BRCA gene from pathogenic variants and
+risk from certainty. The bank does not teach dated screening ages/intervals,
+fixed HPV vaccine schedules, fixed cancer percentages, or screening cessation
+solely from sexual inactivity. These are educational mechanisms, not personal
+treatment or screening plans.
+
+Every question has a lecture-image reference. Cancer-related examples use
+relevant normal anatomy where the cancer slides have no pathology image, labeled
+as broader context. All 13,200 previously published question-image mappings are
+preserved. Images can be shared among related questions and are not all exact
+depictions of the process asked about. Labeled previews are optional and figures
+appear with explanations.
+
+The requested authoring total is now complete: **23 × 600 = 13,800 questions**.
+`npm run validate:study:complete` must pass globally, not just for selected topics.
+`npm run validate:study:images` checks all references, citations, file sizes, and
+hashes. `npm run test:study` includes all-topic session/rendering, menu, ownership,
+coin, and subject-specific answer-key checks. Structural tests cannot establish
+independent medical accuracy; content remains reviewable study material.
