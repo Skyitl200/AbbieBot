@@ -9963,6 +9963,762 @@
           "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
         }
       ]
+    },
+    "843e25e2bf357a44015b": {
+      "file": "843e25e2bf357a44015b.jpg",
+      "width": 1540,
+      "height": 1138,
+      "bytes": 200725,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1540,
+        1138
+      ],
+      "original_sha256": "386edaa95294a589d1d5eb482671d7ec55085053aafcb253778d04a0da311741",
+      "sha256": "843e25e2bf357a44015bba7e30f9986f2d58d3584c995793b3b89c8b54f094b2",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 28,
+          "alt": "The left panel of this image shows a person inhaling air and the location of the chest muscles. The right panel shows the person exhaling air and the contraction of the thoracic cavity.",
+          "slide_text": "Respiration \nCan be divided into four processes:\nPulmonary ventilation: The movement of air in and out of the lungs.\nExternal respiration: exchange of O2 and CO2 between lungs and blood\nTransport of O2 and CO2 in blood\nInternal respiration: exchange of O2 and CO2 between blood and cells",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 33,
+          "alt": "The left panel of this image shows a person inhaling air and the location of the chest muscles. The right panel shows the person exhaling air and the contraction of the thoracic cavity.",
+          "slide_text": "1-Pulmonary Ventilation\nPulmonary ventilation comprises two major steps: inspiration and expiration. \nInspiration is the process that causes air to enter the lungs, and expiration is the process that causes air to leave the lungs\nRespiratory cycle is one sequence of inspiration and expiration.\nTwo muscle groups are used during normal inspiration: the diaphragm and the external intercostal muscles.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "c0b6cb2c1e1403d0d42b": {
+      "file": "c0b6cb2c1e1403d0d42b.jpg",
+      "width": 1418,
+      "height": 1192,
+      "bytes": 157714,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1418,
+        1192
+      ],
+      "original_sha256": "c1023b06887c9897b123d54f2f3604afeed6fe1dba1cdc089fe422e03273c273",
+      "sha256": "c0b6cb2c1e1403d0d42b2ddd86dfafe4234c60bf75e71efb7b15d62384d8edb1",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 6,
+          "alt": "This figure shows the upper half of the human body. The major organs in the respiratory system are labeled.",
+          "slide_text": "2-Respiratory System\nFunctionally, the respiratory system can be divided into:\nThe conducting zone: includes the organs and structures not directly involved in gas exchange. \nThe respiratory zone: where gas exchange occurs \nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 7,
+          "alt": "This figure shows the upper half of the human body. The major organs in the respiratory system are labeled.",
+          "slide_text": "Organs of Respiratory System\nBased on location, respiratory system is divided into: \nUpper respiratory: include nose and adjacent structures and pharynx\nLower respiratory: include: larynx, trachea, bronchi and branches, lungs and alveoli.\n\nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "ac11fb1f05cb0b3999c0": {
+      "file": "ac11fb1f05cb0b3999c0.jpg",
+      "width": 1420,
+      "height": 1267,
+      "bytes": 145956,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1420,
+        1267
+      ],
+      "original_sha256": "5fdc59a008dabf741d7db0b1b80dfb3d600285a0d9c92fbb63c37a7d66338cfb",
+      "sha256": "ac11fb1f05cb0b3999c00d6d63c67e12c73e82833aef6f4c6692a85b6e76ba5a",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 8,
+          "alt": "This figure shows the human nose. The top left panel shows the front view, and the top right panel shows the side view. The bottom panel shows the cartilaginous components of the nose.",
+          "slide_text": "Nose\nThe major entrance and exit for the respiratory system.\nTwo major sections: the external nose, and the nasal cavity or internal nose.\nIt moistens and filters the air coming into the body.\nHolds receptors for smelling.\nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "b8db4b32bd18e734adaf": {
+      "file": "b8db4b32bd18e734adaf.jpg",
+      "width": 946,
+      "height": 1400,
+      "bytes": 154398,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1070,
+        1583
+      ],
+      "original_sha256": "81a13cbc6d72bf6d1f9d82bf8daa027b7d83aec11d38b105bdbcae3e32031a5a",
+      "sha256": "b8db4b32bd18e734adaf95b126a8e4813b18b9043bbe2481238e6b428edf7a3b",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 13,
+          "alt": "The top panel of this figure shows the trachea and its organs. The major parts including the larynx, trachea, bronchi, and lungs are labeled.",
+          "slide_text": "1-Trachea\nThe trachea (windpipe) extends from the larynx toward the lungs.\nFormed by 16 to 20 stacked, C-shaped pieces of hyaline cartilage that are connected by dense connective tissue.\nThe trachea branches into the right and left primary bronchi.\nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 14,
+          "alt": "The top panel of this figure shows the trachea and its organs. The major parts including the larynx, trachea, bronchi, and lungs are labeled.",
+          "slide_text": "2-Trachea\nThe primary bronchi enter the lungs at the hilum, a concave region where blood vessels, lymphatic vessels, and nerves also enter the lungs.\nA bronchial tree (or respiratory tree) is the multiple-branched bronchi. \nThe main function of the bronchi, like other conducting zone structures, is to provide a passageway for air to move into and out of each lung.\nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "573187e39aa224ed1ef4": {
+      "file": "573187e39aa224ed1ef4.jpg",
+      "width": 1515,
+      "height": 1159,
+      "bytes": 149721,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1515,
+        1159
+      ],
+      "original_sha256": "0f8f40f52506506db7c6c26cd230a6beb287e61e6b58f183b669f8b1b4d0877d",
+      "sha256": "573187e39aa224ed1ef4260ce0e2f6c573f389202471f09fea5f3d55112c5d44",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 9,
+          "alt": "This figure shows the side view of the face. The different parts of the pharynx are color-coded and labeled.",
+          "slide_text": "Pharynx\nThe pharynx is a tube formed by skeletal muscle and lined by mucous membrane that is continuous with that of the nasal cavities.\nDivided into three major regions: the nasopharynx, the oropharynx, and the laryngopharynx\nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "341cec65a23f4e46927f": {
+      "file": "341cec65a23f4e46927f.jpg",
+      "width": 1518,
+      "height": 1400,
+      "bytes": 223036,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1629,
+        1502
+      ],
+      "original_sha256": "0f8ae30f988faf88afe1e8394691c66316d1f67c600324fea4e967c3f0a97742",
+      "sha256": "341cec65a23f4e46927f0733342ab446e2fee74435dd46007316943aae17fe58",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 10,
+          "alt": "The this figure shows the anterior view of the larynx,",
+          "slide_text": "1-Larynx\nEasy Concept\nThe larynx is a cartilaginous structure inferior to the laryngopharynx that connects the pharynx to the trachea.\nRegulates the volume of air that enters and leaves lungs.\nThree large cartilage pieces form the major structure of the larynx: the thyroid cartilage (anterior), epiglottis (superior), and cricoid cartilage (inferior).",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 11,
+          "alt": "the panel shows the right lateral view of the larynx.",
+          "slide_text": "2-Larynx\nThe thyroid cartilage makes up the wall of larynx.\nThe thick cricoid cartilage forms a ring connects larynx to trachea.\nThe epiglottis is made of elastic cartilage and covers the opening of the trachea to prevent entry of solid objects.\nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "6f3b7c9d7f25e91ae085": {
+      "file": "6f3b7c9d7f25e91ae085.jpg",
+      "width": 1215,
+      "height": 710,
+      "bytes": 88107,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1215,
+        710
+      ],
+      "original_sha256": "355cef27cfbec47f9f1ec2f4942810944cc0f17ac62aacbc9459b8bca0ce385b",
+      "sha256": "6f3b7c9d7f25e91ae08562c0afd5ec02b97196146c5988a926ee0b73f649fd2b",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 12,
+          "alt": "This diagram shows the cross section of the larynx. The different types of cartilages are labeled.",
+          "slide_text": "3-Larynx\nEasy Concept\nWhen epiglottis closes, its unattached end rests on the glottis. \nThe glottis is composed of the vestibular folds, the true vocal cords, and the space between these folds.\nBy I, Welleschik, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2468726\n1=vocal folds, 2=vestibular fold, 3=epiglottis, 4=plica aryepiglottica, 5=arytenoid cartilage, 6=sinus piriformis, 7=dorsum of the tongue",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "045c8e3b3014a3ed6999": {
+      "file": "045c8e3b3014a3ed6999.jpg",
+      "width": 1600,
+      "height": 1221,
+      "bytes": 227209,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1605,
+        1225
+      ],
+      "original_sha256": "cb986ef9bf47911bec2a834664d09525fa519364c329844069f9f3809bb5aad5",
+      "sha256": "045c8e3b3014a3ed6999db7cff92979569f81fd4acbba88c5dc1ee74d957a0b3",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 15,
+          "alt": "This image shows the bronchioles and alveolar sacs in the lungs and depicts the exchange of oxygenated and deoxygenated blood in the pulmonary blood vessels.",
+          "slide_text": "Bronchiole\nBronchi keeps branching and declines in diameter to form bronchioles (1 mm diameter).\nBronchioles do not contain cartilage in their wall as bronchi. \nWall contains smooth muscles to increase or decrease airflow \nThe terminal bronchioles leads to the site of gas exchange. \n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "83a86d9ef2e1f0c7d56e": {
+      "file": "83a86d9ef2e1f0c7d56e.jpg",
+      "width": 1523,
+      "height": 1163,
+      "bytes": 228348,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1523,
+        1163
+      ],
+      "original_sha256": "b9ca57159bd81e6827d872a5db25c264f65126d7934dc1baf35cac49d222172f",
+      "sha256": "83a86d9ef2e1f0c7d56eb9afcc245e048bfe94f7bba0d8a6e4684108653b6ba3",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 16,
+          "alt": "This image shows the bronchioles and alveolar sacs in the lungs and depicts the exchange of oxygenated and deoxygenated blood in the pulmonary blood vessels.",
+          "slide_text": "Respiratory Zone\nIncludes structures that are directly involved in gas exchange.\nBegins where the terminal bronchioles join a respiratory bronchiole, the smallest type of bronchiole.\nRespiratory bronchiole leads to an alveolar duct, opening into a cluster of alveoli.\n\n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 17,
+          "alt": "This image shows the bronchioles and alveolar sacs in the lungs and depicts the exchange of oxygenated and deoxygenated blood in the pulmonary blood vessels.",
+          "slide_text": "1-Alveoli\nAn alveolar duct is a tube composed of smooth muscle and connective tissue, which opens into an alveolar sac. \nAn alveolar sac is a cluster of many individual alveoli that are responsible for gas exchange.\nAn alveolus is one of the many small, grape-like sacs that are attached to the alveolar ducts.\n\n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "171e3b916de3334c8913": {
+      "file": "171e3b916de3334c8913.jpg",
+      "width": 1175,
+      "height": 1400,
+      "bytes": 178835,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1354,
+        1613
+      ],
+      "original_sha256": "681cbbaac911bddda79dd5b2d5b598ab5b521a40d37792be9e6b83664d954cc7",
+      "sha256": "171e3b916de3334c8913281e2f51d3d1866b9e7b4a43924e3543f0b47ed43af0",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 18,
+          "alt": "This figure shows the detailed structure of the alveolus. The top panel shows the alveolar sacs and the bronchioles. The middle panel shows a magnified view of the alveolus.",
+          "slide_text": "2-Alveoli\nHas elastic walls that allow the alveolus to stretch during air intake, which greatly increases the surface area available for gas exchange. \nAlveoli are connected to their neighbors by alveolar pores, which help maintain equal air pressure throughout the alveoli and lung.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 20,
+          "alt": "This figure shows the detailed structure of the alveolus. The top panel shows the alveolar sacs and the bronchioles. The middle panel shows a magnified view of the alveolus.",
+          "slide_text": "4-Alveoli\nThe alveolar wall consists of three major cell types:\nType I alveolar cells: squamous epithelial cells and are highly permeable to gases. \nType II alveolar cells: interspersed among the type I cells and secretes pulmonary surfactant, a substance composed of phospholipids and proteins that reduces the surface tension of the alveoli. \nAlveolar macrophage roams around the alveolar and removes debris and pathogens that have reached the alveoli.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "73c062c1b920eebbcfc6": {
+      "file": "73c062c1b920eebbcfc6.png",
+      "width": 800,
+      "height": 600,
+      "bytes": 179126,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        800,
+        600
+      ],
+      "original_sha256": "7f35d66655bbb3f1b311c997b6b314751f9d78aec835f662b57c324752b14155",
+      "sha256": "73c062c1b920eebbcfc6ccae656007a750451c1c99c0fcb62398f50706338930",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 21,
+          "alt": "Cross section of an alveoli and capillaries showing diffusion of gases.",
+          "slide_text": "5-Alveoli\nEasy Concept\nType I alveolar cells is attached to a thin, elastic basement membrane which is extremely thin and borders the endothelial membrane of capillaries. \nThe alveoli and capillary membranes form a respiratory membrane that is approximately 0.5 mm thick. \nBy Delmalani18 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=69613938",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "a4053e37f4781e14f2b2": {
+      "file": "a4053e37f4781e14f2b2.jpg",
+      "width": 1479,
+      "height": 1017,
+      "bytes": 155036,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1479,
+        1017
+      ],
+      "original_sha256": "f610a643839c6dac197ba8cb588e490288d686209c53b53e45de40b0068bdc59",
+      "sha256": "a4053e37f4781e14f2b242a48611476da9f8f8a61b14a4c231e3131e1a3599df",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 26,
+          "alt": "This figure shows the structure of the lungs with the major parts labeled.",
+          "slide_text": "3-The Lungs\nThe right lung consists of three lobes: the superior, middle, and inferior lobes. \nThe left lung consists of two lobes: the superior and inferior lobes.\nOblique fissure separates the superior and inferior lobes of the left lung and the middle and inferior lobes of the right lung.\nHorizontal fissure separates the superior and middle lobes of the right lung. \nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "944810b9b593033e3fa2": {
+      "file": "944810b9b593033e3fa2.jpg",
+      "width": 1600,
+      "height": 1205,
+      "bytes": 208933,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1908,
+        1437
+      ],
+      "original_sha256": "f5ef2563cfe4afae4b2cd82078ef9d09b505c50baaa55cdc00c65f3fcf98cdac",
+      "sha256": "944810b9b593033e3fa2c2367807c7ecc4d8f4bb1796d2f0fecdf6d1e0058684",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 24,
+          "alt": "This figure shows the lungs and the chest wall, which protects the lungs, in the left panel. In the right panel, a magnified image shows the pleural cavity and a pleural sac.",
+          "slide_text": "1-The Lungs\nThe main function of the lungs is to perform the exchange of oxygen and carbon dioxide with air from the atmosphere.\nPyramid-shaped, paired organs that are connected to the trachea.\nRest on the diaphragm.\nThe right lung is shorter and wider than the left lung, and the left lung occupies a smaller volume than the right. \nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 25,
+          "alt": "This figure shows the lungs and the chest wall, which protects the lungs, in the left panel. In the right panel, a magnified image shows the pleural cavity and a pleural sac.",
+          "slide_text": "2-The Lungs\nThe cardiac notch is an indentation on the surface of the left lung, and it allows space for the heart. \nThe apex of the lung is the superior region, whereas the base is the opposite region near the diaphragm. \nEach lung is composed of smaller units called lobes. Fissures separate these lobes from each other.\nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 27,
+          "alt": "In the panel, a magnified image shows the pleural cavity and a pleural sac.",
+          "slide_text": "Pleura of the Lungs\nThe pleura (plural = pleurae) is a  two layers serous membrane that surrounds the lung. \nThe visceral pleura is superficial to the lungs, and extends into and lines the lung fissures.\nThe parietal pleura is the outer layer that connects to the thoracic wall, the mediastinum, and the diaphragm. \nThe pleural cavity is the space between the visceral and parietal layers.\n\nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "1e9d14a0b5907e04dde9": {
+      "file": "1e9d14a0b5907e04dde9.jpg",
+      "width": 1600,
+      "height": 1182,
+      "bytes": 199660,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1687,
+        1246
+      ],
+      "original_sha256": "24448b0511910bbfb3a0cde90ff796fe07a2c43961c53b2bd713784a3e89ba95",
+      "sha256": "1e9d14a0b5907e04dde9612c4ed704ebdc44be0ee3d512bad847ec075bf9582b",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 34,
+          "alt": "The left panel of this image shows a person inhaling air and the location of the chest muscles. The right panel shows the person exhaling air and the contraction of the thoracic cavity.",
+          "slide_text": "2-Pulmonary Ventilation\nThe expansion of the thoracic cavity forces the lungs to stretch and expand. \nIncrease in volume leads to a decrease in intra-alveolar pressure, creating a pressure lower than atmospheric pressure. \nAs a result, a pressure gradient is created that drives air into the lungs.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 35,
+          "alt": "The left panel of this image shows a person inhaling air and the location of the chest muscles. The right panel shows the person exhaling air and the contraction of the thoracic cavity.",
+          "slide_text": "3-Pulmonary Ventilation\nIn expiration, the thoracic cavity forces the lungs to shrink. \nDecrease in volume leads to a increase in intra-alveolar pressure, creating a pressure higher than atmospheric pressure. \nAs a result, a pressure gradient is created that drives air out of the lungs.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 36,
+          "alt": "The left panel of this image shows a person inhaling air and the location of the chest muscles. The right panel shows the person exhaling air and the contraction of the thoracic cavity.",
+          "slide_text": "4-Pulmonary Ventilation\nAir flows into the lungs largely due to a difference in pressure; atmospheric pressure is greater than intra-alveolar pressure, and intra-alveolar pressure is greater than intrapleural pressure.\nAir flows out of the lungs during expiration based on the same principle; pressure within the lungs becomes greater than the atmospheric pressure.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "e89539185ae344edbfc1": {
+      "file": "e89539185ae344edbfc1.jpg",
+      "width": 1421,
+      "height": 1079,
+      "bytes": 139717,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1421,
+        1079
+      ],
+      "original_sha256": "72a6e70281c45abc3c6a353af36b5b75b02de79b36b2523d96026ef6986a6548",
+      "sha256": "e89539185ae344edbfc1fe3ee075df3cc8363ed7ff4f45ad8c0463de00567e70",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 29,
+          "alt": "This diagram shows the lungs and the air pressure in different regions.",
+          "slide_text": "The Process of Breathing\nPulmonary ventilation is the act of breathing, which can be described as the movement of air into and out of the lungs.\nThe major mechanisms that drive pulmonary ventilation are atmospheric pressure (Patm); the air pressure within the alveoli, called intra-alveolar pressure (Palv); and the pressure within the pleural cavity, called intrapleural pressure (Pip).",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 30,
+          "alt": "This diagram shows the lungs and the air pressure in different regions.",
+          "slide_text": "1-Pressure Relationships\nGases move from areas of high pressure to areas of low pressure. \nThe reference point for ventilation is the atmospheric pressure which equals 760mmHg.\nBecause the alveoli are connected to the atmosphere via the tubing of the airways, the intrapulmonary pressure of the alveoli always equalizes with the atmospheric pressure (difference is 0).",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 31,
+          "alt": "This diagram shows the lungs and the air pressure in different regions.",
+          "slide_text": "2-Pressure Relationships\nIntrapleural pressure is the pressure of the air within the pleural cavity.\nDue to certain characteristics of the lungs, the intrapleural pressure is always lower than the intra-alveolar pressure and atmospheric pressure). \nIt remains approximately –4 mm Hg throughout the breathing cycle.\n\n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "9677881d4ee6dac7d93e": {
+      "file": "9677881d4ee6dac7d93e.jpg",
+      "width": 1245,
+      "height": 1271,
+      "bytes": 117683,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1245,
+        1271
+      ],
+      "original_sha256": "a4f001ebbe323198fa4a52c5d5ac59d17284809d518ebdbe8c41e6995b316b7b",
+      "sha256": "9677881d4ee6dac7d93e3dfbb0188afa822067051cbce04962099b7bbce20be1",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 32,
+          "alt": "This diagram shows two canisters containing a gas. The two canisters show how volume and pressure are inversely proportional, which illustrates Boyle’s law.",
+          "slide_text": "3-Pressure Relationships\nIn a gas, pressure is a force created by the movement of gas molecules that are confined.\nBoyle’s law describes the inverse relationship between volume and pressure in a gas at a constant temperature. \nIf volume increases, pressure decreases. \nif volume decreases, pressure increases.\nPulmonary ventilation is dependent on three types of pressure Patm, Palv & Pip",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "e0e0c83be40832e8ddf1": {
+      "file": "e0e0c83be40832e8ddf1.jpg",
+      "width": 1600,
+      "height": 644,
+      "bytes": 107774,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1914,
+        770
+      ],
+      "original_sha256": "6444e736b156fe6ae41061858fff6d6954c0de066c00ce3a91238edd8292ca7e",
+      "sha256": "e0e0c83be40832e8ddf1550ee45ed75f624138f7c8d8070fc1a300ce79ca5442",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 37,
+          "alt": "The left panel shows a graph of different respiratory volumes. The right panel shows how the different respiratory volumes result in respiratory capacity.",
+          "slide_text": "1-Respiratory Volumes and Capacities\nRespiratory volume is the term used for various volumes of air moved by or associated with the lungs at a given point in the respiratory cycle.\nFour major types:\nTidal volume (TV) is the amount of air that normally enters the lungs during quiet breathing, which is about 500 milliliters. ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "5aa39089b80614f41424": {
+      "file": "5aa39089b80614f41424.jpg",
+      "width": 1600,
+      "height": 644,
+      "bytes": 110188,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1940,
+        781
+      ],
+      "original_sha256": "cb602b46690590cf7bc7f82ab9d03f352b9fdaffc3a9be78829a5a62fd026afe",
+      "sha256": "5aa39089b80614f414247ae098fba9a7bf65888738a89696cf758b3da4e4eecc",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 38,
+          "alt": "The left panel shows a graph of different respiratory volumes. The right panel shows how the different respiratory volumes result in respiratory capacity.",
+          "slide_text": "2-Respiratory Volumes and Capacities\nExpiratory reserve volume (ERV) is the amount of air that can forcefully exhale past a normal tidal expiration, up to 1200 milliliters for men. \nInspiratory reserve volume (IRV) is produced by a deep inhalation, past a tidal inspiration. This is the extra volume that can be brought into the lungs during a forced inspiration. ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 39,
+          "alt": "The left panel shows a graph of different respiratory volumes. The right panel shows how the different respiratory volumes result in respiratory capacity.",
+          "slide_text": "3-Respiratory Volumes and Capacities\nResidual volume (RV) is the air remains in the lungs all the time. RV keeps lungs open. ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "6ab67ba6e594cb2502b2": {
+      "file": "6ab67ba6e594cb2502b2.jpg",
+      "width": 1600,
+      "height": 644,
+      "bytes": 108609,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1742,
+        701
+      ],
+      "original_sha256": "49937ebb420b7f06ec33b8644c3dc24816ca35eb29a25be6f6c136d329b96da2",
+      "sha256": "6ab67ba6e594cb2502b26b5a22800ab05b3ddbd742850f35203d05b7e1398f9e",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 40,
+          "alt": "The left panel shows a graph of different respiratory volumes. The right panel shows how the different respiratory volumes result in respiratory capacity.",
+          "slide_text": "4-Respiratory Volumes and Capacities\nAdditional respiratory volumes :\nTotal lung capacity (TLC) is the sum of all of the lung volumes (TV, ERV, IRV, and RV), which represents the total amount of air a person can hold in the lungs after a forceful inhalation. TLC is about 6000 mL air for men, and about 4200 mL for women. \nVital capacity (VC) is the amount of air a person can move into or out of his or her lungs, and is the sum of all of the volumes except residual volume (TV, ERV, and IRV), which is between 4000 and 5000 milliliters. \n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 41,
+          "alt": "The left panel shows a graph of different respiratory volumes. The right panel shows how the different respiratory volumes result in respiratory capacity.",
+          "slide_text": "Respiratory Volumes and Capacities\nAdditional respiratory volumes :\nInspiratory capacity (IC) is the maximum amount of air that can be inhaled past a normal tidal expiration, is the sum of the tidal volume and inspiratory reserve volume. \nFunctional residual capacity (FRC): is the amount of air that remains in the lung after a normal tidal expiration; it is the sum of expiratory reserve volume and residual volume.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "d20f1b83e3aca6ee71ae": {
+      "file": "d20f1b83e3aca6ee71ae.jpg",
+      "width": 1600,
+      "height": 556,
+      "bytes": 95209,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1846,
+        642
+      ],
+      "original_sha256": "16e9dfe2cc9e9d663787c1384d4dfd18df26d42d5bf6162e0e4d74cd4e1ff131",
+      "sha256": "d20f1b83e3aca6ee71aebf0ecd7533fb7881668027f3c40e1bbd1505b6062f9e",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 43,
+          "alt": "The left panel of this figure shows a canister of oxygen. The middle panel shows a canister of nitrogen. The right panel shows a canister containing a mixture of oxygen and nitrogen. A pressure gauge on each container shows the pressure exerted by the gas in that container.",
+          "slide_text": "1-Gas Exchange\nPartial pressure (Px) is the pressure of a single type of gas in a mixture of gases. \nFor example, in the atmosphere, oxygen exerts a partial pressure, and nitrogen exerts another partial pressure, independent of the partial pressure of oxygen.\nTotal pressure is the sum of all the partial pressures of a gaseous mixture.\nGas will move from an area where its partial pressure is higher to an area where its partial pressure is lower. \nThe greater the partial pressure difference between the two areas, the more rapid is the movement of gases.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "c916ae05bd99b0346ba5": {
+      "file": "c916ae05bd99b0346ba5.png",
+      "width": 480,
+      "height": 618,
+      "bytes": 76997,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        480,
+        618
+      ],
+      "original_sha256": "0abc965b2eab34087b3d73ee8f59810659a1222f766c7415750e6d0d6f6138e9",
+      "sha256": "c916ae05bd99b0346ba5f72f674c00181354154ab6bc27b0d888fde2cd4f8ad4",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 44,
+          "alt": "",
+          "slide_text": "2-Gas Exchange\nExternal respiration:  is the exchange of gases with the external environment and occurs in the alveoli of the lungs. \nPerformed by respiratory system\nInternal respiration: is the exchange of gases with the internal environment and occurs in the tissues. \nPerformed by cardiovascular system\nThe actual exchange of gases occurs due to simple diffusion.\nBy Ahmed Katsha. Made with Biorender",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "aa429ea58a996b072497": {
+      "file": "aa429ea58a996b072497.jpg",
+      "width": 1359,
+      "height": 806,
+      "bytes": 150585,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1359,
+        806
+      ],
+      "original_sha256": "84d500afe2bf790dd999e9a34fac843a1fae98fb5067d3b38867ad712b581335",
+      "sha256": "aa429ea58a996b07249792601e102414f8f1f01ee80ef2aa6d42c89b79b5cce8",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 45,
+          "alt": "This figure shows the pathway in which external respiration takes place. The exchange of oxygen and carbon dioxide between the alveolus and blood plasma is detailed.",
+          "slide_text": "External Respiration\nMajority of the oxygen is picked up by erythrocytes (red blood cells) and binds to hemoglobin\nSmall amount is able to dissolve directly into plasma.\nExternal respiration occurs due to partial pressure differences in oxygen and carbon dioxide between the alveoli and the blood in the pulmonary capillaries.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "9150f8a32fd337187204": {
+      "file": "9150f8a32fd337187204.jpg",
+      "width": 1368,
+      "height": 674,
+      "bytes": 118832,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1368,
+        674
+      ],
+      "original_sha256": "86f45efd0c8edf9d70e401ec6fd351294902de73d0362db9e8a74cefb24bdefd",
+      "sha256": "9150f8a32fd337187204f6e08196c24477e7b009059a5ad8ae856abcd887a272",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 47,
+          "alt": "This figure shows how carbon dioxide is transported from the tissue to the red blood cell.",
+          "slide_text": "1-CO2 Transportation\nCO2 transportation involves the production of bicarbonate HCO3-, which is an important molecule in controlling blood pH.\nMost bicarbonate is produced in erythrocytes. \nCarbonic anhydrase (CA) causes carbon dioxide and water to form carbonic acid (H2CO3), which dissociates into two ions: bicarbonate (HCO3–) and hydrogen (H+). The following formula depicts this reaction:\nCO2 + H2O ↔ H2CO3 ↔ H+ + HCO3 −",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 48,
+          "alt": "This figure shows how carbon dioxide is transported from the tissue to the red blood cell.",
+          "slide_text": "2-CO2 Transportation\nAbout 20 percent of carbon dioxide is bound by hemoglobin and is transported to the lungs. \nCarbon dioxide does not bind to iron as oxygen does; instead, it binds to the globin portions of hemoglobin to form carbaminohemoglobin.\nThe following formula depicts this reversible reaction:\nCO2 + Hb ↔ HbCO2",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "69373761a640e63cfd37": {
+      "file": "69373761a640e63cfd37.jpg",
+      "width": 1588,
+      "height": 719,
+      "bytes": 99646,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1588,
+        719
+      ],
+      "original_sha256": "e29ac7a5cdb116ef9d03d023e9002af25ded178a94bc145290c80cc70468a098",
+      "sha256": "69373761a640e63cfd37d937b3255b1513874b83bd7557cbc0570d4e00f432ab",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 46,
+          "alt": "This diagram details the pathway of internal respiration. The exchange of oxygen and carbon dioxide between a red blood cell and a tissue cell is shown.",
+          "slide_text": "Internal Respiration\nCarbon dioxide is transported by three major mechanisms. \nThe first mechanism is by blood plasma, as some carbon dioxide molecules dissolve in the blood. 7-10% of total CO2\nThe second mechanism is transport in the form of bicarbonate (HCO3–), which also dissolves in plasma. 70% of total CO2\nThe third mechanism is by binding to hemoglobin. 20% of total CO2",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "a518e3b5d938187501ae": {
+      "file": "a518e3b5d938187501ae.jpg",
+      "width": 1259,
+      "height": 1400,
+      "bytes": 233197,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1274,
+        1417
+      ],
+      "original_sha256": "badb234d4c4b4b8729cf3f85bf0be2b44804ed66d4a8cb0bfa7dd146cb588125",
+      "sha256": "a518e3b5d938187501aeb07fb878b9c7a5a66c01e8b637ade1f939b53243b361",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 50,
+          "alt": "The top panel of this figure shows normal lung tissue, and the bottom panel shows lung tissue inflamed by asthma.",
+          "slide_text": "1-Disease of Respiratory System: Asthma\nAsthma is a chronic disease characterized by inflammation and edema of the airway, and bronchospasms which can inhibit air from entering the lungs.\nIn addition, excessive mucus secretion can occur, which further contributes to airway occlusion. \nCells of the immune system, such as eosinophils, may also be involved in infiltrating the walls of the bronchi and bronchioles.\n\nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 51,
+          "alt": "The top panel of this figure shows normal lung tissue, and the bottom panel shows lung tissue inflamed by asthma.",
+          "slide_text": "2-Disease of Respiratory System: Asthma\nBronchospasms occur periodically and lead to an “asthma attack.” \nMay be triggered by  environmental factors such as dust, pollen, pet hair, or dander, changes in the weather, mold, tobacco smoke, and respiratory infections, or by exercise and stress.\nSymptoms of an asthma attack involve coughing, shortness of breath, wheezing, and tightness of the chest. Severe attacks require immediate medical attention.\nEasy Concept",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "d50c4484b6f3cc420258": {
+      "file": "d50c4484b6f3cc420258.jpg",
+      "width": 475,
+      "height": 653,
+      "bytes": 90725,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        475,
+        653
+      ],
+      "original_sha256": "64ec0be14e3c4674d575e4d92f4cd5b6e72cdacda8872d5ba464489de2953db4",
+      "sha256": "d50c4484b6f3cc4202589d2e7d414f837cc3b038862938b8832b8d1f4c2d6d5c",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 52,
+          "alt": "Normal Lungs and Lungs With COPD",
+          "slide_text": "3-Diseases of the Respiratory System\nChronic Obstructive Pulmonary Disease (COPD): is a type of obstructive lung disease characterized by long-term breathing problems and poor airflow.\nAn ongoing cough or a cough that produces a lot of mucus; this is often called smoker's cough.\nShortness of breath, especially with physical activity\nWheezing or a whistling or squeaky sound when you breathe\nChest tightness\n\nhttps://www.nhlbi.nih.gov/health-topics/copd",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "36fe70bb3e1601e88178": {
+      "file": "36fe70bb3e1601e88178.jpg",
+      "width": 1024,
+      "height": 616,
+      "bytes": 141858,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1024,
+        616
+      ],
+      "original_sha256": "be54b4fa50c26c96194c6a1ef93689845a852fa7a64b5ffa0525e6e739135873",
+      "sha256": "36fe70bb3e1601e881789f8837ecf14bcae0fd8232e1f9a40bd814f03c18b443",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 53,
+          "alt": "Microscope image shows Emphysema",
+          "slide_text": "4-Diseases of the Respiratory System\nCOPD includes two main conditions: emphysema and chronic bronchitis. \nEmphysema: involves damage to the air sacs (alveoli) in the lungs so the body doesn’t get enough O2.\nBy Nephron - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=7935360",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "10b7b217a60a1c86f9f6": {
+      "file": "10b7b217a60a1c86f9f6.jpg",
+      "width": 475,
+      "height": 445,
+      "bytes": 63248,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        475,
+        445
+      ],
+      "original_sha256": "0f89ee9939145ee9ba1f5f4392f6f7dae7c1666125a8b67ec08ba3b55c920222",
+      "sha256": "10b7b217a60a1c86f9f6a2b8a90adc72f216c722aac780f0b39d66ba67b1b96b",
+      "occurrences": [
+        {
+          "source": "Respiratory System Chapter 22.pptx",
+          "slide": 54,
+          "alt": "Normal Lungs and Lungs With Bronchitis",
+          "slide_text": "5-Diseases of the Respiratory System\nChronic bronchitis is an ongoing cough that lasts for several months and comes back two or more years in a row.\nThe lining of the airways stays constantly inflamed. This causes the lining to swell and produce more mucus, which can make it hard to breathe. \nBy National Heart Lung and Blood Institute - National Heart Lung and Blood Institute, Public Domain, https://commons.wikimedia.org/w/index.php?curid=29583164",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
     }
   },
   "questions": {
@@ -81965,6 +82721,4806 @@
         "slide": 42
       },
       "match": "related-slide"
+    },
+    "respiratory-0001": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0002": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0003": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0004": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0005": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0006": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0007": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0008": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0009": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0010": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0011": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0012": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0013": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0014": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0015": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0016": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0017": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0018": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0019": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0020": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0021": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0022": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0023": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0024": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0025": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0026": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0027": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0028": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0029": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0030": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0031": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0032": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0033": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0034": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0035": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0036": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0037": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0038": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0039": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0040": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0041": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0042": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0043": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0044": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0045": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0046": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 10
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0047": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 10
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0048": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 10
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0049": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0050": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0051": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0052": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0053": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0054": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0055": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0056": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0057": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0058": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0059": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0060": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0061": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0062": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0063": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0064": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0065": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0066": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0067": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0068": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0069": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0070": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0071": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0072": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0073": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0074": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0075": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0076": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0077": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0078": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0079": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0080": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0081": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0082": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0083": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0084": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0085": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0086": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0087": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0088": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0089": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0090": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0091": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0092": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0093": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0094": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0095": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0096": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0097": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0098": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0099": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0100": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0101": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0102": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0103": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0104": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0105": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0106": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0107": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0108": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0109": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0110": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0111": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0112": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0113": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0114": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0115": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0116": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0117": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0118": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0119": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0120": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0121": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0122": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0123": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0124": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0125": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0126": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0127": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0128": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0129": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0130": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0131": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0132": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0133": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0134": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0135": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0136": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0137": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0138": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0139": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0140": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0141": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0142": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0143": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0144": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0145": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0146": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0147": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0148": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0149": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0150": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0151": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0152": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0153": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0154": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0155": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0156": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0157": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0158": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0159": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0160": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0161": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0162": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0163": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0164": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0165": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0166": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0167": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0168": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0169": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0170": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0171": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0172": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0173": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0174": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0175": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0176": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0177": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0178": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0179": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0180": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0181": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0182": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0183": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0184": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 29
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0185": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 29
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0186": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 29
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0187": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 29
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0188": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 29
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0189": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 29
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0190": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 31
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0191": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 31
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0192": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 31
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0193": {
+      "asset": "9677881d4ee6dac7d93e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 32
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0194": {
+      "asset": "9677881d4ee6dac7d93e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 32
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0195": {
+      "asset": "9677881d4ee6dac7d93e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 32
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0196": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0197": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0198": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0199": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0200": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0201": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0202": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0203": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0204": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0205": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0206": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0207": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0208": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0209": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0210": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0211": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0212": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0213": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0214": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0215": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0216": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0217": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0218": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0219": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0220": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0221": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0222": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0223": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0224": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0225": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0226": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0227": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0228": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0229": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0230": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0231": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0232": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0233": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0234": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0235": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0236": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0237": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0238": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0239": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0240": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0241": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0242": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0243": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0244": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0245": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0246": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0247": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0248": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0249": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0250": {
+      "asset": "d20f1b83e3aca6ee71ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0251": {
+      "asset": "d20f1b83e3aca6ee71ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0252": {
+      "asset": "d20f1b83e3aca6ee71ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0253": {
+      "asset": "c916ae05bd99b0346ba5",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 44
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0254": {
+      "asset": "c916ae05bd99b0346ba5",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 44
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0255": {
+      "asset": "c916ae05bd99b0346ba5",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 44
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0256": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0257": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0258": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0259": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0260": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0261": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0262": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0263": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0264": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0265": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0266": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0267": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0268": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0269": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0270": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0271": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0272": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0273": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0274": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0275": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0276": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0277": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0278": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0279": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0280": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0281": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0282": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0283": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0284": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0285": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0286": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0287": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0288": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0289": {
+      "asset": "d50c4484b6f3cc420258",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0290": {
+      "asset": "d50c4484b6f3cc420258",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0291": {
+      "asset": "d50c4484b6f3cc420258",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0292": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0293": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0294": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0295": {
+      "asset": "10b7b217a60a1c86f9f6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0296": {
+      "asset": "10b7b217a60a1c86f9f6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0297": {
+      "asset": "10b7b217a60a1c86f9f6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0298": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0299": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0300": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0301": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0302": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0303": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0304": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0305": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0306": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0307": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0308": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0309": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0310": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0311": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0312": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0313": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0314": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0315": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0316": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0317": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0318": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0319": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0320": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0321": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0322": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0323": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0324": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0325": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0326": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0327": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0328": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0329": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0330": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0331": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0332": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0333": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0334": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0335": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0336": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0337": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0338": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0339": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0340": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0341": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0342": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0343": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 31
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0344": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 31
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0345": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0346": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0347": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0348": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0349": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0350": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0351": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0352": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0353": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0354": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0355": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 30
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0356": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 30
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0357": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 31
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0358": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 31
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0359": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0360": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0361": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0362": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0363": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0364": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0365": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0366": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0367": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0368": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0369": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0370": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0371": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0372": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0373": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0374": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0375": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0376": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0377": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0378": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0379": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0380": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0381": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0382": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0383": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0384": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0385": {
+      "asset": "c916ae05bd99b0346ba5",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 44
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0386": {
+      "asset": "c916ae05bd99b0346ba5",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 44
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0387": {
+      "asset": "c916ae05bd99b0346ba5",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 44
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0388": {
+      "asset": "c916ae05bd99b0346ba5",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 44
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0389": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0390": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0391": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0392": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0393": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0394": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0395": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0396": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0397": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0398": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0399": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0400": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0401": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0402": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0403": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 51
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0404": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 51
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0405": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0406": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0407": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0408": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0409": {
+      "asset": "10b7b217a60a1c86f9f6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0410": {
+      "asset": "10b7b217a60a1c86f9f6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0411": {
+      "asset": "d50c4484b6f3cc420258",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0412": {
+      "asset": "d50c4484b6f3cc420258",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0413": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0414": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0415": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0416": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0417": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0418": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0419": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0420": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0421": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0422": {
+      "asset": "c916ae05bd99b0346ba5",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 44
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0423": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0424": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0425": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0426": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0427": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0428": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0429": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0430": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0431": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0432": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0433": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0434": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0435": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0436": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0437": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0438": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0439": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0440": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0441": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0442": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0443": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0444": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0445": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0446": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0447": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0448": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0449": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0450": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0451": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0452": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0453": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 29
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0454": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 30
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0455": {
+      "asset": "9677881d4ee6dac7d93e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 32
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0456": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0457": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0458": {
+      "asset": "e0e0c83be40832e8ddf1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 37
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0459": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0460": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0461": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0462": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0463": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 29
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0464": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 29
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0465": {
+      "asset": "d20f1b83e3aca6ee71ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0466": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0467": {
+      "asset": "c916ae05bd99b0346ba5",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 44
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0468": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0469": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0470": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0471": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0472": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0473": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0474": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0475": {
+      "asset": "10b7b217a60a1c86f9f6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0476": {
+      "asset": "d50c4484b6f3cc420258",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0477": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0478": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 31
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0479": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0480": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0481": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0482": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0483": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0484": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0485": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0486": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0487": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0488": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0489": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0490": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0491": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0492": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0493": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0494": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0495": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0496": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0497": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0498": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0499": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0500": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0501": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0502": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0503": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0504": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0505": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0506": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0507": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0508": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0509": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0510": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0511": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0512": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0513": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0514": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0515": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0516": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0517": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0518": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0519": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0520": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0521": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0522": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0523": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0524": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0525": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0526": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0527": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0528": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0529": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0530": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0531": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0532": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0533": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0534": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0535": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0536": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0537": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0538": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0539": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0540": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0541": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0542": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0543": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 28
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0544": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0545": {
+      "asset": "ac11fb1f05cb0b3999c0",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0546": {
+      "asset": "573187e39aa224ed1ef4",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0547": {
+      "asset": "341cec65a23f4e46927f",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0548": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0549": {
+      "asset": "6f3b7c9d7f25e91ae085",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0550": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0551": {
+      "asset": "b8db4b32bd18e734adaf",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0552": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0553": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0554": {
+      "asset": "045c8e3b3014a3ed6999",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0555": {
+      "asset": "83a86d9ef2e1f0c7d56e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 16
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0556": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0557": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0558": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0559": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0560": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0561": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0562": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 25
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0563": {
+      "asset": "a4053e37f4781e14f2b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 26
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0564": {
+      "asset": "944810b9b593033e3fa2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 27
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0565": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 31
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0566": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 31
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0567": {
+      "asset": "e89539185ae344edbfc1",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 30
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0568": {
+      "asset": "9677881d4ee6dac7d93e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 32
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0569": {
+      "asset": "843e25e2bf357a44015b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0570": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0571": {
+      "asset": "1e9d14a0b5907e04dde9",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0572": {
+      "asset": "5aa39089b80614f41424",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0573": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0574": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0575": {
+      "asset": "6ab67ba6e594cb2502b2",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0576": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0577": {
+      "asset": "9677881d4ee6dac7d93e",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 32
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0578": {
+      "asset": "d20f1b83e3aca6ee71ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0579": {
+      "asset": "d20f1b83e3aca6ee71ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0580": {
+      "asset": "d20f1b83e3aca6ee71ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 43
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0581": {
+      "asset": "73c062c1b920eebbcfc6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 21
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0582": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0583": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0584": {
+      "asset": "69373761a640e63cfd37",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 46
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0585": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0586": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0587": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 48
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0588": {
+      "asset": "aa429ea58a996b072497",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 45
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0589": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0590": {
+      "asset": "9150f8a32fd337187204",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 47
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0591": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 50
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0592": {
+      "asset": "a518e3b5d938187501ae",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 51
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0593": {
+      "asset": "d50c4484b6f3cc420258",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 52
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0594": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0595": {
+      "asset": "10b7b217a60a1c86f9f6",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 54
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0596": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0597": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0598": {
+      "asset": "c0b6cb2c1e1403d0d42b",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 6
+      },
+      "match": "related-slide"
+    },
+    "respiratory-0599": {
+      "asset": "36fe70bb3e1601e88178",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 53
+      },
+      "match": "cited-slide"
+    },
+    "respiratory-0600": {
+      "asset": "171e3b916de3334c8913",
+      "source": {
+        "file": "Respiratory System Chapter 22.pptx",
+        "slide": 20
+      },
+      "match": "cited-slide"
     },
     "skeletal-0001": {
       "asset": "a47692c7b7660380a36f",

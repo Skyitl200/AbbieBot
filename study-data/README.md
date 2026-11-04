@@ -1,7 +1,7 @@
 # Anatomy study questions: work in progress
 
 The requested final bank is **23 topics × 600 questions = 13,800**. The current
-bank contains **11,400 questions**:
+bank contains **12,000 questions**:
 
 | Topic | Multiple choice | Fill in the blank | Ordering | Total |
 | --- | ---: | ---: | ---: | ---: |
@@ -22,13 +22,14 @@ bank contains **11,400 questions**:
 | Circulatory System | 428 | 130 | 42 | 600 |
 | Blood Vessels | 384 | 156 | 60 | 600 |
 | Lymphatic System | 380 | 160 | 60 | 600 |
+| Respiratory System | 380 | 160 | 60 | 600 |
 | Immune System | 452 | 102 | 46 | 600 |
 | Urinary System | 453 | 92 | 55 | 600 |
 
-The other 4 new topic banks are not yet populated. **2,400 questions remain**
+The other 3 new topic banks are not yet populated. **1,800 questions remain**
 to reach the requested total. Anatomical Directions, Basic Chemistry, Living Cells,
-Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Blood Vessels, Lymphatic System, Autonomic Nervous System, Immune System, and Urinary
-System have reached their 600-question targets; the other 4 topics remain
+Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Blood Vessels, Lymphatic System, Respiratory System, Autonomic Nervous System, Immune System, and Urinary
+System have reached their 600-question targets; the other 3 topics remain
 incomplete. These are authored
 study drafts, not a claim of independent medical review. The
 existing `quiz-data` files and database rows have been retained until replacements
@@ -746,7 +747,7 @@ Circulatory source qualifications applied during authoring:
 
 ## Lecture images
 
-All 11,400 currently authored A&P Lecture questions have a lecture figure
+All 12,000 currently authored A&P Lecture questions have a lecture figure
 reference. Shared figures appear with explanations; **Preview figure** opens a
 private optional hint that may contain answer labels. Source lecture and slide
 are displayed separately from the question's source. Matching is automatic, and
@@ -776,9 +777,8 @@ study draft, not independent medical review.
 
 Rebuild the new bank with `python scripts/study-authoring/blood_vessels.py`;
 run `python scripts/buildStudyImageIndex.py --extend` to add new figure references
-while preserving mappings for existing questions. Four topics remain empty:
-Respiratory System, Digestive System, Water & Fluid Balance, and Reproductive
-System.
+while preserving mappings for existing questions. Three topics remain empty:
+Digestive System, Water & Fluid Balance, and Reproductive System.
 
 
 ### Lymphatic System
@@ -808,3 +808,37 @@ are preferred where available; otherwise a related figure from the same lecture
 is used and labeled as broader context. Existing question-image mappings are
 preserved. Run `npm run validate:study:complete -- --topics=lymphatic`,
 `npm run validate:study:images`, and `npm run test:study` for validation.
+
+
+### Respiratory System
+
+The Respiratory System bank adds 600 introductory exercises: 380 multiple choice,
+160 fill-in-the-blank, and 60 three-step ordering tasks. It covers airway anatomy,
+alveolar cells, pleura, breathing mechanics, lung volumes and capacities, gas
+exchange, blood-gas transport, acid-base effects of ventilation, and short
+medical applications. There are no calculation sweeps or unit-conversion drills.
+
+Related exercises revisit concepts through identification, separate functional
+facts, missing details, and applications; these are not 600 distinct biological
+facts. Clinical extensions and corrections beyond the slide wording are marked
+in source metadata. Rebuild using `python scripts/study-authoring/respiratory.py`.
+
+The bank clarifies the respiratory membrane's micrometer-scale thickness, the
+strict glottis definition, the fluid-containing pleural space, varying pleural
+pressure, and alveolar pressure differences during airflow. Quiet expiration is
+mainly passive. Hyperventilation/hypoventilation depend on effective ventilation
+relative to carbon dioxide production, not rate alone. Volume questions identify
+explicit starting and ending respiratory phases rather than ambiguous forced
+breathing descriptions. CO2 globin binding is distinguished from oxygen heme
+binding. Lung-cancer risk and management are not reduced to a fixed smoking
+percentage or a single metastasis-based treatment rule.
+
+Every question has a source-linked lecture figure. Where no cited slide has a
+figure, the card labels a related same-lecture image as broader context. Cancer items use an overview anatomy figure because the source cancer slides
+have no tumor illustration; this avoids depicting an unrelated airway disease.
+Author-specified `figure_slide` hints must resolve to an actual source image. All
+11,400 previously published image mappings are preserved. These are authored
+study drafts, not independent medical review.
+
+Validation: `npm run validate:study:complete -- --topics=respiratory`,
+`npm run validate:study:images`, and `npm run test:study`.

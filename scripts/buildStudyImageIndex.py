@@ -53,7 +53,11 @@ for path in sorted((ROOT/'study-data').glob('*.json')):
             score+=12 if cited else 4 if same else 0
             if not same:score-=7
             candidates.append((score,asset,occ,cited,same))
-        if q['id'] in previous['questions']:
+        if q.get('figure_slide') is not None:
+            selected=[candidate for candidate in candidates if candidate[4] and candidate[2]['slide']==q['figure_slide']]
+            if not selected: raise ValueError(f"No figure on requested source slide: {q['id']}")
+            _,asset,occ,cited,same=max(selected,key=lambda x:x[0])
+        elif q['id'] in previous['questions']:
             prior=previous['questions'][q['id']]
             asset=prior['asset']
             occ=next(o for o in data['assets'][asset]['occurrences'] if o['source']==prior['source']['file'] and o['slide']==prior['source']['slide'])
