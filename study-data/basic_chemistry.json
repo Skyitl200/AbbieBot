@@ -5233,23 +5233,21 @@
   {
     "id": "basic_chemistry-0247",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A linear CO2 molecule has polar C=O bonds pointing in opposite directions. Why can the whole molecule be nonpolar?",
-    "explanation": "Bond polarity and net molecular polarity are different concepts.",
+    "difficulty": "easy",
+    "question": "Why does water interact well with many dissolved salts?",
+    "explanation": "Water is polar, so its partial charges interact with dissolved ions.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
-        25,
-        26
+        39
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Bond polarity and net molecular polarity are different concepts."
+      "kind": "slide"
     },
     "options": [
-      "The bond dipoles can cancel by molecular symmetry",
-      "Each C=O bond must therefore be nonpolar",
-      "There can be no electrons in CO2",
-      "A nonpolar molecule cannot contain oxygen"
+      "Its polar regions attract ions",
+      "It has no electrical properties",
+      "It is made of fatty acids",
+      "It is a nonpolar oil"
     ],
     "correct": [
       0
@@ -5452,22 +5450,21 @@
   {
     "id": "basic_chemistry-0256",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Unknown amounts of a strong acid and a strong base are mixed. Can the final pH be assumed to be exactly 7 solely because neutralization can occur?",
-    "explanation": "Neutralization can consume H+ and OH−, but the final pH depends on stoichiometry, concentration, and conditions. Neutral pH 7 is the usual aqueous reference at 25°C.",
+    "difficulty": "easy",
+    "question": "What affects the final pH when an acid and a base are mixed?",
+    "explanation": "The amounts and properties of both reactants affect the final pH.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
         53
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Neutralization can consume H+ and OH−, but the final pH depends on stoichiometry, concentration, and conditions. Neutral pH 7 is the usual aqueous reference at 25°C."
+      "kind": "slide"
     },
     "options": [
-      "No; relative amounts and conditions determine whether excess acid or base remains",
-      "Yes; every acid–base mixture must have pH 7",
-      "Yes; concentration and amount are always irrelevant",
-      "No; acids and bases cannot react with one another"
+      "Their amounts and strengths",
+      "Only the color of the container",
+      "Only the name of the acid",
+      "The final pH is always exactly 7"
     ],
     "correct": [
       0
@@ -5596,22 +5593,21 @@
   {
     "id": "basic_chemistry-0262",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "An acid sample has low concentration but dissociates almost completely in water. Which distinction matters?",
-    "explanation": "Strength concerns extent of ionization; concentration concerns amount per volume.",
+    "difficulty": "easy",
+    "question": "How do electrolytes help body cells function?",
+    "explanation": "Electrolyte ions contribute to nerve and muscle electrical activity.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
-        50
+        48
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Strength concerns extent of ionization; concentration concerns amount per volume."
+      "kind": "slide"
     },
     "options": [
-      "Acid strength and acid concentration are different properties",
-      "A dilute acid must always be weak",
-      "Every strong acid must be concentrated",
-      "Dissociation cannot occur in a dilute solution"
+      "Their dissolved ions support electrical activity",
+      "They replace all the proteins",
+      "They store the entire genetic code",
+      "They prevent water from entering any cell"
     ],
     "correct": [
       0
@@ -5764,22 +5760,21 @@
   {
     "id": "basic_chemistry-0269",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A fatty acid contains two cis carbon–carbon double bonds. Which classification is appropriate?",
-    "explanation": "Two or more double bonds make a fatty acid polyunsaturated.",
+    "difficulty": "easy",
+    "question": "Which fatty-acid type contains at least one carbon-carbon double bond?",
+    "explanation": "Unsaturated fatty acids contain one or more carbon-carbon double bonds.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
         63
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Two or more double bonds make a fatty acid polyunsaturated."
+      "kind": "slide"
     },
     "options": [
-      "Polyunsaturated",
-      "Saturated",
-      "Monounsaturated",
-      "An amino acid"
+      "Unsaturated fatty acid",
+      "Saturated fatty acid",
+      "Amino acid",
+      "Nucleotide"
     ],
     "correct": [
       0
@@ -5860,22 +5855,21 @@
   {
     "id": "basic_chemistry-0273",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A substitution changes one residue in a polypeptide sequence. Which structural level is changed directly?",
-    "explanation": "Primary structure is the sequence of amino-acid residues.",
+    "difficulty": "easy",
+    "question": "What does the primary structure of a protein describe?",
+    "explanation": "A protein's primary structure is its amino-acid sequence.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
         69
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Primary structure is the sequence of amino-acid residues."
+      "kind": "slide"
     },
     "options": [
-      "Primary structure",
-      "Only quaternary structure",
-      "Only the number of atoms in all water molecules",
-      "No structural level"
+      "Its amino-acid sequence",
+      "Only its temperature",
+      "Its surrounding water volume",
+      "The amount of sodium in blood"
     ],
     "correct": [
       0
@@ -6005,22 +5999,21 @@
   {
     "id": "basic_chemistry-0279",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A cell couples ATP hydrolysis to an energy-requiring transport process. Which statement is chemically sound?",
-    "explanation": "ATP hydrolysis has a favorable overall free-energy change under many cellular conditions; bond breaking alone requires energy.",
+    "difficulty": "easy",
+    "question": "Which cell activity can use energy transferred through ATP?",
+    "explanation": "ATP can supply energy for active transport across membranes.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
         82
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: ATP hydrolysis has a favorable overall free-energy change under many cellular conditions; bond breaking alone requires energy."
+      "kind": "slide"
     },
     "options": [
-      "The overall coupled reaction can supply useful free energy",
-      "Breaking an isolated bond alone always releases energy",
-      "ATP supplies matter without reactants",
-      "ATP contains no phosphate"
+      "Active transport of ions",
+      "Passive settling of sand",
+      "Simple evaporation outside the body",
+      "Reflection of light from a mirror"
     ],
     "correct": [
       0
@@ -6183,19 +6176,18 @@
   {
     "id": "basic_chemistry-0288",
     "type": "fill_blank",
-    "difficulty": "hard",
-    "question": "One deciliter is ____ milliliters.",
-    "explanation": "A deciliter is one tenth of a liter, or 100 mL.",
+    "difficulty": "easy",
+    "question": "The measure used to describe acidity or alkalinity in body-fluid chemistry is ____.",
+    "explanation": "pH describes how acidic or basic a solution is.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
-        40
+        52
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A deciliter is one tenth of a liter, or 100 mL."
+      "kind": "slide"
     },
     "answers": [
-      "100"
+      "pH"
     ]
   },
   {
@@ -6219,16 +6211,15 @@
   {
     "id": "basic_chemistry-0290",
     "type": "fill_blank",
-    "difficulty": "hard",
-    "question": "The ability to donate H+ characterizes a Brønsted ____.",
-    "explanation": "Acids donate protons in the Brønsted description.",
+    "difficulty": "easy",
+    "question": "A substance that can donate hydrogen ions acts as an ____.",
+    "explanation": "Acids can donate hydrogen ions.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
         50
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Acids donate protons in the Brønsted description."
+      "kind": "slide"
     },
     "answers": [
       "acid"
@@ -6237,16 +6228,15 @@
   {
     "id": "basic_chemistry-0291",
     "type": "fill_blank",
-    "difficulty": "hard",
-    "question": "The ability to accept H+ characterizes a Brønsted ____.",
-    "explanation": "Bases accept protons in the Brønsted description.",
+    "difficulty": "easy",
+    "question": "A substance that can accept hydrogen ions acts as a ____.",
+    "explanation": "Bases can accept hydrogen ions.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
         51
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Bases accept protons in the Brønsted description."
+      "kind": "slide"
     },
     "answers": [
       "base"
@@ -7189,2182 +7179,2072 @@
   {
     "id": "basic_chemistry-0331",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A neutral hydrogen atom has 1 protons. How many electrons does it contain?",
-    "explanation": "Electrical neutrality requires 1 electrons to balance 1 protons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        12
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Electrical neutrality requires 1 electrons to balance 1 protons."
-    },
+    "difficulty": "easy",
+    "question": "In A&P, what does matter mean?",
     "options": [
-      "1 electrons",
-      "2 electrons",
-      "0 electrons",
-      "3 electrons"
+      "Anything with mass that takes up space",
+      "Only living cells",
+      "Only substances visible to the eye",
+      "Only solid body parts"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Matter includes solids, liquids, and gases that have mass and occupy space.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        7
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0332",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A hydrogen isotope has mass number 1 and 1 protons. Using neutrons = mass number − protons, how many neutrons are present?",
-    "explanation": "1 − 1 = 0 neutrons. Proton number, not neutron number, defines the element.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 1 − 1 = 0 neutrons. Proton number, not neutron number, defines the element."
-    },
+    "difficulty": "easy",
+    "question": "Which group contains the four elements that make up most of the human body?",
     "options": [
-      "0 neutrons",
-      "1 neutrons",
-      "2 neutrons",
-      "3 neutrons"
+      "Oxygen, carbon, hydrogen, and nitrogen",
+      "Iron, gold, silver, and copper",
+      "Calcium, lead, mercury, and neon",
+      "Sodium, helium, argon, and tin"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Oxygen, carbon, hydrogen, and nitrogen account for most body mass.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        9
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0333",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A hydrogen nucleus with mass number 1 acquires one additional neutron without changing proton number. What is its new mass number?",
-    "explanation": "Adding one neutron raises the mass number from 1 to 2; the element remains hydrogen.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Adding one neutron raises the mass number from 1 to 2; the element remains hydrogen."
-    },
+    "difficulty": "easy",
+    "question": "What is the smallest unit that keeps an element's chemical identity?",
     "options": [
-      "2",
-      "0",
-      "1",
-      "3"
+      "An atom",
+      "A tissue",
+      "An organ",
+      "A cell membrane"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "An atom is the basic unit of an element.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        10
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0334",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A neutral carbon atom has 6 protons. How many electrons does it contain?",
-    "explanation": "Electrical neutrality requires 6 electrons to balance 6 protons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        12
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Electrical neutrality requires 6 electrons to balance 6 protons."
-    },
+    "difficulty": "easy",
+    "question": "What element does the symbol Na represent in body-fluid chemistry?",
     "options": [
-      "6 electrons",
-      "7 electrons",
-      "5 electrons",
-      "8 electrons"
+      "Sodium",
+      "Nitrogen",
+      "Calcium",
+      "Carbon"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Na is the chemical symbol for sodium, an important body-fluid electrolyte.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        10
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0335",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A carbon isotope has mass number 12 and 6 protons. Using neutrons = mass number − protons, how many neutrons are present?",
-    "explanation": "12 − 6 = 6 neutrons. Proton number, not neutron number, defines the element.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 12 − 6 = 6 neutrons. Proton number, not neutron number, defines the element."
-    },
+    "difficulty": "easy",
+    "question": "What element does the symbol K represent in body-fluid chemistry?",
     "options": [
-      "6 neutrons",
-      "12 neutrons",
-      "7 neutrons",
-      "5 neutrons"
+      "Potassium",
+      "Carbon",
+      "Oxygen",
+      "Phosphorus"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "K is the chemical symbol for potassium, an important cellular electrolyte.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        10
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0336",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A carbon nucleus with mass number 12 acquires one additional neutron without changing proton number. What is its new mass number?",
-    "explanation": "Adding one neutron raises the mass number from 12 to 13; the element remains carbon.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Adding one neutron raises the mass number from 12 to 13; the element remains carbon."
-    },
+    "difficulty": "easy",
+    "question": "Which particle in an atom has a positive charge?",
     "options": [
-      "13",
-      "11",
-      "12",
-      "6"
+      "Proton",
+      "Electron",
+      "Neutron",
+      "Water molecule"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Protons carry positive charge.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        11
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0337",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A neutral nitrogen atom has 7 protons. How many electrons does it contain?",
-    "explanation": "Electrical neutrality requires 7 electrons to balance 7 protons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        12
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Electrical neutrality requires 7 electrons to balance 7 protons."
-    },
+    "difficulty": "easy",
+    "question": "Which particle in an atom has a negative charge?",
     "options": [
-      "7 electrons",
-      "8 electrons",
-      "6 electrons",
-      "9 electrons"
+      "Electron",
+      "Proton",
+      "Neutron",
+      "Glucose molecule"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Electrons carry negative charge.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        11
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0338",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A nitrogen isotope has mass number 14 and 7 protons. Using neutrons = mass number − protons, how many neutrons are present?",
-    "explanation": "14 − 7 = 7 neutrons. Proton number, not neutron number, defines the element.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 14 − 7 = 7 neutrons. Proton number, not neutron number, defines the element."
-    },
+    "difficulty": "easy",
+    "question": "Which particle in an atom has no electrical charge?",
     "options": [
-      "7 neutrons",
-      "14 neutrons",
-      "8 neutrons",
-      "6 neutrons"
+      "Neutron",
+      "Proton",
+      "Electron",
+      "Sodium ion"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Neutrons are electrically neutral.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        11
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0339",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A nitrogen nucleus with mass number 14 acquires one additional neutron without changing proton number. What is its new mass number?",
-    "explanation": "Adding one neutron raises the mass number from 14 to 15; the element remains nitrogen.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Adding one neutron raises the mass number from 14 to 15; the element remains nitrogen."
-    },
+    "difficulty": "easy",
+    "question": "Where are protons and neutrons found in an atom?",
     "options": [
-      "15",
-      "13",
-      "14",
-      "7"
+      "In the nucleus",
+      "Inside the outermost electron shell",
+      "Only in chemical bonds",
+      "Outside the atom"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "The nucleus contains protons and neutrons.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        12
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0340",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A neutral oxygen atom has 8 protons. How many electrons does it contain?",
-    "explanation": "Electrical neutrality requires 8 electrons to balance 8 protons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        12
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Electrical neutrality requires 8 electrons to balance 8 protons."
-    },
+    "difficulty": "easy",
+    "question": "Which electrons are most directly involved in forming chemical bonds?",
     "options": [
-      "8 electrons",
-      "9 electrons",
-      "7 electrons",
-      "10 electrons"
+      "Outer-shell electrons",
+      "Neutrons",
+      "Protons leaving the nucleus",
+      "Whole cells"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Valence electrons in the outer shell take part in chemical bonding.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        15
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0341",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A oxygen isotope has mass number 16 and 8 protons. Using neutrons = mass number − protons, how many neutrons are present?",
-    "explanation": "16 − 8 = 8 neutrons. Proton number, not neutron number, defines the element.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 16 − 8 = 8 neutrons. Proton number, not neutron number, defines the element."
-    },
+    "difficulty": "easy",
+    "question": "What is an ion?",
     "options": [
-      "8 neutrons",
-      "16 neutrons",
-      "9 neutrons",
-      "7 neutrons"
+      "An atom or group with a net electrical charge",
+      "A type of organ",
+      "Any molecule with no charge",
+      "A blood vessel"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "An ion has a net charge because its positive and negative charges are not balanced.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        20
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0342",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A oxygen nucleus with mass number 16 acquires one additional neutron without changing proton number. What is its new mass number?",
-    "explanation": "Adding one neutron raises the mass number from 16 to 17; the element remains oxygen.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Adding one neutron raises the mass number from 16 to 17; the element remains oxygen."
-    },
+    "difficulty": "easy",
+    "question": "What does losing an electron usually do to a neutral atom's charge?",
     "options": [
-      "17",
-      "15",
-      "16",
-      "8"
+      "Makes it positive",
+      "Makes it negative",
+      "Always turns it into water",
+      "Removes its nucleus"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Removing a negative electron leaves a net positive charge.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        20
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0343",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A neutral sodium atom has 11 protons. How many electrons does it contain?",
-    "explanation": "Electrical neutrality requires 11 electrons to balance 11 protons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        12
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Electrical neutrality requires 11 electrons to balance 11 protons."
-    },
+    "difficulty": "easy",
+    "question": "What does gaining an electron usually do to a neutral atom's charge?",
     "options": [
-      "11 electrons",
-      "12 electrons",
-      "10 electrons",
-      "13 electrons"
+      "Makes it negative",
+      "Makes it positive",
+      "Always makes it a protein",
+      "Destroys its protons"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Adding a negative electron creates a net negative charge.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        20
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0344",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A sodium isotope has mass number 23 and 11 protons. Using neutrons = mass number − protons, how many neutrons are present?",
-    "explanation": "23 − 11 = 12 neutrons. Proton number, not neutron number, defines the element.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 23 − 11 = 12 neutrons. Proton number, not neutron number, defines the element."
-    },
+    "difficulty": "easy",
+    "question": "Which name means a positively charged ion?",
     "options": [
-      "12 neutrons",
-      "23 neutrons",
-      "11 neutrons",
-      "13 neutrons"
+      "Cation",
+      "Anion",
+      "Enzyme",
+      "Buffer"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "A cation has a positive charge.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        20
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0345",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A sodium nucleus with mass number 23 acquires one additional neutron without changing proton number. What is its new mass number?",
-    "explanation": "Adding one neutron raises the mass number from 23 to 24; the element remains sodium.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Adding one neutron raises the mass number from 23 to 24; the element remains sodium."
-    },
+    "difficulty": "easy",
+    "question": "Which name means a negatively charged ion?",
     "options": [
-      "24",
-      "22",
-      "23",
-      "11"
+      "Anion",
+      "Cation",
+      "Solvent",
+      "Nucleotide"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "An anion has a negative charge.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        20
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0346",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A neutral magnesium atom has 12 protons. How many electrons does it contain?",
-    "explanation": "Electrical neutrality requires 12 electrons to balance 12 protons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        12
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Electrical neutrality requires 12 electrons to balance 12 protons."
-    },
+    "difficulty": "easy",
+    "question": "What holds sodium and chloride ions together in a salt crystal?",
     "options": [
-      "12 electrons",
-      "13 electrons",
-      "11 electrons",
-      "14 electrons"
+      "Attraction between opposite charges",
+      "Repulsion between opposite charges",
+      "A shared cell membrane",
+      "An enzyme active site"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Positive and negative ions attract in an ionic bond.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        21
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0347",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A magnesium isotope has mass number 24 and 12 protons. Using neutrons = mass number − protons, how many neutrons are present?",
-    "explanation": "24 − 12 = 12 neutrons. Proton number, not neutron number, defines the element.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 24 − 12 = 12 neutrons. Proton number, not neutron number, defines the element."
-    },
+    "difficulty": "easy",
+    "question": "What happens to electrons in a covalent bond?",
     "options": [
-      "12 neutrons",
-      "24 neutrons",
-      "13 neutrons",
-      "11 neutrons"
+      "They are shared between atoms",
+      "They become neutrons",
+      "They all leave the atoms permanently",
+      "They turn into water"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Covalent bonds involve shared electrons.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        23
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0348",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A magnesium nucleus with mass number 24 acquires one additional neutron without changing proton number. What is its new mass number?",
-    "explanation": "Adding one neutron raises the mass number from 24 to 25; the element remains magnesium.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Adding one neutron raises the mass number from 24 to 25; the element remains magnesium."
-    },
+    "difficulty": "easy",
+    "question": "What does polar mean when describing a covalent bond?",
     "options": [
-      "25",
-      "23",
-      "24",
-      "12"
+      "Electrons are shared unequally",
+      "No electrons are present",
+      "The atoms have become cells",
+      "The bond contains only neutrons"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Unequal electron sharing creates partial positive and negative regions.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        25
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0349",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A neutral phosphorus atom has 15 protons. How many electrons does it contain?",
-    "explanation": "Electrical neutrality requires 15 electrons to balance 15 protons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        12
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Electrical neutrality requires 15 electrons to balance 15 protons."
-    },
+    "difficulty": "easy",
+    "question": "What does nonpolar mean for a simple covalent bond?",
     "options": [
-      "15 electrons",
-      "16 electrons",
-      "14 electrons",
-      "17 electrons"
+      "Electrons are shared fairly evenly",
+      "One atom loses all its protons",
+      "The bond is a digestive enzyme",
+      "The molecule must dissolve in every liquid"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Nonpolar covalent bonds involve relatively even electron sharing.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        25
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0350",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A phosphorus isotope has mass number 31 and 15 protons. Using neutrons = mass number − protons, how many neutrons are present?",
-    "explanation": "31 − 15 = 16 neutrons. Proton number, not neutron number, defines the element.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 31 − 15 = 16 neutrons. Proton number, not neutron number, defines the element."
-    },
+    "difficulty": "easy",
+    "question": "Why is water described as a polar molecule?",
     "options": [
-      "16 neutrons",
-      "31 neutrons",
-      "15 neutrons",
-      "17 neutrons"
+      "Its charge is distributed unevenly",
+      "It is made only of ions",
+      "It contains no electrons",
+      "It is a lipid"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Water has partial positive and partial negative regions.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        26
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0351",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A phosphorus nucleus with mass number 31 acquires one additional neutron without changing proton number. What is its new mass number?",
-    "explanation": "Adding one neutron raises the mass number from 31 to 32; the element remains phosphorus.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Adding one neutron raises the mass number from 31 to 32; the element remains phosphorus."
-    },
+    "difficulty": "easy",
+    "question": "Which interaction helps neighboring water molecules attract one another?",
     "options": [
-      "32",
-      "30",
-      "31",
-      "15"
+      "Hydrogen bonding",
+      "Peptide digestion",
+      "Formation of a new nucleus",
+      "ATP production"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Hydrogen bonds form between suitable partial charges on neighboring water molecules.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        27
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0352",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A neutral chlorine atom has 17 protons. How many electrons does it contain?",
-    "explanation": "Electrical neutrality requires 17 electrons to balance 17 protons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        12
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Electrical neutrality requires 17 electrons to balance 17 protons."
-    },
+    "difficulty": "easy",
+    "question": "When table salt dissolves in water, what happens to its sodium and chloride?",
     "options": [
-      "17 electrons",
-      "18 electrons",
-      "16 electrons",
-      "19 electrons"
+      "They separate as ions",
+      "They both become glucose",
+      "They lose their identity as elements",
+      "They form red blood cells"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Water separates the ions in dissolved sodium chloride.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        22
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0353",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A chlorine isotope has mass number 35 and 17 protons. Using neutrons = mass number − protons, how many neutrons are present?",
-    "explanation": "35 − 17 = 18 neutrons. Proton number, not neutron number, defines the element.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 35 − 17 = 18 neutrons. Proton number, not neutron number, defines the element."
-    },
+    "difficulty": "easy",
+    "question": "Why do dissolved electrolytes matter for nerves and muscles?",
     "options": [
-      "18 neutrons",
-      "35 neutrons",
-      "17 neutrons",
-      "19 neutrons"
+      "Their ions help carry electrical signals",
+      "They become every nerve cell's nucleus",
+      "They replace all proteins",
+      "They prevent all chemical reactions"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Electrolyte ions support nerve signaling and muscle activity.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        48
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0354",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A chlorine nucleus with mass number 35 acquires one additional neutron without changing proton number. What is its new mass number?",
-    "explanation": "Adding one neutron raises the mass number from 35 to 36; the element remains chlorine.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Adding one neutron raises the mass number from 35 to 36; the element remains chlorine."
-    },
+    "difficulty": "easy",
+    "question": "Which description fits a compound?",
     "options": [
-      "36",
-      "34",
-      "35",
-      "17"
+      "A substance made from chemically combined different elements",
+      "A group of identical organs",
+      "Any fluid with red cells",
+      "A collection of unconnected tissues"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "A compound contains different elements chemically combined.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        17
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0355",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A neutral potassium atom has 19 protons. How many electrons does it contain?",
-    "explanation": "Electrical neutrality requires 19 electrons to balance 19 protons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        12
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Electrical neutrality requires 19 electrons to balance 19 protons."
-    },
+    "difficulty": "easy",
+    "question": "Why is water a compound?",
     "options": [
-      "19 electrons",
-      "20 electrons",
-      "18 electrons",
-      "21 electrons"
+      "It contains chemically joined hydrogen and oxygen",
+      "It is a tissue",
+      "It contains only oxygen atoms",
+      "It has no chemical bonds"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Water contains hydrogen and oxygen bonded together.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        17
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0356",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A potassium isotope has mass number 39 and 19 protons. Using neutrons = mass number − protons, how many neutrons are present?",
-    "explanation": "39 − 19 = 20 neutrons. Proton number, not neutron number, defines the element.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 39 − 19 = 20 neutrons. Proton number, not neutron number, defines the element."
-    },
+    "difficulty": "easy",
+    "question": "In a chemical equation, what are the starting substances called?",
     "options": [
-      "20 neutrons",
-      "39 neutrons",
-      "19 neutrons",
-      "21 neutrons"
+      "Reactants",
+      "Products",
+      "Enzymes in every case",
+      "Organelles"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Reactants are the substances entering a reaction.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        28
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0357",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A potassium nucleus with mass number 39 acquires one additional neutron without changing proton number. What is its new mass number?",
-    "explanation": "Adding one neutron raises the mass number from 39 to 40; the element remains potassium.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Adding one neutron raises the mass number from 39 to 40; the element remains potassium."
-    },
+    "difficulty": "easy",
+    "question": "In a chemical equation, what are the substances made by the reaction called?",
     "options": [
-      "40",
-      "38",
-      "39",
-      "19"
+      "Products",
+      "Reactants",
+      "Valence shells",
+      "Protons"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Products are formed by a reaction.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        28
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0358",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A neutral calcium atom has 20 protons. How many electrons does it contain?",
-    "explanation": "Electrical neutrality requires 20 electrons to balance 20 protons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        12
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Electrical neutrality requires 20 electrons to balance 20 protons."
-    },
+    "difficulty": "easy",
+    "question": "Which reaction type joins smaller parts into a larger molecule?",
     "options": [
-      "20 electrons",
-      "21 electrons",
-      "19 electrons",
-      "22 electrons"
+      "Synthesis",
+      "Decomposition",
+      "Filtration",
+      "Evaporation"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Synthesis joins components to form a larger product.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        29
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0359",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A calcium isotope has mass number 40 and 20 protons. Using neutrons = mass number − protons, how many neutrons are present?",
-    "explanation": "40 − 20 = 20 neutrons. Proton number, not neutron number, defines the element.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        11,
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 40 − 20 = 20 neutrons. Proton number, not neutron number, defines the element."
-    },
+    "difficulty": "easy",
+    "question": "Which reaction type breaks a larger molecule into smaller parts?",
     "options": [
-      "20 neutrons",
-      "40 neutrons",
-      "21 neutrons",
-      "19 neutrons"
+      "Decomposition",
+      "Synthesis",
+      "Blood circulation",
+      "Osmoregulation"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Decomposition breaks larger substances into smaller components.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        30
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0360",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A calcium nucleus with mass number 40 acquires one additional neutron without changing proton number. What is its new mass number?",
-    "explanation": "Adding one neutron raises the mass number from 40 to 41; the element remains calcium.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        13
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: Adding one neutron raises the mass number from 40 to 41; the element remains calcium."
-    },
+    "difficulty": "easy",
+    "question": "What is the main job of a biological catalyst?",
     "options": [
-      "41",
-      "39",
-      "40",
-      "20"
+      "Speed up a chemical reaction",
+      "Become every product of the reaction",
+      "Stop all reactions in the cell",
+      "Turn every solute into water"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Catalysts increase reaction rate without being used up overall.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        33
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0361",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Assume dilute aqueous solutions. How many times greater is hydrogen-ion concentration at pH 2 than at pH 3?",
-    "explanation": "The pH difference is 1; the hydrogen-ion ratio is 10^1 = 10.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The pH difference is 1; the hydrogen-ion ratio is 10^1 = 10."
-    },
+    "difficulty": "easy",
+    "question": "Why is water important to the human body?",
     "options": [
-      "10 times",
-      "1 times",
-      "100 times",
-      "11 times"
+      "It supports transport, temperature control, and chemical reactions",
+      "It is useful only in bones",
+      "It prevents every dissolved substance from moving",
+      "It replaces all organic molecules"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Water has several essential physiological roles.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        35
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0362",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Assume dilute aqueous solutions. How many times greater is hydrogen-ion concentration at pH 3 than at pH 5?",
-    "explanation": "The pH difference is 2; the hydrogen-ion ratio is 10^2 = 100.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The pH difference is 2; the hydrogen-ion ratio is 10^2 = 100."
-    },
+    "difficulty": "easy",
+    "question": "How does water help protect the body against rapid temperature changes?",
     "options": [
-      "100 times",
-      "2 times",
-      "20 times",
-      "10 times"
+      "It can absorb considerable heat before its temperature changes greatly",
+      "It immediately freezes whenever it absorbs heat",
+      "It makes all heat disappear",
+      "It cannot absorb heat"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Water's high heat capacity helps moderate temperature changes.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        36
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0363",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Assume dilute aqueous solutions. How many times greater is hydrogen-ion concentration at pH 4 than at pH 7?",
-    "explanation": "The pH difference is 3; the hydrogen-ion ratio is 10^3 = 1000.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The pH difference is 3; the hydrogen-ion ratio is 10^3 = 1000."
-    },
+    "difficulty": "easy",
+    "question": "In a salt-water solution, which part is the solvent?",
     "options": [
-      "1000 times",
-      "3 times",
-      "30 times",
-      "100 times"
+      "Water",
+      "The dissolved salt",
+      "Only the sodium nucleus",
+      "Any protein in the container"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "The solvent is the dissolving medium; here it is water.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        38
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0364",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Assume dilute aqueous solutions. How many times greater is hydrogen-ion concentration at pH 5 than at pH 9?",
-    "explanation": "The pH difference is 4; the hydrogen-ion ratio is 10^4 = 10000.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The pH difference is 4; the hydrogen-ion ratio is 10^4 = 10000."
-    },
+    "difficulty": "easy",
+    "question": "In a sugar-water solution, what is the dissolved sugar called?",
     "options": [
-      "10000 times",
-      "4 times",
-      "40 times",
-      "1000 times"
+      "The solute",
+      "The solvent",
+      "A tissue",
+      "A phospholipid membrane"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "A solute is a substance dissolved in a solvent.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        38
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0365",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Assume dilute aqueous solutions. How many times greater is hydrogen-ion concentration at pH 6 than at pH 7?",
-    "explanation": "The pH difference is 1; the hydrogen-ion ratio is 10^1 = 10.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The pH difference is 1; the hydrogen-ion ratio is 10^1 = 10."
-    },
+    "difficulty": "easy",
+    "question": "What is a solution?",
     "options": [
-      "10 times",
-      "1 times",
-      "100 times",
-      "11 times"
+      "A mixture with dissolved particles distributed evenly",
+      "A mixture that must contain whole blood cells",
+      "A new type of organ",
+      "Only a dry salt crystal"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "A solution is a homogeneous mixture.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        38
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0366",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Assume dilute aqueous solutions. How many times greater is hydrogen-ion concentration at pH 2 than at pH 5?",
-    "explanation": "The pH difference is 3; the hydrogen-ion ratio is 10^3 = 1000.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The pH difference is 3; the hydrogen-ion ratio is 10^3 = 1000."
-    },
+    "difficulty": "easy",
+    "question": "What does hydrophilic mean?",
     "options": [
-      "1000 times",
-      "3 times",
-      "30 times",
-      "100 times"
+      "Having an affinity for water",
+      "Unable to interact with water in any way",
+      "Made only of cholesterol",
+      "Containing no chemical bonds"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Hydrophilic substances interact favorably with water.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        39
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0367",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Assume dilute aqueous solutions. How many times greater is hydrogen-ion concentration at pH 3 than at pH 7?",
-    "explanation": "The pH difference is 4; the hydrogen-ion ratio is 10^4 = 10000.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The pH difference is 4; the hydrogen-ion ratio is 10^4 = 10000."
-    },
+    "difficulty": "easy",
+    "question": "What does hydrophobic mean?",
     "options": [
-      "10000 times",
-      "4 times",
-      "40 times",
-      "1000 times"
+      "Having little affinity for water",
+      "Always dissolving readily in water",
+      "Made only of sodium ions",
+      "Having no mass"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Hydrophobic regions tend not to mix readily with water.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        39
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0368",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Assume dilute aqueous solutions. How many times greater is hydrogen-ion concentration at pH 4 than at pH 6?",
-    "explanation": "The pH difference is 2; the hydrogen-ion ratio is 10^2 = 100.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The pH difference is 2; the hydrogen-ion ratio is 10^2 = 100."
-    },
+    "difficulty": "easy",
+    "question": "Why does oil usually form a separate layer from water?",
     "options": [
-      "100 times",
-      "2 times",
-      "20 times",
-      "10 times"
+      "Oil is largely nonpolar",
+      "Oil is made only of sodium ions",
+      "Water contains no molecules",
+      "Both liquids are identical solvents"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Nonpolar oil does not mix well with polar water.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        39
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0369",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Assume dilute aqueous solutions. How many times greater is hydrogen-ion concentration at pH 5 than at pH 8?",
-    "explanation": "The pH difference is 3; the hydrogen-ion ratio is 10^3 = 1000.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The pH difference is 3; the hydrogen-ion ratio is 10^3 = 1000."
-    },
+    "difficulty": "easy",
+    "question": "Which mixture type contains dispersed particles that do not readily settle?",
     "options": [
-      "1000 times",
-      "3 times",
-      "30 times",
-      "100 times"
+      "Colloid",
+      "Dry crystal",
+      "Pure element",
+      "Atomic nucleus"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Colloids contain dispersed particles that remain suspended under ordinary conditions.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        41
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0370",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Assume dilute aqueous solutions. How many times greater is hydrogen-ion concentration at pH 6 than at pH 9?",
-    "explanation": "The pH difference is 3; the hydrogen-ion ratio is 10^3 = 1000.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The pH difference is 3; the hydrogen-ion ratio is 10^3 = 1000."
-    },
+    "difficulty": "easy",
+    "question": "Which mixture type can have particles that settle over time?",
     "options": [
-      "1000 times",
-      "3 times",
-      "30 times",
-      "100 times"
+      "Suspension",
+      "Pure water",
+      "A single element",
+      "A covalent bond"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Suspensions contain particles that can settle.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        42
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0371",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "For a dilute aqueous solution with [H+] = 10^−3 mol/L, use pH = −log10[H+]. What is the pH?",
-    "explanation": "−log10(10^−3) = 3. This uses the dilute-solution concentration approximation.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: −log10(10^−3) = 3. This uses the dilute-solution concentration approximation."
-    },
+    "difficulty": "easy",
+    "question": "What is one role of water in synovial fluid?",
     "options": [
-      "3",
-      "11",
-      "4",
-      "2"
+      "Helping lubricate moving joints",
+      "Making every joint immovable",
+      "Replacing the bones",
+      "Producing the optic nerve"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Water-rich synovial fluid helps reduce joint friction.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        43
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0372",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "For a dilute aqueous solution with [H+] = 10^−4 mol/L, use pH = −log10[H+]. What is the pH?",
-    "explanation": "−log10(10^−4) = 4. This uses the dilute-solution concentration approximation.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: −log10(10^−4) = 4. This uses the dilute-solution concentration approximation."
-    },
+    "difficulty": "easy",
+    "question": "What is one role of the water in cerebrospinal fluid?",
     "options": [
-      "4",
-      "10",
-      "5",
-      "3"
+      "Helping cushion the brain and spinal cord",
+      "Forming bone mineral",
+      "Replacing all neurons",
+      "Digesting dietary fat"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Cerebrospinal fluid helps protect delicate CNS tissues.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        43
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0373",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "For a dilute aqueous solution with [H+] = 10^−5 mol/L, use pH = −log10[H+]. What is the pH?",
-    "explanation": "−log10(10^−5) = 5. This uses the dilute-solution concentration approximation.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: −log10(10^−5) = 5. This uses the dilute-solution concentration approximation."
-    },
+    "difficulty": "easy",
+    "question": "What happens to water during a simple dehydration-synthesis reaction?",
     "options": [
-      "5",
-      "9",
-      "6",
-      "4"
+      "Water is released as parts join",
+      "Water always becomes an electron",
+      "All water is turned into iron",
+      "Water has no relationship to the reaction"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Dehydration synthesis joins parts while releasing water.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        45
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0374",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "For a dilute aqueous solution with [H+] = 10^−6 mol/L, use pH = −log10[H+]. What is the pH?",
-    "explanation": "−log10(10^−6) = 6. This uses the dilute-solution concentration approximation.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        52
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: −log10(10^−6) = 6. This uses the dilute-solution concentration approximation."
-    },
+    "difficulty": "easy",
+    "question": "What does hydrolysis use to help split a chemical bond?",
     "options": [
-      "6",
-      "8",
-      "7",
-      "5"
+      "Water",
+      "Only light",
+      "Only a red blood cell",
+      "A whole bone"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Hydrolysis uses water when breaking a bond.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        46
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0375",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "For a dilute aqueous solution with [H+] = 10^−8 mol/L, use pH = −log10[H+]. What is the pH?",
-    "explanation": "−log10(10^−8) = 8. This uses the dilute-solution concentration approximation.",
+    "difficulty": "easy",
+    "question": "Which reaction helps digest a large food molecule into smaller units?",
+    "options": [
+      "Hydrolysis",
+      "Bone formation only",
+      "Blood clotting only",
+      "Evaporation only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Digestive breakdown commonly uses hydrolysis reactions.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        46
+      ],
+      "kind": "slide"
+    }
+  },
+  {
+    "id": "basic_chemistry-0376",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question": "What is a basic property of an acid in body-fluid chemistry?",
+    "options": [
+      "It can donate hydrogen ions",
+      "It is always a carbohydrate",
+      "It contains no particles",
+      "It always has the highest pH"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Acids donate hydrogen ions in suitable conditions.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        50
+      ],
+      "kind": "slide"
+    }
+  },
+  {
+    "id": "basic_chemistry-0377",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question": "What is a basic property of a base in body-fluid chemistry?",
+    "options": [
+      "It can accept hydrogen ions",
+      "It is always a protein",
+      "It must contain DNA",
+      "It always increases acidity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bases can accept hydrogen ions.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        51
+      ],
+      "kind": "slide"
+    }
+  },
+  {
+    "id": "basic_chemistry-0378",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question": "What does a lower pH generally indicate?",
+    "options": [
+      "Greater acidity",
+      "Less acidity",
+      "More glucose in every case",
+      "More oxygen in every case"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lower pH corresponds to greater hydrogen-ion activity and greater acidity.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
         52
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: −log10(10^−8) = 8. This uses the dilute-solution concentration approximation."
-    },
-    "options": [
-      "8",
-      "6",
-      "9",
-      "7"
-    ],
-    "correct": [
-      0
-    ]
-  },
-  {
-    "id": "basic_chemistry-0376",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A mass/volume percentage means grams per 100 mL of final solution. What is the % w/v of 2 g dissolved to a final volume of 100 mL?",
-    "explanation": "(2 g ÷ 100 mL) × 100 mL = 2 g per 100 mL, or 2% w/v.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: (2 g ÷ 100 mL) × 100 mL = 2 g per 100 mL, or 2% w/v."
-    },
-    "options": [
-      "2% w/v",
-      "20% w/v",
-      "0.2% w/v",
-      "3% w/v"
-    ],
-    "correct": [
-      0
-    ]
-  },
-  {
-    "id": "basic_chemistry-0377",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A mass/volume percentage means grams per 100 mL of final solution. What is the % w/v of 5 g dissolved to a final volume of 250 mL?",
-    "explanation": "(5 g ÷ 250 mL) × 100 mL = 2 g per 100 mL, or 2% w/v.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: (5 g ÷ 250 mL) × 100 mL = 2 g per 100 mL, or 2% w/v."
-    },
-    "options": [
-      "2% w/v",
-      "5% w/v",
-      "20% w/v",
-      "0.2% w/v"
-    ],
-    "correct": [
-      0
-    ]
-  },
-  {
-    "id": "basic_chemistry-0378",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A mass/volume percentage means grams per 100 mL of final solution. What is the % w/v of 3 g dissolved to a final volume of 150 mL?",
-    "explanation": "(3 g ÷ 150 mL) × 100 mL = 2 g per 100 mL, or 2% w/v.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: (3 g ÷ 150 mL) × 100 mL = 2 g per 100 mL, or 2% w/v."
-    },
-    "options": [
-      "2% w/v",
-      "3% w/v",
-      "20% w/v",
-      "0.2% w/v"
-    ],
-    "correct": [
-      0
-    ]
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0379",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A mass/volume percentage means grams per 100 mL of final solution. What is the % w/v of 1 g dissolved to a final volume of 200 mL?",
-    "explanation": "(1 g ÷ 200 mL) × 100 mL = 0.5 g per 100 mL, or 0.5% w/v.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: (1 g ÷ 200 mL) × 100 mL = 0.5 g per 100 mL, or 0.5% w/v."
-    },
+    "difficulty": "easy",
+    "question": "What does a higher pH generally indicate?",
     "options": [
-      "0.5% w/v",
-      "1% w/v",
-      "5% w/v",
-      "0.05% w/v"
+      "More basic conditions",
+      "More acidic conditions",
+      "A larger amount of DNA in every case",
+      "Complete absence of water"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Higher pH indicates less acidic, more basic conditions.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        52
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0380",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A mass/volume percentage means grams per 100 mL of final solution. What is the % w/v of 4 g dissolved to a final volume of 500 mL?",
-    "explanation": "(4 g ÷ 500 mL) × 100 mL = 0.8 g per 100 mL, or 0.8% w/v.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: (4 g ÷ 500 mL) × 100 mL = 0.8 g per 100 mL, or 0.8% w/v."
-    },
+    "difficulty": "easy",
+    "question": "In the usual room-temperature introductory pH scale, what is pH 7 called?",
     "options": [
-      "0.8% w/v",
-      "4% w/v",
-      "8% w/v",
-      "0.08% w/v"
+      "Neutral",
+      "Strongly acidic",
+      "Strongly basic",
+      "A type of lipid"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "A pH of 7 is the common introductory neutral-water reference.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        52
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0381",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A hypothetical dissolved-solute concentration is 60 mg/dL. Using 10 dL = 1 L, express it in mg/L.",
-    "explanation": "60 mg/dL × 10 dL/L = 600 mg/L. This is a unit conversion, not a diagnostic interpretation.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 60 mg/dL × 10 dL/L = 600 mg/L. This is a unit conversion, not a diagnostic interpretation."
-    },
+    "difficulty": "easy",
+    "question": "On the usual introductory pH scale, is pH 3 acidic or basic?",
     "options": [
-      "600 mg/L",
-      "6 mg/L",
-      "60 mg/L",
-      "6000 mg/L"
+      "Acidic",
+      "Basic",
+      "Always neutral",
+      "Not a pH value"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "A pH below the usual neutral reference is acidic.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        52
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0382",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A hypothetical dissolved-solute concentration is 75 mg/dL. Using 10 dL = 1 L, express it in mg/L.",
-    "explanation": "75 mg/dL × 10 dL/L = 750 mg/L. This is a unit conversion, not a diagnostic interpretation.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 75 mg/dL × 10 dL/L = 750 mg/L. This is a unit conversion, not a diagnostic interpretation."
-    },
+    "difficulty": "easy",
+    "question": "On the usual introductory pH scale, is pH 9 acidic or basic?",
     "options": [
-      "750 mg/L",
-      "7.5 mg/L",
-      "75 mg/L",
-      "7500 mg/L"
+      "Basic",
+      "Acidic",
+      "Always neutral",
+      "A measure of mass"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "A pH above the usual neutral reference is basic.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        52
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0383",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A hypothetical dissolved-solute concentration is 90 mg/dL. Using 10 dL = 1 L, express it in mg/L.",
-    "explanation": "90 mg/dL × 10 dL/L = 900 mg/L. This is a unit conversion, not a diagnostic interpretation.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 90 mg/dL × 10 dL/L = 900 mg/L. This is a unit conversion, not a diagnostic interpretation."
-    },
+    "difficulty": "easy",
+    "question": "Why are buffers useful in the blood?",
     "options": [
-      "900 mg/L",
-      "9 mg/L",
-      "90 mg/L",
-      "9000 mg/L"
+      "They help resist large changes in pH",
+      "They prevent every chemical reaction",
+      "They remove every water molecule",
+      "They replace hemoglobin as an oxygen carrier"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Buffers help keep pH within a narrower range.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        54
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0384",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A hypothetical dissolved-solute concentration is 100 mg/dL. Using 10 dL = 1 L, express it in mg/L.",
-    "explanation": "100 mg/dL × 10 dL/L = 1000 mg/L. This is a unit conversion, not a diagnostic interpretation.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 100 mg/dL × 10 dL/L = 1000 mg/L. This is a unit conversion, not a diagnostic interpretation."
-    },
+    "difficulty": "easy",
+    "question": "Which pair is an important blood buffer system?",
     "options": [
-      "1000 mg/L",
-      "10 mg/L",
-      "100 mg/L",
-      "10000 mg/L"
+      "Carbonic acid and bicarbonate",
+      "Glucose and glycogen only",
+      "Cholesterol and triglyceride only",
+      "Actin and myosin only"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Carbonic acid and bicarbonate help buffer blood.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        54
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0385",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A hypothetical dissolved-solute concentration is 125 mg/dL. Using 10 dL = 1 L, express it in mg/L.",
-    "explanation": "125 mg/dL × 10 dL/L = 1250 mg/L. This is a unit conversion, not a diagnostic interpretation.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 125 mg/dL × 10 dL/L = 1250 mg/L. This is a unit conversion, not a diagnostic interpretation."
-    },
+    "difficulty": "easy",
+    "question": "Which ion can act as a base in an important blood buffer?",
     "options": [
-      "1250 mg/L",
-      "12.5 mg/L",
-      "125 mg/L",
-      "12500 mg/L"
+      "Bicarbonate",
+      "Hemoglobin iron only",
+      "A whole chromosome",
+      "A triglyceride"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Bicarbonate can accept hydrogen ions.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        51
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0386",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Using molarity = moles ÷ final solution liters, calculate the concentration of 1 mol in 2 L.",
-    "explanation": "1 mol ÷ 2 L = 0.5 mol/L.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 1 mol ÷ 2 L = 0.5 mol/L."
-    },
+    "difficulty": "easy",
+    "question": "Why does stable pH matter for cells?",
     "options": [
-      "0.5 mol/L",
-      "2 mol/L",
-      "5 mol/L",
-      "0.05 mol/L"
+      "Proteins and enzymes work best within suitable pH conditions",
+      "Cells need no chemical reactions",
+      "All proteins work equally at every pH",
+      "pH changes only affect nonliving matter"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Large pH changes can disturb protein structure and function.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        6
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0387",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Using molarity = moles ÷ final solution liters, calculate the concentration of 2 mol in 4 L.",
-    "explanation": "2 mol ÷ 4 L = 0.5 mol/L.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 2 mol ÷ 4 L = 0.5 mol/L."
-    },
+    "difficulty": "easy",
+    "question": "What happens when a soluble salt dissociates in water?",
     "options": [
-      "0.5 mol/L",
-      "8 mol/L",
-      "2 mol/L",
-      "5 mol/L"
+      "Its ions separate",
+      "Its ions become cells",
+      "All protons disappear",
+      "Every ion becomes electrically neutral"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Dissociation separates ions while they retain their charges.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        47
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0388",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Using molarity = moles ÷ final solution liters, calculate the concentration of 0.25 mol in 0.5 L.",
-    "explanation": "0.25 mol ÷ 0.5 L = 0.5 mol/L.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 0.25 mol ÷ 0.5 L = 0.5 mol/L."
-    },
+    "difficulty": "easy",
+    "question": "Which example is an electrolyte ion important to the body?",
     "options": [
-      "0.5 mol/L",
-      "0.125 mol/L",
-      "2 mol/L",
-      "5 mol/L"
+      "Sodium ion",
+      "A whole triglyceride",
+      "A starch granule",
+      "A cholesterol molecule"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Sodium is an important electrolyte ion.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        48
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0389",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Using molarity = moles ÷ final solution liters, calculate the concentration of 0.3 mol in 1.5 L.",
-    "explanation": "0.3 mol ÷ 1.5 L = 0.2 mol/L.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 0.3 mol ÷ 1.5 L = 0.2 mol/L."
-    },
+    "difficulty": "easy",
+    "question": "How is a dissolved solute different from the solvent?",
     "options": [
-      "0.2 mol/L",
-      "0.45 mol/L",
-      "5 mol/L",
-      "2 mol/L"
+      "The solute is the substance dissolved in the solvent",
+      "The solute must be a whole cell",
+      "The solvent is always a solid bone",
+      "The two words always mean identical things"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "The solvent dissolves the solute.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        38
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0390",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Using molarity = moles ÷ final solution liters, calculate the concentration of 0.75 mol in 3 L.",
-    "explanation": "0.75 mol ÷ 3 L = 0.25 mol/L.",
+    "difficulty": "easy",
+    "question": "Without doing a calculation, what does a more concentrated solution contain relative to the same amount of solution?",
+    "options": [
+      "More dissolved solute",
+      "Less solute by definition",
+      "No water in every case",
+      "Only larger cells"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Concentration describes how much solute is present relative to a given amount of solution.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
         40
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 0.75 mol ÷ 3 L = 0.25 mol/L."
-    },
-    "options": [
-      "0.25 mol/L",
-      "2.25 mol/L",
-      "4 mol/L",
-      "2.5 mol/L"
-    ],
-    "correct": [
-      0
-    ]
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0391",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A single covalent bond contains 1 shared electron pair(s). How many shared electrons is that?",
-    "explanation": "1 pair(s) × 2 electrons/pair = 2 shared electrons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        24
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 1 pair(s) × 2 electrons/pair = 2 shared electrons."
-    },
+    "difficulty": "easy",
+    "question": "Which large nutrient group is commonly used for readily available energy?",
     "options": [
-      "2 electrons",
-      "1 electrons",
-      "3 electrons",
-      "4 electrons"
+      "Carbohydrates",
+      "Nucleic acids only",
+      "Mineral crystals only",
+      "Antibodies only"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Carbohydrates are a major source of usable fuel.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        57
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0392",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A single covalent bond contains 2 shared electrons. How many shared pairs does it contain?",
-    "explanation": "2 shared electrons ÷ 2 electrons/pair = 1 pair(s).",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        24
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 2 shared electrons ÷ 2 electrons/pair = 1 pair(s)."
-    },
+    "difficulty": "easy",
+    "question": "Which simple sugar is commonly called blood sugar?",
     "options": [
-      "1 pairs",
-      "2 pairs",
-      "3 pairs",
-      "4 pairs"
+      "Glucose",
+      "Cellulose",
+      "Cholesterol",
+      "Collagen"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Glucose is the main sugar commonly measured in blood.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        58
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0393",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A double covalent bond contains 2 shared electron pair(s). How many shared electrons is that?",
-    "explanation": "2 pair(s) × 2 electrons/pair = 4 shared electrons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        24
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 2 pair(s) × 2 electrons/pair = 4 shared electrons."
-    },
+    "difficulty": "easy",
+    "question": "What is a major storage form of carbohydrate in liver and muscle?",
     "options": [
-      "4 electrons",
-      "2 electrons",
-      "5 electrons",
-      "6 electrons"
+      "Glycogen",
+      "Cellulose",
+      "Hemoglobin",
+      "Cholesterol"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Glycogen stores glucose units in animal tissues.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        60
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0394",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A double covalent bond contains 4 shared electrons. How many shared pairs does it contain?",
-    "explanation": "4 shared electrons ÷ 2 electrons/pair = 2 pair(s).",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        24
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 4 shared electrons ÷ 2 electrons/pair = 2 pair(s)."
-    },
+    "difficulty": "easy",
+    "question": "Which plant carbohydrate contributes to dietary fiber?",
     "options": [
-      "2 pairs",
-      "4 pairs",
-      "3 pairs",
-      "5 pairs"
+      "Cellulose",
+      "Glycogen",
+      "Cholesterol",
+      "Albumin"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Cellulose is a plant structural carbohydrate that humans do not digest with their own enzymes.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        60
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0395",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A triple covalent bond contains 3 shared electron pair(s). How many shared electrons is that?",
-    "explanation": "3 pair(s) × 2 electrons/pair = 6 shared electrons.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        24
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 3 pair(s) × 2 electrons/pair = 6 shared electrons."
-    },
+    "difficulty": "easy",
+    "question": "What is a disaccharide?",
     "options": [
-      "6 electrons",
-      "3 electrons",
-      "7 electrons",
-      "8 electrons"
+      "A carbohydrate made from two simple sugar units",
+      "A molecule made only of amino acids",
+      "A type of steroid",
+      "A DNA base"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "A disaccharide contains two monosaccharide units.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        59
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0396",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A triple covalent bond contains 6 shared electrons. How many shared pairs does it contain?",
-    "explanation": "6 shared electrons ÷ 2 electrons/pair = 3 pair(s).",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        24
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 6 shared electrons ÷ 2 electrons/pair = 3 pair(s)."
-    },
+    "difficulty": "easy",
+    "question": "What is one main role of stored triglycerides?",
     "options": [
-      "3 pairs",
-      "6 pairs",
-      "4 pairs",
-      "5 pairs"
+      "Long-term energy storage",
+      "Storing the genetic code",
+      "Directly carrying oxygen in red cells",
+      "Making every enzyme active site"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Triglycerides serve as concentrated stored fuel.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        62
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0397",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-ATGC-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "How can fat under the skin help the body?",
     "options": [
-      "5′-TACG-3′",
-      "5′-ATGC-3′",
-      "5′-GCAT-3′",
-      "5′-ACGT-3′"
+      "It helps reduce heat loss",
+      "It makes blood unable to circulate",
+      "It replaces all muscle",
+      "It removes every electrolyte"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Adipose tissue can provide insulation.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        62
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0398",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-TACG-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "Which lipid type is a major part of cell-membrane bilayers?",
     "options": [
-      "5′-ATGC-3′",
-      "5′-TACG-3′",
-      "5′-CGTA-3′",
-      "5′-TGCA-3′"
+      "Phospholipid",
+      "Glycogen",
+      "Cellulose",
+      "DNA"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Phospholipids form the basic bilayer structure of cell membranes.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        64
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0399",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-GCTA-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "Which part of a phospholipid interacts well with water?",
     "options": [
-      "5′-CGAT-3′",
-      "5′-GCTA-3′",
-      "5′-TAGC-3′",
-      "5′-GATC-3′"
+      "Its polar head",
+      "Only its fatty-acid tails",
+      "An entire chromosome",
+      "Its lack of any charge region"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "The polar head is hydrophilic.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        64
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0400",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-CGAT-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "Which part of a phospholipid tends to avoid water?",
     "options": [
-      "5′-GCTA-3′",
-      "5′-CGAT-3′",
-      "5′-ATCG-3′",
-      "5′-CTAG-3′"
+      "Its nonpolar fatty-acid tails",
+      "Its polar head",
+      "The sodium ions around it",
+      "Its surrounding water molecules"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "The fatty-acid tails are hydrophobic.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        64
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0401",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-AAGC-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "What is one normal function of cholesterol?",
     "options": [
-      "5′-TTCG-3′",
-      "5′-AAGC-3′",
-      "5′-GCTT-3′",
-      "5′-TCGT-3′"
+      "Helping form membranes and steroid-hormone precursors",
+      "Acting only as a waste product with no useful role",
+      "Replacing every DNA nucleotide",
+      "Serving as the main blood buffer"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Cholesterol has normal structural and biosynthetic roles.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        65
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0402",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-TTGC-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "What are the building blocks of proteins?",
     "options": [
-      "5′-AACG-3′",
-      "5′-TTGC-3′",
-      "5′-GCAA-3′",
-      "5′-ACGA-3′"
+      "Amino acids",
+      "Only fatty acids",
+      "Only glucose units",
+      "Only calcium ions"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Proteins are chains of amino acids.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        66
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0403",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-GACT-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "What bond links amino acids in a protein chain?",
     "options": [
-      "5′-CTGA-3′",
-      "5′-GACT-3′",
-      "5′-AGTC-3′",
-      "5′-TGAC-3′"
+      "Peptide bond",
+      "Only an ionic crystal lattice",
+      "Only a hydrogen bond between water molecules",
+      "A phospholipid tail"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Peptide bonds link neighboring amino acids.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        68
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0404",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-CTAG-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "Why does a protein's shape matter?",
     "options": [
-      "5′-GATC-3′",
-      "5′-CTAG-3′",
-      "5′-ATCG-3′",
-      "5′-GATA-3′"
+      "Its shape helps determine its function",
+      "Shape has no effect on function",
+      "Every protein has the same job",
+      "A change in shape always creates DNA"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "A protein's structure supports its interactions and biological role.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        69
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0405",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-AGTC-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "What can happen when a protein is denatured?",
     "options": [
-      "5′-TCAG-3′",
-      "5′-AGTC-3′",
-      "5′-GACT-3′",
-      "5′-CAGT-3′"
+      "It can lose its usual shape and function",
+      "It always becomes an intact cell",
+      "It becomes a new element",
+      "All its amino acids become electrons"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Denaturation disrupts protein structure and can impair function.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        73
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0406",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-TCGA-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "What is an enzyme's active site?",
     "options": [
-      "5′-AGCT-3′",
-      "5′-TCGA-3′",
-      "5′-GCTA-3′",
-      "5′-AGCA-3′"
+      "The region where a suitable substrate binds",
+      "The nucleus of the cell around it",
+      "A storage sac for whole red cells",
+      "The outside of every artery"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "The active site binds suitable substrates and supports catalysis.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        74
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0407",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-GGAT-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        78
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
+    "difficulty": "easy",
+    "question": "What is a substrate in an enzyme reaction?",
     "options": [
-      "5′-CCTA-3′",
-      "5′-GGAT-3′",
-      "5′-ATCC-3′",
-      "5′-CTAC-3′"
+      "A reactant on which the enzyme acts",
+      "The entire organ containing the enzyme",
+      "Every product in all reactions",
+      "A type of white blood cell"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "A substrate is a reactant bound and acted on by an enzyme.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        74
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0408",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "A DNA template is written 3′-CCTA-5′. Which complementary strand is aligned with it in the 5′→3′ direction?",
-    "explanation": "A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment.",
+    "difficulty": "easy",
+    "question": "How does an enzyme speed a reaction?",
+    "options": [
+      "By lowering the activation-energy barrier",
+      "By making every product into a new element",
+      "By using up all the body's water",
+      "By removing the need for reactants"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enzymes offer a lower-barrier reaction pathway.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        75
+      ],
+      "kind": "slide"
+    }
+  },
+  {
+    "id": "basic_chemistry-0409",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question": "What is the main role of DNA in a cell?",
+    "options": [
+      "Storing genetic information",
+      "Storing most body heat",
+      "Digesting every lipid",
+      "Producing all plasma water"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DNA contains hereditary information used by cells.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        77
+      ],
+      "kind": "slide"
+    }
+  },
+  {
+    "id": "basic_chemistry-0410",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question": "What is one important role of RNA?",
+    "options": [
+      "Helping use genetic information to make proteins",
+      "Replacing every cell membrane",
+      "Serving as the body's main fat store",
+      "Carrying most blood oxygen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Several types of RNA participate in protein production.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        77
+      ],
+      "kind": "slide"
+    }
+  },
+  {
+    "id": "basic_chemistry-0411",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question": "Which base pairs with adenine in ordinary DNA?",
+    "options": [
+      "Thymine",
+      "Uracil",
+      "Guanine",
+      "Cytosine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The usual DNA pairing is adenine with thymine.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
         78
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: A pairs with T and G pairs with C. Pair each template position without reversing the stated left-to-right alignment."
-    },
-    "options": [
-      "5′-GGAT-3′",
-      "5′-CCTA-3′",
-      "5′-TAGG-3′",
-      "5′-GATG-3′"
-    ],
-    "correct": [
-      0
-    ]
-  },
-  {
-    "id": "basic_chemistry-0409",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "In the model ATP + H2O → ADP + Pi, 5 ATP molecules each undergo one hydrolysis. How many ADP molecules are produced?",
-    "explanation": "The stated equation produces one ADP per ATP, so 5 ATP yields 5 ADP.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        82
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The stated equation produces one ADP per ATP, so 5 ATP yields 5 ADP."
-    },
-    "options": [
-      "5 molecules",
-      "10 molecules",
-      "15 molecules",
-      "4 molecules"
-    ],
-    "correct": [
-      0
-    ]
-  },
-  {
-    "id": "basic_chemistry-0410",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "In the model ATP + H2O → ADP + Pi, 10 ATP molecules each undergo one hydrolysis. How many ADP molecules are produced?",
-    "explanation": "The stated equation produces one ADP per ATP, so 10 ATP yields 10 ADP.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        82
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The stated equation produces one ADP per ATP, so 10 ATP yields 10 ADP."
-    },
-    "options": [
-      "10 molecules",
-      "20 molecules",
-      "30 molecules",
-      "9 molecules"
-    ],
-    "correct": [
-      0
-    ]
-  },
-  {
-    "id": "basic_chemistry-0411",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "In the model ATP + H2O → ADP + Pi, 20 ATP molecules each undergo one hydrolysis. How many ADP molecules are produced?",
-    "explanation": "The stated equation produces one ADP per ATP, so 20 ATP yields 20 ADP.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        82
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The stated equation produces one ADP per ATP, so 20 ATP yields 20 ADP."
-    },
-    "options": [
-      "20 molecules",
-      "40 molecules",
-      "60 molecules",
-      "19 molecules"
-    ],
-    "correct": [
-      0
-    ]
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0412",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "In the model ATP + H2O → ADP + Pi, 25 ATP molecules each undergo one hydrolysis. How many ADP molecules are produced?",
-    "explanation": "The stated equation produces one ADP per ATP, so 25 ATP yields 25 ADP.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        82
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The stated equation produces one ADP per ATP, so 25 ATP yields 25 ADP."
-    },
+    "difficulty": "easy",
+    "question": "Which base pairs with cytosine in ordinary DNA?",
     "options": [
-      "25 molecules",
-      "50 molecules",
-      "75 molecules",
-      "24 molecules"
+      "Guanine",
+      "Adenine",
+      "Thymine",
+      "Uracil"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "The usual DNA pairing is cytosine with guanine.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        78
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0413",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "In the model ATP + H2O → ADP + Pi, 30 ATP molecules each undergo one hydrolysis. How many ADP molecules are produced?",
-    "explanation": "The stated equation produces one ADP per ATP, so 30 ATP yields 30 ADP.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        82
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The stated equation produces one ADP per ATP, so 30 ATP yields 30 ADP."
-    },
+    "difficulty": "easy",
+    "question": "Which base is used in RNA in place of thymine?",
     "options": [
-      "30 molecules",
-      "60 molecules",
-      "90 molecules",
-      "29 molecules"
+      "Uracil",
+      "Cholesterol",
+      "Glycerol",
+      "Glucose"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "RNA uses uracil among its usual bases.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        79
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0414",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "In the model ATP + H2O → ADP + Pi, 50 ATP molecules each undergo one hydrolysis. How many ADP molecules are produced?",
-    "explanation": "The stated equation produces one ADP per ATP, so 50 ATP yields 50 ADP.",
+    "difficulty": "easy",
+    "question": "What is a nucleotide made of in a basic structural description?",
+    "options": [
+      "Sugar, phosphate, and a nitrogen-containing base",
+      "Only amino acids",
+      "Only glycerol and fatty acids",
+      "Only sodium and chloride"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nucleotides contain a sugar, phosphate group or groups, and a base.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        76
+      ],
+      "kind": "slide"
+    }
+  },
+  {
+    "id": "basic_chemistry-0415",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question": "Why is ATP important in cells?",
+    "options": [
+      "It helps transfer energy for cellular work",
+      "It stores the complete genetic code by itself",
+      "It is the main fat insulation under skin",
+      "It is the only component of bone"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ATP couples energy-releasing processes to cellular work.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        81
+      ],
+      "kind": "slide"
+    }
+  },
+  {
+    "id": "basic_chemistry-0416",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question": "Which process commonly needs ATP?",
+    "options": [
+      "Active transport across a membrane",
+      "Simple movement of light through glass",
+      "Passive settling of sand in water",
+      "Evaporation outside the body only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ATP can power active membrane transport.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
       "slides": [
         82
       ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: The stated equation produces one ADP per ATP, so 50 ATP yields 50 ADP."
-    },
-    "options": [
-      "50 molecules",
-      "100 molecules",
-      "150 molecules",
-      "49 molecules"
-    ],
-    "correct": [
-      0
-    ]
-  },
-  {
-    "id": "basic_chemistry-0415",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Convert 2 L to mL, using a conversion factor of 1000 mL per L.",
-    "explanation": "2 L × 1000 mL/L = 2000 mL.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 2 L × 1000 mL/L = 2000 mL."
-    },
-    "options": [
-      "2000 mL",
-      "0.002 mL",
-      "2 mL",
-      "20000 mL"
-    ],
-    "correct": [
-      0
-    ]
-  },
-  {
-    "id": "basic_chemistry-0416",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Convert 250 mL to L, using a conversion factor of 0.001 L per mL.",
-    "explanation": "250 mL × 0.001 L/mL = 0.25 L.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 250 mL × 0.001 L/mL = 0.25 L."
-    },
-    "options": [
-      "0.25 L",
-      "250000 L",
-      "250 L",
-      "2.5 L"
-    ],
-    "correct": [
-      0
-    ]
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0417",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Convert 3 g to mg, using a conversion factor of 1000 mg per g.",
-    "explanation": "3 g × 1000 mg/g = 3000 mg.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 3 g × 1000 mg/g = 3000 mg."
-    },
+    "difficulty": "easy",
+    "question": "What is one product when ATP is hydrolyzed to ADP?",
     "options": [
-      "3000 mg",
-      "0.003 mg",
-      "3 mg",
-      "30000 mg"
+      "Inorganic phosphate",
+      "A whole chromosome",
+      "A complete protein",
+      "An erythrocyte"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "ATP hydrolysis to ADP also releases inorganic phosphate.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        82
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0418",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Convert 500 mg to g, using a conversion factor of 0.001 g per mg.",
-    "explanation": "500 mg × 0.001 g/mg = 0.5 g.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 500 mg × 0.001 g/mg = 0.5 g."
-    },
+    "difficulty": "easy",
+    "question": "Why do working muscle cells need ATP?",
     "options": [
-      "0.5 g",
-      "500000 g",
-      "500 g",
-      "5 g"
+      "ATP supports the contraction-and-relaxation machinery",
+      "ATP changes muscle into a new element",
+      "ATP stops every interaction between proteins",
+      "ATP replaces all calcium ions"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "ATP supports cross-bridge cycling and calcium handling in muscle.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        82
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0419",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Convert 2 mol to mmol, using a conversion factor of 1000 mmol per mol.",
-    "explanation": "2 mol × 1000 mmol/mol = 2000 mmol.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 2 mol × 1000 mmol/mol = 2000 mmol."
-    },
+    "difficulty": "easy",
+    "question": "What helps distinguish one amino acid from another?",
     "options": [
-      "2000 mmol",
-      "0.002 mmol",
-      "2 mmol",
-      "20000 mmol"
+      "Its side chain",
+      "A completely different genetic code in every cell",
+      "The absence of all atoms",
+      "Its location in an artery only"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "Amino-acid side chains differ and influence chemical properties.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        67
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0420",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "question": "Convert 250 mmol to mol, using a conversion factor of 0.001 mol per mmol.",
-    "explanation": "250 mmol × 0.001 mol/mmol = 0.25 mol.",
-    "source": {
-      "file": "Basic Chemistry Chapter 2.pptx",
-      "slides": [
-        40
-      ],
-      "kind": "clinical_application",
-      "rationale": "Extends the cited mechanism or anatomical relationship: 250 mmol × 0.001 mol/mmol = 0.25 mol."
-    },
+    "difficulty": "easy",
+    "question": "Which list contains the four major biological organic-molecule groups?",
     "options": [
-      "0.25 mol",
-      "250000 mol",
-      "250 mol",
-      "2.5 mol"
+      "Carbohydrates, lipids, proteins, and nucleic acids",
+      "Water, sodium, chloride, and calcium",
+      "Protons, neutrons, electrons, and ions",
+      "Atria, ventricles, arteries, and veins"
     ],
     "correct": [
       0
-    ]
+    ],
+    "explanation": "These four groups support fuel storage, structure, catalysis, and genetic information.",
+    "source": {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "slides": [
+        56
+      ],
+      "kind": "slide"
+    }
   },
   {
     "id": "basic_chemistry-0421",

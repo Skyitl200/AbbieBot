@@ -190,65 +190,32 @@ test('completed banks each supply 600 different questions in all four formats', 
     }
 });
 
-test('chemistry numerical and directional base-pairing keys agree with the stated problems', async () => {
+test('Basic Chemistry replaces calculation drills with introductory A&P concepts', async () => {
     const bank = (await loadQuestionBanks()).get('basic_chemistry');
-    // Stable authored IDs identify the quantitative practice block. Recompute
-    // from question inputs, independently of the authoring helpers/explanations.
-    const exercises = bank.filter(q => {
+    const replacements = bank.filter(q => {
         const number = Number(q.id.split('-').at(-1));
         return number >= 331 && number <= 420;
     });
-    assert.equal(exercises.length, 90);
-    let numerical = 0;
-    let sequences = 0;
-    for (const q of exercises) {
-        const prompt = q.question;
-        const answer = q.options[q.correct[0]];
-        const match = pattern => {
-            const result = prompt.match(pattern);
-            assert.ok(result, `${q.id}: problem format needs review`);
-            return result;
-        };
-        let expected;
-        if (prompt.startsWith('A neutral ')) expected = Number(match(/has (\d+) protons/)[1]);
-        else if (prompt.includes('isotope has mass number')) {
-            const [, mass, protons] = match(/mass number (\d+) and (\d+) protons/);
-            expected = Number(mass) - Number(protons);
-        } else if (prompt.includes('acquires one additional neutron')) expected = Number(match(/mass number (\d+)/)[1]) + 1;
-        else if (prompt.includes('times greater is hydrogen-ion')) {
-            const [, low, high] = match(/at pH (\d+) than at pH (\d+)/);
-            expected = 10 ** (Number(high) - Number(low));
-        } else if (prompt.includes('use pH = ')) expected = Number(match(/10\^−(\d+)/)[1]);
-        else if (prompt.includes('mass/volume percentage')) {
-            const [, grams, ml] = match(/of (\d+) g dissolved to a final volume of (\d+) mL/);
-            expected = Number(grams) * 100 / Number(ml);
-        } else if (prompt.includes('mg/dL. Using')) expected = Number(match(/is (\d+) mg\/dL/)[1]) * 10;
-        else if (prompt.includes('Using molarity')) {
-            const [, moles, liters] = match(/of ([\d.]+) mol in ([\d.]+) L/);
-            expected = Number(moles) / Number(liters);
-        } else if (prompt.includes('How many shared electrons')) expected = Number(match(/contains (\d+) shared electron pair/)[1]) * 2;
-        else if (prompt.includes('How many shared pairs')) expected = Number(match(/contains (\d+) shared electrons/)[1]) / 2;
-        else if (prompt.includes('DNA template is written')) {
-            const template = match(/3′-([ATGC]+)-5′/)[1];
-            const bases = { A: 'T', T: 'A', G: 'C', C: 'G' };
-            assert.equal(answer, `5′-${[...template].map(base => bases[base]).join('')}-3′`, q.id);
-            sequences++;
-            continue;
-        } else if (prompt.includes('ATP molecules each undergo')) expected = Number(match(/, (\d+) ATP molecules/)[1]);
-        else if (prompt.startsWith('Convert ')) expected = Number(match(/^Convert ([\d.]+)/)[1]) * Number(match(/factor of ([\d.]+)/)[1]);
-        else assert.fail(`${q.id}: unrecognized quantitative problem`);
-        const quantity = option => {
-            const number = Number(option.match(/^-?[\d.]+/)?.[0]);
-            assert.ok(Number.isFinite(number) && number >= 0, q.id);
-            return number;
-        };
-        const equal = value => Math.abs(value - expected) < 1e-10 * Math.max(1, Math.abs(expected));
-        assert.ok(equal(quantity(answer)), q.id);
-        for (let i = 0; i < q.options.length; i++) if (!q.correct.includes(i)) assert.ok(!equal(quantity(q.options[i])), `${q.id}: equivalent correct distractor`);
-        numerical++;
+    assert.equal(replacements.length, 90);
+    assert.ok(replacements.every(q => q.type === 'multiple_choice' && q.difficulty === 'easy'));
+    for (const q of bank) {
+        assert.doesNotMatch(q.question, /\bconvert \d|conversion factor|\bcalculate\b|log10|mass\/volume percentage|Using molarity|mg\/dL\. Using|One deciliter is/i, q.id);
     }
-    assert.equal(numerical, 78);
-    assert.equal(sequences, 12);
+    const facts = [
+        ['Which particle in an atom has a positive charge?', 'Proton'],
+        ['Which particle in an atom has a negative charge?', 'Electron'],
+        ['Why is water described as a polar molecule?', 'Its charge is distributed unevenly'],
+        ['Why are buffers useful in the blood?', 'They help resist large changes in pH'],
+        ['Which large nutrient group is commonly used for readily available energy?', 'Carbohydrates'],
+        ['What are the building blocks of proteins?', 'Amino acids'],
+        ['What is the main role of DNA in a cell?', 'Storing genetic information'],
+        ['Which base is used in RNA in place of thymine?', 'Uracil'],
+    ];
+    for (const [prompt, expected] of facts) {
+        const q = bank.find(item => item.question === prompt);
+        assert.ok(q, prompt);
+        assert.equal(q.options[q.correct[0]], expected, q.id);
+    }
 });
 
 test('Living Cells transport, division-count, and sequence keys agree with their explicit models', async () => {

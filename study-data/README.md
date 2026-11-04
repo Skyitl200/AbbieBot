@@ -213,10 +213,11 @@ The Basic Chemistry bank adapts the 82-slide Chapter 2 presentation with the sam
 instructor and OpenStax attribution. It includes atomic structure, ions, bonds,
 reaction types, water and mixtures, concentration units, acids/bases/buffers,
 carbohydrates, lipids, proteins, nucleic acids, and ATP. Its practice items include
-concept retrieval, comparisons, clinical applications, ordering, 78 numerical
-exercises, and 12 directional DNA-complement exercises. The automated tests
-independently recompute the numerical and base-pairing answer keys from the
-question inputs, without using their explanations or authoring helpers.
+concept retrieval, comparisons, clinical applications, and ordering. The former
+90 calculation and directional DNA drills have been replaced by short, easy
+questions about the chemical concepts needed for A&P. Unit conversions, molarity
+calculations, logarithmic pH calculations, and detailed DNA-strand exercises are
+excluded. Automated checks enforce this scope and verify selected core answers.
 
 Chemistry source qualifications applied during authoring:
 
@@ -226,8 +227,9 @@ Chemistry source qualifications applied during authoring:
   and a compound, while O2 is a molecule of one element.
 - Slides 25–26: CO2 has polar bonds but can be nonpolar overall by symmetry;
   water's partial charges are not complete ionic charges.
-- Slide 40: percentage questions specify their mass/volume basis and final
-  solution volume. Molarity is moles per liter of solution.
+- Slide 40: concentration can be recognized as an amount of solute relative to
+  solution volume; unit conversions and quantitative concentration drills are
+  omitted from this introductory A&P bank.
 - Slides 50–54: acid strength differs from concentration, buffers have finite
   capacity, and mixing acid and base does not automatically guarantee pH 7.
   The neutral-pH-7 reference is qualified to the usual aqueous 25°C context.
