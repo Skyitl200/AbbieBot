@@ -22,6 +22,7 @@ import { successEmbed } from '../../utils/embeds.js';
 import { logger } from '../../utils/logger.js';
 import { TitanBotError, replyUserError, ErrorTypes } from '../../utils/errorHandler.js';
 import { getColor } from '../../config/bot.js';
+import { createStudyRulesState } from '../../utils/studyRules.js';
 
 const MAX_FIELDS = 25;
 const IDLE_TIMEOUT = 900_000; 
@@ -66,42 +67,29 @@ function resolveEmbedColor(value) {
 }
 
 function buildPreviewEmbed(state) {
-    const embed = new EmbedBuilder();
-
-    if (state.title)       embed.setTitle(state.title.substring(0, 256));
-    if (state.description) embed.setDescription(state.description.substring(0, 4096));
-
-    embed.setColor(resolveEmbedColor(state.color));
+    // Custom embeds preserve the moderator's formatting. Constructing the
+    // payload avoids the generic bot formatter's emoji/footer filtering.
+    const data = { color: resolveEmbedColor(state.color) };
+    if (state.title) data.title = state.title.substring(0, 256);
+    if (state.description) data.description = state.description.substring(0, 4096);
 
     if (state.author?.name) {
-        const obj = { name: state.author.name.substring(0, 256) };
-        if (state.author.iconUrl && isValidUrl(state.author.iconUrl)) obj.iconURL = state.author.iconUrl;
-        if (state.author.url   && isValidUrl(state.author.url))      obj.url     = state.author.url;
-        embed.setAuthor(obj);
+        data.author = { name: state.author.name.substring(0, 256) };
+        if (state.author.iconUrl && isValidUrl(state.author.iconUrl)) data.author.icon_url = state.author.iconUrl;
+        if (state.author.url && isValidUrl(state.author.url)) data.author.url = state.author.url;
     }
-
     if (state.footer?.text) {
-        const obj = { text: state.footer.text.substring(0, 2048) };
-        if (state.footer.iconUrl && isValidUrl(state.footer.iconUrl)) obj.iconURL = state.footer.iconUrl;
-        embed.setFooter(obj);
+        data.footer = { text: state.footer.text.substring(0, 2048) };
+        if (state.footer.iconUrl && isValidUrl(state.footer.iconUrl)) data.footer.icon_url = state.footer.iconUrl;
     }
-
-    if (state.thumbnail && isValidUrl(state.thumbnail)) embed.setThumbnail(state.thumbnail);
-    if (state.image     && isValidUrl(state.image))     embed.setImage(state.image);
-    if (state.timestamp) embed.setTimestamp();
-
-    if (state.fields.length > 0) embed.addFields(state.fields.slice(0, 25));
-
-    if (
-        !state.title &&
-        !state.description &&
-        state.fields.length === 0 &&
-        !state.author?.name
-    ) {
-        embed.setDescription('*(Empty — use the menu below to add content)*');
+    if (state.thumbnail && isValidUrl(state.thumbnail)) data.thumbnail = { url: state.thumbnail };
+    if (state.image && isValidUrl(state.image)) data.image = { url: state.image };
+    if (state.timestamp) data.timestamp = new Date().toISOString();
+    if (state.fields.length) data.fields = state.fields.slice(0, MAX_FIELDS);
+    if (!data.title && !data.description && !data.fields?.length && !data.author?.name) {
+        data.description = '*(Empty — use the menu below to add content)*';
     }
-
-    return embed;
+    return new EmbedBuilder(data);
 }
 
 function buildDashboardEmbed(state) {
@@ -1043,7 +1031,10 @@ export default {
     data: new SlashCommandBuilder()
         .setName('embedbuilder')
         .setDescription('Build and post a fully custom embed with live preview')
-        .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages),
+        .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages)
+        .addStringOption(option => option.setName('template')
+            .setDescription('Start with a ready-made editable embed')
+            .addChoices({ name: 'Study Sanctuary Rules', value: 'study-rules' })),
 
     async execute(interaction) {
         try {
@@ -1054,7 +1045,7 @@ export default {
 
             const guild = interaction.guild;
 
-            const state = {
+            const state = interaction.options.getString('template') === 'study-rules' ? createStudyRulesState() : {
                 title:       null,
                 description: null,
                 color:       getColor('primary'),

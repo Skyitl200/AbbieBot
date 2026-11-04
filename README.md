@@ -284,3 +284,16 @@ TitanBot is released under the MIT License. See [LICENSE](LICENSE) for details.
 Thank you for choosing TitanBot for your Discord server! We're constantly working to improve and add new features based on community feedback.
 
 *Last updated: May 2026*
+
+
+### Study Sanctuary rules preset
+
+Moderators with Manage Messages can run `/embedbuilder template:study-rules` to
+open the six-rule academic community template as a private, editable teal embed.
+Choose **Post Embed**, then select the rules channel. The bot needs Send Messages
+and Embed Links in that channel. The template does not post automatically or
+edit/delete an existing rules message. Keep or remove the old message separately
+as appropriate. Discord controls the embed background; the template customizes
+the accent color, headings, spacing, and emojis. Custom embed previews preserve
+moderator-entered emojis, footers, and optional timestamps. Run `npm run test:rules` to verify
+the preview and posting flow.
