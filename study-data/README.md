@@ -1,7 +1,7 @@
 # Anatomy study questions: work in progress
 
 The requested final bank is **23 topics × 600 questions = 13,800**. The current
-bank contains **10,200 questions**:
+bank contains **10,800 questions**:
 
 | Topic | Multiple choice | Fill in the blank | Ordering | Total |
 | --- | ---: | ---: | ---: | ---: |
@@ -20,13 +20,14 @@ bank contains **10,200 questions**:
 | Endocrine System | 419 | 130 | 51 | 600 |
 | Blood Cells | 419 | 130 | 51 | 600 |
 | Circulatory System | 428 | 130 | 42 | 600 |
+| Blood Vessels | 384 | 156 | 60 | 600 |
 | Immune System | 452 | 102 | 46 | 600 |
 | Urinary System | 453 | 92 | 55 | 600 |
 
-The other 6 new topic banks are not yet populated. **3,600 questions remain**
+The other 5 new topic banks are not yet populated. **3,000 questions remain**
 to reach the requested total. Anatomical Directions, Basic Chemistry, Living Cells,
-Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Autonomic Nervous System, Immune System, and Urinary
-System have reached their 600-question targets; the other 6 topics remain
+Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Blood Vessels, Autonomic Nervous System, Immune System, and Urinary
+System have reached their 600-question targets; the other 5 topics remain
 incomplete. These are authored
 study drafts, not a claim of independent medical review. The
 existing `quiz-data` files and database rows have been retained until replacements
@@ -744,7 +745,7 @@ Circulatory source qualifications applied during authoring:
 
 ## Lecture images
 
-All 10,200 currently authored A&P Lecture questions have a lecture figure
+All 10,800 currently authored A&P Lecture questions have a lecture figure
 reference. Shared figures appear with explanations; **Preview figure** opens a
 private optional hint that may contain answer labels. Source lecture and slide
 are displayed separately from the question's source. Matching is automatic, and
@@ -753,3 +754,27 @@ being asked about. Existing database questions in other classes are unchanged.
 
 See `study-assets/README.md` and `images.json` for attribution and provenance.
 Run `npm run validate:study:images` to check coverage, citations, sizes and hashes.
+
+
+### Blood Vessels
+
+The Blood Vessels bank adds 600 introductory exercises: 384 multiple choice,
+156 fill-in-the-blank, and 60 short ordering tasks. It covers vessel walls,
+flow and pressure, venous-return mechanisms, major named vessels, hepatic portal
+flow, and fetal circulation. Related exercises revisit the same concepts through
+identification, functional facts, missing details, and short applications; these
+are not 600 distinct anatomical facts. No calculation parameter sweeps are used.
+
+The lecture uses an older hypertension classification. Questions explain that
+thresholds depend on guideline and measurement setting rather than teaching
+140/90 as universal or describing primary hypertension as inherently incurable.
+Fetal oxygen-content exceptions and portal inflow versus hepatic venous outflow
+are kept explicit. Clinical extensions, including fetal remnants and bedside
+anatomical applications, are identified in source metadata. This is an authored
+study draft, not independent medical review.
+
+Rebuild the new bank with `python scripts/study-authoring/blood_vessels.py`;
+run `python scripts/buildStudyImageIndex.py --extend` to add new figure references
+while preserving mappings for existing questions. Five topics remain empty:
+Lymphatic System, Respiratory System, Digestive System, Water & Fluid Balance,
+and Reproductive System.

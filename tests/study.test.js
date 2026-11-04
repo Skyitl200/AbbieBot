@@ -180,7 +180,7 @@ test('actual banks are valid and their incompleteness is detected', async () => 
 
 test('completed banks each supply 600 different questions in all three formats', async () => {
     const banks = await loadQuestionBanks();
-    for (const topicId of ['anatomical_directions', 'basic_chemistry', 'living_cells', 'tissues', 'integumentary', 'skeletal', 'joints', 'muscular', 'nervous_tissue', 'central_nervous', 'special_senses', 'endocrine', 'blood_cells', 'circulatory', 'autonomic_nervous', 'immune', 'urinary']) {
+    for (const topicId of ['anatomical_directions', 'basic_chemistry', 'living_cells', 'tissues', 'integumentary', 'skeletal', 'joints', 'muscular', 'nervous_tissue', 'central_nervous', 'special_senses', 'endocrine', 'blood_cells', 'circulatory', 'blood_vessels', 'autonomic_nervous', 'immune', 'urinary']) {
         const bank = banks.get(topicId);
         assert.equal(bank.length, 600, topicId);
         const selected = selectQuestions(banks, topicId, 600);

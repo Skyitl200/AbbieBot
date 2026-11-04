@@ -3,7 +3,7 @@
 Run extractStudyImages.py first. Matching is automatic; figures are optional study
 references, not image-identification questions or independently reviewed answers.
 """
-import collections, hashlib, json, math, re, shutil
+import collections, hashlib, json, math, re, shutil, sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 local=ROOT/'.local/study-image-candidates'
@@ -25,6 +25,8 @@ for asset,meta in sorted(data['assets'].items()):
 df=collections.Counter(t for _,_,a,b in figures for t in a|b)
 idf={t:math.log(1+len(figures)/(1+n)) for t,n in df.items()}
 assets={};questions={};matches=collections.Counter()
+previous=json.loads((ROOT/'study-data/images.json').read_text()) if '--extend' in sys.argv else {'questions':{}}
+if '--extend' in sys.argv: assets.update(previous.get('assets',{}))
 out=ROOT/'study-assets';out.mkdir(exist_ok=True)
 for path in sorted((ROOT/'study-data').glob('*.json')):
     bank=json.loads(path.read_text())
@@ -51,7 +53,14 @@ for path in sorted((ROOT/'study-data').glob('*.json')):
             score+=12 if cited else 4 if same else 0
             if not same:score-=7
             candidates.append((score,asset,occ,cited,same))
-        _,asset,occ,cited,same=max(candidates,key=lambda x:x[0])
+        if q['id'] in previous['questions']:
+            prior=previous['questions'][q['id']]
+            asset=prior['asset']
+            occ=next(o for o in data['assets'][asset]['occurrences'] if o['source']==prior['source']['file'] and o['slide']==prior['source']['slide'])
+            cited=prior['match']=='cited-slide';same=prior['match']!='related-lecture'
+        else:
+            cited_candidates=[candidate for candidate in candidates if candidate[3]]
+            _,asset,occ,cited,same=max(cited_candidates or candidates,key=lambda x:x[0])
         match='cited-slide' if cited else 'related-slide' if same else 'related-lecture'
         matches[match]+=1
         questions[q['id']]={'asset':asset,'source':{'file':occ['source'],'slide':occ['slide']},'match':match}

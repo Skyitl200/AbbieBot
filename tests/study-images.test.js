@@ -8,7 +8,7 @@ import { validateStudyImages } from '../scripts/validateStudyImages.js';
 
 test('every authored question has a shipped, hash-verified lecture figure and valid source slide', async () => {
     const report = await validateStudyImages();
-    assert.equal(report.questions, 10200);
+    assert.equal(report.questions, [...(await loadQuestionBanks()).values()].flat().length);
     assert.ok(report.images > 100);
 });
 test('labeled figures stay out of questions, previews and explanations attach the actual figure', async () => {

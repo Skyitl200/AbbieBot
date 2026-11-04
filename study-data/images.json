@@ -9205,6 +9205,508 @@
           "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
         }
       ]
+    },
+    "4e392ab505f360edf56e": {
+      "file": "4e392ab505f360edf56e.jpg",
+      "width": 1600,
+      "height": 408,
+      "bytes": 130992,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        2271,
+        579
+      ],
+      "original_sha256": "501c507cd2880e654931a1c075fe53bc1acddbeb43ce406e2c490a4e91ef3758",
+      "sha256": "4e392ab505f360edf56e177a9d8f3e731baefc8a6d00dbb3edfe4c10c07252e0",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 6,
+          "alt": "The left panel shows the cross-section of an elastic artery, the middle panel shows the cross section of a muscular artery, and the right panel shows the cross-section of an arteriole.",
+          "slide_text": "Arteries\nAn artery is a blood vessel that conducts blood away from the heart. \nThey have relatively thick walls that can withstand the high pressure of blood ejected from the heart. \nElastic arteries are the close to heart arteries. They have the thickest walls and contain a high percentage of elastic fibers. \nEasy Concepts",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "f06e42f78e7c55de9656": {
+      "file": "f06e42f78e7c55de9656.jpg",
+      "width": 1033,
+      "height": 1400,
+      "bytes": 149087,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1314,
+        1780
+      ],
+      "original_sha256": "496d595300b1882a4bdc6ef04fbdb84ee519e42efebfc4f1020f15af5ae7cc84",
+      "sha256": "f06e42f78e7c55de96569555649be3ee330acc49547751bc629b85cd2173ba25",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 7,
+          "alt": "The top panel shows the cross-section of a large vein, the middle panel shows the cross-section of a medium sized vein, and the bottom panel shows the cross-section of a venule.",
+          "slide_text": "Veins\nA vein is a blood vessel that conducts blood toward the heart. \nThey are thin-walled vessels with large and irregular lumens. \nBecause they are low-pressure vessels, larger veins are commonly equipped with valves to ensure unidirectional flow of blood toward the heart and prevent backflow.\nEasy Concepts",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "6077f066e47c6d1ae73a": {
+      "file": "6077f066e47c6d1ae73a.jpg",
+      "width": 1600,
+      "height": 946,
+      "bytes": 179100,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1859,
+        1099
+      ],
+      "original_sha256": "cd0093b9d67aef993dad802dd8e8d1a7e0648ba47ff2789844064670e7b246c2",
+      "sha256": "6077f066e47c6d1ae73a7f08a289bd43f58ac106ff8278918cafac764c63c9c5",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 8,
+          "alt": "This diagram shows a capillary bed connecting an arteriole and a venule.",
+          "slide_text": "Capillary Beds\nA capillary is a microscopic channel that supplies blood to the tissues. \nTheir walls are leaky to allow substances to pass through. \nThe precapillary sphincters, circular smooth muscle cells that surround the capillary tightly regulate the flow of blood to the capillaries.\nEasy Concepts",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "48a034b645c196a400dd": {
+      "file": "48a034b645c196a400dd.jpg",
+      "width": 1033,
+      "height": 1400,
+      "bytes": 433601,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1282,
+        1738
+      ],
+      "original_sha256": "7986ac99de522dde55cdd6f00bda97f1b789e8330a7c0e34005f76fb6b56d301",
+      "sha256": "48a034b645c196a400ddfb19be0e1555df5ec3128e5ae10431f1fca1daca2f50",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 9,
+          "alt": "The panel shows a micrograph with the cross sections of an artery and a vein.",
+          "slide_text": "Structure of Blood Vessel Wall-1\nEach type of vessel has a lumen—a hollow passageway through which blood flows.\nArteries have smaller lumens than veins. This helps to maintain blood pressure. \nTheir thicker walls and smaller diameters give arterial lumens a more rounded appearance in cross section than the lumens of veins.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "ca0503afa4d1e93dbb55": {
+      "file": "ca0503afa4d1e93dbb55.jpg",
+      "width": 1033,
+      "height": 1400,
+      "bytes": 431616,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1467,
+        1989
+      ],
+      "original_sha256": "8007b64d3f3aba0230a98e72c3d1e29cd82f3ee378bd3e638a5062f2223d6081",
+      "sha256": "ca0503afa4d1e93dbb55bf73283c923a1d521b78722443334b720978f883fa38",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 10,
+          "alt": "The left panel of this figure shows the ultrastructure of an artery, and the right panel shows the ultrastructure of a vein.",
+          "slide_text": "Structure of Blood Vessel Wall-2\nBoth arteries and veins have the same three distinct tissue layers, called tunics.\nFrom the most interior layer to the outer, these tunics are \nThe tunica intima.\nThe tunica media.\nThe tunica externa",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 11,
+          "alt": "The left panel of this figure shows the ultrastructure of an artery, and the right panel shows the ultrastructure of a vein.",
+          "slide_text": "Tunica Intima\nThe tunica intima (also called the tunica interna) is composed of epithelial and connective tissue layers. \nIts lined with specialized simple squamous epithelium called the endothelium.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 12,
+          "alt": "The left panel of this figure shows the ultrastructure of an artery, and the right panel shows the ultrastructure of a vein.",
+          "slide_text": "Tunica Media-1\nGenerally the thickest layer in arteries, and it is much thicker in arteries than it is in veins. \nConsists of layers of smooth muscle supported by connective tissue that is primarily made up of elastic fibers, most of which are arranged in circular sheets.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 13,
+          "alt": "The left panel of this figure shows the ultrastructure of an artery, and the right panel shows the ultrastructure of a vein.",
+          "slide_text": "Tunica Media-2\nContraction and relaxation of the circular muscles decrease and increase the diameter of the vessel lumen.\nWhen contract (vasoconstriction), they increase blood pressure as the lumen narrows\nWhen relax (vasodilation), they decrease blood pressure as the lumen widen",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 14,
+          "alt": "The left panel of this figure shows the ultrastructure of an artery, and the right panel shows the ultrastructure of a vein.",
+          "slide_text": "Tunica Externa\nAlso called the tunica adventitia, is a substantial sheath of connective tissue composed of collagenous fibers with some elastic fibers.\nIn veins it contains groups of smooth muscle. \nThis is the thickest tunic in veins and may be thicker than the tunica media in some larger arteries. ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "2d167a0cdba153af7a3f": {
+      "file": "2d167a0cdba153af7a3f.png",
+      "width": 782,
+      "height": 316,
+      "bytes": 33141,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        782,
+        316
+      ],
+      "original_sha256": "e47dacab86aa9d2b21730c6991c5acca3f29e2c701998ae93e1baf05b0b9612b",
+      "sha256": "2d167a0cdba153af7a3f1676db5e6418cc086b11342353a79c71765a599f1ad5",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 15,
+          "alt": "Table 20.2; Columns: , Arteries, Veins; Row 1: Direction of blood flow, Conducts blood away from the heart, Conducts blood toward the heart; Row 2: General appearance, Rounded, Irregular, often collapsed; Row 3: Pressure, High, Low; Row 4: Wall thickness, Thick, Thin; Row 5: Relative oxygen concentration, Higher in systemic arteries\n\nLower in pulmonary arteries, Lower in systemic veins\n\nHigher in pulmonary veins; Row 6: Valves, Not present, Present most commonly in limbs and in veins inferior to the heart",
+          "slide_text": "Comparison of arteries and veins",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "35091e84771488a4a20e": {
+      "file": "35091e84771488a4a20e.jpg",
+      "width": 1451,
+      "height": 1011,
+      "bytes": 119087,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1451,
+        1011
+      ],
+      "original_sha256": "c0ff4d53db6a95e9417b64c1e4f58b0b561e140306ae0f0c01d43c3e8109aec2",
+      "sha256": "35091e84771488a4a20e7f96f9b26954050c6fc34c8d2a56ff647a3ce0d446f0",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 17,
+          "alt": "This graph shows the value of pulse pressure in different types of blood vessels.",
+          "slide_text": "Components of Arterial Blood Pressure\nEasy Concepts\nArterial blood pressure in the larger vessels consists of several distinct components: systolic and diastolic pressures, pulse pressure, and mean arterial pressure.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 18,
+          "alt": "This graph shows the value of pulse pressure in different types of blood vessels.",
+          "slide_text": "Systolic and Diastolic Pressures-1\nEasy Concepts\nBlood pressure is expressed as systolic pressure over diastolic pressure. \nThe systolic pressure is the higher value (typically around 120 mm Hg) and reflects the arterial pressure resulting from the ejection of blood during ventricular contraction, or systole. \nThe diastolic pressure is the lower value (usually about 80 mm Hg) and represents the arterial pressure of blood during ventricular relaxation, or diastole.",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        },
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 19,
+          "alt": "This graph shows the value of pulse pressure in different types of blood vessels.",
+          "slide_text": "Systolic and Diastolic Pressures-2\nEasy Concepts\nPulse Pressure: the difference between the systolic pressure and the diastolic pressure. It represents the force that the heart generates each time it contracts.\nMean arterial pressure (MAP) represents the “average” pressure of blood in the arteries. Important in determining the amount of blood delivered to a capillary bed in a tissue.\n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "bc4ce4b77f2ac796c6eb": {
+      "file": "bc4ce4b77f2ac796c6eb.jpg",
+      "width": 1172,
+      "height": 1327,
+      "bytes": 187181,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1172,
+        1327
+      ],
+      "original_sha256": "1cd4a9b9a77ccfe7600c2c2097a5a8b4e4b985927af0298f743991c09b4c0207",
+      "sha256": "bc4ce4b77f2ac796c6ebc52ca9fa46e5390a15bb9ae967f80fd47a55e873edce",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 41,
+          "alt": "This diagram shows the veins present in the upper limb.",
+          "slide_text": "Veins-6",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "d4e4b2b6f968859f8a42": {
+      "file": "d4e4b2b6f968859f8a42.jpg",
+      "width": 1600,
+      "height": 1395,
+      "bytes": 378703,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        2235,
+        1948
+      ],
+      "original_sha256": "ce8f9979a9b20b2a0978711c0e566fecdd430f597d749ce6a1e6fa73406ef8f7",
+      "sha256": "d4e4b2b6f968859f8a42b57c9b79812507e7cf44c906d9efc5eb5d1c1a61ec4e",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 42,
+          "alt": "This figure shows the modifications of the blood circulations in the fetus",
+          "slide_text": "Fetal circulation",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "b6a44b7882df4788b1f4": {
+      "file": "b6a44b7882df4788b1f4.jpg",
+      "width": 1182,
+      "height": 1033,
+      "bytes": 210234,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1182,
+        1033
+      ],
+      "original_sha256": "76d72545601745bacdc0caa2149ea2aa374f8f7e8ec0746204f149e6f6035224",
+      "sha256": "b6a44b7882df4788b1f47913a8b4ae1a86d2066e4f9caef1c22b64154ccd7fcb",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 24,
+          "alt": "The left panel shows the structure of a skeletal muscle vein pump when the muscle is relaxed, and the right panel shows the structure of a skeletal muscle vein pump when the muscle is contracted.",
+          "slide_text": "Blood Pressure in Venous System-2\nSkeletal Muscle Pump\nThe pressure within the veins can be increased by the contraction of the surrounding skeletal muscle.\nThis helps the lower-pressure veins counteract the force of gravity, increasing pressure to move blood back to the heart.\nVeins valves prevent the blood backflow.\n",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "19707440e7e4b3b5b3ca": {
+      "file": "19707440e7e4b3b5b3ca.jpg",
+      "width": 1443,
+      "height": 1400,
+      "bytes": 257642,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1600,
+        1552
+      ],
+      "original_sha256": "dcc3f684451ca6485dfa6c85e2d133d57040a1d40bdefdf380460dcc466caa88",
+      "sha256": "19707440e7e4b3b5b3ca08468c22e66f3b83bd1568eb3dc44978bd56d1d5bf4b",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 39,
+          "alt": "This diagram shows the veins present in the head and neck.",
+          "slide_text": "Veins-3",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "3a9a97ffdfdcfc1e2f3d": {
+      "file": "3a9a97ffdfdcfc1e2f3d.jpg",
+      "width": 927,
+      "height": 988,
+      "bytes": 89267,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        927,
+        988
+      ],
+      "original_sha256": "b02293a72a01ebe0d51a730ee43ede97f3219c7e5897eb8d89da715fe23b033f",
+      "sha256": "3a9a97ffdfdcfc1e2f3d3428a72956a00cbec9f849cd20b76d341fc813a3a641",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 33,
+          "alt": "This diagram shows the aorta and the major parts are labeled.",
+          "slide_text": "Arteries-2 ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "8089cf8c47225c6b2045": {
+      "file": "8089cf8c47225c6b2045.jpg",
+      "width": 1483,
+      "height": 1400,
+      "bytes": 345749,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1597,
+        1508
+      ],
+      "original_sha256": "cbc00dfd6cff243dd8581634c348ae2f51e15eb109b82e0e6c79bd1eb5896ca1",
+      "sha256": "8089cf8c47225c6b20459ac74d28b22a923ad9efad0f5836c52edad0d8229312",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 34,
+          "alt": "This diagram shows the arteries in the thoracic and abdominal cavity.",
+          "slide_text": "Arteries-3",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "a164b3808c41edb37cde": {
+      "file": "a164b3808c41edb37cde.jpg",
+      "width": 1137,
+      "height": 670,
+      "bytes": 124060,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1137,
+        670
+      ],
+      "original_sha256": "f9b728f34b0b39ca65c428ecbe425ab09cec1c62dfff2fdc435420886e115085",
+      "sha256": "a164b3808c41edb37cdec3365226b93efea9c80fd51c696b551dbca308e783e9",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 36,
+          "alt": "This diagram shows the arteries of the brain.",
+          "slide_text": "Cerebral arterial circleCircle of Willis ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "affe6f7bb172b6d8ce85": {
+      "file": "affe6f7bb172b6d8ce85.jpg",
+      "width": 864,
+      "height": 1400,
+      "bytes": 235686,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1019,
+        1652
+      ],
+      "original_sha256": "7f9dcc6edf7888f486777623d7a664255fff1e9260b92a6e63d2b97dc99643e7",
+      "sha256": "affe6f7bb172b6d8ce851bb1bae6b9606ad95c2ceae57382cffcbf0256e0c960",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 32,
+          "alt": "This diagrams shows the major arteries in the human body.",
+          "slide_text": "Arteries-1 ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "91329bb0be837608cc76": {
+      "file": "91329bb0be837608cc76.jpg",
+      "width": 791,
+      "height": 1400,
+      "bytes": 161161,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        850,
+        1504
+      ],
+      "original_sha256": "1d68373c7cd05bb8c1be8bc6d20ef5d373a8a8fcaed574882cd36f4e9f4f9026",
+      "sha256": "91329bb0be837608cc7618479efcfe9df025c5e03829dd078aa645ef1a01aec8",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 35,
+          "alt": "This diagram shows the arteries in the arm.",
+          "slide_text": "Arteries-4",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "8fe28d77548391ef305f": {
+      "file": "8fe28d77548391ef305f.jpg",
+      "width": 1582,
+      "height": 1400,
+      "bytes": 222678,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1716,
+        1519
+      ],
+      "original_sha256": "3306cc1792ac1c414bb23dcb1e7b56fc173cfa4f6d885601b62c5c471c9fb823",
+      "sha256": "8fe28d77548391ef305fe53667b7a0d95a0e5efaf4dcc66c52622a484850d2b1",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 35,
+          "alt": "The left panel shows the anterior view of arteries in the legs, and the right panel shows the posterior view.",
+          "slide_text": "Arteries-4",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "9b0f832e0bf83ca5a74a": {
+      "file": "9b0f832e0bf83ca5a74a.jpg",
+      "width": 1542,
+      "height": 1400,
+      "bytes": 317057,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1777,
+        1613
+      ],
+      "original_sha256": "ed7565d819ba83a313214f0aec0873902699c08119941822e8547e8a5908febe",
+      "sha256": "9b0f832e0bf83ca5a74aa86fbea3b72d7620fa54f95bcf7317559638086de6be",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 38,
+          "alt": "This diagram shows the veins present in the thoracic abdominal cavity.",
+          "slide_text": "Veins-2 ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "bddcc0b3479119a2e9f0": {
+      "file": "bddcc0b3479119a2e9f0.jpg",
+      "width": 1504,
+      "height": 1400,
+      "bytes": 241429,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1650,
+        1536
+      ],
+      "original_sha256": "5fa4130dd8cb20ee802589518cde38d01296ea85bf23b9962e01cdd1ad77e9df",
+      "sha256": "bddcc0b3479119a2e9f0c886843aea5360195b7cb79816d9952770d413c1e304",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 41,
+          "alt": "The left panel shows the anterior view of veins in the legs, and the right panel shows the posterior view.",
+          "slide_text": "Veins-6",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
+    },
+    "cb612443e7097e3882be": {
+      "file": "cb612443e7097e3882be.jpg",
+      "width": 1161,
+      "height": 749,
+      "bytes": 157694,
+      "animated": false,
+      "modified": true,
+      "original_dimensions": [
+        1161,
+        749
+      ],
+      "original_sha256": "fdbf806339510cbd1f58b9af83a66dc30328e64f703cfeabd4378202a7186eab",
+      "sha256": "cb612443e7097e3882bea7ef6ec1b7540c1f747d09865373bc79b0bda1c75b32",
+      "occurrences": [
+        {
+          "source": "Blood Vessels Chapter 20.pptx",
+          "slide": 40,
+          "alt": "This diagram shows the veins in the digestive system.",
+          "slide_text": "Veins-5 ",
+          "credit": "Lecture adaptation: Ahmed Katsha, Raritan Valley Community College; OpenStax / Rice University, CC BY 4.0. See original slide credit for exceptions."
+        }
+      ]
     }
   },
   "questions": {
@@ -28405,6 +28907,4806 @@
       "source": {
         "file": "Blood Cells Chapter 18.pptx",
         "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0001": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0002": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0003": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0004": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0005": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0006": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0007": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0008": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0009": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0010": {
+      "asset": "48a034b645c196a400dd",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0011": {
+      "asset": "48a034b645c196a400dd",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0012": {
+      "asset": "48a034b645c196a400dd",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0013": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0014": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0015": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0016": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0017": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0018": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0019": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0020": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0021": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0022": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0023": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0024": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0025": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0026": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0027": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0028": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0029": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0030": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0031": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0032": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0033": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0034": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0035": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0036": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0037": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0038": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0039": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0040": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0041": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0042": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0043": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0044": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0045": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0046": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0047": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0048": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0049": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0050": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0051": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0052": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0053": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0054": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0055": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0056": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0057": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0058": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0059": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0060": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0061": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0062": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0063": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0064": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0065": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0066": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0067": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0068": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0069": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0070": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0071": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0072": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0073": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0074": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0075": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0076": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0077": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0078": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0079": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0080": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0081": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0082": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0083": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0084": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0085": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0086": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0087": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0088": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0089": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0090": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0091": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0092": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0093": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0094": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0095": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0096": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0097": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0098": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0099": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0100": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0101": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0102": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0103": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0104": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0105": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0106": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0107": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0108": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0109": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0110": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0111": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0112": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0113": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0114": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0115": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0116": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0117": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0118": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0119": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0120": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0121": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0122": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0123": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0124": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0125": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0126": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0127": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0128": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0129": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0130": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0131": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0132": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0133": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0134": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0135": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0136": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0137": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0138": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0139": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0140": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0141": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0142": {
+      "asset": "affe6f7bb172b6d8ce85",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 32
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0143": {
+      "asset": "affe6f7bb172b6d8ce85",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 32
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0144": {
+      "asset": "affe6f7bb172b6d8ce85",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 32
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0145": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0146": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0147": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0148": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0149": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0150": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0151": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0152": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0153": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0154": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0155": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0156": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0157": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0158": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0159": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0160": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0161": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0162": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0163": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0164": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0165": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0166": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0167": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0168": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0169": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0170": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0171": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0172": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0173": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0174": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0175": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0176": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0177": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0178": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0179": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0180": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0181": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0182": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0183": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0184": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0185": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0186": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0187": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0188": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0189": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0190": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0191": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0192": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0193": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0194": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0195": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0196": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0197": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0198": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0199": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0200": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0201": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0202": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0203": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0204": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0205": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0206": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0207": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0208": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0209": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0210": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0211": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0212": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0213": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0214": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0215": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0216": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0217": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0218": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0219": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0220": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0221": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0222": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0223": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0224": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0225": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0226": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0227": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0228": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0229": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0230": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0231": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0232": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0233": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0234": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0235": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0236": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0237": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0238": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0239": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0240": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0241": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0242": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0243": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0244": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0245": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0246": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0247": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0248": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0249": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0250": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0251": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0252": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0253": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0254": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0255": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0256": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0257": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0258": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0259": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0260": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0261": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0262": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0263": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0264": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0265": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0266": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0267": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0268": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0269": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0270": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0271": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0272": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0273": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0274": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0275": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0276": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0277": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0278": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0279": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0280": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0281": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0282": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0283": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0284": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0285": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0286": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0287": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0288": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0289": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0290": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0291": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0292": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0293": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0294": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0295": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0296": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0297": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0298": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0299": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0300": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0301": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0302": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0303": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0304": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0305": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0306": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0307": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0308": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0309": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0310": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0311": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0312": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0313": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0314": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0315": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0316": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0317": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0318": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0319": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0320": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0321": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0322": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0323": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0324": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0325": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0326": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0327": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0328": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0329": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0330": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0331": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0332": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0333": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0334": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0335": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0336": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0337": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0338": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0339": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0340": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0341": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0342": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0343": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0344": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0345": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0346": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0347": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0348": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0349": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0350": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0351": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0352": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0353": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0354": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0355": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0356": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0357": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0358": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0359": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0360": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0361": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0362": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0363": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0364": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0365": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0366": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0367": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0368": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0369": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0370": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0371": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0372": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0373": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0374": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0375": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0376": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0377": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0378": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0379": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0380": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0381": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0382": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0383": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0384": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0385": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0386": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0387": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0388": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0389": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0390": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0391": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0392": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0393": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0394": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0395": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0396": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0397": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0398": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0399": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0400": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0401": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0402": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0403": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0404": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0405": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0406": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0407": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0408": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0409": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0410": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0411": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0412": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0413": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0414": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0415": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0416": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0417": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0418": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0419": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0420": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0421": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0422": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0423": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0424": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0425": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0426": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0427": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0428": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0429": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0430": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0431": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0432": {
+      "asset": "48a034b645c196a400dd",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0433": {
+      "asset": "48a034b645c196a400dd",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 9
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0434": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0435": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0436": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0437": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0438": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0439": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0440": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0441": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0442": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0443": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0444": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0445": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0446": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0447": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0448": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0449": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0450": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0451": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0452": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0453": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0454": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0455": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0456": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0457": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0458": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0459": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0460": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0461": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0462": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0463": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0464": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0465": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0466": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0467": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0468": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0469": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0470": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0471": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0472": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0473": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0474": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0475": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0476": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0477": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0478": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0479": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0480": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0481": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0482": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0483": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0484": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0485": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0486": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0487": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0488": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0489": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0490": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0491": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0492": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 10
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0493": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 10
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0494": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 10
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0495": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0496": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0497": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0498": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0499": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0500": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0501": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0502": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0503": {
+      "asset": "91329bb0be837608cc76",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0504": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0505": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0506": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0507": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0508": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0509": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0510": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0511": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0512": {
+      "asset": "8fe28d77548391ef305f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 35
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0513": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0514": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0515": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0516": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0517": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0518": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0519": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0520": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0521": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0522": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0523": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0524": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0525": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0526": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0527": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0528": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0529": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0530": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0531": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0532": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0533": {
+      "asset": "bc4ce4b77f2ac796c6eb",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0534": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0535": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0536": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0537": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0538": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0539": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0540": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0541": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0542": {
+      "asset": "9b0f832e0bf83ca5a74a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 38
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0543": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0544": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0545": {
+      "asset": "bddcc0b3479119a2e9f0",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 41
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0546": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0547": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0548": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0549": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0550": {
+      "asset": "4e392ab505f360edf56e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 6
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0551": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0552": {
+      "asset": "f06e42f78e7c55de9656",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 7
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0553": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0554": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0555": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0556": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0557": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 10
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0558": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 11
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0559": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 12
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0560": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 14
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0561": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0562": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0563": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0564": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 18
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0565": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0566": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0567": {
+      "asset": "6077f066e47c6d1ae73a",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 8
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0568": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0569": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0570": {
+      "asset": "b6a44b7882df4788b1f4",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 24
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0571": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 19
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0572": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0573": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0574": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0575": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0576": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 13
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0577": {
+      "asset": "19707440e7e4b3b5b3ca",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 39
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0578": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0579": {
+      "asset": "35091e84771488a4a20e",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 17
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0580": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0581": {
+      "asset": "ca0503afa4d1e93dbb55",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 14
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0582": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0583": {
+      "asset": "2d167a0cdba153af7a3f",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 15
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0584": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "related-slide"
+    },
+    "blood_vessels-0585": {
+      "asset": "8089cf8c47225c6b2045",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 34
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0586": {
+      "asset": "3a9a97ffdfdcfc1e2f3d",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 33
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0587": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0588": {
+      "asset": "cb612443e7097e3882be",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 40
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0589": {
+      "asset": "a164b3808c41edb37cde",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 36
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0590": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0591": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0592": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0593": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0594": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0595": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0596": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0597": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0598": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0599": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
+      },
+      "match": "cited-slide"
+    },
+    "blood_vessels-0600": {
+      "asset": "d4e4b2b6f968859f8a42",
+      "source": {
+        "file": "Blood Vessels Chapter 20.pptx",
+        "slide": 42
       },
       "match": "cited-slide"
     },
