@@ -143,7 +143,7 @@ export const quizAnswerHandler = {
             ) {
                 await interaction.followUp({
                     content:
-                        '❌ This quiz belongs to someone else. Use `/quiz` to start your own quiz.',
+                        '❌ This quiz belongs to someone else. Use `/test other-subjects:True` to start your own quiz.',
                     ephemeral: true
                 });
 
@@ -576,7 +576,7 @@ export const quizAnswerHandler = {
                     )
                     .setFooter({
                         text:
-                            'Great work! Use /quiz to study again.'
+                            'Great work! Use /test other-subjects:True to study again.'
                     });
 
 
@@ -695,7 +695,7 @@ export const quizNextHandler = {
             if (!session) {
                 await interaction.followUp({
                     content:
-                        '❌ This quiz session has expired. Use `/quiz` to start another one.',
+                        '❌ This quiz session has expired. Use `/test other-subjects:True` to start another one.',
                     ephemeral: true
                 });
 

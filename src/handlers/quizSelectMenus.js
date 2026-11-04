@@ -272,7 +272,7 @@ function buildQuestionCountMenu(selectedCategory) {
 /*
  * FIRST MENU
  *
- * /quiz
+ * /test other-subjects:True
  * ↓
  * Choose subject
  */

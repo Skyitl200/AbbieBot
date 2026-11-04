@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "file": "Anatomical Directions Chapter 1.pptx",
+      "uploaded_file": "Anatomical Directions Chapter 1.pptx",
+      "slides": 58,
+      "sha256": "ec23eec715bef1b240a42604c5e5f67dce3c5d3ca0e961c8b90b7d9a13cea14d"
+    },
+    {
+      "file": "Automatic Nervous System Chapter 14.pptx",
+      "uploaded_file": "Automatic Nervous System Chapter 14.pptx",
+      "slides": 25,
+      "sha256": "27e41de3065986a5e069ac291ac30ce01f8b271ea77731cbb499d6938fbcf548"
+    },
+    {
+      "file": "Basic Chemistry Chapter 2.pptx",
+      "uploaded_file": "Basic Chemistry Chapter 2.pptx",
+      "slides": 82,
+      "sha256": "8cdfaed6cbf6adf4c6bd63ba910cf38c9babaaf8b36a8d6c164d412dbac28e2a"
+    },
+    {
+      "file": "Blood Cells Chapter 18.pptx",
+      "uploaded_file": "Blood Cells Chapter 18.pptx",
+      "slides": 56,
+      "sha256": "fad0ee8f8a6c4e166bf26fcf1bda26fb81a0e9d44fbbb99e052ad9e6255ad014"
+    },
+    {
+      "file": "Blood Vessels Chapter 20.pptx",
+      "uploaded_file": "Blood Vessels Chapter 20.pptx",
+      "slides": 42,
+      "sha256": "a4a193c53eba74d79fd80b143c89dd8a3a0c8a8706068fdb53087e191b84337f"
+    },
+    {
+      "file": "Central Nervous System Chapter 13.pptx",
+      "uploaded_file": "Central Nervous System Chapter 13.pptx",
+      "slides": 72,
+      "sha256": "f8515c64558d0a788c63079dff5b0a31832545f0c9701d4e3a3516bc5c45dad8"
+    },
+    {
+      "file": "Circulatory System Chapter 19.pptx",
+      "uploaded_file": "Circulatory System Chapter 19.pptx",
+      "slides": 89,
+      "sha256": "5e8f49d85f2e91acda2533e2bb1d75f7210608067c8bf99fe00c2a90d9d7cf6e"
+    },
+    {
+      "file": "Digestive System Chapter 23.pptx",
+      "uploaded_file": "Digestive System Chapter 23.pptx",
+      "slides": 83,
+      "sha256": "522980cd2b0c826f8d3840f83e6593c3d5784d47c8752dfda1a5d9e9ea495022"
+    },
+    {
+      "file": "Endocrine System Chapter 16.pptx",
+      "uploaded_file": "Endocrine System Chapter 16.pptx",
+      "slides": 86,
+      "sha256": "d235396d4fac3be4210a6d8146fb7e4d71cc4d4f15eb29e5516b8daf975fd257"
+    },
+    {
+      "file": "Immune System Chapter 21 Part A.pptx",
+      "uploaded_file": "Immune_System_Compressed.pptx",
+      "slides": 57,
+      "sha256": "7b5b1825dc6f0318fd3bbbf0e2b12aebebe5555a161e6bf226d333cdc38db3ff"
+    },
+    {
+      "file": "Integumentary System Chapter 5.pptx",
+      "uploaded_file": "Integumentary System Chapter 5.pptx",
+      "slides": 54,
+      "sha256": "147a94c9ee6d4ae70588663b94b837b940d937b42248160836f04927a64da709"
+    },
+    {
+      "file": "Joints Chapter 9.pptx",
+      "uploaded_file": "Joints Chapter 9.pptx",
+      "slides": 65,
+      "sha256": "a78972e37482d02a8a32e700c01fb7a8b8ed8f1ad6e7ea0b04a86b850e9d7c61"
+    },
+    {
+      "file": "Living Cells Units Chapter 3.pptx",
+      "uploaded_file": "Living Cells Units Chapter 3.pptx",
+      "slides": 81,
+      "sha256": "61daa0e3f8a56c12781806a9f2733d2c2555b794b6f413d2d314fcee1f5b6505"
+    },
+    {
+      "file": "Lymphatic System Chapter 21 part 2.pptx",
+      "uploaded_file": "Lymphatic System Chapter 21 part 2.pptx",
+      "slides": 30,
+      "sha256": "5093a02fc55b6e3386e195392bf6fd26bb7e4c6702567bf87a7ea6346f6b5822"
+    },
+    {
+      "file": "Muscular System Chapter 10.pptx",
+      "uploaded_file": "Muscular System Chapter 10.pptx",
+      "slides": 70,
+      "sha256": "714368388c0df9e2fd6d97e83788156b537469a6532be3efdb858817b4e74406"
+    },
+    {
+      "file": "Nervous System and Nervous Tissue Chapter 12.pptx",
+      "uploaded_file": "Nervous System and Nervous Tissue Chapter 12.pptx",
+      "slides": 61,
+      "sha256": "5634985d3aa65e4678e0d81fe09bced92345df83108ca373009c25a46aca1ba9"
+    },
+    {
+      "file": "Reproductive System Chapter 26.pptx",
+      "uploaded_file": "Reproductive System Chapter 26.pptx",
+      "slides": 73,
+      "sha256": "8ead93e3e2d9a1d44b8ac8bbaa117437ad9d386a582972e582ad723ca029280a"
+    },
+    {
+      "file": "Respiratory System Chapter 22.pptx",
+      "uploaded_file": "Respiratory System Chapter 22.pptx",
+      "slides": 59,
+      "sha256": "6b50b40922ca19a4db14e63aa321f098039a657422c44ae1f22a62f99770e2f1"
+    },
+    {
+      "file": "Skeletal System Chpter 6.pptx",
+      "uploaded_file": "Skeletal System Chpter 6.pptx",
+      "slides": 54,
+      "sha256": "6ca50ec788a3cabd292b9784e33c2a60eff5694ad73ec00d17c851f8c87ced53"
+    },
+    {
+      "file": "Special Senses Chapter 15.pptx",
+      "uploaded_file": "Special Senses Chapter 15.pptx",
+      "slides": 79,
+      "sha256": "b611f8d15f6a7bdac22533d7de890b53d6752a06ea0c8b65b3bdbf4e9150b5cb"
+    },
+    {
+      "file": "Tissues Chapter 4.pptx",
+      "uploaded_file": "Tissues Chapter 4.pptx",
+      "slides": 65,
+      "sha256": "c47bcf84f428bd6bf4b2d1baf39e7085b37dfe89963824c14d1d1e0a6b79f5fc"
+    },
+    {
+      "file": "Urinary System Chapter 24.pptx",
+      "uploaded_file": "Urinary_System_Compressed.pptx",
+      "slides": 54,
+      "sha256": "4901135ec369828f4e14651c5fd9fd0a3a49349b9098ebe910828c850d385c33"
+    },
+    {
+      "file": "Water Fluid Balance Chapter 25.pptx",
+      "uploaded_file": "Water Fluid Balance Chapter 25.pptx",
+      "slides": 33,
+      "sha256": "dcdcb906ea1acbbb934b3fc8b1b8d6d83a47995f2a06935fefa5ab9cae3aa890"
+    }
+  ]
+}

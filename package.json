@@ -6,6 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node src/app.js",
+    "test:study": "node --test tests/study.test.js",
+    "validate:study": "node scripts/validateStudyQuestions.js",
+    "validate:study:complete": "node scripts/validateStudyQuestions.js --complete",
     "migrate": "node scripts/migrate.js apply",
     "migrate:check": "node scripts/migrate.js check",
     "migrate:status": "node scripts/migrate.js status",
