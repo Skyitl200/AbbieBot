@@ -1,7 +1,7 @@
 # Anatomy study questions: work in progress
 
 The requested final bank is **23 topics × 600 questions = 13,800**. The current
-bank contains **10,800 questions**:
+bank contains **11,400 questions**:
 
 | Topic | Multiple choice | Fill in the blank | Ordering | Total |
 | --- | ---: | ---: | ---: | ---: |
@@ -21,13 +21,14 @@ bank contains **10,800 questions**:
 | Blood Cells | 419 | 130 | 51 | 600 |
 | Circulatory System | 428 | 130 | 42 | 600 |
 | Blood Vessels | 384 | 156 | 60 | 600 |
+| Lymphatic System | 380 | 160 | 60 | 600 |
 | Immune System | 452 | 102 | 46 | 600 |
 | Urinary System | 453 | 92 | 55 | 600 |
 
-The other 5 new topic banks are not yet populated. **3,000 questions remain**
+The other 4 new topic banks are not yet populated. **2,400 questions remain**
 to reach the requested total. Anatomical Directions, Basic Chemistry, Living Cells,
-Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Blood Vessels, Autonomic Nervous System, Immune System, and Urinary
-System have reached their 600-question targets; the other 5 topics remain
+Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Blood Vessels, Lymphatic System, Autonomic Nervous System, Immune System, and Urinary
+System have reached their 600-question targets; the other 4 topics remain
 incomplete. These are authored
 study drafts, not a claim of independent medical review. The
 existing `quiz-data` files and database rows have been retained until replacements
@@ -745,7 +746,7 @@ Circulatory source qualifications applied during authoring:
 
 ## Lecture images
 
-All 10,800 currently authored A&P Lecture questions have a lecture figure
+All 11,400 currently authored A&P Lecture questions have a lecture figure
 reference. Shared figures appear with explanations; **Preview figure** opens a
 private optional hint that may contain answer labels. Source lecture and slide
 are displayed separately from the question's source. Matching is automatic, and
@@ -775,6 +776,35 @@ study draft, not independent medical review.
 
 Rebuild the new bank with `python scripts/study-authoring/blood_vessels.py`;
 run `python scripts/buildStudyImageIndex.py --extend` to add new figure references
-while preserving mappings for existing questions. Five topics remain empty:
-Lymphatic System, Respiratory System, Digestive System, Water & Fluid Balance,
-and Reproductive System.
+while preserving mappings for existing questions. Four topics remain empty:
+Respiratory System, Digestive System, Water & Fluid Balance, and Reproductive
+System.
+
+
+### Lymphatic System
+
+The Lymphatic System bank adds 600 introductory exercises: 380 multiple choice,
+160 fill-in-the-blank, and 60 three-step ordering tasks. Topics include fluid and
+protein return, intestinal lipid transport, lymphatic drainage territories, node
+anatomy, lymphocyte development, spleen, tonsils, and mucosal lymphoid tissues.
+Short medical examples connect drainage problems with swelling and distinguish
+reactive node enlargement from a definite diagnosis of malignancy.
+
+Related questions revisit concepts through identification, separate functional
+facts, missing details, and applications; these are not 600 different biological
+facts. Extensions beyond the lecture wording are identified in source metadata.
+The source-linked authoring records are in `scripts/study-authoring/lymphatic.py`.
+
+The bank clarifies several simplified slide descriptions: initial lymphatics are
+blind-ended entry channels; T cells are especially associated with node
+paracortex; the spleen has a capsule; red and white pulp are distinct regions;
+and BALT is variable/inducible in humans. Primary and secondary lymphoid organs
+are not treated as having identical architecture. Terminal duct models are
+identified as usual anatomy, with variation explicitly covered. These are
+authored study drafts, not independent medical review.
+
+Each question includes a lecture figure reference. Actual cited diagram slides
+are preferred where available; otherwise a related figure from the same lecture
+is used and labeled as broader context. Existing question-image mappings are
+preserved. Run `npm run validate:study:complete -- --topics=lymphatic`,
+`npm run validate:study:images`, and `npm run test:study` for validation.
