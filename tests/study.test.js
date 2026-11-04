@@ -10,7 +10,10 @@ import {
     createStudySession, getStudySession, checkStudyAction, submitStudyAnswer,
     nextStudyQuestion, chooseOrderItem, undoOrderItem,
 } from '../src/services/study/sessions.js';
-import { topicMessage, questionMessage, handleStudyInteraction } from '../src/services/study/interface.js';
+import { classMessage, classCategoriesMessage, countMessage, topicMessage, questionMessage, resultMessage, handleStudyInteraction } from '../src/services/study/interface.js';
+
+import { STUDY_CLASSES, categoryToken, loadClassCategories, loadClassQuestions } from '../src/services/study/catalog.js';
+import { settleStudyReward } from '../src/services/study/rewards.js';
 
 const topic = STUDY_TOPICS[10];
 const base = { id: 'ans-001', difficulty: 'easy', question: 'Which division promotes rest and digestion?',
@@ -743,4 +746,192 @@ test('test replaces quiz within the 100-command limit and all interaction routes
     for (const type of ['buttons', 'selectMenus', 'modals']) assert.equal(client[type].get('study').execute, handleStudyInteraction);
     for (const name of ['quiz', 'quiznext']) assert.ok(client.buttons.has(name), `Legacy button missing: ${name}`);
     for (const name of ['quiz-subject-select', 'quiz-category-select', 'quiz-count-select']) assert.ok(client.selectMenus.has(name), `Legacy menu missing: ${name}`);
+});
+
+
+test('default /test opens all lecture, lab, TEAS and nursing classes with emojis', async () => {
+    const { default: command } = await import('../src/commands/Community/test.js');
+    const calls = [];
+    await command.execute({ user: { id: 'u' }, options: { getBoolean: () => false }, async deferReply() {}, async editReply(payload) { calls.push(payload); } });
+    const menu = calls[0].components[0].toJSON().components[0];
+    assert.equal(menu.custom_id, 'study:class:u');
+    assert.deepEqual(menu.options.map(option => option.label), STUDY_CLASSES.map(course => course.label));
+    assert.equal(menu.options.length, 8);
+    assert.ok(menu.options.every(option => option.emoji));
+    const topics = topicMessage('u', new Map()).components[0].toJSON().components[0];
+    assert.equal(topics.options.length, 24);
+    assert.ok(topics.options.every(option => option.emoji));
+    assert.match(topicMessage('u', new Map()).embeds[0].toJSON().title, /Lecture/);
+    const counts = countMessage('u', 'Urinary System', 600, 'study:count:u:urinary').components[0].toJSON().components[0];
+    assert.deepEqual(counts.options.map(option => Number(option.value)), [1, 5, 20, 50, 150, 600]);
+    assert.ok(counts.options.every(option => option.emoji && option.description));
+    assert.equal(selectQuestions(new Map([[topic.id, [mc]]]), topic.id, 1).length, 1);
+});
+
+test('A&P Lecture selection opens the new banks, then count selection', async () => {
+    const interaction = fakeInteraction('', { values: ['ap_lecture'] });
+    await handleStudyInteraction(interaction, {}, ['class', 'u']);
+    const menu = interaction.calls.at(-1)[1].components[0].toJSON().components[0];
+    assert.equal(menu.custom_id, 'study:topic:u');
+    assert.ok(menu.options.some(option => option.value === 'urinary' && /600/.test(option.description)));
+    const length = fakeInteraction('', { values: ['urinary'] });
+    await handleStudyInteraction(length, {}, ['topic', 'u']);
+    assert.equal(length.calls.at(-1)[1].components[0].toJSON().components[0].options[0].value, '1');
+});
+
+test('saved class categories are isolated by lecture/lab aliases and retain their categories', async () => {
+    const calls = [];
+    const saved = { id: 42, question: 'Which organism is studied here?', option_a: 'First', option_b: 'Second', option_c: 'Third', option_d: 'Fourth', correct_answer: 'B', explanation: 'The saved explanation.', difficulty: 'easy' };
+    const client = { db: { pool: { async query(sql, params) {
+        calls.push([sql, params]);
+        return { rows: sql.startsWith('SELECT *') ? [saved] : [{ category: "Bacteria; do not execute", count: 10 }] };
+    } } } };
+    const categories = await loadClassCategories(client, 'micro_lecture');
+    assert.deepEqual(calls[0][1][0], ['microbiologylecture', 'microbiology']);
+    const token = categories[0].token;
+    const questions = await loadClassQuestions(client, 'micro_lecture', token, 5);
+    assert.equal(questions[0].explanation, saved.explanation);
+    assert.deepEqual(questions[0].correct, [1]);
+    assert.equal(calls.at(-1)[1][1], 'Bacteria; do not execute');
+    assert.ok(!calls.at(-1)[0].includes('Bacteria;'));
+    await loadClassCategories(client, 'micro_lab');
+    assert.deepEqual(calls.at(-1)[1][0], ['microbiologylab', 'microbiologylaboratory']);
+    await loadClassCategories(client, 'ap_lab');
+    assert.ok(!calls.at(-1)[1][0].includes('anatomyphysiology'));
+    await assert.rejects(loadClassQuestions(client, 'micro_lab', 'bad-token', 5), /Unknown class category/);
+    const interaction = fakeInteraction('', { values: ['micro_lecture'] });
+    await handleStudyInteraction(interaction, client, ['class', 'u']);
+    assert.equal(interaction.calls.at(-1)[1].components[0].toJSON().components[0].custom_id, 'study:category:u:micro_lecture');
+    const count = fakeInteraction('', { values: [token] });
+    await handleStudyInteraction(count, client, ['category', 'u', 'micro_lecture']);
+    assert.equal(count.calls.at(-1)[1].components[0].toJSON().components[0].custom_id, `study:coursecount:u:micro_lecture:${token}`);
+    const start = fakeInteraction('', { values: ['1'] });
+    await handleStudyInteraction(start, client, ['coursecount', 'u', 'micro_lecture', token]);
+    assert.match(start.calls.at(-1)[1].embeds[0].toJSON().description, /Which organism/);
+});
+
+test('large saved category catalogs paginate within Discord limits and empty classes remain visible', () => {
+    const categories = Array.from({ length: 61 }, (_, i) => ({ label: `Category ${i}`, count: 10, token: categoryToken(`Category ${i}`) }));
+    const tokens = new Set();
+    for (let page = 0; page < 3; page++) {
+        const message = classCategoriesMessage('123456789012345678', 'chem_lab', categories, page);
+        const options = message.components[0].toJSON().components[0].options;
+        assert.ok(options.length <= 25);
+        assert.ok(options.every(option => option.emoji));
+        options.filter(option => option.value !== 'random').forEach(option => tokens.add(option.value));
+        for (const row of message.components) for (const component of row.toJSON().components) assert.ok(component.custom_id.length <= 100);
+    }
+    assert.equal(tokens.size, 61);
+    assert.match(classCategoriesMessage('u', 'ap_lab', []).embeds[0].toJSON().description, /No saved questions/);
+    assert.ok(classMessage('u').components[0].toJSON().components[0].options.some(option => option.value === 'ap_lab'));
+});
+
+function walletFixture(initial = 3387) {
+    let data = { wallet: initial, bank: 500, inventory: { book: 2 } };
+    let writes = 0;
+    const client = { db: {
+        async get() { return structuredClone(data); },
+        async set(key, value) { data = structuredClone(value); writes++; return true; },
+    } };
+    return { client, balance: () => data.wallet, data: () => data, writes: () => writes };
+}
+
+test('every question format earns ten coins once and displays the wallet and progress', async () => {
+    const wallet = walletFixture();
+    for (const q of [mc, blank, multi, order]) {
+        const session = createStudySession('g', 'u', [q], topic.id);
+        let action; let extras = {}; let choice;
+        if (q.type === 'multiple_choice') { action = 'choice'; choice = String(q.correct[0]); }
+        else if (q.type === 'fill_blank') { action = 'typed'; extras.fields = { getTextInputValue: () => q.answers[0] }; }
+        else if (q.type === 'select_all') { action = 'multi'; extras.values = q.correct.map(String); }
+        else { action = 'ordered'; q.correct.forEach(value => chooseOrderItem(session, value)); }
+        const args = [action, 'u', session.id, '0', String(session.revision), choice];
+        const interaction = fakeInteraction('', extras);
+        await Promise.all([
+            handleStudyInteraction(interaction, wallet.client, args),
+            handleStudyInteraction(fakeInteraction('', extras), wallet.client, args),
+        ]);
+        assert.equal(session.score, 1);
+        assert.equal(session.moneyEarned, 10);
+        const message = interaction.calls.find(call => call[0] === 'editReply')[1].embeds[0].toJSON();
+        assert.match(message.description, /\+10 Merit Coins/);
+        assert.match(message.description, /New Balance/);
+        assert.ok(message.fields.some(field => field.name === 'Quiz Progress' && /Incorrect: \*\*0/.test(field.value)));
+    }
+    assert.equal(wallet.balance(), 3427);
+    assert.equal(wallet.writes(), 4);
+    assert.equal(wallet.data().bank, 500);
+    assert.equal(wallet.data().inventory.book, 2);
+});
+
+test('wrong answers show the current balance without awarding coins', async () => {
+    const wallet = walletFixture();
+    const session = createStudySession('g', 'u', [mc], topic.id);
+    const interaction = fakeInteraction('');
+    await handleStudyInteraction(interaction, wallet.client, ['choice', 'u', session.id, '0', '0', '0']);
+    assert.equal(session.score, 0);
+    assert.equal(session.moneyEarned, 0);
+    assert.equal(wallet.balance(), 3387);
+    assert.equal(wallet.writes(), 0);
+    assert.match(interaction.calls.at(-1)[1].embeds[0].toJSON().description, /3,387 Merit Coins/);
+});
+
+test('coin-save failures are retryable without regrading or duplicate awards after a lost response', async () => {
+    const wallet = walletFixture();
+    const originalSet = wallet.client.db.set;
+    let fail = true;
+    wallet.client.db.set = async (...args) => {
+        await originalSet(...args);
+        if (fail) { fail = false; throw new Error('response lost after commit'); }
+        return true;
+    };
+    const session = createStudySession('g', 'u', [mc, blank], topic.id);
+    const interaction = fakeInteraction('');
+    await handleStudyInteraction(interaction, wallet.client, ['choice', 'u', session.id, '0', '0', '1']);
+    assert.equal(session.reward.status, 'failed');
+    assert.equal(session.moneyEarned, 0);
+    assert.equal(wallet.balance(), 3397);
+    assert.throws(() => nextStudyQuestion(session), /not saved yet/);
+    assert.match(interaction.calls.at(-1)[1].components[0].toJSON().components[0].label, /Retry coins/);
+    await handleStudyInteraction(fakeInteraction(''), wallet.client, ['reward', 'u', session.id, '0', String(session.revision)]);
+    assert.equal(session.reward.status, 'saved');
+    assert.equal(session.moneyEarned, 10);
+    assert.equal(wallet.balance(), 3397);
+    assert.equal(wallet.writes(), 1);
+    assert.equal(session.score, 1);
+    nextStudyQuestion(session);
+    assert.equal(session.index, 1);
+});
+
+test('read failure never resets an existing wallet and concurrent study credits preserve both awards', async () => {
+    const wallet = walletFixture();
+    const originalGet = wallet.client.db.get;
+    wallet.client.db.get = async () => { throw new Error('offline'); };
+    const first = createStudySession('g', 'u', [mc], topic.id);
+    submitStudyAnswer(first, [1]);
+    await settleStudyReward(first, wallet.client);
+    assert.equal(wallet.writes(), 0);
+    assert.equal(first.moneyEarned, 0);
+    wallet.client.db.get = originalGet;
+    const second = createStudySession('g', 'u', [mc], topic.id);
+    submitStudyAnswer(second, [1]);
+    await Promise.all([settleStudyReward(first, wallet.client), settleStudyReward(second, wallet.client)]);
+    assert.equal(wallet.balance(), 3407);
+    assert.equal(first.moneyEarned, 10);
+    assert.equal(second.moneyEarned, 10);
+});
+
+test('database fallback never reports persistent coins and DM practice can still advance', async () => {
+    const wallet = walletFixture(); wallet.client.db.useFallback = true;
+    const session = createStudySession('g', 'u', [mc], topic.id);
+    submitStudyAnswer(session, [1]);
+    await settleStudyReward(session, wallet.client);
+    assert.equal(session.reward.status, 'failed');
+    assert.equal(wallet.writes(), 0);
+    assert.ok(!resultMessage(session, true).embeds[0].toJSON().description.includes('You earned'));
+    const dm = createStudySession(null, 'u', [mc, blank], topic.id);
+    submitStudyAnswer(dm, [1]);
+    await settleStudyReward(dm, wallet.client);
+    nextStudyQuestion(dm);
+    assert.equal(dm.index, 1);
 });

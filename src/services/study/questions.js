@@ -99,7 +99,7 @@ export function shuffle(values, random = Math.random) {
 
 export function selectQuestions(banks, topicId, count) {
     if (topicId !== 'random' && !TOPIC_BY_ID.has(topicId)) throw new Error('Unknown study topic');
-    if (![5, 20, 50, 150, 600].includes(count)) throw new Error('Invalid session length');
+    if (![1, 5, 20, 50, 150, 600].includes(count)) throw new Error('Invalid session length');
     const available = topicId === 'random' ? [...banks.values()].flat() : banks.get(topicId) || [];
     if (!available.length) throw new Error('This topic is still being prepared. Please choose another topic.');
     return shuffle(available).slice(0, count);

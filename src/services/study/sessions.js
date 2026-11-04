@@ -8,8 +8,8 @@ const key = (guildId, userId) => `${guildId ?? 'dm'}:${userId}`;
 export function createStudySession(guildId, userId, questions, topicId, now = Date.now()) {
     for (const [id, session] of sessions) if (session.expiresAt <= now) sessions.delete(id);
     if (!questions.length) throw new Error('Cannot start an empty session');
-    const session = { id: randomUUID().slice(0, 8), guildId, userId, topicId, questions,
-        index: 0, score: 0, answered: false, revision: 0, order: [], expiresAt: now + TTL };
+    const session = { id: randomUUID().slice(0, 8), rewardId: randomUUID(), guildId, userId, topicId, questions,
+        index: 0, score: 0, moneyEarned: 0, answered: false, revision: 0, order: [], expiresAt: now + TTL };
     prepareQuestion(session);
     sessions.set(key(guildId, userId), session);
     return session;
@@ -22,6 +22,8 @@ function prepareQuestion(session) {
     if (q.type === 'ordering' && session.displayOrder.every((value, i) => value === q.correct[i])) session.displayOrder.reverse();
     session.order = [];
     session.answered = false;
+    session.reward = null;
+    session.lastCorrect = null;
 }
 
 export function getStudySession(guildId, userId, token, now = Date.now()) {
@@ -53,6 +55,7 @@ export function submitStudyAnswer(session, answer) {
     if (session.answered) throw new Error('This question has already been answered.');
     const correct = gradeQuestion(session.questions[session.index], answer);
     session.answered = true;
+    session.lastCorrect = correct;
     session.revision++;
     if (correct) session.score++;
     session.expiresAt = Date.now() + TTL;
@@ -61,6 +64,7 @@ export function submitStudyAnswer(session, answer) {
 
 export function nextStudyQuestion(session) {
     if (!session.answered) throw new Error('Answer the current question first.');
+    if (session.guildId && session.reward && session.lastCorrect && session.reward.status !== 'saved') throw new Error('This coin award is not saved yet. Please retry the reward first.');
     if (session.index + 1 >= session.questions.length) throw new Error('This test is complete.');
     session.index++;
     session.revision++;

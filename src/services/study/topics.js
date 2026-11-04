@@ -23,6 +23,8 @@ export const STUDY_TOPICS = [
     ['urinary', 'Urinary System', 'Urinary System Chapter 24.pptx'],
     ['fluid_balance', 'Water & Fluid Balance', 'Water Fluid Balance Chapter 25.pptx'],
     ['reproductive', 'Reproductive System', 'Reproductive System Chapter 26.pptx'],
-].map(([id, label, source]) => Object.freeze({ id, label, source, target: 600 }));
+].map(([id, label, source], index) => Object.freeze({ id, label, source, target: 600, emoji: [
+    '🧍', '🧪', '🔬', '🧫', '🧴', '🦴', '🦿', '💪', '🧠', '🧠', '⚡', '👁️', '🧪', '🩸', '❤️', '🩺', '🛡️', '💚', '🫁', '🍽️', '💧', '⚖️', '🧬',
+][index] }));
 
 export const TOPIC_BY_ID = new Map(STUDY_TOPICS.map(topic => [topic.id, topic]));

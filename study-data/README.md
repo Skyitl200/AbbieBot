@@ -31,6 +31,21 @@ study drafts, not a claim of independent medical review. The
 existing `quiz-data` files and database rows have been retained until replacements
 are ready; this directory is the new mixed-format bank for `/test`.
 
+The default `/test` flow is **class → category → question count**. All authored
+banks in this directory belong to **Anatomy and Physiology Lecture**. A&P lab,
+Microbiology lecture/lab, Chemistry lecture/lab, TEAS, and Nursing load their
+existing class/category records from PostgreSQL. Empty classes remain visible
+and explain when no saved questions are available; lab classes do not borrow
+lecture questions. Class, topic, and question-count menus include emojis.
+
+Correct answers in any supported format earn **10 Merit Coins** in the existing
+server wallet. Results show the current wallet balance, correct/incorrect counts,
+and the session's confirmed coin total. Repeated submissions do not award again.
+PostgreSQL increments include a bounded receipt history for retry protection,
+including a lost response after a successful write. Failed awards offer a retry
+and are not displayed as earned. These rewards require persistent storage;
+in-memory fallback does not claim a saved award. DM practice earns no coins.
+
 Run `npm run validate:study` for actual counts. `npm run validate:study:complete`
 must fail until every topic has exactly 600 questions and all four formats.
 Structural validation cannot establish medical accuracy; review the questions,
