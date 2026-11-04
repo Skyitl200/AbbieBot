@@ -24,9 +24,9 @@
   },
   {
     "id": "tissues-0002",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept tissue is correct?",
     "explanation": "Tissue: an organized group of cells and associated material performing related functions. Organs combine multiple tissue types",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -37,12 +37,10 @@
     },
     "options": [
       "An organized group of cells and associated material performing related functions",
-      "Organs combine multiple tissue types",
       "It is defined as one isolated atom"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -87,9 +85,9 @@
   },
   {
     "id": "tissues-0005",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept histology are correct? Select all that apply.",
+    "question": "Which statement about the histological concept histology is correct?",
     "explanation": "Histology: microscopic study of tissue organization. It relates cellular arrangement to tissue function",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -99,13 +97,11 @@
       "kind": "slide"
     },
     "options": [
-      "Microscopic study of tissue organization",
       "It relates cellular arrangement to tissue function",
       "It means only the measurement of body temperature"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -150,9 +146,9 @@
   },
   {
     "id": "tissues-0008",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept epithelial tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept epithelial tissue is correct?",
     "explanation": "Epithelial tissue: the primary tissue category forming linings, coverings, and glands. Its cells usually form closely packed sheets",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -163,12 +159,10 @@
     },
     "options": [
       "The primary tissue category forming linings, coverings, and glands",
-      "Its cells usually form closely packed sheets",
       "Its defining arrangement is widely separated cells in abundant mineralized matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -214,9 +208,9 @@
   },
   {
     "id": "tissues-0011",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept connective tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept connective tissue is correct?",
     "explanation": "Connective tissue: the primary tissue category characteristically supporting, connecting, or transporting through extracellular matrix. Its forms include bone and blood",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -226,13 +220,11 @@
       "kind": "slide"
     },
     "options": [
-      "The primary tissue category characteristically supporting, connecting, or transporting through extracellular matrix",
       "Its forms include bone and blood",
       "Every connective tissue must be a dry rigid sheet of epithelium"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -278,9 +270,9 @@
   },
   {
     "id": "tissues-0014",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept muscle tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept muscle tissue is correct?",
     "explanation": "Muscle tissue: the primary tissue category specialized for contraction. It includes skeletal, cardiac, and smooth forms",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -291,12 +283,10 @@
     },
     "options": [
       "The primary tissue category specialized for contraction",
-      "It includes skeletal, cardiac, and smooth forms",
       "It is defined only by secretion into ducts"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -342,9 +332,9 @@
   },
   {
     "id": "tissues-0017",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept nervous tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept nervous tissue is correct?",
     "explanation": "Nervous tissue: the primary tissue category specialized for information processing and signaling. It includes neurons and supporting glial cells",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -354,13 +344,11 @@
       "kind": "slide"
     },
     "options": [
-      "The primary tissue category specialized for information processing and signaling",
       "It includes neurons and supporting glial cells",
       "It is made exclusively of extracellular collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -406,9 +394,9 @@
   },
   {
     "id": "tissues-0020",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept epithelial polarity are correct? Select all that apply.",
+    "question": "Which statement about the histological concept epithelial polarity is correct?",
     "explanation": "Epithelial polarity: structural and functional differences between epithelial cell surfaces. Apical and basal domains perform different roles",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -419,12 +407,10 @@
     },
     "options": [
       "Structural and functional differences between epithelial cell surfaces",
-      "Apical and basal domains perform different roles",
       "It means every epithelial surface has identical organization"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -469,9 +455,9 @@
   },
   {
     "id": "tissues-0023",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept apical epithelial surface are correct? Select all that apply.",
+    "question": "Which statement about the histological concept apical epithelial surface is correct?",
     "explanation": "Apical epithelial surface: the surface facing a lumen or an exposed environment. It differs from the basal attachment surface",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -481,13 +467,11 @@
       "kind": "slide"
     },
     "options": [
-      "The surface facing a lumen or an exposed environment",
       "It differs from the basal attachment surface",
       "It is defined as the surface attached to underlying connective tissue"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -532,9 +516,9 @@
   },
   {
     "id": "tissues-0026",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept basal epithelial surface are correct? Select all that apply.",
+    "question": "Which statement about the histological concept basal epithelial surface is correct?",
     "explanation": "Basal epithelial surface: the domain adjacent to the supporting basal lamina. It anchors the epithelial sheet to supporting structures",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -545,12 +529,10 @@
     },
     "options": [
       "The domain adjacent to the supporting basal lamina",
-      "It anchors the epithelial sheet to supporting structures",
       "It must always face an airway lumen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -595,9 +577,9 @@
   },
   {
     "id": "tissues-0029",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept basement membrane are correct? Select all that apply.",
+    "question": "Which statement about the histological concept basement membrane is correct?",
     "explanation": "Basement membrane: the extracellular support interface beneath an epithelium. It includes basal-lamina components and can include a reticular contribution",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -607,13 +589,11 @@
       "kind": "slide"
     },
     "options": [
-      "The extracellular support interface beneath an epithelium",
       "It includes basal-lamina components and can include a reticular contribution",
       "It is a thick layer of contracting skeletal muscle"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -659,9 +639,9 @@
   },
   {
     "id": "tissues-0032",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept basal lamina are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept basal lamina is correct?",
     "explanation": "Basal lamina: a specialized extracellular-matrix sheet associated with epithelial basal surfaces. Collagen and glycoproteins contribute to it",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -673,12 +653,10 @@
     },
     "options": [
       "A specialized extracellular-matrix sheet associated with epithelial basal surfaces",
-      "Collagen and glycoproteins contribute to it",
       "It is simply the apical mucus layer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -724,9 +702,9 @@
   },
   {
     "id": "tissues-0035",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept epithelial avascularity are correct? Select all that apply.",
+    "question": "Which statement about the histological concept epithelial avascularity is correct?",
     "explanation": "Epithelial avascularity: absence of blood vessels within the epithelial sheet in the standard model. Nutrients often diffuse from underlying connective tissue",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -736,13 +714,11 @@
       "kind": "slide"
     },
     "options": [
-      "Absence of blood vessels within the epithelial sheet in the standard model",
       "Nutrients often diffuse from underlying connective tissue",
       "Each epithelial cell must contain its own capillary"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -787,9 +763,9 @@
   },
   {
     "id": "tissues-0038",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept epithelial regeneration are correct? Select all that apply.",
+    "question": "Which statement about the histological concept epithelial regeneration is correct?",
     "explanation": "Epithelial regeneration: replacement of damaged or lost epithelial cells. Viable proliferating cells support renewal",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -800,12 +776,10 @@
     },
     "options": [
       "Replacement of damaged or lost epithelial cells",
-      "Viable proliferating cells support renewal",
       "It means mature surface keratin always undergoes mitosis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -850,9 +824,9 @@
   },
   {
     "id": "tissues-0041",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept tight junction are correct? Select all that apply.",
+    "question": "Which statement about the histological concept tight junction is correct?",
     "explanation": "Tight junction: a junction limiting paracellular passage and helping preserve cell polarity. Its permeability can vary with tissue and regulation",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -862,13 +836,11 @@
       "kind": "slide"
     },
     "options": [
-      "A junction limiting paracellular passage and helping preserve cell polarity",
       "Its permeability can vary with tissue and regulation",
       "It guarantees zero passage of every substance in every epithelium"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -913,9 +885,9 @@
   },
   {
     "id": "tissues-0044",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept desmosome are correct? Select all that apply.",
+    "question": "Which statement about the histological concept desmosome is correct?",
     "explanation": "Desmosome: a cell-to-cell anchoring junction resisting mechanical stress. It links to intermediate-filament networks",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -926,12 +898,10 @@
     },
     "options": [
       "A cell-to-cell anchoring junction resisting mechanical stress",
-      "It links to intermediate-filament networks",
       "It is a freely open channel for all proteins"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -976,9 +946,9 @@
   },
   {
     "id": "tissues-0047",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept gap junction are correct? Select all that apply.",
+    "question": "Which statement about the histological concept gap junction is correct?",
     "explanation": "Gap junction: an intercellular channel allowing selected small solutes or ions to pass between cells. It supports electrical or metabolic coupling",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -988,13 +958,11 @@
       "kind": "slide"
     },
     "options": [
-      "An intercellular channel allowing selected small solutes or ions to pass between cells",
       "It supports electrical or metabolic coupling",
       "It is the collagen bundle attaching a tendon to muscle"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1040,9 +1008,9 @@
   },
   {
     "id": "tissues-0050",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept hemidesmosome are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept hemidesmosome is correct?",
     "explanation": "Hemidesmosome: an anchoring junction attaching basal epithelial cells to the underlying matrix. It differs from a desmosome linking two cells",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1054,12 +1022,10 @@
     },
     "options": [
       "An anchoring junction attaching basal epithelial cells to the underlying matrix",
-      "It differs from a desmosome linking two cells",
       "It is a membrane channel connecting two cell cytoplasms"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1105,9 +1071,9 @@
   },
   {
     "id": "tissues-0053",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept simple epithelium are correct? Select all that apply.",
+    "question": "Which statement about the histological concept simple epithelium is correct?",
     "explanation": "Simple epithelium: the general classification for a one-cell-layer epithelium. Each cell contacts the basal support",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1117,13 +1083,11 @@
       "kind": "slide"
     },
     "options": [
-      "The general classification for a one-cell-layer epithelium",
       "Each cell contacts the basal support",
       "It is defined by many superimposed cell layers"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1168,9 +1132,9 @@
   },
   {
     "id": "tissues-0056",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept stratified epithelium are correct? Select all that apply.",
+    "question": "Which statement about the histological concept stratified epithelium is correct?",
     "explanation": "Stratified epithelium: the general classification for epithelium with multiple cell layers. Its name is based in part on the surface-cell shape",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1181,12 +1145,10 @@
     },
     "options": [
       "The general classification for epithelium with multiple cell layers",
-      "Its name is based in part on the surface-cell shape",
       "Every cell must reach the basal lamina"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1231,9 +1193,9 @@
   },
   {
     "id": "tissues-0059",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept squamous epithelial cell are correct? Select all that apply.",
+    "question": "Which statement about the histological concept squamous epithelial cell is correct?",
     "explanation": "Squamous epithelial cell: a flattened epithelial cell. Its shape differs from the taller columnar form",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1243,13 +1205,11 @@
       "kind": "slide"
     },
     "options": [
-      "A flattened epithelial cell",
       "Its shape differs from the taller columnar form",
       "It must be taller than it is wide"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1294,9 +1254,9 @@
   },
   {
     "id": "tissues-0062",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept cuboidal epithelial cell are correct? Select all that apply.",
+    "question": "Which statement about the histological concept cuboidal epithelial cell is correct?",
     "explanation": "Cuboidal epithelial cell: an epithelial cell approximately as tall as it is wide. Its nucleus is commonly rounded",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1307,12 +1267,10 @@
     },
     "options": [
       "An epithelial cell approximately as tall as it is wide",
-      "Its nucleus is commonly rounded",
       "It must always be extremely thin and flat"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1357,9 +1315,9 @@
   },
   {
     "id": "tissues-0065",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept columnar epithelial cell are correct? Select all that apply.",
+    "question": "Which statement about the histological concept columnar epithelial cell is correct?",
     "explanation": "Columnar epithelial cell: an epithelial cell taller than it is wide. Its nucleus is often elongated",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1369,13 +1327,11 @@
       "kind": "slide"
     },
     "options": [
-      "An epithelial cell taller than it is wide",
       "Its nucleus is often elongated",
       "It is defined by a disc-shaped red-cell form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1420,9 +1376,9 @@
   },
   {
     "id": "tissues-0068",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept pseudostratified epithelium are correct? Select all that apply.",
+    "question": "Which statement about the histological concept pseudostratified epithelium is correct?",
     "explanation": "Pseudostratified epithelium: a single epithelial layer with nuclei at different heights giving a false multilayered appearance. All cells contact the basal lamina although not all reach the lumen",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1433,12 +1389,10 @@
     },
     "options": [
       "A single epithelial layer with nuclei at different heights giving a false multilayered appearance",
-      "All cells contact the basal lamina although not all reach the lumen",
       "It is defined by every cell resting on top of another cell rather than on basal support"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1483,9 +1437,9 @@
   },
   {
     "id": "tissues-0071",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept transitional epithelium are correct? Select all that apply.",
+    "question": "Which statement about the histological concept transitional epithelium is correct?",
     "explanation": "Transitional epithelium: the specialized urinary epithelium accommodating changing distension. Its surface cells change contour with stretch",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1495,13 +1449,11 @@
       "kind": "slide"
     },
     "options": [
-      "The specialized urinary epithelium accommodating changing distension",
       "Its surface cells change contour with stretch",
       "It turns into a genuinely simple squamous lining whenever the bladder fills"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1547,9 +1499,9 @@
   },
   {
     "id": "tissues-0074",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept keratinized stratified squamous epithelium are correct? Select all that apply.",
+    "question": "Which statement about the histological concept keratinized stratified squamous epithelium is correct?",
     "explanation": "Keratinized stratified squamous epithelium: a multilayered squamous epithelium with a protective keratinized surface. It forms the epidermal barrier",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1560,12 +1512,10 @@
     },
     "options": [
       "A multilayered squamous epithelium with a protective keratinized surface",
-      "It forms the epidermal barrier",
       "It is the normal blood-vessel endothelium"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1610,9 +1560,9 @@
   },
   {
     "id": "tissues-0077",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept nonkeratinized stratified squamous epithelium are correct? Select all that apply.",
+    "question": "Which statement about the histological concept nonkeratinized stratified squamous epithelium is correct?",
     "explanation": "Nonkeratinized stratified squamous epithelium: a multilayered squamous lining without the epidermal dry cornified surface. It protects many moist surfaces from abrasion",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1622,13 +1572,11 @@
       "kind": "slide"
     },
     "options": [
-      "A multilayered squamous lining without the epidermal dry cornified surface",
       "It protects many moist surfaces from abrasion",
       "It is the main type of capillary endothelium"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1674,9 +1622,9 @@
   },
   {
     "id": "tissues-0080",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept endothelium are correct? Select all that apply.",
+    "question": "Which statement about the histological concept endothelium is correct?",
     "explanation": "Endothelium: the simple squamous lining of blood and lymphatic vessels. Its thinness supports exchange in appropriate vessels",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1687,12 +1635,10 @@
     },
     "options": [
       "The simple squamous lining of blood and lymphatic vessels",
-      "Its thinness supports exchange in appropriate vessels",
       "It is the contractile muscle layer of a heart chamber"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1738,9 +1684,9 @@
   },
   {
     "id": "tissues-0083",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept mesothelium are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept mesothelium is correct?",
     "explanation": "Mesothelium: the simple squamous epithelium of serous membranes. It contributes to a low-friction serosal surface",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1751,13 +1697,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Mesothelium: the simple squamous epithelium of serous membranes. It contributes to a low-friction serosal surface"
     },
     "options": [
-      "The simple squamous epithelium of serous membranes",
       "It contributes to a low-friction serosal surface",
       "It is the keratinized covering of the palm"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1804,9 +1748,9 @@
   },
   {
     "id": "tissues-0086",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept goblet cell are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept goblet cell is correct?",
     "explanation": "Goblet cell: a unicellular mucus-secreting epithelial gland. Its secretion helps protect or lubricate a surface",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1818,12 +1762,10 @@
     },
     "options": [
       "A unicellular mucus-secreting epithelial gland",
-      "Its secretion helps protect or lubricate a surface",
       "It is a cartilage cell in a lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1870,9 +1812,9 @@
   },
   {
     "id": "tissues-0089",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept epithelial microvillus are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept epithelial microvillus is correct?",
     "explanation": "Epithelial microvillus: a short projection increasing absorptive surface area. Its core contains actin",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1883,13 +1825,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epithelial microvillus: a short projection increasing absorptive surface area. Its core contains actin"
     },
     "options": [
-      "A short projection increasing absorptive surface area",
       "Its core contains actin",
       "Its main role is rhythmic propulsion of mucus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1935,9 +1875,9 @@
   },
   {
     "id": "tissues-0092",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept epithelial motile cilium are correct? Select all that apply.",
+    "question": "Which statement about the histological concept epithelial motile cilium is correct?",
     "explanation": "Epithelial motile cilium: a beating surface extension that moves material over an epithelium. Airway cilia help move mucus",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -1948,12 +1888,10 @@
     },
     "options": [
       "A beating surface extension that moves material over an epithelium",
-      "Airway cilia help move mucus",
       "It is the dense collagen bundle of a tendon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1999,9 +1937,9 @@
   },
   {
     "id": "tissues-0095",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept gland are correct? Select all that apply.",
+    "question": "Which statement about the histological concept gland is correct?",
     "explanation": "Gland: a cell or organized structure specialized for secretion. It can be classified as endocrine or exocrine",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2011,13 +1949,11 @@
       "kind": "slide"
     },
     "options": [
-      "A cell or organized structure specialized for secretion",
       "It can be classified as endocrine or exocrine",
       "Every gland must have a duct"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2062,9 +1998,9 @@
   },
   {
     "id": "tissues-0098",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept endocrine gland are correct? Select all that apply.",
+    "question": "Which statement about the histological concept endocrine gland is correct?",
     "explanation": "Endocrine gland: a ductless gland releasing hormones into interstitial fluid for access to circulation. Its products act at cells bearing appropriate receptors",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2075,12 +2011,10 @@
     },
     "options": [
       "A ductless gland releasing hormones into interstitial fluid for access to circulation",
-      "Its products act at cells bearing appropriate receptors",
       "It is defined by a duct opening onto the skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2125,9 +2059,9 @@
   },
   {
     "id": "tissues-0101",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept exocrine gland are correct? Select all that apply.",
+    "question": "Which statement about the histological concept exocrine gland is correct?",
     "explanation": "Exocrine gland: a gland releasing products toward an epithelial surface rather than into blood as its defining route. Many multicellular examples use ducts",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2137,13 +2071,11 @@
       "kind": "slide"
     },
     "options": [
-      "A gland releasing products toward an epithelial surface rather than into blood as its defining route",
       "Many multicellular examples use ducts",
       "Its defining secretion is always a hormone directly into plasma"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2188,9 +2120,9 @@
   },
   {
     "id": "tissues-0104",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept hormone are correct? Select all that apply.",
+    "question": "Which statement about the histological concept hormone is correct?",
     "explanation": "Hormone: a signaling product released by endocrine tissue. Target responsiveness depends on appropriate receptors",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2201,12 +2133,10 @@
     },
     "options": [
       "A signaling product released by endocrine tissue",
-      "Target responsiveness depends on appropriate receptors",
       "It is defined as a collagen fiber in tendon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2251,9 +2181,9 @@
   },
   {
     "id": "tissues-0107",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept exocrine duct are correct? Select all that apply.",
+    "question": "Which statement about the histological concept exocrine duct is correct?",
     "explanation": "Exocrine duct: the passage conveying an exocrine secretion toward its surface opening. It differs from the endocrine route through interstitial fluid and blood",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2263,13 +2193,11 @@
       "kind": "slide"
     },
     "options": [
-      "The passage conveying an exocrine secretion toward its surface opening",
       "It differs from the endocrine route through interstitial fluid and blood",
       "It is the chromosome of a secretory cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2315,9 +2243,9 @@
   },
   {
     "id": "tissues-0110",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept secretory acinus are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept secretory acinus is correct?",
     "explanation": "Secretory acinus: a rounded arrangement of glandular secretory cells around a small lumen. Acini can drain into ducts",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2329,12 +2257,10 @@
     },
     "options": [
       "A rounded arrangement of glandular secretory cells around a small lumen",
-      "Acini can drain into ducts",
       "It is a cartilage cavity holding a chondrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2381,9 +2307,9 @@
   },
   {
     "id": "tissues-0113",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept merocrine secretion are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept merocrine secretion is correct?",
     "explanation": "Merocrine secretion: release of a secretory product by exocytosis without loss of the whole cell. Many protein-secreting glands use this mechanism",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2394,13 +2320,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Merocrine secretion: release of a secretory product by exocytosis without loss of the whole cell. Many protein-secreting glands use this mechanism"
     },
     "options": [
-      "Release of a secretory product by exocytosis without loss of the whole cell",
       "Many protein-secreting glands use this mechanism",
       "It requires the entire secretory cell to disintegrate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2447,9 +2371,9 @@
   },
   {
     "id": "tissues-0116",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept apocrine secretion model are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept apocrine secretion model is correct?",
     "explanation": "Apocrine secretion model: release involving an apical portion of a secretory cell in the classical mechanism. The classical term describes loss of apical material rather than the whole cell",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2461,12 +2385,10 @@
     },
     "options": [
       "Release involving an apical portion of a secretory cell in the classical mechanism",
-      "The classical term describes loss of apical material rather than the whole cell",
       "It means every secretion is released by total cellular disintegration"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2513,9 +2435,9 @@
   },
   {
     "id": "tissues-0119",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept holocrine secretion are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept holocrine secretion is correct?",
     "explanation": "Holocrine secretion: release of secretory material through breakdown of the entire mature secretory cell. Sebaceous glands are a standard example",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2526,13 +2448,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Holocrine secretion: release of secretory material through breakdown of the entire mature secretory cell. Sebaceous glands are a standard example"
     },
     "options": [
-      "Release of secretory material through breakdown of the entire mature secretory cell",
       "Sebaceous glands are a standard example",
       "It is ordinary exocytosis without whole-cell loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2578,9 +2498,9 @@
   },
   {
     "id": "tissues-0122",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept extracellular matrix are correct? Select all that apply.",
+    "question": "Which statement about the histological concept extracellular matrix is correct?",
     "explanation": "Extracellular matrix: material outside cells that includes ground substance and fibers. Connective-tissue cells produce important matrix components",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2591,12 +2511,10 @@
     },
     "options": [
       "Material outside cells that includes ground substance and fibers",
-      "Connective-tissue cells produce important matrix components",
       "It consists exclusively of cell nuclei"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2641,9 +2559,9 @@
   },
   {
     "id": "tissues-0125",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept ground substance are correct? Select all that apply.",
+    "question": "Which statement about the histological concept ground substance is correct?",
     "explanation": "Ground substance: the hydrated nonfibrous matrix material between cells and fibers. Its composition differs among connective tissues",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2653,13 +2571,11 @@
       "kind": "slide"
     },
     "options": [
-      "The hydrated nonfibrous matrix material between cells and fibers",
       "Its composition differs among connective tissues",
       "It is always a solid layer of contractile actin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2704,9 +2620,9 @@
   },
   {
     "id": "tissues-0128",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept fibroblast are correct? Select all that apply.",
+    "question": "Which statement about the histological concept fibroblast is correct?",
     "explanation": "Fibroblast: a major matrix-producing cell in connective tissue proper. It synthesizes components such as collagen",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2717,12 +2633,10 @@
     },
     "options": [
       "A major matrix-producing cell in connective tissue proper",
-      "It synthesizes components such as collagen",
       "It is the cell chiefly producing action potentials in a nerve"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2767,9 +2681,9 @@
   },
   {
     "id": "tissues-0131",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept adipocyte are correct? Select all that apply.",
+    "question": "Which statement about the histological concept adipocyte is correct?",
     "explanation": "Adipocyte: a specialized lipid-storage cell. Adipose tissue contains many of these cells",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2779,13 +2693,11 @@
       "kind": "slide"
     },
     "options": [
-      "A specialized lipid-storage cell",
       "Adipose tissue contains many of these cells",
       "It is a mature neuron with a fat-filled axon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2830,9 +2742,9 @@
   },
   {
     "id": "tissues-0134",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept mesenchymal progenitor are correct? Select all that apply.",
+    "question": "Which statement about the histological concept mesenchymal progenitor is correct?",
     "explanation": "Mesenchymal progenitor: a multipotent cell population contributing to connective-tissue lineages. Its differentiation potential is not an unlimited ability to form every body cell",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2843,12 +2755,10 @@
     },
     "options": [
       "A multipotent cell population contributing to connective-tissue lineages",
-      "Its differentiation potential is not an unlimited ability to form every body cell",
       "It is always a fully mature red blood cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2894,9 +2804,9 @@
   },
   {
     "id": "tissues-0137",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept tissue macrophage are correct? Select all that apply.",
+    "question": "Which statement about the histological concept tissue macrophage is correct?",
     "explanation": "Tissue macrophage: a phagocyte that removes pathogens and cellular debris. It participates in tissue defense and cleanup",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2906,13 +2816,11 @@
       "kind": "slide"
     },
     "options": [
-      "A phagocyte that removes pathogens and cellular debris",
       "It participates in tissue defense and cleanup",
       "It is the main collagen fiber itself"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2958,9 +2866,9 @@
   },
   {
     "id": "tissues-0140",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept mast cell are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept mast cell is correct?",
     "explanation": "Mast cell: a tissue immune cell that can release inflammatory mediators. It participates in local defense and some allergic reactions",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -2972,12 +2880,10 @@
     },
     "options": [
       "A tissue immune cell that can release inflammatory mediators",
-      "It participates in local defense and some allergic reactions",
       "It is the main cell secreting mineralized bone matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3023,9 +2929,9 @@
   },
   {
     "id": "tissues-0143",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept collagen fiber are correct? Select all that apply.",
+    "question": "Which statement about the histological concept collagen fiber is correct?",
     "explanation": "Collagen fiber: a matrix fiber providing substantial tensile strength. It supports load-bearing tissues such as tendons",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3035,13 +2941,11 @@
       "kind": "slide"
     },
     "options": [
-      "A matrix fiber providing substantial tensile strength",
       "It supports load-bearing tissues such as tendons",
       "It is defined by the long axon of a neuron"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3086,9 +2990,9 @@
   },
   {
     "id": "tissues-0146",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept elastic fiber are correct? Select all that apply.",
+    "question": "Which statement about the histological concept elastic fiber is correct?",
     "explanation": "Elastic fiber: a matrix fiber supporting stretch and recoil. Elastin contributes to its properties",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3099,12 +3003,10 @@
     },
     "options": [
       "A matrix fiber supporting stretch and recoil",
-      "Elastin contributes to its properties",
       "It is the nucleic-acid backbone of a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3149,9 +3051,9 @@
   },
   {
     "id": "tissues-0149",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept reticular fiber are correct? Select all that apply.",
+    "question": "Which statement about the histological concept reticular fiber is correct?",
     "explanation": "Reticular fiber: a fine branching collagen-based support fiber. It helps form supporting networks in many soft organs",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3161,13 +3063,11 @@
       "kind": "slide"
     },
     "options": [
-      "A fine branching collagen-based support fiber",
       "It helps form supporting networks in many soft organs",
       "It is a solid tube carrying nerve impulses"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3212,9 +3112,9 @@
   },
   {
     "id": "tissues-0152",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept areolar connective tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept areolar connective tissue is correct?",
     "explanation": "Areolar connective tissue: a loose connective tissue supporting many epithelia and surrounding structures. It contains varied cells and a loosely organized fiber network",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3225,12 +3125,10 @@
     },
     "options": [
       "A loose connective tissue supporting many epithelia and surrounding structures",
-      "It contains varied cells and a loosely organized fiber network",
       "Its defining feature is a fully mineralized rigid matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3275,9 +3173,9 @@
   },
   {
     "id": "tissues-0155",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept adipose tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept adipose tissue is correct?",
     "explanation": "Adipose tissue: connective tissue dominated by lipid-storing adipocytes. It contributes to energy storage and insulation",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3287,13 +3185,11 @@
       "kind": "slide"
     },
     "options": [
-      "Connective tissue dominated by lipid-storing adipocytes",
       "It contributes to energy storage and insulation",
       "It is composed only of ciliated epithelial cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3338,9 +3234,9 @@
   },
   {
     "id": "tissues-0158",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept reticular connective tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept reticular connective tissue is correct?",
     "explanation": "Reticular connective tissue: a supportive meshwork associated with many soft lymphoid organs. Its network supports other resident cells",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3351,12 +3247,10 @@
     },
     "options": [
       "A supportive meshwork associated with many soft lymphoid organs",
-      "Its network supports other resident cells",
       "It is the same as the smooth-muscle wall of an artery"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3401,9 +3295,9 @@
   },
   {
     "id": "tissues-0161",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept dense regular connective tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept dense regular connective tissue is correct?",
     "explanation": "Dense regular connective tissue: connective tissue with predominantly aligned collagen bundles. It resists strong tensile loads chiefly along the bundle direction",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3413,13 +3307,11 @@
       "kind": "slide"
     },
     "options": [
-      "Connective tissue with predominantly aligned collagen bundles",
       "It resists strong tensile loads chiefly along the bundle direction",
       "Its characteristic collagen arrangement is entirely random"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3464,9 +3356,9 @@
   },
   {
     "id": "tissues-0164",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept dense irregular connective tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept dense irregular connective tissue is correct?",
     "explanation": "Dense irregular connective tissue: connective tissue with collagen bundles oriented in multiple directions. It suits multidirectional mechanical stress",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3477,12 +3369,10 @@
     },
     "options": [
       "Connective tissue with collagen bundles oriented in multiple directions",
-      "It suits multidirectional mechanical stress",
       "It is defined by one perfectly uniform fiber direction only"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3527,9 +3417,9 @@
   },
   {
     "id": "tissues-0167",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept elastic connective tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept elastic connective tissue is correct?",
     "explanation": "Elastic connective tissue: connective tissue rich in recoil-supporting elastic fibers. Elastic components are important in large arterial walls",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3539,13 +3429,11 @@
       "kind": "slide"
     },
     "options": [
-      "Connective tissue rich in recoil-supporting elastic fibers",
       "Elastic components are important in large arterial walls",
       "It is the same tissue as a purely epithelial duct lining"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3590,9 +3478,9 @@
   },
   {
     "id": "tissues-0170",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept cartilage are correct? Select all that apply.",
+    "question": "Which statement about the histological concept cartilage is correct?",
     "explanation": "Cartilage: supporting connective tissue with chondrocytes in a specialized matrix. It is generally avascular",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3603,12 +3491,10 @@
     },
     "options": [
       "Supporting connective tissue with chondrocytes in a specialized matrix",
-      "It is generally avascular",
       "It consists only of chondroitin sulfate without cells or collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3653,9 +3539,9 @@
   },
   {
     "id": "tissues-0173",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept chondrocyte are correct? Select all that apply.",
+    "question": "Which statement about the histological concept chondrocyte is correct?",
     "explanation": "Chondrocyte: a mature cartilage cell residing in a lacuna. It maintains cartilage matrix",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3665,13 +3551,11 @@
       "kind": "slide"
     },
     "options": [
-      "A mature cartilage cell residing in a lacuna",
       "It maintains cartilage matrix",
       "It is the contractile cell of cardiac muscle"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3716,9 +3600,9 @@
   },
   {
     "id": "tissues-0176",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept cartilage lacuna are correct? Select all that apply.",
+    "question": "Which statement about the histological concept cartilage lacuna is correct?",
     "explanation": "Cartilage lacuna: the small matrix space occupied by a chondrocyte. It is not itself a blood vessel",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3729,12 +3613,10 @@
     },
     "options": [
       "The small matrix space occupied by a chondrocyte",
-      "It is not itself a blood vessel",
       "It is the apical opening of a sweat duct"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3779,9 +3661,9 @@
   },
   {
     "id": "tissues-0179",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept hyaline cartilage are correct? Select all that apply.",
+    "question": "Which statement about the histological concept hyaline cartilage is correct?",
     "explanation": "Hyaline cartilage: cartilage with a collagen-rich matrix having a glassy appearance in routine sections. It forms articular surfaces and costal cartilage",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3791,13 +3673,11 @@
       "kind": "slide"
     },
     "options": [
-      "Cartilage with a collagen-rich matrix having a glassy appearance in routine sections",
       "It forms articular surfaces and costal cartilage",
       "Its defining feature is abundant visible elastic fibers of the external ear"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3842,9 +3722,9 @@
   },
   {
     "id": "tissues-0182",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept elastic cartilage are correct? Select all that apply.",
+    "question": "Which statement about the histological concept elastic cartilage is correct?",
     "explanation": "Elastic cartilage: cartilage with elastic fibers supporting flexible shape. It occurs in the external ear",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3855,12 +3735,10 @@
     },
     "options": [
       "Cartilage with elastic fibers supporting flexible shape",
-      "It occurs in the external ear",
       "It is the principal fibrocartilage of an intervertebral disc"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3905,9 +3783,9 @@
   },
   {
     "id": "tissues-0185",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept fibrocartilage are correct? Select all that apply.",
+    "question": "Which statement about the histological concept fibrocartilage is correct?",
     "explanation": "Fibrocartilage: cartilage with prominent tensile collagen bundles. It occurs in menisci and intervertebral discs",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3917,13 +3795,11 @@
       "kind": "slide"
     },
     "options": [
-      "Cartilage with prominent tensile collagen bundles",
       "It occurs in menisci and intervertebral discs",
       "It is the squamous lining of a serous membrane"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3969,9 +3845,9 @@
   },
   {
     "id": "tissues-0188",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept perichondrium are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept perichondrium is correct?",
     "explanation": "Perichondrium: connective covering around many but not all cartilage structures. Articular cartilage is an important exception to this covering",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -3983,12 +3859,10 @@
     },
     "options": [
       "Connective covering around many but not all cartilage structures",
-      "Articular cartilage is an important exception to this covering",
       "It is present around every cartilage surface without exception"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4034,9 +3908,9 @@
   },
   {
     "id": "tissues-0191",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept bone tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept bone tissue is correct?",
     "explanation": "Bone tissue: a mineralized supporting connective tissue. It provides support and protection",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4046,13 +3920,11 @@
       "kind": "slide"
     },
     "options": [
-      "A mineralized supporting connective tissue",
       "It provides support and protection",
       "Its matrix contains no organic protein component"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4099,9 +3971,9 @@
   },
   {
     "id": "tissues-0194",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept osteocyte are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept osteocyte is correct?",
     "explanation": "Osteocyte: a mature bone cell within matrix. It contributes to maintenance of bone tissue",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4113,12 +3985,10 @@
     },
     "options": [
       "A mature bone cell within matrix",
-      "It contributes to maintenance of bone tissue",
       "It is the cell that stores most tissue lipid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4165,9 +4035,9 @@
   },
   {
     "id": "tissues-0197",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept osteoblast are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept osteoblast is correct?",
     "explanation": "Osteoblast: a bone-forming cell. It produces organic bone-matrix components",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4178,13 +4048,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoblast: a bone-forming cell. It produces organic bone-matrix components"
     },
     "options": [
-      "A bone-forming cell",
       "It produces organic bone-matrix components",
       "Its defining function is resorption of matrix only"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4231,9 +4099,9 @@
   },
   {
     "id": "tissues-0200",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept osteoclast are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept osteoclast is correct?",
     "explanation": "Osteoclast: a specialized bone-resorbing cell. It participates in bone remodeling",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4245,12 +4113,10 @@
     },
     "options": [
       "A specialized bone-resorbing cell",
-      "It participates in bone remodeling",
       "It is the primary cell forming an epithelial surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4296,9 +4162,9 @@
   },
   {
     "id": "tissues-0203",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept blood plasma are correct? Select all that apply.",
+    "question": "Which statement about the histological concept blood plasma is correct?",
     "explanation": "Blood plasma: the liquid extracellular matrix of blood. It carries dissolved substances and blood cells",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4308,13 +4174,11 @@
       "kind": "slide"
     },
     "options": [
-      "The liquid extracellular matrix of blood",
       "It carries dissolved substances and blood cells",
       "It is the same as a red-cell nucleus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4359,9 +4223,9 @@
   },
   {
     "id": "tissues-0206",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept blood tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept blood tissue is correct?",
     "explanation": "Blood tissue: a fluid connective tissue with cells suspended in plasma. It supports transport throughout the body",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4372,12 +4236,10 @@
     },
     "options": [
       "A fluid connective tissue with cells suspended in plasma",
-      "It supports transport throughout the body",
       "Its cells are embedded in a solid cartilage matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4422,9 +4284,9 @@
   },
   {
     "id": "tissues-0209",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept lymph are correct? Select all that apply.",
+    "question": "Which statement about the histological concept lymph is correct?",
     "explanation": "Lymph: fluid transported through lymphatic vessels. It returns tissue fluid and some absorbed material toward blood",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4434,13 +4296,11 @@
       "kind": "slide"
     },
     "options": [
-      "Fluid transported through lymphatic vessels",
       "It returns tissue fluid and some absorbed material toward blood",
       "It is the mineralized matrix of a tendon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4485,9 +4345,9 @@
   },
   {
     "id": "tissues-0212",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept contractility are correct? Select all that apply.",
+    "question": "Which statement about the histological concept contractility is correct?",
     "explanation": "Contractility: the ability to generate force through shortening or tension. It is a defining functional property of muscle tissue",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4498,12 +4358,10 @@
     },
     "options": [
       "The ability to generate force through shortening or tension",
-      "It is a defining functional property of muscle tissue",
       "It means only production of hormones"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4548,9 +4406,9 @@
   },
   {
     "id": "tissues-0215",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept skeletal muscle tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept skeletal muscle tissue is correct?",
     "explanation": "Skeletal muscle tissue: striated muscle associated with somatic movement. Its fibers are commonly multinucleated",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4560,13 +4418,11 @@
       "kind": "slide"
     },
     "options": [
-      "Striated muscle associated with somatic movement",
       "Its fibers are commonly multinucleated",
       "Every fiber has only one central nucleus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4611,9 +4467,9 @@
   },
   {
     "id": "tissues-0218",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept cardiac muscle tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept cardiac muscle tissue is correct?",
     "explanation": "Cardiac muscle tissue: striated involuntary muscle forming the heart wall. Its cells have intercalated discs and usually one, sometimes two, nuclei",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4624,12 +4480,10 @@
     },
     "options": [
       "Striated involuntary muscle forming the heart wall",
-      "Its cells have intercalated discs and usually one, sometimes two, nuclei",
       "It is the smooth nonstriated muscle of the intestinal wall"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4674,9 +4528,9 @@
   },
   {
     "id": "tissues-0221",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept smooth muscle tissue are correct? Select all that apply.",
+    "question": "Which statement about the histological concept smooth muscle tissue is correct?",
     "explanation": "Smooth muscle tissue: nonstriated muscle with spindle-shaped cells. It contributes to hollow-organ and vessel-wall contraction",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4686,13 +4540,11 @@
       "kind": "slide"
     },
     "options": [
-      "Nonstriated muscle with spindle-shaped cells",
       "It contributes to hollow-organ and vessel-wall contraction",
       "Its cells must always be long multinucleated striated fibers"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4738,9 +4590,9 @@
   },
   {
     "id": "tissues-0224",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept intercalated disc are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept intercalated disc is correct?",
     "explanation": "Intercalated disc: the specialized connection between cardiac muscle cells. It includes mechanical and electrical junctional components",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4752,12 +4604,10 @@
     },
     "options": [
       "The specialized connection between cardiac muscle cells",
-      "It includes mechanical and electrical junctional components",
       "It is the membrane surrounding a chondrocyte lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4804,9 +4654,9 @@
   },
   {
     "id": "tissues-0227",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept neuron are correct? Select all that apply.",
+    "question": "Which statement about the histological concept neuron is correct?",
     "explanation": "Neuron: an excitable cell specialized for information transmission. Its processes participate in receiving and sending signals",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4816,13 +4666,11 @@
       "kind": "slide"
     },
     "options": [
-      "An excitable cell specialized for information transmission",
       "Its processes participate in receiving and sending signals",
       "It is the main matrix-secreting cartilage cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4867,9 +4715,9 @@
   },
   {
     "id": "tissues-0230",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept neuroglia are correct? Select all that apply.",
+    "question": "Which statement about the histological concept neuroglia is correct?",
     "explanation": "Neuroglia: supporting and regulatory cells of nervous tissue. Glia perform roles beyond simply filling empty space",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4880,12 +4728,10 @@
     },
     "options": [
       "Supporting and regulatory cells of nervous tissue",
-      "Glia perform roles beyond simply filling empty space",
       "Every glial cell is identical to a skeletal muscle fiber"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4931,9 +4777,9 @@
   },
   {
     "id": "tissues-0233",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the histological concept epithelial membrane are correct? Select all that apply.",
+    "question": "Which statement about the histological concept epithelial membrane is correct?",
     "explanation": "Epithelial membrane: a membrane combining epithelium with supporting connective tissue. Cutaneous, mucous, and serous membranes are examples",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -4943,13 +4789,11 @@
       "kind": "slide"
     },
     "options": [
-      "A membrane combining epithelium with supporting connective tissue",
       "Cutaneous, mucous, and serous membranes are examples",
       "Every synovial membrane must have a true epithelial lining"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4995,9 +4839,9 @@
   },
   {
     "id": "tissues-0236",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept synovial membrane are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept synovial membrane is correct?",
     "explanation": "Synovial membrane: a specialized connective-tissue lining of freely movable joint cavities. It is not classified as a true epithelial membrane",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -5009,12 +4853,10 @@
     },
     "options": [
       "A specialized connective-tissue lining of freely movable joint cavities",
-      "It is not classified as a true epithelial membrane",
       "It must have the same epithelial architecture as epidermis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5061,9 +4903,9 @@
   },
   {
     "id": "tissues-0239",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the histological concept lamina propria are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the histological concept lamina propria is correct?",
     "explanation": "Lamina propria: the supporting connective-tissue layer beneath a mucosal epithelium. It can contain vessels and immune cells",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -5074,13 +4916,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Lamina propria: the supporting connective-tissue layer beneath a mucosal epithelium. It can contain vessels and immune cells"
     },
     "options": [
-      "The supporting connective-tissue layer beneath a mucosal epithelium",
       "It can contain vessels and immune cells",
       "It is the apical keratinized layer of a tendon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -8408,9 +8248,9 @@
   },
   {
     "id": "tissues-0391",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Gap junction? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Gap junction?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Gap junction is associated with direct small-solute or ionic coupling.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8422,21 +8262,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Tight junction is associated with restriction of paracellular passage; Gap junction is associated with direct small-solute or ionic coupling."
     },
     "options": [
-      "Tight junction—restriction of paracellular passage",
       "Gap junction—direct small-solute or ionic coupling",
       "Tight junction—formation of a freely open conduit for every protein",
       "Gap junction—mineralization of a bone matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0392",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Desmosome? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Desmosome?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Desmosome is associated with mechanical cell-to-cell anchoring.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8449,20 +8287,18 @@
     },
     "options": [
       "Tight junction—restriction of paracellular passage",
-      "Desmosome—mechanical cell-to-cell anchoring",
       "Tight junction—formation of a freely open conduit for every protein",
       "Desmosome—a collagen fiber occupying a cartilage lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0393",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Simple squamous lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Simple squamous lining?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Simple squamous lining is associated with a thin surface favoring exchange.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8474,21 +8310,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Tight junction is associated with restriction of paracellular passage; Simple squamous lining is associated with a thin surface favoring exchange."
     },
     "options": [
-      "Tight junction—restriction of paracellular passage",
       "Simple squamous lining—a thin surface favoring exchange",
       "Tight junction—formation of a freely open conduit for every protein",
       "Simple squamous lining—a multilayered epidermal cornified barrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0394",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Simple cuboidal lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Simple cuboidal lining?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Simple cuboidal lining is associated with absorption and secretion in many tubules.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8501,20 +8335,18 @@
     },
     "options": [
       "Tight junction—restriction of paracellular passage",
-      "Simple cuboidal lining—absorption and secretion in many tubules",
       "Tight junction—formation of a freely open conduit for every protein",
       "Simple cuboidal lining—being the striated contractile wall of the heart"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0395",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Pseudostratified lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Pseudostratified lining?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8526,21 +8358,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Tight junction is associated with restriction of paracellular passage; Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights."
     },
     "options": [
-      "Tight junction—restriction of paracellular passage",
       "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
       "Tight junction—formation of a freely open conduit for every protein",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0396",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Transitional lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Transitional lining?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Transitional lining is associated with distension-adapted urinary epithelium.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8553,20 +8383,18 @@
     },
     "options": [
       "Tight junction—restriction of paracellular passage",
-      "Transitional lining—distension-adapted urinary epithelium",
       "Tight junction—formation of a freely open conduit for every protein",
       "Transitional lining—the main mineralized skeletal matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0397",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Fibroblast?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Fibroblast is associated with connective matrix production.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8578,21 +8406,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Tight junction is associated with restriction of paracellular passage; Fibroblast is associated with connective matrix production."
     },
     "options": [
-      "Tight junction—restriction of paracellular passage",
       "Fibroblast—connective matrix production",
       "Tight junction—formation of a freely open conduit for every protein",
       "Fibroblast—being a long-distance axonal signaling cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0398",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Adipocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Adipocyte?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Adipocyte is associated with lipid storage.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8605,20 +8431,18 @@
     },
     "options": [
       "Tight junction—restriction of paracellular passage",
-      "Adipocyte—lipid storage",
       "Tight junction—formation of a freely open conduit for every protein",
       "Adipocyte—being the cell in a cartilage lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0399",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Collagen fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Collagen fiber?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Collagen fiber is associated with tensile strength.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8630,21 +8454,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Tight junction is associated with restriction of paracellular passage; Collagen fiber is associated with tensile strength."
     },
     "options": [
-      "Tight junction—restriction of paracellular passage",
       "Collagen fiber—tensile strength",
       "Tight junction—formation of a freely open conduit for every protein",
       "Collagen fiber—the primary conduction of a neuronal action potential"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0400",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Elastic fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Elastic fiber?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Elastic fiber is associated with stretch and recoil.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8657,20 +8479,18 @@
     },
     "options": [
       "Tight junction—restriction of paracellular passage",
-      "Elastic fiber—stretch and recoil",
       "Tight junction—formation of a freely open conduit for every protein",
       "Elastic fiber—the nucleotide code in a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0401",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Chondrocyte?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8682,21 +8502,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Tight junction is associated with restriction of paracellular passage; Chondrocyte is associated with cartilage maintenance."
     },
     "options": [
-      "Tight junction—restriction of paracellular passage",
       "Chondrocyte—cartilage maintenance",
       "Tight junction—formation of a freely open conduit for every protein",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0402",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Skeletal muscle?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8709,20 +8527,18 @@
     },
     "options": [
       "Tight junction—restriction of paracellular passage",
-      "Skeletal muscle—striated somatic force generation",
       "Tight junction—formation of a freely open conduit for every protein",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0403",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Cardiac muscle?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8734,21 +8550,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Tight junction is associated with restriction of paracellular passage; Cardiac muscle is associated with intercalated discs and heart-wall contraction."
     },
     "options": [
-      "Tight junction—restriction of paracellular passage",
       "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Tight junction—formation of a freely open conduit for every protein",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0404",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Tight junction and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Tight junction and Smooth muscle?",
     "explanation": "Tight junction is associated with restriction of paracellular passage; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8761,20 +8575,18 @@
     },
     "options": [
       "Tight junction—restriction of paracellular passage",
-      "Smooth muscle—nonstriated involuntary contraction",
       "Tight junction—formation of a freely open conduit for every protein",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0405",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Desmosome? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Desmosome?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Desmosome is associated with mechanical cell-to-cell anchoring.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8786,21 +8598,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Gap junction is associated with direct small-solute or ionic coupling; Desmosome is associated with mechanical cell-to-cell anchoring."
     },
     "options": [
-      "Gap junction—direct small-solute or ionic coupling",
       "Desmosome—mechanical cell-to-cell anchoring",
       "Gap junction—mineralization of a bone matrix",
       "Desmosome—a collagen fiber occupying a cartilage lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0406",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Simple squamous lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Simple squamous lining?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Simple squamous lining is associated with a thin surface favoring exchange.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8813,20 +8623,18 @@
     },
     "options": [
       "Gap junction—direct small-solute or ionic coupling",
-      "Simple squamous lining—a thin surface favoring exchange",
       "Gap junction—mineralization of a bone matrix",
       "Simple squamous lining—a multilayered epidermal cornified barrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0407",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Simple cuboidal lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Simple cuboidal lining?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Simple cuboidal lining is associated with absorption and secretion in many tubules.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8838,21 +8646,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Gap junction is associated with direct small-solute or ionic coupling; Simple cuboidal lining is associated with absorption and secretion in many tubules."
     },
     "options": [
-      "Gap junction—direct small-solute or ionic coupling",
       "Simple cuboidal lining—absorption and secretion in many tubules",
       "Gap junction—mineralization of a bone matrix",
       "Simple cuboidal lining—being the striated contractile wall of the heart"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0408",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Pseudostratified lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Pseudostratified lining?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8865,20 +8671,18 @@
     },
     "options": [
       "Gap junction—direct small-solute or ionic coupling",
-      "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
       "Gap junction—mineralization of a bone matrix",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0409",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Transitional lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Transitional lining?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Transitional lining is associated with distension-adapted urinary epithelium.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8890,21 +8694,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Gap junction is associated with direct small-solute or ionic coupling; Transitional lining is associated with distension-adapted urinary epithelium."
     },
     "options": [
-      "Gap junction—direct small-solute or ionic coupling",
       "Transitional lining—distension-adapted urinary epithelium",
       "Gap junction—mineralization of a bone matrix",
       "Transitional lining—the main mineralized skeletal matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0410",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Fibroblast?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Fibroblast is associated with connective matrix production.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8917,20 +8719,18 @@
     },
     "options": [
       "Gap junction—direct small-solute or ionic coupling",
-      "Fibroblast—connective matrix production",
       "Gap junction—mineralization of a bone matrix",
       "Fibroblast—being a long-distance axonal signaling cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0411",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Adipocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Adipocyte?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Adipocyte is associated with lipid storage.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8942,21 +8742,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Gap junction is associated with direct small-solute or ionic coupling; Adipocyte is associated with lipid storage."
     },
     "options": [
-      "Gap junction—direct small-solute or ionic coupling",
       "Adipocyte—lipid storage",
       "Gap junction—mineralization of a bone matrix",
       "Adipocyte—being the cell in a cartilage lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0412",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Collagen fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Collagen fiber?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Collagen fiber is associated with tensile strength.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8969,20 +8767,18 @@
     },
     "options": [
       "Gap junction—direct small-solute or ionic coupling",
-      "Collagen fiber—tensile strength",
       "Gap junction—mineralization of a bone matrix",
       "Collagen fiber—the primary conduction of a neuronal action potential"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0413",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Elastic fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Elastic fiber?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Elastic fiber is associated with stretch and recoil.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -8994,21 +8790,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Gap junction is associated with direct small-solute or ionic coupling; Elastic fiber is associated with stretch and recoil."
     },
     "options": [
-      "Gap junction—direct small-solute or ionic coupling",
       "Elastic fiber—stretch and recoil",
       "Gap junction—mineralization of a bone matrix",
       "Elastic fiber—the nucleotide code in a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0414",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Chondrocyte?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9021,20 +8815,18 @@
     },
     "options": [
       "Gap junction—direct small-solute or ionic coupling",
-      "Chondrocyte—cartilage maintenance",
       "Gap junction—mineralization of a bone matrix",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0415",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Skeletal muscle?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9046,21 +8838,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Gap junction is associated with direct small-solute or ionic coupling; Skeletal muscle is associated with striated somatic force generation."
     },
     "options": [
-      "Gap junction—direct small-solute or ionic coupling",
       "Skeletal muscle—striated somatic force generation",
       "Gap junction—mineralization of a bone matrix",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0416",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Cardiac muscle?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9073,20 +8863,18 @@
     },
     "options": [
       "Gap junction—direct small-solute or ionic coupling",
-      "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Gap junction—mineralization of a bone matrix",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0417",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Gap junction and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Gap junction and Smooth muscle?",
     "explanation": "Gap junction is associated with direct small-solute or ionic coupling; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9098,21 +8886,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Gap junction is associated with direct small-solute or ionic coupling; Smooth muscle is associated with nonstriated involuntary contraction."
     },
     "options": [
-      "Gap junction—direct small-solute or ionic coupling",
       "Smooth muscle—nonstriated involuntary contraction",
       "Gap junction—mineralization of a bone matrix",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0418",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Simple squamous lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Simple squamous lining?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Simple squamous lining is associated with a thin surface favoring exchange.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9125,20 +8911,18 @@
     },
     "options": [
       "Desmosome—mechanical cell-to-cell anchoring",
-      "Simple squamous lining—a thin surface favoring exchange",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Simple squamous lining—a multilayered epidermal cornified barrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0419",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Simple cuboidal lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Simple cuboidal lining?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Simple cuboidal lining is associated with absorption and secretion in many tubules.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9150,21 +8934,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Desmosome is associated with mechanical cell-to-cell anchoring; Simple cuboidal lining is associated with absorption and secretion in many tubules."
     },
     "options": [
-      "Desmosome—mechanical cell-to-cell anchoring",
       "Simple cuboidal lining—absorption and secretion in many tubules",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Simple cuboidal lining—being the striated contractile wall of the heart"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0420",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Pseudostratified lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Pseudostratified lining?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9177,20 +8959,18 @@
     },
     "options": [
       "Desmosome—mechanical cell-to-cell anchoring",
-      "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0421",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Transitional lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Transitional lining?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Transitional lining is associated with distension-adapted urinary epithelium.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9202,21 +8982,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Desmosome is associated with mechanical cell-to-cell anchoring; Transitional lining is associated with distension-adapted urinary epithelium."
     },
     "options": [
-      "Desmosome—mechanical cell-to-cell anchoring",
       "Transitional lining—distension-adapted urinary epithelium",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Transitional lining—the main mineralized skeletal matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0422",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Fibroblast?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Fibroblast is associated with connective matrix production.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9229,20 +9007,18 @@
     },
     "options": [
       "Desmosome—mechanical cell-to-cell anchoring",
-      "Fibroblast—connective matrix production",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Fibroblast—being a long-distance axonal signaling cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0423",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Adipocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Adipocyte?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Adipocyte is associated with lipid storage.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9254,21 +9030,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Desmosome is associated with mechanical cell-to-cell anchoring; Adipocyte is associated with lipid storage."
     },
     "options": [
-      "Desmosome—mechanical cell-to-cell anchoring",
       "Adipocyte—lipid storage",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Adipocyte—being the cell in a cartilage lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0424",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Collagen fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Collagen fiber?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Collagen fiber is associated with tensile strength.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9281,20 +9055,18 @@
     },
     "options": [
       "Desmosome—mechanical cell-to-cell anchoring",
-      "Collagen fiber—tensile strength",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Collagen fiber—the primary conduction of a neuronal action potential"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0425",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Elastic fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Elastic fiber?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Elastic fiber is associated with stretch and recoil.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9306,21 +9078,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Desmosome is associated with mechanical cell-to-cell anchoring; Elastic fiber is associated with stretch and recoil."
     },
     "options": [
-      "Desmosome—mechanical cell-to-cell anchoring",
       "Elastic fiber—stretch and recoil",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Elastic fiber—the nucleotide code in a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0426",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Chondrocyte?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9333,20 +9103,18 @@
     },
     "options": [
       "Desmosome—mechanical cell-to-cell anchoring",
-      "Chondrocyte—cartilage maintenance",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0427",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Skeletal muscle?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9358,21 +9126,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Desmosome is associated with mechanical cell-to-cell anchoring; Skeletal muscle is associated with striated somatic force generation."
     },
     "options": [
-      "Desmosome—mechanical cell-to-cell anchoring",
       "Skeletal muscle—striated somatic force generation",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0428",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Cardiac muscle?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9385,20 +9151,18 @@
     },
     "options": [
       "Desmosome—mechanical cell-to-cell anchoring",
-      "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0429",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Desmosome and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Desmosome and Smooth muscle?",
     "explanation": "Desmosome is associated with mechanical cell-to-cell anchoring; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9410,21 +9174,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Desmosome is associated with mechanical cell-to-cell anchoring; Smooth muscle is associated with nonstriated involuntary contraction."
     },
     "options": [
-      "Desmosome—mechanical cell-to-cell anchoring",
       "Smooth muscle—nonstriated involuntary contraction",
       "Desmosome—a collagen fiber occupying a cartilage lacuna",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0430",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Simple cuboidal lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Simple cuboidal lining?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Simple cuboidal lining is associated with absorption and secretion in many tubules.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9437,20 +9199,18 @@
     },
     "options": [
       "Simple squamous lining—a thin surface favoring exchange",
-      "Simple cuboidal lining—absorption and secretion in many tubules",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Simple cuboidal lining—being the striated contractile wall of the heart"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0431",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Pseudostratified lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Pseudostratified lining?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9462,21 +9222,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Simple squamous lining is associated with a thin surface favoring exchange; Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights."
     },
     "options": [
-      "Simple squamous lining—a thin surface favoring exchange",
       "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0432",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Transitional lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Transitional lining?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Transitional lining is associated with distension-adapted urinary epithelium.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9489,20 +9247,18 @@
     },
     "options": [
       "Simple squamous lining—a thin surface favoring exchange",
-      "Transitional lining—distension-adapted urinary epithelium",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Transitional lining—the main mineralized skeletal matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0433",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Fibroblast?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Fibroblast is associated with connective matrix production.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9514,21 +9270,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Simple squamous lining is associated with a thin surface favoring exchange; Fibroblast is associated with connective matrix production."
     },
     "options": [
-      "Simple squamous lining—a thin surface favoring exchange",
       "Fibroblast—connective matrix production",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Fibroblast—being a long-distance axonal signaling cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0434",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Adipocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Adipocyte?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Adipocyte is associated with lipid storage.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9541,20 +9295,18 @@
     },
     "options": [
       "Simple squamous lining—a thin surface favoring exchange",
-      "Adipocyte—lipid storage",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Adipocyte—being the cell in a cartilage lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0435",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Collagen fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Collagen fiber?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Collagen fiber is associated with tensile strength.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9566,21 +9318,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Simple squamous lining is associated with a thin surface favoring exchange; Collagen fiber is associated with tensile strength."
     },
     "options": [
-      "Simple squamous lining—a thin surface favoring exchange",
       "Collagen fiber—tensile strength",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Collagen fiber—the primary conduction of a neuronal action potential"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0436",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Elastic fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Elastic fiber?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Elastic fiber is associated with stretch and recoil.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9593,20 +9343,18 @@
     },
     "options": [
       "Simple squamous lining—a thin surface favoring exchange",
-      "Elastic fiber—stretch and recoil",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Elastic fiber—the nucleotide code in a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0437",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Chondrocyte?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9618,21 +9366,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Simple squamous lining is associated with a thin surface favoring exchange; Chondrocyte is associated with cartilage maintenance."
     },
     "options": [
-      "Simple squamous lining—a thin surface favoring exchange",
       "Chondrocyte—cartilage maintenance",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0438",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Skeletal muscle?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9645,20 +9391,18 @@
     },
     "options": [
       "Simple squamous lining—a thin surface favoring exchange",
-      "Skeletal muscle—striated somatic force generation",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0439",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Cardiac muscle?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9670,21 +9414,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Simple squamous lining is associated with a thin surface favoring exchange; Cardiac muscle is associated with intercalated discs and heart-wall contraction."
     },
     "options": [
-      "Simple squamous lining—a thin surface favoring exchange",
       "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0440",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple squamous lining and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple squamous lining and Smooth muscle?",
     "explanation": "Simple squamous lining is associated with a thin surface favoring exchange; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9697,20 +9439,18 @@
     },
     "options": [
       "Simple squamous lining—a thin surface favoring exchange",
-      "Smooth muscle—nonstriated involuntary contraction",
       "Simple squamous lining—a multilayered epidermal cornified barrier",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0441",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple cuboidal lining and Pseudostratified lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple cuboidal lining and Pseudostratified lining?",
     "explanation": "Simple cuboidal lining is associated with absorption and secretion in many tubules; Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9722,21 +9462,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Simple cuboidal lining is associated with absorption and secretion in many tubules; Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights."
     },
     "options": [
-      "Simple cuboidal lining—absorption and secretion in many tubules",
       "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
       "Simple cuboidal lining—being the striated contractile wall of the heart",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0442",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple cuboidal lining and Transitional lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple cuboidal lining and Transitional lining?",
     "explanation": "Simple cuboidal lining is associated with absorption and secretion in many tubules; Transitional lining is associated with distension-adapted urinary epithelium.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9749,20 +9487,18 @@
     },
     "options": [
       "Simple cuboidal lining—absorption and secretion in many tubules",
-      "Transitional lining—distension-adapted urinary epithelium",
       "Simple cuboidal lining—being the striated contractile wall of the heart",
       "Transitional lining—the main mineralized skeletal matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0443",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple cuboidal lining and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple cuboidal lining and Fibroblast?",
     "explanation": "Simple cuboidal lining is associated with absorption and secretion in many tubules; Fibroblast is associated with connective matrix production.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9774,21 +9510,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Simple cuboidal lining is associated with absorption and secretion in many tubules; Fibroblast is associated with connective matrix production."
     },
     "options": [
-      "Simple cuboidal lining—absorption and secretion in many tubules",
       "Fibroblast—connective matrix production",
       "Simple cuboidal lining—being the striated contractile wall of the heart",
       "Fibroblast—being a long-distance axonal signaling cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0444",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple cuboidal lining and Adipocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple cuboidal lining and Adipocyte?",
     "explanation": "Simple cuboidal lining is associated with absorption and secretion in many tubules; Adipocyte is associated with lipid storage.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9801,20 +9535,18 @@
     },
     "options": [
       "Simple cuboidal lining—absorption and secretion in many tubules",
-      "Adipocyte—lipid storage",
       "Simple cuboidal lining—being the striated contractile wall of the heart",
       "Adipocyte—being the cell in a cartilage lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0445",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple cuboidal lining and Collagen fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple cuboidal lining and Collagen fiber?",
     "explanation": "Simple cuboidal lining is associated with absorption and secretion in many tubules; Collagen fiber is associated with tensile strength.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9826,21 +9558,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Simple cuboidal lining is associated with absorption and secretion in many tubules; Collagen fiber is associated with tensile strength."
     },
     "options": [
-      "Simple cuboidal lining—absorption and secretion in many tubules",
       "Collagen fiber—tensile strength",
       "Simple cuboidal lining—being the striated contractile wall of the heart",
       "Collagen fiber—the primary conduction of a neuronal action potential"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0446",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple cuboidal lining and Elastic fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple cuboidal lining and Elastic fiber?",
     "explanation": "Simple cuboidal lining is associated with absorption and secretion in many tubules; Elastic fiber is associated with stretch and recoil.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9853,20 +9583,18 @@
     },
     "options": [
       "Simple cuboidal lining—absorption and secretion in many tubules",
-      "Elastic fiber—stretch and recoil",
       "Simple cuboidal lining—being the striated contractile wall of the heart",
       "Elastic fiber—the nucleotide code in a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0447",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple cuboidal lining and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple cuboidal lining and Chondrocyte?",
     "explanation": "Simple cuboidal lining is associated with absorption and secretion in many tubules; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9878,21 +9606,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Simple cuboidal lining is associated with absorption and secretion in many tubules; Chondrocyte is associated with cartilage maintenance."
     },
     "options": [
-      "Simple cuboidal lining—absorption and secretion in many tubules",
       "Chondrocyte—cartilage maintenance",
       "Simple cuboidal lining—being the striated contractile wall of the heart",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0448",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple cuboidal lining and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple cuboidal lining and Skeletal muscle?",
     "explanation": "Simple cuboidal lining is associated with absorption and secretion in many tubules; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9905,20 +9631,18 @@
     },
     "options": [
       "Simple cuboidal lining—absorption and secretion in many tubules",
-      "Skeletal muscle—striated somatic force generation",
       "Simple cuboidal lining—being the striated contractile wall of the heart",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0449",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple cuboidal lining and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple cuboidal lining and Cardiac muscle?",
     "explanation": "Simple cuboidal lining is associated with absorption and secretion in many tubules; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9930,21 +9654,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Simple cuboidal lining is associated with absorption and secretion in many tubules; Cardiac muscle is associated with intercalated discs and heart-wall contraction."
     },
     "options": [
-      "Simple cuboidal lining—absorption and secretion in many tubules",
       "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Simple cuboidal lining—being the striated contractile wall of the heart",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0450",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Simple cuboidal lining and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Simple cuboidal lining and Smooth muscle?",
     "explanation": "Simple cuboidal lining is associated with absorption and secretion in many tubules; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9957,20 +9679,18 @@
     },
     "options": [
       "Simple cuboidal lining—absorption and secretion in many tubules",
-      "Smooth muscle—nonstriated involuntary contraction",
       "Simple cuboidal lining—being the striated contractile wall of the heart",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0451",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Pseudostratified lining and Transitional lining? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Pseudostratified lining and Transitional lining?",
     "explanation": "Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Transitional lining is associated with distension-adapted urinary epithelium.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -9982,21 +9702,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Transitional lining is associated with distension-adapted urinary epithelium."
     },
     "options": [
-      "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
       "Transitional lining—distension-adapted urinary epithelium",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached",
       "Transitional lining—the main mineralized skeletal matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0452",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Pseudostratified lining and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Pseudostratified lining and Fibroblast?",
     "explanation": "Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Fibroblast is associated with connective matrix production.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10009,20 +9727,18 @@
     },
     "options": [
       "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
-      "Fibroblast—connective matrix production",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached",
       "Fibroblast—being a long-distance axonal signaling cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0453",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Pseudostratified lining and Adipocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Pseudostratified lining and Adipocyte?",
     "explanation": "Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Adipocyte is associated with lipid storage.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10034,21 +9750,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Adipocyte is associated with lipid storage."
     },
     "options": [
-      "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
       "Adipocyte—lipid storage",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached",
       "Adipocyte—being the cell in a cartilage lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0454",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Pseudostratified lining and Collagen fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Pseudostratified lining and Collagen fiber?",
     "explanation": "Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Collagen fiber is associated with tensile strength.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10061,20 +9775,18 @@
     },
     "options": [
       "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
-      "Collagen fiber—tensile strength",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached",
       "Collagen fiber—the primary conduction of a neuronal action potential"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0455",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Pseudostratified lining and Elastic fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Pseudostratified lining and Elastic fiber?",
     "explanation": "Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Elastic fiber is associated with stretch and recoil.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10086,21 +9798,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Elastic fiber is associated with stretch and recoil."
     },
     "options": [
-      "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
       "Elastic fiber—stretch and recoil",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached",
       "Elastic fiber—the nucleotide code in a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0456",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Pseudostratified lining and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Pseudostratified lining and Chondrocyte?",
     "explanation": "Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10113,20 +9823,18 @@
     },
     "options": [
       "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
-      "Chondrocyte—cartilage maintenance",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0457",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Pseudostratified lining and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Pseudostratified lining and Skeletal muscle?",
     "explanation": "Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10138,21 +9846,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Skeletal muscle is associated with striated somatic force generation."
     },
     "options": [
-      "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
       "Skeletal muscle—striated somatic force generation",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0458",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Pseudostratified lining and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Pseudostratified lining and Cardiac muscle?",
     "explanation": "Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10165,20 +9871,18 @@
     },
     "options": [
       "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
-      "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0459",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Pseudostratified lining and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Pseudostratified lining and Smooth muscle?",
     "explanation": "Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10190,21 +9894,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Pseudostratified lining is associated with one basal-contacting layer with nuclei at varying heights; Smooth muscle is associated with nonstriated involuntary contraction."
     },
     "options": [
-      "Pseudostratified lining—one basal-contacting layer with nuclei at varying heights",
       "Smooth muscle—nonstriated involuntary contraction",
       "Pseudostratified lining—many true superimposed layers with only the bottom layer attached",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0460",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Transitional lining and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Transitional lining and Fibroblast?",
     "explanation": "Transitional lining is associated with distension-adapted urinary epithelium; Fibroblast is associated with connective matrix production.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10217,20 +9919,18 @@
     },
     "options": [
       "Transitional lining—distension-adapted urinary epithelium",
-      "Fibroblast—connective matrix production",
       "Transitional lining—the main mineralized skeletal matrix",
       "Fibroblast—being a long-distance axonal signaling cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0461",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Transitional lining and Adipocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Transitional lining and Adipocyte?",
     "explanation": "Transitional lining is associated with distension-adapted urinary epithelium; Adipocyte is associated with lipid storage.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10242,21 +9942,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Transitional lining is associated with distension-adapted urinary epithelium; Adipocyte is associated with lipid storage."
     },
     "options": [
-      "Transitional lining—distension-adapted urinary epithelium",
       "Adipocyte—lipid storage",
       "Transitional lining—the main mineralized skeletal matrix",
       "Adipocyte—being the cell in a cartilage lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0462",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Transitional lining and Collagen fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Transitional lining and Collagen fiber?",
     "explanation": "Transitional lining is associated with distension-adapted urinary epithelium; Collagen fiber is associated with tensile strength.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10269,20 +9967,18 @@
     },
     "options": [
       "Transitional lining—distension-adapted urinary epithelium",
-      "Collagen fiber—tensile strength",
       "Transitional lining—the main mineralized skeletal matrix",
       "Collagen fiber—the primary conduction of a neuronal action potential"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0463",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Transitional lining and Elastic fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Transitional lining and Elastic fiber?",
     "explanation": "Transitional lining is associated with distension-adapted urinary epithelium; Elastic fiber is associated with stretch and recoil.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10294,21 +9990,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Transitional lining is associated with distension-adapted urinary epithelium; Elastic fiber is associated with stretch and recoil."
     },
     "options": [
-      "Transitional lining—distension-adapted urinary epithelium",
       "Elastic fiber—stretch and recoil",
       "Transitional lining—the main mineralized skeletal matrix",
       "Elastic fiber—the nucleotide code in a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0464",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Transitional lining and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Transitional lining and Chondrocyte?",
     "explanation": "Transitional lining is associated with distension-adapted urinary epithelium; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10321,20 +10015,18 @@
     },
     "options": [
       "Transitional lining—distension-adapted urinary epithelium",
-      "Chondrocyte—cartilage maintenance",
       "Transitional lining—the main mineralized skeletal matrix",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0465",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Transitional lining and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Transitional lining and Skeletal muscle?",
     "explanation": "Transitional lining is associated with distension-adapted urinary epithelium; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10346,21 +10038,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Transitional lining is associated with distension-adapted urinary epithelium; Skeletal muscle is associated with striated somatic force generation."
     },
     "options": [
-      "Transitional lining—distension-adapted urinary epithelium",
       "Skeletal muscle—striated somatic force generation",
       "Transitional lining—the main mineralized skeletal matrix",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0466",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Transitional lining and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Transitional lining and Cardiac muscle?",
     "explanation": "Transitional lining is associated with distension-adapted urinary epithelium; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10373,20 +10063,18 @@
     },
     "options": [
       "Transitional lining—distension-adapted urinary epithelium",
-      "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Transitional lining—the main mineralized skeletal matrix",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0467",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Transitional lining and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Transitional lining and Smooth muscle?",
     "explanation": "Transitional lining is associated with distension-adapted urinary epithelium; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10398,21 +10086,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Transitional lining is associated with distension-adapted urinary epithelium; Smooth muscle is associated with nonstriated involuntary contraction."
     },
     "options": [
-      "Transitional lining—distension-adapted urinary epithelium",
       "Smooth muscle—nonstriated involuntary contraction",
       "Transitional lining—the main mineralized skeletal matrix",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0468",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Fibroblast and Adipocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Adipocyte?",
     "explanation": "Fibroblast is associated with connective matrix production; Adipocyte is associated with lipid storage.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10424,20 +10110,18 @@
     },
     "options": [
       "Fibroblast—connective matrix production",
-      "Adipocyte—lipid storage",
       "Fibroblast—being a long-distance axonal signaling cell",
       "Adipocyte—being the cell in a cartilage lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0469",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Fibroblast and Collagen fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Collagen fiber?",
     "explanation": "Fibroblast is associated with connective matrix production; Collagen fiber is associated with tensile strength.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10449,21 +10133,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Fibroblast is associated with connective matrix production; Collagen fiber is associated with tensile strength."
     },
     "options": [
-      "Fibroblast—connective matrix production",
       "Collagen fiber—tensile strength",
       "Fibroblast—being a long-distance axonal signaling cell",
       "Collagen fiber—the primary conduction of a neuronal action potential"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0470",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Fibroblast and Elastic fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Elastic fiber?",
     "explanation": "Fibroblast is associated with connective matrix production; Elastic fiber is associated with stretch and recoil.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10476,20 +10158,18 @@
     },
     "options": [
       "Fibroblast—connective matrix production",
-      "Elastic fiber—stretch and recoil",
       "Fibroblast—being a long-distance axonal signaling cell",
       "Elastic fiber—the nucleotide code in a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0471",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Fibroblast and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Chondrocyte?",
     "explanation": "Fibroblast is associated with connective matrix production; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10501,21 +10181,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Fibroblast is associated with connective matrix production; Chondrocyte is associated with cartilage maintenance."
     },
     "options": [
-      "Fibroblast—connective matrix production",
       "Chondrocyte—cartilage maintenance",
       "Fibroblast—being a long-distance axonal signaling cell",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0472",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Fibroblast and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Skeletal muscle?",
     "explanation": "Fibroblast is associated with connective matrix production; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10528,20 +10206,18 @@
     },
     "options": [
       "Fibroblast—connective matrix production",
-      "Skeletal muscle—striated somatic force generation",
       "Fibroblast—being a long-distance axonal signaling cell",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0473",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Fibroblast and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Cardiac muscle?",
     "explanation": "Fibroblast is associated with connective matrix production; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10553,21 +10229,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Fibroblast is associated with connective matrix production; Cardiac muscle is associated with intercalated discs and heart-wall contraction."
     },
     "options": [
-      "Fibroblast—connective matrix production",
       "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Fibroblast—being a long-distance axonal signaling cell",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0474",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Fibroblast and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Smooth muscle?",
     "explanation": "Fibroblast is associated with connective matrix production; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10580,20 +10254,18 @@
     },
     "options": [
       "Fibroblast—connective matrix production",
-      "Smooth muscle—nonstriated involuntary contraction",
       "Fibroblast—being a long-distance axonal signaling cell",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0475",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Adipocyte and Collagen fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Adipocyte and Collagen fiber?",
     "explanation": "Adipocyte is associated with lipid storage; Collagen fiber is associated with tensile strength.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10605,21 +10277,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Adipocyte is associated with lipid storage; Collagen fiber is associated with tensile strength."
     },
     "options": [
-      "Adipocyte—lipid storage",
       "Collagen fiber—tensile strength",
       "Adipocyte—being the cell in a cartilage lacuna",
       "Collagen fiber—the primary conduction of a neuronal action potential"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0476",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Adipocyte and Elastic fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Adipocyte and Elastic fiber?",
     "explanation": "Adipocyte is associated with lipid storage; Elastic fiber is associated with stretch and recoil.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10632,20 +10302,18 @@
     },
     "options": [
       "Adipocyte—lipid storage",
-      "Elastic fiber—stretch and recoil",
       "Adipocyte—being the cell in a cartilage lacuna",
       "Elastic fiber—the nucleotide code in a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0477",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Adipocyte and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Adipocyte and Chondrocyte?",
     "explanation": "Adipocyte is associated with lipid storage; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10657,21 +10325,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Adipocyte is associated with lipid storage; Chondrocyte is associated with cartilage maintenance."
     },
     "options": [
-      "Adipocyte—lipid storage",
       "Chondrocyte—cartilage maintenance",
       "Adipocyte—being the cell in a cartilage lacuna",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0478",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Adipocyte and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Adipocyte and Skeletal muscle?",
     "explanation": "Adipocyte is associated with lipid storage; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10684,20 +10350,18 @@
     },
     "options": [
       "Adipocyte—lipid storage",
-      "Skeletal muscle—striated somatic force generation",
       "Adipocyte—being the cell in a cartilage lacuna",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0479",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Adipocyte and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Adipocyte and Cardiac muscle?",
     "explanation": "Adipocyte is associated with lipid storage; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10709,21 +10373,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Adipocyte is associated with lipid storage; Cardiac muscle is associated with intercalated discs and heart-wall contraction."
     },
     "options": [
-      "Adipocyte—lipid storage",
       "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Adipocyte—being the cell in a cartilage lacuna",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0480",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Adipocyte and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Adipocyte and Smooth muscle?",
     "explanation": "Adipocyte is associated with lipid storage; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10736,20 +10398,18 @@
     },
     "options": [
       "Adipocyte—lipid storage",
-      "Smooth muscle—nonstriated involuntary contraction",
       "Adipocyte—being the cell in a cartilage lacuna",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0481",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Collagen fiber and Elastic fiber? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Collagen fiber and Elastic fiber?",
     "explanation": "Collagen fiber is associated with tensile strength; Elastic fiber is associated with stretch and recoil.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10761,21 +10421,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Collagen fiber is associated with tensile strength; Elastic fiber is associated with stretch and recoil."
     },
     "options": [
-      "Collagen fiber—tensile strength",
       "Elastic fiber—stretch and recoil",
       "Collagen fiber—the primary conduction of a neuronal action potential",
       "Elastic fiber—the nucleotide code in a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0482",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Collagen fiber and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Collagen fiber and Chondrocyte?",
     "explanation": "Collagen fiber is associated with tensile strength; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10788,20 +10446,18 @@
     },
     "options": [
       "Collagen fiber—tensile strength",
-      "Chondrocyte—cartilage maintenance",
       "Collagen fiber—the primary conduction of a neuronal action potential",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0483",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Collagen fiber and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Collagen fiber and Skeletal muscle?",
     "explanation": "Collagen fiber is associated with tensile strength; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10813,21 +10469,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Collagen fiber is associated with tensile strength; Skeletal muscle is associated with striated somatic force generation."
     },
     "options": [
-      "Collagen fiber—tensile strength",
       "Skeletal muscle—striated somatic force generation",
       "Collagen fiber—the primary conduction of a neuronal action potential",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0484",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Collagen fiber and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Collagen fiber and Cardiac muscle?",
     "explanation": "Collagen fiber is associated with tensile strength; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10840,20 +10494,18 @@
     },
     "options": [
       "Collagen fiber—tensile strength",
-      "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Collagen fiber—the primary conduction of a neuronal action potential",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0485",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Collagen fiber and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Collagen fiber and Smooth muscle?",
     "explanation": "Collagen fiber is associated with tensile strength; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10865,21 +10517,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Collagen fiber is associated with tensile strength; Smooth muscle is associated with nonstriated involuntary contraction."
     },
     "options": [
-      "Collagen fiber—tensile strength",
       "Smooth muscle—nonstriated involuntary contraction",
       "Collagen fiber—the primary conduction of a neuronal action potential",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0486",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Elastic fiber and Chondrocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Elastic fiber and Chondrocyte?",
     "explanation": "Elastic fiber is associated with stretch and recoil; Chondrocyte is associated with cartilage maintenance.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10892,20 +10542,18 @@
     },
     "options": [
       "Elastic fiber—stretch and recoil",
-      "Chondrocyte—cartilage maintenance",
       "Elastic fiber—the nucleotide code in a chromosome",
       "Chondrocyte—being the main blood oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0487",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Elastic fiber and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Elastic fiber and Skeletal muscle?",
     "explanation": "Elastic fiber is associated with stretch and recoil; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10917,21 +10565,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Elastic fiber is associated with stretch and recoil; Skeletal muscle is associated with striated somatic force generation."
     },
     "options": [
-      "Elastic fiber—stretch and recoil",
       "Skeletal muscle—striated somatic force generation",
       "Elastic fiber—the nucleotide code in a chromosome",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0488",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Elastic fiber and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Elastic fiber and Cardiac muscle?",
     "explanation": "Elastic fiber is associated with stretch and recoil; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10944,20 +10590,18 @@
     },
     "options": [
       "Elastic fiber—stretch and recoil",
-      "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Elastic fiber—the nucleotide code in a chromosome",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0489",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Elastic fiber and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Elastic fiber and Smooth muscle?",
     "explanation": "Elastic fiber is associated with stretch and recoil; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10969,21 +10613,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Elastic fiber is associated with stretch and recoil; Smooth muscle is associated with nonstriated involuntary contraction."
     },
     "options": [
-      "Elastic fiber—stretch and recoil",
       "Smooth muscle—nonstriated involuntary contraction",
       "Elastic fiber—the nucleotide code in a chromosome",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0490",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Chondrocyte and Skeletal muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Chondrocyte and Skeletal muscle?",
     "explanation": "Chondrocyte is associated with cartilage maintenance; Skeletal muscle is associated with striated somatic force generation.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -10996,20 +10638,18 @@
     },
     "options": [
       "Chondrocyte—cartilage maintenance",
-      "Skeletal muscle—striated somatic force generation",
       "Chondrocyte—being the main blood oxygen carrier",
       "Skeletal muscle—a defining lack of all striations"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0491",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Chondrocyte and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Chondrocyte and Cardiac muscle?",
     "explanation": "Chondrocyte is associated with cartilage maintenance; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -11021,21 +10661,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Chondrocyte is associated with cartilage maintenance; Cardiac muscle is associated with intercalated discs and heart-wall contraction."
     },
     "options": [
-      "Chondrocyte—cartilage maintenance",
       "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Chondrocyte—being the main blood oxygen carrier",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0492",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Chondrocyte and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Chondrocyte and Smooth muscle?",
     "explanation": "Chondrocyte is associated with cartilage maintenance; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -11048,20 +10686,18 @@
     },
     "options": [
       "Chondrocyte—cartilage maintenance",
-      "Smooth muscle—nonstriated involuntary contraction",
       "Chondrocyte—being the main blood oxygen carrier",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0493",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Skeletal muscle and Cardiac muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Skeletal muscle and Cardiac muscle?",
     "explanation": "Skeletal muscle is associated with striated somatic force generation; Cardiac muscle is associated with intercalated discs and heart-wall contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -11073,21 +10709,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Skeletal muscle is associated with striated somatic force generation; Cardiac muscle is associated with intercalated discs and heart-wall contraction."
     },
     "options": [
-      "Skeletal muscle—striated somatic force generation",
       "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Skeletal muscle—a defining lack of all striations",
       "Cardiac muscle—the tendon’s extracellular aligned collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0494",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Skeletal muscle and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Skeletal muscle and Smooth muscle?",
     "explanation": "Skeletal muscle is associated with striated somatic force generation; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -11100,20 +10734,18 @@
     },
     "options": [
       "Skeletal muscle—striated somatic force generation",
-      "Smooth muscle—nonstriated involuntary contraction",
       "Skeletal muscle—a defining lack of all striations",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "tissues-0495",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which histological structure–function pairings are correct for Cardiac muscle and Smooth muscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cardiac muscle and Smooth muscle?",
     "explanation": "Cardiac muscle is associated with intercalated discs and heart-wall contraction; Smooth muscle is associated with nonstriated involuntary contraction.",
     "source": {
       "file": "Tissues Chapter 4.pptx",
@@ -11125,14 +10757,12 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cardiac muscle is associated with intercalated discs and heart-wall contraction; Smooth muscle is associated with nonstriated involuntary contraction."
     },
     "options": [
-      "Cardiac muscle—intercalated discs and heart-wall contraction",
       "Smooth muscle—nonstriated involuntary contraction",
       "Cardiac muscle—the tendon’s extracellular aligned collagen",
       "Smooth muscle—multinucleated striated skeletal fibers as its defining form"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {

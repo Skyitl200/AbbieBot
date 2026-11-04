@@ -1,35 +1,42 @@
 # Anatomy study questions: work in progress
 
 The requested final bank is **23 topics × 600 questions = 13,800**. The current
-bank contains **9,600 questions**:
+bank contains **10,200 questions**:
 
-| Topic | Multiple choice | Fill in the blank | Select all | Ordering | Total |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Anatomical Directions | 322 | 135 | 93 | 50 | 600 |
-| Basic Chemistry | 241 | 100 | 205 | 54 | 600 |
-| Living Cells | 233 | 100 | 205 | 62 | 600 |
-| Tissues | 217 | 130 | 185 | 68 | 600 |
-| Integumentary System | 223 | 130 | 185 | 62 | 600 |
-| Skeletal System | 215 | 130 | 185 | 70 | 600 |
-| Joints | 170 | 140 | 245 | 45 | 600 |
-| Muscular System | 165 | 130 | 235 | 70 | 600 |
-| Nervous System & Nervous Tissue | 184 | 130 | 235 | 51 | 600 |
-| Central Nervous System | 184 | 130 | 235 | 51 | 600 |
-| Special Senses | 184 | 130 | 235 | 51 | 600 |
-| Endocrine System | 184 | 130 | 235 | 51 | 600 |
-| Blood Cells | 184 | 130 | 235 | 51 | 600 |
-| Autonomic Nervous System | 251 | 84 | 208 | 57 | 600 |
-| Urinary System | 323 | 92 | 130 | 55 | 600 |
-| Immune System | 298 | 102 | 154 | 46 | 600 |
+| Topic | Multiple choice | Fill in the blank | Ordering | Total |
+| --- | ---: | ---: | ---: | ---: |
+| Anatomical Directions | 415 | 135 | 50 | 600 |
+| Basic Chemistry | 446 | 100 | 54 | 600 |
+| Living Cells | 438 | 100 | 62 | 600 |
+| Tissues | 402 | 130 | 68 | 600 |
+| Integumentary System | 408 | 130 | 62 | 600 |
+| Skeletal System | 400 | 130 | 70 | 600 |
+| Joints | 415 | 140 | 45 | 600 |
+| Muscular System | 400 | 130 | 70 | 600 |
+| Nervous System & Nervous Tissue | 419 | 130 | 51 | 600 |
+| Central Nervous System | 419 | 130 | 51 | 600 |
+| Autonomic Nervous System | 459 | 84 | 57 | 600 |
+| Special Senses | 419 | 130 | 51 | 600 |
+| Endocrine System | 419 | 130 | 51 | 600 |
+| Blood Cells | 419 | 130 | 51 | 600 |
+| Circulatory System | 428 | 130 | 42 | 600 |
+| Immune System | 452 | 102 | 46 | 600 |
+| Urinary System | 453 | 92 | 55 | 600 |
 
-The other 7 new topic banks are not yet populated. **4,200 questions remain**
+The other 6 new topic banks are not yet populated. **3,600 questions remain**
 to reach the requested total. Anatomical Directions, Basic Chemistry, Living Cells,
-Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Autonomic Nervous System, Immune System, and Urinary
-System have reached their 600-question targets; the other 7 topics remain
+Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Autonomic Nervous System, Immune System, and Urinary
+System have reached their 600-question targets; the other 6 topics remain
 incomplete. These are authored
 study drafts, not a claim of independent medical review. The
 existing `quiz-data` files and database rows have been retained until replacements
 are ready; this directory is the new mixed-format bank for `/test`.
+
+The active formats are **multiple choice, fill in the blank, and ordering**.
+All 3,205 former select-all items were replaced with single-answer questions,
+retaining one originally correct choice and the original false choices. Source
+references and explanations were preserved. The validator rejects `select_all`
+so it cannot be reintroduced into new banks.
 
 The default `/test` flow is **class → category → question count**. All authored
 banks in this directory belong to **Anatomy and Physiology Lecture**. A&P lab,
@@ -47,7 +54,7 @@ and are not displayed as earned. These rewards require persistent storage;
 in-memory fallback does not claim a saved award. DM practice earns no coins.
 
 Run `npm run validate:study` for actual counts. `npm run validate:study:complete`
-must fail until every topic has exactly 600 questions and all four formats.
+must fail until every topic has exactly 600 questions and all three formats.
 Structural validation cannot establish medical accuracy; review the questions,
 answer keys, plausible distractors, explanations, and slide references before
 publishing complete banks. Do not inflate counts with shuffled copies, superficial
@@ -138,8 +145,8 @@ a type, difficulty (`easy`, `medium`, `hard`), question, explanation, and source
 }
 ```
 
-Multiple choice uses one zero-based `correct` option index. `select_all` uses
-multiple indices and at least one distractor. `ordering` uses a permutation of
+Multiple choice uses one zero-based `correct` option index. Select-all questions
+are no longer supported. `ordering` uses a permutation of
 all option indices and must specify an unambiguous direction or starting point.
 `fill_blank` uses `____` in the prompt and an `answers` array of accepted strings
 instead of options/indices. For clinical extensions, use
@@ -694,3 +701,43 @@ Blood Cells source qualifications applied during authoring:
   the placenta; antibodies beyond anti-D can matter. Rh immune globulin is
   preventive in eligible unsensitized contexts, not an eraser of established
   immune memory. No individual preventive schedule or treatment dose is prescribed.
+
+
+The Circulatory System bank adapts the 89-slide `Circulatory System Chapter 19.pptx`,
+attributed to Ahmed Katsha, Raritan Valley Community College, and OpenStax/Rice
+University under the source attribution above. Its 600 introductory exercises
+focus on heart anatomy, flow, valves, conduction, ECG basics, the cardiac cycle,
+and pumping measures. The bank uses easy or medium items, no select-all items,
+short 3–5-item ordering tasks, and eight formula-supplied arithmetic exercises.
+The other practice items include comparisons and alternate retrieval formats
+rather than 600 distinct scientific facts. Clinical and developmental extensions
+record their source objective or relationship.
+
+Circulatory source qualifications applied during authoring:
+
+- Slides 6–21: heart position and shape are taught without a universal rib-level
+  rule. The left ventricle needs greater pressure, but the two ventricles deliver
+  similar average volumes over time. Arteries and veins are defined by direction
+  rather than oxygen content alone.
+- Slides 23–30: pressure differences move valve leaflets; papillary muscles and
+  chordae support closed AV valves rather than pulling them open. Both valve
+  groups are closed during isovolumetric phases. Valve events need not be exactly
+  simultaneous on the two sides. Stenosis means narrowing; regurgitation means
+  backward leakage.
+- Slides 33–42: coronary anatomy and flow vary. Left ventricular perfusion is
+  particularly favored in diastole, rather than all coronary flow universally
+  stopping in systole. Some cardiac veins drain directly into the right atrium.
+  Intercalated discs provide mechanical junctions and gap-junction coupling;
+  tight junctions are not taught as their defining attachment system.
+- Slides 45–70: pacemaker and ventricular contractile cells have different
+  electrical behavior. Autonomic input modifies the intrinsic rhythm. Adult
+  rate labels do not diagnose disease by themselves. The plateau includes calcium
+  entry and potassium currents. ECG records surface electrical activity rather
+  than directly measuring contraction or stroke volume. The PR interval begins
+  with the P wave; ventricular repolarization is represented by the T wave.
+- Slides 73–86: atrial and ventricular phases can overlap; simplified ordering
+  tasks name their starting point. Ejection requires ventricular pressure above
+  arterial pressure. The heart does not empty completely at end systole.
+  S1 and S2 are associated with valve closure and surrounding vibrations.
+  Cardiac output is HR × SV for one ventricle; it is not one immutable normal
+  value. Additional basic fetal facts follow the developmental objective on slide 4.

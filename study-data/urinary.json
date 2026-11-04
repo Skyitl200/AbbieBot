@@ -1901,9 +1901,9 @@
   },
   {
     "id": "urinary-0091",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are functions of the kidneys? Select all that apply.",
+    "question": "Which is one of the functions of the kidneys?",
     "explanation": "Kidneys regulate fluid chemistry and eliminate wastes; bile is produced by the liver.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -1913,22 +1913,18 @@
       "kind": "slide"
     },
     "options": [
-      "Regulating fluid solute concentrations",
       "Regulating acid-base balance",
-      "Excreting metabolic wastes",
       "Producing bile"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0092",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which endocrine functions involve the kidneys? Select all that apply.",
+    "question": "Which endocrine function involves the kidneys?",
     "explanation": "Renin, erythropoietin, and vitamin D activation are renal endocrine functions.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -1938,22 +1934,18 @@
       "kind": "slide"
     },
     "options": [
-      "Renin production",
-      "Erythropoietin production",
       "Vitamin D activation",
       "Thyroxine production"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0093",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which structures normally convey urine rather than blood? Select all that apply.",
+    "question": "Which structure normally convey urine rather than blood?",
     "explanation": "Urine flows through collecting spaces and urinary passages; the renal vein carries blood.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -1965,21 +1957,17 @@
     },
     "options": [
       "Ureter",
-      "Urethra",
-      "Renal pelvis",
       "Renal vein"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0094",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which structures are part of the internal urine-collecting pathway of a kidney? Select all that apply.",
+    "question": "Which structure is part of the internal urine-collecting pathway of a kidney?",
     "explanation": "Calyces and the renal pelvis collect urine; the adrenal cortex is an endocrine tissue.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -1990,22 +1978,18 @@
       "kind": "slide"
     },
     "options": [
-      "Minor calyx",
       "Major calyx",
-      "Renal pelvis",
       "Adrenal cortex"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0095",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which structures enter or leave a kidney through its hilar region? Select all that apply.",
+    "question": "Which structure enter or leave a kidney through its hilar region?",
     "explanation": "The renal hilum transmits vessels, nerves, lymphatics, and the urinary outflow connection.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2015,22 +1999,18 @@
       "kind": "slide"
     },
     "options": [
-      "Blood vessels",
-      "Nerves",
       "Ureter",
       "Trachea"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0096",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements describe juxtamedullary nephrons? Select all that apply.",
+    "question": "Which statement describes juxtamedullary nephrons?",
     "explanation": "Long loops of juxtamedullary nephrons contribute to urine-concentrating mechanisms.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2041,21 +2021,17 @@
     },
     "options": [
       "They are approximately 15% of nephrons",
-      "Their loops extend deep into the medulla",
-      "They are important for concentrated urine",
       "They account for approximately 85% of nephrons"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0097",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which structures belong to a nephron? Select all that apply.",
+    "question": "Which structure belongs to a nephron?",
     "explanation": "The renal corpuscle and renal tubule form the nephron; the ureter is a separate urinary passage.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2065,22 +2041,18 @@
       "kind": "slide"
     },
     "options": [
-      "Renal corpuscle",
       "Proximal convoluted tubule",
-      "Distal convoluted tubule",
       "Ureter"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0098",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe a renal corpuscle? Select all that apply.",
+    "question": "Which statement about a renal corpuscle is correct?",
     "explanation": "The renal corpuscle initiates filtrate formation rather than storing final urine.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2090,22 +2062,18 @@
       "kind": "slide"
     },
     "options": [
-      "It includes the glomerulus",
-      "It includes the glomerular capsule",
       "Its filtrate proceeds toward the PCT",
       "It stores finished urine until urination"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0099",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which structures contribute to the glomerular filtration barrier? Select all that apply.",
+    "question": "Which structure contributes to the glomerular filtration barrier?",
     "explanation": "The filtration barrier is formed by endothelial, basement-membrane, and podocyte components.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2117,21 +2085,17 @@
     },
     "options": [
       "Fenestrated capillary endothelium",
-      "Glomerular basement membrane",
-      "Podocyte filtration slits",
       "Bladder transitional epithelium"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0100",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which features support the PCT role in transport? Select all that apply.",
+    "question": "Which feature supports the PCT role in transport?",
     "explanation": "The PCT is specialized for exchange rather than forming a keratinized barrier.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2141,22 +2105,18 @@
       "kind": "slide"
     },
     "options": [
-      "Microvilli increase apical surface area",
       "Mitochondria support ATP production",
-      "Cuboidal epithelial cells line the tubule",
       "A keratinized lining prevents all fluid exchange"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0101",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the nephron loop are correct? Select all that apply.",
+    "question": "Which statement about the nephron loop is correct?",
     "explanation": "Nephron-loop segments differ in epithelial structure and permeability.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2166,22 +2126,18 @@
       "kind": "slide"
     },
     "options": [
-      "Thin segments have squamous epithelium",
-      "Thick segments have cuboidal epithelium",
       "The descending limb reabsorbs water",
       "The ascending limb freely reabsorbs water through its wall"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0102",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which hormone-effect pairings are correct? Select all that apply.",
+    "question": "Which hormone-effect pairing is correct?",
     "explanation": "These hormones regulate distinct aspects of renal tubular transport.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2193,21 +2149,17 @@
     },
     "options": [
       "ADH—increased collecting-duct water permeability",
-      "PTH—increased distal calcium reabsorption",
-      "Aldosterone—increased distal sodium reabsorption",
       "ADH—removal of all aquaporins"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0103",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about collecting ducts are correct? Select all that apply.",
+    "question": "Which statement about collecting ducts is correct?",
     "explanation": "Collecting ducts are urine conduits and sites of regulated transport, not blood vessels.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2217,22 +2169,18 @@
       "kind": "slide"
     },
     "options": [
-      "They receive fluid from multiple nephrons",
       "They run through medullary pyramids",
-      "They deliver fluid toward renal papillae",
       "They directly connect the aorta to a glomerulus"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0104",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which capillary networks receive reabsorbed material from tubular fluid? Select all that apply.",
+    "question": "Which capillary networks receive reabsorbed material from tubular fluid?",
     "explanation": "Peritubular capillaries and vasa recta receive substances returned toward the blood.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2243,20 +2191,18 @@
     },
     "options": [
       "Peritubular capillaries",
-      "Vasa recta",
       "Pulmonary alveoli",
       "Ureteral lumen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0105",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which processes contribute to urine formation? Select all that apply.",
+    "question": "Which process contributes to urine formation?",
     "explanation": "Urine formation involves filtration and selective tubular transport.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2267,21 +2213,17 @@
     },
     "options": [
       "Glomerular filtration",
-      "Tubular reabsorption",
-      "Tubular secretion",
       "Pulmonary ventilation"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0106",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which forces oppose glomerular filtration in the usual simplified model? Select all that apply.",
+    "question": "Which forces oppose glomerular filtration in the usual simplified model?",
     "explanation": "Capsular back pressure and plasma oncotic pressure oppose filtration.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2292,20 +2234,18 @@
     },
     "options": [
       "Capsular hydrostatic pressure",
-      "Blood colloid osmotic pressure",
       "Glomerular blood hydrostatic pressure",
       "ATP hydrolysis by a glomerular pump"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0107",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which nitrogenous waste products occur in normal urine? Select all that apply.",
+    "question": "Which nitrogenous waste products occur in normal urine?",
     "explanation": "Urine normally carries nitrogenous wastes rather than intact red blood cells.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2315,22 +2255,18 @@
       "kind": "slide"
     },
     "options": [
-      "Urea",
-      "Uric acid",
       "Creatinine",
       "Intact erythrocytes as a normal nitrogenous waste"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0108",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which ions may occur as normal urinary solutes? Select all that apply.",
+    "question": "Which ions may occur as normal urinary solutes?",
     "explanation": "Normal dissolved urinary ions include sodium, potassium, and phosphate.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2341,21 +2277,17 @@
     },
     "options": [
       "Sodium",
-      "Potassium",
-      "Phosphate",
       "Intact white blood cells"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0109",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which findings represent abnormal urinary cellular components? Select all that apply.",
+    "question": "Which finding represents abnormal urinary cellular components?",
     "explanation": "Blood cells in urine warrant interpretation; water and urea are normal components.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2365,21 +2297,19 @@
       "kind": "slide"
     },
     "options": [
-      "Red blood cells",
       "White blood cells",
       "Water",
       "Urea"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0110",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which conditions can be associated with polyuria? Select all that apply.",
+    "question": "Which conditions can be associated with polyuria?",
     "explanation": "Both diabetes mellitus and diabetes insipidus can produce excessive urine output.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2390,20 +2320,18 @@
     },
     "options": [
       "Diabetes mellitus",
-      "Diabetes insipidus",
       "Complete bilateral urinary obstruction",
       "Total absence of glomerular filtration"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0111",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which changes form part of the appropriate dehydration response? Select all that apply.",
+    "question": "Which change form part of the appropriate dehydration response?",
     "explanation": "ADH supports water conservation and a smaller volume of more concentrated urine.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2414,21 +2342,17 @@
     },
     "options": [
       "Increased ADH release",
-      "More collecting-duct aquaporins",
-      "Increased water reabsorption",
       "A larger volume of dilute urine"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0112",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which findings fit an appropriate response to overhydration? Select all that apply.",
+    "question": "Which finding fits an appropriate response to overhydration?",
     "explanation": "Excess water reduces the drive for ADH-dependent water conservation.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2438,22 +2362,18 @@
       "kind": "slide"
     },
     "options": [
-      "Lower extracellular osmolality",
       "Reduced ADH release",
-      "Larger volume of dilute urine",
       "Increased aquaporin availability due to maximal ADH"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0113",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements describe the ureters? Select all that apply.",
+    "question": "Which statement describes the ureters?",
     "explanation": "Ureters have a transitional lining and muscular transport mechanism.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2463,22 +2383,18 @@
       "kind": "slide"
     },
     "options": [
-      "They are retroperitoneal",
-      "Their mucosa is lined by transitional epithelium",
       "They enter the bladder obliquely",
       "They transport urine by gravity alone"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0114",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which layers are present in the ureter wall? Select all that apply.",
+    "question": "Which layer is present in the ureter wall?",
     "explanation": "The ureter has mucosal, muscular, and outer connective-tissue layers.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2489,21 +2405,17 @@
     },
     "options": [
       "Mucosa",
-      "Smooth-muscle layer",
-      "Adventitia",
       "Glomerular filtration slits"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0115",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements describe the urinary bladder? Select all that apply.",
+    "question": "Which statement describes the urinary bladder?",
     "explanation": "The bladder stores and expels urine; filtration occurs in the kidneys.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -2514,15 +2426,11 @@
       "kind": "slide"
     },
     "options": [
-      "It temporarily stores urine",
       "It contains smooth muscle",
-      "It has openings for ureters and urethra",
       "It directly filters blood through podocytes"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
@@ -3391,9 +3299,9 @@
   },
   {
     "id": "urinary-0151",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly connect renal functions with physiological roles? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement correctly connect renal functions with physiological roles?",
     "explanation": "These renal endocrine functions are distinct from hepatic bile production.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3405,22 +3313,18 @@
       "rationale": "Applies the cited renal structure or physiological mechanism: These renal endocrine functions are distinct from hepatic bile production."
     },
     "options": [
-      "Erythropoietin supports red blood cell production",
       "Renin participates in blood pressure regulation",
-      "The kidneys contribute to vitamin D activation",
       "The kidneys produce bile for fat digestion"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0152",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "In a simplified filtration model, which isolated changes would lower net filtration pressure? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "In a simplified filtration model, which isolated changes would lower net filtration pressure?",
     "explanation": "Filtration falls when the driving pressure decreases or an opposing pressure increases.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3432,22 +3336,18 @@
       "rationale": "Applies the cited renal structure or physiological mechanism: Filtration falls when the driving pressure decreases or an opposing pressure increases."
     },
     "options": [
-      "Lower glomerular hydrostatic pressure",
-      "Higher capsular hydrostatic pressure",
       "Higher plasma colloid osmotic pressure",
       "Lower capsular hydrostatic pressure"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0153",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which effects could follow impaired proximal-tubule transport? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which effects could follow impaired proximal-tubule transport?",
     "explanation": "The PCT alters filtrate composition through transport; impaired transport does not convert anatomical structures.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3459,21 +3359,19 @@
       "rationale": "Applies the cited renal structure or physiological mechanism: The PCT alters filtrate composition through transport; impaired transport does not convert anatomical structures."
     },
     "options": [
-      "Reduced reclamation of normally reabsorbed solutes",
       "Altered tubular solute composition",
       "Loss of the urethra as an anatomical structure",
       "Conversion of renal veins into ureters"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0154",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which mechanisms explain urine movement and protection against reflux? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which mechanism explain urine movement and protection against reflux?",
     "explanation": "Urinary transport and antireflux function depend on different anatomical features.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3486,20 +3384,18 @@
     },
     "options": [
       "Ureteral smooth-muscle peristalsis advances urine",
-      "Oblique ureteral entry into the bladder helps resist reflux",
       "Gravity is the only source of urine movement",
       "Ureteral lining cells form glomerular filtration slits"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0155",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which findings describe urinary abnormalities rather than normal constituents? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which finding describes urinary abnormalities rather than normal constituents?",
     "explanation": "Urinary blood cells and reduced output are abnormal findings; water and urea are normal constituents. Interpretation still requires clinical context.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3510,15 +3406,11 @@
       "rationale": "Applies the cited renal structure or physiological mechanism: Urinary blood cells and reduced output are abnormal findings; water and urea are normal constituents. Interpretation still requires clinical context."
     },
     "options": [
-      "Red blood cells in urine",
-      "White blood cells in urine",
       "Abnormally low urine output",
       "Water and urea at usual concentrations"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
@@ -3547,9 +3439,9 @@
   },
   {
     "id": "urinary-0157",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about albuminuria are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about albuminuria is correct?",
     "explanation": "Albuminuria: an abnormal increase in albumin excretion in urine. It can indicate disruption of the normal renal protein barrier",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3560,13 +3452,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Albuminuria: an abnormal increase in albumin excretion in urine. It can indicate disruption of the normal renal protein barrier"
     },
     "options": [
-      "An abnormal increase in albumin excretion in urine",
       "It can indicate disruption of the normal renal protein barrier",
       "It means an excess of intact white blood cells in urine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3613,9 +3503,9 @@
   },
   {
     "id": "urinary-0160",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about proteinuria are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about proteinuria is correct?",
     "explanation": "Proteinuria: an abnormal increase in urinary protein. Glomerular-barrier injury is one possible cause",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3627,12 +3517,10 @@
     },
     "options": [
       "An abnormal increase in urinary protein",
-      "Glomerular-barrier injury is one possible cause",
       "It specifically means an excess of urine volume"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3679,9 +3567,9 @@
   },
   {
     "id": "urinary-0163",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about hematuria are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about hematuria is correct?",
     "explanation": "Hematuria: the presence of red blood cells in urine. It is a descriptive finding rather than a diagnosis by itself",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3692,13 +3580,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hematuria: the presence of red blood cells in urine. It is a descriptive finding rather than a diagnosis by itself"
     },
     "options": [
-      "The presence of red blood cells in urine",
       "It is a descriptive finding rather than a diagnosis by itself",
       "It proves that the cause is always a bacterial infection"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3745,9 +3631,9 @@
   },
   {
     "id": "urinary-0166",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about pyuria are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about pyuria is correct?",
     "explanation": "Pyuria: the presence of white blood cells in urine. It requires clinical interpretation rather than establishing one cause",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3759,12 +3645,10 @@
     },
     "options": [
       "The presence of white blood cells in urine",
-      "It requires clinical interpretation rather than establishing one cause",
       "It is the name for glucose in urine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3811,9 +3695,9 @@
   },
   {
     "id": "urinary-0169",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about glycosuria are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about glycosuria is correct?",
     "explanation": "Glycosuria: the presence of glucose in urine. It may occur when filtered glucose exceeds tubular reabsorptive capacity",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3824,13 +3708,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Glycosuria: the presence of glucose in urine. It may occur when filtered glucose exceeds tubular reabsorptive capacity"
     },
     "options": [
-      "The presence of glucose in urine",
       "It may occur when filtered glucose exceeds tubular reabsorptive capacity",
       "It means a reduced number of red cells in blood"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3878,9 +3760,9 @@
   },
   {
     "id": "urinary-0172",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about transport maximum are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about transport maximum is correct?",
     "explanation": "Transport maximum: the maximal rate of a saturable tubular transport process. Once transport capacity is exceeded, more solute can remain in tubular fluid",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3892,12 +3774,10 @@
     },
     "options": [
       "The maximal rate of a saturable tubular transport process",
-      "Once transport capacity is exceeded, more solute can remain in tubular fluid",
       "It is the opening between a ureter and the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3944,9 +3824,9 @@
   },
   {
     "id": "urinary-0175",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about osmotic diuresis are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about osmotic diuresis is correct?",
     "explanation": "Osmotic diuresis: increased urinary water loss caused by poorly reabsorbed solute in tubular fluid. Glucose remaining in tubular fluid can contribute to this process",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -3957,13 +3837,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osmotic diuresis: increased urinary water loss caused by poorly reabsorbed solute in tubular fluid. Glucose remaining in tubular fluid can contribute to this process"
     },
     "options": [
-      "Increased urinary water loss caused by poorly reabsorbed solute in tubular fluid",
       "Glucose remaining in tubular fluid can contribute to this process",
       "It always requires complete absence of glomerular filtration"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4010,9 +3888,9 @@
   },
   {
     "id": "urinary-0178",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about central diabetes insipidus are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about central diabetes insipidus is correct in urinary physiology?",
     "explanation": "Central diabetes insipidus: a disorder in which insufficient ADH availability impairs water conservation. The collecting ducts may respond if an appropriate ADH signal is supplied",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4024,12 +3902,10 @@
     },
     "options": [
       "A disorder in which insufficient ADH availability impairs water conservation",
-      "The collecting ducts may respond if an appropriate ADH signal is supplied",
       "It is defined by excessive insulin secretion"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4076,9 +3952,9 @@
   },
   {
     "id": "urinary-0181",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about nephrogenic diabetes insipidus are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about nephrogenic diabetes insipidus is correct in urinary physiology?",
     "explanation": "Nephrogenic diabetes insipidus: a disorder in which the kidneys respond inadequately to ADH. Dilute polyuria may persist despite an available ADH signal",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4089,13 +3965,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Nephrogenic diabetes insipidus: a disorder in which the kidneys respond inadequately to ADH. Dilute polyuria may persist despite an available ADH signal"
     },
     "options": [
-      "A disorder in which the kidneys respond inadequately to ADH",
       "Dilute polyuria may persist despite an available ADH signal",
       "It is defined by excessive urinary erythrocytes"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4142,9 +4016,9 @@
   },
   {
     "id": "urinary-0184",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about aquaporin are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about aquaporin is correct?",
     "explanation": "Aquaporin: a membrane channel that facilitates water movement. ADH regulates aquaporin availability in the collecting duct",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4156,12 +4030,10 @@
     },
     "options": [
       "A membrane channel that facilitates water movement",
-      "ADH regulates aquaporin availability in the collecting duct",
       "It is the muscular layer of a ureter"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4208,9 +4080,9 @@
   },
   {
     "id": "urinary-0187",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about hyperosmolality are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about hyperosmolality is correct?",
     "explanation": "Hyperosmolality: an increase in the concentration of osmotically active particles per kilogram of water. It can stimulate ADH-mediated water conservation",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4221,13 +4093,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hyperosmolality: an increase in the concentration of osmotically active particles per kilogram of water. It can stimulate ADH-mediated water conservation"
     },
     "options": [
-      "An increase in the concentration of osmotically active particles per kilogram of water",
       "It can stimulate ADH-mediated water conservation",
       "It means a greater number of nephrons in each kidney"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4274,9 +4144,9 @@
   },
   {
     "id": "urinary-0190",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about hypoosmolality are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about hypoosmolality is correct?",
     "explanation": "Hypoosmolality: a decrease in the concentration of osmotically active particles per kilogram of water. An appropriate response can reduce ADH release",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4288,12 +4158,10 @@
     },
     "options": [
       "A decrease in the concentration of osmotically active particles per kilogram of water",
-      "An appropriate response can reduce ADH release",
       "It necessarily means dehydration in every patient"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4340,9 +4208,9 @@
   },
   {
     "id": "urinary-0193",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about hyponatremia are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about hyponatremia is correct?",
     "explanation": "Hyponatremia: a lower-than-normal plasma sodium concentration. Excess water relative to sodium can contribute to it",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4353,13 +4221,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hyponatremia: a lower-than-normal plasma sodium concentration. Excess water relative to sodium can contribute to it"
     },
     "options": [
-      "A lower-than-normal plasma sodium concentration",
       "Excess water relative to sodium can contribute to it",
       "It means excess calcium excretion without reference to blood sodium"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4406,9 +4272,9 @@
   },
   {
     "id": "urinary-0196",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about hyperkalemia are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about hyperkalemia is correct?",
     "explanation": "Hyperkalemia: a higher-than-normal plasma potassium concentration. Impaired renal potassium elimination can contribute to it",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4420,12 +4286,10 @@
     },
     "options": [
       "A higher-than-normal plasma potassium concentration",
-      "Impaired renal potassium elimination can contribute to it",
       "It refers to low plasma potassium"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4472,9 +4336,9 @@
   },
   {
     "id": "urinary-0199",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about metabolic acidosis are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about metabolic acidosis is correct?",
     "explanation": "Metabolic acidosis: an acid-base disturbance with a primary fall in bicarbonate or an acid gain. Impaired renal acid handling can contribute to this disturbance",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4485,13 +4349,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Metabolic acidosis: an acid-base disturbance with a primary fall in bicarbonate or an acid gain. Impaired renal acid handling can contribute to this disturbance"
     },
     "options": [
-      "An acid-base disturbance with a primary fall in bicarbonate or an acid gain",
       "Impaired renal acid handling can contribute to this disturbance",
       "It is defined by a primary increase in blood pH"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4538,9 +4400,9 @@
   },
   {
     "id": "urinary-0202",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about calcitriol are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about calcitriol is correct in urinary physiology?",
     "explanation": "Calcitriol: the active hormonal form of vitamin D. Renal activation of vitamin D contributes to calcium homeostasis",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4552,12 +4414,10 @@
     },
     "options": [
       "The active hormonal form of vitamin D",
-      "Renal activation of vitamin D contributes to calcium homeostasis",
       "It is the main pigment of normal yellow urine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4604,9 +4464,9 @@
   },
   {
     "id": "urinary-0205",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about renal anemia are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about renal anemia is correct?",
     "explanation": "Renal anemia: reduced red-cell production associated in part with inadequate renal erythropoietin. Chronic kidney disease can reduce the erythropoietic stimulus",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4617,13 +4477,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Renal anemia: reduced red-cell production associated in part with inadequate renal erythropoietin. Chronic kidney disease can reduce the erythropoietic stimulus"
     },
     "options": [
-      "Reduced red-cell production associated in part with inadequate renal erythropoietin",
       "Chronic kidney disease can reduce the erythropoietic stimulus",
       "It means an excess of red blood cells in urine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4671,9 +4529,9 @@
   },
   {
     "id": "urinary-0208",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about renin are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about renin is correct in urinary physiology?",
     "explanation": "Renin: a renal enzyme that initiates the renin-angiotensin pathway. Its release can participate in responses to reduced renal perfusion",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4685,12 +4543,10 @@
     },
     "options": [
       "A renal enzyme that initiates the renin-angiotensin pathway",
-      "Its release can participate in responses to reduced renal perfusion",
       "It directly forms the epithelial lining of the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4737,9 +4593,9 @@
   },
   {
     "id": "urinary-0211",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about aldosterone are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about aldosterone is correct in urinary physiology?",
     "explanation": "Aldosterone: an adrenal cortical hormone that promotes distal sodium retention. It also supports potassium secretion in appropriate distal-nephron cells",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4750,13 +4606,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Aldosterone: an adrenal cortical hormone that promotes distal sodium retention. It also supports potassium secretion in appropriate distal-nephron cells"
     },
     "options": [
-      "An adrenal cortical hormone that promotes distal sodium retention",
       "It also supports potassium secretion in appropriate distal-nephron cells",
       "It is produced by podocyte pedicels"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4803,9 +4657,9 @@
   },
   {
     "id": "urinary-0214",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about parathyroid hormone are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about parathyroid hormone is correct in urinary physiology?",
     "explanation": "Parathyroid hormone: a hormone that promotes distal renal calcium reabsorption. It contributes to regulation of calcium balance",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4817,12 +4671,10 @@
     },
     "options": [
       "A hormone that promotes distal renal calcium reabsorption",
-      "It contributes to regulation of calcium balance",
       "It is the principal water-channel protein of the collecting duct"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4869,9 +4721,9 @@
   },
   {
     "id": "urinary-0217",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about hydronephrosis are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about hydronephrosis is correct?",
     "explanation": "Hydronephrosis: dilation of the renal collecting system associated with impaired urine drainage. An obstructed ureter can cause upstream collecting-system dilation",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4882,13 +4734,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydronephrosis: dilation of the renal collecting system associated with impaired urine drainage. An obstructed ureter can cause upstream collecting-system dilation"
     },
     "options": [
-      "Dilation of the renal collecting system associated with impaired urine drainage",
       "An obstructed ureter can cause upstream collecting-system dilation",
       "It is the normal name for blood entering a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4935,9 +4785,9 @@
   },
   {
     "id": "urinary-0220",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about hydroureter are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about hydroureter is correct?",
     "explanation": "Hydroureter: dilation of a ureter. It can accompany obstruction to urinary outflow",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -4949,12 +4799,10 @@
     },
     "options": [
       "Dilation of a ureter",
-      "It can accompany obstruction to urinary outflow",
       "It means the production of erythropoietin by a kidney"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5001,9 +4849,9 @@
   },
   {
     "id": "urinary-0223",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about vesicoureteral reflux are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about vesicoureteral reflux is correct?",
     "explanation": "Vesicoureteral reflux: backward passage of urine from the bladder toward a ureter. The ureterovesical junction normally helps oppose this flow",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5014,13 +4862,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Vesicoureteral reflux: backward passage of urine from the bladder toward a ureter. The ureterovesical junction normally helps oppose this flow"
     },
     "options": [
-      "Backward passage of urine from the bladder toward a ureter",
       "The ureterovesical junction normally helps oppose this flow",
       "It is the normal forward movement from kidney to bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5067,9 +4913,9 @@
   },
   {
     "id": "urinary-0226",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about nephrolithiasis are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about nephrolithiasis is correct?",
     "explanation": "Nephrolithiasis: the presence of renal stones. A stone may obstruct urine flow if it enters a narrow urinary passage",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5081,12 +4927,10 @@
     },
     "options": [
       "The presence of renal stones",
-      "A stone may obstruct urine flow if it enters a narrow urinary passage",
       "It means increased red-cell production due to erythropoietin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5133,9 +4977,9 @@
   },
   {
     "id": "urinary-0229",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about cystitis are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about cystitis is correct?",
     "explanation": "Cystitis: inflammation of the urinary bladder. It is anatomically distinct from inflammation of the kidney",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5146,13 +4990,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cystitis: inflammation of the urinary bladder. It is anatomically distinct from inflammation of the kidney"
     },
     "options": [
-      "Inflammation of the urinary bladder",
       "It is anatomically distinct from inflammation of the kidney",
       "It is another name for the renal cortex"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5199,9 +5041,9 @@
   },
   {
     "id": "urinary-0232",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about urethritis are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about urethritis is correct?",
     "explanation": "Urethritis: inflammation of the urethra. It involves the passage from bladder toward the exterior",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5213,12 +5055,10 @@
     },
     "options": [
       "Inflammation of the urethra",
-      "It involves the passage from bladder toward the exterior",
       "It specifically names inflammation of a renal pyramid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5266,9 +5106,9 @@
   },
   {
     "id": "urinary-0235",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about pyelonephritis are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about pyelonephritis is correct?",
     "explanation": "Pyelonephritis: an inflammatory or infectious process involving the kidney and renal pelvis. Ascending urinary infection is one possible route",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5280,13 +5120,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Pyelonephritis: an inflammatory or infectious process involving the kidney and renal pelvis. Ascending urinary infection is one possible route"
     },
     "options": [
-      "An inflammatory or infectious process involving the kidney and renal pelvis",
       "Ascending urinary infection is one possible route",
       "It means normal urine storage in an uninflamed bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5334,9 +5172,9 @@
   },
   {
     "id": "urinary-0238",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about urinary retention are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about urinary retention is correct?",
     "explanation": "Urinary retention: failure to empty the bladder adequately. Urine can remain despite continued delivery through the ureters",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5348,12 +5186,10 @@
     },
     "options": [
       "Failure to empty the bladder adequately",
-      "Urine can remain despite continued delivery through the ureters",
       "It is synonymous with absence of urine production by the kidneys"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5400,9 +5236,9 @@
   },
   {
     "id": "urinary-0241",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about detrusor are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about detrusor is correct?",
     "explanation": "Detrusor: the smooth muscle forming the main contractile bladder wall. Its contraction contributes to bladder emptying",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5413,13 +5249,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Detrusor: the smooth muscle forming the main contractile bladder wall. Its contraction contributes to bladder emptying"
     },
     "options": [
-      "The smooth muscle forming the main contractile bladder wall",
       "Its contraction contributes to bladder emptying",
       "It is a glomerular capillary tuft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5467,9 +5301,9 @@
   },
   {
     "id": "urinary-0244",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about urothelium are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about urothelium is correct?",
     "explanation": "Urothelium: the specialized transitional epithelium lining much of the urinary tract. It accommodates changing volume while providing a barrier",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5482,12 +5316,10 @@
     },
     "options": [
       "The specialized transitional epithelium lining much of the urinary tract",
-      "It accommodates changing volume while providing a barrier",
       "It is the same structure as a glomerular filtration slit"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5535,9 +5367,9 @@
   },
   {
     "id": "urinary-0247",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about brush border are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about brush border is correct?",
     "explanation": "Brush border: the dense array of microvilli on the proximal-tubule surface. It increases the membrane area available for tubular transport",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5548,13 +5380,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Brush border: the dense array of microvilli on the proximal-tubule surface. It increases the membrane area available for tubular transport"
     },
     "options": [
-      "The dense array of microvilli on the proximal-tubule surface",
       "It increases the membrane area available for tubular transport",
       "It is a collection of ureteral smooth-muscle fibers"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5601,9 +5431,9 @@
   },
   {
     "id": "urinary-0250",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about podocyte are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about podocyte is correct?",
     "explanation": "Podocyte: a specialized cell of the visceral glomerular capsule. Its foot processes contribute to the filtration slit barrier",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5615,12 +5445,10 @@
     },
     "options": [
       "A specialized cell of the visceral glomerular capsule",
-      "Its foot processes contribute to the filtration slit barrier",
       "It is the cell that forms the bladder detrusor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5667,9 +5495,9 @@
   },
   {
     "id": "urinary-0253",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about glomerular filtration rate are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about glomerular filtration rate is correct?",
     "explanation": "Glomerular filtration rate: the volume of filtrate formed by glomeruli per unit time. It differs from the final rate of urine excretion",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5680,13 +5508,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Glomerular filtration rate: the volume of filtrate formed by glomeruli per unit time. It differs from the final rate of urine excretion"
     },
     "options": [
-      "The volume of filtrate formed by glomeruli per unit time",
       "It differs from the final rate of urine excretion",
       "It measures only the number of times a person voids"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5733,9 +5559,9 @@
   },
   {
     "id": "urinary-0256",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about capsular hydrostatic pressure are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about capsular hydrostatic pressure is correct?",
     "explanation": "Capsular hydrostatic pressure: the pressure exerted by fluid within the glomerular capsule. An increase in this pressure opposes filtration in the usual simplified model",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5747,12 +5573,10 @@
     },
     "options": [
       "The pressure exerted by fluid within the glomerular capsule",
-      "An increase in this pressure opposes filtration in the usual simplified model",
       "It is the only pressure that drives filtration outward"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5799,9 +5623,9 @@
   },
   {
     "id": "urinary-0259",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about plasma oncotic pressure are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about plasma oncotic pressure is correct?",
     "explanation": "Plasma oncotic pressure: the osmotic effect of plasma proteins that opposes glomerular filtration. It differs from capsular hydrostatic pressure",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5812,13 +5636,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Plasma oncotic pressure: the osmotic effect of plasma proteins that opposes glomerular filtration. It differs from capsular hydrostatic pressure"
     },
     "options": [
-      "The osmotic effect of plasma proteins that opposes glomerular filtration",
       "It differs from capsular hydrostatic pressure",
       "It is generated by urine stored in the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5866,9 +5688,9 @@
   },
   {
     "id": "urinary-0262",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about tubular reabsorption are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about tubular reabsorption is correct?",
     "explanation": "Tubular reabsorption: movement from tubular fluid toward the circulation. It can return water and useful solutes to blood",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5880,12 +5702,10 @@
     },
     "options": [
       "Movement from tubular fluid toward the circulation",
-      "It can return water and useful solutes to blood",
       "It is defined as movement from blood into the tubular lumen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5932,9 +5752,9 @@
   },
   {
     "id": "urinary-0265",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about tubular secretion are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about tubular secretion is correct?",
     "explanation": "Tubular secretion: movement of selected substances from blood toward tubular fluid. It can contribute to elimination of certain ions and drugs",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -5945,13 +5765,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Tubular secretion: movement of selected substances from blood toward tubular fluid. It can contribute to elimination of certain ions and drugs"
     },
     "options": [
-      "Movement of selected substances from blood toward tubular fluid",
       "It can contribute to elimination of certain ions and drugs",
       "It is the same process as storage of urine in the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5998,9 +5816,9 @@
   },
   {
     "id": "urinary-0268",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about renal clearance are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about renal clearance is correct?",
     "explanation": "Renal clearance: the hypothetical plasma volume cleared of a substance per unit time. It depends on urinary concentration, urine flow, and plasma concentration",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -6012,12 +5830,10 @@
     },
     "options": [
       "The hypothetical plasma volume cleared of a substance per unit time",
-      "It depends on urinary concentration, urine flow, and plasma concentration",
       "It is simply the total volume in the bladder at one moment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6065,9 +5881,9 @@
   },
   {
     "id": "urinary-0271",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about nephrotic syndrome are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about nephrotic syndrome is correct?",
     "explanation": "Nephrotic syndrome: a clinical pattern involving heavy protein loss in urine and related systemic effects. Reduced circulating albumin can contribute to edema",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -6079,13 +5895,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Nephrotic syndrome: a clinical pattern involving heavy protein loss in urine and related systemic effects. Reduced circulating albumin can contribute to edema"
     },
     "options": [
-      "A clinical pattern involving heavy protein loss in urine and related systemic effects",
       "Reduced circulating albumin can contribute to edema",
       "It is defined by sterile urine with no protein loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6133,9 +5947,9 @@
   },
   {
     "id": "urinary-0274",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about azotemia are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about azotemia is correct?",
     "explanation": "Azotemia: an increase in blood nitrogenous waste concentrations. Reduced renal elimination is one possible contributor",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -6147,12 +5961,10 @@
     },
     "options": [
       "An increase in blood nitrogenous waste concentrations",
-      "Reduced renal elimination is one possible contributor",
       "It means an excess of white cells in urine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -7265,9 +7077,9 @@
   },
   {
     "id": "urinary-0325",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which findings or consequences can accompany excessive glomerular protein loss? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which finding can accompany excessive glomerular protein loss?",
     "explanation": "Glomerular protein loss can lower plasma albumin and favor edema.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -7279,22 +7091,18 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Glomerular protein loss can lower plasma albumin and favor edema."
     },
     "options": [
-      "Proteinuria",
       "Reduced circulating albumin",
-      "Edema related to reduced plasma oncotic pressure",
       "A required increase in blood albumin"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0326",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which changes indicate an appropriate water-conserving collecting-duct response to ADH? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which change indicate an appropriate water-conserving collecting-duct response to ADH?",
     "explanation": "ADH increases collecting-duct water conservation.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -7306,22 +7114,18 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: ADH increases collecting-duct water conservation."
     },
     "options": [
-      "More available aquaporins",
-      "Greater water permeability",
       "More water reabsorption",
       "A necessary increase in dilute urine volume"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0327",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which distinctions between central and nephrogenic diabetes insipidus are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which distinctions between central and nephrogenic diabetes insipidus are correct?",
     "explanation": "The disorders differ in the location of failure in the ADH pathway.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -7332,21 +7136,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: The disorders differ in the location of failure in the ADH pathway."
     },
     "options": [
-      "Central disease involves insufficient ADH availability",
       "Nephrogenic disease involves inadequate renal response to ADH",
       "Both terms mean urinary red blood cells",
       "Both require glucose as the retained osmotic solute"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0328",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which steps connect excessive filtered glucose load with osmotic diuresis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which steps connect excessive filtered glucose load with osmotic diuresis?",
     "explanation": "Excess tubular glucose can retain water and increase urine volume.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -7358,22 +7160,18 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Excess tubular glucose can retain water and increase urine volume."
     },
     "options": [
-      "Tubular carriers can become saturated",
       "More glucose can remain in tubular fluid",
-      "Retained solute can increase urinary water loss",
       "Glucose must be converted into white blood cells"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0329",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which effects can follow a substantial obstruction of urinary drainage? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which effects can follow a substantial obstruction of urinary drainage?",
     "explanation": "Outflow obstruction can transmit an opposing pressure upstream.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -7385,21 +7183,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Outflow obstruction can transmit an opposing pressure upstream."
     },
     "options": [
-      "Upstream collecting-system pressure can increase",
       "The net force for filtration can fall",
       "A ureter becomes a renal artery",
       "Back pressure necessarily increases filtration"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0330",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which findings correctly distinguish urinary transport from blood transport? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which finding correctly distinguishes urinary transport from blood transport?",
     "explanation": "Urinary passages and blood vessels have different contents and functions.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -7412,20 +7208,18 @@
     },
     "options": [
       "Ureters use smooth-muscle peristalsis",
-      "Renal veins return blood rather than urine",
       "Renal veins are normal urine-storage reservoirs",
       "Ureters normally carry oxygenated blood to glomeruli"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0331",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements distinguish voiding symptoms from kidney output? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement distinguish voiding symptoms from kidney output?",
     "explanation": "Urine-production volume and bladder emptying are separate aspects of urinary function.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -7437,21 +7231,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Urine-production volume and bladder emptying are separate aspects of urinary function."
     },
     "options": [
-      "Frequent voiding alone does not prove polyuria",
       "Retention can coexist with urine production",
       "A full bladder always means the kidneys have stopped forming urine",
       "Polyuria is defined only by voiding frequency"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0332",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which renal endocrine relationships are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which renal endocrine relationships are correct?",
     "explanation": "Kidneys participate in endocrine regulation as well as excretion.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -7463,22 +7255,18 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Kidneys participate in endocrine regulation as well as excretion."
     },
     "options": [
-      "Reduced erythropoietin can contribute to anemia",
-      "Renal vitamin D activation supports calcium regulation",
       "PTH promotes distal calcium reabsorption",
       "Urochrome is the hormone controlling red-cell production"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0333",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which anatomical-functional associations are appropriate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which anatomical-functional associations are appropriate?",
     "explanation": "Long loops and associated vessels support concentration mechanisms.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -7490,21 +7278,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Long loops and associated vessels support concentration mechanisms."
     },
     "options": [
-      "Long juxtamedullary loops—urine concentration",
       "Vasa recta—association with long nephron loops",
       "Ureter—glomerular filtration barrier",
       "Bladder—primary site of protein filtration"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0334",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe solute mass balance? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about solute mass balance is correct?",
     "explanation": "Tubular transport can make excretion differ from the initial filtered amount.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -7516,13 +7302,11 @@
     },
     "options": [
       "Reabsorption subtracts from the amount remaining for excretion",
-      "Secretion adds to the amount remaining for excretion",
       "Reabsorption and secretion always mean the same direction",
       "Filtration must equal final excretion for every solute"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -11514,9 +11298,9 @@
   },
   {
     "id": "urinary-0496",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Kidney and Ureter? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Kidney and Ureter?",
     "explanation": "Kidney is associated with contains nephrons that form urine; Ureter is associated with transports urine from kidney toward bladder.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11528,20 +11312,18 @@
     },
     "options": [
       "Kidney—contains nephrons that form urine",
-      "Ureter—transports urine from kidney toward bladder",
       "Kidney—is the tube carrying urine from bladder to exterior",
       "Ureter—normally filters blood through podocytes"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0497",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Kidney and Bladder? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Kidney and Bladder?",
     "explanation": "Kidney is associated with contains nephrons that form urine; Bladder is associated with temporarily stores urine.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11552,21 +11334,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Kidney is associated with contains nephrons that form urine; Bladder is associated with temporarily stores urine."
     },
     "options": [
-      "Kidney—contains nephrons that form urine",
       "Bladder—temporarily stores urine",
       "Kidney—is the tube carrying urine from bladder to exterior",
       "Bladder—is the artery supplying a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0498",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Kidney and Urethra? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Kidney and Urethra?",
     "explanation": "Kidney is associated with contains nephrons that form urine; Urethra is associated with carries urine from bladder toward the exterior.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11578,20 +11358,18 @@
     },
     "options": [
       "Kidney—contains nephrons that form urine",
-      "Urethra—carries urine from bladder toward the exterior",
       "Kidney—is the tube carrying urine from bladder to exterior",
       "Urethra—connects a renal artery to the aorta"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0499",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Kidney and Glomerulus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Kidney and Glomerulus?",
     "explanation": "Kidney is associated with contains nephrons that form urine; Glomerulus is associated with performs initial plasma filtration.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11603,21 +11381,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Kidney is associated with contains nephrons that form urine; Glomerulus is associated with performs initial plasma filtration."
     },
     "options": [
-      "Kidney—contains nephrons that form urine",
       "Glomerulus—performs initial plasma filtration",
       "Kidney—is the tube carrying urine from bladder to exterior",
       "Glomerulus—is the temporary reservoir for finished urine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0500",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Kidney and Proximal tubule? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Kidney and Proximal tubule?",
     "explanation": "Kidney is associated with contains nephrons that form urine; Proximal tubule is associated with has a microvillus-rich transport surface.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11630,20 +11406,18 @@
     },
     "options": [
       "Kidney—contains nephrons that form urine",
-      "Proximal tubule—has a microvillus-rich transport surface",
       "Kidney—is the tube carrying urine from bladder to exterior",
       "Proximal tubule—is lined by the same detrusor muscle as the bladder wall"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0501",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Kidney and Descending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Kidney and Descending limb?",
     "explanation": "Kidney is associated with contains nephrons that form urine; Descending limb is associated with is associated with water reabsorption.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11655,21 +11429,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Kidney is associated with contains nephrons that form urine; Descending limb is associated with is associated with water reabsorption."
     },
     "options": [
-      "Kidney—contains nephrons that form urine",
       "Descending limb—is associated with water reabsorption",
       "Kidney—is the tube carrying urine from bladder to exterior",
       "Descending limb—normally carries urine from bladder to exterior"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0502",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Kidney and Ascending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Kidney and Ascending limb?",
     "explanation": "Kidney is associated with contains nephrons that form urine; Ascending limb is associated with reabsorbs salts without freely reabsorbing water.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11682,20 +11454,18 @@
     },
     "options": [
       "Kidney—contains nephrons that form urine",
-      "Ascending limb—reabsorbs salts without freely reabsorbing water",
       "Kidney—is the tube carrying urine from bladder to exterior",
       "Ascending limb—is the storage reservoir between the ureters and urethra"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0503",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Kidney and Collecting duct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Kidney and Collecting duct?",
     "explanation": "Kidney is associated with contains nephrons that form urine; Collecting duct is associated with responds to ADH through regulated water permeability.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11707,21 +11477,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Kidney is associated with contains nephrons that form urine; Collecting duct is associated with responds to ADH through regulated water permeability."
     },
     "options": [
-      "Kidney—contains nephrons that form urine",
       "Collecting duct—responds to ADH through regulated water permeability",
       "Kidney—is the tube carrying urine from bladder to exterior",
       "Collecting duct—is the blood vessel carrying blood into a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0504",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Kidney and Vasa recta? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Kidney and Vasa recta?",
     "explanation": "Kidney is associated with contains nephrons that form urine; Vasa recta is associated with are associated with long juxtamedullary loops.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11734,20 +11502,18 @@
     },
     "options": [
       "Kidney—contains nephrons that form urine",
-      "Vasa recta—are associated with long juxtamedullary loops",
       "Kidney—is the tube carrying urine from bladder to exterior",
       "Vasa recta—are the epithelial lining of the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0505",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Ureter and Bladder? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Ureter and Bladder?",
     "explanation": "Ureter is associated with transports urine from kidney toward bladder; Bladder is associated with temporarily stores urine.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11758,21 +11524,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Ureter is associated with transports urine from kidney toward bladder; Bladder is associated with temporarily stores urine."
     },
     "options": [
-      "Ureter—transports urine from kidney toward bladder",
       "Bladder—temporarily stores urine",
       "Ureter—normally filters blood through podocytes",
       "Bladder—is the artery supplying a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0506",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Ureter and Urethra? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Ureter and Urethra?",
     "explanation": "Ureter is associated with transports urine from kidney toward bladder; Urethra is associated with carries urine from bladder toward the exterior.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11784,20 +11548,18 @@
     },
     "options": [
       "Ureter—transports urine from kidney toward bladder",
-      "Urethra—carries urine from bladder toward the exterior",
       "Ureter—normally filters blood through podocytes",
       "Urethra—connects a renal artery to the aorta"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0507",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Ureter and Glomerulus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Ureter and Glomerulus?",
     "explanation": "Ureter is associated with transports urine from kidney toward bladder; Glomerulus is associated with performs initial plasma filtration.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11809,21 +11571,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Ureter is associated with transports urine from kidney toward bladder; Glomerulus is associated with performs initial plasma filtration."
     },
     "options": [
-      "Ureter—transports urine from kidney toward bladder",
       "Glomerulus—performs initial plasma filtration",
       "Ureter—normally filters blood through podocytes",
       "Glomerulus—is the temporary reservoir for finished urine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0508",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Ureter and Proximal tubule? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Ureter and Proximal tubule?",
     "explanation": "Ureter is associated with transports urine from kidney toward bladder; Proximal tubule is associated with has a microvillus-rich transport surface.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11836,20 +11596,18 @@
     },
     "options": [
       "Ureter—transports urine from kidney toward bladder",
-      "Proximal tubule—has a microvillus-rich transport surface",
       "Ureter—normally filters blood through podocytes",
       "Proximal tubule—is lined by the same detrusor muscle as the bladder wall"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0509",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Ureter and Descending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Ureter and Descending limb?",
     "explanation": "Ureter is associated with transports urine from kidney toward bladder; Descending limb is associated with is associated with water reabsorption.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11861,21 +11619,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Ureter is associated with transports urine from kidney toward bladder; Descending limb is associated with is associated with water reabsorption."
     },
     "options": [
-      "Ureter—transports urine from kidney toward bladder",
       "Descending limb—is associated with water reabsorption",
       "Ureter—normally filters blood through podocytes",
       "Descending limb—normally carries urine from bladder to exterior"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0510",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Ureter and Ascending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Ureter and Ascending limb?",
     "explanation": "Ureter is associated with transports urine from kidney toward bladder; Ascending limb is associated with reabsorbs salts without freely reabsorbing water.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11888,20 +11644,18 @@
     },
     "options": [
       "Ureter—transports urine from kidney toward bladder",
-      "Ascending limb—reabsorbs salts without freely reabsorbing water",
       "Ureter—normally filters blood through podocytes",
       "Ascending limb—is the storage reservoir between the ureters and urethra"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0511",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Ureter and Collecting duct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Ureter and Collecting duct?",
     "explanation": "Ureter is associated with transports urine from kidney toward bladder; Collecting duct is associated with responds to ADH through regulated water permeability.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11913,21 +11667,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Ureter is associated with transports urine from kidney toward bladder; Collecting duct is associated with responds to ADH through regulated water permeability."
     },
     "options": [
-      "Ureter—transports urine from kidney toward bladder",
       "Collecting duct—responds to ADH through regulated water permeability",
       "Ureter—normally filters blood through podocytes",
       "Collecting duct—is the blood vessel carrying blood into a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0512",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Ureter and Vasa recta? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Ureter and Vasa recta?",
     "explanation": "Ureter is associated with transports urine from kidney toward bladder; Vasa recta is associated with are associated with long juxtamedullary loops.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11940,20 +11692,18 @@
     },
     "options": [
       "Ureter—transports urine from kidney toward bladder",
-      "Vasa recta—are associated with long juxtamedullary loops",
       "Ureter—normally filters blood through podocytes",
       "Vasa recta—are the epithelial lining of the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0513",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Bladder and Urethra? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bladder and Urethra?",
     "explanation": "Bladder is associated with temporarily stores urine; Urethra is associated with carries urine from bladder toward the exterior.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11964,21 +11714,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Bladder is associated with temporarily stores urine; Urethra is associated with carries urine from bladder toward the exterior."
     },
     "options": [
-      "Bladder—temporarily stores urine",
       "Urethra—carries urine from bladder toward the exterior",
       "Bladder—is the artery supplying a glomerulus",
       "Urethra—connects a renal artery to the aorta"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0514",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Bladder and Glomerulus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bladder and Glomerulus?",
     "explanation": "Bladder is associated with temporarily stores urine; Glomerulus is associated with performs initial plasma filtration.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -11991,20 +11739,18 @@
     },
     "options": [
       "Bladder—temporarily stores urine",
-      "Glomerulus—performs initial plasma filtration",
       "Bladder—is the artery supplying a glomerulus",
       "Glomerulus—is the temporary reservoir for finished urine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0515",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Bladder and Proximal tubule? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bladder and Proximal tubule?",
     "explanation": "Bladder is associated with temporarily stores urine; Proximal tubule is associated with has a microvillus-rich transport surface.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12016,21 +11762,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Bladder is associated with temporarily stores urine; Proximal tubule is associated with has a microvillus-rich transport surface."
     },
     "options": [
-      "Bladder—temporarily stores urine",
       "Proximal tubule—has a microvillus-rich transport surface",
       "Bladder—is the artery supplying a glomerulus",
       "Proximal tubule—is lined by the same detrusor muscle as the bladder wall"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0516",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Bladder and Descending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bladder and Descending limb?",
     "explanation": "Bladder is associated with temporarily stores urine; Descending limb is associated with is associated with water reabsorption.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12043,20 +11787,18 @@
     },
     "options": [
       "Bladder—temporarily stores urine",
-      "Descending limb—is associated with water reabsorption",
       "Bladder—is the artery supplying a glomerulus",
       "Descending limb—normally carries urine from bladder to exterior"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0517",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Bladder and Ascending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bladder and Ascending limb?",
     "explanation": "Bladder is associated with temporarily stores urine; Ascending limb is associated with reabsorbs salts without freely reabsorbing water.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12068,21 +11810,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Bladder is associated with temporarily stores urine; Ascending limb is associated with reabsorbs salts without freely reabsorbing water."
     },
     "options": [
-      "Bladder—temporarily stores urine",
       "Ascending limb—reabsorbs salts without freely reabsorbing water",
       "Bladder—is the artery supplying a glomerulus",
       "Ascending limb—is the storage reservoir between the ureters and urethra"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0518",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Bladder and Collecting duct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bladder and Collecting duct?",
     "explanation": "Bladder is associated with temporarily stores urine; Collecting duct is associated with responds to ADH through regulated water permeability.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12095,20 +11835,18 @@
     },
     "options": [
       "Bladder—temporarily stores urine",
-      "Collecting duct—responds to ADH through regulated water permeability",
       "Bladder—is the artery supplying a glomerulus",
       "Collecting duct—is the blood vessel carrying blood into a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0519",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Bladder and Vasa recta? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bladder and Vasa recta?",
     "explanation": "Bladder is associated with temporarily stores urine; Vasa recta is associated with are associated with long juxtamedullary loops.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12120,21 +11858,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Bladder is associated with temporarily stores urine; Vasa recta is associated with are associated with long juxtamedullary loops."
     },
     "options": [
-      "Bladder—temporarily stores urine",
       "Vasa recta—are associated with long juxtamedullary loops",
       "Bladder—is the artery supplying a glomerulus",
       "Vasa recta—are the epithelial lining of the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0520",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Urethra and Glomerulus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Urethra and Glomerulus?",
     "explanation": "Urethra is associated with carries urine from bladder toward the exterior; Glomerulus is associated with performs initial plasma filtration.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12147,20 +11883,18 @@
     },
     "options": [
       "Urethra—carries urine from bladder toward the exterior",
-      "Glomerulus—performs initial plasma filtration",
       "Urethra—connects a renal artery to the aorta",
       "Glomerulus—is the temporary reservoir for finished urine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0521",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Urethra and Proximal tubule? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Urethra and Proximal tubule?",
     "explanation": "Urethra is associated with carries urine from bladder toward the exterior; Proximal tubule is associated with has a microvillus-rich transport surface.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12172,21 +11906,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Urethra is associated with carries urine from bladder toward the exterior; Proximal tubule is associated with has a microvillus-rich transport surface."
     },
     "options": [
-      "Urethra—carries urine from bladder toward the exterior",
       "Proximal tubule—has a microvillus-rich transport surface",
       "Urethra—connects a renal artery to the aorta",
       "Proximal tubule—is lined by the same detrusor muscle as the bladder wall"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0522",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Urethra and Descending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Urethra and Descending limb?",
     "explanation": "Urethra is associated with carries urine from bladder toward the exterior; Descending limb is associated with is associated with water reabsorption.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12199,20 +11931,18 @@
     },
     "options": [
       "Urethra—carries urine from bladder toward the exterior",
-      "Descending limb—is associated with water reabsorption",
       "Urethra—connects a renal artery to the aorta",
       "Descending limb—normally carries urine from bladder to exterior"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0523",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Urethra and Ascending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Urethra and Ascending limb?",
     "explanation": "Urethra is associated with carries urine from bladder toward the exterior; Ascending limb is associated with reabsorbs salts without freely reabsorbing water.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12224,21 +11954,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Urethra is associated with carries urine from bladder toward the exterior; Ascending limb is associated with reabsorbs salts without freely reabsorbing water."
     },
     "options": [
-      "Urethra—carries urine from bladder toward the exterior",
       "Ascending limb—reabsorbs salts without freely reabsorbing water",
       "Urethra—connects a renal artery to the aorta",
       "Ascending limb—is the storage reservoir between the ureters and urethra"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0524",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Urethra and Collecting duct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Urethra and Collecting duct?",
     "explanation": "Urethra is associated with carries urine from bladder toward the exterior; Collecting duct is associated with responds to ADH through regulated water permeability.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12251,20 +11979,18 @@
     },
     "options": [
       "Urethra—carries urine from bladder toward the exterior",
-      "Collecting duct—responds to ADH through regulated water permeability",
       "Urethra—connects a renal artery to the aorta",
       "Collecting duct—is the blood vessel carrying blood into a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0525",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Urethra and Vasa recta? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Urethra and Vasa recta?",
     "explanation": "Urethra is associated with carries urine from bladder toward the exterior; Vasa recta is associated with are associated with long juxtamedullary loops.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12276,21 +12002,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Urethra is associated with carries urine from bladder toward the exterior; Vasa recta is associated with are associated with long juxtamedullary loops."
     },
     "options": [
-      "Urethra—carries urine from bladder toward the exterior",
       "Vasa recta—are associated with long juxtamedullary loops",
       "Urethra—connects a renal artery to the aorta",
       "Vasa recta—are the epithelial lining of the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0526",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Glomerulus and Proximal tubule? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Glomerulus and Proximal tubule?",
     "explanation": "Glomerulus is associated with performs initial plasma filtration; Proximal tubule is associated with has a microvillus-rich transport surface.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12303,20 +12027,18 @@
     },
     "options": [
       "Glomerulus—performs initial plasma filtration",
-      "Proximal tubule—has a microvillus-rich transport surface",
       "Glomerulus—is the temporary reservoir for finished urine",
       "Proximal tubule—is lined by the same detrusor muscle as the bladder wall"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0527",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Glomerulus and Descending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Glomerulus and Descending limb?",
     "explanation": "Glomerulus is associated with performs initial plasma filtration; Descending limb is associated with is associated with water reabsorption.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12328,21 +12050,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Glomerulus is associated with performs initial plasma filtration; Descending limb is associated with is associated with water reabsorption."
     },
     "options": [
-      "Glomerulus—performs initial plasma filtration",
       "Descending limb—is associated with water reabsorption",
       "Glomerulus—is the temporary reservoir for finished urine",
       "Descending limb—normally carries urine from bladder to exterior"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0528",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Glomerulus and Ascending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Glomerulus and Ascending limb?",
     "explanation": "Glomerulus is associated with performs initial plasma filtration; Ascending limb is associated with reabsorbs salts without freely reabsorbing water.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12355,20 +12075,18 @@
     },
     "options": [
       "Glomerulus—performs initial plasma filtration",
-      "Ascending limb—reabsorbs salts without freely reabsorbing water",
       "Glomerulus—is the temporary reservoir for finished urine",
       "Ascending limb—is the storage reservoir between the ureters and urethra"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0529",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Glomerulus and Collecting duct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Glomerulus and Collecting duct?",
     "explanation": "Glomerulus is associated with performs initial plasma filtration; Collecting duct is associated with responds to ADH through regulated water permeability.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12380,21 +12098,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Glomerulus is associated with performs initial plasma filtration; Collecting duct is associated with responds to ADH through regulated water permeability."
     },
     "options": [
-      "Glomerulus—performs initial plasma filtration",
       "Collecting duct—responds to ADH through regulated water permeability",
       "Glomerulus—is the temporary reservoir for finished urine",
       "Collecting duct—is the blood vessel carrying blood into a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0530",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Glomerulus and Vasa recta? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Glomerulus and Vasa recta?",
     "explanation": "Glomerulus is associated with performs initial plasma filtration; Vasa recta is associated with are associated with long juxtamedullary loops.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12407,20 +12123,18 @@
     },
     "options": [
       "Glomerulus—performs initial plasma filtration",
-      "Vasa recta—are associated with long juxtamedullary loops",
       "Glomerulus—is the temporary reservoir for finished urine",
       "Vasa recta—are the epithelial lining of the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0531",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Proximal tubule and Descending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proximal tubule and Descending limb?",
     "explanation": "Proximal tubule is associated with has a microvillus-rich transport surface; Descending limb is associated with is associated with water reabsorption.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12432,21 +12146,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Proximal tubule is associated with has a microvillus-rich transport surface; Descending limb is associated with is associated with water reabsorption."
     },
     "options": [
-      "Proximal tubule—has a microvillus-rich transport surface",
       "Descending limb—is associated with water reabsorption",
       "Proximal tubule—is lined by the same detrusor muscle as the bladder wall",
       "Descending limb—normally carries urine from bladder to exterior"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0532",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Proximal tubule and Ascending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proximal tubule and Ascending limb?",
     "explanation": "Proximal tubule is associated with has a microvillus-rich transport surface; Ascending limb is associated with reabsorbs salts without freely reabsorbing water.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12459,20 +12171,18 @@
     },
     "options": [
       "Proximal tubule—has a microvillus-rich transport surface",
-      "Ascending limb—reabsorbs salts without freely reabsorbing water",
       "Proximal tubule—is lined by the same detrusor muscle as the bladder wall",
       "Ascending limb—is the storage reservoir between the ureters and urethra"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0533",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Proximal tubule and Collecting duct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proximal tubule and Collecting duct?",
     "explanation": "Proximal tubule is associated with has a microvillus-rich transport surface; Collecting duct is associated with responds to ADH through regulated water permeability.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12484,21 +12194,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Proximal tubule is associated with has a microvillus-rich transport surface; Collecting duct is associated with responds to ADH through regulated water permeability."
     },
     "options": [
-      "Proximal tubule—has a microvillus-rich transport surface",
       "Collecting duct—responds to ADH through regulated water permeability",
       "Proximal tubule—is lined by the same detrusor muscle as the bladder wall",
       "Collecting duct—is the blood vessel carrying blood into a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0534",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Proximal tubule and Vasa recta? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proximal tubule and Vasa recta?",
     "explanation": "Proximal tubule is associated with has a microvillus-rich transport surface; Vasa recta is associated with are associated with long juxtamedullary loops.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12511,20 +12219,18 @@
     },
     "options": [
       "Proximal tubule—has a microvillus-rich transport surface",
-      "Vasa recta—are associated with long juxtamedullary loops",
       "Proximal tubule—is lined by the same detrusor muscle as the bladder wall",
       "Vasa recta—are the epithelial lining of the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0535",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Descending limb and Ascending limb? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Descending limb and Ascending limb?",
     "explanation": "Descending limb is associated with is associated with water reabsorption; Ascending limb is associated with reabsorbs salts without freely reabsorbing water.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12535,21 +12241,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Descending limb is associated with is associated with water reabsorption; Ascending limb is associated with reabsorbs salts without freely reabsorbing water."
     },
     "options": [
-      "Descending limb—is associated with water reabsorption",
       "Ascending limb—reabsorbs salts without freely reabsorbing water",
       "Descending limb—normally carries urine from bladder to exterior",
       "Ascending limb—is the storage reservoir between the ureters and urethra"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0536",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Descending limb and Collecting duct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Descending limb and Collecting duct?",
     "explanation": "Descending limb is associated with is associated with water reabsorption; Collecting duct is associated with responds to ADH through regulated water permeability.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12562,20 +12266,18 @@
     },
     "options": [
       "Descending limb—is associated with water reabsorption",
-      "Collecting duct—responds to ADH through regulated water permeability",
       "Descending limb—normally carries urine from bladder to exterior",
       "Collecting duct—is the blood vessel carrying blood into a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0537",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Descending limb and Vasa recta? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Descending limb and Vasa recta?",
     "explanation": "Descending limb is associated with is associated with water reabsorption; Vasa recta is associated with are associated with long juxtamedullary loops.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12587,21 +12289,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Descending limb is associated with is associated with water reabsorption; Vasa recta is associated with are associated with long juxtamedullary loops."
     },
     "options": [
-      "Descending limb—is associated with water reabsorption",
       "Vasa recta—are associated with long juxtamedullary loops",
       "Descending limb—normally carries urine from bladder to exterior",
       "Vasa recta—are the epithelial lining of the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0538",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Ascending limb and Collecting duct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Ascending limb and Collecting duct?",
     "explanation": "Ascending limb is associated with reabsorbs salts without freely reabsorbing water; Collecting duct is associated with responds to ADH through regulated water permeability.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12614,20 +12314,18 @@
     },
     "options": [
       "Ascending limb—reabsorbs salts without freely reabsorbing water",
-      "Collecting duct—responds to ADH through regulated water permeability",
       "Ascending limb—is the storage reservoir between the ureters and urethra",
       "Collecting duct—is the blood vessel carrying blood into a glomerulus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0539",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Ascending limb and Vasa recta? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Ascending limb and Vasa recta?",
     "explanation": "Ascending limb is associated with reabsorbs salts without freely reabsorbing water; Vasa recta is associated with are associated with long juxtamedullary loops.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12639,21 +12337,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Ascending limb is associated with reabsorbs salts without freely reabsorbing water; Vasa recta is associated with are associated with long juxtamedullary loops."
     },
     "options": [
-      "Ascending limb—reabsorbs salts without freely reabsorbing water",
       "Vasa recta—are associated with long juxtamedullary loops",
       "Ascending limb—is the storage reservoir between the ureters and urethra",
       "Vasa recta—are the epithelial lining of the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0540",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which structure–function pairings are correct for Collecting duct and Vasa recta? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Collecting duct and Vasa recta?",
     "explanation": "Collecting duct is associated with responds to ADH through regulated water permeability; Vasa recta is associated with are associated with long juxtamedullary loops.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12666,20 +12362,18 @@
     },
     "options": [
       "Collecting duct—responds to ADH through regulated water permeability",
-      "Vasa recta—are associated with long juxtamedullary loops",
       "Collecting duct—is the blood vessel carrying blood into a glomerulus",
       "Vasa recta—are the epithelial lining of the bladder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0541",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which pairs correctly connect renal disease consequences with physiological functions? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairs correctly connect renal disease consequences with physiological function?",
     "explanation": "Renal endocrine changes have effects beyond the urine itself.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12690,21 +12384,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Renal endocrine changes have effects beyond the urine itself."
     },
     "options": [
-      "Reduced erythropoietin—reduced stimulus for red-cell production",
       "Reduced active vitamin D—altered calcium regulation",
       "Reduced erythropoietin—guaranteed polycythemia",
       "Reduced active vitamin D—conversion of ureters into glands"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0542",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which pressure changes favor filtration if all other terms stay fixed? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pressure change favor filtration if all other terms stay fixed?",
     "explanation": "Filtration rises with a larger outward force or smaller opposing forces.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12715,22 +12407,18 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Filtration rises with a larger outward force or smaller opposing forces."
     },
     "options": [
-      "Higher glomerular hydrostatic pressure",
-      "Lower capsular hydrostatic pressure",
       "Lower plasma oncotic pressure",
       "Higher capsular hydrostatic pressure"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0543",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which pairs distinguish urine composition from urine volume? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pair distinguish urine composition from urine volume?",
     "explanation": "Cellular or solute findings describe composition; polyuria and oliguria describe output.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12741,21 +12429,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cellular or solute findings describe composition; polyuria and oliguria describe output."
     },
     "options": [
-      "Hematuria—red-cell content",
       "Polyuria—excess volume",
       "Pyuria—excess volume alone",
       "Oliguria—glucose content"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "urinary-0544",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which segments have transport specializations relevant to water or solute recovery? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which segment have transport specializations relevant to water or solute recovery?",
     "explanation": "Different nephron and collecting-system segments perform distinct transport roles.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12768,22 +12454,18 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Different nephron and collecting-system segments perform distinct transport roles."
     },
     "options": [
-      "PCT—large transport surface from microvilli",
       "Ascending limb—salt recovery without free water movement",
-      "Collecting duct—ADH-regulated water permeability",
       "Ureter—primary site of glomerular filtration"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "urinary-0545",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which pairs identify inflammation or dysfunction by urinary location? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pair identifies inflammation or dysfunction by urinary location?",
     "explanation": "The terms distinguish site and function rather than treating every urinary disorder as identical.",
     "source": {
       "file": "Urinary System Chapter 24.pptx",
@@ -12796,15 +12478,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: The terms distinguish site and function rather than treating every urinary disorder as identical."
     },
     "options": [
-      "Cystitis—bladder inflammation",
-      "Urethritis—urethral inflammation",
       "Retention—failure of adequate bladder emptying",
       "Pyelonephritis—inflammation confined by definition to the external ear"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {

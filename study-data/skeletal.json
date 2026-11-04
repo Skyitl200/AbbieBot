@@ -24,9 +24,9 @@
   },
   {
     "id": "skeletal-0002",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept skeletal system? Select all that apply.",
+    "question": "Which statement about the skeletal concept skeletal system is correct?",
     "explanation": "Skeletal system: the supporting framework of bones and associated skeletal structures. Its functions include protection, movement, and mineral storage",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -37,12 +37,10 @@
     },
     "options": [
       "The supporting framework of bones and associated skeletal structures",
-      "Its functions include protection, movement, and mineral storage",
       "Its only function is visible body shape"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -87,9 +85,9 @@
   },
   {
     "id": "skeletal-0005",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept hematopoiesis? Select all that apply.",
+    "question": "Which statement about the skeletal concept hematopoiesis is correct?",
     "explanation": "Hematopoiesis: production of blood cells. Red marrow supports this process",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -99,13 +97,11 @@
       "kind": "slide"
     },
     "options": [
-      "Production of blood cells",
       "Red marrow supports this process",
       "It is the same process as bone resorption by osteoclasts"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -151,9 +147,9 @@
   },
   {
     "id": "skeletal-0008",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept axial skeleton? Select all that apply.",
+    "question": "Which statement about the skeletal concept axial skeleton is correct?",
     "explanation": "Axial skeleton: the central skeletal division including skull, vertebral column, and thoracic cage. It differs from the limb-and-girdle division",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -164,12 +160,10 @@
     },
     "options": [
       "The central skeletal division including skull, vertebral column, and thoracic cage",
-      "It differs from the limb-and-girdle division",
       "Its defining components are only the hand and foot bones"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -214,9 +208,9 @@
   },
   {
     "id": "skeletal-0011",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept appendicular skeleton? Select all that apply.",
+    "question": "Which statement about the skeletal concept appendicular skeleton is correct?",
     "explanation": "Appendicular skeleton: the skeletal division including limbs and their attachment girdles. It includes pectoral and pelvic girdles",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -226,13 +220,11 @@
       "kind": "slide"
     },
     "options": [
-      "The skeletal division including limbs and their attachment girdles",
       "It includes pectoral and pelvic girdles",
       "It is defined as the vertebral column alone"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -278,9 +270,9 @@
   },
   {
     "id": "skeletal-0014",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept long bone? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept long bone is correct?",
     "explanation": "Long bone: a shape class characterized by a shaft and relatively elongated form. Small phalanges can belong to this class",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -292,12 +284,10 @@
     },
     "options": [
       "A shape class characterized by a shaft and relatively elongated form",
-      "Small phalanges can belong to this class",
       "Only the largest bones can be classified this way"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -344,9 +334,9 @@
   },
   {
     "id": "skeletal-0017",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept short bone? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept short bone is correct?",
     "explanation": "Short bone: a bone shape class with roughly similar dimensions. Many carpals are examples",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -357,13 +347,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Short bone: a bone shape class with roughly similar dimensions. Many carpals are examples"
     },
     "options": [
-      "A bone shape class with roughly similar dimensions",
       "Many carpals are examples",
       "Every short bone must contain a long tubular diaphysis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -409,9 +397,9 @@
   },
   {
     "id": "skeletal-0020",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept flat bone? Select all that apply.",
+    "question": "Which statement about the skeletal concept flat bone is correct?",
     "explanation": "Flat bone: a thin plate-like bone shape class. Cranial-vault bones often have compact tables surrounding diploë",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -422,12 +410,10 @@
     },
     "options": [
       "A thin plate-like bone shape class",
-      "Cranial-vault bones often have compact tables surrounding diploë",
       "Every flat bone must be completely devoid of spongy tissue"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -473,9 +459,9 @@
   },
   {
     "id": "skeletal-0023",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept irregular bone? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept irregular bone is correct?",
     "explanation": "Irregular bone: a bone with a complex form not fitting the main long, short, or flat patterns. Vertebrae are typical examples",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -486,13 +472,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Irregular bone: a bone with a complex form not fitting the main long, short, or flat patterns. Vertebrae are typical examples"
     },
     "options": [
-      "A bone with a complex form not fitting the main long, short, or flat patterns",
       "Vertebrae are typical examples",
       "It means every such bone is diseased"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -539,9 +523,9 @@
   },
   {
     "id": "skeletal-0026",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept sesamoid bone? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept sesamoid bone is correct?",
     "explanation": "Sesamoid bone: a bone developing within a tendon. The patella is a familiar example",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -553,12 +537,10 @@
     },
     "options": [
       "A bone developing within a tendon",
-      "The patella is a familiar example",
       "It is the same as every cranial-vault flat bone"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -605,9 +587,9 @@
   },
   {
     "id": "skeletal-0029",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept 206 bones? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept 206 bones is correct?",
     "explanation": "206 bones: the conventional total in a standard adult reference skeleton. Individual counts can vary with accessory bones and fusion patterns",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -618,13 +600,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: 206 bones: the conventional total in a standard adult reference skeleton. Individual counts can vary with accessory bones and fusion patterns"
     },
     "options": [
-      "The conventional total in a standard adult reference skeleton",
       "Individual counts can vary with accessory bones and fusion patterns",
       "Every person of every age must have exactly this count"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -670,9 +650,9 @@
   },
   {
     "id": "skeletal-0032",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept diaphysis? Select all that apply.",
+    "question": "Which statement about the skeletal concept diaphysis is correct?",
     "explanation": "Diaphysis: the shaft of a typical long bone. Its wall contains substantial compact bone",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -683,12 +663,10 @@
     },
     "options": [
       "The shaft of a typical long bone",
-      "Its wall contains substantial compact bone",
       "It is the cartilage cap on the joint surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -733,9 +711,9 @@
   },
   {
     "id": "skeletal-0035",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept epiphysis? Select all that apply.",
+    "question": "Which statement about the skeletal concept epiphysis is correct?",
     "explanation": "Epiphysis: an end region of a typical long bone. It commonly contains trabecular bone beneath its outer cortex",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -745,13 +723,11 @@
       "kind": "slide"
     },
     "options": [
-      "An end region of a typical long bone",
       "It commonly contains trabecular bone beneath its outer cortex",
       "It is defined as the central marrow cavity alone"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -796,9 +772,9 @@
   },
   {
     "id": "skeletal-0038",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept metaphysis? Select all that apply.",
+    "question": "Which statement about the skeletal concept metaphysis is correct?",
     "explanation": "Metaphysis: the region between a long-bone shaft and its epiphysis. In growing bones it is associated with the growth-plate interface",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -809,12 +785,10 @@
     },
     "options": [
       "The region between a long-bone shaft and its epiphysis",
-      "In growing bones it is associated with the growth-plate interface",
       "It is the outer fibrous membrane covering a whole shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -859,9 +833,9 @@
   },
   {
     "id": "skeletal-0041",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept medullary cavity? Select all that apply.",
+    "question": "Which statement about the skeletal concept medullary cavity is correct?",
     "explanation": "Medullary cavity: the marrow-containing cavity within a long-bone shaft. It is lined by endosteal tissue",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -871,13 +845,11 @@
       "kind": "slide"
     },
     "options": [
-      "The marrow-containing cavity within a long-bone shaft",
       "It is lined by endosteal tissue",
       "It is the gap between two articular cartilages"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -922,9 +894,9 @@
   },
   {
     "id": "skeletal-0044",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept yellow marrow? Select all that apply.",
+    "question": "Which statement about the skeletal concept yellow marrow is correct?",
     "explanation": "Yellow marrow: marrow rich in lipid-storing cells. It is prominent in the shafts of many adult long bones",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -935,12 +907,10 @@
     },
     "options": [
       "Marrow rich in lipid-storing cells",
-      "It is prominent in the shafts of many adult long bones",
       "It is the exclusive blood-forming compartment in every infant"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -985,9 +955,9 @@
   },
   {
     "id": "skeletal-0047",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept red marrow? Select all that apply.",
+    "question": "Which statement about the skeletal concept red marrow is correct?",
     "explanation": "Red marrow: marrow supporting active blood-cell production. Its distribution changes with age and anatomical site",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -997,13 +967,11 @@
       "kind": "slide"
     },
     "options": [
-      "Marrow supporting active blood-cell production",
       "Its distribution changes with age and anatomical site",
       "It fills every adult long-bone cavity identically"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1048,9 +1016,9 @@
   },
   {
     "id": "skeletal-0050",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept articular cartilage? Select all that apply.",
+    "question": "Which statement about the skeletal concept articular cartilage is correct?",
     "explanation": "Articular cartilage: the cartilage covering appropriate joint surfaces of bone. In typical synovial joints it is hyaline cartilage",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1061,12 +1029,10 @@
     },
     "options": [
       "The cartilage covering appropriate joint surfaces of bone",
-      "In typical synovial joints it is hyaline cartilage",
       "It is normally covered by periosteum at the articulating surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1111,9 +1077,9 @@
   },
   {
     "id": "skeletal-0053",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept epiphyseal growth plate? Select all that apply.",
+    "question": "Which statement about the skeletal concept epiphyseal growth plate is correct?",
     "explanation": "Epiphyseal growth plate: the cartilage interface supporting length growth in a growing long bone. Closure limits further normal longitudinal growth",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1123,13 +1089,11 @@
       "kind": "slide"
     },
     "options": [
-      "The cartilage interface supporting length growth in a growing long bone",
       "Closure limits further normal longitudinal growth",
       "It is the same as a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1175,9 +1139,9 @@
   },
   {
     "id": "skeletal-0056",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept epiphyseal line? Select all that apply.",
+    "question": "Which statement about the skeletal concept epiphyseal line is correct?",
     "explanation": "Epiphyseal line: the bony remnant of a closed growth plate. It differs from an active cartilaginous growth plate",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1188,12 +1152,10 @@
     },
     "options": [
       "The bony remnant of a closed growth plate",
-      "It differs from an active cartilaginous growth plate",
       "It normally allows continued cartilage-driven length growth indefinitely"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1238,9 +1200,9 @@
   },
   {
     "id": "skeletal-0059",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept periosteum? Select all that apply.",
+    "question": "Which statement about the skeletal concept periosteum is correct?",
     "explanation": "Periosteum: the covering of external nonarticular bone surfaces. It includes fibrous and osteogenic components and carries vessels and nerves",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1250,13 +1212,11 @@
       "kind": "slide"
     },
     "options": [
-      "The covering of external nonarticular bone surfaces",
       "It includes fibrous and osteogenic components and carries vessels and nerves",
       "It covers the exposed articular cartilage surface as its standard outer layer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1301,9 +1261,9 @@
   },
   {
     "id": "skeletal-0062",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept endosteum? Select all that apply.",
+    "question": "Which statement about the skeletal concept endosteum is correct?",
     "explanation": "Endosteum: the thin lining of internal bone surfaces. It participates in bone growth, repair, and remodeling",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1314,12 +1274,10 @@
     },
     "options": [
       "The thin lining of internal bone surfaces",
-      "It participates in bone growth, repair, and remodeling",
       "It is the keratinized epidermal covering of a finger"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1364,9 +1322,9 @@
   },
   {
     "id": "skeletal-0065",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept diploë? Select all that apply.",
+    "question": "Which statement about the skeletal concept diploë is correct?",
     "explanation": "Diploë: the spongy layer between compact tables of many cranial-vault bones. It is part of a flat-bone structural arrangement",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1376,13 +1334,11 @@
       "kind": "slide"
     },
     "options": [
-      "The spongy layer between compact tables of many cranial-vault bones",
       "It is part of a flat-bone structural arrangement",
       "It is the muscle layer over the skull"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1429,9 +1385,9 @@
   },
   {
     "id": "skeletal-0068",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept bone marking? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept bone marking is correct?",
     "explanation": "Bone marking: a named surface feature of a bone. It can relate to articulation, attachment, or passage",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1443,12 +1399,10 @@
     },
     "options": [
       "A named surface feature of a bone",
-      "It can relate to articulation, attachment, or passage",
       "It always means a pathological fracture line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1494,9 +1448,9 @@
   },
   {
     "id": "skeletal-0071",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept bony articulation? Select all that apply.",
+    "question": "Which statement about the skeletal concept bony articulation is correct?",
     "explanation": "Bony articulation: a site where skeletal surfaces meet to form a joint. Its structure relates to the joint type",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1506,13 +1460,11 @@
       "kind": "slide"
     },
     "options": [
-      "A site where skeletal surfaces meet to form a joint",
       "Its structure relates to the joint type",
       "It is defined as the nutrient artery inside marrow"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1557,9 +1509,9 @@
   },
   {
     "id": "skeletal-0074",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept bony projection? Select all that apply.",
+    "question": "Which statement about the skeletal concept bony projection is correct?",
     "explanation": "Bony projection: a prominence extending from a bone surface. Many provide attachment or leverage",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1570,12 +1522,10 @@
     },
     "options": [
       "A prominence extending from a bone surface",
-      "Many provide attachment or leverage",
       "It must always be a hole through the bone"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1622,9 +1572,9 @@
   },
   {
     "id": "skeletal-0077",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept foramen? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept foramen is correct?",
     "explanation": "Foramen: an opening through a bone. It can provide passage for vessels or nerves",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1635,13 +1585,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Foramen: an opening through a bone. It can provide passage for vessels or nerves"
     },
     "options": [
-      "An opening through a bone",
       "It can provide passage for vessels or nerves",
       "It is the same as every rounded joint projection"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1688,9 +1636,9 @@
   },
   {
     "id": "skeletal-0080",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept bony groove? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept bony groove is correct?",
     "explanation": "Bony groove: a channel-like depression on a bone surface. It may guide a vessel, nerve, or tendon",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1702,12 +1650,10 @@
     },
     "options": [
       "A channel-like depression on a bone surface",
-      "It may guide a vessel, nerve, or tendon",
       "It must be a completely enclosed bone cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1755,9 +1701,9 @@
   },
   {
     "id": "skeletal-0083",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept tuberosity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept tuberosity is correct?",
     "explanation": "Tuberosity: a relatively prominent rough bony attachment area. It is one kind of projection",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1768,13 +1714,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Tuberosity: a relatively prominent rough bony attachment area. It is one kind of projection"
     },
     "options": [
-      "A relatively prominent rough bony attachment area",
       "It is one kind of projection",
       "It is the nutrient fluid inside a lacuna"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1821,9 +1765,9 @@
   },
   {
     "id": "skeletal-0086",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept condyle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept condyle is correct?",
     "explanation": "Condyle: a rounded articular bony prominence. It participates in a joint surface",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1835,12 +1779,10 @@
     },
     "options": [
       "A rounded articular bony prominence",
-      "It participates in a joint surface",
       "It is a microscopic osteocyte channel"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1887,9 +1829,9 @@
   },
   {
     "id": "skeletal-0089",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept bony process? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept bony process is correct?",
     "explanation": "Bony process: a general term for a projection from a bone. Specific processes can have different shapes and functions",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1900,13 +1842,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Bony process: a general term for a projection from a bone. Specific processes can have different shapes and functions"
     },
     "options": [
-      "A general term for a projection from a bone",
       "Specific processes can have different shapes and functions",
       "Every process is a liquid marrow cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1952,9 +1892,9 @@
   },
   {
     "id": "skeletal-0092",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept organic bone matrix? Select all that apply.",
+    "question": "Which statement about the skeletal concept organic bone matrix is correct?",
     "explanation": "Organic bone matrix: the protein-rich component of extracellular bone matrix. Collagen is a major constituent",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -1965,12 +1905,10 @@
     },
     "options": [
       "The protein-rich component of extracellular bone matrix",
-      "Collagen is a major constituent",
       "It is made only of pure calcium phosphate crystals"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2015,9 +1953,9 @@
   },
   {
     "id": "skeletal-0095",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept osteoid? Select all that apply.",
+    "question": "Which statement about the skeletal concept osteoid is correct?",
     "explanation": "Osteoid: newly produced unmineralized organic bone matrix. Osteoblasts secrete it before effective mineralization",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2027,13 +1965,11 @@
       "kind": "slide"
     },
     "options": [
-      "Newly produced unmineralized organic bone matrix",
       "Osteoblasts secrete it before effective mineralization",
       "It is the same as a completely mineralized mature osteon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2078,9 +2014,9 @@
   },
   {
     "id": "skeletal-0098",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept bone collagen? Select all that apply.",
+    "question": "Which statement about the skeletal concept bone collagen is correct?",
     "explanation": "Bone collagen: a major organic contributor to bone tensile properties. It complements the mechanical role of mineral",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2091,12 +2027,10 @@
     },
     "options": [
       "A major organic contributor to bone tensile properties",
-      "It complements the mechanical role of mineral",
       "It is the same as the inorganic calcium-phosphate crystal"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2142,9 +2076,9 @@
   },
   {
     "id": "skeletal-0101",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept hydroxyapatite? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept hydroxyapatite is correct?",
     "explanation": "Hydroxyapatite: the calcium-phosphate-based mineral important in bone. Its crystals contribute hardness and compressive properties",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2155,13 +2089,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydroxyapatite: the calcium-phosphate-based mineral important in bone. Its crystals contribute hardness and compressive properties"
     },
     "options": [
-      "The calcium-phosphate-based mineral important in bone",
       "Its crystals contribute hardness and compressive properties",
       "It is a polymer made only of amino acids"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2207,9 +2139,9 @@
   },
   {
     "id": "skeletal-0104",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept bone mineralization? Select all that apply.",
+    "question": "Which statement about the skeletal concept bone mineralization is correct?",
     "explanation": "Bone mineralization: deposition of mineral into an appropriate organic matrix. It differs from matrix secretion alone",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2220,12 +2152,10 @@
     },
     "options": [
       "Deposition of mineral into an appropriate organic matrix",
-      "It differs from matrix secretion alone",
       "It is identical to osteoclast removal of old matrix"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2271,9 +2201,9 @@
   },
   {
     "id": "skeletal-0107",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept osteogenic precursor? Select all that apply.",
+    "question": "Which statement about the skeletal concept osteogenic precursor is correct?",
     "explanation": "Osteogenic precursor: a progenitor population giving rise to bone-forming cells. It contributes to growth and repair",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2283,13 +2213,11 @@
       "kind": "slide"
     },
     "options": [
-      "A progenitor population giving rise to bone-forming cells",
       "It contributes to growth and repair",
       "It is the same lineage as every mature osteoclast"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2335,9 +2263,9 @@
   },
   {
     "id": "skeletal-0110",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept osteoblast? Select all that apply.",
+    "question": "Which statement about the skeletal concept osteoblast is correct?",
     "explanation": "Osteoblast: a cell specialized for formation of bone matrix. Some become embedded as osteocytes",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2348,12 +2276,10 @@
     },
     "options": [
       "A cell specialized for formation of bone matrix",
-      "Some become embedded as osteocytes",
       "It is the primary multinucleated bone-resorbing cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2398,9 +2324,9 @@
   },
   {
     "id": "skeletal-0113",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept osteocyte? Select all that apply.",
+    "question": "Which statement about the skeletal concept osteocyte is correct?",
     "explanation": "Osteocyte: a mature bone cell embedded in matrix. Its processes participate in communication through canalicular spaces",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2410,13 +2336,11 @@
       "kind": "slide"
     },
     "options": [
-      "A mature bone cell embedded in matrix",
       "Its processes participate in communication through canalicular spaces",
       "It floats freely as the main cell in blood plasma"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2462,9 +2386,9 @@
   },
   {
     "id": "skeletal-0116",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept osteoclast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept osteoclast is correct?",
     "explanation": "Osteoclast: a bone-resorbing cell of hematopoietic lineage. It differs developmentally from the osteoblast lineage",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2476,12 +2400,10 @@
     },
     "options": [
       "A bone-resorbing cell of hematopoietic lineage",
-      "It differs developmentally from the osteoblast lineage",
       "It is simply an old osteoblast that became a resorbing cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2527,9 +2449,9 @@
   },
   {
     "id": "skeletal-0119",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept bone lacuna? Select all that apply.",
+    "question": "Which statement about the skeletal concept bone lacuna is correct?",
     "explanation": "Bone lacuna: a small matrix space occupied by an osteocyte. It is not the same as a large marrow space",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2539,13 +2461,11 @@
       "kind": "slide"
     },
     "options": [
-      "A small matrix space occupied by an osteocyte",
       "It is not the same as a large marrow space",
       "It is a whole blood vessel with its own heart chamber"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2590,9 +2510,9 @@
   },
   {
     "id": "skeletal-0122",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept canaliculus? Select all that apply.",
+    "question": "Which statement about the skeletal concept canaliculus is correct?",
     "explanation": "Canaliculus: a tiny channel in bone matrix associated with osteocyte processes. It supports exchange and communication between lacunae",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2603,12 +2523,10 @@
     },
     "options": [
       "A tiny channel in bone matrix associated with osteocyte processes",
-      "It supports exchange and communication between lacunae",
       "It is the whole shaft of a long bone"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2653,9 +2571,9 @@
   },
   {
     "id": "skeletal-0125",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept compact bone? Select all that apply.",
+    "question": "Which statement about the skeletal concept compact bone is correct?",
     "explanation": "Compact bone: dense cortical bone with organized lamellar structure. Osteons are characteristic structural units in many regions",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2665,13 +2583,11 @@
       "kind": "slide"
     },
     "options": [
-      "Dense cortical bone with organized lamellar structure",
       "Osteons are characteristic structural units in many regions",
       "It is defined only as a loose open marrow mesh"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2716,9 +2632,9 @@
   },
   {
     "id": "skeletal-0128",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept spongy bone? Select all that apply.",
+    "question": "Which statement about the skeletal concept spongy bone is correct?",
     "explanation": "Spongy bone: bone organized as a network of trabeculae. It contains osteocytes and lamellar matrix despite its open architecture",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2729,12 +2645,10 @@
     },
     "options": [
       "Bone organized as a network of trabeculae",
-      "It contains osteocytes and lamellar matrix despite its open architecture",
       "It is soft unmineralized fat rather than bone tissue"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2780,9 +2694,9 @@
   },
   {
     "id": "skeletal-0131",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept osteon? Select all that apply.",
+    "question": "Which statement about the skeletal concept osteon is correct?",
     "explanation": "Osteon: a cylindrical lamellar structural unit of many compact-bone regions. Concentric lamellae surround a central canal",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2792,13 +2706,11 @@
       "kind": "slide"
     },
     "options": [
-      "A cylindrical lamellar structural unit of many compact-bone regions",
       "Concentric lamellae surround a central canal",
       "It is the fat cell filling a marrow cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2843,9 +2755,9 @@
   },
   {
     "id": "skeletal-0134",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept bone lamella? Select all that apply.",
+    "question": "Which statement about the skeletal concept bone lamella is correct?",
     "explanation": "Bone lamella: a layer of bone matrix. Lamellae can occur in several arrangements",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2856,12 +2768,10 @@
     },
     "options": [
       "A layer of bone matrix",
-      "Lamellae can occur in several arrangements",
       "It is a complete individual blood cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2906,9 +2816,9 @@
   },
   {
     "id": "skeletal-0137",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept central canal? Select all that apply.",
+    "question": "Which statement about the skeletal concept central canal is correct?",
     "explanation": "Central canal: the canal running along the central axis of an osteon. It carries vessels and nerves",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2918,13 +2828,11 @@
       "kind": "slide"
     },
     "options": [
-      "The canal running along the central axis of an osteon",
       "It carries vessels and nerves",
       "It is the tiny cytoplasmic projection of one osteocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2970,9 +2878,9 @@
   },
   {
     "id": "skeletal-0140",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept perforating canal? Select all that apply.",
+    "question": "Which statement about the skeletal concept perforating canal is correct?",
     "explanation": "Perforating canal: a canal connecting vascular pathways across compact bone. It is often called a Volkmann canal",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -2983,12 +2891,10 @@
     },
     "options": [
       "A canal connecting vascular pathways across compact bone",
-      "It is often called a Volkmann canal",
       "It is identical to an entire epiphyseal plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3036,9 +2942,9 @@
   },
   {
     "id": "skeletal-0143",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept trabecula? Select all that apply.",
+    "question": "Which statement about the skeletal concept trabecula is correct?",
     "explanation": "Trabecula: a structural plate or strut of spongy bone. Trabecular orientation relates to mechanical loading",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3048,13 +2954,11 @@
       "kind": "slide"
     },
     "options": [
-      "A structural plate or strut of spongy bone",
       "Trabecular orientation relates to mechanical loading",
       "It is the same as a soft adipocyte droplet"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3100,9 +3004,9 @@
   },
   {
     "id": "skeletal-0146",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept circumferential lamellae? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept circumferential lamellae is correct?",
     "explanation": "Circumferential lamellae: bone-matrix layers extending around a broad circumference of the cortex. They differ from concentric layers of one osteon",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3114,12 +3018,10 @@
     },
     "options": [
       "Bone-matrix layers extending around a broad circumference of the cortex",
-      "They differ from concentric layers of one osteon",
       "They must exist only as a cartilage growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3166,9 +3068,9 @@
   },
   {
     "id": "skeletal-0149",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept interstitial lamellae? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept interstitial lamellae is correct?",
     "explanation": "Interstitial lamellae: lamellar remnants between complete osteons. They can reflect prior remodeling",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3179,13 +3081,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Interstitial lamellae: lamellar remnants between complete osteons. They can reflect prior remodeling"
     },
     "options": [
-      "Lamellar remnants between complete osteons",
       "They can reflect prior remodeling",
       "They are the same as the medullary cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3231,9 +3131,9 @@
   },
   {
     "id": "skeletal-0152",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept intramembranous ossification? Select all that apply.",
+    "question": "Which statement about the skeletal concept intramembranous ossification is correct?",
     "explanation": "Intramembranous ossification: bone formation within mesenchymal connective tissue without a cartilage model as the main template. It contributes to many cranial-vault bones",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3244,12 +3144,10 @@
     },
     "options": [
       "Bone formation within mesenchymal connective tissue without a cartilage model as the main template",
-      "It contributes to many cranial-vault bones",
       "It requires every bone to pass through a hyaline-cartilage template"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3294,9 +3192,9 @@
   },
   {
     "id": "skeletal-0155",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept endochondral ossification? Select all that apply.",
+    "question": "Which statement about the skeletal concept endochondral ossification is correct?",
     "explanation": "Endochondral ossification: bone formation replacing a cartilage model. It contributes to most long bones",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3306,13 +3204,11 @@
       "kind": "slide"
     },
     "options": [
-      "Bone formation replacing a cartilage model",
       "It contributes to most long bones",
       "It means cartilage matrix is simply renamed bone with no new matrix formation"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3357,9 +3253,9 @@
   },
   {
     "id": "skeletal-0158",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept ossification center? Select all that apply.",
+    "question": "Which statement about the skeletal concept ossification center is correct?",
     "explanation": "Ossification center: a region where bone formation begins. Primary and secondary centers have different developmental locations",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3370,12 +3266,10 @@
     },
     "options": [
       "A region where bone formation begins",
-      "Primary and secondary centers have different developmental locations",
       "It is necessarily a tumor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3421,9 +3315,9 @@
   },
   {
     "id": "skeletal-0161",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept primary ossification center? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept primary ossification center is correct?",
     "explanation": "Primary ossification center: the initial major ossification region in a typical developing long-bone shaft. It is associated with the diaphyseal region",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3434,13 +3328,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Primary ossification center: the initial major ossification region in a typical developing long-bone shaft. It is associated with the diaphyseal region"
     },
     "options": [
-      "The initial major ossification region in a typical developing long-bone shaft",
       "It is associated with the diaphyseal region",
       "It is defined as the adult articular cartilage alone"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3487,9 +3379,9 @@
   },
   {
     "id": "skeletal-0164",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept secondary ossification center? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept secondary ossification center is correct?",
     "explanation": "Secondary ossification center: an ossification region developing in a typical long-bone epiphysis. Cartilage can remain at articular and growth interfaces during development",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3501,12 +3393,10 @@
     },
     "options": [
       "An ossification region developing in a typical long-bone epiphysis",
-      "Cartilage can remain at articular and growth interfaces during development",
       "It requires that every articular cartilage surface disappear"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3552,9 +3442,9 @@
   },
   {
     "id": "skeletal-0167",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept longitudinal bone growth? Select all that apply.",
+    "question": "Which statement about the skeletal concept longitudinal bone growth is correct?",
     "explanation": "Longitudinal bone growth: increase in long-bone length through growth-plate activity. Cartilage production and replacement occur at the growth interface",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3564,13 +3454,11 @@
       "kind": "slide"
     },
     "options": [
-      "Increase in long-bone length through growth-plate activity",
       "Cartilage production and replacement occur at the growth interface",
       "It continues indefinitely after complete growth-plate closure"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3615,9 +3503,9 @@
   },
   {
     "id": "skeletal-0170",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept appositional bone growth? Select all that apply.",
+    "question": "Which statement about the skeletal concept appositional bone growth is correct?",
     "explanation": "Appositional bone growth: increase in bone width through deposition at surfaces. Internal resorption can enlarge the marrow space at the same time",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3628,12 +3516,10 @@
     },
     "options": [
       "Increase in bone width through deposition at surfaces",
-      "Internal resorption can enlarge the marrow space at the same time",
       "It is defined only by stretching existing mineral crystals"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3678,9 +3564,9 @@
   },
   {
     "id": "skeletal-0173",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept bone modeling? Select all that apply.",
+    "question": "Which statement about the skeletal concept bone modeling is correct?",
     "explanation": "Bone modeling: formation and resorption shaping a bone on different surfaces. It is important during growth",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3690,13 +3576,11 @@
       "kind": "slide"
     },
     "options": [
-      "Formation and resorption shaping a bone on different surfaces",
       "It is important during growth",
       "It is identical to DNA replication in every cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3742,9 +3626,9 @@
   },
   {
     "id": "skeletal-0176",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept bone remodeling? Select all that apply.",
+    "question": "Which statement about the skeletal concept bone remodeling is correct?",
     "explanation": "Bone remodeling: coupled removal and replacement of bone at a tissue site. It continues in adult life",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3755,12 +3639,10 @@
     },
     "options": [
       "Coupled removal and replacement of bone at a tissue site",
-      "It continues in adult life",
       "It is absent from every adult skeleton"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3806,9 +3688,9 @@
   },
   {
     "id": "skeletal-0179",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept bone resorption? Select all that apply.",
+    "question": "Which statement about the skeletal concept bone resorption is correct?",
     "explanation": "Bone resorption: removal of mineralized bone matrix. Osteoclasts are major effector cells",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3818,13 +3700,11 @@
       "kind": "slide"
     },
     "options": [
-      "Removal of mineralized bone matrix",
       "Osteoclasts are major effector cells",
       "It is defined as osteoblast osteoid secretion"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3869,9 +3749,9 @@
   },
   {
     "id": "skeletal-0182",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept bone formation? Select all that apply.",
+    "question": "Which statement about the skeletal concept bone formation is correct?",
     "explanation": "Bone formation: production of new bone matrix with subsequent mineralization. Osteoblast activity is central to it",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3882,12 +3762,10 @@
     },
     "options": [
       "Production of new bone matrix with subsequent mineralization",
-      "Osteoblast activity is central to it",
       "It is performed only by mature erythrocytes"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3932,9 +3810,9 @@
   },
   {
     "id": "skeletal-0185",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept mechanical adaptation of bone? Select all that apply.",
+    "question": "Which statement about the skeletal concept mechanical adaptation of bone is correct?",
     "explanation": "Mechanical adaptation of bone: adjustment of bone structure in relation to loading. Both trabecular and cortical organization can reflect mechanical use",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -3944,13 +3822,11 @@
       "kind": "slide"
     },
     "options": [
-      "Adjustment of bone structure in relation to loading",
       "Both trabecular and cortical organization can reflect mechanical use",
       "It guarantees that unlimited loading can never injure bone"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3996,9 +3872,9 @@
   },
   {
     "id": "skeletal-0188",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept fracture? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept fracture is correct?",
     "explanation": "Fracture: a break or disruption in bone continuity. Its healing depends on biological and mechanical conditions",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4010,12 +3886,10 @@
     },
     "options": [
       "A break or disruption in bone continuity",
-      "Its healing depends on biological and mechanical conditions",
       "It always means only low blood calcium"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4062,9 +3936,9 @@
   },
   {
     "id": "skeletal-0191",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept fracture hematoma? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept fracture hematoma is correct?",
     "explanation": "Fracture hematoma: an early blood collection at a fracture site. It participates in the early injury and inflammatory setting",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4075,13 +3949,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Fracture hematoma: an early blood collection at a fracture site. It participates in the early injury and inflammatory setting"
     },
     "options": [
-      "An early blood collection at a fracture site",
       "It participates in the early injury and inflammatory setting",
       "It is the fully remodeled lamellar end product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4129,9 +4001,9 @@
   },
   {
     "id": "skeletal-0194",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept soft fracture callus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept soft fracture callus is correct?",
     "explanation": "Soft fracture callus: early fibrocartilaginous bridging tissue in secondary healing. It precedes substantial bony-callus replacement in the standard model",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4143,12 +4015,10 @@
     },
     "options": [
       "Early fibrocartilaginous bridging tissue in secondary healing",
-      "It precedes substantial bony-callus replacement in the standard model",
       "It is identical to fully remodeled cortical bone"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4195,9 +4065,9 @@
   },
   {
     "id": "skeletal-0197",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept hard fracture callus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept hard fracture callus is correct?",
     "explanation": "Hard fracture callus: the bony repair bridge in secondary fracture healing. It is remodeled toward a more mature structure",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4208,13 +4078,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hard fracture callus: the bony repair bridge in secondary fracture healing. It is remodeled toward a more mature structure"
     },
     "options": [
-      "The bony repair bridge in secondary fracture healing",
       "It is remodeled toward a more mature structure",
       "It is always the first blood clot formed"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4262,9 +4130,9 @@
   },
   {
     "id": "skeletal-0200",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept fracture remodeling? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept fracture remodeling is correct?",
     "explanation": "Fracture remodeling: replacement and reshaping of repair tissue toward mature bone organization. It follows formation of a repair bridge in the standard secondary-healing model",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4276,12 +4144,10 @@
     },
     "options": [
       "Replacement and reshaping of repair tissue toward mature bone organization",
-      "It follows formation of a repair bridge in the standard secondary-healing model",
       "It means the fracture is newly created again by definition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4329,9 +4195,9 @@
   },
   {
     "id": "skeletal-0203",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept fracture union? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept fracture union is correct?",
     "explanation": "Fracture union: biological bridging and healing of a fracture. Alignment and functional recovery still require assessment",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4342,13 +4208,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Fracture union: biological bridging and healing of a fracture. Alignment and functional recovery still require assessment"
     },
     "options": [
-      "Biological bridging and healing of a fracture",
       "Alignment and functional recovery still require assessment",
       "It means every fracture has healed in a perfect position"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4395,9 +4259,9 @@
   },
   {
     "id": "skeletal-0206",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept malunion? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept malunion is correct?",
     "explanation": "Malunion: fracture healing in an unsatisfactory alignment. It differs from failure to bridge at all",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4409,12 +4273,10 @@
     },
     "options": [
       "Fracture healing in an unsatisfactory alignment",
-      "It differs from failure to bridge at all",
       "It is defined as complete absence of any healing"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4461,9 +4323,9 @@
   },
   {
     "id": "skeletal-0209",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept nonunion? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept nonunion is correct?",
     "explanation": "Nonunion: failure of a fracture to achieve appropriate biological union. It is distinct from a healed but malaligned fracture",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4474,13 +4336,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Nonunion: failure of a fracture to achieve appropriate biological union. It is distinct from a healed but malaligned fracture"
     },
     "options": [
-      "Failure of a fracture to achieve appropriate biological union",
       "It is distinct from a healed but malaligned fracture",
       "It means every healing fracture is complete"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4528,9 +4388,9 @@
   },
   {
     "id": "skeletal-0212",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept osteoporosis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept osteoporosis is correct?",
     "explanation": "Osteoporosis: reduced bone mass and impaired skeletal strength with generally normal mineralization of remaining matrix. It can occur with a normal serum calcium concentration",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4542,12 +4402,10 @@
     },
     "options": [
       "Reduced bone mass and impaired skeletal strength with generally normal mineralization of remaining matrix",
-      "It can occur with a normal serum calcium concentration",
       "It is identical to a low blood-calcium measurement"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4594,9 +4452,9 @@
   },
   {
     "id": "skeletal-0215",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept osteomalacia? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept osteomalacia is correct?",
     "explanation": "Osteomalacia: defective mineralization of adult bone matrix. It differs from uncomplicated osteoporosis",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4607,13 +4465,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteomalacia: defective mineralization of adult bone matrix. It differs from uncomplicated osteoporosis"
     },
     "options": [
-      "Defective mineralization of adult bone matrix",
       "It differs from uncomplicated osteoporosis",
       "It is defined only by reduced bone quantity with normal mineralization"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4660,9 +4516,9 @@
   },
   {
     "id": "skeletal-0218",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept rickets? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept rickets is correct?",
     "explanation": "Rickets: impaired mineralization involving growing bones and growth plates. Vitamin D deficiency is one possible contributor",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4674,12 +4530,10 @@
     },
     "options": [
       "Impaired mineralization involving growing bones and growth plates",
-      "Vitamin D deficiency is one possible contributor",
       "It is the name used solely for adult bone remodeling"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4726,9 +4580,9 @@
   },
   {
     "id": "skeletal-0221",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept hypocalcemia? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept hypocalcemia is correct?",
     "explanation": "Hypocalcemia: a lower-than-normal calcium concentration in blood. It is not synonymous with osteoporosis",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4739,13 +4593,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hypocalcemia: a lower-than-normal calcium concentration in blood. It is not synonymous with osteoporosis"
     },
     "options": [
-      "A lower-than-normal calcium concentration in blood",
       "It is not synonymous with osteoporosis",
       "It proves that every bone must have low mass"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4793,9 +4645,9 @@
   },
   {
     "id": "skeletal-0224",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept hypercalcemia? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept hypercalcemia is correct?",
     "explanation": "Hypercalcemia: a higher-than-normal calcium concentration in blood. Autonomous PTH excess can be one cause",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4807,12 +4659,10 @@
     },
     "options": [
       "A higher-than-normal calcium concentration in blood",
-      "Autonomous PTH excess can be one cause",
       "It means that every affected bone is necessarily unusually dense"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4860,9 +4710,9 @@
   },
   {
     "id": "skeletal-0227",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept parathyroid hormone? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept parathyroid hormone is correct?",
     "explanation": "Parathyroid hormone: a hormone participating in calcium regulation and bone turnover. Its actions involve bone, kidney, and indirectly intestinal absorption",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4873,13 +4723,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Parathyroid hormone: a hormone participating in calcium regulation and bone turnover. Its actions involve bone, kidney, and indirectly intestinal absorption"
     },
     "options": [
-      "A hormone participating in calcium regulation and bone turnover",
       "Its actions involve bone, kidney, and indirectly intestinal absorption",
       "It is produced by a marrow adipocyte as its defining source"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4926,9 +4774,9 @@
   },
   {
     "id": "skeletal-0230",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept calcitonin? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept calcitonin is correct?",
     "explanation": "Calcitonin: a thyroid C-cell hormone that can inhibit osteoclast activity. It is not the sole dominant regulator of adult calcium balance",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -4940,12 +4788,10 @@
     },
     "options": [
       "A thyroid C-cell hormone that can inhibit osteoclast activity",
-      "It is not the sole dominant regulator of adult calcium balance",
       "It is the same molecule as PTH"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4991,9 +4837,9 @@
   },
   {
     "id": "skeletal-0233",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept growth hormone? Select all that apply.",
+    "question": "Which statement about the skeletal concept growth hormone is correct?",
     "explanation": "Growth hormone: a pituitary hormone supporting growth through direct and mediated effects. Open growth plates are required for normal longitudinal growth responses",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -5003,13 +4849,11 @@
       "kind": "slide"
     },
     "options": [
-      "A pituitary hormone supporting growth through direct and mediated effects",
       "Open growth plates are required for normal longitudinal growth responses",
       "It makes a fully fused growth plate grow indefinitely"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5055,9 +4899,9 @@
   },
   {
     "id": "skeletal-0236",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the skeletal concept sex-steroid influence on bone? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skeletal concept sex-steroid influence on bone is correct?",
     "explanation": "Sex-steroid influence on bone: effects of estrogen and androgens on growth, turnover, and skeletal maintenance. Estrogen contributes to growth-plate closure in both sexes",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -5069,12 +4913,10 @@
     },
     "options": [
       "Effects of estrogen and androgens on growth, turnover, and skeletal maintenance",
-      "Estrogen contributes to growth-plate closure in both sexes",
       "Estrogen affects bone only in women"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5121,9 +4963,9 @@
   },
   {
     "id": "skeletal-0239",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the skeletal concept vitamin d support of calcium absorption? Select all that apply.",
+    "question": "Which statement about the skeletal concept vitamin d support of calcium absorption is correct?",
     "explanation": "Vitamin D support of calcium absorption: promotion of intestinal calcium absorption by the vitamin D endocrine system. Deficiency can impair effective mineralization",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -5133,13 +4975,11 @@
       "kind": "slide"
     },
     "options": [
-      "Promotion of intestinal calcium absorption by the vitamin D endocrine system",
       "Deficiency can impair effective mineralization",
       "It is correctly defined only as reabsorption of old bone in the intestine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -8473,9 +8313,9 @@
   },
   {
     "id": "skeletal-0391",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Osteoclast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Osteoclast?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Osteoclast is associated with bone resorption.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8487,21 +8327,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoblast is associated with formation of organic bone matrix; Osteoclast is associated with bone resorption."
     },
     "options": [
-      "Osteoblast—formation of organic bone matrix",
       "Osteoclast—bone resorption",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Osteoclast—being an old osteoblast by definition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0392",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Osteocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Osteocyte?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Osteocyte is associated with maintenance and signaling from within established matrix.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8514,20 +8352,18 @@
     },
     "options": [
       "Osteoblast—formation of organic bone matrix",
-      "Osteocyte—maintenance and signaling from within established matrix",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Osteocyte—being the primary free-floating plasma cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0393",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Osteogenic precursor? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Osteogenic precursor?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Osteogenic precursor is associated with supply of osteoblast-lineage cells.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8539,21 +8375,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoblast is associated with formation of organic bone matrix; Osteogenic precursor is associated with supply of osteoblast-lineage cells."
     },
     "options": [
-      "Osteoblast—formation of organic bone matrix",
       "Osteogenic precursor—supply of osteoblast-lineage cells",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Osteogenic precursor—being a mature red blood cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0394",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Bone collagen? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Bone collagen?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Bone collagen is associated with organic tensile support.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8566,20 +8400,18 @@
     },
     "options": [
       "Osteoblast—formation of organic bone matrix",
-      "Bone collagen—organic tensile support",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Bone collagen—being the inorganic calcium-phosphate crystal"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0395",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Hydroxyapatite? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Hydroxyapatite?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Hydroxyapatite is associated with inorganic mineral contribution.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8591,21 +8423,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoblast is associated with formation of organic bone matrix; Hydroxyapatite is associated with inorganic mineral contribution."
     },
     "options": [
-      "Osteoblast—formation of organic bone matrix",
       "Hydroxyapatite—inorganic mineral contribution",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Hydroxyapatite—being an amino-acid polymer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0396",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Periosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Periosteum?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Periosteum is associated with external nonarticular bone covering.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8618,20 +8448,18 @@
     },
     "options": [
       "Osteoblast—formation of organic bone matrix",
-      "Periosteum—external nonarticular bone covering",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Periosteum—the membrane covering every exposed articular cartilage surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0397",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Endosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Endosteum?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Endosteum is associated with internal bone-surface lining.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8643,21 +8471,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoblast is associated with formation of organic bone matrix; Endosteum is associated with internal bone-surface lining."
     },
     "options": [
-      "Osteoblast—formation of organic bone matrix",
       "Endosteum—internal bone-surface lining",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Endosteum—the exposed keratin layer of skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0398",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Diaphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Diaphysis?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Diaphysis is associated with the shaft of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8670,20 +8496,18 @@
     },
     "options": [
       "Osteoblast—formation of organic bone matrix",
-      "Diaphysis—the shaft of a typical long bone",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Diaphysis—the cartilage cap on a joint surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0399",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Epiphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Epiphysis?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Epiphysis is associated with an end region of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8695,21 +8519,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoblast is associated with formation of organic bone matrix; Epiphysis is associated with an end region of a typical long bone."
     },
     "options": [
-      "Osteoblast—formation of organic bone matrix",
       "Epiphysis—an end region of a typical long bone",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Epiphysis—the central axial canal of an osteon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0400",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Growth plate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Growth plate?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Growth plate is associated with cartilage supporting length growth.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8722,20 +8544,18 @@
     },
     "options": [
       "Osteoblast—formation of organic bone matrix",
-      "Growth plate—cartilage supporting length growth",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Growth plate—a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0401",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Osteon?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8747,21 +8567,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoblast is associated with formation of organic bone matrix; Osteon is associated with concentric lamellar compact-bone organization."
     },
     "options": [
-      "Osteoblast—formation of organic bone matrix",
       "Osteon—concentric lamellar compact-bone organization",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0402",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Trabecula?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8774,20 +8592,18 @@
     },
     "options": [
       "Osteoblast—formation of organic bone matrix",
-      "Trabecula—a strut or plate of spongy bone",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0403",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Central canal?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8799,21 +8615,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoblast is associated with formation of organic bone matrix; Central canal is associated with vessel and nerve passage within an osteon."
     },
     "options": [
-      "Osteoblast—formation of organic bone matrix",
       "Central canal—vessel and nerve passage within an osteon",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0404",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoblast and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoblast and Canaliculus?",
     "explanation": "Osteoblast is associated with formation of organic bone matrix; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8826,20 +8640,18 @@
     },
     "options": [
       "Osteoblast—formation of organic bone matrix",
-      "Canaliculus—an exchange-related channel around osteocyte processes",
       "Osteoblast—being the principal multinucleated resorbing cell",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0405",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Osteocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Osteocyte?",
     "explanation": "Osteoclast is associated with bone resorption; Osteocyte is associated with maintenance and signaling from within established matrix.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8851,21 +8663,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoclast is associated with bone resorption; Osteocyte is associated with maintenance and signaling from within established matrix."
     },
     "options": [
-      "Osteoclast—bone resorption",
       "Osteocyte—maintenance and signaling from within established matrix",
       "Osteoclast—being an old osteoblast by definition",
       "Osteocyte—being the primary free-floating plasma cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0406",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Osteogenic precursor? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Osteogenic precursor?",
     "explanation": "Osteoclast is associated with bone resorption; Osteogenic precursor is associated with supply of osteoblast-lineage cells.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8878,20 +8688,18 @@
     },
     "options": [
       "Osteoclast—bone resorption",
-      "Osteogenic precursor—supply of osteoblast-lineage cells",
       "Osteoclast—being an old osteoblast by definition",
       "Osteogenic precursor—being a mature red blood cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0407",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Bone collagen? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Bone collagen?",
     "explanation": "Osteoclast is associated with bone resorption; Bone collagen is associated with organic tensile support.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8903,21 +8711,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoclast is associated with bone resorption; Bone collagen is associated with organic tensile support."
     },
     "options": [
-      "Osteoclast—bone resorption",
       "Bone collagen—organic tensile support",
       "Osteoclast—being an old osteoblast by definition",
       "Bone collagen—being the inorganic calcium-phosphate crystal"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0408",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Hydroxyapatite? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Hydroxyapatite?",
     "explanation": "Osteoclast is associated with bone resorption; Hydroxyapatite is associated with inorganic mineral contribution.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8930,20 +8736,18 @@
     },
     "options": [
       "Osteoclast—bone resorption",
-      "Hydroxyapatite—inorganic mineral contribution",
       "Osteoclast—being an old osteoblast by definition",
       "Hydroxyapatite—being an amino-acid polymer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0409",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Periosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Periosteum?",
     "explanation": "Osteoclast is associated with bone resorption; Periosteum is associated with external nonarticular bone covering.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8955,21 +8759,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoclast is associated with bone resorption; Periosteum is associated with external nonarticular bone covering."
     },
     "options": [
-      "Osteoclast—bone resorption",
       "Periosteum—external nonarticular bone covering",
       "Osteoclast—being an old osteoblast by definition",
       "Periosteum—the membrane covering every exposed articular cartilage surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0410",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Endosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Endosteum?",
     "explanation": "Osteoclast is associated with bone resorption; Endosteum is associated with internal bone-surface lining.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -8982,20 +8784,18 @@
     },
     "options": [
       "Osteoclast—bone resorption",
-      "Endosteum—internal bone-surface lining",
       "Osteoclast—being an old osteoblast by definition",
       "Endosteum—the exposed keratin layer of skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0411",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Diaphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Diaphysis?",
     "explanation": "Osteoclast is associated with bone resorption; Diaphysis is associated with the shaft of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9007,21 +8807,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoclast is associated with bone resorption; Diaphysis is associated with the shaft of a typical long bone."
     },
     "options": [
-      "Osteoclast—bone resorption",
       "Diaphysis—the shaft of a typical long bone",
       "Osteoclast—being an old osteoblast by definition",
       "Diaphysis—the cartilage cap on a joint surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0412",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Epiphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Epiphysis?",
     "explanation": "Osteoclast is associated with bone resorption; Epiphysis is associated with an end region of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9034,20 +8832,18 @@
     },
     "options": [
       "Osteoclast—bone resorption",
-      "Epiphysis—an end region of a typical long bone",
       "Osteoclast—being an old osteoblast by definition",
       "Epiphysis—the central axial canal of an osteon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0413",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Growth plate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Growth plate?",
     "explanation": "Osteoclast is associated with bone resorption; Growth plate is associated with cartilage supporting length growth.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9059,21 +8855,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoclast is associated with bone resorption; Growth plate is associated with cartilage supporting length growth."
     },
     "options": [
-      "Osteoclast—bone resorption",
       "Growth plate—cartilage supporting length growth",
       "Osteoclast—being an old osteoblast by definition",
       "Growth plate—a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0414",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Osteon?",
     "explanation": "Osteoclast is associated with bone resorption; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9086,20 +8880,18 @@
     },
     "options": [
       "Osteoclast—bone resorption",
-      "Osteon—concentric lamellar compact-bone organization",
       "Osteoclast—being an old osteoblast by definition",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0415",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Trabecula?",
     "explanation": "Osteoclast is associated with bone resorption; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9111,21 +8903,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoclast is associated with bone resorption; Trabecula is associated with a strut or plate of spongy bone."
     },
     "options": [
-      "Osteoclast—bone resorption",
       "Trabecula—a strut or plate of spongy bone",
       "Osteoclast—being an old osteoblast by definition",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0416",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Central canal?",
     "explanation": "Osteoclast is associated with bone resorption; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9138,20 +8928,18 @@
     },
     "options": [
       "Osteoclast—bone resorption",
-      "Central canal—vessel and nerve passage within an osteon",
       "Osteoclast—being an old osteoblast by definition",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0417",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteoclast and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteoclast and Canaliculus?",
     "explanation": "Osteoclast is associated with bone resorption; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9163,21 +8951,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteoclast is associated with bone resorption; Canaliculus is associated with an exchange-related channel around osteocyte processes."
     },
     "options": [
-      "Osteoclast—bone resorption",
       "Canaliculus—an exchange-related channel around osteocyte processes",
       "Osteoclast—being an old osteoblast by definition",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0418",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Osteogenic precursor? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Osteogenic precursor?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Osteogenic precursor is associated with supply of osteoblast-lineage cells.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9190,20 +8976,18 @@
     },
     "options": [
       "Osteocyte—maintenance and signaling from within established matrix",
-      "Osteogenic precursor—supply of osteoblast-lineage cells",
       "Osteocyte—being the primary free-floating plasma cell",
       "Osteogenic precursor—being a mature red blood cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0419",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Bone collagen? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Bone collagen?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Bone collagen is associated with organic tensile support.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9215,21 +8999,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteocyte is associated with maintenance and signaling from within established matrix; Bone collagen is associated with organic tensile support."
     },
     "options": [
-      "Osteocyte—maintenance and signaling from within established matrix",
       "Bone collagen—organic tensile support",
       "Osteocyte—being the primary free-floating plasma cell",
       "Bone collagen—being the inorganic calcium-phosphate crystal"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0420",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Hydroxyapatite? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Hydroxyapatite?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Hydroxyapatite is associated with inorganic mineral contribution.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9242,20 +9024,18 @@
     },
     "options": [
       "Osteocyte—maintenance and signaling from within established matrix",
-      "Hydroxyapatite—inorganic mineral contribution",
       "Osteocyte—being the primary free-floating plasma cell",
       "Hydroxyapatite—being an amino-acid polymer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0421",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Periosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Periosteum?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Periosteum is associated with external nonarticular bone covering.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9267,21 +9047,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteocyte is associated with maintenance and signaling from within established matrix; Periosteum is associated with external nonarticular bone covering."
     },
     "options": [
-      "Osteocyte—maintenance and signaling from within established matrix",
       "Periosteum—external nonarticular bone covering",
       "Osteocyte—being the primary free-floating plasma cell",
       "Periosteum—the membrane covering every exposed articular cartilage surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0422",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Endosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Endosteum?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Endosteum is associated with internal bone-surface lining.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9294,20 +9072,18 @@
     },
     "options": [
       "Osteocyte—maintenance and signaling from within established matrix",
-      "Endosteum—internal bone-surface lining",
       "Osteocyte—being the primary free-floating plasma cell",
       "Endosteum—the exposed keratin layer of skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0423",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Diaphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Diaphysis?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Diaphysis is associated with the shaft of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9319,21 +9095,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteocyte is associated with maintenance and signaling from within established matrix; Diaphysis is associated with the shaft of a typical long bone."
     },
     "options": [
-      "Osteocyte—maintenance and signaling from within established matrix",
       "Diaphysis—the shaft of a typical long bone",
       "Osteocyte—being the primary free-floating plasma cell",
       "Diaphysis—the cartilage cap on a joint surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0424",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Epiphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Epiphysis?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Epiphysis is associated with an end region of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9346,20 +9120,18 @@
     },
     "options": [
       "Osteocyte—maintenance and signaling from within established matrix",
-      "Epiphysis—an end region of a typical long bone",
       "Osteocyte—being the primary free-floating plasma cell",
       "Epiphysis—the central axial canal of an osteon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0425",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Growth plate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Growth plate?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Growth plate is associated with cartilage supporting length growth.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9371,21 +9143,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteocyte is associated with maintenance and signaling from within established matrix; Growth plate is associated with cartilage supporting length growth."
     },
     "options": [
-      "Osteocyte—maintenance and signaling from within established matrix",
       "Growth plate—cartilage supporting length growth",
       "Osteocyte—being the primary free-floating plasma cell",
       "Growth plate—a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0426",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Osteon?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9398,20 +9168,18 @@
     },
     "options": [
       "Osteocyte—maintenance and signaling from within established matrix",
-      "Osteon—concentric lamellar compact-bone organization",
       "Osteocyte—being the primary free-floating plasma cell",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0427",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Trabecula?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9423,21 +9191,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteocyte is associated with maintenance and signaling from within established matrix; Trabecula is associated with a strut or plate of spongy bone."
     },
     "options": [
-      "Osteocyte—maintenance and signaling from within established matrix",
       "Trabecula—a strut or plate of spongy bone",
       "Osteocyte—being the primary free-floating plasma cell",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0428",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Central canal?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9450,20 +9216,18 @@
     },
     "options": [
       "Osteocyte—maintenance and signaling from within established matrix",
-      "Central canal—vessel and nerve passage within an osteon",
       "Osteocyte—being the primary free-floating plasma cell",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0429",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteocyte and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteocyte and Canaliculus?",
     "explanation": "Osteocyte is associated with maintenance and signaling from within established matrix; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9475,21 +9239,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteocyte is associated with maintenance and signaling from within established matrix; Canaliculus is associated with an exchange-related channel around osteocyte processes."
     },
     "options": [
-      "Osteocyte—maintenance and signaling from within established matrix",
       "Canaliculus—an exchange-related channel around osteocyte processes",
       "Osteocyte—being the primary free-floating plasma cell",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0430",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Bone collagen? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Bone collagen?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Bone collagen is associated with organic tensile support.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9502,20 +9264,18 @@
     },
     "options": [
       "Osteogenic precursor—supply of osteoblast-lineage cells",
-      "Bone collagen—organic tensile support",
       "Osteogenic precursor—being a mature red blood cell",
       "Bone collagen—being the inorganic calcium-phosphate crystal"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0431",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Hydroxyapatite? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Hydroxyapatite?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Hydroxyapatite is associated with inorganic mineral contribution.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9527,21 +9287,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteogenic precursor is associated with supply of osteoblast-lineage cells; Hydroxyapatite is associated with inorganic mineral contribution."
     },
     "options": [
-      "Osteogenic precursor—supply of osteoblast-lineage cells",
       "Hydroxyapatite—inorganic mineral contribution",
       "Osteogenic precursor—being a mature red blood cell",
       "Hydroxyapatite—being an amino-acid polymer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0432",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Periosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Periosteum?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Periosteum is associated with external nonarticular bone covering.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9554,20 +9312,18 @@
     },
     "options": [
       "Osteogenic precursor—supply of osteoblast-lineage cells",
-      "Periosteum—external nonarticular bone covering",
       "Osteogenic precursor—being a mature red blood cell",
       "Periosteum—the membrane covering every exposed articular cartilage surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0433",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Endosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Endosteum?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Endosteum is associated with internal bone-surface lining.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9579,21 +9335,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteogenic precursor is associated with supply of osteoblast-lineage cells; Endosteum is associated with internal bone-surface lining."
     },
     "options": [
-      "Osteogenic precursor—supply of osteoblast-lineage cells",
       "Endosteum—internal bone-surface lining",
       "Osteogenic precursor—being a mature red blood cell",
       "Endosteum—the exposed keratin layer of skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0434",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Diaphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Diaphysis?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Diaphysis is associated with the shaft of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9606,20 +9360,18 @@
     },
     "options": [
       "Osteogenic precursor—supply of osteoblast-lineage cells",
-      "Diaphysis—the shaft of a typical long bone",
       "Osteogenic precursor—being a mature red blood cell",
       "Diaphysis—the cartilage cap on a joint surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0435",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Epiphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Epiphysis?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Epiphysis is associated with an end region of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9631,21 +9383,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteogenic precursor is associated with supply of osteoblast-lineage cells; Epiphysis is associated with an end region of a typical long bone."
     },
     "options": [
-      "Osteogenic precursor—supply of osteoblast-lineage cells",
       "Epiphysis—an end region of a typical long bone",
       "Osteogenic precursor—being a mature red blood cell",
       "Epiphysis—the central axial canal of an osteon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0436",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Growth plate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Growth plate?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Growth plate is associated with cartilage supporting length growth.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9658,20 +9408,18 @@
     },
     "options": [
       "Osteogenic precursor—supply of osteoblast-lineage cells",
-      "Growth plate—cartilage supporting length growth",
       "Osteogenic precursor—being a mature red blood cell",
       "Growth plate—a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0437",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Osteon?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9683,21 +9431,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteogenic precursor is associated with supply of osteoblast-lineage cells; Osteon is associated with concentric lamellar compact-bone organization."
     },
     "options": [
-      "Osteogenic precursor—supply of osteoblast-lineage cells",
       "Osteon—concentric lamellar compact-bone organization",
       "Osteogenic precursor—being a mature red blood cell",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0438",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Trabecula?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9710,20 +9456,18 @@
     },
     "options": [
       "Osteogenic precursor—supply of osteoblast-lineage cells",
-      "Trabecula—a strut or plate of spongy bone",
       "Osteogenic precursor—being a mature red blood cell",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0439",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Central canal?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9735,21 +9479,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteogenic precursor is associated with supply of osteoblast-lineage cells; Central canal is associated with vessel and nerve passage within an osteon."
     },
     "options": [
-      "Osteogenic precursor—supply of osteoblast-lineage cells",
       "Central canal—vessel and nerve passage within an osteon",
       "Osteogenic precursor—being a mature red blood cell",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0440",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteogenic precursor and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteogenic precursor and Canaliculus?",
     "explanation": "Osteogenic precursor is associated with supply of osteoblast-lineage cells; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9762,20 +9504,18 @@
     },
     "options": [
       "Osteogenic precursor—supply of osteoblast-lineage cells",
-      "Canaliculus—an exchange-related channel around osteocyte processes",
       "Osteogenic precursor—being a mature red blood cell",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0441",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Bone collagen and Hydroxyapatite? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bone collagen and Hydroxyapatite?",
     "explanation": "Bone collagen is associated with organic tensile support; Hydroxyapatite is associated with inorganic mineral contribution.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9787,21 +9527,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Bone collagen is associated with organic tensile support; Hydroxyapatite is associated with inorganic mineral contribution."
     },
     "options": [
-      "Bone collagen—organic tensile support",
       "Hydroxyapatite—inorganic mineral contribution",
       "Bone collagen—being the inorganic calcium-phosphate crystal",
       "Hydroxyapatite—being an amino-acid polymer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0442",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Bone collagen and Periosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bone collagen and Periosteum?",
     "explanation": "Bone collagen is associated with organic tensile support; Periosteum is associated with external nonarticular bone covering.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9814,20 +9552,18 @@
     },
     "options": [
       "Bone collagen—organic tensile support",
-      "Periosteum—external nonarticular bone covering",
       "Bone collagen—being the inorganic calcium-phosphate crystal",
       "Periosteum—the membrane covering every exposed articular cartilage surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0443",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Bone collagen and Endosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bone collagen and Endosteum?",
     "explanation": "Bone collagen is associated with organic tensile support; Endosteum is associated with internal bone-surface lining.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9839,21 +9575,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Bone collagen is associated with organic tensile support; Endosteum is associated with internal bone-surface lining."
     },
     "options": [
-      "Bone collagen—organic tensile support",
       "Endosteum—internal bone-surface lining",
       "Bone collagen—being the inorganic calcium-phosphate crystal",
       "Endosteum—the exposed keratin layer of skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0444",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Bone collagen and Diaphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bone collagen and Diaphysis?",
     "explanation": "Bone collagen is associated with organic tensile support; Diaphysis is associated with the shaft of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9866,20 +9600,18 @@
     },
     "options": [
       "Bone collagen—organic tensile support",
-      "Diaphysis—the shaft of a typical long bone",
       "Bone collagen—being the inorganic calcium-phosphate crystal",
       "Diaphysis—the cartilage cap on a joint surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0445",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Bone collagen and Epiphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bone collagen and Epiphysis?",
     "explanation": "Bone collagen is associated with organic tensile support; Epiphysis is associated with an end region of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9891,21 +9623,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Bone collagen is associated with organic tensile support; Epiphysis is associated with an end region of a typical long bone."
     },
     "options": [
-      "Bone collagen—organic tensile support",
       "Epiphysis—an end region of a typical long bone",
       "Bone collagen—being the inorganic calcium-phosphate crystal",
       "Epiphysis—the central axial canal of an osteon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0446",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Bone collagen and Growth plate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bone collagen and Growth plate?",
     "explanation": "Bone collagen is associated with organic tensile support; Growth plate is associated with cartilage supporting length growth.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9918,20 +9648,18 @@
     },
     "options": [
       "Bone collagen—organic tensile support",
-      "Growth plate—cartilage supporting length growth",
       "Bone collagen—being the inorganic calcium-phosphate crystal",
       "Growth plate—a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0447",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Bone collagen and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bone collagen and Osteon?",
     "explanation": "Bone collagen is associated with organic tensile support; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9943,21 +9671,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Bone collagen is associated with organic tensile support; Osteon is associated with concentric lamellar compact-bone organization."
     },
     "options": [
-      "Bone collagen—organic tensile support",
       "Osteon—concentric lamellar compact-bone organization",
       "Bone collagen—being the inorganic calcium-phosphate crystal",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0448",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Bone collagen and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bone collagen and Trabecula?",
     "explanation": "Bone collagen is associated with organic tensile support; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9970,20 +9696,18 @@
     },
     "options": [
       "Bone collagen—organic tensile support",
-      "Trabecula—a strut or plate of spongy bone",
       "Bone collagen—being the inorganic calcium-phosphate crystal",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0449",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Bone collagen and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bone collagen and Central canal?",
     "explanation": "Bone collagen is associated with organic tensile support; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -9995,21 +9719,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Bone collagen is associated with organic tensile support; Central canal is associated with vessel and nerve passage within an osteon."
     },
     "options": [
-      "Bone collagen—organic tensile support",
       "Central canal—vessel and nerve passage within an osteon",
       "Bone collagen—being the inorganic calcium-phosphate crystal",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0450",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Bone collagen and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Bone collagen and Canaliculus?",
     "explanation": "Bone collagen is associated with organic tensile support; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10022,20 +9744,18 @@
     },
     "options": [
       "Bone collagen—organic tensile support",
-      "Canaliculus—an exchange-related channel around osteocyte processes",
       "Bone collagen—being the inorganic calcium-phosphate crystal",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0451",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Hydroxyapatite and Periosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydroxyapatite and Periosteum?",
     "explanation": "Hydroxyapatite is associated with inorganic mineral contribution; Periosteum is associated with external nonarticular bone covering.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10047,21 +9767,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydroxyapatite is associated with inorganic mineral contribution; Periosteum is associated with external nonarticular bone covering."
     },
     "options": [
-      "Hydroxyapatite—inorganic mineral contribution",
       "Periosteum—external nonarticular bone covering",
       "Hydroxyapatite—being an amino-acid polymer",
       "Periosteum—the membrane covering every exposed articular cartilage surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0452",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Hydroxyapatite and Endosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydroxyapatite and Endosteum?",
     "explanation": "Hydroxyapatite is associated with inorganic mineral contribution; Endosteum is associated with internal bone-surface lining.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10074,20 +9792,18 @@
     },
     "options": [
       "Hydroxyapatite—inorganic mineral contribution",
-      "Endosteum—internal bone-surface lining",
       "Hydroxyapatite—being an amino-acid polymer",
       "Endosteum—the exposed keratin layer of skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0453",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Hydroxyapatite and Diaphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydroxyapatite and Diaphysis?",
     "explanation": "Hydroxyapatite is associated with inorganic mineral contribution; Diaphysis is associated with the shaft of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10099,21 +9815,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydroxyapatite is associated with inorganic mineral contribution; Diaphysis is associated with the shaft of a typical long bone."
     },
     "options": [
-      "Hydroxyapatite—inorganic mineral contribution",
       "Diaphysis—the shaft of a typical long bone",
       "Hydroxyapatite—being an amino-acid polymer",
       "Diaphysis—the cartilage cap on a joint surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0454",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Hydroxyapatite and Epiphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydroxyapatite and Epiphysis?",
     "explanation": "Hydroxyapatite is associated with inorganic mineral contribution; Epiphysis is associated with an end region of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10126,20 +9840,18 @@
     },
     "options": [
       "Hydroxyapatite—inorganic mineral contribution",
-      "Epiphysis—an end region of a typical long bone",
       "Hydroxyapatite—being an amino-acid polymer",
       "Epiphysis—the central axial canal of an osteon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0455",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Hydroxyapatite and Growth plate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydroxyapatite and Growth plate?",
     "explanation": "Hydroxyapatite is associated with inorganic mineral contribution; Growth plate is associated with cartilage supporting length growth.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10151,21 +9863,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydroxyapatite is associated with inorganic mineral contribution; Growth plate is associated with cartilage supporting length growth."
     },
     "options": [
-      "Hydroxyapatite—inorganic mineral contribution",
       "Growth plate—cartilage supporting length growth",
       "Hydroxyapatite—being an amino-acid polymer",
       "Growth plate—a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0456",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Hydroxyapatite and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydroxyapatite and Osteon?",
     "explanation": "Hydroxyapatite is associated with inorganic mineral contribution; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10178,20 +9888,18 @@
     },
     "options": [
       "Hydroxyapatite—inorganic mineral contribution",
-      "Osteon—concentric lamellar compact-bone organization",
       "Hydroxyapatite—being an amino-acid polymer",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0457",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Hydroxyapatite and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydroxyapatite and Trabecula?",
     "explanation": "Hydroxyapatite is associated with inorganic mineral contribution; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10203,21 +9911,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydroxyapatite is associated with inorganic mineral contribution; Trabecula is associated with a strut or plate of spongy bone."
     },
     "options": [
-      "Hydroxyapatite—inorganic mineral contribution",
       "Trabecula—a strut or plate of spongy bone",
       "Hydroxyapatite—being an amino-acid polymer",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0458",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Hydroxyapatite and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydroxyapatite and Central canal?",
     "explanation": "Hydroxyapatite is associated with inorganic mineral contribution; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10230,20 +9936,18 @@
     },
     "options": [
       "Hydroxyapatite—inorganic mineral contribution",
-      "Central canal—vessel and nerve passage within an osteon",
       "Hydroxyapatite—being an amino-acid polymer",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0459",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Hydroxyapatite and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydroxyapatite and Canaliculus?",
     "explanation": "Hydroxyapatite is associated with inorganic mineral contribution; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10255,21 +9959,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydroxyapatite is associated with inorganic mineral contribution; Canaliculus is associated with an exchange-related channel around osteocyte processes."
     },
     "options": [
-      "Hydroxyapatite—inorganic mineral contribution",
       "Canaliculus—an exchange-related channel around osteocyte processes",
       "Hydroxyapatite—being an amino-acid polymer",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0460",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Periosteum and Endosteum? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Periosteum and Endosteum?",
     "explanation": "Periosteum is associated with external nonarticular bone covering; Endosteum is associated with internal bone-surface lining.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10282,20 +9984,18 @@
     },
     "options": [
       "Periosteum—external nonarticular bone covering",
-      "Endosteum—internal bone-surface lining",
       "Periosteum—the membrane covering every exposed articular cartilage surface",
       "Endosteum—the exposed keratin layer of skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0461",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Periosteum and Diaphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Periosteum and Diaphysis?",
     "explanation": "Periosteum is associated with external nonarticular bone covering; Diaphysis is associated with the shaft of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10307,21 +10007,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Periosteum is associated with external nonarticular bone covering; Diaphysis is associated with the shaft of a typical long bone."
     },
     "options": [
-      "Periosteum—external nonarticular bone covering",
       "Diaphysis—the shaft of a typical long bone",
       "Periosteum—the membrane covering every exposed articular cartilage surface",
       "Diaphysis—the cartilage cap on a joint surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0462",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Periosteum and Epiphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Periosteum and Epiphysis?",
     "explanation": "Periosteum is associated with external nonarticular bone covering; Epiphysis is associated with an end region of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10334,20 +10032,18 @@
     },
     "options": [
       "Periosteum—external nonarticular bone covering",
-      "Epiphysis—an end region of a typical long bone",
       "Periosteum—the membrane covering every exposed articular cartilage surface",
       "Epiphysis—the central axial canal of an osteon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0463",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Periosteum and Growth plate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Periosteum and Growth plate?",
     "explanation": "Periosteum is associated with external nonarticular bone covering; Growth plate is associated with cartilage supporting length growth.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10359,21 +10055,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Periosteum is associated with external nonarticular bone covering; Growth plate is associated with cartilage supporting length growth."
     },
     "options": [
-      "Periosteum—external nonarticular bone covering",
       "Growth plate—cartilage supporting length growth",
       "Periosteum—the membrane covering every exposed articular cartilage surface",
       "Growth plate—a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0464",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Periosteum and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Periosteum and Osteon?",
     "explanation": "Periosteum is associated with external nonarticular bone covering; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10386,20 +10080,18 @@
     },
     "options": [
       "Periosteum—external nonarticular bone covering",
-      "Osteon—concentric lamellar compact-bone organization",
       "Periosteum—the membrane covering every exposed articular cartilage surface",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0465",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Periosteum and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Periosteum and Trabecula?",
     "explanation": "Periosteum is associated with external nonarticular bone covering; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10411,21 +10103,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Periosteum is associated with external nonarticular bone covering; Trabecula is associated with a strut or plate of spongy bone."
     },
     "options": [
-      "Periosteum—external nonarticular bone covering",
       "Trabecula—a strut or plate of spongy bone",
       "Periosteum—the membrane covering every exposed articular cartilage surface",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0466",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Periosteum and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Periosteum and Central canal?",
     "explanation": "Periosteum is associated with external nonarticular bone covering; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10438,20 +10128,18 @@
     },
     "options": [
       "Periosteum—external nonarticular bone covering",
-      "Central canal—vessel and nerve passage within an osteon",
       "Periosteum—the membrane covering every exposed articular cartilage surface",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0467",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Periosteum and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Periosteum and Canaliculus?",
     "explanation": "Periosteum is associated with external nonarticular bone covering; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10463,21 +10151,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Periosteum is associated with external nonarticular bone covering; Canaliculus is associated with an exchange-related channel around osteocyte processes."
     },
     "options": [
-      "Periosteum—external nonarticular bone covering",
       "Canaliculus—an exchange-related channel around osteocyte processes",
       "Periosteum—the membrane covering every exposed articular cartilage surface",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0468",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Endosteum and Diaphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Endosteum and Diaphysis?",
     "explanation": "Endosteum is associated with internal bone-surface lining; Diaphysis is associated with the shaft of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10490,20 +10176,18 @@
     },
     "options": [
       "Endosteum—internal bone-surface lining",
-      "Diaphysis—the shaft of a typical long bone",
       "Endosteum—the exposed keratin layer of skin",
       "Diaphysis—the cartilage cap on a joint surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0469",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Endosteum and Epiphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Endosteum and Epiphysis?",
     "explanation": "Endosteum is associated with internal bone-surface lining; Epiphysis is associated with an end region of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10515,21 +10199,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Endosteum is associated with internal bone-surface lining; Epiphysis is associated with an end region of a typical long bone."
     },
     "options": [
-      "Endosteum—internal bone-surface lining",
       "Epiphysis—an end region of a typical long bone",
       "Endosteum—the exposed keratin layer of skin",
       "Epiphysis—the central axial canal of an osteon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0470",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Endosteum and Growth plate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Endosteum and Growth plate?",
     "explanation": "Endosteum is associated with internal bone-surface lining; Growth plate is associated with cartilage supporting length growth.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10542,20 +10224,18 @@
     },
     "options": [
       "Endosteum—internal bone-surface lining",
-      "Growth plate—cartilage supporting length growth",
       "Endosteum—the exposed keratin layer of skin",
       "Growth plate—a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0471",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Endosteum and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Endosteum and Osteon?",
     "explanation": "Endosteum is associated with internal bone-surface lining; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10567,21 +10247,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Endosteum is associated with internal bone-surface lining; Osteon is associated with concentric lamellar compact-bone organization."
     },
     "options": [
-      "Endosteum—internal bone-surface lining",
       "Osteon—concentric lamellar compact-bone organization",
       "Endosteum—the exposed keratin layer of skin",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0472",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Endosteum and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Endosteum and Trabecula?",
     "explanation": "Endosteum is associated with internal bone-surface lining; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10594,20 +10272,18 @@
     },
     "options": [
       "Endosteum—internal bone-surface lining",
-      "Trabecula—a strut or plate of spongy bone",
       "Endosteum—the exposed keratin layer of skin",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0473",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Endosteum and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Endosteum and Central canal?",
     "explanation": "Endosteum is associated with internal bone-surface lining; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10619,21 +10295,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Endosteum is associated with internal bone-surface lining; Central canal is associated with vessel and nerve passage within an osteon."
     },
     "options": [
-      "Endosteum—internal bone-surface lining",
       "Central canal—vessel and nerve passage within an osteon",
       "Endosteum—the exposed keratin layer of skin",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0474",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Endosteum and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Endosteum and Canaliculus?",
     "explanation": "Endosteum is associated with internal bone-surface lining; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10646,20 +10320,18 @@
     },
     "options": [
       "Endosteum—internal bone-surface lining",
-      "Canaliculus—an exchange-related channel around osteocyte processes",
       "Endosteum—the exposed keratin layer of skin",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0475",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Diaphysis and Epiphysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Diaphysis and Epiphysis?",
     "explanation": "Diaphysis is associated with the shaft of a typical long bone; Epiphysis is associated with an end region of a typical long bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10671,21 +10343,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Diaphysis is associated with the shaft of a typical long bone; Epiphysis is associated with an end region of a typical long bone."
     },
     "options": [
-      "Diaphysis—the shaft of a typical long bone",
       "Epiphysis—an end region of a typical long bone",
       "Diaphysis—the cartilage cap on a joint surface",
       "Epiphysis—the central axial canal of an osteon"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0476",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Diaphysis and Growth plate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Diaphysis and Growth plate?",
     "explanation": "Diaphysis is associated with the shaft of a typical long bone; Growth plate is associated with cartilage supporting length growth.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10698,20 +10368,18 @@
     },
     "options": [
       "Diaphysis—the shaft of a typical long bone",
-      "Growth plate—cartilage supporting length growth",
       "Diaphysis—the cartilage cap on a joint surface",
       "Growth plate—a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0477",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Diaphysis and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Diaphysis and Osteon?",
     "explanation": "Diaphysis is associated with the shaft of a typical long bone; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10723,21 +10391,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Diaphysis is associated with the shaft of a typical long bone; Osteon is associated with concentric lamellar compact-bone organization."
     },
     "options": [
-      "Diaphysis—the shaft of a typical long bone",
       "Osteon—concentric lamellar compact-bone organization",
       "Diaphysis—the cartilage cap on a joint surface",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0478",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Diaphysis and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Diaphysis and Trabecula?",
     "explanation": "Diaphysis is associated with the shaft of a typical long bone; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10750,20 +10416,18 @@
     },
     "options": [
       "Diaphysis—the shaft of a typical long bone",
-      "Trabecula—a strut or plate of spongy bone",
       "Diaphysis—the cartilage cap on a joint surface",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0479",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Diaphysis and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Diaphysis and Central canal?",
     "explanation": "Diaphysis is associated with the shaft of a typical long bone; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10775,21 +10439,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Diaphysis is associated with the shaft of a typical long bone; Central canal is associated with vessel and nerve passage within an osteon."
     },
     "options": [
-      "Diaphysis—the shaft of a typical long bone",
       "Central canal—vessel and nerve passage within an osteon",
       "Diaphysis—the cartilage cap on a joint surface",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0480",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Diaphysis and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Diaphysis and Canaliculus?",
     "explanation": "Diaphysis is associated with the shaft of a typical long bone; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10802,20 +10464,18 @@
     },
     "options": [
       "Diaphysis—the shaft of a typical long bone",
-      "Canaliculus—an exchange-related channel around osteocyte processes",
       "Diaphysis—the cartilage cap on a joint surface",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0481",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Epiphysis and Growth plate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epiphysis and Growth plate?",
     "explanation": "Epiphysis is associated with an end region of a typical long bone; Growth plate is associated with cartilage supporting length growth.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10827,21 +10487,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epiphysis is associated with an end region of a typical long bone; Growth plate is associated with cartilage supporting length growth."
     },
     "options": [
-      "Epiphysis—an end region of a typical long bone",
       "Growth plate—cartilage supporting length growth",
       "Epiphysis—the central axial canal of an osteon",
       "Growth plate—a fully fused adult epiphyseal line"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0482",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Epiphysis and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epiphysis and Osteon?",
     "explanation": "Epiphysis is associated with an end region of a typical long bone; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10854,20 +10512,18 @@
     },
     "options": [
       "Epiphysis—an end region of a typical long bone",
-      "Osteon—concentric lamellar compact-bone organization",
       "Epiphysis—the central axial canal of an osteon",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0483",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Epiphysis and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epiphysis and Trabecula?",
     "explanation": "Epiphysis is associated with an end region of a typical long bone; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10879,21 +10535,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epiphysis is associated with an end region of a typical long bone; Trabecula is associated with a strut or plate of spongy bone."
     },
     "options": [
-      "Epiphysis—an end region of a typical long bone",
       "Trabecula—a strut or plate of spongy bone",
       "Epiphysis—the central axial canal of an osteon",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0484",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Epiphysis and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epiphysis and Central canal?",
     "explanation": "Epiphysis is associated with an end region of a typical long bone; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10906,20 +10560,18 @@
     },
     "options": [
       "Epiphysis—an end region of a typical long bone",
-      "Central canal—vessel and nerve passage within an osteon",
       "Epiphysis—the central axial canal of an osteon",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0485",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Epiphysis and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epiphysis and Canaliculus?",
     "explanation": "Epiphysis is associated with an end region of a typical long bone; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10931,21 +10583,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epiphysis is associated with an end region of a typical long bone; Canaliculus is associated with an exchange-related channel around osteocyte processes."
     },
     "options": [
-      "Epiphysis—an end region of a typical long bone",
       "Canaliculus—an exchange-related channel around osteocyte processes",
       "Epiphysis—the central axial canal of an osteon",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0486",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Growth plate and Osteon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Growth plate and Osteon?",
     "explanation": "Growth plate is associated with cartilage supporting length growth; Osteon is associated with concentric lamellar compact-bone organization.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10958,20 +10608,18 @@
     },
     "options": [
       "Growth plate—cartilage supporting length growth",
-      "Osteon—concentric lamellar compact-bone organization",
       "Growth plate—a fully fused adult epiphyseal line",
       "Osteon—a single marrow adipocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0487",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Growth plate and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Growth plate and Trabecula?",
     "explanation": "Growth plate is associated with cartilage supporting length growth; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -10983,21 +10631,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Growth plate is associated with cartilage supporting length growth; Trabecula is associated with a strut or plate of spongy bone."
     },
     "options": [
-      "Growth plate—cartilage supporting length growth",
       "Trabecula—a strut or plate of spongy bone",
       "Growth plate—a fully fused adult epiphyseal line",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0488",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Growth plate and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Growth plate and Central canal?",
     "explanation": "Growth plate is associated with cartilage supporting length growth; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -11010,20 +10656,18 @@
     },
     "options": [
       "Growth plate—cartilage supporting length growth",
-      "Central canal—vessel and nerve passage within an osteon",
       "Growth plate—a fully fused adult epiphyseal line",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0489",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Growth plate and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Growth plate and Canaliculus?",
     "explanation": "Growth plate is associated with cartilage supporting length growth; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -11035,21 +10679,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Growth plate is associated with cartilage supporting length growth; Canaliculus is associated with an exchange-related channel around osteocyte processes."
     },
     "options": [
-      "Growth plate—cartilage supporting length growth",
       "Canaliculus—an exchange-related channel around osteocyte processes",
       "Growth plate—a fully fused adult epiphyseal line",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0490",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteon and Trabecula? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteon and Trabecula?",
     "explanation": "Osteon is associated with concentric lamellar compact-bone organization; Trabecula is associated with a strut or plate of spongy bone.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -11062,20 +10704,18 @@
     },
     "options": [
       "Osteon—concentric lamellar compact-bone organization",
-      "Trabecula—a strut or plate of spongy bone",
       "Osteon—a single marrow adipocyte",
       "Trabecula—the nucleus of an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0491",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteon and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteon and Central canal?",
     "explanation": "Osteon is associated with concentric lamellar compact-bone organization; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -11087,21 +10727,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Osteon is associated with concentric lamellar compact-bone organization; Central canal is associated with vessel and nerve passage within an osteon."
     },
     "options": [
-      "Osteon—concentric lamellar compact-bone organization",
       "Central canal—vessel and nerve passage within an osteon",
       "Osteon—a single marrow adipocyte",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0492",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Osteon and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Osteon and Canaliculus?",
     "explanation": "Osteon is associated with concentric lamellar compact-bone organization; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -11114,20 +10752,18 @@
     },
     "options": [
       "Osteon—concentric lamellar compact-bone organization",
-      "Canaliculus—an exchange-related channel around osteocyte processes",
       "Osteon—a single marrow adipocyte",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0493",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Trabecula and Central canal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Trabecula and Central canal?",
     "explanation": "Trabecula is associated with a strut or plate of spongy bone; Central canal is associated with vessel and nerve passage within an osteon.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -11139,21 +10775,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Trabecula is associated with a strut or plate of spongy bone; Central canal is associated with vessel and nerve passage within an osteon."
     },
     "options": [
-      "Trabecula—a strut or plate of spongy bone",
       "Central canal—vessel and nerve passage within an osteon",
       "Trabecula—the nucleus of an erythrocyte",
       "Central canal—the entire shaft-to-end growth plate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0494",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Trabecula and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Trabecula and Canaliculus?",
     "explanation": "Trabecula is associated with a strut or plate of spongy bone; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -11166,20 +10800,18 @@
     },
     "options": [
       "Trabecula—a strut or plate of spongy bone",
-      "Canaliculus—an exchange-related channel around osteocyte processes",
       "Trabecula—the nucleus of an erythrocyte",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "skeletal-0495",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which skeletal structure–function pairings are correct for Central canal and Canaliculus? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Central canal and Canaliculus?",
     "explanation": "Central canal is associated with vessel and nerve passage within an osteon; Canaliculus is associated with an exchange-related channel around osteocyte processes.",
     "source": {
       "file": "Skeletal System Chpter 6.pptx",
@@ -11191,14 +10823,12 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Central canal is associated with vessel and nerve passage within an osteon; Canaliculus is associated with an exchange-related channel around osteocyte processes."
     },
     "options": [
-      "Central canal—vessel and nerve passage within an osteon",
       "Canaliculus—an exchange-related channel around osteocyte processes",
       "Central canal—the entire shaft-to-end growth plate",
       "Canaliculus—a whole articular joint cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {

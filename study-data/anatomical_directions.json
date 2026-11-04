@@ -2012,9 +2012,9 @@
   },
   {
     "id": "directions-0096",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are functional characteristics of living humans? Select all that apply.",
+    "question": "Which is one of the functional characteristics of living humans?",
     "explanation": "Life involves metabolism, responsiveness, growth, movement, development, and reproduction.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2025,21 +2025,17 @@
     },
     "options": [
       "Metabolism",
-      "Responsiveness",
-      "Growth",
       "Absence of all internal regulation"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0097",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about metabolism are correct? Select all that apply.",
+    "question": "Which statement about metabolism is correct?",
     "explanation": "Both synthesis and breakdown are parts of metabolism.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2049,22 +2045,18 @@
       "kind": "slide"
     },
     "options": [
-      "It includes anabolism",
       "It includes catabolism",
-      "Building and breakdown reactions both occur in the body",
       "It consists only of reactions that build molecules"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0098",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which examples illustrate characteristics of life? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which examples illustrate characteristic of life?",
     "explanation": "Movement, differentiation, and responsiveness are characteristics of living systems.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2076,22 +2068,18 @@
       "rationale": "Applies the cited anatomical or physiological concept: Movement, differentiation, and responsiveness are characteristics of living systems."
     },
     "options": [
-      "A cell migrating toward a signal",
-      "An unspecialized cell becoming specialized",
       "An organism adjusting to heat",
       "A plane dividing a plastic model"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0099",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements describe homeostasis correctly? Select all that apply.",
+    "question": "Which statement describes homeostasis correctly?",
     "explanation": "Homeostatic regulation permits controlled fluctuations.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2102,21 +2090,17 @@
     },
     "options": [
       "Conditions can fluctuate within a normal range",
-      "Regulated variables have reference values",
-      "Regulation is dynamic",
       "Every variable must remain numerically identical at every moment"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0100",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are components of a typical homeostatic control loop? Select all that apply.",
+    "question": "Which is one of the components of a typical homeostatic control loop?",
     "explanation": "A receptor detects, a control center coordinates, and an effector responds.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2128,22 +2112,18 @@
       "kind": "slide"
     },
     "options": [
-      "Receptor",
       "Control center",
-      "Effector",
       "Abdominal quadrant"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0101",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which tissues commonly function as effectors? Select all that apply.",
+    "question": "Which tissue commonly function as effectors?",
     "explanation": "Muscles and glands can carry out control-system responses.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2153,21 +2133,19 @@
       "kind": "slide"
     },
     "options": [
-      "Muscle",
       "Glandular tissue",
       "Serous fluid alone",
       "An anatomical plane"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0102",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which changes are consistent with negative feedback? Select all that apply.",
+    "question": "Which change is consistent with negative feedback?",
     "explanation": "Negative feedback tends to counteract change.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2178,20 +2156,18 @@
     },
     "options": [
       "A response opposes the initial deviation",
-      "A regulated variable moves back toward its normal range",
       "The initial deviation is indefinitely amplified",
       "The existence of a set point prevents all monitoring"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0103",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which variables are examples of homeostatic regulation? Select all that apply.",
+    "question": "Which variables is example of homeostatic regulation?",
     "explanation": "Body temperature, glucose, pressure, and pH are examples of regulated conditions.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2201,22 +2177,18 @@
       "kind": "slide"
     },
     "options": [
-      "Body temperature",
       "Blood glucose",
-      "Blood pH",
       "The spelling of an anatomical term"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0104",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about normal positive feedback are correct? Select all that apply.",
+    "question": "Which statement about normal positive feedback is correct?",
     "explanation": "Positive feedback amplifies rather than counteracts a process.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2227,20 +2199,18 @@
     },
     "options": [
       "The initiating process is reinforced",
-      "A definite endpoint limits the process",
       "It always opposes the initiating change",
       "It maintains every variable by removing all amplification"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0105",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which features belong to standard anatomical position? Select all that apply.",
+    "question": "Which feature belongs to standard anatomical position?",
     "explanation": "Standard anatomical position gives a shared reference for location descriptions.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2251,21 +2221,17 @@
     },
     "options": [
       "Upright body",
-      "Palms facing forward",
-      "Toes facing forward",
       "Palms facing posteriorly"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0106",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which directional synonym pairs are appropriate for the upright human body? Select all that apply.",
+    "question": "Which directional synonym pair is appropriate for the upright human body?",
     "explanation": "These pairs express corresponding directional relationships.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2276,22 +2242,18 @@
       "kind": "slide"
     },
     "options": [
-      "Anterior—ventral",
       "Posterior—dorsal",
-      "Superior—cranial",
       "Medial—lateral"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0107",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements use proximal and distal appropriately? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement use proximal and distal appropriately?",
     "explanation": "Proximal and distal describe distance from a limb’s attachment.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2302,21 +2264,19 @@
       "rationale": "Applies the cited anatomical or physiological concept: Proximal and distal describe distance from a limb’s attachment."
     },
     "options": [
-      "The elbow is proximal to the wrist",
       "The fingers are distal to the elbow",
       "The wrist is proximal to the shoulder",
       "Distal always means toward the body midline"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0108",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements use superficial and deep appropriately? Select all that apply.",
+    "question": "Which statement use superficial and deep appropriately?",
     "explanation": "These terms compare distance beneath an external surface.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2327,20 +2287,18 @@
     },
     "options": [
       "Skin is superficial to underlying bone",
-      "The brain is deep to the skull",
       "The brain is superficial to the scalp",
       "Deep means farther from the midline only"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0109",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which plane-division pairs are correct? Select all that apply.",
+    "question": "Which plane-division pair is correct?",
     "explanation": "Each standard plane divides the body along a defined orientation.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2352,22 +2310,18 @@
       "kind": "slide"
     },
     "options": [
-      "Sagittal—right and left",
       "Frontal—anterior and posterior",
-      "Transverse—superior and inferior",
       "Frontal—superior and inferior"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0110",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which cavities are subdivisions of the dorsal body cavity? Select all that apply.",
+    "question": "Which cavities are subdivisions of the dorsal body cavity?",
     "explanation": "Dorsal cavities protect the brain and spinal cord.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2378,20 +2332,18 @@
     },
     "options": [
       "Cranial cavity",
-      "Vertebral cavity",
       "Pleural cavity",
       "Pericardial cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0111",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are major divisions of the ventral cavity? Select all that apply.",
+    "question": "Which is one of the major divisions of the ventral cavity?",
     "explanation": "The diaphragm separates the major ventral cavity divisions.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2401,21 +2353,19 @@
       "kind": "slide"
     },
     "options": [
-      "Thoracic cavity",
       "Abdominopelvic cavity",
       "Cranial cavity",
       "Vertebral cavity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0112",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which organs are normally associated with the abdominal cavity? Select all that apply.",
+    "question": "Which organ is normally associated with the abdominal cavity?",
     "explanation": "These viscera are abdominal rather than cranial structures.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2425,22 +2375,18 @@
       "kind": "slide"
     },
     "options": [
-      "Stomach",
       "Liver",
-      "Spleen",
       "Brain"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0113",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which structures are normally associated with the pelvic cavity? Select all that apply.",
+    "question": "Which structure is normally associated with the pelvic cavity?",
     "explanation": "The pelvic cavity contains urinary, reproductive, and distal digestive structures.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2450,22 +2396,18 @@
       "kind": "slide"
     },
     "options": [
-      "Urinary bladder",
-      "Rectum",
       "Female internal reproductive organs",
       "Lungs"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0114",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about serous membranes are correct? Select all that apply.",
+    "question": "Which statement about serous membranes is correct?",
     "explanation": "The serous space contains a thin lubricating fluid film, not normal free air.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2476,21 +2418,17 @@
     },
     "options": [
       "Parietal serosa lines a cavity wall",
-      "Visceral serosa covers an organ",
-      "Serous fluid reduces friction",
       "The two layers are separated by a normal air-filled space"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0115",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which membrane-organ pairings are correct? Select all that apply.",
+    "question": "Which membrane-organ pairing is correct?",
     "explanation": "Serous membranes are named for the associated body compartment.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -2500,15 +2438,11 @@
       "kind": "slide"
     },
     "options": [
-      "Pleura—lung",
       "Pericardium—heart",
-      "Peritoneum—many abdominal viscera",
       "Pleura—brain"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
@@ -9864,9 +9798,9 @@
   },
   {
     "id": "directions-0446",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which tasks primarily examine anatomy rather than function? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which tasks primarily examine anatomy rather than function?",
     "explanation": "Anatomical work describes structure; physiological work investigates function.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -9879,20 +9813,18 @@
     },
     "options": [
       "Identifying the position of a bone",
-      "Describing the layers of a wall",
       "Measuring the rate of hormone release",
       "Determining how rapidly an organ performs its work"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0447",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which tasks primarily examine physiology rather than structural location? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which tasks primarily examine physiology rather than structural location?",
     "explanation": "Physiology concerns functional mechanisms.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -9904,21 +9836,19 @@
       "rationale": "Applies the cited anatomical or physiological concept: Physiology concerns functional mechanisms."
     },
     "options": [
-      "Studying how a muscle generates force",
       "Investigating regulation of blood glucose",
       "Naming the region of the wrist",
       "Identifying a plane through a model"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0448",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which structures are more complex than a single tissue in the organizational hierarchy? Select all that apply.",
+    "question": "Which structure is more complex than a single tissue in the organizational hierarchy?",
     "explanation": "Organs and larger integrated levels are above the tissue level.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -9928,22 +9858,18 @@
       "kind": "slide"
     },
     "options": [
-      "An organ",
       "An organ system",
-      "An organism",
       "An atom"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0449",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which organizational levels are smaller than an organ? Select all that apply.",
+    "question": "Which organizational levels are smaller than an organ?",
     "explanation": "Cells, tissues, and organelles are lower organizational levels than an organ.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -9953,22 +9879,18 @@
       "kind": "slide"
     },
     "options": [
-      "Cell",
-      "Tissue",
       "Organelle",
       "Organ system"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0450",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements distinguish anabolism and catabolism? Select all that apply.",
+    "question": "Which statement distinguish anabolism and catabolism?",
     "explanation": "These terms classify chemical building and breakdown reactions.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -9979,21 +9901,17 @@
     },
     "options": [
       "Anabolism builds molecules",
-      "Catabolism breaks materials down",
-      "Anabolism requires energy input",
       "Catabolism means every possible movement of the body"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0451",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which examples illustrate development or differentiation? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which example illustrate development or differentiation?",
     "explanation": "Development encompasses body changes, including differentiation.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10005,21 +9923,19 @@
       "rationale": "Applies the cited anatomical or physiological concept: Development encompasses body changes, including differentiation."
     },
     "options": [
-      "An immature cell becoming specialized",
       "Changes in body organization over a lifetime",
       "A transverse cut through a plastic model",
       "A label for the left upper quadrant"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0452",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which observations are compatible with homeostatic regulation? Select all that apply.",
+    "question": "Which observation is compatible with homeostatic regulation?",
     "explanation": "Homeostasis is regulated dynamism rather than total immobility.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10030,20 +9946,18 @@
     },
     "options": [
       "A variable fluctuates within bounded limits",
-      "Responses adjust when the variable departs from an appropriate range",
       "Every physiological measurement must be identical at all times",
       "A transient deviation proves that all regulation has permanently failed"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0453",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which claims about organ systems and homeostasis are accurate? Select all that apply.",
+    "question": "Which statement about organ systems and homeostasis is accurate?",
     "explanation": "Homeostatic control involves integrated contributions from multiple systems.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10054,21 +9968,17 @@
     },
     "options": [
       "Multiple systems can cooperate in regulation",
-      "The nervous system contributes",
-      "The endocrine system contributes",
       "Only the nervous system can ever regulate a variable"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0454",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which control-loop role descriptions are accurate? Select all that apply.",
+    "question": "Which control-loop role description is accurate?",
     "explanation": "Each control-loop component has a distinct functional role.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10079,22 +9989,18 @@
       "kind": "slide"
     },
     "options": [
-      "A receptor detects a change",
       "A control center coordinates a response",
-      "An effector executes a response",
       "An effector is the physiological reference value"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0455",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which examples describe responses that oppose the initial deviation? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which examples describes response that oppose the initial deviation?",
     "explanation": "Opposing a deviation may require either increasing or decreasing a variable.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10105,21 +10011,19 @@
       "rationale": "Applies the cited anatomical or physiological concept: Opposing a deviation may require either increasing or decreasing a variable."
     },
     "options": [
-      "A low variable is raised toward its range",
       "A high variable is lowered toward its range",
       "A rising variable is driven progressively farther upward",
       "A low variable is driven progressively farther downward"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0456",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which features characterize an amplifying feedback process? Select all that apply.",
+    "question": "Which feature characterizes an amplifying feedback process?",
     "explanation": "Positive feedback is defined by reinforcement, not by the sign of the numerical change.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10130,20 +10034,18 @@
     },
     "options": [
       "The response reinforces its initiating stimulus",
-      "A physiological endpoint can terminate the process",
       "Its response always removes the original deviation",
       "Its definition requires the variable to decrease"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0457",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements appropriately describe homeostatic imbalance? Select all that apply.",
+    "question": "Which statement appropriately describes homeostatic imbalance?",
     "explanation": "Imbalance concerns inadequate restoration of appropriate conditions.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10153,21 +10055,19 @@
       "kind": "slide"
     },
     "options": [
-      "A disturbance may exceed the ability to correct it",
       "Persistent dysregulation can contribute to disease",
       "Every healthy normal-range fluctuation is a disease",
       "A set point guarantees that a variable can never change"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0458",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements apply to standard anatomical descriptions? Select all that apply.",
+    "question": "Which statement apply to standard anatomical descriptions?",
     "explanation": "Anatomical position and patient-relative side labels provide consistent references.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10178,22 +10078,18 @@
       "kind": "slide"
     },
     "options": [
-      "Right and left belong to the person described",
-      "The body has a standardized reference position",
       "The palms face forward in that reference",
       "An observer facing the person reverses the person’s anatomical side labels"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0459",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which directional pairs express opposing relationships? Select all that apply.",
+    "question": "Which directional pair express opposing relationships?",
     "explanation": "Anterior/posterior and superior/inferior are opposites; the other listed pairs are synonyms.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10204,21 +10100,19 @@
       "kind": "slide"
     },
     "options": [
-      "Anterior and posterior",
       "Superior and inferior",
       "Dorsal and posterior",
       "Cranial and superior"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0460",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which additional directional pairs express opposing relationships? Select all that apply.",
+    "question": "Which additional directional pair express opposing relationships?",
     "explanation": "These pairs compare midline distance, limb-attachment distance, and depth.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10230,22 +10124,18 @@
       "kind": "slide"
     },
     "options": [
-      "Medial and lateral",
       "Proximal and distal",
-      "Superficial and deep",
       "Anterior and ventral"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0461",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which examples describe lateral locations relative to a stated midline structure? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which example describes lateral locations relative to a stated midline structure?",
     "explanation": "Lateral means farther toward the sides from a midline reference.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10256,21 +10146,19 @@
       "rationale": "Applies the cited anatomical or physiological concept: Lateral means farther toward the sides from a midline reference."
     },
     "options": [
-      "The ears relative to the nose",
       "The shoulders relative to the sternum",
       "The nose relative to the ears",
       "The sternum relative to the shoulders"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0462",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which examples describe medial relationships? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which example describes medial relationships?",
     "explanation": "Midline structures lie medial to paired structures farther to the sides.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10282,20 +10170,18 @@
     },
     "options": [
       "The nose relative to the eyes",
-      "The sternum relative to the shoulders",
       "The ears relative to the nose",
       "The shoulders relative to the sternum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0463",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which examples describe distal rather than proximal relationships? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which example describes distal rather than proximal relationships?",
     "explanation": "Distal locations are farther from the limb attachment.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10306,21 +10192,19 @@
       "rationale": "Applies the cited anatomical or physiological concept: Distal locations are farther from the limb attachment."
     },
     "options": [
-      "The wrist relative to the elbow",
       "The toes relative to the knee",
       "The shoulder relative to the elbow",
       "The hip relative to the ankle"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0464",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which examples describe proximal rather than distal relationships? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which example describes proximal rather than distal relationships?",
     "explanation": "Proximal locations are nearer the limb attachment.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10332,20 +10216,18 @@
     },
     "options": [
       "The elbow relative to the fingers",
-      "The knee relative to the ankle",
       "The fingers relative to the shoulder",
       "The toes relative to the hip"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0465",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which comparisons concern depth beneath a local external surface? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which comparisons concern depth beneath a local external surface?",
     "explanation": "Superficial/deep comparisons concern the distance beneath an external surface.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10356,21 +10238,19 @@
       "rationale": "Applies the cited anatomical or physiological concept: Superficial/deep comparisons concern the distance beneath an external surface."
     },
     "options": [
-      "Skin versus underlying muscle",
       "Skull versus underlying brain",
       "Elbow versus wrist along the limb",
       "Nose versus eyes along the vertical axis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0466",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which regional terms are associated with the upper limb? Select all that apply.",
+    "question": "Which regional terms are associated with the upper limb?",
     "explanation": "The arm, wrist, and finger regions belong to the upper limb.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10380,22 +10260,18 @@
       "kind": "slide"
     },
     "options": [
-      "Brachial",
       "Carpal",
-      "Digital when referring to the fingers",
       "Femoral"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0467",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which regional terms are associated with the lower limb? Select all that apply.",
+    "question": "Which regional terms are associated with the lower limb?",
     "explanation": "The thigh, kneecap, and heel are lower-limb regions.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10406,22 +10282,18 @@
       "kind": "slide"
     },
     "options": [
-      "Femoral",
-      "Patellar",
       "Calcaneal",
       "Carpal"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0468",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which pairs associate anterior and posterior regions of the same general joint area? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pair associate anterior and posterior regions of the same general joint area?",
     "explanation": "Patellar and popliteal describe the front and back of the knee.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10434,20 +10306,18 @@
     },
     "options": [
       "Patellar—popliteal",
-      "Anterior knee—posterior knee",
       "Carpal—calcaneal",
       "Nasal—gluteal"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0469",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which regional terms identify parts of the foot? Select all that apply.",
+    "question": "Which regional terms identify parts of the foot?",
     "explanation": "The sole and heel are parts of the foot.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10457,21 +10327,19 @@
       "kind": "slide"
     },
     "options": [
-      "Plantar",
       "Calcaneal",
       "Scapular",
       "Otic"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0470",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which regional terms identify parts of the head? Select all that apply.",
+    "question": "Which regional terms identify parts of the head?",
     "explanation": "The nose, ear, and posterior head are cephalic regions.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10482,22 +10350,18 @@
       "kind": "slide"
     },
     "options": [
-      "Nasal",
-      "Otic",
       "Occipital",
       "Femoral"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0471",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about sagittal planes are correct? Select all that apply.",
+    "question": "Which statement about sagittal planes is correct?",
     "explanation": "Sagittal orientation concerns right and left, with median and off-midline forms.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10508,21 +10372,17 @@
     },
     "options": [
       "They separate right and left portions",
-      "A midsagittal plane passes through the midline",
-      "A parasagittal plane is off the midline",
       "Every sagittal section divides anterior and posterior portions"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0472",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which descriptions apply to a frontal plane? Select all that apply.",
+    "question": "Which description apply to a frontal plane?",
     "explanation": "Frontal/coronal sections separate front and back.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10533,20 +10393,18 @@
     },
     "options": [
       "It is also called coronal",
-      "It separates anterior and posterior portions",
       "It necessarily gives equal right and left halves",
       "It is synonymous with transverse"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0473",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which descriptions apply to a transverse plane? Select all that apply.",
+    "question": "Which description apply to a transverse plane?",
     "explanation": "Transverse orientation separates upper and lower portions.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10556,22 +10414,18 @@
       "kind": "slide"
     },
     "options": [
-      "It is also called horizontal",
-      "It separates superior and inferior portions",
       "It can produce a cross section",
       "It is identical to a midsagittal plane"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0474",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which cavity pairings are correct? Select all that apply.",
+    "question": "Which cavity pairing is correct?",
     "explanation": "Cranial and vertebral cavities are dorsal; thoracic compartments are ventral.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10583,21 +10437,17 @@
     },
     "options": [
       "Cranial—dorsal division",
-      "Vertebral—dorsal division",
-      "Thoracic—ventral division",
       "Pleural—dorsal division"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0475",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which structures or spaces belong to the thoracic region? Select all that apply.",
+    "question": "Which structure or spaces belongs to the thoracic region?",
     "explanation": "The thoracic cavity includes the pleural and central mediastinal compartments.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10607,22 +10457,18 @@
       "kind": "slide"
     },
     "options": [
-      "Pleural cavities",
       "Mediastinum",
-      "Pericardial cavity",
       "Cranial cavity"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0476",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which organ-location associations are correct? Select all that apply.",
+    "question": "Which organ-location associations are correct?",
     "explanation": "These associations describe normal broad anatomical locations.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10633,22 +10479,18 @@
       "kind": "slide"
     },
     "options": [
-      "Heart—thoracic region",
-      "Stomach—abdominal region",
       "Urinary bladder—pelvic region",
       "Brain—pleural cavity"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0477",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly distinguish serous membrane layers? Select all that apply.",
+    "question": "Which statement correctly distinguish serous membrane layers?",
     "explanation": "The two serosal layers are named for the surfaces they cover.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10658,21 +10500,19 @@
       "kind": "slide"
     },
     "options": [
-      "Parietal refers to the cavity-wall layer",
       "Visceral refers to the organ-associated layer",
       "Visceral always means a layer in skin",
       "Parietal always means the organ surface"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0478",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which benefits follow from normal serosal lubrication? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which benefits follow from normal serosal lubrication?",
     "explanation": "Serous fluid facilitates movement rather than immobilizing organs.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10684,20 +10524,18 @@
     },
     "options": [
       "Less friction between opposing serosal surfaces",
-      "Smoother movement of an organ against its serosal lining",
       "Elimination of every possible organ movement",
       "Replacement of all cavity walls with air"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0479",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are names of serous membranes? Select all that apply.",
+    "question": "Which is one of the names of serous membranes?",
     "explanation": "These names refer to thoracic or abdominopelvic serous membranes.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10707,22 +10545,18 @@
       "kind": "slide"
     },
     "options": [
-      "Pleura",
-      "Pericardium",
       "Peritoneum",
       "Epidermis"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0480",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which abbreviations identify upper abdominal quadrants? Select all that apply.",
+    "question": "Which abbreviations identify upper abdominal quadrants?",
     "explanation": "RUQ and LUQ identify the upper pair.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10733,20 +10567,18 @@
     },
     "options": [
       "RUQ",
-      "LUQ",
       "RLQ",
       "LLQ"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0481",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which abbreviations identify lower abdominal quadrants? Select all that apply.",
+    "question": "Which abbreviations identify lower abdominal quadrants?",
     "explanation": "RLQ and LLQ identify the lower pair.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10756,21 +10588,19 @@
       "kind": "slide"
     },
     "options": [
-      "RLQ",
       "LLQ",
       "RUQ",
       "LUQ"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0482",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which regions belong to the upper row of the nine-region scheme? Select all that apply.",
+    "question": "Which region belongs to the upper row of the nine-region scheme?",
     "explanation": "The upper row consists of the two hypochondriac regions and epigastrium.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10780,22 +10610,18 @@
       "kind": "slide"
     },
     "options": [
-      "Right hypochondriac",
-      "Epigastric",
       "Left hypochondriac",
       "Hypogastric"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0483",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which regions belong to the middle row of the nine-region scheme? Select all that apply.",
+    "question": "Which region belongs to the middle row of the nine-region scheme?",
     "explanation": "The middle row contains the two lumbar regions and the umbilical region.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10806,21 +10632,17 @@
     },
     "options": [
       "Right lumbar",
-      "Umbilical",
-      "Left lumbar",
       "Epigastric"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0484",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which regions belong to the lower row of the nine-region scheme? Select all that apply.",
+    "question": "Which region belongs to the lower row of the nine-region scheme?",
     "explanation": "The lower row contains the iliac regions and hypogastrium.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10830,22 +10652,18 @@
       "kind": "slide"
     },
     "options": [
-      "Right iliac",
       "Hypogastric",
-      "Left iliac",
       "Right hypochondriac"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "directions-0485",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which regions lie in the central column of the nine-region scheme? Select all that apply.",
+    "question": "Which region lie in the central column of the nine-region scheme?",
     "explanation": "The central column runs from epigastrium through umbilical to hypogastric region.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -10855,15 +10673,11 @@
       "kind": "slide"
     },
     "options": [
-      "Epigastric",
-      "Umbilical",
       "Hypogastric",
       "Left lumbar"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
@@ -11781,9 +11595,9 @@
   },
   {
     "id": "directions-0521",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing nasal and oral? Select all that apply.",
+    "question": "Which location match is correct for nasal and oral?",
     "explanation": "Nasal denotes the nose; oral denotes the mouth.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -11794,20 +11608,18 @@
       "kind": "slide"
     },
     "options": [
-      "Nasal—nose",
       "Oral—mouth",
       "Abdominal—nose"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0522",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing oral and cervical? Select all that apply.",
+    "question": "Which location match is correct for oral and cervical?",
     "explanation": "Oral denotes the mouth; cervical denotes the neck.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -11819,19 +11631,17 @@
     },
     "options": [
       "Oral—mouth",
-      "Cervical—neck",
       "Brachial—mouth"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0523",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing cervical and nasal? Select all that apply.",
+    "question": "Which location match is correct for cervical and nasal?",
     "explanation": "Cervical denotes the neck; nasal denotes the nose.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -11842,20 +11652,18 @@
       "kind": "slide"
     },
     "options": [
-      "Cervical—neck",
       "Nasal—nose",
       "Umbilical—neck"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0524",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing axillary and frontal? Select all that apply.",
+    "question": "Which location match is correct for axillary and frontal?",
     "explanation": "Axillary denotes the armpit; frontal denotes the forehead.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -11867,19 +11675,17 @@
     },
     "options": [
       "Axillary—armpit",
-      "Frontal—forehead",
       "Pelvic—armpit"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0525",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing frontal and orbital? Select all that apply.",
+    "question": "Which location match is correct for frontal and orbital?",
     "explanation": "Frontal denotes the forehead; orbital denotes the eye region.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -11890,20 +11696,18 @@
       "kind": "slide"
     },
     "options": [
-      "Frontal—forehead",
       "Orbital—eye region",
       "Femoral—forehead"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0526",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing orbital and axillary? Select all that apply.",
+    "question": "Which location match is correct for orbital and axillary?",
     "explanation": "Orbital denotes the eye region; axillary denotes the armpit.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -11915,19 +11719,17 @@
     },
     "options": [
       "Orbital—eye region",
-      "Axillary—armpit",
       "Carpal—eye region"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0527",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing buccal and sternal? Select all that apply.",
+    "question": "Which location match is correct for buccal and sternal?",
     "explanation": "Buccal denotes the cheek; sternal denotes the breastbone region.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -11938,20 +11740,18 @@
       "kind": "slide"
     },
     "options": [
-      "Buccal—cheek",
       "Sternal—breastbone region",
       "Digital—cheek"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0528",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing sternal and thoracic? Select all that apply.",
+    "question": "Which location match is correct for sternal and thoracic?",
     "explanation": "Sternal denotes the breastbone region; thoracic denotes the chest.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -11963,19 +11763,17 @@
     },
     "options": [
       "Sternal—breastbone region",
-      "Thoracic—chest",
       "Coxal—breastbone region"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0529",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing thoracic and buccal? Select all that apply.",
+    "question": "Which location match is correct for thoracic and buccal?",
     "explanation": "Thoracic denotes the chest; buccal denotes the cheek.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -11986,20 +11784,18 @@
       "kind": "slide"
     },
     "options": [
-      "Thoracic—chest",
       "Buccal—cheek",
       "Pubic—chest"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0530",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing mammary and abdominal? Select all that apply.",
+    "question": "Which location match is correct for mammary and abdominal?",
     "explanation": "Mammary denotes the breast; abdominal denotes the abdomen.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12011,19 +11807,17 @@
     },
     "options": [
       "Mammary—breast",
-      "Abdominal—abdomen",
       "Patellar—breast"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0531",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing abdominal and brachial? Select all that apply.",
+    "question": "Which location match is correct for abdominal and brachial?",
     "explanation": "Abdominal denotes the abdomen; brachial denotes the upper arm.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12034,20 +11828,18 @@
       "kind": "slide"
     },
     "options": [
-      "Abdominal—abdomen",
       "Brachial—upper arm",
       "Pedal—abdomen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0532",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing brachial and mammary? Select all that apply.",
+    "question": "Which location match is correct for brachial and mammary?",
     "explanation": "Brachial denotes the upper arm; mammary denotes the breast.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12059,19 +11851,17 @@
     },
     "options": [
       "Brachial—upper arm",
-      "Mammary—breast",
       "Cephalic—upper arm"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0533",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing umbilical and pelvic? Select all that apply.",
+    "question": "Which location match is correct for umbilical and pelvic?",
     "explanation": "Umbilical denotes the navel region; pelvic denotes the pelvis.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12082,20 +11872,18 @@
       "kind": "slide"
     },
     "options": [
-      "Umbilical—navel region",
       "Pelvic—pelvis",
       "Otic—navel region"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0534",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing pelvic and femoral? Select all that apply.",
+    "question": "Which location match is correct for pelvic and femoral?",
     "explanation": "Pelvic denotes the pelvis; femoral denotes the thigh.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12107,19 +11895,17 @@
     },
     "options": [
       "Pelvic—pelvis",
-      "Femoral—thigh",
       "Sacral—pelvis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0535",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing femoral and umbilical? Select all that apply.",
+    "question": "Which location match is correct for femoral and umbilical?",
     "explanation": "Femoral denotes the thigh; umbilical denotes the navel region.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12130,20 +11916,18 @@
       "kind": "slide"
     },
     "options": [
-      "Femoral—thigh",
       "Umbilical—navel region",
       "Occipital—thigh"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0536",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing carpal and digital? Select all that apply.",
+    "question": "Which location match is correct for carpal and digital?",
     "explanation": "Carpal denotes the wrist; digital denotes the fingers.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12155,19 +11939,17 @@
     },
     "options": [
       "Carpal—wrist",
-      "Digital—fingers",
       "Vertebral—wrist"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0537",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing digital and coxal? Select all that apply.",
+    "question": "Which location match is correct for digital and coxal?",
     "explanation": "Digital denotes the fingers; coxal denotes the hip.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12178,20 +11960,18 @@
       "kind": "slide"
     },
     "options": [
-      "Digital—fingers",
       "Coxal—hip",
       "Scapular—fingers"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0538",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing coxal and carpal? Select all that apply.",
+    "question": "Which location match is correct for coxal and carpal?",
     "explanation": "Coxal denotes the hip; carpal denotes the wrist.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12203,19 +11983,17 @@
     },
     "options": [
       "Coxal—hip",
-      "Carpal—wrist",
       "Dorsal—hip"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0539",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing pubic and patellar? Select all that apply.",
+    "question": "Which location match is correct for pubic and patellar?",
     "explanation": "Pubic denotes the anterior genital region; patellar denotes the front of the knee.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12226,20 +12004,18 @@
       "kind": "slide"
     },
     "options": [
-      "Pubic—anterior genital region",
       "Patellar—front of the knee",
       "Gluteal—anterior genital region"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0540",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing patellar and pedal? Select all that apply.",
+    "question": "Which location match is correct for patellar and pedal?",
     "explanation": "Patellar denotes the front of the knee; pedal denotes the foot.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12251,19 +12027,17 @@
     },
     "options": [
       "Patellar—front of the knee",
-      "Pedal—foot",
       "Calcaneal—front of the knee"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0541",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing pedal and pubic? Select all that apply.",
+    "question": "Which location match is correct for pedal and pubic?",
     "explanation": "Pedal denotes the foot; pubic denotes the anterior genital region.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12274,20 +12048,18 @@
       "kind": "slide"
     },
     "options": [
-      "Pedal—foot",
       "Pubic—anterior genital region",
       "Plantar—foot"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0542",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing cephalic and otic? Select all that apply.",
+    "question": "Which location match is correct for cephalic and otic?",
     "explanation": "Cephalic denotes the head; otic denotes the ear.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12299,19 +12071,17 @@
     },
     "options": [
       "Cephalic—head",
-      "Otic—ear",
       "Acromial—head"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0543",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing otic and sacral? Select all that apply.",
+    "question": "Which location match is correct for otic and sacral?",
     "explanation": "Otic denotes the ear; sacral denotes the area between the posterior hips.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12322,20 +12092,18 @@
       "kind": "slide"
     },
     "options": [
-      "Otic—ear",
       "Sacral—area between the posterior hips",
       "Popliteal—ear"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0544",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing sacral and cephalic? Select all that apply.",
+    "question": "Which location match is correct for sacral and cephalic?",
     "explanation": "Sacral denotes the area between the posterior hips; cephalic denotes the head.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12347,19 +12115,17 @@
     },
     "options": [
       "Sacral—area between the posterior hips",
-      "Cephalic—head",
       "Nasal—area between the posterior hips"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0545",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing occipital and vertebral? Select all that apply.",
+    "question": "Which location match is correct for occipital and vertebral?",
     "explanation": "Occipital denotes the back of the head; vertebral denotes the spinal column region.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12370,20 +12136,18 @@
       "kind": "slide"
     },
     "options": [
-      "Occipital—back of the head",
       "Vertebral—spinal column region",
       "Oral—back of the head"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0546",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing vertebral and scapular? Select all that apply.",
+    "question": "Which location match is correct for vertebral and scapular?",
     "explanation": "Vertebral denotes the spinal column region; scapular denotes the shoulder-blade region.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12395,19 +12159,17 @@
     },
     "options": [
       "Vertebral—spinal column region",
-      "Scapular—shoulder-blade region",
       "Cervical—spinal column region"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0547",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing scapular and occipital? Select all that apply.",
+    "question": "Which location match is correct for scapular and occipital?",
     "explanation": "Scapular denotes the shoulder-blade region; occipital denotes the back of the head.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12418,20 +12180,18 @@
       "kind": "slide"
     },
     "options": [
-      "Scapular—shoulder-blade region",
       "Occipital—back of the head",
       "Axillary—shoulder-blade region"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0548",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing dorsal and gluteal? Select all that apply.",
+    "question": "Which location match is correct for dorsal and gluteal?",
     "explanation": "Dorsal denotes the back; gluteal denotes the buttock.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12443,19 +12203,17 @@
     },
     "options": [
       "Dorsal—back",
-      "Gluteal—buttock",
       "Frontal—back"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0549",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing gluteal and calcaneal? Select all that apply.",
+    "question": "Which location match is correct for gluteal and calcaneal?",
     "explanation": "Gluteal denotes the buttock; calcaneal denotes the heel.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12466,20 +12224,18 @@
       "kind": "slide"
     },
     "options": [
-      "Gluteal—buttock",
       "Calcaneal—heel",
       "Orbital—buttock"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0550",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing calcaneal and dorsal? Select all that apply.",
+    "question": "Which location match is correct for calcaneal and dorsal?",
     "explanation": "Calcaneal denotes the heel; dorsal denotes the back.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12491,19 +12247,17 @@
     },
     "options": [
       "Calcaneal—heel",
-      "Dorsal—back",
       "Buccal—heel"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0551",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing plantar and acromial? Select all that apply.",
+    "question": "Which location match is correct for plantar and acromial?",
     "explanation": "Plantar denotes the sole of the foot; acromial denotes the point of the shoulder.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12514,20 +12268,18 @@
       "kind": "slide"
     },
     "options": [
-      "Plantar—sole of the foot",
       "Acromial—point of the shoulder",
       "Sternal—sole of the foot"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0552",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing acromial and popliteal? Select all that apply.",
+    "question": "Which location match is correct for acromial and popliteal?",
     "explanation": "Acromial denotes the point of the shoulder; popliteal denotes the back of the knee.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12539,19 +12291,17 @@
     },
     "options": [
       "Acromial—point of the shoulder",
-      "Popliteal—back of the knee",
       "Thoracic—point of the shoulder"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "directions-0553",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which location matches are correct in this set containing popliteal and plantar? Select all that apply.",
+    "question": "Which location match is correct for popliteal and plantar?",
     "explanation": "Popliteal denotes the back of the knee; plantar denotes the sole of the foot.",
     "source": {
       "file": "Anatomical Directions Chapter 1.pptx",
@@ -12562,13 +12312,11 @@
       "kind": "slide"
     },
     "options": [
-      "Popliteal—back of the knee",
       "Plantar—sole of the foot",
       "Mammary—back of the knee"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {

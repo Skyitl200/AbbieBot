@@ -26,14 +26,14 @@ const multi = { ...base, id: 'ans-003', type: 'select_all', question: 'Which are
 const order = { ...base, id: 'ans-004', type: 'ordering', question: 'Arrange the efferent pathway from the CNS to the target.',
     options: ['Target organ', 'Preganglionic neuron', 'Postganglionic neuron'], correct: [1, 2, 0] };
 
-test('each question type validates and grades actual answers', () => {
-    for (const q of [mc, blank, multi, order]) validateQuestion(q, topic);
+test('the three supported question types validate and grade actual answers', () => {
+    for (const q of [mc, blank, order]) validateQuestion(q, topic);
     assert.equal(gradeQuestion(mc, [1]), true);
     assert.equal(gradeQuestion(mc, [0]), false);
     assert.equal(gradeQuestion(blank, '  PARASYMPATHETIC   division '), true);
     assert.equal(gradeQuestion(blank, 'sympathetic'), false);
-    assert.equal(gradeQuestion(multi, [3, 0, 1]), true);
-    for (const answer of [[0, 1], [0, 1, 2, 3], [0, 1, 1], [0, 1, 3, 9]]) assert.equal(gradeQuestion(multi, answer), false);
+    assert.throws(() => validateQuestion(multi, topic), /unsupported question type/);
+    for (const answer of [[0, 1], [1, 1], [9]]) assert.equal(gradeQuestion(mc, answer), false);
     assert.equal(gradeQuestion(order, [1, 2, 0]), true);
     assert.equal(gradeQuestion(order, [0, 2, 1]), false);
 });
@@ -107,7 +107,7 @@ test('all 23 topics fit Discord menu and every question UI serializes within lim
     assert.equal(STUDY_TOPICS.length, 23);
     const menu = topicMessage('123', new Map()).components[0].toJSON().components[0];
     assert.equal(menu.options.length, 24);
-    for (const q of [mc, blank, multi, order]) {
+    for (const q of [mc, blank, order]) {
         const session = createStudySession('g', 'u', [q], topic.id);
         const message = questionMessage(session);
         for (const embed of message.embeds) assert.ok(embed.toJSON().description.length <= 4096);
@@ -178,15 +178,15 @@ test('actual banks are valid and their incompleteness is detected', async () => 
     else await loadQuestionBanks(undefined, { complete: true });
 });
 
-test('completed banks each supply 600 different questions in all four formats', async () => {
+test('completed banks each supply 600 different questions in all three formats', async () => {
     const banks = await loadQuestionBanks();
-    for (const topicId of ['anatomical_directions', 'basic_chemistry', 'living_cells', 'tissues', 'integumentary', 'skeletal', 'joints', 'muscular', 'nervous_tissue', 'central_nervous', 'special_senses', 'endocrine', 'blood_cells', 'autonomic_nervous', 'immune', 'urinary']) {
+    for (const topicId of ['anatomical_directions', 'basic_chemistry', 'living_cells', 'tissues', 'integumentary', 'skeletal', 'joints', 'muscular', 'nervous_tissue', 'central_nervous', 'special_senses', 'endocrine', 'blood_cells', 'circulatory', 'autonomic_nervous', 'immune', 'urinary']) {
         const bank = banks.get(topicId);
         assert.equal(bank.length, 600, topicId);
         const selected = selectQuestions(banks, topicId, 600);
         assert.equal(selected.length, 600, topicId);
         assert.equal(new Set(selected.map(question => question.id)).size, 600, topicId);
-        for (const type of ['multiple_choice', 'fill_blank', 'select_all', 'ordering']) assert.ok(selected.some(question => question.type === type), `${topicId}: ${type}`);
+        for (const type of ['multiple_choice', 'fill_blank', 'ordering']) assert.ok(selected.some(question => question.type === type), `${topicId}: ${type}`);
     }
 });
 
@@ -498,7 +498,7 @@ test('Central Nervous System preserves corrected source claims and standard refe
         ['ventricles lie directly upstream', 'The lateral and third ventricles'],
     ];
     for (const [phrase, expected] of checkpoints) {
-        const matching = bank.filter(q => q.type === 'multiple_choice' && q.question.includes(phrase));
+        const matching = bank.filter(q => q.type === 'multiple_choice' && q.question.includes(phrase) && !q.question.endsWith('Which statement fits this situation?'));
         assert.equal(matching.length, 1, phrase);
         const q = matching[0];
         assert.equal(q.options[q.correct[0]], expected, q.id);
@@ -548,7 +548,7 @@ test('Special Senses preserves corrected photoreceptor, fluid, optical, and vest
         ['Which cochlear place-code relationship is correct', 'Higher frequencies favor the base and lower frequencies favor more apical regions'],
     ];
     for (const [phrase, expected] of checkpoints) {
-        const selected = bank.filter(q => q.type === 'multiple_choice' && q.question.includes(phrase));
+        const selected = bank.filter(q => q.type === 'multiple_choice' && q.question.includes(phrase) && !q.question.endsWith('Which statement fits this situation?'));
         assert.equal(selected.length, 1, phrase);
         const q = selected[0];
         assert.equal(q.options[q.correct[0]], expected, q.id);
@@ -598,7 +598,7 @@ test('Endocrine source corrections preserve feedback, synthesis, and regulator d
         ['Which pregnancy-related hormone is associated with connective-tissue remodeling', 'Relaxin'],
     ];
     for (const [phrase, expected] of checkpoints) {
-        const selected = bank.filter(q => q.type === 'multiple_choice' && q.question.includes(phrase));
+        const selected = bank.filter(q => q.type === 'multiple_choice' && q.question.includes(phrase) && !q.question.endsWith('Which statement fits this situation?'));
         assert.equal(selected.length, 1, phrase);
         const q = selected[0];
         assert.equal(q.options[q.correct[0]], expected, q.id);
@@ -672,7 +672,7 @@ test('Blood Cells typing and corrected source facts preserve component-specific 
         ['Which factor deficiency defines the usual inherited hemophilia A model', 'Factor VIII deficiency'],
     ];
     for (const [phrase, expected] of checkpoints) {
-        const selected = bank.filter(q => q.type === 'multiple_choice' && q.question.includes(phrase));
+        const selected = bank.filter(q => q.type === 'multiple_choice' && q.question.includes(phrase) && !q.question.endsWith('Which statement fits this situation?'));
         assert.equal(selected.length, 1, phrase);
         const q = selected[0];
         assert.equal(q.options[q.correct[0]], expected, q.id);
@@ -805,12 +805,11 @@ function walletFixture(initial = 3387) {
 
 test('every question format earns ten coins once and displays the wallet and progress', async () => {
     const wallet = walletFixture();
-    for (const q of [mc, blank, multi, order]) {
+    for (const q of [mc, blank, order]) {
         const session = createStudySession('g', 'u', [q], topic.id);
         let action; let extras = {}; let choice;
         if (q.type === 'multiple_choice') { action = 'choice'; choice = String(q.correct[0]); }
         else if (q.type === 'fill_blank') { action = 'typed'; extras.fields = { getTextInputValue: () => q.answers[0] }; }
-        else if (q.type === 'select_all') { action = 'multi'; extras.values = q.correct.map(String); }
         else { action = 'ordered'; q.correct.forEach(value => chooseOrderItem(session, value)); }
         const args = [action, 'u', session.id, '0', String(session.revision), choice];
         const interaction = fakeInteraction('', extras);
@@ -825,8 +824,8 @@ test('every question format earns ten coins once and displays the wallet and pro
         assert.match(message.description, /New Balance/);
         assert.ok(message.fields.some(field => field.name === 'Quiz Progress' && /Incorrect: \*\*0/.test(field.value)));
     }
-    assert.equal(wallet.balance(), 3427);
-    assert.equal(wallet.writes(), 4);
+    assert.equal(wallet.balance(), 3417);
+    assert.equal(wallet.writes(), 3);
     assert.equal(wallet.data().bank, 500);
     assert.equal(wallet.data().inventory.book, 2);
 });
@@ -901,4 +900,60 @@ test('database fallback never reports persistent coins and DM practice can still
     await settleStudyReward(dm, wallet.client);
     nextStudyQuestion(dm);
     assert.equal(dm.index, 1);
+});
+
+
+test('all authored banks use only the three active formats with no select-all instructions', async () => {
+    const banks = await loadQuestionBanks();
+    for (const [id, questions] of banks) for (const q of questions) {
+        assert.ok(['multiple_choice', 'fill_blank', 'ordering'].includes(q.type), q.id);
+        assert.doesNotMatch(q.question, /select all that apply|select both correct|select every correct/i, q.id);
+        if (q.type === 'multiple_choice') assert.equal(q.correct.length, 1, q.id);
+    }
+    await assert.rejects(async () => validateQuestion(multi, topic), /unsupported question type/);
+});
+
+test('introductory Circulatory sequence keys match flow, conduction, and wall reference models', async () => {
+    const bank = (await loadQuestionBanks()).get('circulatory');
+    assert.equal(bank.length, 600);
+    assert.ok(bank.every(q => ['easy', 'medium'].includes(q.difficulty)));
+    assert.ok(bank.filter(q => q.type === 'ordering').every(q => q.options.length >= 3 && q.options.length <= 5));
+    const references = [
+        ['blood flow from body veins to lung capillaries', ['Vena cava', 'Right atrium', 'Tricuspid valve', 'Right ventricle', 'Pulmonary valve', 'Pulmonary trunk', 'Pulmonary artery', 'Lung capillaries'], 28],
+        ['blood flow from the pulmonary veins toward body tissues', ['Pulmonary vein', 'Left atrium', 'Mitral valve', 'Left ventricle', 'Aortic valve', 'Aorta', 'Systemic capillaries'], 21],
+        ['normal cardiac conduction route', ['SA node', 'AV node', 'AV bundle', 'Bundle branches', 'Purkinje fibers'], 10],
+        ['one simple cardiac-cycle model beginning with ventricular filling', ['Ventricular filling', 'Atrial systole', 'Isovolumetric contraction', 'Ventricular ejection', 'Isovolumetric relaxation'], 10],
+        ['heart-wall structures from outside toward the chamber lining', ['Pericardial cavity', 'Epicardium', 'Myocardium', 'Endocardium'], 6],
+    ];
+    let checked = 0;
+    for (const [phrase, reference, count] of references) {
+        const selected = bank.filter(q => q.question.includes(phrase));
+        assert.equal(selected.length, count, phrase);
+        for (const q of selected) {
+            const ranks = q.options.map(option => reference.indexOf(option));
+            assert.ok(ranks.every(rank => rank >= 0), q.id);
+            if (q.type === 'ordering') assert.deepEqual(q.correct.map(index => ranks[index]), [...ranks].sort((a, b) => a - b), q.id);
+            else assert.equal(ranks[q.correct[0]], Math.min(...ranks), q.id);
+            checked++;
+        }
+    }
+    assert.equal(checked, 75);
+});
+
+test('introductory Circulatory arithmetic supplies formulas and has independently correct keys', async () => {
+    const bank = (await loadQuestionBanks()).get('circulatory');
+    const output = bank.filter(q => q.question.startsWith('Cardiac output ='));
+    assert.equal(output.length, 5);
+    for (const q of output) {
+        const match = q.question.match(/heart rate is (\d+) beats\/min and stroke volume is (\d+) mL\/beat/);
+        assert.ok(match, q.id);
+        assert.equal(q.options[q.correct[0]], `${Number(match[1]) * Number(match[2])} mL/min`, q.id);
+    }
+    const stroke = bank.filter(q => q.question.startsWith('Stroke volume ='));
+    assert.equal(stroke.length, 3);
+    for (const q of stroke) {
+        const match = q.question.match(/volumes are (\d+) mL and (\d+) mL/);
+        assert.ok(match, q.id);
+        assert.equal(q.options[q.correct[0]], `${Number(match[1]) - Number(match[2])} mL/beat`, q.id);
+    }
 });

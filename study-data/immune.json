@@ -2193,9 +2193,9 @@
   },
   {
     "id": "immune-0105",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are major components of immune defense? Select all that apply.",
+    "question": "Which is one of the major components of immune defense?",
     "explanation": "Barrier, innate, and adaptive mechanisms form cooperating layers of defense.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2206,21 +2206,17 @@
     },
     "options": [
       "Barrier defenses",
-      "Innate responses",
-      "Adaptive responses",
       "Ureteral filtration"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0106",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which features contribute to skin or mucosal barrier protection? Select all that apply.",
+    "question": "Which feature contributes to skin or mucosal barrier protection?",
     "explanation": "Physical and chemical features of body surfaces help prevent pathogen establishment.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2230,22 +2226,18 @@
       "kind": "slide"
     },
     "options": [
-      "Keratinized skin layers",
       "Mucus trapping of debris",
-      "Surface secretions that hinder microbes",
       "Absence of all epithelial tissue"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0107",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about innate defense are correct? Select all that apply.",
+    "question": "Which statement about innate defense is correct?",
     "explanation": "Innate defenses act early and coordinate with adaptive mechanisms.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2256,22 +2248,18 @@
       "kind": "slide"
     },
     "options": [
-      "It can act rapidly",
-      "It can alert adaptive immune cells",
       "It can act against pathogens also targeted by adaptive immunity",
       "It must wait for a second exposure to act"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0108",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are major phagocytic immune cells? Select all that apply.",
+    "question": "Which is one of the major phagocytic immune cells?",
     "explanation": "These immune cells can ingest pathogens or material; mature erythrocytes are not phagocytes.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2282,21 +2270,17 @@
     },
     "options": [
       "Macrophages",
-      "Neutrophils",
-      "Dendritic cells",
       "Mature erythrocytes"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0109",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about NK-cell granule-mediated killing are correct? Select all that apply.",
+    "question": "Which statement about NK-cell granule-mediated killing is correct?",
     "explanation": "NK cells use cytotoxic mechanisms without differentiating into antibody-secreting plasma cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2306,22 +2290,18 @@
       "kind": "slide"
     },
     "options": [
-      "Perforin helps form membrane pores",
       "Granzymes help activate apoptosis",
-      "The target can undergo programmed cell death",
       "NK cells must first become plasma cells"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0110",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are beneficial functions of an appropriate inflammatory response? Select all that apply.",
+    "question": "Which is one of the beneficial functions of an appropriate inflammatory response?",
     "explanation": "Inflammation supports defense and repair, although excessive inflammation can cause injury.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2331,22 +2311,18 @@
       "kind": "slide"
     },
     "options": [
-      "Recruiting phagocytic cells",
-      "Helping clear damaged tissue",
       "Helping limit pathogen spread",
       "Guaranteeing that no tissue damage can ever occur"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0111",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which can be associated with persistent inflammation? Select all that apply.",
+    "question": "Which can be associated with persistent inflammation?",
     "explanation": "Chronic inflammation can persist when a stimulus or inappropriate immune activation remains.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2357,21 +2333,17 @@
     },
     "options": [
       "Persistent pathogens",
-      "Foreign material",
-      "Autoimmune disease",
       "A requirement that every response resolve within minutes"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0112",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are soluble mediators associated with innate immunity? Select all that apply.",
+    "question": "Which is one of the soluble mediators associated with innate immunity?",
     "explanation": "These soluble mediators coordinate or execute innate defense functions.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2381,22 +2353,18 @@
       "kind": "slide"
     },
     "options": [
-      "Cytokines",
       "Interferons",
-      "Complement proteins",
       "Erythrocyte nuclei"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0113",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements describe a secondary adaptive response? Select all that apply.",
+    "question": "Which statement describes a secondary adaptive response?",
     "explanation": "Memory supports a faster and often stronger antigen-specific response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2406,22 +2374,18 @@
       "kind": "slide"
     },
     "options": [
-      "It follows previous exposure to the relevant antigen",
-      "It benefits from memory cells",
       "It is generally faster than a primary response",
       "It is always weaker than the primary response"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0114",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which can serve as antigens? Select all that apply.",
+    "question": "Which can serve as antigens?",
     "explanation": "Antigens can be surface-associated or soluble molecular structures.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2432,21 +2396,17 @@
     },
     "options": [
       "Molecules on a microbial surface",
-      "Soluble proteins",
-      "Toxins",
       "Only whole living bacteria and nothing else"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0115",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are professional antigen-presenting cells? Select all that apply.",
+    "question": "Which is one of the professional antigen-presenting cells?",
     "explanation": "Dendritic cells, macrophages, and B cells can perform professional antigen presentation.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2456,22 +2416,18 @@
       "kind": "slide"
     },
     "options": [
-      "Dendritic cells",
       "Macrophages",
-      "B cells",
       "Mature erythrocytes"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0116",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which lymphocyte maturation statements are correct? Select all that apply.",
+    "question": "Which lymphocyte maturation statement is correct?",
     "explanation": "B and T cells share a hematopoietic origin but differ in their major maturation sites.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2481,22 +2437,18 @@
       "kind": "slide"
     },
     "options": [
-      "B cells mature in bone marrow",
-      "T cells mature in thymus",
       "Both lineages originate from bone-marrow precursors",
       "Both lineages mature in the urinary bladder"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0117",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are recognized functional T-cell subtypes? Select all that apply.",
+    "question": "Which is one of the recognized functional T-cell subtypes?",
     "explanation": "Helper, cytotoxic, and regulatory T cells have different adaptive functions.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2507,21 +2459,17 @@
     },
     "options": [
       "Helper T cells",
-      "Cytotoxic T cells",
-      "Regulatory T cells",
       "Antibody-secreting plasma T cells"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0118",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which lymphocyte-marker associations are correct? Select all that apply.",
+    "question": "Which lymphocyte-marker associations are correct?",
     "explanation": "Conventional helper and cytotoxic T-cell subsets differ in their CD4 and CD8 coreceptors.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2533,20 +2481,18 @@
     },
     "options": [
       "CD8—conventional cytotoxic T cells",
-      "CD4—conventional helper T cells",
       "CD4—every erythrocyte",
       "IgE—the defining conventional cytotoxic T-cell coreceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0119",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which can be targets of cytotoxic T-cell responses? Select all that apply.",
+    "question": "Which can be targets of cytotoxic T-cell response?",
     "explanation": "Cytotoxic responses act against target cells recognized through relevant antigenic signals.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2556,22 +2502,18 @@
       "kind": "slide"
     },
     "options": [
-      "Virus-infected cells displaying a relevant antigen",
-      "Tumor cells displaying a relevant antigen",
       "Foreign transplant cells displaying relevant alloantigens",
       "Free sodium ions"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0120",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about helper T cells are correct? Select all that apply.",
+    "question": "Which statement about helper T cells is correct?",
     "explanation": "Helper T cells coordinate adaptive responses through antigen recognition and signaling.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2582,21 +2524,17 @@
     },
     "options": [
       "They conventionally express CD4",
-      "They recognize peptide-MHC II complexes",
-      "They release cytokines that support other immune cells",
       "They are the main antibody-secreting plasma cells"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0121",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about B-cell antigen recognition are correct? Select all that apply.",
+    "question": "Which statement about B-cell antigen recognition is correct?",
     "explanation": "B-cell antigen recognition differs from conventional T-cell peptide-MHC recognition.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2606,21 +2544,19 @@
       "kind": "slide"
     },
     "options": [
-      "B-cell receptors can bind native antigen",
       "Recognition does not require that antigen first be bound to MHC",
       "B cells recognize only peptide-MHC I complexes",
       "B cells never participate in adaptive immunity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0122",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe IgM and IgG? Select all that apply.",
+    "question": "Which statement about IgM and IgG is correct?",
     "explanation": "IgM and IgG differ in structure, timing, and placental transport.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2631,22 +2567,18 @@
       "kind": "slide"
     },
     "options": [
-      "IgM is commonly an early primary-response antibody",
-      "Secreted IgM is commonly pentameric",
       "IgG can cross the placenta",
       "IgM is the principal antibody transferred across the placenta"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0123",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which immunoglobulin-function pairings are correct? Select all that apply.",
+    "question": "Which immunoglobulin-function pairing is correct?",
     "explanation": "Different immunoglobulin classes have characteristic distribution and functions.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2659,21 +2591,17 @@
     },
     "options": [
       "IgG—placental transfer",
-      "IgA—mucosal protection",
-      "IgE—immediate allergic responses",
       "IgD—the main placental-transfer antibody"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0124",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which cell types can arise from an activated B-cell response? Select all that apply.",
+    "question": "Which cell types can arise from an activated B-cell response?",
     "explanation": "Activated B-cell responses can generate antibody-secreting and memory populations.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2684,20 +2612,18 @@
     },
     "options": [
       "Plasma cells",
-      "Memory B cells",
       "Mature erythrocytes",
       "Skeletal muscle fibers"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0125",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which examples represent active immunity? Select all that apply.",
+    "question": "Which example represent active immunity?",
     "explanation": "Active immunity involves the recipient’s own adaptive response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2708,21 +2634,19 @@
       "kind": "slide"
     },
     "options": [
-      "The recipient’s response after infection",
       "The recipient’s response to vaccination",
       "Maternal IgG crossing the placenta",
       "Administration of ready-made antibodies"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0126",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which examples represent passive immunity? Select all that apply.",
+    "question": "Which example represent passive immunity?",
     "explanation": "Passive immunity transfers preformed antibodies rather than creating protection through the recipient’s own response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2733,21 +2657,17 @@
     },
     "options": [
       "Maternal antibodies crossing the placenta",
-      "Antibodies transferred in breast milk",
-      "Administered immunoglobulin",
       "A vaccine-induced recipient memory response"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0127",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements describe passive antibody protection? Select all that apply.",
+    "question": "Which statement describes passive antibody protection?",
     "explanation": "Passive protection is provided by transferred antibodies and does not itself generate recipient memory.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2757,21 +2677,19 @@
       "kind": "slide"
     },
     "options": [
-      "It can provide protection without waiting for the recipient to make antibodies",
       "Its duration is limited as transferred antibodies decline",
       "It necessarily produces durable recipient memory",
       "It is always a form of natural infection"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0128",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about HIV-associated immune deficiency are correct? Select all that apply.",
+    "question": "Which statement about HIV-associated immune deficiency is correct?",
     "explanation": "HIV can damage immune coordination by infecting susceptible CD4-bearing cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2782,20 +2700,18 @@
     },
     "options": [
       "HIV can infect CD4-bearing helper T cells",
-      "Loss of helper T-cell function impairs immune coordination",
       "HIV is an immunoglobulin class",
       "HIV is a normal complement protein"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0129",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which distinctions between autoimmunity and hypersensitivity are correct? Select all that apply.",
+    "question": "Which distinctions between autoimmunity and hypersensitivity are correct?",
     "explanation": "These terms describe different ways immune activity can contribute to disease.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -2806,14 +2722,12 @@
       "kind": "slide"
     },
     "options": [
-      "Autoimmunity involves reactivity to self-components",
       "Hypersensitivity involves harmful or inappropriate immune reactions",
       "Autoimmunity means every response to a microbe",
       "Hypersensitivity means total absence of immunity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3632,9 +3546,9 @@
   },
   {
     "id": "immune-0161",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about physical barrier are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about physical barrier is correct?",
     "explanation": "Physical barrier: a body-surface structure that limits pathogen entry. Intact keratinized skin is one example",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -3645,13 +3559,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Physical barrier: a body-surface structure that limits pathogen entry. Intact keratinized skin is one example"
     },
     "options": [
-      "A body-surface structure that limits pathogen entry",
       "Intact keratinized skin is one example",
       "It requires a prior adaptive response to the same pathogen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3698,9 +3610,9 @@
   },
   {
     "id": "immune-0164",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about mucociliary clearance are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about mucociliary clearance is correct?",
     "explanation": "Mucociliary clearance: movement of mucus-trapped material out of parts of the respiratory tract. It links mucus trapping with coordinated ciliary movement",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -3712,12 +3624,10 @@
     },
     "options": [
       "Movement of mucus-trapped material out of parts of the respiratory tract",
-      "It links mucus trapping with coordinated ciliary movement",
       "It is antibody transfer across the placenta"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3764,9 +3674,9 @@
   },
   {
     "id": "immune-0167",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about pattern-recognition receptor are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about pattern-recognition receptor is correct?",
     "explanation": "Pattern-recognition receptor: an innate receptor that detects conserved microbial or damage-associated patterns. It differs from a clonally unique antigen-specific B-cell receptor",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -3777,13 +3687,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Pattern-recognition receptor: an innate receptor that detects conserved microbial or damage-associated patterns. It differs from a clonally unique antigen-specific B-cell receptor"
     },
     "options": [
-      "An innate receptor that detects conserved microbial or damage-associated patterns",
       "It differs from a clonally unique antigen-specific B-cell receptor",
       "It is a type of erythrocyte oxygen carrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3830,9 +3738,9 @@
   },
   {
     "id": "immune-0170",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about pathogen-associated molecular pattern are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about pathogen-associated molecular pattern is correct?",
     "explanation": "Pathogen-associated molecular pattern: a recurring microbial feature recognized by innate defenses. Such patterns can help initiate innate responses",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -3844,12 +3752,10 @@
     },
     "options": [
       "A recurring microbial feature recognized by innate defenses",
-      "Such patterns can help initiate innate responses",
       "It is the same as a normal physiological set point"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3896,9 +3802,9 @@
   },
   {
     "id": "immune-0173",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about damage-associated molecular pattern are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about damage-associated molecular pattern is correct?",
     "explanation": "Damage-associated molecular pattern: a signal from damaged host tissue that can activate innate defenses. It helps explain inflammation without a microbial infection",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -3909,13 +3815,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Damage-associated molecular pattern: a signal from damaged host tissue that can activate innate defenses. It helps explain inflammation without a microbial infection"
     },
     "options": [
-      "A signal from damaged host tissue that can activate innate defenses",
       "It helps explain inflammation without a microbial infection",
       "It must always be a secreted antibody"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3962,9 +3866,9 @@
   },
   {
     "id": "immune-0176",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about chemokine are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about chemokine is correct?",
     "explanation": "Chemokine: a cytokine that helps direct cell migration. It can provide directional cues for leukocyte recruitment",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -3976,12 +3880,10 @@
     },
     "options": [
       "A cytokine that helps direct cell migration",
-      "It can provide directional cues for leukocyte recruitment",
       "It is the pigment carrying oxygen in erythrocytes"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4028,9 +3930,9 @@
   },
   {
     "id": "immune-0179",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about diapedesis are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about diapedesis is correct?",
     "explanation": "Diapedesis: passage of leukocytes through a vessel wall into tissue. It contributes to recruitment of blood leukocytes to inflamed sites",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4041,13 +3943,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Diapedesis: passage of leukocytes through a vessel wall into tissue. It contributes to recruitment of blood leukocytes to inflamed sites"
     },
     "options": [
-      "Passage of leukocytes through a vessel wall into tissue",
       "It contributes to recruitment of blood leukocytes to inflamed sites",
       "It means antibody transport across the placenta"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4095,9 +3995,9 @@
   },
   {
     "id": "immune-0182",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about vasodilation are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about vasodilation is correct?",
     "explanation": "Vasodilation: widening of blood vessels. It can increase blood delivery to an inflamed area",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4109,12 +4009,10 @@
     },
     "options": [
       "Widening of blood vessels",
-      "It can increase blood delivery to an inflamed area",
       "It means narrowing of every vessel in an injured region"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4161,9 +4059,9 @@
   },
   {
     "id": "immune-0185",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about increased vascular permeability are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about increased vascular permeability is correct?",
     "explanation": "Increased vascular permeability: greater movement of fluid and proteins across a vessel wall. It can contribute to local inflammatory swelling",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4174,13 +4072,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Increased vascular permeability: greater movement of fluid and proteins across a vessel wall. It can contribute to local inflammatory swelling"
     },
     "options": [
-      "Greater movement of fluid and proteins across a vessel wall",
       "It can contribute to local inflammatory swelling",
       "It is the formation of antigen-specific memory by itself"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4227,9 +4123,9 @@
   },
   {
     "id": "immune-0188",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about phagolysosome are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about phagolysosome is correct?",
     "explanation": "Phagolysosome: the compartment formed when a phagosome fuses with lysosomal contents. It supports degradation of engulfed material",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4241,12 +4137,10 @@
     },
     "options": [
       "The compartment formed when a phagosome fuses with lysosomal contents",
-      "It supports degradation of engulfed material",
       "It is a circulating antibody class"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4293,9 +4187,9 @@
   },
   {
     "id": "immune-0191",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about opsonization are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about opsonization is correct?",
     "explanation": "Opsonization: coating a target to enhance its recognition by phagocytes. Antibodies or complement components can provide opsonins",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4306,13 +4200,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Opsonization: coating a target to enhance its recognition by phagocytes. Antibodies or complement components can provide opsonins"
     },
     "options": [
-      "Coating a target to enhance its recognition by phagocytes",
       "Antibodies or complement components can provide opsonins",
       "It means storage of immune memory in erythrocytes"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4359,9 +4251,9 @@
   },
   {
     "id": "immune-0194",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about neutralization are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about neutralization is correct?",
     "explanation": "Neutralization: blocking a pathogen or toxin through antibody binding. It can prevent a target from interacting effectively with host cells",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4373,12 +4265,10 @@
     },
     "options": [
       "Blocking a pathogen or toxin through antibody binding",
-      "It can prevent a target from interacting effectively with host cells",
       "It requires every antibody to enter the target cell nucleus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4425,9 +4315,9 @@
   },
   {
     "id": "immune-0197",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about agglutination are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about agglutination is correct in immune defenses?",
     "explanation": "Agglutination: clumping particulate targets through antibody-mediated cross-linking. It is distinct from simply blocking one binding interaction",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4438,13 +4328,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Agglutination: clumping particulate targets through antibody-mediated cross-linking. It is distinct from simply blocking one binding interaction"
     },
     "options": [
-      "Clumping particulate targets through antibody-mediated cross-linking",
       "It is distinct from simply blocking one binding interaction",
       "It means differentiation of every T cell into a plasma cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4491,9 +4379,9 @@
   },
   {
     "id": "immune-0200",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about complement membrane attack complex are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about complement membrane attack complex is correct?",
     "explanation": "Complement membrane attack complex: a terminal complement assembly capable of damaging susceptible membranes. It can form pores in susceptible target membranes",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4505,12 +4393,10 @@
     },
     "options": [
       "A terminal complement assembly capable of damaging susceptible membranes",
-      "It can form pores in susceptible target membranes",
       "It is a group of antibody-producing B cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4557,9 +4443,9 @@
   },
   {
     "id": "immune-0203",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about c3b are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about c3b is correct?",
     "explanation": "C3b: a complement fragment that can coat targets for phagocytic recognition. It participates in opsonization",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4570,13 +4456,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: C3b: a complement fragment that can coat targets for phagocytic recognition. It participates in opsonization"
     },
     "options": [
-      "A complement fragment that can coat targets for phagocytic recognition",
       "It participates in opsonization",
       "It is the same molecule as a T-cell CD4 coreceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4623,9 +4507,9 @@
   },
   {
     "id": "immune-0206",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about c5a are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about c5a is correct?",
     "explanation": "C5a: a complement fragment that strongly supports inflammatory recruitment. It can act as a chemoattractant",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4637,12 +4521,10 @@
     },
     "options": [
       "A complement fragment that strongly supports inflammatory recruitment",
-      "It can act as a chemoattractant",
       "It is a pentameric immunoglobulin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4689,9 +4571,9 @@
   },
   {
     "id": "immune-0209",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about type i interferon are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about type i interferon is correct?",
     "explanation": "Type I interferon: an interferon group important in antiviral signaling. It can induce antiviral gene expression in neighboring cells",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4702,13 +4584,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Type I interferon: an interferon group important in antiviral signaling. It can induce antiviral gene expression in neighboring cells"
     },
     "options": [
-      "An interferon group important in antiviral signaling",
       "It can induce antiviral gene expression in neighboring cells",
       "It is produced only after a secondary antibody response"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4756,9 +4636,9 @@
   },
   {
     "id": "immune-0212",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about naive lymphocyte are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about naive lymphocyte is correct?",
     "explanation": "Naive lymphocyte: a mature lymphocyte that has not yet been activated by its relevant antigen. Naive does not mean structurally immature",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4770,12 +4650,10 @@
     },
     "options": [
       "A mature lymphocyte that has not yet been activated by its relevant antigen",
-      "Naive does not mean structurally immature",
       "It is already the same as a fully differentiated antibody-secreting plasma cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4823,9 +4701,9 @@
   },
   {
     "id": "immune-0215",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about memory lymphocyte are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about memory lymphocyte is correct?",
     "explanation": "Memory lymphocyte: a long-lived antigen-experienced cell supporting a later response. It helps accelerate responses to subsequent encounters",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4836,13 +4714,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Memory lymphocyte: a long-lived antigen-experienced cell supporting a later response. It helps accelerate responses to subsequent encounters"
     },
     "options": [
-      "A long-lived antigen-experienced cell supporting a later response",
       "It helps accelerate responses to subsequent encounters",
       "It is a red blood cell that stores antibodies"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4889,9 +4765,9 @@
   },
   {
     "id": "immune-0218",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about clonal selection are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about clonal selection is correct?",
     "explanation": "Clonal selection: preferential activation of lymphocytes whose receptors match the antigen. It links antigen recognition with expansion of selected clones",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4903,12 +4779,10 @@
     },
     "options": [
       "Preferential activation of lymphocytes whose receptors match the antigen",
-      "It links antigen recognition with expansion of selected clones",
       "It means every lymphocyte must recognize all antigens equally"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4955,9 +4829,9 @@
   },
   {
     "id": "immune-0221",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about clonal expansion are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about clonal expansion is correct?",
     "explanation": "Clonal expansion: proliferation of activated antigen-responsive lymphocytes. It increases the number of cells with relevant specificity",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -4968,13 +4842,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Clonal expansion: proliferation of activated antigen-responsive lymphocytes. It increases the number of cells with relevant specificity"
     },
     "options": [
-      "Proliferation of activated antigen-responsive lymphocytes",
       "It increases the number of cells with relevant specificity",
       "It is the passive movement of maternal antibodies"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5021,9 +4893,9 @@
   },
   {
     "id": "immune-0224",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about epitope are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about epitope is correct?",
     "explanation": "Epitope: the specific antigenic region recognized by an immune receptor. One complex antigen can contain multiple epitopes",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5035,12 +4907,10 @@
     },
     "options": [
       "The specific antigenic region recognized by an immune receptor",
-      "One complex antigen can contain multiple epitopes",
       "It is an entire primary lymphoid organ"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5087,9 +4957,9 @@
   },
   {
     "id": "immune-0227",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about antigen specificity are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about antigen specificity is correct?",
     "explanation": "Antigen specificity: preferential recognition of a particular antigenic feature. It depends on the molecular fit of receptors and their targets",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5100,13 +4970,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Antigen specificity: preferential recognition of a particular antigenic feature. It depends on the molecular fit of receptors and their targets"
     },
     "options": [
-      "Preferential recognition of a particular antigenic feature",
       "It depends on the molecular fit of receptors and their targets",
       "It means every antibody binds all molecules identically"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5153,9 +5021,9 @@
   },
   {
     "id": "immune-0230",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about antigen processing are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about antigen processing is correct?",
     "explanation": "Antigen processing: breakdown of antigen into material suitable for presentation. Peptides can then be displayed on MHC molecules",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5167,12 +5035,10 @@
     },
     "options": [
       "Breakdown of antigen into material suitable for presentation",
-      "Peptides can then be displayed on MHC molecules",
       "It means an APC must secrete a complete antibody molecule"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5219,9 +5085,9 @@
   },
   {
     "id": "immune-0233",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about mhc restriction are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about mhc restriction is correct?",
     "explanation": "MHC restriction: recognition of antigen in the context of an appropriate MHC molecule by conventional T cells. It helps distinguish conventional T-cell recognition from B-cell recognition",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5232,13 +5098,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: MHC restriction: recognition of antigen in the context of an appropriate MHC molecule by conventional T cells. It helps distinguish conventional T-cell recognition from B-cell recognition"
     },
     "options": [
-      "Recognition of antigen in the context of an appropriate MHC molecule by conventional T cells",
       "It helps distinguish conventional T-cell recognition from B-cell recognition",
       "It means B cells can bind only peptide–MHC complexes"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5285,9 +5149,9 @@
   },
   {
     "id": "immune-0236",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about mhc class i are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about mhc class i is correct?",
     "explanation": "MHC class I: the antigen-presenting class recognized by conventional CD8 T cells. It is expressed by nearly all nucleated cells",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5299,12 +5163,10 @@
     },
     "options": [
       "The antigen-presenting class recognized by conventional CD8 T cells",
-      "It is expressed by nearly all nucleated cells",
       "It is normally the restriction element for conventional CD4 helper T cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5352,9 +5214,9 @@
   },
   {
     "id": "immune-0239",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about mhc class ii are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about mhc class ii is correct?",
     "explanation": "MHC class II: the antigen-presenting class recognized by conventional CD4 helper T cells. Professional APCs express it",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5365,13 +5227,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: MHC class II: the antigen-presenting class recognized by conventional CD4 helper T cells. Professional APCs express it"
     },
     "options": [
-      "The antigen-presenting class recognized by conventional CD4 helper T cells",
       "Professional APCs express it",
       "It is the main oxygen carrier in a mature erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5419,9 +5279,9 @@
   },
   {
     "id": "immune-0242",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about cross-presentation are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about cross-presentation is correct?",
     "explanation": "Cross-presentation: presentation of acquired extracellular antigen through MHC class I by certain APCs. It can help initiate CD8 responses to material taken up from outside the APC",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5433,12 +5293,10 @@
     },
     "options": [
       "Presentation of acquired extracellular antigen through MHC class I by certain APCs",
-      "It can help initiate CD8 responses to material taken up from outside the APC",
       "It is the same as maternal antibody transfer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5486,9 +5344,9 @@
   },
   {
     "id": "immune-0245",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about costimulation are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about costimulation is correct?",
     "explanation": "Costimulation: an additional activation signal accompanying antigen recognition. It contributes to appropriate activation of many naive T cells",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5499,13 +5357,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Costimulation: an additional activation signal accompanying antigen recognition. It contributes to appropriate activation of many naive T cells"
     },
     "options": [
-      "An additional activation signal accompanying antigen recognition",
       "It contributes to appropriate activation of many naive T cells",
       "It means that a T cell has no antigen receptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5553,9 +5409,9 @@
   },
   {
     "id": "immune-0248",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about regulatory t cell are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about regulatory t cell is correct?",
     "explanation": "Regulatory T cell: a T-cell subset that limits inappropriate or excessive immune activity. It supports peripheral immune tolerance",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5567,12 +5423,10 @@
     },
     "options": [
       "A T-cell subset that limits inappropriate or excessive immune activity",
-      "It supports peripheral immune tolerance",
       "It is the main cell that secretes all IgG in blood"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5619,9 +5473,9 @@
   },
   {
     "id": "immune-0251",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about central tolerance are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about central tolerance is correct?",
     "explanation": "Central tolerance: selection processes in primary lymphoid organs that limit self-reactive lymphocytes. Thymic T-cell selection contributes to this protection",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5632,13 +5486,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Central tolerance: selection processes in primary lymphoid organs that limit self-reactive lymphocytes. Thymic T-cell selection contributes to this protection"
     },
     "options": [
-      "Selection processes in primary lymphoid organs that limit self-reactive lymphocytes",
       "Thymic T-cell selection contributes to this protection",
       "It refers only to antibody transfer into milk"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5685,9 +5537,9 @@
   },
   {
     "id": "immune-0254",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about peripheral tolerance are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about peripheral tolerance is correct?",
     "explanation": "Peripheral tolerance: mechanisms outside primary lymphoid organs that restrain self-reactive immune cells. Regulatory T cells contribute to it",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5699,12 +5551,10 @@
     },
     "options": [
       "Mechanisms outside primary lymphoid organs that restrain self-reactive immune cells",
-      "Regulatory T cells contribute to it",
       "It means every mature lymphocyte must attack normal self-tissue"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5751,9 +5601,9 @@
   },
   {
     "id": "immune-0257",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about antibody heavy chain are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about antibody heavy chain is correct?",
     "explanation": "Antibody heavy chain: the polypeptide-chain type whose constant region determines immunoglobulin class. It contributes to class-dependent effector functions",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5764,13 +5614,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Antibody heavy chain: the polypeptide-chain type whose constant region determines immunoglobulin class. It contributes to class-dependent effector functions"
     },
     "options": [
-      "The polypeptide-chain type whose constant region determines immunoglobulin class",
       "It contributes to class-dependent effector functions",
       "It is the small sugar attached to every antigen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5817,9 +5665,9 @@
   },
   {
     "id": "immune-0260",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about antibody variable region are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about antibody variable region is correct?",
     "explanation": "Antibody variable region: the antibody region contributing to antigen-binding specificity. It includes variable portions of heavy and light chains",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5831,12 +5679,10 @@
     },
     "options": [
       "The antibody region contributing to antigen-binding specificity",
-      "It includes variable portions of heavy and light chains",
       "It is identical in sequence across every antibody specificity"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5883,9 +5729,9 @@
   },
   {
     "id": "immune-0263",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about fc region are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about fc region is correct?",
     "explanation": "Fc region: the antibody region involved in interactions with immune effector systems. It can participate in binding appropriate Fc receptors",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5896,13 +5742,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Fc region: the antibody region involved in interactions with immune effector systems. It can participate in binding appropriate Fc receptors"
     },
     "options": [
-      "The antibody region involved in interactions with immune effector systems",
       "It can participate in binding appropriate Fc receptors",
       "It is the antigenic epitope on a bacterium"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5949,9 +5793,9 @@
   },
   {
     "id": "immune-0266",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about t-dependent b-cell response are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about t-dependent b-cell response is correct?",
     "explanation": "T-dependent B-cell response: a B-cell response supported by cognate helper T-cell signals. Protein antigens commonly elicit this type of response",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -5963,12 +5807,10 @@
     },
     "options": [
       "A B-cell response supported by cognate helper T-cell signals",
-      "Protein antigens commonly elicit this type of response",
       "It is defined by complete absence of helper T-cell participation"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6015,9 +5857,9 @@
   },
   {
     "id": "immune-0269",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about class switching are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about class switching is correct?",
     "explanation": "Class switching: a change in antibody heavy-chain constant region without necessarily changing antigen specificity. It changes isotype-related effector function",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6028,13 +5870,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Class switching: a change in antibody heavy-chain constant region without necessarily changing antigen specificity. It changes isotype-related effector function"
     },
     "options": [
-      "A change in antibody heavy-chain constant region without necessarily changing antigen specificity",
       "It changes isotype-related effector function",
       "It always requires the receptor to target an unrelated antigen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6081,9 +5921,9 @@
   },
   {
     "id": "immune-0272",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about affinity maturation are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about affinity maturation is correct?",
     "explanation": "Affinity maturation: selection that improves the average binding affinity of an antibody response. It contributes to higher-quality responses after antigen experience",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6095,12 +5935,10 @@
     },
     "options": [
       "Selection that improves the average binding affinity of an antibody response",
-      "It contributes to higher-quality responses after antigen experience",
       "It means an antibody must become an erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6147,9 +5985,9 @@
   },
   {
     "id": "immune-0275",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about vaccine booster are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about vaccine booster is correct?",
     "explanation": "Vaccine booster: an additional vaccine dose intended to reinforce an antigen-specific response. It can stimulate existing immunological memory",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6160,13 +5998,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Vaccine booster: an additional vaccine dose intended to reinforce an antigen-specific response. It can stimulate existing immunological memory"
     },
     "options": [
-      "An additional vaccine dose intended to reinforce an antigen-specific response",
       "It can stimulate existing immunological memory",
       "It provides only a fixed dose of transferred ready-made antibody"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6213,9 +6049,9 @@
   },
   {
     "id": "immune-0278",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about vaccine adjuvant are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about vaccine adjuvant is correct?",
     "explanation": "Vaccine adjuvant: a vaccine component that enhances the immune response to antigen. It can promote innate signals supporting adaptive activation",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6227,12 +6063,10 @@
     },
     "options": [
       "A vaccine component that enhances the immune response to antigen",
-      "It can promote innate signals supporting adaptive activation",
       "It is necessarily the antibody made by the recipient"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6279,9 +6113,9 @@
   },
   {
     "id": "immune-0281",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about passive immunization are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about passive immunization is correct?",
     "explanation": "Passive immunization: delivery of preformed antibodies for protection. It does not by itself generate recipient antigen-specific memory",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6292,13 +6126,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Passive immunization: delivery of preformed antibodies for protection. It does not by itself generate recipient antigen-specific memory"
     },
     "options": [
-      "Delivery of preformed antibodies for protection",
       "It does not by itself generate recipient antigen-specific memory",
       "It is identical to the recipient making antibodies after infection"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6345,9 +6177,9 @@
   },
   {
     "id": "immune-0284",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about opportunistic infection are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about opportunistic infection is correct?",
     "explanation": "Opportunistic infection: an infection that becomes more likely or severe when defenses are impaired. It can occur in immunodeficient or immunosuppressed individuals",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6359,12 +6191,10 @@
     },
     "options": [
       "An infection that becomes more likely or severe when defenses are impaired",
-      "It can occur in immunodeficient or immunosuppressed individuals",
       "It is a normal immunoglobulin class"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6411,9 +6241,9 @@
   },
   {
     "id": "immune-0287",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about immunosuppression are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about immunosuppression is correct?",
     "explanation": "Immunosuppression: reduction of immune activity. It can be used clinically but can also increase infection susceptibility",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6424,13 +6254,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Immunosuppression: reduction of immune activity. It can be used clinically but can also increase infection susceptibility"
     },
     "options": [
-      "Reduction of immune activity",
       "It can be used clinically but can also increase infection susceptibility",
       "It always means enhanced function of every immune pathway"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6477,9 +6305,9 @@
   },
   {
     "id": "immune-0290",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about autoantigen are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about autoantigen is correct?",
     "explanation": "Autoantigen: a self-derived target of an immune response. Loss of tolerance can permit responses against it",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6491,12 +6319,10 @@
     },
     "options": [
       "A self-derived target of an immune response",
-      "Loss of tolerance can permit responses against it",
       "It is necessarily a molecule found only on bacteria"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6543,9 +6369,9 @@
   },
   {
     "id": "immune-0293",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about allergen are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about allergen is correct?",
     "explanation": "Allergen: an antigen capable of provoking an allergic response in a sensitized person. Its effects depend in part on the host immune response",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6556,13 +6382,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Allergen: an antigen capable of provoking an allergic response in a sensitized person. Its effects depend in part on the host immune response"
     },
     "options": [
-      "An antigen capable of provoking an allergic response in a sensitized person",
       "Its effects depend in part on the host immune response",
       "It is a hormone that always produces red blood cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6609,9 +6433,9 @@
   },
   {
     "id": "immune-0296",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about sensitization are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about sensitization is correct?",
     "explanation": "Sensitization: the establishment of an antigen-specific state that permits a later allergic response. IgE-bearing mast cells can contribute to this state",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6623,12 +6447,10 @@
     },
     "options": [
       "The establishment of an antigen-specific state that permits a later allergic response",
-      "IgE-bearing mast cells can contribute to this state",
       "It means the immediate disappearance of all antigen-specific recognition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6676,9 +6498,9 @@
   },
   {
     "id": "immune-0299",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about anaphylaxis are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about anaphylaxis is correct?",
     "explanation": "Anaphylaxis: a severe systemic immediate hypersensitivity reaction. It can involve widespread mast-cell mediator effects",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6689,13 +6511,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Anaphylaxis: a severe systemic immediate hypersensitivity reaction. It can involve widespread mast-cell mediator effects"
     },
     "options": [
-      "A severe systemic immediate hypersensitivity reaction",
       "It can involve widespread mast-cell mediator effects",
       "It is defined as a harmless local memory response"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6742,9 +6562,9 @@
   },
   {
     "id": "immune-0302",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about type ii hypersensitivity are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about type ii hypersensitivity is correct?",
     "explanation": "Type II hypersensitivity: antibody-mediated injury or dysfunction directed against cell-surface or matrix-associated targets. Some incompatible transfusion reactions follow this mechanism",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6756,12 +6576,10 @@
     },
     "options": [
       "Antibody-mediated injury or dysfunction directed against cell-surface or matrix-associated targets",
-      "Some incompatible transfusion reactions follow this mechanism",
       "It is defined by antigen-independent T-cell development"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6809,9 +6627,9 @@
   },
   {
     "id": "immune-0305",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about type iii hypersensitivity are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about type iii hypersensitivity is correct?",
     "explanation": "Type III hypersensitivity: inflammation associated with deposited antigen-antibody complexes. Complement can contribute to the resulting tissue injury",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6822,13 +6640,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Type III hypersensitivity: inflammation associated with deposited antigen-antibody complexes. Complement can contribute to the resulting tissue injury"
     },
     "options": [
-      "Inflammation associated with deposited antigen-antibody complexes",
       "Complement can contribute to the resulting tissue injury",
       "It is defined by a pure lack of antibodies"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6875,9 +6691,9 @@
   },
   {
     "id": "immune-0308",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about type iv hypersensitivity are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about type iv hypersensitivity is correct?",
     "explanation": "Type IV hypersensitivity: a T-cell-mediated hypersensitivity pattern. Its development can be delayed relative to immediate IgE reactions",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -6889,12 +6705,10 @@
     },
     "options": [
       "A T-cell-mediated hypersensitivity pattern",
-      "Its development can be delayed relative to immediate IgE reactions",
       "It is mediated exclusively by secreted IgE"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -8212,9 +8026,9 @@
   },
   {
     "id": "immune-0367",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which observations show cooperation between innate and adaptive defenses? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which observation shows cooperation between innate and adaptive defenses?",
     "explanation": "Innate and adaptive mechanisms can reinforce one another.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -8226,21 +8040,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Innate and adaptive mechanisms can reinforce one another."
     },
     "options": [
-      "Innate cytokines help activate adaptive cells",
       "Antibodies improve phagocytic recognition",
       "The two systems can never target the same microbe",
       "Innate receptors are all secreted antibodies"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0368",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which mechanisms can aid extracellular-target removal? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which mechanism can aid extracellular-target removal?",
     "explanation": "Several coordinated humoral and cellular mechanisms can act against extracellular targets.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -8253,22 +8065,18 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Several coordinated humoral and cellular mechanisms can act against extracellular targets."
     },
     "options": [
-      "Antibody-mediated neutralization",
-      "Opsonization supporting phagocytosis",
       "Complement activity against susceptible targets",
       "A requirement that every bacterium enter an erythrocyte nucleus"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0369",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which recognition comparisons are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which recognition comparisons are correct?",
     "explanation": "B-cell and conventional T-cell antigen-recognition requirements differ.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -8281,21 +8089,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: B-cell and conventional T-cell antigen-recognition requirements differ."
     },
     "options": [
-      "Conventional T cells recognize relevant peptide–MHC complexes",
       "B-cell receptors can bind native antigen",
       "B-cell receptors require MHC I for every antigen interaction",
       "Conventional helper T cells recognize antigen only through free IgE"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0370",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which populations support functions after an adaptive response has developed? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which populations supports function after an adaptive response has developed?",
     "explanation": "Effector secretion and memory are distinct adaptive roles.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -8309,20 +8115,18 @@
     },
     "options": [
       "Plasma cells can secrete antibody",
-      "Memory lymphocytes can support later responses",
       "Every memory cell must continuously secrete antibody",
       "All plasma cells must become neutrophils"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0371",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which claims about antibody specificity and class are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about antibody specificity and class is correct?",
     "explanation": "Antibody binding specificity and isotype-dependent effector roles are related but distinct features.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -8334,22 +8138,18 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Antibody binding specificity and isotype-dependent effector roles are related but distinct features."
     },
     "options": [
-      "Variable regions contribute to antigen recognition",
-      "Heavy-chain constant regions determine class",
       "Class switching can preserve antigen specificity",
       "Every isotype switch must target a new unrelated antigen"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0372",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which patient-context associations are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which patient-context associations are correct?",
     "explanation": "Immunoglobulin classes have characteristic structures and roles.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -8364,21 +8164,17 @@
     },
     "options": [
       "Placental antibody transfer—IgG",
-      "Breast-milk mucosal antibody—IgA",
-      "Immediate mast-cell allergy—IgE",
       "Initial pentameric serum antibody—IgD"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0373",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which interventions primarily rely on the recipient generating their own adaptive response? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which interventions primarily rely on the recipient generating their own adaptive response?",
     "explanation": "Vaccines generate active responses, unlike passive antibody transfer.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -8390,21 +8186,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Vaccines generate active responses, unlike passive antibody transfer."
     },
     "options": [
-      "Initial vaccination",
       "Booster vaccination",
       "Infusion of preformed antibodies",
       "Transfer of maternal IgG"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0374",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which mechanisms help avoid damaging self-reactivity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which mechanism helps avoid damaging self-reactivity?",
     "explanation": "Tolerance and regulation limit unwanted immune attack without requiring total immune absence.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -8417,20 +8211,18 @@
     },
     "options": [
       "Developmental tolerance mechanisms",
-      "Regulatory T-cell activity",
       "Obligatory attack on every self-antigen",
       "Deletion of every protective immune response"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0375",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which mechanism-category pairings are appropriate? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which mechanism-category pairing is appropriate?",
     "explanation": "Hypersensitivity categories distinguish different injury mechanisms.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -8442,21 +8234,17 @@
     },
     "options": [
       "IgE-driven immediate allergy—type I",
-      "Cell-targeting antibody injury—type II",
-      "Immune-complex inflammation—type III",
       "Delayed T-cell response—type I"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0376",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which situations can increase susceptibility to some infections? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which situations can increase susceptibility to some infections?",
     "explanation": "Defects or suppression of useful immune functions can weaken host defense.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -8469,13 +8257,11 @@
     },
     "options": [
       "Loss of functional helper T cells",
-      "Reduced immune activity from immunosuppressive therapy",
       "A guarantee that all host defenses are stronger",
       "The definition of antibody neutralization itself"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -12160,9 +11946,9 @@
   },
   {
     "id": "immune-0528",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Macrophage and Neutrophil? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Macrophage and Neutrophil?",
     "explanation": "Macrophage is associated with tissue phagocytosis and antigen presentation; Neutrophil is associated with rapid recruitment and phagocytic defense.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12175,20 +11961,18 @@
     },
     "options": [
       "Macrophage—tissue phagocytosis and antigen presentation",
-      "Neutrophil—rapid recruitment and phagocytic defense",
       "Macrophage—primary transport of oxygen in erythrocytes",
       "Neutrophil—placental antibody transport as its defining role"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0529",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Macrophage and Dendritic cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Macrophage and Dendritic cell?",
     "explanation": "Macrophage is associated with tissue phagocytosis and antigen presentation; Dendritic cell is associated with professional antigen presentation.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12200,21 +11984,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Macrophage is associated with tissue phagocytosis and antigen presentation; Dendritic cell is associated with professional antigen presentation."
     },
     "options": [
-      "Macrophage—tissue phagocytosis and antigen presentation",
       "Dendritic cell—professional antigen presentation",
       "Macrophage—primary transport of oxygen in erythrocytes",
       "Dendritic cell—secretion of every circulating immunoglobulin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0530",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Macrophage and NK cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Macrophage and NK cell?",
     "explanation": "Macrophage is associated with tissue phagocytosis and antigen presentation; NK cell is associated with innate cytotoxic activity.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12227,20 +12009,18 @@
     },
     "options": [
       "Macrophage—tissue phagocytosis and antigen presentation",
-      "NK cell—innate cytotoxic activity",
       "Macrophage—primary transport of oxygen in erythrocytes",
       "NK cell—being the antibody-secreting B-cell effector"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0531",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Macrophage and Helper T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Macrophage and Helper T cell?",
     "explanation": "Macrophage is associated with tissue phagocytosis and antigen presentation; Helper T cell is associated with cytokine-mediated coordination.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12252,21 +12032,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Macrophage is associated with tissue phagocytosis and antigen presentation; Helper T cell is associated with cytokine-mediated coordination."
     },
     "options": [
-      "Macrophage—tissue phagocytosis and antigen presentation",
       "Helper T cell—cytokine-mediated coordination",
       "Macrophage—primary transport of oxygen in erythrocytes",
       "Helper T cell—forming the skin’s keratinized barrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0532",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Macrophage and Cytotoxic T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Macrophage and Cytotoxic T cell?",
     "explanation": "Macrophage is associated with tissue phagocytosis and antigen presentation; Cytotoxic T cell is associated with killing appropriate target cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12279,20 +12057,18 @@
     },
     "options": [
       "Macrophage—tissue phagocytosis and antigen presentation",
-      "Cytotoxic T cell—killing appropriate target cells",
       "Macrophage—primary transport of oxygen in erythrocytes",
       "Cytotoxic T cell—producing the epithelial mucus layer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0533",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Macrophage and Regulatory T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Macrophage and Regulatory T cell?",
     "explanation": "Macrophage is associated with tissue phagocytosis and antigen presentation; Regulatory T cell is associated with restraint of inappropriate immune activity.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12304,21 +12080,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Macrophage is associated with tissue phagocytosis and antigen presentation; Regulatory T cell is associated with restraint of inappropriate immune activity."
     },
     "options": [
-      "Macrophage—tissue phagocytosis and antigen presentation",
       "Regulatory T cell—restraint of inappropriate immune activity",
       "Macrophage—primary transport of oxygen in erythrocytes",
       "Regulatory T cell—obligatory stimulation of all self-reactive cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0534",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Macrophage and Plasma cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Macrophage and Plasma cell?",
     "explanation": "Macrophage is associated with tissue phagocytosis and antigen presentation; Plasma cell is associated with antibody secretion.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12331,20 +12105,18 @@
     },
     "options": [
       "Macrophage—tissue phagocytosis and antigen presentation",
-      "Plasma cell—antibody secretion",
       "Macrophage—primary transport of oxygen in erythrocytes",
       "Plasma cell—development into a mature erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0535",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Macrophage and Memory B cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Macrophage and Memory B cell?",
     "explanation": "Macrophage is associated with tissue phagocytosis and antigen presentation; Memory B cell is associated with support of an antigen-experienced recall response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12356,21 +12128,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Macrophage is associated with tissue phagocytosis and antigen presentation; Memory B cell is associated with support of an antigen-experienced recall response."
     },
     "options": [
-      "Macrophage—tissue phagocytosis and antigen presentation",
       "Memory B cell—support of an antigen-experienced recall response",
       "Macrophage—primary transport of oxygen in erythrocytes",
       "Memory B cell—being a microbe’s surface antigen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0536",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Macrophage and Interferon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Macrophage and Interferon?",
     "explanation": "Macrophage is associated with tissue phagocytosis and antigen presentation; Interferon is associated with antiviral signaling to responding cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12383,20 +12153,18 @@
     },
     "options": [
       "Macrophage—tissue phagocytosis and antigen presentation",
-      "Interferon—antiviral signaling to responding cells",
       "Macrophage—primary transport of oxygen in erythrocytes",
       "Interferon—being an antibody heavy-chain isotype"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0537",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Neutrophil and Dendritic cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutrophil and Dendritic cell?",
     "explanation": "Neutrophil is associated with rapid recruitment and phagocytic defense; Dendritic cell is associated with professional antigen presentation.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12408,21 +12176,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutrophil is associated with rapid recruitment and phagocytic defense; Dendritic cell is associated with professional antigen presentation."
     },
     "options": [
-      "Neutrophil—rapid recruitment and phagocytic defense",
       "Dendritic cell—professional antigen presentation",
       "Neutrophil—placental antibody transport as its defining role",
       "Dendritic cell—secretion of every circulating immunoglobulin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0538",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Neutrophil and NK cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutrophil and NK cell?",
     "explanation": "Neutrophil is associated with rapid recruitment and phagocytic defense; NK cell is associated with innate cytotoxic activity.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12435,20 +12201,18 @@
     },
     "options": [
       "Neutrophil—rapid recruitment and phagocytic defense",
-      "NK cell—innate cytotoxic activity",
       "Neutrophil—placental antibody transport as its defining role",
       "NK cell—being the antibody-secreting B-cell effector"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0539",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Neutrophil and Helper T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutrophil and Helper T cell?",
     "explanation": "Neutrophil is associated with rapid recruitment and phagocytic defense; Helper T cell is associated with cytokine-mediated coordination.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12460,21 +12224,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutrophil is associated with rapid recruitment and phagocytic defense; Helper T cell is associated with cytokine-mediated coordination."
     },
     "options": [
-      "Neutrophil—rapid recruitment and phagocytic defense",
       "Helper T cell—cytokine-mediated coordination",
       "Neutrophil—placental antibody transport as its defining role",
       "Helper T cell—forming the skin’s keratinized barrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0540",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Neutrophil and Cytotoxic T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutrophil and Cytotoxic T cell?",
     "explanation": "Neutrophil is associated with rapid recruitment and phagocytic defense; Cytotoxic T cell is associated with killing appropriate target cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12487,20 +12249,18 @@
     },
     "options": [
       "Neutrophil—rapid recruitment and phagocytic defense",
-      "Cytotoxic T cell—killing appropriate target cells",
       "Neutrophil—placental antibody transport as its defining role",
       "Cytotoxic T cell—producing the epithelial mucus layer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0541",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Neutrophil and Regulatory T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutrophil and Regulatory T cell?",
     "explanation": "Neutrophil is associated with rapid recruitment and phagocytic defense; Regulatory T cell is associated with restraint of inappropriate immune activity.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12512,21 +12272,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutrophil is associated with rapid recruitment and phagocytic defense; Regulatory T cell is associated with restraint of inappropriate immune activity."
     },
     "options": [
-      "Neutrophil—rapid recruitment and phagocytic defense",
       "Regulatory T cell—restraint of inappropriate immune activity",
       "Neutrophil—placental antibody transport as its defining role",
       "Regulatory T cell—obligatory stimulation of all self-reactive cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0542",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Neutrophil and Plasma cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutrophil and Plasma cell?",
     "explanation": "Neutrophil is associated with rapid recruitment and phagocytic defense; Plasma cell is associated with antibody secretion.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12539,20 +12297,18 @@
     },
     "options": [
       "Neutrophil—rapid recruitment and phagocytic defense",
-      "Plasma cell—antibody secretion",
       "Neutrophil—placental antibody transport as its defining role",
       "Plasma cell—development into a mature erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0543",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Neutrophil and Memory B cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutrophil and Memory B cell?",
     "explanation": "Neutrophil is associated with rapid recruitment and phagocytic defense; Memory B cell is associated with support of an antigen-experienced recall response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12564,21 +12320,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutrophil is associated with rapid recruitment and phagocytic defense; Memory B cell is associated with support of an antigen-experienced recall response."
     },
     "options": [
-      "Neutrophil—rapid recruitment and phagocytic defense",
       "Memory B cell—support of an antigen-experienced recall response",
       "Neutrophil—placental antibody transport as its defining role",
       "Memory B cell—being a microbe’s surface antigen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0544",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Neutrophil and Interferon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutrophil and Interferon?",
     "explanation": "Neutrophil is associated with rapid recruitment and phagocytic defense; Interferon is associated with antiviral signaling to responding cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12591,20 +12345,18 @@
     },
     "options": [
       "Neutrophil—rapid recruitment and phagocytic defense",
-      "Interferon—antiviral signaling to responding cells",
       "Neutrophil—placental antibody transport as its defining role",
       "Interferon—being an antibody heavy-chain isotype"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0545",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Dendritic cell and NK cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dendritic cell and NK cell?",
     "explanation": "Dendritic cell is associated with professional antigen presentation; NK cell is associated with innate cytotoxic activity.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12616,21 +12368,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dendritic cell is associated with professional antigen presentation; NK cell is associated with innate cytotoxic activity."
     },
     "options": [
-      "Dendritic cell—professional antigen presentation",
       "NK cell—innate cytotoxic activity",
       "Dendritic cell—secretion of every circulating immunoglobulin",
       "NK cell—being the antibody-secreting B-cell effector"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0546",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Dendritic cell and Helper T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dendritic cell and Helper T cell?",
     "explanation": "Dendritic cell is associated with professional antigen presentation; Helper T cell is associated with cytokine-mediated coordination.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12643,20 +12393,18 @@
     },
     "options": [
       "Dendritic cell—professional antigen presentation",
-      "Helper T cell—cytokine-mediated coordination",
       "Dendritic cell—secretion of every circulating immunoglobulin",
       "Helper T cell—forming the skin’s keratinized barrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0547",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Dendritic cell and Cytotoxic T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dendritic cell and Cytotoxic T cell?",
     "explanation": "Dendritic cell is associated with professional antigen presentation; Cytotoxic T cell is associated with killing appropriate target cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12668,21 +12416,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dendritic cell is associated with professional antigen presentation; Cytotoxic T cell is associated with killing appropriate target cells."
     },
     "options": [
-      "Dendritic cell—professional antigen presentation",
       "Cytotoxic T cell—killing appropriate target cells",
       "Dendritic cell—secretion of every circulating immunoglobulin",
       "Cytotoxic T cell—producing the epithelial mucus layer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0548",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Dendritic cell and Regulatory T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dendritic cell and Regulatory T cell?",
     "explanation": "Dendritic cell is associated with professional antigen presentation; Regulatory T cell is associated with restraint of inappropriate immune activity.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12695,20 +12441,18 @@
     },
     "options": [
       "Dendritic cell—professional antigen presentation",
-      "Regulatory T cell—restraint of inappropriate immune activity",
       "Dendritic cell—secretion of every circulating immunoglobulin",
       "Regulatory T cell—obligatory stimulation of all self-reactive cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0549",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Dendritic cell and Plasma cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dendritic cell and Plasma cell?",
     "explanation": "Dendritic cell is associated with professional antigen presentation; Plasma cell is associated with antibody secretion.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12720,21 +12464,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dendritic cell is associated with professional antigen presentation; Plasma cell is associated with antibody secretion."
     },
     "options": [
-      "Dendritic cell—professional antigen presentation",
       "Plasma cell—antibody secretion",
       "Dendritic cell—secretion of every circulating immunoglobulin",
       "Plasma cell—development into a mature erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0550",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Dendritic cell and Memory B cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dendritic cell and Memory B cell?",
     "explanation": "Dendritic cell is associated with professional antigen presentation; Memory B cell is associated with support of an antigen-experienced recall response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12747,20 +12489,18 @@
     },
     "options": [
       "Dendritic cell—professional antigen presentation",
-      "Memory B cell—support of an antigen-experienced recall response",
       "Dendritic cell—secretion of every circulating immunoglobulin",
       "Memory B cell—being a microbe’s surface antigen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0551",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Dendritic cell and Interferon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dendritic cell and Interferon?",
     "explanation": "Dendritic cell is associated with professional antigen presentation; Interferon is associated with antiviral signaling to responding cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12772,21 +12512,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dendritic cell is associated with professional antigen presentation; Interferon is associated with antiviral signaling to responding cells."
     },
     "options": [
-      "Dendritic cell—professional antigen presentation",
       "Interferon—antiviral signaling to responding cells",
       "Dendritic cell—secretion of every circulating immunoglobulin",
       "Interferon—being an antibody heavy-chain isotype"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0552",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for NK cell and Helper T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for NK cell and Helper T cell?",
     "explanation": "NK cell is associated with innate cytotoxic activity; Helper T cell is associated with cytokine-mediated coordination.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12799,20 +12537,18 @@
     },
     "options": [
       "NK cell—innate cytotoxic activity",
-      "Helper T cell—cytokine-mediated coordination",
       "NK cell—being the antibody-secreting B-cell effector",
       "Helper T cell—forming the skin’s keratinized barrier"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0553",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for NK cell and Cytotoxic T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for NK cell and Cytotoxic T cell?",
     "explanation": "NK cell is associated with innate cytotoxic activity; Cytotoxic T cell is associated with killing appropriate target cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12824,21 +12560,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: NK cell is associated with innate cytotoxic activity; Cytotoxic T cell is associated with killing appropriate target cells."
     },
     "options": [
-      "NK cell—innate cytotoxic activity",
       "Cytotoxic T cell—killing appropriate target cells",
       "NK cell—being the antibody-secreting B-cell effector",
       "Cytotoxic T cell—producing the epithelial mucus layer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0554",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for NK cell and Regulatory T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for NK cell and Regulatory T cell?",
     "explanation": "NK cell is associated with innate cytotoxic activity; Regulatory T cell is associated with restraint of inappropriate immune activity.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12851,20 +12585,18 @@
     },
     "options": [
       "NK cell—innate cytotoxic activity",
-      "Regulatory T cell—restraint of inappropriate immune activity",
       "NK cell—being the antibody-secreting B-cell effector",
       "Regulatory T cell—obligatory stimulation of all self-reactive cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0555",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for NK cell and Plasma cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for NK cell and Plasma cell?",
     "explanation": "NK cell is associated with innate cytotoxic activity; Plasma cell is associated with antibody secretion.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12876,21 +12608,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: NK cell is associated with innate cytotoxic activity; Plasma cell is associated with antibody secretion."
     },
     "options": [
-      "NK cell—innate cytotoxic activity",
       "Plasma cell—antibody secretion",
       "NK cell—being the antibody-secreting B-cell effector",
       "Plasma cell—development into a mature erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0556",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for NK cell and Memory B cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for NK cell and Memory B cell?",
     "explanation": "NK cell is associated with innate cytotoxic activity; Memory B cell is associated with support of an antigen-experienced recall response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12903,20 +12633,18 @@
     },
     "options": [
       "NK cell—innate cytotoxic activity",
-      "Memory B cell—support of an antigen-experienced recall response",
       "NK cell—being the antibody-secreting B-cell effector",
       "Memory B cell—being a microbe’s surface antigen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0557",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for NK cell and Interferon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for NK cell and Interferon?",
     "explanation": "NK cell is associated with innate cytotoxic activity; Interferon is associated with antiviral signaling to responding cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12928,21 +12656,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: NK cell is associated with innate cytotoxic activity; Interferon is associated with antiviral signaling to responding cells."
     },
     "options": [
-      "NK cell—innate cytotoxic activity",
       "Interferon—antiviral signaling to responding cells",
       "NK cell—being the antibody-secreting B-cell effector",
       "Interferon—being an antibody heavy-chain isotype"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0558",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Helper T cell and Cytotoxic T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Helper T cell and Cytotoxic T cell?",
     "explanation": "Helper T cell is associated with cytokine-mediated coordination; Cytotoxic T cell is associated with killing appropriate target cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12955,20 +12681,18 @@
     },
     "options": [
       "Helper T cell—cytokine-mediated coordination",
-      "Cytotoxic T cell—killing appropriate target cells",
       "Helper T cell—forming the skin’s keratinized barrier",
       "Cytotoxic T cell—producing the epithelial mucus layer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0559",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Helper T cell and Regulatory T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Helper T cell and Regulatory T cell?",
     "explanation": "Helper T cell is associated with cytokine-mediated coordination; Regulatory T cell is associated with restraint of inappropriate immune activity.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -12980,21 +12704,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Helper T cell is associated with cytokine-mediated coordination; Regulatory T cell is associated with restraint of inappropriate immune activity."
     },
     "options": [
-      "Helper T cell—cytokine-mediated coordination",
       "Regulatory T cell—restraint of inappropriate immune activity",
       "Helper T cell—forming the skin’s keratinized barrier",
       "Regulatory T cell—obligatory stimulation of all self-reactive cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0560",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Helper T cell and Plasma cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Helper T cell and Plasma cell?",
     "explanation": "Helper T cell is associated with cytokine-mediated coordination; Plasma cell is associated with antibody secretion.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13007,20 +12729,18 @@
     },
     "options": [
       "Helper T cell—cytokine-mediated coordination",
-      "Plasma cell—antibody secretion",
       "Helper T cell—forming the skin’s keratinized barrier",
       "Plasma cell—development into a mature erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0561",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Helper T cell and Memory B cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Helper T cell and Memory B cell?",
     "explanation": "Helper T cell is associated with cytokine-mediated coordination; Memory B cell is associated with support of an antigen-experienced recall response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13032,21 +12752,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Helper T cell is associated with cytokine-mediated coordination; Memory B cell is associated with support of an antigen-experienced recall response."
     },
     "options": [
-      "Helper T cell—cytokine-mediated coordination",
       "Memory B cell—support of an antigen-experienced recall response",
       "Helper T cell—forming the skin’s keratinized barrier",
       "Memory B cell—being a microbe’s surface antigen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0562",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Helper T cell and Interferon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Helper T cell and Interferon?",
     "explanation": "Helper T cell is associated with cytokine-mediated coordination; Interferon is associated with antiviral signaling to responding cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13059,20 +12777,18 @@
     },
     "options": [
       "Helper T cell—cytokine-mediated coordination",
-      "Interferon—antiviral signaling to responding cells",
       "Helper T cell—forming the skin’s keratinized barrier",
       "Interferon—being an antibody heavy-chain isotype"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0563",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Cytotoxic T cell and Regulatory T cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cytotoxic T cell and Regulatory T cell?",
     "explanation": "Cytotoxic T cell is associated with killing appropriate target cells; Regulatory T cell is associated with restraint of inappropriate immune activity.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13084,21 +12800,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cytotoxic T cell is associated with killing appropriate target cells; Regulatory T cell is associated with restraint of inappropriate immune activity."
     },
     "options": [
-      "Cytotoxic T cell—killing appropriate target cells",
       "Regulatory T cell—restraint of inappropriate immune activity",
       "Cytotoxic T cell—producing the epithelial mucus layer",
       "Regulatory T cell—obligatory stimulation of all self-reactive cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0564",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Cytotoxic T cell and Plasma cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cytotoxic T cell and Plasma cell?",
     "explanation": "Cytotoxic T cell is associated with killing appropriate target cells; Plasma cell is associated with antibody secretion.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13111,20 +12825,18 @@
     },
     "options": [
       "Cytotoxic T cell—killing appropriate target cells",
-      "Plasma cell—antibody secretion",
       "Cytotoxic T cell—producing the epithelial mucus layer",
       "Plasma cell—development into a mature erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0565",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Cytotoxic T cell and Memory B cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cytotoxic T cell and Memory B cell?",
     "explanation": "Cytotoxic T cell is associated with killing appropriate target cells; Memory B cell is associated with support of an antigen-experienced recall response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13136,21 +12848,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cytotoxic T cell is associated with killing appropriate target cells; Memory B cell is associated with support of an antigen-experienced recall response."
     },
     "options": [
-      "Cytotoxic T cell—killing appropriate target cells",
       "Memory B cell—support of an antigen-experienced recall response",
       "Cytotoxic T cell—producing the epithelial mucus layer",
       "Memory B cell—being a microbe’s surface antigen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0566",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Cytotoxic T cell and Interferon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cytotoxic T cell and Interferon?",
     "explanation": "Cytotoxic T cell is associated with killing appropriate target cells; Interferon is associated with antiviral signaling to responding cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13163,20 +12873,18 @@
     },
     "options": [
       "Cytotoxic T cell—killing appropriate target cells",
-      "Interferon—antiviral signaling to responding cells",
       "Cytotoxic T cell—producing the epithelial mucus layer",
       "Interferon—being an antibody heavy-chain isotype"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0567",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Regulatory T cell and Plasma cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Regulatory T cell and Plasma cell?",
     "explanation": "Regulatory T cell is associated with restraint of inappropriate immune activity; Plasma cell is associated with antibody secretion.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13188,21 +12896,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Regulatory T cell is associated with restraint of inappropriate immune activity; Plasma cell is associated with antibody secretion."
     },
     "options": [
-      "Regulatory T cell—restraint of inappropriate immune activity",
       "Plasma cell—antibody secretion",
       "Regulatory T cell—obligatory stimulation of all self-reactive cells",
       "Plasma cell—development into a mature erythrocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0568",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Regulatory T cell and Memory B cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Regulatory T cell and Memory B cell?",
     "explanation": "Regulatory T cell is associated with restraint of inappropriate immune activity; Memory B cell is associated with support of an antigen-experienced recall response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13215,20 +12921,18 @@
     },
     "options": [
       "Regulatory T cell—restraint of inappropriate immune activity",
-      "Memory B cell—support of an antigen-experienced recall response",
       "Regulatory T cell—obligatory stimulation of all self-reactive cells",
       "Memory B cell—being a microbe’s surface antigen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0569",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Regulatory T cell and Interferon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Regulatory T cell and Interferon?",
     "explanation": "Regulatory T cell is associated with restraint of inappropriate immune activity; Interferon is associated with antiviral signaling to responding cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13240,21 +12944,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Regulatory T cell is associated with restraint of inappropriate immune activity; Interferon is associated with antiviral signaling to responding cells."
     },
     "options": [
-      "Regulatory T cell—restraint of inappropriate immune activity",
       "Interferon—antiviral signaling to responding cells",
       "Regulatory T cell—obligatory stimulation of all self-reactive cells",
       "Interferon—being an antibody heavy-chain isotype"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0570",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Plasma cell and Memory B cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Plasma cell and Memory B cell?",
     "explanation": "Plasma cell is associated with antibody secretion; Memory B cell is associated with support of an antigen-experienced recall response.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13267,20 +12969,18 @@
     },
     "options": [
       "Plasma cell—antibody secretion",
-      "Memory B cell—support of an antigen-experienced recall response",
       "Plasma cell—development into a mature erythrocyte",
       "Memory B cell—being a microbe’s surface antigen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0571",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Plasma cell and Interferon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Plasma cell and Interferon?",
     "explanation": "Plasma cell is associated with antibody secretion; Interferon is associated with antiviral signaling to responding cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13292,21 +12992,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Plasma cell is associated with antibody secretion; Interferon is associated with antiviral signaling to responding cells."
     },
     "options": [
-      "Plasma cell—antibody secretion",
       "Interferon—antiviral signaling to responding cells",
       "Plasma cell—development into a mature erythrocyte",
       "Interferon—being an antibody heavy-chain isotype"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0572",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immune-role pairings are correct for Memory B cell and Interferon? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Memory B cell and Interferon?",
     "explanation": "Memory B cell is associated with support of an antigen-experienced recall response; Interferon is associated with antiviral signaling to responding cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13319,20 +13017,18 @@
     },
     "options": [
       "Memory B cell—support of an antigen-experienced recall response",
-      "Interferon—antiviral signaling to responding cells",
       "Memory B cell—being a microbe’s surface antigen",
       "Interferon—being an antibody heavy-chain isotype"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0573",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunoglobulin-role pairings are correct for IgM and IgG? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for IgM and IgG?",
     "explanation": "IgM is associated with commonly pentameric when secreted; IgG is associated with placental transfer and many secondary systemic responses.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13344,21 +13040,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: IgM is associated with commonly pentameric when secreted; IgG is associated with placental transfer and many secondary systemic responses."
     },
     "options": [
-      "IgM—commonly pentameric when secreted",
       "IgG—placental transfer and many secondary systemic responses",
       "IgM—being the principal placental-transfer antibody",
       "IgG—being the sole defining mucosal secretory dimer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0574",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunoglobulin-role pairings are correct for IgM and IgA? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for IgM and IgA?",
     "explanation": "IgM is associated with commonly pentameric when secreted; IgA is associated with mucosal and breast-milk protection.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13371,20 +13065,18 @@
     },
     "options": [
       "IgM—commonly pentameric when secreted",
-      "IgA—mucosal and breast-milk protection",
       "IgM—being the principal placental-transfer antibody",
       "IgA—being the main mast-cell allergy-associated class"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0575",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunoglobulin-role pairings are correct for IgM and IgE? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for IgM and IgE?",
     "explanation": "IgM is associated with commonly pentameric when secreted; IgE is associated with mast-cell-associated immediate allergy.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13396,21 +13088,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: IgM is associated with commonly pentameric when secreted; IgE is associated with mast-cell-associated immediate allergy."
     },
     "options": [
-      "IgM—commonly pentameric when secreted",
       "IgE—mast-cell-associated immediate allergy",
       "IgM—being the principal placental-transfer antibody",
       "IgE—being the principal early pentameric antibody"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0576",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunoglobulin-role pairings are correct for IgM and IgD? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for IgM and IgD?",
     "explanation": "IgM is associated with commonly pentameric when secreted; IgD is associated with receptor expression on mature naive B cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13423,20 +13113,18 @@
     },
     "options": [
       "IgM—commonly pentameric when secreted",
-      "IgD—receptor expression on mature naive B cells",
       "IgM—being the principal placental-transfer antibody",
       "IgD—being the principal antibody crossing the placenta"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0577",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunoglobulin-role pairings are correct for IgG and IgA? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for IgG and IgA?",
     "explanation": "IgG is associated with placental transfer and many secondary systemic responses; IgA is associated with mucosal and breast-milk protection.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13448,21 +13136,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: IgG is associated with placental transfer and many secondary systemic responses; IgA is associated with mucosal and breast-milk protection."
     },
     "options": [
-      "IgG—placental transfer and many secondary systemic responses",
       "IgA—mucosal and breast-milk protection",
       "IgG—being the sole defining mucosal secretory dimer",
       "IgA—being the main mast-cell allergy-associated class"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0578",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunoglobulin-role pairings are correct for IgG and IgE? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for IgG and IgE?",
     "explanation": "IgG is associated with placental transfer and many secondary systemic responses; IgE is associated with mast-cell-associated immediate allergy.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13475,20 +13161,18 @@
     },
     "options": [
       "IgG—placental transfer and many secondary systemic responses",
-      "IgE—mast-cell-associated immediate allergy",
       "IgG—being the sole defining mucosal secretory dimer",
       "IgE—being the principal early pentameric antibody"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0579",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunoglobulin-role pairings are correct for IgG and IgD? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for IgG and IgD?",
     "explanation": "IgG is associated with placental transfer and many secondary systemic responses; IgD is associated with receptor expression on mature naive B cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13500,21 +13184,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: IgG is associated with placental transfer and many secondary systemic responses; IgD is associated with receptor expression on mature naive B cells."
     },
     "options": [
-      "IgG—placental transfer and many secondary systemic responses",
       "IgD—receptor expression on mature naive B cells",
       "IgG—being the sole defining mucosal secretory dimer",
       "IgD—being the principal antibody crossing the placenta"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0580",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunoglobulin-role pairings are correct for IgA and IgE? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for IgA and IgE?",
     "explanation": "IgA is associated with mucosal and breast-milk protection; IgE is associated with mast-cell-associated immediate allergy.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13527,20 +13209,18 @@
     },
     "options": [
       "IgA—mucosal and breast-milk protection",
-      "IgE—mast-cell-associated immediate allergy",
       "IgA—being the main mast-cell allergy-associated class",
       "IgE—being the principal early pentameric antibody"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0581",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunoglobulin-role pairings are correct for IgA and IgD? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for IgA and IgD?",
     "explanation": "IgA is associated with mucosal and breast-milk protection; IgD is associated with receptor expression on mature naive B cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13552,21 +13232,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: IgA is associated with mucosal and breast-milk protection; IgD is associated with receptor expression on mature naive B cells."
     },
     "options": [
-      "IgA—mucosal and breast-milk protection",
       "IgD—receptor expression on mature naive B cells",
       "IgA—being the main mast-cell allergy-associated class",
       "IgD—being the principal antibody crossing the placenta"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0582",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunoglobulin-role pairings are correct for IgE and IgD? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for IgE and IgD?",
     "explanation": "IgE is associated with mast-cell-associated immediate allergy; IgD is associated with receptor expression on mature naive B cells.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13579,20 +13257,18 @@
     },
     "options": [
       "IgE—mast-cell-associated immediate allergy",
-      "IgD—receptor expression on mature naive B cells",
       "IgE—being the principal early pentameric antibody",
       "IgD—being the principal antibody crossing the placenta"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0583",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunity-category pairings are correct for Natural active immunity and Artificial active immunity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Natural active immunity and Artificial active immunity?",
     "explanation": "Natural active immunity is associated with the recipient’s response after natural infection; Artificial active immunity is associated with the recipient’s response after vaccination.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13603,21 +13279,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Natural active immunity is associated with the recipient’s response after natural infection; Artificial active immunity is associated with the recipient’s response after vaccination."
     },
     "options": [
-      "Natural active immunity—the recipient’s response after natural infection",
       "Artificial active immunity—the recipient’s response after vaccination",
       "Natural active immunity—administration of ready-made antibody",
       "Artificial active immunity—maternal IgG crossing the placenta"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0584",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunity-category pairings are correct for Natural active immunity and Natural passive immunity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Natural active immunity and Natural passive immunity?",
     "explanation": "Natural active immunity is associated with the recipient’s response after natural infection; Natural passive immunity is associated with maternal antibody transfer.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13630,20 +13304,18 @@
     },
     "options": [
       "Natural active immunity—the recipient’s response after natural infection",
-      "Natural passive immunity—maternal antibody transfer",
       "Natural active immunity—administration of ready-made antibody",
       "Natural passive immunity—a recipient memory response induced by vaccine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0585",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunity-category pairings are correct for Natural active immunity and Artificial passive immunity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Natural active immunity and Artificial passive immunity?",
     "explanation": "Natural active immunity is associated with the recipient’s response after natural infection; Artificial passive immunity is associated with administration of preformed antibody.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13655,21 +13327,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Natural active immunity is associated with the recipient’s response after natural infection; Artificial passive immunity is associated with administration of preformed antibody."
     },
     "options": [
-      "Natural active immunity—the recipient’s response after natural infection",
       "Artificial passive immunity—administration of preformed antibody",
       "Natural active immunity—administration of ready-made antibody",
       "Artificial passive immunity—the recipient’s response after natural infection"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0586",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunity-category pairings are correct for Artificial active immunity and Natural passive immunity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Artificial active immunity and Natural passive immunity?",
     "explanation": "Artificial active immunity is associated with the recipient’s response after vaccination; Natural passive immunity is associated with maternal antibody transfer.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13682,20 +13352,18 @@
     },
     "options": [
       "Artificial active immunity—the recipient’s response after vaccination",
-      "Natural passive immunity—maternal antibody transfer",
       "Artificial active immunity—maternal IgG crossing the placenta",
       "Natural passive immunity—a recipient memory response induced by vaccine"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0587",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunity-category pairings are correct for Artificial active immunity and Artificial passive immunity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Artificial active immunity and Artificial passive immunity?",
     "explanation": "Artificial active immunity is associated with the recipient’s response after vaccination; Artificial passive immunity is associated with administration of preformed antibody.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13707,21 +13375,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Artificial active immunity is associated with the recipient’s response after vaccination; Artificial passive immunity is associated with administration of preformed antibody."
     },
     "options": [
-      "Artificial active immunity—the recipient’s response after vaccination",
       "Artificial passive immunity—administration of preformed antibody",
       "Artificial active immunity—maternal IgG crossing the placenta",
       "Artificial passive immunity—the recipient’s response after natural infection"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0588",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which immunity-category pairings are correct for Natural passive immunity and Artificial passive immunity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Natural passive immunity and Artificial passive immunity?",
     "explanation": "Natural passive immunity is associated with maternal antibody transfer; Artificial passive immunity is associated with administration of preformed antibody.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13733,20 +13399,18 @@
     },
     "options": [
       "Natural passive immunity—maternal antibody transfer",
-      "Artificial passive immunity—administration of preformed antibody",
       "Natural passive immunity—a recipient memory response induced by vaccine",
       "Artificial passive immunity—the recipient’s response after natural infection"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0589",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which hypersensitivity-mechanism pairings are correct for Type I hypersensitivity and Type II hypersensitivity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Type I hypersensitivity and Type II hypersensitivity?",
     "explanation": "Type I hypersensitivity is associated with IgE-associated mast-cell activation; Type II hypersensitivity is associated with antibody activity directed at cell-associated targets.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13757,21 +13421,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Type I hypersensitivity is associated with IgE-associated mast-cell activation; Type II hypersensitivity is associated with antibody activity directed at cell-associated targets."
     },
     "options": [
-      "Type I hypersensitivity—IgE-associated mast-cell activation",
       "Type II hypersensitivity—antibody activity directed at cell-associated targets",
       "Type I hypersensitivity—a purely delayed T-cell mechanism",
       "Type II hypersensitivity—a mechanism defined solely by deposited soluble immune complexes"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0590",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which hypersensitivity-mechanism pairings are correct for Type I hypersensitivity and Type III hypersensitivity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Type I hypersensitivity and Type III hypersensitivity?",
     "explanation": "Type I hypersensitivity is associated with IgE-associated mast-cell activation; Type III hypersensitivity is associated with immune-complex deposition and inflammation.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13783,20 +13445,18 @@
     },
     "options": [
       "Type I hypersensitivity—IgE-associated mast-cell activation",
-      "Type III hypersensitivity—immune-complex deposition and inflammation",
       "Type I hypersensitivity—a purely delayed T-cell mechanism",
       "Type III hypersensitivity—a mechanism defined solely by mast-cell-bound IgE"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0591",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which hypersensitivity-mechanism pairings are correct for Type I hypersensitivity and Type IV hypersensitivity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Type I hypersensitivity and Type IV hypersensitivity?",
     "explanation": "Type I hypersensitivity is associated with IgE-associated mast-cell activation; Type IV hypersensitivity is associated with T-cell-mediated delayed injury.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13807,21 +13467,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Type I hypersensitivity is associated with IgE-associated mast-cell activation; Type IV hypersensitivity is associated with T-cell-mediated delayed injury."
     },
     "options": [
-      "Type I hypersensitivity—IgE-associated mast-cell activation",
       "Type IV hypersensitivity—T-cell-mediated delayed injury",
       "Type I hypersensitivity—a purely delayed T-cell mechanism",
       "Type IV hypersensitivity—a response defined exclusively by transferred IgG"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0592",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which hypersensitivity-mechanism pairings are correct for Type II hypersensitivity and Type III hypersensitivity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Type II hypersensitivity and Type III hypersensitivity?",
     "explanation": "Type II hypersensitivity is associated with antibody activity directed at cell-associated targets; Type III hypersensitivity is associated with immune-complex deposition and inflammation.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13833,20 +13491,18 @@
     },
     "options": [
       "Type II hypersensitivity—antibody activity directed at cell-associated targets",
-      "Type III hypersensitivity—immune-complex deposition and inflammation",
       "Type II hypersensitivity—a mechanism defined solely by deposited soluble immune complexes",
       "Type III hypersensitivity—a mechanism defined solely by mast-cell-bound IgE"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0593",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which hypersensitivity-mechanism pairings are correct for Type II hypersensitivity and Type IV hypersensitivity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Type II hypersensitivity and Type IV hypersensitivity?",
     "explanation": "Type II hypersensitivity is associated with antibody activity directed at cell-associated targets; Type IV hypersensitivity is associated with T-cell-mediated delayed injury.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13857,21 +13513,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Type II hypersensitivity is associated with antibody activity directed at cell-associated targets; Type IV hypersensitivity is associated with T-cell-mediated delayed injury."
     },
     "options": [
-      "Type II hypersensitivity—antibody activity directed at cell-associated targets",
       "Type IV hypersensitivity—T-cell-mediated delayed injury",
       "Type II hypersensitivity—a mechanism defined solely by deposited soluble immune complexes",
       "Type IV hypersensitivity—a response defined exclusively by transferred IgG"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "immune-0594",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which hypersensitivity-mechanism pairings are correct for Type III hypersensitivity and Type IV hypersensitivity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Type III hypersensitivity and Type IV hypersensitivity?",
     "explanation": "Type III hypersensitivity is associated with immune-complex deposition and inflammation; Type IV hypersensitivity is associated with T-cell-mediated delayed injury.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13883,13 +13537,11 @@
     },
     "options": [
       "Type III hypersensitivity—immune-complex deposition and inflammation",
-      "Type IV hypersensitivity—T-cell-mediated delayed injury",
       "Type III hypersensitivity—a mechanism defined solely by mast-cell-bound IgE",
       "Type IV hypersensitivity—a response defined exclusively by transferred IgG"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -13950,9 +13602,9 @@
   },
   {
     "id": "immune-0597",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which properties let a B cell participate in both antigen recognition and helper-assisted activation? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which property let a B cell participate in both antigen recognition and helper-assisted activation?",
     "explanation": "B-cell receptor recognition and subsequent peptide presentation are different steps.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13966,21 +13618,17 @@
     },
     "options": [
       "Binding native antigen through its B-cell receptor",
-      "Displaying processed peptide on MHC II",
-      "Receiving appropriate helper signals",
       "Requiring native antigen to be bound to MHC I before its B-cell receptor can bind"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "immune-0598",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which distinctions are correct during an evolving antibody response? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which distinctions are correct during an evolving antibody response?",
     "explanation": "Cell number, isotype, and binding quality describe different response features.",
     "source": {
       "file": "Immune System Chapter 21 Part A.pptx",
@@ -13993,15 +13641,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cell number, isotype, and binding quality describe different response features."
     },
     "options": [
-      "Clonal expansion changes the number of responding cells",
       "Class switching changes isotype",
-      "Affinity maturation can improve average binding strength",
       "These three terms all mean the disappearance of antigen specificity"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {

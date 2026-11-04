@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { TOPIC_BY_ID, STUDY_TOPICS } from './topics.js';
 
-export const QUESTION_TYPES = ['multiple_choice', 'fill_blank', 'select_all', 'ordering'];
+export const QUESTION_TYPES = ['multiple_choice', 'fill_blank', 'ordering'];
 const defaultDirectory = new URL('../../../study-data/', import.meta.url);
 export const normalizeAnswer = value => String(value).normalize('NFKC').trim().toLowerCase().replace(/\s+/g, ' ');
 
@@ -27,7 +27,6 @@ export function validateQuestion(q, topic) {
         if (!Array.isArray(q.correct) || !q.correct.length || new Set(q.correct).size !== q.correct.length ||
             !q.correct.every(i => Number.isInteger(i) && i >= 0 && i < q.options.length)) fail('invalid correct indices');
         if (q.type === 'multiple_choice' && q.correct.length !== 1) fail('single correct answer required');
-        if (q.type === 'select_all' && (q.correct.length < 2 || q.correct.length === q.options.length)) fail('select-all needs multiple correct choices and a distractor');
         if (q.type === 'ordering' && q.correct.length !== q.options.length) fail('ordering must include every option');
     }
     // The wording requirement concerns arteries, not the similarly named veins.
@@ -69,7 +68,7 @@ export async function loadQuestionBanks(directory = defaultDirectory, { complete
             seenPrompts.add(prompt);
             types.add(question.type);
         }
-        if (complete && QUESTION_TYPES.some(type => !types.has(type))) throw new Error(`${topic.id}: all four question types required`);
+        if (complete && QUESTION_TYPES.some(type => !types.has(type))) throw new Error(`${topic.id}: all three question types required`);
         banks.set(topic.id, questions);
     }
     return banks;

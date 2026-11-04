@@ -14,7 +14,7 @@ try {
     for (const topic of topics) {
         const questions = banks.get(topic.id);
         if (complete && questions.length !== topic.target) throw new Error(`${topic.id}: expected ${topic.target} questions, got ${questions.length}`);
-        if (complete && QUESTION_TYPES.some(type => !questions.some(question => question.type === type))) throw new Error(`${topic.id}: all four question types required`);
+        if (complete && QUESTION_TYPES.some(type => !questions.some(question => question.type === type))) throw new Error(`${topic.id}: all three question types required`);
         total += questions.length;
         const counts = Object.fromEntries(QUESTION_TYPES.map(type => [type, questions.filter(q => q.type === type).length]));
         console.log(`${topic.label}: ${questions.length}/${topic.target}`, counts);

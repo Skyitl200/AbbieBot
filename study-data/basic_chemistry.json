@@ -24,9 +24,9 @@
   },
   {
     "id": "basic_chemistry-0002",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept matter? Select all that apply.",
+    "question": "Which statement about the chemistry concept matter is correct?",
     "explanation": "Matter: anything that has mass and occupies space. Air is matter even though it is not a solid",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -37,12 +37,10 @@
     },
     "options": [
       "Anything that has mass and occupies space",
-      "Air is matter even though it is not a solid",
       "It must be visible to have mass"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -87,9 +85,9 @@
   },
   {
     "id": "basic_chemistry-0005",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept element? Select all that apply.",
+    "question": "Which statement about the chemistry concept element is correct?",
     "explanation": "Element: a substance defined by one atomic number and not decomposed by ordinary chemical reactions. Oxygen and carbon are examples",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -99,13 +97,11 @@
       "kind": "slide"
     },
     "options": [
-      "A substance defined by one atomic number and not decomposed by ordinary chemical reactions",
       "Oxygen and carbon are examples",
       "It consists by definition of two different elements chemically joined"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -150,9 +146,9 @@
   },
   {
     "id": "basic_chemistry-0008",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept atom? Select all that apply.",
+    "question": "Which statement about the chemistry concept atom is correct?",
     "explanation": "Atom: the smallest unit retaining the chemical identity of an element. Its identity depends on its proton number",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -163,12 +159,10 @@
     },
     "options": [
       "The smallest unit retaining the chemical identity of an element",
-      "Its identity depends on its proton number",
       "It must contain two different elements"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -213,9 +207,9 @@
   },
   {
     "id": "basic_chemistry-0011",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept proton? Select all that apply.",
+    "question": "Which statement about the chemistry concept proton is correct?",
     "explanation": "Proton: a positively charged nuclear particle. Its mass is approximately one atomic mass unit",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -225,13 +219,11 @@
       "kind": "slide"
     },
     "options": [
-      "A positively charged nuclear particle",
       "Its mass is approximately one atomic mass unit",
       "It is the negatively charged particle in an electron orbital"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -276,9 +268,9 @@
   },
   {
     "id": "basic_chemistry-0014",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept neutron? Select all that apply.",
+    "question": "Which statement about the chemistry concept neutron is correct?",
     "explanation": "Neutron: an electrically neutral nuclear particle. Its mass is approximately one atomic mass unit",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -289,12 +281,10 @@
     },
     "options": [
       "An electrically neutral nuclear particle",
-      "Its mass is approximately one atomic mass unit",
       "It carries the same negative charge as an electron"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -339,9 +329,9 @@
   },
   {
     "id": "basic_chemistry-0017",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept electron? Select all that apply.",
+    "question": "Which statement about the chemistry concept electron is correct?",
     "explanation": "Electron: a negatively charged particle associated with atomic orbitals. Its mass is much smaller than that of a proton",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -351,13 +341,11 @@
       "kind": "slide"
     },
     "options": [
-      "A negatively charged particle associated with atomic orbitals",
       "Its mass is much smaller than that of a proton",
       "It determines element identity by replacing the proton count"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -402,9 +390,9 @@
   },
   {
     "id": "basic_chemistry-0020",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept atomic nucleus? Select all that apply.",
+    "question": "Which statement about the chemistry concept atomic nucleus is correct?",
     "explanation": "Atomic nucleus: the small dense central region containing protons and usually neutrons. It contains most of an atom’s mass",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -415,12 +403,10 @@
     },
     "options": [
       "The small dense central region containing protons and usually neutrons",
-      "It contains most of an atom’s mass",
       "It is the outermost electron shell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -466,9 +452,9 @@
   },
   {
     "id": "basic_chemistry-0023",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept valence shell? Select all that apply.",
+    "question": "Which statement about the chemistry concept valence shell is correct?",
     "explanation": "Valence shell: the outer occupied electron shell used in elementary bonding models. Its electrons strongly influence chemical reactivity",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -478,13 +464,11 @@
       "kind": "slide"
     },
     "options": [
-      "The outer occupied electron shell used in elementary bonding models",
       "Its electrons strongly influence chemical reactivity",
       "It is the location of all nuclear neutrons"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -530,9 +514,9 @@
   },
   {
     "id": "basic_chemistry-0026",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the chemistry concept atomic number? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the chemistry concept atomic number is correct?",
     "explanation": "Atomic number: the number of protons in an atomic nucleus. Changing proton number changes the element",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -544,12 +528,10 @@
     },
     "options": [
       "The number of protons in an atomic nucleus",
-      "Changing proton number changes the element",
       "It equals the neutron count for every isotope"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -596,9 +578,9 @@
   },
   {
     "id": "basic_chemistry-0029",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the chemistry concept mass number? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the chemistry concept mass number is correct?",
     "explanation": "Mass number: the total number of protons and neutrons in a nucleus. It differs from the proton count alone",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -609,13 +591,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Mass number: the total number of protons and neutrons in a nucleus. It differs from the proton count alone"
     },
     "options": [
-      "The total number of protons and neutrons in a nucleus",
       "It differs from the proton count alone",
       "It is the number of valence electrons only"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -662,9 +642,9 @@
   },
   {
     "id": "basic_chemistry-0032",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the chemistry concept isotope? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the chemistry concept isotope is correct?",
     "explanation": "Isotope: one of the forms of an element that differ in neutron number. Isotopes of one element have the same proton number",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -676,12 +656,10 @@
     },
     "options": [
       "One of the forms of an element that differ in neutron number",
-      "Isotopes of one element have the same proton number",
       "Isotopes of the same element must have different atomic numbers"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -727,9 +705,9 @@
   },
   {
     "id": "basic_chemistry-0035",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept ion? Select all that apply.",
+    "question": "Which statement about the chemistry concept ion is correct?",
     "explanation": "Ion: an atom or group of atoms with a net electrical charge. Unequal total positive and negative charge produces its net charge",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -739,13 +717,11 @@
       "kind": "slide"
     },
     "options": [
-      "An atom or group of atoms with a net electrical charge",
       "Unequal total positive and negative charge produces its net charge",
       "Every ion must be electrically neutral"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -790,9 +766,9 @@
   },
   {
     "id": "basic_chemistry-0038",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept cation? Select all that apply.",
+    "question": "Which statement about the chemistry concept cation is correct?",
     "explanation": "Cation: a positively charged ion. Loss of electrons can produce it from a neutral atom",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -803,12 +779,10 @@
     },
     "options": [
       "A positively charged ion",
-      "Loss of electrons can produce it from a neutral atom",
       "It is defined as a negatively charged ion"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -853,9 +827,9 @@
   },
   {
     "id": "basic_chemistry-0041",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept anion? Select all that apply.",
+    "question": "Which statement about the chemistry concept anion is correct?",
     "explanation": "Anion: a negatively charged ion. Gain of electrons can produce it from a neutral atom",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -865,13 +839,11 @@
       "kind": "slide"
     },
     "options": [
-      "A negatively charged ion",
       "Gain of electrons can produce it from a neutral atom",
       "It is defined as a positively charged ion"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -916,9 +888,9 @@
   },
   {
     "id": "basic_chemistry-0044",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept ionic bond? Select all that apply.",
+    "question": "Which statement about the chemistry concept ionic bond is correct?",
     "explanation": "Ionic bond: electrostatic attraction between oppositely charged ions. Sodium chloride is a common ionic compound",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -929,12 +901,10 @@
     },
     "options": [
       "Electrostatic attraction between oppositely charged ions",
-      "Sodium chloride is a common ionic compound",
       "It requires equal sharing of an electron pair as its defining feature"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -979,9 +949,9 @@
   },
   {
     "id": "basic_chemistry-0047",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept covalent bond? Select all that apply.",
+    "question": "Which statement about the chemistry concept covalent bond is correct?",
     "explanation": "Covalent bond: a bond involving sharing of electron pairs between atoms. A shared electron pair forms a single covalent bond",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -991,13 +961,11 @@
       "kind": "slide"
     },
     "options": [
-      "A bond involving sharing of electron pairs between atoms",
       "A shared electron pair forms a single covalent bond",
       "It is defined only as attraction between separate full ions"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1042,9 +1010,9 @@
   },
   {
     "id": "basic_chemistry-0050",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept polar covalent bond? Select all that apply.",
+    "question": "Which statement about the chemistry concept polar covalent bond is correct?",
     "explanation": "Polar covalent bond: a covalent bond with unequal electron sharing. Different electron-attracting tendencies can create partial charges",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1055,12 +1023,10 @@
     },
     "options": [
       "A covalent bond with unequal electron sharing",
-      "Different electron-attracting tendencies can create partial charges",
       "It always requires transfer of a complete electron to form two ions"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1105,9 +1071,9 @@
   },
   {
     "id": "basic_chemistry-0053",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept nonpolar covalent bond? Select all that apply.",
+    "question": "Which statement about the chemistry concept nonpolar covalent bond is correct?",
     "explanation": "Nonpolar covalent bond: a covalent bond with approximately equal electron sharing. A bond between identical atoms is a common example",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1117,13 +1083,11 @@
       "kind": "slide"
     },
     "options": [
-      "A covalent bond with approximately equal electron sharing",
       "A bond between identical atoms is a common example",
       "It must contain a permanent separation into full opposite ions"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1168,9 +1132,9 @@
   },
   {
     "id": "basic_chemistry-0056",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept hydrogen bond? Select all that apply.",
+    "question": "Which statement about the chemistry concept hydrogen bond is correct?",
     "explanation": "Hydrogen bond: an attraction involving hydrogen covalently bonded to an electronegative atom and an appropriate acceptor. It helps stabilize interactions among water molecules",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1181,12 +1145,10 @@
     },
     "options": [
       "An attraction involving hydrogen covalently bonded to an electronegative atom and an appropriate acceptor",
-      "It helps stabilize interactions among water molecules",
       "It is identical to the covalent O–H bond within water"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1232,9 +1194,9 @@
   },
   {
     "id": "basic_chemistry-0059",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the chemistry concept electronegativity? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the chemistry concept electronegativity is correct?",
     "explanation": "Electronegativity: an atom’s tendency to attract shared electrons. Oxygen attracts shared electrons more strongly than hydrogen in water",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1245,13 +1207,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Electronegativity: an atom’s tendency to attract shared electrons. Oxygen attracts shared electrons more strongly than hydrogen in water"
     },
     "options": [
-      "An atom’s tendency to attract shared electrons",
       "Oxygen attracts shared electrons more strongly than hydrogen in water",
       "It is the same as atomic mass"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1297,9 +1257,9 @@
   },
   {
     "id": "basic_chemistry-0062",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept reactant? Select all that apply.",
+    "question": "Which statement about the chemistry concept reactant is correct?",
     "explanation": "Reactant: a starting substance in a chemical reaction. It is written on the input side of a conventional reaction arrow",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1310,12 +1270,10 @@
     },
     "options": [
       "A starting substance in a chemical reaction",
-      "It is written on the input side of a conventional reaction arrow",
       "It must always be the final substance produced"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1360,9 +1318,9 @@
   },
   {
     "id": "basic_chemistry-0065",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept product? Select all that apply.",
+    "question": "Which statement about the chemistry concept product is correct?",
     "explanation": "Product: a substance formed by a chemical reaction. It is written on the output side of a conventional reaction arrow",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1372,13 +1330,11 @@
       "kind": "slide"
     },
     "options": [
-      "A substance formed by a chemical reaction",
       "It is written on the output side of a conventional reaction arrow",
       "It must always be present only before the reaction starts"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1423,9 +1379,9 @@
   },
   {
     "id": "basic_chemistry-0068",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept synthesis reaction? Select all that apply.",
+    "question": "Which statement about the chemistry concept synthesis reaction is correct?",
     "explanation": "Synthesis reaction: a reaction joining smaller components into a larger product. It is associated with molecular building processes",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1436,12 +1392,10 @@
     },
     "options": [
       "A reaction joining smaller components into a larger product",
-      "It is associated with molecular building processes",
       "It is defined only as splitting a larger molecule"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1486,9 +1440,9 @@
   },
   {
     "id": "basic_chemistry-0071",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept decomposition reaction? Select all that apply.",
+    "question": "Which statement about the chemistry concept decomposition reaction is correct?",
     "explanation": "Decomposition reaction: a reaction breaking a larger substance into smaller components. It is associated with molecular breakdown",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1498,13 +1452,11 @@
       "kind": "slide"
     },
     "options": [
-      "A reaction breaking a larger substance into smaller components",
       "It is associated with molecular breakdown",
       "It always joins all reactants into one larger molecule"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1549,9 +1501,9 @@
   },
   {
     "id": "basic_chemistry-0074",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept exchange reaction? Select all that apply.",
+    "question": "Which statement about the chemistry concept exchange reaction is correct?",
     "explanation": "Exchange reaction: a reaction rearranging components between reacting substances. Bonds can be broken and new bonds formed",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1562,12 +1514,10 @@
     },
     "options": [
       "A reaction rearranging components between reacting substances",
-      "Bonds can be broken and new bonds formed",
       "It requires that no chemical bonding pattern change"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1612,9 +1562,9 @@
   },
   {
     "id": "basic_chemistry-0077",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept reversible reaction? Select all that apply.",
+    "question": "Which statement about the chemistry concept reversible reaction is correct?",
     "explanation": "Reversible reaction: a reaction that can proceed in both forward and reverse directions under appropriate conditions. Its net direction depends on conditions",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1624,13 +1574,11 @@
       "kind": "slide"
     },
     "options": [
-      "A reaction that can proceed in both forward and reverse directions under appropriate conditions",
       "Its net direction depends on conditions",
       "It requires the forward and reverse rates to be zero at equilibrium"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1675,9 +1623,9 @@
   },
   {
     "id": "basic_chemistry-0080",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept catalyst? Select all that apply.",
+    "question": "Which statement about the chemistry concept catalyst is correct?",
     "explanation": "Catalyst: a substance that increases reaction rate without being consumed overall. It can undergo intermediate interactions and then be regenerated",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1688,12 +1636,10 @@
     },
     "options": [
       "A substance that increases reaction rate without being consumed overall",
-      "It can undergo intermediate interactions and then be regenerated",
       "It must be permanently consumed in each successful reaction cycle"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1739,9 +1685,9 @@
   },
   {
     "id": "basic_chemistry-0083",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept enzyme? Select all that apply.",
+    "question": "Which statement about the chemistry concept enzyme is correct?",
     "explanation": "Enzyme: a biological catalyst. Many enzymes are proteins and some catalytic molecules are RNA",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1752,13 +1698,11 @@
       "kind": "slide"
     },
     "options": [
-      "A biological catalyst",
       "Many enzymes are proteins and some catalytic molecules are RNA",
       "Every biological catalyst must be a lipid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1804,9 +1748,9 @@
   },
   {
     "id": "basic_chemistry-0086",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept activation energy? Select all that apply.",
+    "question": "Which statement about the chemistry concept activation energy is correct?",
     "explanation": "Activation energy: the energy barrier associated with reaching a reaction’s transition state. An enzyme can lower this barrier",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1817,12 +1761,10 @@
     },
     "options": [
       "The energy barrier associated with reaching a reaction’s transition state",
-      "An enzyme can lower this barrier",
       "It is the number of protons in a nucleus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1867,9 +1809,9 @@
   },
   {
     "id": "basic_chemistry-0089",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept biochemistry? Select all that apply.",
+    "question": "Which statement about the chemistry concept biochemistry is correct?",
     "explanation": "Biochemistry: the study of chemical composition and reactions in living systems. It links molecular processes to biological function",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1879,13 +1821,11 @@
       "kind": "slide"
     },
     "options": [
-      "The study of chemical composition and reactions in living systems",
       "It links molecular processes to biological function",
       "It excludes all reactions occurring in cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1930,9 +1870,9 @@
   },
   {
     "id": "basic_chemistry-0092",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept water? Select all that apply.",
+    "question": "Which statement about the chemistry concept water is correct?",
     "explanation": "Water: the polar compound H2O. It contributes to heat buffering, lubrication, and chemical reactions",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -1943,12 +1883,10 @@
     },
     "options": [
       "The polar compound H2O",
-      "It contributes to heat buffering, lubrication, and chemical reactions",
       "It consists of one oxygen atom and no hydrogen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1994,9 +1932,9 @@
   },
   {
     "id": "basic_chemistry-0095",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept solvent? Select all that apply.",
+    "question": "Which statement about the chemistry concept solvent is correct?",
     "explanation": "Solvent: the dissolving medium of a solution. Water is the solvent in many biological solutions",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2006,13 +1944,11 @@
       "kind": "slide"
     },
     "options": [
-      "The dissolving medium of a solution",
       "Water is the solvent in many biological solutions",
       "It must always be the substance being dissolved"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2057,9 +1993,9 @@
   },
   {
     "id": "basic_chemistry-0098",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept solute? Select all that apply.",
+    "question": "Which statement about the chemistry concept solute is correct?",
     "explanation": "Solute: a substance dissolved in a solution. Glucose can be a solute in an aqueous mixture",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2070,12 +2006,10 @@
     },
     "options": [
       "A substance dissolved in a solution",
-      "Glucose can be a solute in an aqueous mixture",
       "It is always the dissolving medium rather than the dissolved substance"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2120,9 +2054,9 @@
   },
   {
     "id": "basic_chemistry-0101",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept solution? Select all that apply.",
+    "question": "Which statement about the chemistry concept solution is correct?",
     "explanation": "Solution: a homogeneous mixture with molecularly or ionically dispersed solute. Its dissolved particles do not settle rapidly under stable conditions",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2132,13 +2066,11 @@
       "kind": "slide"
     },
     "options": [
-      "A homogeneous mixture with molecularly or ionically dispersed solute",
       "Its dissolved particles do not settle rapidly under stable conditions",
       "It must consist of visible sediment settling immediately"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2183,9 +2115,9 @@
   },
   {
     "id": "basic_chemistry-0104",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept colloid? Select all that apply.",
+    "question": "Which statement about the chemistry concept colloid is correct?",
     "explanation": "Colloid: a dispersion with particles larger than ordinary dissolved molecules but small enough to resist rapid settling. Many colloids scatter light",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2196,12 +2128,10 @@
     },
     "options": [
       "A dispersion with particles larger than ordinary dissolved molecules but small enough to resist rapid settling",
-      "Many colloids scatter light",
       "It is defined by rapid settling of all particles into a coarse sediment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2246,9 +2176,9 @@
   },
   {
     "id": "basic_chemistry-0107",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept suspension? Select all that apply.",
+    "question": "Which statement about the chemistry concept suspension is correct?",
     "explanation": "Suspension: a mixture with dispersed particles that can settle on standing. Sand dispersed in water is an example",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2258,13 +2188,11 @@
       "kind": "slide"
     },
     "options": [
-      "A mixture with dispersed particles that can settle on standing",
       "Sand dispersed in water is an example",
       "It is always molecularly homogeneous with no dispersed particles"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2309,9 +2237,9 @@
   },
   {
     "id": "basic_chemistry-0110",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept hydrophilic substance? Select all that apply.",
+    "question": "Which statement about the chemistry concept hydrophilic substance is correct?",
     "explanation": "Hydrophilic substance: a substance that interacts favorably with water. Many polar or charged substances have this property",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2322,12 +2250,10 @@
     },
     "options": [
       "A substance that interacts favorably with water",
-      "Many polar or charged substances have this property",
       "It is defined by complete exclusion of every water interaction"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2372,9 +2298,9 @@
   },
   {
     "id": "basic_chemistry-0113",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept hydrophobic substance? Select all that apply.",
+    "question": "Which statement about the chemistry concept hydrophobic substance is correct?",
     "explanation": "Hydrophobic substance: a substance that interacts poorly with water compared with water’s own interactions. Nonpolar hydrocarbon regions often have this property",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2384,13 +2310,11 @@
       "kind": "slide"
     },
     "options": [
-      "A substance that interacts poorly with water compared with water’s own interactions",
       "Nonpolar hydrocarbon regions often have this property",
       "It is defined as a freely dissociating aqueous electrolyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2435,9 +2359,9 @@
   },
   {
     "id": "basic_chemistry-0116",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept molarity? Select all that apply.",
+    "question": "Which statement about the chemistry concept molarity is correct?",
     "explanation": "Molarity: moles of solute per liter of solution. Its common unit is mol/L",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2448,12 +2372,10 @@
     },
     "options": [
       "Moles of solute per liter of solution",
-      "Its common unit is mol/L",
       "It is mass of solvent per nucleus"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2498,9 +2420,9 @@
   },
   {
     "id": "basic_chemistry-0119",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept electrolyte? Select all that apply.",
+    "question": "Which statement about the chemistry concept electrolyte is correct?",
     "explanation": "Electrolyte: a substance that yields mobile ions in solution and permits electrical conduction. Dissolved sodium chloride provides mobile ions",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2510,13 +2432,11 @@
       "kind": "slide"
     },
     "options": [
-      "A substance that yields mobile ions in solution and permits electrical conduction",
       "Dissolved sodium chloride provides mobile ions",
       "It must remain exclusively uncharged molecules in water"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2561,9 +2481,9 @@
   },
   {
     "id": "basic_chemistry-0122",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept dehydration synthesis? Select all that apply.",
+    "question": "Which statement about the chemistry concept dehydration synthesis is correct?",
     "explanation": "Dehydration synthesis: joining components with water formed as a product in the simplified model. It is used to describe many biological condensation reactions",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2574,12 +2494,10 @@
     },
     "options": [
       "Joining components with water formed as a product in the simplified model",
-      "It is used to describe many biological condensation reactions",
       "It is defined by using water to split a bond"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2624,9 +2542,9 @@
   },
   {
     "id": "basic_chemistry-0125",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept hydrolysis? Select all that apply.",
+    "question": "Which statement about the chemistry concept hydrolysis is correct?",
     "explanation": "Hydrolysis: bond cleavage involving the addition of water. It can participate in digestion of biological polymers",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2636,13 +2554,11 @@
       "kind": "slide"
     },
     "options": [
-      "Bond cleavage involving the addition of water",
       "It can participate in digestion of biological polymers",
       "It is defined as forming a bond while eliminating water"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2688,9 +2604,9 @@
   },
   {
     "id": "basic_chemistry-0128",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the chemistry concept brønsted acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the chemistry concept brønsted acid is correct?",
     "explanation": "Brønsted acid: a proton donor. It can increase available hydrogen ions in an appropriate aqueous reaction",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2702,12 +2618,10 @@
     },
     "options": [
       "A proton donor",
-      "It can increase available hydrogen ions in an appropriate aqueous reaction",
       "It is defined exclusively as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2754,9 +2668,9 @@
   },
   {
     "id": "basic_chemistry-0131",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the chemistry concept brønsted base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the chemistry concept brønsted base is correct?",
     "explanation": "Brønsted base: a proton acceptor. Bicarbonate can accept a proton",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2767,13 +2681,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Brønsted base: a proton acceptor. Bicarbonate can accept a proton"
     },
     "options": [
-      "A proton acceptor",
       "Bicarbonate can accept a proton",
       "It must always donate a proton and can never accept one"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2819,9 +2731,9 @@
   },
   {
     "id": "basic_chemistry-0134",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept ph? Select all that apply.",
+    "question": "Which statement about the chemistry concept ph is correct?",
     "explanation": "pH: a logarithmic measure related to hydrogen-ion activity. Lower values indicate greater hydrogen-ion activity",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2832,12 +2744,10 @@
     },
     "options": [
       "A logarithmic measure related to hydrogen-ion activity",
-      "Lower values indicate greater hydrogen-ion activity",
       "A one-unit fall always means fewer hydrogen ions"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2882,9 +2792,9 @@
   },
   {
     "id": "basic_chemistry-0137",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept buffer? Select all that apply.",
+    "question": "Which statement about the chemistry concept buffer is correct?",
     "explanation": "Buffer: a system that resists large pH changes when limited acid or base is added. A weak acid and its conjugate base can form one",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2894,13 +2804,11 @@
       "kind": "slide"
     },
     "options": [
-      "A system that resists large pH changes when limited acid or base is added",
       "A weak acid and its conjugate base can form one",
       "It can neutralize an unlimited quantity of added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2945,9 +2853,9 @@
   },
   {
     "id": "basic_chemistry-0140",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept conjugate base? Select all that apply.",
+    "question": "Which statement about the chemistry concept conjugate base is correct?",
     "explanation": "Conjugate base: the species remaining after an acid donates a proton. Bicarbonate is the conjugate base of carbonic acid",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -2958,12 +2866,10 @@
     },
     "options": [
       "The species remaining after an acid donates a proton",
-      "Bicarbonate is the conjugate base of carbonic acid",
       "It must differ from its acid by an entire electron shell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3008,9 +2914,9 @@
   },
   {
     "id": "basic_chemistry-0143",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept carbonic acid? Select all that apply.",
+    "question": "Which statement about the chemistry concept carbonic acid is correct?",
     "explanation": "Carbonic acid: the weak acid H2CO3 in a physiologically important buffer system. Its conjugate base is bicarbonate",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3020,13 +2926,11 @@
       "kind": "slide"
     },
     "options": [
-      "The weak acid H2CO3 in a physiologically important buffer system",
       "Its conjugate base is bicarbonate",
       "Its conjugate base is an intact red blood cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3071,9 +2975,9 @@
   },
   {
     "id": "basic_chemistry-0146",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept bicarbonate? Select all that apply.",
+    "question": "Which statement about the chemistry concept bicarbonate is correct?",
     "explanation": "Bicarbonate: the ion HCO3− that can accept a proton in a buffer system. It is paired with carbonic acid in an important physiological buffer",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3084,12 +2988,10 @@
     },
     "options": [
       "The ion HCO3− that can accept a proton in a buffer system",
-      "It is paired with carbonic acid in an important physiological buffer",
       "It is a triglyceride containing three fatty acids"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3135,9 +3037,9 @@
   },
   {
     "id": "basic_chemistry-0149",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept monosaccharide? Select all that apply.",
+    "question": "Which statement about the chemistry concept monosaccharide is correct?",
     "explanation": "Monosaccharide: a single sugar unit. It is a carbohydrate monomer",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3147,13 +3049,11 @@
       "kind": "slide"
     },
     "options": [
-      "A single sugar unit",
       "It is a carbohydrate monomer",
       "It must contain thousands of linked sugar units"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3198,9 +3098,9 @@
   },
   {
     "id": "basic_chemistry-0152",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept hexose? Select all that apply.",
+    "question": "Which statement about the chemistry concept hexose is correct?",
     "explanation": "Hexose: a monosaccharide containing six carbon atoms. Glucose is an example",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3211,12 +3111,10 @@
     },
     "options": [
       "A monosaccharide containing six carbon atoms",
-      "Glucose is an example",
       "It is defined by having five carbon atoms"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3261,9 +3159,9 @@
   },
   {
     "id": "basic_chemistry-0155",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept pentose? Select all that apply.",
+    "question": "Which statement about the chemistry concept pentose is correct?",
     "explanation": "Pentose: a monosaccharide containing five carbon atoms. Ribose is an example",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3273,13 +3171,11 @@
       "kind": "slide"
     },
     "options": [
-      "A monosaccharide containing five carbon atoms",
       "Ribose is an example",
       "It is defined by containing three fatty acids"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3324,9 +3220,9 @@
   },
   {
     "id": "basic_chemistry-0158",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept disaccharide? Select all that apply.",
+    "question": "Which statement about the chemistry concept disaccharide is correct?",
     "explanation": "Disaccharide: a carbohydrate containing two linked monosaccharide units. Sucrose and lactose are examples",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3337,12 +3233,10 @@
     },
     "options": [
       "A carbohydrate containing two linked monosaccharide units",
-      "Sucrose and lactose are examples",
       "It is defined as an amino-acid chain"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3387,9 +3281,9 @@
   },
   {
     "id": "basic_chemistry-0161",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept polysaccharide? Select all that apply.",
+    "question": "Which statement about the chemistry concept polysaccharide is correct?",
     "explanation": "Polysaccharide: a carbohydrate polymer with many sugar units. Glycogen and starch are examples",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3399,13 +3293,11 @@
       "kind": "slide"
     },
     "options": [
-      "A carbohydrate polymer with many sugar units",
       "Glycogen and starch are examples",
       "It must be a single unlinked sugar"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3450,9 +3342,9 @@
   },
   {
     "id": "basic_chemistry-0164",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept glycogen? Select all that apply.",
+    "question": "Which statement about the chemistry concept glycogen is correct?",
     "explanation": "Glycogen: the branched glucose-storage polymer prominent in animal liver and muscle. It can be mobilized when glucose is needed",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3463,12 +3355,10 @@
     },
     "options": [
       "The branched glucose-storage polymer prominent in animal liver and muscle",
-      "It can be mobilized when glucose is needed",
       "It is the principal structural fiber of plant cell walls"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3513,9 +3403,9 @@
   },
   {
     "id": "basic_chemistry-0167",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept starch? Select all that apply.",
+    "question": "Which statement about the chemistry concept starch is correct?",
     "explanation": "Starch: a glucose polymer used by plants for energy storage. Human digestive enzymes can break down many starch bonds",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3525,13 +3415,11 @@
       "kind": "slide"
     },
     "options": [
-      "A glucose polymer used by plants for energy storage",
       "Human digestive enzymes can break down many starch bonds",
       "It is the main DNA sugar"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3576,9 +3464,9 @@
   },
   {
     "id": "basic_chemistry-0170",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept cellulose? Select all that apply.",
+    "question": "Which statement about the chemistry concept cellulose is correct?",
     "explanation": "Cellulose: a structural plant glucose polymer that contributes dietary fiber. Humans lack enzymes that digest its beta-linked backbone efficiently",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3589,12 +3477,10 @@
     },
     "options": [
       "A structural plant glucose polymer that contributes dietary fiber",
-      "Humans lack enzymes that digest its beta-linked backbone efficiently",
       "Human digestive enzymes readily digest it in exactly the same way as starch"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3639,9 +3525,9 @@
   },
   {
     "id": "basic_chemistry-0173",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept triglyceride? Select all that apply.",
+    "question": "Which statement about the chemistry concept triglyceride is correct?",
     "explanation": "Triglyceride: a lipid formed from glycerol and three fatty acids. It serves as a major energy-storage molecule",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3651,13 +3537,11 @@
       "kind": "slide"
     },
     "options": [
-      "A lipid formed from glycerol and three fatty acids",
       "It serves as a major energy-storage molecule",
       "It is formed from three nucleotides and one phosphate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3703,9 +3587,9 @@
   },
   {
     "id": "basic_chemistry-0176",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept glycerol? Select all that apply.",
+    "question": "Which statement about the chemistry concept glycerol is correct?",
     "explanation": "Glycerol: the three-carbon alcohol backbone of a triglyceride. It can be esterified to three fatty acids",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3716,12 +3600,10 @@
     },
     "options": [
       "The three-carbon alcohol backbone of a triglyceride",
-      "It can be esterified to three fatty acids",
       "It is a six-carbon nitrogenous base"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3766,9 +3648,9 @@
   },
   {
     "id": "basic_chemistry-0179",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept saturated fatty acid? Select all that apply.",
+    "question": "Which statement about the chemistry concept saturated fatty acid is correct?",
     "explanation": "Saturated fatty acid: a fatty acid lacking carbon–carbon double bonds. Its chain can pack relatively tightly with similar chains",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3778,13 +3660,11 @@
       "kind": "slide"
     },
     "options": [
-      "A fatty acid lacking carbon–carbon double bonds",
       "Its chain can pack relatively tightly with similar chains",
       "It must contain at least two carbon–carbon double bonds"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3829,9 +3709,9 @@
   },
   {
     "id": "basic_chemistry-0182",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept unsaturated fatty acid? Select all that apply.",
+    "question": "Which statement about the chemistry concept unsaturated fatty acid is correct?",
     "explanation": "Unsaturated fatty acid: a fatty acid with one or more carbon–carbon double bonds. Cis double bonds can introduce bends in its chain",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3842,12 +3722,10 @@
     },
     "options": [
       "A fatty acid with one or more carbon–carbon double bonds",
-      "Cis double bonds can introduce bends in its chain",
       "It is defined by complete absence of C=C bonds"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3892,9 +3770,9 @@
   },
   {
     "id": "basic_chemistry-0185",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept phospholipid? Select all that apply.",
+    "question": "Which statement about the chemistry concept phospholipid is correct?",
     "explanation": "Phospholipid: a membrane lipid with a polar head region and nonpolar tail regions. Common glycerophospholipids have two fatty-acid tails",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3904,13 +3782,11 @@
       "kind": "slide"
     },
     "options": [
-      "A membrane lipid with a polar head region and nonpolar tail regions",
       "Common glycerophospholipids have two fatty-acid tails",
       "It must be uniformly nonpolar with no polar region"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3956,9 +3832,9 @@
   },
   {
     "id": "basic_chemistry-0188",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the chemistry concept amphipathic molecule? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the chemistry concept amphipathic molecule is correct?",
     "explanation": "Amphipathic molecule: a molecule with both hydrophilic and hydrophobic regions. Phospholipids are important examples",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -3970,12 +3846,10 @@
     },
     "options": [
       "A molecule with both hydrophilic and hydrophobic regions",
-      "Phospholipids are important examples",
       "It has no region capable of interacting with water"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4022,9 +3896,9 @@
   },
   {
     "id": "basic_chemistry-0191",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept cholesterol? Select all that apply.",
+    "question": "Which statement about the chemistry concept cholesterol is correct?",
     "explanation": "Cholesterol: a sterol that contributes to membranes and serves as a precursor for steroid products. It is a precursor for bile acids and many steroid hormones",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4034,13 +3908,11 @@
       "kind": "slide"
     },
     "options": [
-      "A sterol that contributes to membranes and serves as a precursor for steroid products",
       "It is a precursor for bile acids and many steroid hormones",
       "It is the monomer of every protein"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4085,9 +3957,9 @@
   },
   {
     "id": "basic_chemistry-0194",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept protein? Select all that apply.",
+    "question": "Which statement about the chemistry concept protein is correct?",
     "explanation": "Protein: a biological polymer composed of amino acids joined in a polypeptide chain. Proteins can provide structural, catalytic, and signaling functions",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4098,12 +3970,10 @@
     },
     "options": [
       "A biological polymer composed of amino acids joined in a polypeptide chain",
-      "Proteins can provide structural, catalytic, and signaling functions",
       "Its defining monomer is always a nucleotide"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4149,9 +4019,9 @@
   },
   {
     "id": "basic_chemistry-0197",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept amino acid? Select all that apply.",
+    "question": "Which statement about the chemistry concept amino acid is correct?",
     "explanation": "Amino acid: a protein building block with amino and carboxyl groups and a side chain. Differences in the side chain affect its properties",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4161,13 +4031,11 @@
       "kind": "slide"
     },
     "options": [
-      "A protein building block with amino and carboxyl groups and a side chain",
       "Differences in the side chain affect its properties",
       "It must contain a phosphate and a nitrogenous base"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4213,9 +4081,9 @@
   },
   {
     "id": "basic_chemistry-0200",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the chemistry concept side chain? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the chemistry concept side chain is correct?",
     "explanation": "Side chain: the variable group that distinguishes amino-acid properties. It is often represented by R in a general amino-acid diagram",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4227,12 +4095,10 @@
     },
     "options": [
       "The variable group that distinguishes amino-acid properties",
-      "It is often represented by R in a general amino-acid diagram",
       "It is identical in every amino acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4279,9 +4145,9 @@
   },
   {
     "id": "basic_chemistry-0203",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept peptide bond? Select all that apply.",
+    "question": "Which statement about the chemistry concept peptide bond is correct?",
     "explanation": "Peptide bond: the covalent amide linkage joining amino-acid residues. It links a carboxyl-derived carbon to an amino-derived nitrogen",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4291,13 +4157,11 @@
       "kind": "slide"
     },
     "options": [
-      "The covalent amide linkage joining amino-acid residues",
       "It links a carboxyl-derived carbon to an amino-derived nitrogen",
       "It is the base-pair hydrogen bond joining two DNA strands"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4342,9 +4206,9 @@
   },
   {
     "id": "basic_chemistry-0206",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept primary protein structure? Select all that apply.",
+    "question": "Which statement about the chemistry concept primary protein structure is correct?",
     "explanation": "Primary protein structure: the amino-acid sequence of a polypeptide. Sequence helps determine the folded structure",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4355,12 +4219,10 @@
     },
     "options": [
       "The amino-acid sequence of a polypeptide",
-      "Sequence helps determine the folded structure",
       "It is defined only by association of several independent subunits"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4405,9 +4267,9 @@
   },
   {
     "id": "basic_chemistry-0209",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept secondary protein structure? Select all that apply.",
+    "question": "Which statement about the chemistry concept secondary protein structure is correct?",
     "explanation": "Secondary protein structure: local backbone folding such as alpha helices and beta sheets. Backbone hydrogen bonds help stabilize these arrangements",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4417,13 +4279,11 @@
       "kind": "slide"
     },
     "options": [
-      "Local backbone folding such as alpha helices and beta sheets",
       "Backbone hydrogen bonds help stabilize these arrangements",
       "It is the total number of protons in a protein"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4468,9 +4328,9 @@
   },
   {
     "id": "basic_chemistry-0212",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept tertiary protein structure? Select all that apply.",
+    "question": "Which statement about the chemistry concept tertiary protein structure is correct?",
     "explanation": "Tertiary protein structure: the overall three-dimensional folding of a single polypeptide. Multiple kinds of interactions can stabilize it",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4481,12 +4341,10 @@
     },
     "options": [
       "The overall three-dimensional folding of a single polypeptide",
-      "Multiple kinds of interactions can stabilize it",
       "It necessarily requires several separate polypeptide subunits"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4531,9 +4389,9 @@
   },
   {
     "id": "basic_chemistry-0215",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept quaternary protein structure? Select all that apply.",
+    "question": "Which statement about the chemistry concept quaternary protein structure is correct?",
     "explanation": "Quaternary protein structure: the association of multiple polypeptide subunits. Hemoglobin is a familiar example",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4543,13 +4401,11 @@
       "kind": "slide"
     },
     "options": [
-      "The association of multiple polypeptide subunits",
       "Hemoglobin is a familiar example",
       "Every single-chain protein must have it"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4594,9 +4450,9 @@
   },
   {
     "id": "basic_chemistry-0218",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept denaturation? Select all that apply.",
+    "question": "Which statement about the chemistry concept denaturation is correct?",
     "explanation": "Denaturation: disruption of a protein’s normal higher-order structure. It can impair function without necessarily breaking every peptide bond",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4607,12 +4463,10 @@
     },
     "options": [
       "Disruption of a protein’s normal higher-order structure",
-      "It can impair function without necessarily breaking every peptide bond",
       "It always means complete conversion of protein to free amino acids"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4657,9 +4511,9 @@
   },
   {
     "id": "basic_chemistry-0221",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept enzyme substrate? Select all that apply.",
+    "question": "Which statement about the chemistry concept enzyme substrate is correct?",
     "explanation": "Enzyme substrate: the reactant on which an enzyme acts. It interacts with the enzyme’s binding and catalytic region",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4669,13 +4523,11 @@
       "kind": "slide"
     },
     "options": [
-      "The reactant on which an enzyme acts",
       "It interacts with the enzyme’s binding and catalytic region",
       "It is always the final enzyme molecule itself"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4721,9 +4573,9 @@
   },
   {
     "id": "basic_chemistry-0224",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements correctly describe the chemistry concept active site? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the chemistry concept active site is correct?",
     "explanation": "Active site: the enzyme region that binds substrate and participates in catalysis. Its geometry and chemical groups contribute to selectivity",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4735,12 +4587,10 @@
     },
     "options": [
       "The enzyme region that binds substrate and participates in catalysis",
-      "Its geometry and chemical groups contribute to selectivity",
       "It is the atomic nucleus of every substrate"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4786,9 +4636,9 @@
   },
   {
     "id": "basic_chemistry-0227",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept nucleotide? Select all that apply.",
+    "question": "Which statement about the chemistry concept nucleotide is correct?",
     "explanation": "Nucleotide: a unit containing a sugar, nitrogenous base, and one or more phosphate groups. Nucleotides build nucleic acids and include ATP",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4798,13 +4648,11 @@
       "kind": "slide"
     },
     "options": [
-      "A unit containing a sugar, nitrogenous base, and one or more phosphate groups",
       "Nucleotides build nucleic acids and include ATP",
       "It is formed only from three fatty acids"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4850,9 +4698,9 @@
   },
   {
     "id": "basic_chemistry-0230",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept dna? Select all that apply.",
+    "question": "Which statement about the chemistry concept dna is correct?",
     "explanation": "DNA: the deoxyribose-containing nucleic acid that stores genetic sequence information. Its usual cellular form is a double helix",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4864,12 +4712,10 @@
     },
     "options": [
       "The deoxyribose-containing nucleic acid that stores genetic sequence information",
-      "Its usual cellular form is a double helix",
       "It uses uracil instead of thymine as a normal canonical base"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4917,9 +4763,9 @@
   },
   {
     "id": "basic_chemistry-0233",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept rna? Select all that apply.",
+    "question": "Which statement about the chemistry concept rna is correct?",
     "explanation": "RNA: the ribose-containing nucleic acid using uracil among its canonical bases. Many RNAs participate in protein production and regulation",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4930,13 +4776,11 @@
       "kind": "slide"
     },
     "options": [
-      "The ribose-containing nucleic acid using uracil among its canonical bases",
       "Many RNAs participate in protein production and regulation",
       "It always uses deoxyribose instead of ribose"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4983,9 +4827,9 @@
   },
   {
     "id": "basic_chemistry-0236",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept atp? Select all that apply.",
+    "question": "Which statement about the chemistry concept atp is correct?",
     "explanation": "ATP: adenosine triphosphate, an energy-transfer nucleotide. It contains adenine, ribose, and three phosphate groups",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -4996,12 +4840,10 @@
     },
     "options": [
       "Adenosine triphosphate, an energy-transfer nucleotide",
-      "It contains adenine, ribose, and three phosphate groups",
       "It is a polymer of three amino acids"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5046,9 +4888,9 @@
   },
   {
     "id": "basic_chemistry-0239",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements correctly describe the chemistry concept adp? Select all that apply.",
+    "question": "Which statement about the chemistry concept adp is correct?",
     "explanation": "ADP: adenosine diphosphate, a nucleotide with two phosphate groups. ATP hydrolysis can produce it together with inorganic phosphate",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -5058,13 +4900,11 @@
       "kind": "slide"
     },
     "options": [
-      "Adenosine diphosphate, a nucleotide with two phosphate groups",
       "ATP hydrolysis can produce it together with inorganic phosphate",
       "It contains three phosphate groups by definition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -6408,9 +6248,9 @@
   },
   {
     "id": "basic_chemistry-0301",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which elements are among the four most abundant in the human body? Select all that apply.",
+    "question": "Which element is among the four most abundant in the human body?",
     "explanation": "Oxygen, carbon, hydrogen, and nitrogen make up most body matter by mass.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6420,24 +6260,18 @@
       "kind": "slide"
     },
     "options": [
-      "Oxygen",
       "Carbon",
-      "Hydrogen",
-      "Nitrogen",
       "Lead"
     ],
     "correct": [
-      0,
-      1,
-      2,
-      3
+      0
     ]
   },
   {
     "id": "basic_chemistry-0302",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which descriptions of subatomic charge are correct? Select all that apply.",
+    "question": "Which description of subatomic charge is correct?",
     "explanation": "The three particle types differ in charge and mass.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6447,22 +6281,18 @@
       "kind": "slide"
     },
     "options": [
-      "Proton—positive",
-      "Electron—negative",
       "Neutron—neutral",
       "Neutron—negative"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0303",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which changes can occur without changing an element’s proton number? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which change can occurs without changing an element’s proton number?",
     "explanation": "Ion formation changes electrons; isotope differences involve neutrons.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6475,21 +6305,17 @@
     },
     "options": [
       "Electron loss to form an ion",
-      "Electron gain to form an ion",
-      "A neutron-count difference between isotopes",
       "A change to a different atomic number"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0304",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements distinguish covalent from ionic bonding? Select all that apply.",
+    "question": "Which statement distinguish covalent from ionic bonding?",
     "explanation": "The bond models differ in how electrons and electrical attractions are described.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6500,20 +6326,18 @@
     },
     "options": [
       "Covalent bonding involves electron sharing",
-      "Ionic attraction involves opposite ion charges",
       "Every covalent bond requires complete electron transfer",
       "Every ionic compound is a protein"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0305",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about water polarity are correct? Select all that apply.",
+    "question": "Which statement about water polarity is correct?",
     "explanation": "Partial charges do not imply complete ionic separation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6524,22 +6348,18 @@
       "kind": "slide"
     },
     "options": [
-      "Oxygen attracts shared electrons more strongly",
-      "Hydrogens have partial positive character",
       "The whole molecule can remain neutral",
       "Every water molecule consists of free H+ and O2− ions"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0306",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which variables can influence a chemical reaction rate? Select all that apply.",
+    "question": "Which variables can influence a chemical reaction rate?",
     "explanation": "Reaction kinetics depend on physical and chemical conditions.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6550,21 +6370,17 @@
     },
     "options": [
       "Temperature",
-      "Reactant concentration",
-      "Catalyst availability",
       "The spelling of the reactant’s name"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0307",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which features characterize a true solution under stable conditions? Select all that apply.",
+    "question": "Which feature characterizes a true solution under stable conditions?",
     "explanation": "Dissolved particles remain dispersed rather than forming coarse sediment.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6574,21 +6390,19 @@
       "kind": "slide"
     },
     "options": [
-      "Homogeneous composition at the molecular scale",
       "Solute dispersed among solvent particles",
       "Mandatory rapid sediment formation",
       "Every solute molecule becoming a new element"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0308",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which physiological functions make use of water? Select all that apply.",
+    "question": "Which physiological function makes use of water?",
     "explanation": "Water has multiple physical and chemical roles.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6598,22 +6412,18 @@
       "kind": "slide"
     },
     "options": [
-      "Lubrication",
-      "Thermal buffering",
       "Cushioning",
       "Replacement of every cellular protein"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0309",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which water-reaction descriptions are correct? Select all that apply.",
+    "question": "Which water-reaction description is correct?",
     "explanation": "The processes differ in water’s role.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6624,21 +6434,19 @@
       "kind": "slide"
     },
     "options": [
-      "Hydrolysis uses water in cleavage",
       "Dehydration synthesis can release water during joining",
       "Hydrolysis always means freezing",
       "Condensation always requires conversion of protons into neutrons"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0310",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which acid–base statements are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which acid–base statement is correct?",
     "explanation": "Proton transfer and buffering are related but distinct concepts.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6651,22 +6459,18 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Proton transfer and buffering are related but distinct concepts."
     },
     "options": [
-      "An acid can donate H+",
       "A base can accept H+",
-      "A buffer can resist limited acid or base additions",
       "Every base must be a hydroxide salt"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0311",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are carbohydrate categories? Select all that apply.",
+    "question": "Which is one of the carbohydrate categories?",
     "explanation": "Carbohydrates can be classified by the number of sugar units.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6676,22 +6480,18 @@
       "kind": "slide"
     },
     "options": [
-      "Monosaccharides",
-      "Disaccharides",
       "Polysaccharides",
       "Steroid receptors"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0312",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are monosaccharides listed in the chemistry material? Select all that apply.",
+    "question": "Which is one of the monosaccharides listed in the chemistry material?",
     "explanation": "These hexoses are single sugar units.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6702,21 +6502,17 @@
     },
     "options": [
       "Glucose",
-      "Fructose",
-      "Galactose",
       "Cholesterol"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0313",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which glucose-polymer descriptions are correct? Select all that apply.",
+    "question": "Which glucose-polymer description is correct?",
     "explanation": "Linkage and organization distinguish these glucose polymers.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6726,22 +6522,18 @@
       "kind": "slide"
     },
     "options": [
-      "Glycogen—animal storage",
       "Starch—plant storage",
-      "Cellulose—plant structural fiber",
       "Cellulose—an easily hydrolyzed human storage polymer"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0314",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which functions are associated with stored triglycerides? Select all that apply.",
+    "question": "Which function is associated with stored triglycerides?",
     "explanation": "Triglycerides serve metabolic and protective physical functions.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6751,22 +6543,18 @@
       "kind": "slide"
     },
     "options": [
-      "Energy storage",
-      "Insulation",
       "Cushioning",
       "Storage of the DNA base sequence as their primary role"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0315",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which properties help phospholipids form membranes? Select all that apply.",
+    "question": "Which property helps phospholipids form membranes?",
     "explanation": "Amphipathic architecture supports membrane assembly.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6777,21 +6565,17 @@
     },
     "options": [
       "Polar head regions",
-      "Nonpolar tail regions",
-      "Different water interactions at the two regions",
       "Complete absence of hydrophobic regions"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0316",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which are important protein functions? Select all that apply.",
+    "question": "Which is one of the important protein functions?",
     "explanation": "Proteins perform diverse cellular roles.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6801,22 +6585,18 @@
       "kind": "slide"
     },
     "options": [
-      "Catalysis",
       "Structural support",
-      "Signaling",
       "Serving as the only chemical form of water"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0317",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which protein-structure descriptions are correct? Select all that apply.",
+    "question": "Which protein-structure description is correct?",
     "explanation": "These structural levels describe different aspects of polypeptide organization.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6829,22 +6609,18 @@
       "kind": "slide"
     },
     "options": [
-      "Primary—sequence",
-      "Secondary—local backbone patterns",
       "Quaternary—multiple subunits",
       "Tertiary—atomic proton count"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0318",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which can disturb a protein’s normal folded conformation? Select all that apply.",
+    "question": "Which can disturb a protein’s normal folded conformation?",
     "explanation": "Heat and altered chemical conditions can disrupt stabilizing interactions.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6855,20 +6631,18 @@
     },
     "options": [
       "Excessive heat",
-      "Extreme pH",
       "A guarantee that every mild environmental change preserves function",
       "Changing only the printed label on a sample"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0319",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which DNA–RNA distinctions are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which DNA–RNA distinctions are correct?",
     "explanation": "Sugar and base composition distinguish DNA and RNA; DNA is not confined to nuclei.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6880,22 +6654,18 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Sugar and base composition distinguish DNA and RNA; DNA is not confined to nuclei."
     },
     "options": [
-      "DNA commonly contains deoxyribose",
       "RNA contains ribose",
-      "Uracil is a canonical RNA base",
       "DNA must be absent from every mitochondrion"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
     "id": "basic_chemistry-0320",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about ATP are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about ATP is correct in basic chemistry?",
     "explanation": "ATP functions through overall reaction energetics and coupling.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -6907,15 +6677,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: ATP functions through overall reaction energetics and coupling."
     },
     "options": [
-      "It contains adenine and ribose",
-      "It has three phosphate groups",
       "Its hydrolysis can be coupled to cellular work",
       "Breaking any isolated chemical bond alone must release energy"
     ],
     "correct": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
@@ -9248,9 +9014,9 @@
   },
   {
     "id": "basic_chemistry-0421",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Neutron? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Neutron?",
     "explanation": "Proton is associated with positive nuclear charge; Neutron is associated with neutral nuclear particle.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9261,21 +9027,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Proton is associated with positive nuclear charge; Neutron is associated with neutral nuclear particle."
     },
     "options": [
-      "Proton—positive nuclear charge",
       "Neutron—neutral nuclear particle",
       "Proton—negative orbital charge",
       "Neutron—the defining negative charge carrier in an orbital"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0422",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Electron? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Electron?",
     "explanation": "Proton is associated with positive nuclear charge; Electron is associated with negative charge and very small mass.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9287,20 +9051,18 @@
     },
     "options": [
       "Proton—positive nuclear charge",
-      "Electron—negative charge and very small mass",
       "Proton—negative orbital charge",
       "Electron—approximately one amu and positive nuclear charge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0423",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Cation? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Cation?",
     "explanation": "Proton is associated with positive nuclear charge; Cation is associated with net positive ionic charge.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9312,21 +9074,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Proton is associated with positive nuclear charge; Cation is associated with net positive ionic charge."
     },
     "options": [
-      "Proton—positive nuclear charge",
       "Cation—net positive ionic charge",
       "Proton—negative orbital charge",
       "Cation—net negative ionic charge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0424",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Anion? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Anion?",
     "explanation": "Proton is associated with positive nuclear charge; Anion is associated with net negative ionic charge.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9339,20 +9099,18 @@
     },
     "options": [
       "Proton—positive nuclear charge",
-      "Anion—net negative ionic charge",
       "Proton—negative orbital charge",
       "Anion—net positive ionic charge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0425",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Covalent bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Covalent bonding?",
     "explanation": "Proton is associated with positive nuclear charge; Covalent bonding is associated with shared electron pairs.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9364,21 +9122,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Proton is associated with positive nuclear charge; Covalent bonding is associated with shared electron pairs."
     },
     "options": [
-      "Proton—positive nuclear charge",
       "Covalent bonding—shared electron pairs",
       "Proton—negative orbital charge",
       "Covalent bonding—a requirement that atoms remain chemically unconnected"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0426",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Hydrogen bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Hydrogen bonding?",
     "explanation": "Proton is associated with positive nuclear charge; Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9391,20 +9147,18 @@
     },
     "options": [
       "Proton—positive nuclear charge",
-      "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
       "Proton—negative orbital charge",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0427",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Solvent? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Solvent?",
     "explanation": "Proton is associated with positive nuclear charge; Solvent is associated with dissolving medium.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9416,21 +9170,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Proton is associated with positive nuclear charge; Solvent is associated with dissolving medium."
     },
     "options": [
-      "Proton—positive nuclear charge",
       "Solvent—dissolving medium",
       "Proton—negative orbital charge",
       "Solvent—the definition of settled sediment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0428",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Solute? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Solute?",
     "explanation": "Proton is associated with positive nuclear charge; Solute is associated with dissolved substance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9443,20 +9195,18 @@
     },
     "options": [
       "Proton—positive nuclear charge",
-      "Solute—dissolved substance",
       "Proton—negative orbital charge",
       "Solute—the required identity of an empty container"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0429",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Dehydration synthesis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Dehydration synthesis?",
     "explanation": "Proton is associated with positive nuclear charge; Dehydration synthesis is associated with joining components with water released in the model.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9468,21 +9218,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Proton is associated with positive nuclear charge; Dehydration synthesis is associated with joining components with water released in the model."
     },
     "options": [
-      "Proton—positive nuclear charge",
       "Dehydration synthesis—joining components with water released in the model",
       "Proton—negative orbital charge",
       "Dehydration synthesis—cleavage defined by water addition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0430",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Hydrolysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Hydrolysis?",
     "explanation": "Proton is associated with positive nuclear charge; Hydrolysis is associated with cleavage involving water addition.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9495,20 +9243,18 @@
     },
     "options": [
       "Proton—positive nuclear charge",
-      "Hydrolysis—cleavage involving water addition",
       "Proton—negative orbital charge",
       "Hydrolysis—joining monomers defined by water loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0431",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Acid?",
     "explanation": "Proton is associated with positive nuclear charge; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9520,21 +9266,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Proton is associated with positive nuclear charge; Acid is associated with proton donation."
     },
     "options": [
-      "Proton—positive nuclear charge",
       "Acid—proton donation",
       "Proton—negative orbital charge",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0432",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Base?",
     "explanation": "Proton is associated with positive nuclear charge; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9547,20 +9291,18 @@
     },
     "options": [
       "Proton—positive nuclear charge",
-      "Base—proton acceptance",
       "Proton—negative orbital charge",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0433",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Buffer?",
     "explanation": "Proton is associated with positive nuclear charge; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9572,21 +9314,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Proton is associated with positive nuclear charge; Buffer is associated with resistance to limited acid–base perturbation."
     },
     "options": [
-      "Proton—positive nuclear charge",
       "Buffer—resistance to limited acid–base perturbation",
       "Proton—negative orbital charge",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0434",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Proton and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Proton and Enzyme catalysis?",
     "explanation": "Proton is associated with positive nuclear charge; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9599,20 +9339,18 @@
     },
     "options": [
       "Proton—positive nuclear charge",
-      "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Proton—negative orbital charge",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0435",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Electron? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Electron?",
     "explanation": "Neutron is associated with neutral nuclear particle; Electron is associated with negative charge and very small mass.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9623,21 +9361,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutron is associated with neutral nuclear particle; Electron is associated with negative charge and very small mass."
     },
     "options": [
-      "Neutron—neutral nuclear particle",
       "Electron—negative charge and very small mass",
       "Neutron—the defining negative charge carrier in an orbital",
       "Electron—approximately one amu and positive nuclear charge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0436",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Cation? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Cation?",
     "explanation": "Neutron is associated with neutral nuclear particle; Cation is associated with net positive ionic charge.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9650,20 +9386,18 @@
     },
     "options": [
       "Neutron—neutral nuclear particle",
-      "Cation—net positive ionic charge",
       "Neutron—the defining negative charge carrier in an orbital",
       "Cation—net negative ionic charge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0437",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Anion? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Anion?",
     "explanation": "Neutron is associated with neutral nuclear particle; Anion is associated with net negative ionic charge.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9675,21 +9409,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutron is associated with neutral nuclear particle; Anion is associated with net negative ionic charge."
     },
     "options": [
-      "Neutron—neutral nuclear particle",
       "Anion—net negative ionic charge",
       "Neutron—the defining negative charge carrier in an orbital",
       "Anion—net positive ionic charge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0438",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Covalent bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Covalent bonding?",
     "explanation": "Neutron is associated with neutral nuclear particle; Covalent bonding is associated with shared electron pairs.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9702,20 +9434,18 @@
     },
     "options": [
       "Neutron—neutral nuclear particle",
-      "Covalent bonding—shared electron pairs",
       "Neutron—the defining negative charge carrier in an orbital",
       "Covalent bonding—a requirement that atoms remain chemically unconnected"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0439",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Hydrogen bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Hydrogen bonding?",
     "explanation": "Neutron is associated with neutral nuclear particle; Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9727,21 +9457,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutron is associated with neutral nuclear particle; Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor."
     },
     "options": [
-      "Neutron—neutral nuclear particle",
       "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
       "Neutron—the defining negative charge carrier in an orbital",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0440",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Solvent? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Solvent?",
     "explanation": "Neutron is associated with neutral nuclear particle; Solvent is associated with dissolving medium.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9754,20 +9482,18 @@
     },
     "options": [
       "Neutron—neutral nuclear particle",
-      "Solvent—dissolving medium",
       "Neutron—the defining negative charge carrier in an orbital",
       "Solvent—the definition of settled sediment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0441",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Solute? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Solute?",
     "explanation": "Neutron is associated with neutral nuclear particle; Solute is associated with dissolved substance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9779,21 +9505,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutron is associated with neutral nuclear particle; Solute is associated with dissolved substance."
     },
     "options": [
-      "Neutron—neutral nuclear particle",
       "Solute—dissolved substance",
       "Neutron—the defining negative charge carrier in an orbital",
       "Solute—the required identity of an empty container"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0442",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Dehydration synthesis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Dehydration synthesis?",
     "explanation": "Neutron is associated with neutral nuclear particle; Dehydration synthesis is associated with joining components with water released in the model.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9806,20 +9530,18 @@
     },
     "options": [
       "Neutron—neutral nuclear particle",
-      "Dehydration synthesis—joining components with water released in the model",
       "Neutron—the defining negative charge carrier in an orbital",
       "Dehydration synthesis—cleavage defined by water addition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0443",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Hydrolysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Hydrolysis?",
     "explanation": "Neutron is associated with neutral nuclear particle; Hydrolysis is associated with cleavage involving water addition.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9831,21 +9553,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutron is associated with neutral nuclear particle; Hydrolysis is associated with cleavage involving water addition."
     },
     "options": [
-      "Neutron—neutral nuclear particle",
       "Hydrolysis—cleavage involving water addition",
       "Neutron—the defining negative charge carrier in an orbital",
       "Hydrolysis—joining monomers defined by water loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0444",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Acid?",
     "explanation": "Neutron is associated with neutral nuclear particle; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9858,20 +9578,18 @@
     },
     "options": [
       "Neutron—neutral nuclear particle",
-      "Acid—proton donation",
       "Neutron—the defining negative charge carrier in an orbital",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0445",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Base?",
     "explanation": "Neutron is associated with neutral nuclear particle; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9883,21 +9601,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutron is associated with neutral nuclear particle; Base is associated with proton acceptance."
     },
     "options": [
-      "Neutron—neutral nuclear particle",
       "Base—proton acceptance",
       "Neutron—the defining negative charge carrier in an orbital",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0446",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Buffer?",
     "explanation": "Neutron is associated with neutral nuclear particle; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9910,20 +9626,18 @@
     },
     "options": [
       "Neutron—neutral nuclear particle",
-      "Buffer—resistance to limited acid–base perturbation",
       "Neutron—the defining negative charge carrier in an orbital",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0447",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Neutron and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Neutron and Enzyme catalysis?",
     "explanation": "Neutron is associated with neutral nuclear particle; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9935,21 +9649,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Neutron is associated with neutral nuclear particle; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier."
     },
     "options": [
-      "Neutron—neutral nuclear particle",
       "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Neutron—the defining negative charge carrier in an orbital",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0448",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Cation? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Cation?",
     "explanation": "Electron is associated with negative charge and very small mass; Cation is associated with net positive ionic charge.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9962,20 +9674,18 @@
     },
     "options": [
       "Electron—negative charge and very small mass",
-      "Cation—net positive ionic charge",
       "Electron—approximately one amu and positive nuclear charge",
       "Cation—net negative ionic charge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0449",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Anion? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Anion?",
     "explanation": "Electron is associated with negative charge and very small mass; Anion is associated with net negative ionic charge.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -9987,21 +9697,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Electron is associated with negative charge and very small mass; Anion is associated with net negative ionic charge."
     },
     "options": [
-      "Electron—negative charge and very small mass",
       "Anion—net negative ionic charge",
       "Electron—approximately one amu and positive nuclear charge",
       "Anion—net positive ionic charge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0450",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Covalent bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Covalent bonding?",
     "explanation": "Electron is associated with negative charge and very small mass; Covalent bonding is associated with shared electron pairs.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10014,20 +9722,18 @@
     },
     "options": [
       "Electron—negative charge and very small mass",
-      "Covalent bonding—shared electron pairs",
       "Electron—approximately one amu and positive nuclear charge",
       "Covalent bonding—a requirement that atoms remain chemically unconnected"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0451",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Hydrogen bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Hydrogen bonding?",
     "explanation": "Electron is associated with negative charge and very small mass; Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10039,21 +9745,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Electron is associated with negative charge and very small mass; Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor."
     },
     "options": [
-      "Electron—negative charge and very small mass",
       "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
       "Electron—approximately one amu and positive nuclear charge",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0452",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Solvent? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Solvent?",
     "explanation": "Electron is associated with negative charge and very small mass; Solvent is associated with dissolving medium.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10066,20 +9770,18 @@
     },
     "options": [
       "Electron—negative charge and very small mass",
-      "Solvent—dissolving medium",
       "Electron—approximately one amu and positive nuclear charge",
       "Solvent—the definition of settled sediment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0453",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Solute? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Solute?",
     "explanation": "Electron is associated with negative charge and very small mass; Solute is associated with dissolved substance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10091,21 +9793,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Electron is associated with negative charge and very small mass; Solute is associated with dissolved substance."
     },
     "options": [
-      "Electron—negative charge and very small mass",
       "Solute—dissolved substance",
       "Electron—approximately one amu and positive nuclear charge",
       "Solute—the required identity of an empty container"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0454",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Dehydration synthesis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Dehydration synthesis?",
     "explanation": "Electron is associated with negative charge and very small mass; Dehydration synthesis is associated with joining components with water released in the model.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10118,20 +9818,18 @@
     },
     "options": [
       "Electron—negative charge and very small mass",
-      "Dehydration synthesis—joining components with water released in the model",
       "Electron—approximately one amu and positive nuclear charge",
       "Dehydration synthesis—cleavage defined by water addition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0455",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Hydrolysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Hydrolysis?",
     "explanation": "Electron is associated with negative charge and very small mass; Hydrolysis is associated with cleavage involving water addition.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10143,21 +9841,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Electron is associated with negative charge and very small mass; Hydrolysis is associated with cleavage involving water addition."
     },
     "options": [
-      "Electron—negative charge and very small mass",
       "Hydrolysis—cleavage involving water addition",
       "Electron—approximately one amu and positive nuclear charge",
       "Hydrolysis—joining monomers defined by water loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0456",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Acid?",
     "explanation": "Electron is associated with negative charge and very small mass; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10170,20 +9866,18 @@
     },
     "options": [
       "Electron—negative charge and very small mass",
-      "Acid—proton donation",
       "Electron—approximately one amu and positive nuclear charge",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0457",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Base?",
     "explanation": "Electron is associated with negative charge and very small mass; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10195,21 +9889,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Electron is associated with negative charge and very small mass; Base is associated with proton acceptance."
     },
     "options": [
-      "Electron—negative charge and very small mass",
       "Base—proton acceptance",
       "Electron—approximately one amu and positive nuclear charge",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0458",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Buffer?",
     "explanation": "Electron is associated with negative charge and very small mass; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10222,20 +9914,18 @@
     },
     "options": [
       "Electron—negative charge and very small mass",
-      "Buffer—resistance to limited acid–base perturbation",
       "Electron—approximately one amu and positive nuclear charge",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0459",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Electron and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Electron and Enzyme catalysis?",
     "explanation": "Electron is associated with negative charge and very small mass; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10247,21 +9937,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Electron is associated with negative charge and very small mass; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier."
     },
     "options": [
-      "Electron—negative charge and very small mass",
       "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Electron—approximately one amu and positive nuclear charge",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0460",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Anion? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Anion?",
     "explanation": "Cation is associated with net positive ionic charge; Anion is associated with net negative ionic charge.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10273,20 +9961,18 @@
     },
     "options": [
       "Cation—net positive ionic charge",
-      "Anion—net negative ionic charge",
       "Cation—net negative ionic charge",
       "Anion—net positive ionic charge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0461",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Covalent bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Covalent bonding?",
     "explanation": "Cation is associated with net positive ionic charge; Covalent bonding is associated with shared electron pairs.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10298,21 +9984,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cation is associated with net positive ionic charge; Covalent bonding is associated with shared electron pairs."
     },
     "options": [
-      "Cation—net positive ionic charge",
       "Covalent bonding—shared electron pairs",
       "Cation—net negative ionic charge",
       "Covalent bonding—a requirement that atoms remain chemically unconnected"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0462",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Hydrogen bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Hydrogen bonding?",
     "explanation": "Cation is associated with net positive ionic charge; Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10325,20 +10009,18 @@
     },
     "options": [
       "Cation—net positive ionic charge",
-      "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
       "Cation—net negative ionic charge",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0463",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Solvent? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Solvent?",
     "explanation": "Cation is associated with net positive ionic charge; Solvent is associated with dissolving medium.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10350,21 +10032,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cation is associated with net positive ionic charge; Solvent is associated with dissolving medium."
     },
     "options": [
-      "Cation—net positive ionic charge",
       "Solvent—dissolving medium",
       "Cation—net negative ionic charge",
       "Solvent—the definition of settled sediment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0464",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Solute? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Solute?",
     "explanation": "Cation is associated with net positive ionic charge; Solute is associated with dissolved substance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10377,20 +10057,18 @@
     },
     "options": [
       "Cation—net positive ionic charge",
-      "Solute—dissolved substance",
       "Cation—net negative ionic charge",
       "Solute—the required identity of an empty container"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0465",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Dehydration synthesis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Dehydration synthesis?",
     "explanation": "Cation is associated with net positive ionic charge; Dehydration synthesis is associated with joining components with water released in the model.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10402,21 +10080,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cation is associated with net positive ionic charge; Dehydration synthesis is associated with joining components with water released in the model."
     },
     "options": [
-      "Cation—net positive ionic charge",
       "Dehydration synthesis—joining components with water released in the model",
       "Cation—net negative ionic charge",
       "Dehydration synthesis—cleavage defined by water addition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0466",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Hydrolysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Hydrolysis?",
     "explanation": "Cation is associated with net positive ionic charge; Hydrolysis is associated with cleavage involving water addition.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10429,20 +10105,18 @@
     },
     "options": [
       "Cation—net positive ionic charge",
-      "Hydrolysis—cleavage involving water addition",
       "Cation—net negative ionic charge",
       "Hydrolysis—joining monomers defined by water loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0467",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Acid?",
     "explanation": "Cation is associated with net positive ionic charge; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10454,21 +10128,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cation is associated with net positive ionic charge; Acid is associated with proton donation."
     },
     "options": [
-      "Cation—net positive ionic charge",
       "Acid—proton donation",
       "Cation—net negative ionic charge",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0468",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Base?",
     "explanation": "Cation is associated with net positive ionic charge; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10481,20 +10153,18 @@
     },
     "options": [
       "Cation—net positive ionic charge",
-      "Base—proton acceptance",
       "Cation—net negative ionic charge",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0469",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Buffer?",
     "explanation": "Cation is associated with net positive ionic charge; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10506,21 +10176,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cation is associated with net positive ionic charge; Buffer is associated with resistance to limited acid–base perturbation."
     },
     "options": [
-      "Cation—net positive ionic charge",
       "Buffer—resistance to limited acid–base perturbation",
       "Cation—net negative ionic charge",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0470",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Cation and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Cation and Enzyme catalysis?",
     "explanation": "Cation is associated with net positive ionic charge; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10533,20 +10201,18 @@
     },
     "options": [
       "Cation—net positive ionic charge",
-      "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Cation—net negative ionic charge",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0471",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Anion and Covalent bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Anion and Covalent bonding?",
     "explanation": "Anion is associated with net negative ionic charge; Covalent bonding is associated with shared electron pairs.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10558,21 +10224,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Anion is associated with net negative ionic charge; Covalent bonding is associated with shared electron pairs."
     },
     "options": [
-      "Anion—net negative ionic charge",
       "Covalent bonding—shared electron pairs",
       "Anion—net positive ionic charge",
       "Covalent bonding—a requirement that atoms remain chemically unconnected"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0472",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Anion and Hydrogen bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Anion and Hydrogen bonding?",
     "explanation": "Anion is associated with net negative ionic charge; Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10585,20 +10249,18 @@
     },
     "options": [
       "Anion—net negative ionic charge",
-      "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
       "Anion—net positive ionic charge",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0473",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Anion and Solvent? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Anion and Solvent?",
     "explanation": "Anion is associated with net negative ionic charge; Solvent is associated with dissolving medium.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10610,21 +10272,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Anion is associated with net negative ionic charge; Solvent is associated with dissolving medium."
     },
     "options": [
-      "Anion—net negative ionic charge",
       "Solvent—dissolving medium",
       "Anion—net positive ionic charge",
       "Solvent—the definition of settled sediment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0474",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Anion and Solute? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Anion and Solute?",
     "explanation": "Anion is associated with net negative ionic charge; Solute is associated with dissolved substance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10637,20 +10297,18 @@
     },
     "options": [
       "Anion—net negative ionic charge",
-      "Solute—dissolved substance",
       "Anion—net positive ionic charge",
       "Solute—the required identity of an empty container"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0475",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Anion and Dehydration synthesis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Anion and Dehydration synthesis?",
     "explanation": "Anion is associated with net negative ionic charge; Dehydration synthesis is associated with joining components with water released in the model.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10662,21 +10320,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Anion is associated with net negative ionic charge; Dehydration synthesis is associated with joining components with water released in the model."
     },
     "options": [
-      "Anion—net negative ionic charge",
       "Dehydration synthesis—joining components with water released in the model",
       "Anion—net positive ionic charge",
       "Dehydration synthesis—cleavage defined by water addition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0476",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Anion and Hydrolysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Anion and Hydrolysis?",
     "explanation": "Anion is associated with net negative ionic charge; Hydrolysis is associated with cleavage involving water addition.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10689,20 +10345,18 @@
     },
     "options": [
       "Anion—net negative ionic charge",
-      "Hydrolysis—cleavage involving water addition",
       "Anion—net positive ionic charge",
       "Hydrolysis—joining monomers defined by water loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0477",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Anion and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Anion and Acid?",
     "explanation": "Anion is associated with net negative ionic charge; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10714,21 +10368,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Anion is associated with net negative ionic charge; Acid is associated with proton donation."
     },
     "options": [
-      "Anion—net negative ionic charge",
       "Acid—proton donation",
       "Anion—net positive ionic charge",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0478",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Anion and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Anion and Base?",
     "explanation": "Anion is associated with net negative ionic charge; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10741,20 +10393,18 @@
     },
     "options": [
       "Anion—net negative ionic charge",
-      "Base—proton acceptance",
       "Anion—net positive ionic charge",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0479",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Anion and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Anion and Buffer?",
     "explanation": "Anion is associated with net negative ionic charge; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10766,21 +10416,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Anion is associated with net negative ionic charge; Buffer is associated with resistance to limited acid–base perturbation."
     },
     "options": [
-      "Anion—net negative ionic charge",
       "Buffer—resistance to limited acid–base perturbation",
       "Anion—net positive ionic charge",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0480",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Anion and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Anion and Enzyme catalysis?",
     "explanation": "Anion is associated with net negative ionic charge; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10793,20 +10441,18 @@
     },
     "options": [
       "Anion—net negative ionic charge",
-      "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Anion—net positive ionic charge",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0481",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Covalent bonding and Hydrogen bonding? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Covalent bonding and Hydrogen bonding?",
     "explanation": "Covalent bonding is associated with shared electron pairs; Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10818,21 +10464,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Covalent bonding is associated with shared electron pairs; Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor."
     },
     "options": [
-      "Covalent bonding—shared electron pairs",
       "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
       "Covalent bonding—a requirement that atoms remain chemically unconnected",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0482",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Covalent bonding and Solvent? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Covalent bonding and Solvent?",
     "explanation": "Covalent bonding is associated with shared electron pairs; Solvent is associated with dissolving medium.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10845,20 +10489,18 @@
     },
     "options": [
       "Covalent bonding—shared electron pairs",
-      "Solvent—dissolving medium",
       "Covalent bonding—a requirement that atoms remain chemically unconnected",
       "Solvent—the definition of settled sediment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0483",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Covalent bonding and Solute? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Covalent bonding and Solute?",
     "explanation": "Covalent bonding is associated with shared electron pairs; Solute is associated with dissolved substance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10870,21 +10512,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Covalent bonding is associated with shared electron pairs; Solute is associated with dissolved substance."
     },
     "options": [
-      "Covalent bonding—shared electron pairs",
       "Solute—dissolved substance",
       "Covalent bonding—a requirement that atoms remain chemically unconnected",
       "Solute—the required identity of an empty container"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0484",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Covalent bonding and Dehydration synthesis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Covalent bonding and Dehydration synthesis?",
     "explanation": "Covalent bonding is associated with shared electron pairs; Dehydration synthesis is associated with joining components with water released in the model.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10897,20 +10537,18 @@
     },
     "options": [
       "Covalent bonding—shared electron pairs",
-      "Dehydration synthesis—joining components with water released in the model",
       "Covalent bonding—a requirement that atoms remain chemically unconnected",
       "Dehydration synthesis—cleavage defined by water addition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0485",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Covalent bonding and Hydrolysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Covalent bonding and Hydrolysis?",
     "explanation": "Covalent bonding is associated with shared electron pairs; Hydrolysis is associated with cleavage involving water addition.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10922,21 +10560,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Covalent bonding is associated with shared electron pairs; Hydrolysis is associated with cleavage involving water addition."
     },
     "options": [
-      "Covalent bonding—shared electron pairs",
       "Hydrolysis—cleavage involving water addition",
       "Covalent bonding—a requirement that atoms remain chemically unconnected",
       "Hydrolysis—joining monomers defined by water loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0486",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Covalent bonding and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Covalent bonding and Acid?",
     "explanation": "Covalent bonding is associated with shared electron pairs; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10949,20 +10585,18 @@
     },
     "options": [
       "Covalent bonding—shared electron pairs",
-      "Acid—proton donation",
       "Covalent bonding—a requirement that atoms remain chemically unconnected",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0487",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Covalent bonding and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Covalent bonding and Base?",
     "explanation": "Covalent bonding is associated with shared electron pairs; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -10974,21 +10608,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Covalent bonding is associated with shared electron pairs; Base is associated with proton acceptance."
     },
     "options": [
-      "Covalent bonding—shared electron pairs",
       "Base—proton acceptance",
       "Covalent bonding—a requirement that atoms remain chemically unconnected",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0488",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Covalent bonding and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Covalent bonding and Buffer?",
     "explanation": "Covalent bonding is associated with shared electron pairs; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11001,20 +10633,18 @@
     },
     "options": [
       "Covalent bonding—shared electron pairs",
-      "Buffer—resistance to limited acid–base perturbation",
       "Covalent bonding—a requirement that atoms remain chemically unconnected",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0489",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Covalent bonding and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Covalent bonding and Enzyme catalysis?",
     "explanation": "Covalent bonding is associated with shared electron pairs; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11026,21 +10656,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Covalent bonding is associated with shared electron pairs; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier."
     },
     "options": [
-      "Covalent bonding—shared electron pairs",
       "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Covalent bonding—a requirement that atoms remain chemically unconnected",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0490",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrogen bonding and Solvent? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrogen bonding and Solvent?",
     "explanation": "Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Solvent is associated with dissolving medium.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11053,20 +10681,18 @@
     },
     "options": [
       "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
-      "Solvent—dissolving medium",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage",
       "Solvent—the definition of settled sediment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0491",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrogen bonding and Solute? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrogen bonding and Solute?",
     "explanation": "Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Solute is associated with dissolved substance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11078,21 +10704,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Solute is associated with dissolved substance."
     },
     "options": [
-      "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
       "Solute—dissolved substance",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage",
       "Solute—the required identity of an empty container"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0492",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrogen bonding and Dehydration synthesis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrogen bonding and Dehydration synthesis?",
     "explanation": "Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Dehydration synthesis is associated with joining components with water released in the model.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11105,20 +10729,18 @@
     },
     "options": [
       "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
-      "Dehydration synthesis—joining components with water released in the model",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage",
       "Dehydration synthesis—cleavage defined by water addition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0493",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrogen bonding and Hydrolysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrogen bonding and Hydrolysis?",
     "explanation": "Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Hydrolysis is associated with cleavage involving water addition.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11130,21 +10752,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Hydrolysis is associated with cleavage involving water addition."
     },
     "options": [
-      "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
       "Hydrolysis—cleavage involving water addition",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage",
       "Hydrolysis—joining monomers defined by water loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0494",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrogen bonding and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrogen bonding and Acid?",
     "explanation": "Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11157,20 +10777,18 @@
     },
     "options": [
       "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
-      "Acid—proton donation",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0495",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrogen bonding and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrogen bonding and Base?",
     "explanation": "Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11182,21 +10800,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Base is associated with proton acceptance."
     },
     "options": [
-      "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
       "Base—proton acceptance",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0496",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrogen bonding and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrogen bonding and Buffer?",
     "explanation": "Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11209,20 +10825,18 @@
     },
     "options": [
       "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
-      "Buffer—resistance to limited acid–base perturbation",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0497",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrogen bonding and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrogen bonding and Enzyme catalysis?",
     "explanation": "Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11234,21 +10848,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydrogen bonding is associated with attraction involving an appropriate hydrogen donor and acceptor; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier."
     },
     "options": [
-      "Hydrogen bonding—attraction involving an appropriate hydrogen donor and acceptor",
       "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Hydrogen bonding—the peptide backbone’s covalent amide linkage",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0498",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solvent and Solute? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solvent and Solute?",
     "explanation": "Solvent is associated with dissolving medium; Solute is associated with dissolved substance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11260,20 +10872,18 @@
     },
     "options": [
       "Solvent—dissolving medium",
-      "Solute—dissolved substance",
       "Solvent—the definition of settled sediment",
       "Solute—the required identity of an empty container"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0499",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solvent and Dehydration synthesis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solvent and Dehydration synthesis?",
     "explanation": "Solvent is associated with dissolving medium; Dehydration synthesis is associated with joining components with water released in the model.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11285,21 +10895,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Solvent is associated with dissolving medium; Dehydration synthesis is associated with joining components with water released in the model."
     },
     "options": [
-      "Solvent—dissolving medium",
       "Dehydration synthesis—joining components with water released in the model",
       "Solvent—the definition of settled sediment",
       "Dehydration synthesis—cleavage defined by water addition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0500",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solvent and Hydrolysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solvent and Hydrolysis?",
     "explanation": "Solvent is associated with dissolving medium; Hydrolysis is associated with cleavage involving water addition.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11312,20 +10920,18 @@
     },
     "options": [
       "Solvent—dissolving medium",
-      "Hydrolysis—cleavage involving water addition",
       "Solvent—the definition of settled sediment",
       "Hydrolysis—joining monomers defined by water loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0501",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solvent and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solvent and Acid?",
     "explanation": "Solvent is associated with dissolving medium; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11337,21 +10943,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Solvent is associated with dissolving medium; Acid is associated with proton donation."
     },
     "options": [
-      "Solvent—dissolving medium",
       "Acid—proton donation",
       "Solvent—the definition of settled sediment",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0502",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solvent and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solvent and Base?",
     "explanation": "Solvent is associated with dissolving medium; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11364,20 +10968,18 @@
     },
     "options": [
       "Solvent—dissolving medium",
-      "Base—proton acceptance",
       "Solvent—the definition of settled sediment",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0503",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solvent and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solvent and Buffer?",
     "explanation": "Solvent is associated with dissolving medium; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11389,21 +10991,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Solvent is associated with dissolving medium; Buffer is associated with resistance to limited acid–base perturbation."
     },
     "options": [
-      "Solvent—dissolving medium",
       "Buffer—resistance to limited acid–base perturbation",
       "Solvent—the definition of settled sediment",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0504",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solvent and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solvent and Enzyme catalysis?",
     "explanation": "Solvent is associated with dissolving medium; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11416,20 +11016,18 @@
     },
     "options": [
       "Solvent—dissolving medium",
-      "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Solvent—the definition of settled sediment",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0505",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solute and Dehydration synthesis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solute and Dehydration synthesis?",
     "explanation": "Solute is associated with dissolved substance; Dehydration synthesis is associated with joining components with water released in the model.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11441,21 +11039,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Solute is associated with dissolved substance; Dehydration synthesis is associated with joining components with water released in the model."
     },
     "options": [
-      "Solute—dissolved substance",
       "Dehydration synthesis—joining components with water released in the model",
       "Solute—the required identity of an empty container",
       "Dehydration synthesis—cleavage defined by water addition"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0506",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solute and Hydrolysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solute and Hydrolysis?",
     "explanation": "Solute is associated with dissolved substance; Hydrolysis is associated with cleavage involving water addition.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11468,20 +11064,18 @@
     },
     "options": [
       "Solute—dissolved substance",
-      "Hydrolysis—cleavage involving water addition",
       "Solute—the required identity of an empty container",
       "Hydrolysis—joining monomers defined by water loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0507",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solute and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solute and Acid?",
     "explanation": "Solute is associated with dissolved substance; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11493,21 +11087,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Solute is associated with dissolved substance; Acid is associated with proton donation."
     },
     "options": [
-      "Solute—dissolved substance",
       "Acid—proton donation",
       "Solute—the required identity of an empty container",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0508",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solute and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solute and Base?",
     "explanation": "Solute is associated with dissolved substance; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11520,20 +11112,18 @@
     },
     "options": [
       "Solute—dissolved substance",
-      "Base—proton acceptance",
       "Solute—the required identity of an empty container",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0509",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solute and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solute and Buffer?",
     "explanation": "Solute is associated with dissolved substance; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11545,21 +11135,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Solute is associated with dissolved substance; Buffer is associated with resistance to limited acid–base perturbation."
     },
     "options": [
-      "Solute—dissolved substance",
       "Buffer—resistance to limited acid–base perturbation",
       "Solute—the required identity of an empty container",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0510",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Solute and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Solute and Enzyme catalysis?",
     "explanation": "Solute is associated with dissolved substance; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11572,20 +11160,18 @@
     },
     "options": [
       "Solute—dissolved substance",
-      "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Solute—the required identity of an empty container",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0511",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Dehydration synthesis and Hydrolysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dehydration synthesis and Hydrolysis?",
     "explanation": "Dehydration synthesis is associated with joining components with water released in the model; Hydrolysis is associated with cleavage involving water addition.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11597,21 +11183,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dehydration synthesis is associated with joining components with water released in the model; Hydrolysis is associated with cleavage involving water addition."
     },
     "options": [
-      "Dehydration synthesis—joining components with water released in the model",
       "Hydrolysis—cleavage involving water addition",
       "Dehydration synthesis—cleavage defined by water addition",
       "Hydrolysis—joining monomers defined by water loss"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0512",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Dehydration synthesis and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dehydration synthesis and Acid?",
     "explanation": "Dehydration synthesis is associated with joining components with water released in the model; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11624,20 +11208,18 @@
     },
     "options": [
       "Dehydration synthesis—joining components with water released in the model",
-      "Acid—proton donation",
       "Dehydration synthesis—cleavage defined by water addition",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0513",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Dehydration synthesis and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dehydration synthesis and Base?",
     "explanation": "Dehydration synthesis is associated with joining components with water released in the model; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11649,21 +11231,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dehydration synthesis is associated with joining components with water released in the model; Base is associated with proton acceptance."
     },
     "options": [
-      "Dehydration synthesis—joining components with water released in the model",
       "Base—proton acceptance",
       "Dehydration synthesis—cleavage defined by water addition",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0514",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Dehydration synthesis and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dehydration synthesis and Buffer?",
     "explanation": "Dehydration synthesis is associated with joining components with water released in the model; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11676,20 +11256,18 @@
     },
     "options": [
       "Dehydration synthesis—joining components with water released in the model",
-      "Buffer—resistance to limited acid–base perturbation",
       "Dehydration synthesis—cleavage defined by water addition",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0515",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Dehydration synthesis and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dehydration synthesis and Enzyme catalysis?",
     "explanation": "Dehydration synthesis is associated with joining components with water released in the model; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11701,21 +11279,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dehydration synthesis is associated with joining components with water released in the model; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier."
     },
     "options": [
-      "Dehydration synthesis—joining components with water released in the model",
       "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Dehydration synthesis—cleavage defined by water addition",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0516",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrolysis and Acid? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrolysis and Acid?",
     "explanation": "Hydrolysis is associated with cleavage involving water addition; Acid is associated with proton donation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11728,20 +11304,18 @@
     },
     "options": [
       "Hydrolysis—cleavage involving water addition",
-      "Acid—proton donation",
       "Hydrolysis—joining monomers defined by water loss",
       "Acid—being defined only as a proton acceptor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0517",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrolysis and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrolysis and Base?",
     "explanation": "Hydrolysis is associated with cleavage involving water addition; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11753,21 +11327,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydrolysis is associated with cleavage involving water addition; Base is associated with proton acceptance."
     },
     "options": [
-      "Hydrolysis—cleavage involving water addition",
       "Base—proton acceptance",
       "Hydrolysis—joining monomers defined by water loss",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0518",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrolysis and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrolysis and Buffer?",
     "explanation": "Hydrolysis is associated with cleavage involving water addition; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11780,20 +11352,18 @@
     },
     "options": [
       "Hydrolysis—cleavage involving water addition",
-      "Buffer—resistance to limited acid–base perturbation",
       "Hydrolysis—joining monomers defined by water loss",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0519",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Hydrolysis and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hydrolysis and Enzyme catalysis?",
     "explanation": "Hydrolysis is associated with cleavage involving water addition; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11805,21 +11375,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hydrolysis is associated with cleavage involving water addition; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier."
     },
     "options": [
-      "Hydrolysis—cleavage involving water addition",
       "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Hydrolysis—joining monomers defined by water loss",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0520",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Acid and Base? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Acid and Base?",
     "explanation": "Acid is associated with proton donation; Base is associated with proton acceptance.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11832,20 +11400,18 @@
     },
     "options": [
       "Acid—proton donation",
-      "Base—proton acceptance",
       "Acid—being defined only as a proton acceptor",
       "Base—being defined only as a proton donor"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0521",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Acid and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Acid and Buffer?",
     "explanation": "Acid is associated with proton donation; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11857,21 +11423,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Acid is associated with proton donation; Buffer is associated with resistance to limited acid–base perturbation."
     },
     "options": [
-      "Acid—proton donation",
       "Buffer—resistance to limited acid–base perturbation",
       "Acid—being defined only as a proton acceptor",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0522",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Acid and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Acid and Enzyme catalysis?",
     "explanation": "Acid is associated with proton donation; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11884,20 +11448,18 @@
     },
     "options": [
       "Acid—proton donation",
-      "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Acid—being defined only as a proton acceptor",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0523",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Base and Buffer? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Base and Buffer?",
     "explanation": "Base is associated with proton acceptance; Buffer is associated with resistance to limited acid–base perturbation.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11909,21 +11471,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Base is associated with proton acceptance; Buffer is associated with resistance to limited acid–base perturbation."
     },
     "options": [
-      "Base—proton acceptance",
       "Buffer—resistance to limited acid–base perturbation",
       "Base—being defined only as a proton donor",
       "Buffer—unlimited ability to neutralize added acid"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0524",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Base and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Base and Enzyme catalysis?",
     "explanation": "Base is associated with proton acceptance; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11936,20 +11496,18 @@
     },
     "options": [
       "Base—proton acceptance",
-      "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Base—being defined only as a proton donor",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "basic_chemistry-0525",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which chemical-role pairings are correct for Buffer and Enzyme catalysis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Buffer and Enzyme catalysis?",
     "explanation": "Buffer is associated with resistance to limited acid–base perturbation; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier.",
     "source": {
       "file": "Basic Chemistry Chapter 2.pptx",
@@ -11961,14 +11519,12 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Buffer is associated with resistance to limited acid–base perturbation; Enzyme catalysis is associated with lowering a reaction’s kinetic barrier."
     },
     "options": [
-      "Buffer—resistance to limited acid–base perturbation",
       "Enzyme catalysis—lowering a reaction’s kinetic barrier",
       "Buffer—unlimited ability to neutralize added acid",
       "Enzyme catalysis—changing an element’s atomic number"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {

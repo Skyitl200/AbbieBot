@@ -13,7 +13,7 @@ import {
 
 const TYPE_LABELS = {
     multiple_choice: 'Multiple choice', fill_blank: 'Fill in the blank',
-    select_all: 'Select all that apply', ordering: 'Put in the correct order',
+    ordering: 'Put in the correct order',
 };
 const row = (...components) => new ActionRowBuilder().addComponents(...components);
 const button = (id, label, style = ButtonStyle.Primary) => new ButtonBuilder().setCustomId(id).setLabel(label).setStyle(style);
@@ -74,7 +74,7 @@ export function topicMessage(ownerId, banks) {
                 description: banks.get(topic.id)?.length ? `${banks.get(topic.id).length} questions available` : 'Question bank being prepared' })),
         );
     return { content: '', embeds: [new EmbedBuilder().setTitle('🫀 Anatomy and Physiology Lecture')
-        .setDescription('Choose a topic, then the number of questions. Practice includes multiple choice, fill in the blank, select all that apply, and ordering.')], components: [row(menu), row(button(`study:classes:${ownerId}`, '📚 Classes', ButtonStyle.Secondary))] };
+        .setDescription('Choose a topic, then the number of questions. Practice includes multiple choice, fill in the blank, and ordering.')], components: [row(menu), row(button(`study:classes:${ownerId}`, '📚 Classes', ButtonStyle.Secondary))] };
 }
 
 export function questionMessage(session) {
@@ -89,11 +89,6 @@ export function questionMessage(session) {
         if (q.type === 'multiple_choice') {
             const buttons = session.displayOrder.map((value, i) => button(`${actionId(session, 'choice')}:${value}`, `Answer ${i + 1}`));
             for (let i = 0; i < buttons.length; i += 5) components.push(row(...buttons.slice(i, i + 5)));
-        } else if (q.type === 'select_all') {
-            description += '\n\nSelect every correct option, then submit the selection. Full credit requires all correct choices and no incorrect choices.';
-            components.push(row(new StringSelectMenuBuilder().setCustomId(actionId(session, 'multi'))
-                .setPlaceholder('Select all correct answers').setMinValues(1).setMaxValues(q.options.length)
-                .addOptions(session.displayOrder.map((value, i) => ({ label: `${i + 1}. ${q.options[value]}`.slice(0, 100), value: String(value) })))));
         } else {
             description += '\n\nChoose items **one at a time** in the requested order. You can undo a choice before submitting.';
             if (session.order.length) description += '\n\n**Your order:** ' + session.order.map(value => String(session.displayOrder.indexOf(value) + 1)).join(' → ');
@@ -241,7 +236,6 @@ export async function handleStudyInteraction(interaction, client, args) {
         } else {
             let answer;
             if (action === 'choice' && q.type === 'multiple_choice' && session.displayOrder.includes(Number(choice))) answer = [Number(choice)];
-            else if (action === 'multi' && q.type === 'select_all') answer = interaction.values.map(Number);
             else if (action === 'typed' && q.type === 'fill_blank') answer = interaction.fields.getTextInputValue('answer');
             else if (action === 'ordered' && q.type === 'ordering' && session.order.length === q.options.length) answer = [...session.order];
             else throw new Error('Invalid answer action');

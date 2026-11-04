@@ -24,9 +24,9 @@
   },
   {
     "id": "integumentary-0002",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept integumentary system are correct? Select all that apply.",
+    "question": "Which statement about the skin concept integumentary system is correct?",
     "explanation": "Integumentary system: the skin and associated accessory structures. It contributes to protection, sensation, and temperature regulation",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -37,12 +37,10 @@
     },
     "options": [
       "The skin and associated accessory structures",
-      "It contributes to protection, sensation, and temperature regulation",
       "It consists only of the skeletal system"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -87,9 +85,9 @@
   },
   {
     "id": "integumentary-0005",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept skin proper are correct? Select all that apply.",
+    "question": "Which statement about the skin concept skin proper is correct?",
     "explanation": "Skin proper: the epidermis together with the dermis. Subcutaneous tissue lies beneath it",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -99,13 +97,11 @@
       "kind": "slide"
     },
     "options": [
-      "The epidermis together with the dermis",
       "Subcutaneous tissue lies beneath it",
       "The hypodermis must be counted as a third layer of skin proper"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -150,9 +146,9 @@
   },
   {
     "id": "integumentary-0008",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept epidermis are correct? Select all that apply.",
+    "question": "Which statement about the skin concept epidermis is correct?",
     "explanation": "Epidermis: the outer keratinized epithelial layer of skin. It normally lacks its own blood vessels",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -163,12 +159,10 @@
     },
     "options": [
       "The outer keratinized epithelial layer of skin",
-      "It normally lacks its own blood vessels",
       "It is primarily a layer of dense irregular connective tissue"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -213,9 +207,9 @@
   },
   {
     "id": "integumentary-0011",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept dermis are correct? Select all that apply.",
+    "question": "Which statement about the skin concept dermis is correct?",
     "explanation": "Dermis: the connective-tissue region beneath the epidermis. It contains vessels, nerves, and accessory structures",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -225,13 +219,11 @@
       "kind": "slide"
     },
     "options": [
-      "The connective-tissue region beneath the epidermis",
       "It contains vessels, nerves, and accessory structures",
       "It is an avascular sheet of dead keratinocytes"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -276,9 +268,9 @@
   },
   {
     "id": "integumentary-0014",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept hypodermis are correct? Select all that apply.",
+    "question": "Which statement about the skin concept hypodermis is correct?",
     "explanation": "Hypodermis: subcutaneous tissue beneath the dermis. It commonly contains areolar and adipose tissue",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -289,12 +281,10 @@
     },
     "options": [
       "Subcutaneous tissue beneath the dermis",
-      "It commonly contains areolar and adipose tissue",
       "It is part of the epidermal stratum corneum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -339,9 +329,9 @@
   },
   {
     "id": "integumentary-0017",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept keratinized stratified squamous skin epithelium are correct? Select all that apply.",
+    "question": "Which statement about the skin concept keratinized stratified squamous skin epithelium is correct?",
     "explanation": "Keratinized stratified squamous skin epithelium: the epithelial architecture of the epidermis. Its outer cornified surface supports barrier function",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -351,13 +341,11 @@
       "kind": "slide"
     },
     "options": [
-      "The epithelial architecture of the epidermis",
       "Its outer cornified surface supports barrier function",
       "It is a simple squamous vascular endothelium"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -403,9 +391,9 @@
   },
   {
     "id": "integumentary-0020",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept thick skin are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept thick skin is correct?",
     "explanation": "Thick skin: palmar or plantar skin with a thick epidermis and a distinct stratum lucidum. It lacks hair follicles and associated sebaceous glands",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -417,12 +405,10 @@
     },
     "options": [
       "Palmar or plantar skin with a thick epidermis and a distinct stratum lucidum",
-      "It lacks hair follicles and associated sebaceous glands",
       "It is defined by having more hair than all other skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -468,9 +454,9 @@
   },
   {
     "id": "integumentary-0023",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept thin skin are correct? Select all that apply.",
+    "question": "Which statement about the skin concept thin skin is correct?",
     "explanation": "Thin skin: the skin type covering most body regions. It generally lacks a distinct stratum lucidum",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -480,13 +466,11 @@
       "kind": "slide"
     },
     "options": [
-      "The skin type covering most body regions",
       "It generally lacks a distinct stratum lucidum",
       "It has no epidermis at all"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -531,9 +515,9 @@
   },
   {
     "id": "integumentary-0026",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept stratum basale are correct? Select all that apply.",
+    "question": "Which statement about the skin concept stratum basale is correct?",
     "explanation": "Stratum basale: the deepest epidermal layer. Its proliferating cells help renew keratinocytes",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -544,12 +528,10 @@
     },
     "options": [
       "The deepest epidermal layer",
-      "Its proliferating cells help renew keratinocytes",
       "It is the outermost layer of shed dead cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -596,9 +578,9 @@
   },
   {
     "id": "integumentary-0029",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept stratum spinosum are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept stratum spinosum is correct?",
     "explanation": "Stratum spinosum: the epidermal layer between basale and granulosum in the standard scheme. Strong cell attachments contribute to its spiny appearance in prepared sections",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -609,13 +591,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Stratum spinosum: the epidermal layer between basale and granulosum in the standard scheme. Strong cell attachments contribute to its spiny appearance in prepared sections"
     },
     "options": [
-      "The epidermal layer between basale and granulosum in the standard scheme",
       "Strong cell attachments contribute to its spiny appearance in prepared sections",
       "It is the adipose layer below the dermis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -662,9 +642,9 @@
   },
   {
     "id": "integumentary-0032",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept stratum granulosum are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept stratum granulosum is correct?",
     "explanation": "Stratum granulosum: the epidermal layer superficial to spinosum and associated with keratinization. Its cells contain prominent granules in the standard histologic model",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -676,12 +656,10 @@
     },
     "options": [
       "The epidermal layer superficial to spinosum and associated with keratinization",
-      "Its cells contain prominent granules in the standard histologic model",
       "It is the main vascular layer of skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -727,9 +705,9 @@
   },
   {
     "id": "integumentary-0035",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept stratum lucidum are correct? Select all that apply.",
+    "question": "Which statement about the skin concept stratum lucidum is correct?",
     "explanation": "Stratum lucidum: the translucent stratum prominent in thick epidermis. It lies between granulosum and corneum in thick skin",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -739,13 +717,11 @@
       "kind": "slide"
     },
     "options": [
-      "The translucent stratum prominent in thick epidermis",
       "It lies between granulosum and corneum in thick skin",
       "It is present as a distinct layer in every thin-skin region"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -790,9 +766,9 @@
   },
   {
     "id": "integumentary-0038",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept stratum corneum are correct? Select all that apply.",
+    "question": "Which statement about the skin concept stratum corneum is correct?",
     "explanation": "Stratum corneum: the outer cornified epidermal stratum. Its dead flattened cells contribute to the permeability barrier",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -803,12 +779,10 @@
     },
     "options": [
       "The outer cornified epidermal stratum",
-      "Its dead flattened cells contribute to the permeability barrier",
       "It is the deepest layer with most mitotic basal cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -853,9 +827,9 @@
   },
   {
     "id": "integumentary-0041",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept keratinocyte are correct? Select all that apply.",
+    "question": "Which statement about the skin concept keratinocyte is correct?",
     "explanation": "Keratinocyte: the predominant epidermal cell producing keratin. Its differentiation supports the skin barrier",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -865,13 +839,11 @@
       "kind": "slide"
     },
     "options": [
-      "The predominant epidermal cell producing keratin",
       "Its differentiation supports the skin barrier",
       "It is the primary melanocyte-derived pigment organelle"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -916,9 +888,9 @@
   },
   {
     "id": "integumentary-0044",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept epidermal basal progenitor are correct? Select all that apply.",
+    "question": "Which statement about the skin concept epidermal basal progenitor is correct?",
     "explanation": "Epidermal basal progenitor: a proliferating cell population supporting epidermal renewal. Its progeny can differentiate into keratinocytes",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -929,12 +901,10 @@
     },
     "options": [
       "A proliferating cell population supporting epidermal renewal",
-      "Its progeny can differentiate into keratinocytes",
       "It is always a mature dead corneocyte"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -980,9 +950,9 @@
   },
   {
     "id": "integumentary-0047",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept melanocyte are correct? Select all that apply.",
+    "question": "Which statement about the skin concept melanocyte is correct?",
     "explanation": "Melanocyte: a pigment-producing cell of the epidermis and related structures. It supplies melanin-bearing organelles to surrounding keratinocytes",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -992,13 +962,11 @@
       "kind": "slide"
     },
     "options": [
-      "A pigment-producing cell of the epidermis and related structures",
       "It supplies melanin-bearing organelles to surrounding keratinocytes",
       "It is the principal cell synthesizing dermal collagen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1043,9 +1011,9 @@
   },
   {
     "id": "integumentary-0050",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept melanin are correct? Select all that apply.",
+    "question": "Which statement about the skin concept melanin is correct?",
     "explanation": "Melanin: the pigment contributing to skin and hair coloration and UV protection. Its amount, type, and distribution influence visible pigmentation",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1056,12 +1024,10 @@
     },
     "options": [
       "The pigment contributing to skin and hair coloration and UV protection",
-      "Its amount, type, and distribution influence visible pigmentation",
       "It guarantees complete protection from every UV injury"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1106,9 +1072,9 @@
   },
   {
     "id": "integumentary-0053",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept melanosome are correct? Select all that apply.",
+    "question": "Which statement about the skin concept melanosome is correct?",
     "explanation": "Melanosome: a pigment-containing organelle associated with melanin production and transfer. Keratinocytes can receive these organelles from melanocytes",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1118,13 +1084,11 @@
       "kind": "slide"
     },
     "options": [
-      "A pigment-containing organelle associated with melanin production and transfer",
       "Keratinocytes can receive these organelles from melanocytes",
       "It is a blood vessel supplying the epidermis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1169,9 +1133,9 @@
   },
   {
     "id": "integumentary-0056",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept merkel cell are correct? Select all that apply.",
+    "question": "Which statement about the skin concept merkel cell is correct?",
     "explanation": "Merkel cell: an epidermal cell associated with touch sensation. It interacts with sensory nerve endings",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1182,12 +1146,10 @@
     },
     "options": [
       "An epidermal cell associated with touch sensation",
-      "It interacts with sensory nerve endings",
       "It is a collagen-producing dermal fibroblast"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1233,9 +1195,9 @@
   },
   {
     "id": "integumentary-0059",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept epidermal dendritic cell are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept epidermal dendritic cell is correct?",
     "explanation": "Epidermal dendritic cell: an immune-surveillance cell population in the epidermis. Langerhans cells are a familiar example",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1246,13 +1208,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epidermal dendritic cell: an immune-surveillance cell population in the epidermis. Langerhans cells are a familiar example"
     },
     "options": [
-      "An immune-surveillance cell population in the epidermis",
       "Langerhans cells are a familiar example",
       "It is the principal dead structural cell of a hair shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1299,9 +1259,9 @@
   },
   {
     "id": "integumentary-0062",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept epidermal keratin are correct? Select all that apply.",
+    "question": "Which statement about the skin concept epidermal keratin is correct?",
     "explanation": "Epidermal keratin: the structural protein abundant in keratinocytes and related appendages. It contributes to mechanical protection",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1312,12 +1272,10 @@
     },
     "options": [
       "The structural protein abundant in keratinocytes and related appendages",
-      "It contributes to mechanical protection",
       "It is the main red-cell oxygen-carrying pigment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1363,9 +1321,9 @@
   },
   {
     "id": "integumentary-0065",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept cornification are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept cornification is correct?",
     "explanation": "Cornification: the differentiation process producing the protective cornified epidermal surface. It includes major changes as cells move outward",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1376,13 +1334,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Cornification: the differentiation process producing the protective cornified epidermal surface. It includes major changes as cells move outward"
     },
     "options": [
-      "The differentiation process producing the protective cornified epidermal surface",
       "It includes major changes as cells move outward",
       "It means mature surface cells become perfused by new capillaries"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1430,9 +1386,9 @@
   },
   {
     "id": "integumentary-0068",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept desquamation are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept desquamation is correct?",
     "explanation": "Desquamation: shedding of superficial cornified cells. It accompanies ongoing epidermal renewal",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1444,12 +1400,10 @@
     },
     "options": [
       "Shedding of superficial cornified cells",
-      "It accompanies ongoing epidermal renewal",
       "It means production of melanin within red blood cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1496,9 +1450,9 @@
   },
   {
     "id": "integumentary-0071",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept epidermal turnover are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept epidermal turnover is correct?",
     "explanation": "Epidermal turnover: ongoing production, differentiation, and shedding of epidermal cells. Its timing varies with location and physiological state",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1509,13 +1463,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epidermal turnover: ongoing production, differentiation, and shedding of epidermal cells. Its timing varies with location and physiological state"
     },
     "options": [
-      "Ongoing production, differentiation, and shedding of epidermal cells",
       "Its timing varies with location and physiological state",
       "It requires one identical fixed duration in every person and site"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1562,9 +1514,9 @@
   },
   {
     "id": "integumentary-0074",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept epidermal barrier lipids are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept epidermal barrier lipids is correct?",
     "explanation": "Epidermal barrier lipids: extracellular lipids contributing to the permeability barrier between corneocytes. Ceramides are important components",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1576,12 +1528,10 @@
     },
     "options": [
       "Extracellular lipids contributing to the permeability barrier between corneocytes",
-      "Ceramides are important components",
       "They are identical to DNA nucleotides"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1627,9 +1577,9 @@
   },
   {
     "id": "integumentary-0077",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept dermal papilla are correct? Select all that apply.",
+    "question": "Which statement about the skin concept dermal papilla is correct?",
     "explanation": "Dermal papilla: an upward projection of superficial dermis at the epidermal interface. It increases interface contact and contributes to ridge architecture",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1639,13 +1589,11 @@
       "kind": "slide"
     },
     "options": [
-      "An upward projection of superficial dermis at the epidermal interface",
       "It increases interface contact and contributes to ridge architecture",
       "It is the exposed keratinized tip of a nail"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1690,9 +1638,9 @@
   },
   {
     "id": "integumentary-0080",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept papillary dermis are correct? Select all that apply.",
+    "question": "Which statement about the skin concept papillary dermis is correct?",
     "explanation": "Papillary dermis: the superficial dermal region rich in areolar connective tissue. It contains small vessels and sensory structures",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1703,12 +1651,10 @@
     },
     "options": [
       "The superficial dermal region rich in areolar connective tissue",
-      "It contains small vessels and sensory structures",
       "It is the deepest cornified epidermal stratum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1753,9 +1699,9 @@
   },
   {
     "id": "integumentary-0083",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept reticular dermis are correct? Select all that apply.",
+    "question": "Which statement about the skin concept reticular dermis is correct?",
     "explanation": "Reticular dermis: the deeper dermal region rich in dense irregular connective tissue. Its collagen bundles resist multidirectional stress",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1765,13 +1711,11 @@
       "kind": "slide"
     },
     "options": [
-      "The deeper dermal region rich in dense irregular connective tissue",
       "Its collagen bundles resist multidirectional stress",
       "It is an outer layer of dead epidermal cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1816,9 +1760,9 @@
   },
   {
     "id": "integumentary-0086",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept dermal fibroblast are correct? Select all that apply.",
+    "question": "Which statement about the skin concept dermal fibroblast is correct?",
     "explanation": "Dermal fibroblast: a connective-tissue cell producing dermal matrix components. It contributes collagen and other matrix material",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1829,12 +1773,10 @@
     },
     "options": [
       "A connective-tissue cell producing dermal matrix components",
-      "It contributes collagen and other matrix material",
       "It is the main cell that transfers melanosomes into keratinocytes"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1879,9 +1821,9 @@
   },
   {
     "id": "integumentary-0089",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept dermal collagen are correct? Select all that apply.",
+    "question": "Which statement about the skin concept dermal collagen is correct?",
     "explanation": "Dermal collagen: a major extracellular contributor to skin tensile strength. Its fibers are prominent in the reticular dermis",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1891,13 +1833,11 @@
       "kind": "slide"
     },
     "options": [
-      "A major extracellular contributor to skin tensile strength",
       "Its fibers are prominent in the reticular dermis",
       "It is the pigment carried in red blood cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -1942,9 +1882,9 @@
   },
   {
     "id": "integumentary-0092",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept dermal elastic fiber are correct? Select all that apply.",
+    "question": "Which statement about the skin concept dermal elastic fiber is correct?",
     "explanation": "Dermal elastic fiber: a connective fiber supporting stretch and recoil. Elastin contributes to its mechanical behavior",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -1955,12 +1895,10 @@
     },
     "options": [
       "A connective fiber supporting stretch and recoil",
-      "Elastin contributes to its mechanical behavior",
       "It is the DNA-containing core of a chromosome"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2005,9 +1943,9 @@
   },
   {
     "id": "integumentary-0095",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept dermal capillary are correct? Select all that apply.",
+    "question": "Which statement about the skin concept dermal capillary is correct?",
     "explanation": "Dermal capillary: a small vessel supporting dermal exchange. Its presence differs from the avascular epidermal sheet",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2017,13 +1955,11 @@
       "kind": "slide"
     },
     "options": [
-      "A small vessel supporting dermal exchange",
       "Its presence differs from the avascular epidermal sheet",
       "It normally runs through the dead stratum corneum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2069,9 +2005,9 @@
   },
   {
     "id": "integumentary-0098",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept cutaneous lymphatic capillary are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept cutaneous lymphatic capillary is correct?",
     "explanation": "Cutaneous lymphatic capillary: a vessel contributing to return of tissue fluid. It participates in fluid handling in skin",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2083,12 +2019,10 @@
     },
     "options": [
       "A vessel contributing to return of tissue fluid",
-      "It participates in fluid handling in skin",
       "It is a keratin-filled extension of the epidermis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2134,9 +2068,9 @@
   },
   {
     "id": "integumentary-0101",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept meissner corpuscle are correct? Select all that apply.",
+    "question": "Which statement about the skin concept meissner corpuscle is correct?",
     "explanation": "Meissner corpuscle: a superficial tactile receptor associated with light touch. It is found in dermal papillary regions of appropriate skin",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2146,13 +2080,11 @@
       "kind": "slide"
     },
     "options": [
-      "A superficial tactile receptor associated with light touch",
       "It is found in dermal papillary regions of appropriate skin",
       "Its defining location is inside a red blood cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2198,9 +2130,9 @@
   },
   {
     "id": "integumentary-0104",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept lamellar corpuscle are correct? Select all that apply.",
+    "question": "Which statement about the skin concept lamellar corpuscle is correct?",
     "explanation": "Lamellar corpuscle: a deep receptor with a lamellated capsule associated with pressure changes and high-frequency vibration. It is also called a Pacinian corpuscle",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2211,12 +2143,10 @@
     },
     "options": [
       "A deep receptor with a lamellated capsule associated with pressure changes and high-frequency vibration",
-      "It is also called a Pacinian corpuscle",
       "It is the pigment-producing cell in stratum basale"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2263,9 +2193,9 @@
   },
   {
     "id": "integumentary-0107",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept free sensory nerve ending are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept free sensory nerve ending is correct?",
     "explanation": "Free sensory nerve ending: an unencapsulated peripheral sensory ending. Some contribute to temperature or pain detection",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2276,13 +2206,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Free sensory nerve ending: an unencapsulated peripheral sensory ending. Some contribute to temperature or pain detection"
     },
     "options": [
-      "An unencapsulated peripheral sensory ending",
       "Some contribute to temperature or pain detection",
       "Every such ending is a sebaceous gland"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2328,9 +2256,9 @@
   },
   {
     "id": "integumentary-0110",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept cutaneous sensory receptor are correct? Select all that apply.",
+    "question": "Which statement about the skin concept cutaneous sensory receptor is correct?",
     "explanation": "Cutaneous sensory receptor: a structure converting a relevant skin stimulus into neural information. Different receptor classes respond to different stimulus features",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2341,12 +2269,10 @@
     },
     "options": [
       "A structure converting a relevant skin stimulus into neural information",
-      "Different receptor classes respond to different stimulus features",
       "It is always a secretory duct"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2391,9 +2317,9 @@
   },
   {
     "id": "integumentary-0113",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept dermal vascular plexus are correct? Select all that apply.",
+    "question": "Which statement about the skin concept dermal vascular plexus is correct?",
     "explanation": "Dermal vascular plexus: a network of blood vessels in skin. Changes in vascular tone contribute to heat exchange",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2403,13 +2329,11 @@
       "kind": "slide"
     },
     "options": [
-      "A network of blood vessels in skin",
       "Changes in vascular tone contribute to heat exchange",
       "It makes the epidermis itself richly vascular"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2454,9 +2378,9 @@
   },
   {
     "id": "integumentary-0116",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept epidermal ridge are correct? Select all that apply.",
+    "question": "Which statement about the skin concept epidermal ridge is correct?",
     "explanation": "Epidermal ridge: a surface ridge associated with the dermal–epidermal interface. Ridge patterns contribute to fingerprints",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2467,12 +2391,10 @@
     },
     "options": [
       "A surface ridge associated with the dermal–epidermal interface",
-      "Ridge patterns contribute to fingerprints",
       "It is made of an exposed capillary lumen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2518,9 +2440,9 @@
   },
   {
     "id": "integumentary-0119",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept stria are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept stria is correct?",
     "explanation": "Stria: a stretch-mark change involving dermal connective tissue. Altered dermal mechanical structure contributes to its appearance",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2531,13 +2453,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Stria: a stretch-mark change involving dermal connective tissue. Altered dermal mechanical structure contributes to its appearance"
     },
     "options": [
-      "A stretch-mark change involving dermal connective tissue",
       "Altered dermal mechanical structure contributes to its appearance",
       "It is a normal name for a melanin-containing organelle"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2583,9 +2503,9 @@
   },
   {
     "id": "integumentary-0122",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept carotene are correct? Select all that apply.",
+    "question": "Which statement about the skin concept carotene is correct?",
     "explanation": "Carotene: a yellow-orange pigment that can contribute to skin color. It can accumulate in outer skin and subcutaneous tissue",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2596,12 +2516,10 @@
     },
     "options": [
       "A yellow-orange pigment that can contribute to skin color",
-      "It can accumulate in outer skin and subcutaneous tissue",
       "It is the same molecule as blood hemoglobin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2646,9 +2564,9 @@
   },
   {
     "id": "integumentary-0125",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept cutaneous hemoglobin contribution are correct? Select all that apply.",
+    "question": "Which statement about the skin concept cutaneous hemoglobin contribution is correct?",
     "explanation": "Cutaneous hemoglobin contribution: the contribution of blood pigment and perfusion to visible skin color. Oxygenation and blood flow affect its appearance",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2658,13 +2576,11 @@
       "kind": "slide"
     },
     "options": [
-      "The contribution of blood pigment and perfusion to visible skin color",
       "Oxygenation and blood flow affect its appearance",
       "It requires blood vessels within every epidermal cell"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2709,9 +2625,9 @@
   },
   {
     "id": "integumentary-0128",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept oxygenated hemoglobin are correct? Select all that apply.",
+    "question": "Which statement about the skin concept oxygenated hemoglobin is correct?",
     "explanation": "Oxygenated hemoglobin: hemoglobin carrying oxygen. Its color contributes to the appearance of perfused tissue",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2722,12 +2638,10 @@
     },
     "options": [
       "Hemoglobin carrying oxygen",
-      "Its color contributes to the appearance of perfused tissue",
       "It is a skin pigment synthesized by melanocytes"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2773,9 +2687,9 @@
   },
   {
     "id": "integumentary-0131",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept deoxygenated hemoglobin are correct? Select all that apply.",
+    "question": "Which statement about the skin concept deoxygenated hemoglobin is correct?",
     "explanation": "Deoxygenated hemoglobin: hemoglobin not carrying oxygen at the relevant binding sites. Its increased amount can contribute to cyanotic appearance",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2785,13 +2699,11 @@
       "kind": "slide"
     },
     "options": [
-      "Hemoglobin not carrying oxygen at the relevant binding sites",
       "Its increased amount can contribute to cyanotic appearance",
       "Its presence proves a particular heart diagnosis by itself"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2838,9 +2750,9 @@
   },
   {
     "id": "integumentary-0134",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept erythema are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept erythema is correct?",
     "explanation": "Erythema: redness of tissue appearance often related to increased local blood flow. It is a descriptive finding rather than one specific diagnosis",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2852,12 +2764,10 @@
     },
     "options": [
       "Redness of tissue appearance often related to increased local blood flow",
-      "It is a descriptive finding rather than one specific diagnosis",
       "It is the name for loss of all skin pigmentation"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2904,9 +2814,9 @@
   },
   {
     "id": "integumentary-0137",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept pallor are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept pallor is correct?",
     "explanation": "Pallor: paleness of visible tissue. It can reflect changes in perfusion or blood composition",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2917,13 +2827,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Pallor: paleness of visible tissue. It can reflect changes in perfusion or blood composition"
     },
     "options": [
-      "Paleness of visible tissue",
       "It can reflect changes in perfusion or blood composition",
       "It alone establishes one unique disease"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -2970,9 +2878,9 @@
   },
   {
     "id": "integumentary-0140",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept cyanosis are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept cyanosis is correct?",
     "explanation": "Cyanosis: a bluish appearance associated with increased deoxygenated or abnormal hemoglobin in relevant settings. Its visibility depends on several clinical and observation factors",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -2984,12 +2892,10 @@
     },
     "options": [
       "A bluish appearance associated with increased deoxygenated or abnormal hemoglobin in relevant settings",
-      "Its visibility depends on several clinical and observation factors",
       "Its absence excludes every oxygenation problem"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3036,9 +2942,9 @@
   },
   {
     "id": "integumentary-0143",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept jaundice are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept jaundice is correct?",
     "explanation": "Jaundice: yellow discoloration associated with elevated bilirubin. It differs from yellow-orange carotene-related coloration",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3049,13 +2955,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Jaundice: yellow discoloration associated with elevated bilirubin. It differs from yellow-orange carotene-related coloration"
     },
     "options": [
-      "Yellow discoloration associated with elevated bilirubin",
       "It differs from yellow-orange carotene-related coloration",
       "It is defined by melanin production alone"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3102,9 +3006,9 @@
   },
   {
     "id": "integumentary-0146",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept photoaging are correct? Select all that apply.",
+    "question": "Which statement about the skin concept photoaging is correct?",
     "explanation": "Photoaging: chronic skin changes associated with repeated UV exposure. Connective-tissue damage can alter texture and elasticity",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3115,12 +3019,10 @@
     },
     "options": [
       "Chronic skin changes associated with repeated UV exposure",
-      "Connective-tissue damage can alter texture and elasticity",
       "It is guaranteed complete protection against future UV injury"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3165,9 +3067,9 @@
   },
   {
     "id": "integumentary-0149",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept photosensitivity are correct? Select all that apply.",
+    "question": "Which statement about the skin concept photosensitivity is correct?",
     "explanation": "Photosensitivity: an increased or abnormal response to light exposure. Some medications or substances can contribute",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3177,13 +3079,11 @@
       "kind": "slide"
     },
     "options": [
-      "An increased or abnormal response to light exposure",
       "Some medications or substances can contribute",
       "It means every rash has exactly the same cause"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3229,9 +3129,9 @@
   },
   {
     "id": "integumentary-0152",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept uvb contribution to skin chemistry are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept uvb contribution to skin chemistry is correct?",
     "explanation": "UVB contribution to skin chemistry: UVB-driven conversion of a vitamin D precursor in epidermis. Subsequent processing is needed to form fully active vitamin D",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3243,12 +3143,10 @@
     },
     "options": [
       "UVB-driven conversion of a vitamin D precursor in epidermis",
-      "Subsequent processing is needed to form fully active vitamin D",
       "It means every UV exposure is harmless"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3295,9 +3193,9 @@
   },
   {
     "id": "integumentary-0155",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept uva exposure are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept uva exposure is correct?",
     "explanation": "UVA exposure: exposure to the longer-wavelength ultraviolet band relevant to skin damage. It can contribute to photoaging",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3308,13 +3206,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: UVA exposure: exposure to the longer-wavelength ultraviolet band relevant to skin damage. It can contribute to photoaging"
     },
     "options": [
-      "Exposure to the longer-wavelength ultraviolet band relevant to skin damage",
       "It can contribute to photoaging",
       "It is the same as visible light and cannot affect skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3361,9 +3257,9 @@
   },
   {
     "id": "integumentary-0158",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept melanoma are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept melanoma is correct?",
     "explanation": "Melanoma: a malignant tumor of melanocytic lineage. It is not diagnosed merely because any pigmented spot exists",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3375,12 +3271,10 @@
     },
     "options": [
       "A malignant tumor of melanocytic lineage",
-      "It is not diagnosed merely because any pigmented spot exists",
       "Every mole is necessarily melanoma"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3427,9 +3321,9 @@
   },
   {
     "id": "integumentary-0161",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept basal cell carcinoma are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept basal cell carcinoma is correct?",
     "explanation": "Basal cell carcinoma: a common keratinocyte-lineage skin cancer with basaloid differentiation. It can be locally invasive",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3440,13 +3334,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Basal cell carcinoma: a common keratinocyte-lineage skin cancer with basaloid differentiation. It can be locally invasive"
     },
     "options": [
-      "A common keratinocyte-lineage skin cancer with basaloid differentiation",
       "It can be locally invasive",
       "It is always a harmless noninvasive skin pigment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3493,9 +3385,9 @@
   },
   {
     "id": "integumentary-0164",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept squamous cell carcinoma are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept squamous cell carcinoma is correct?",
     "explanation": "Squamous cell carcinoma: a malignant keratinocyte-lineage tumor with squamous differentiation. Chronic UV injury can contribute to risk",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3507,12 +3399,10 @@
     },
     "options": [
       "A malignant keratinocyte-lineage tumor with squamous differentiation",
-      "Chronic UV injury can contribute to risk",
       "It is defined as a tumor of melanocytes only"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3558,9 +3448,9 @@
   },
   {
     "id": "integumentary-0167",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept hair follicle are correct? Select all that apply.",
+    "question": "Which statement about the skin concept hair follicle is correct?",
     "explanation": "Hair follicle: the epithelial structure enclosing a developing hair. It extends from epidermis into underlying tissue",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3570,13 +3460,11 @@
       "kind": "slide"
     },
     "options": [
-      "The epithelial structure enclosing a developing hair",
       "It extends from epidermis into underlying tissue",
       "It is a blood vessel entering the stratum corneum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3621,9 +3509,9 @@
   },
   {
     "id": "integumentary-0170",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept hair shaft are correct? Select all that apply.",
+    "question": "Which statement about the skin concept hair shaft is correct?",
     "explanation": "Hair shaft: the portion of hair extending outward from the skin surface. It is made mainly of dead keratinized cells",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3634,12 +3522,10 @@
     },
     "options": [
       "The portion of hair extending outward from the skin surface",
-      "It is made mainly of dead keratinized cells",
       "It consists of a living vascular tube"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3684,9 +3570,9 @@
   },
   {
     "id": "integumentary-0173",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept hair root are correct? Select all that apply.",
+    "question": "Which statement about the skin concept hair root is correct?",
     "explanation": "Hair root: the part of a hair beneath the skin surface within its follicle. Its deepest expanded region includes the bulb",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3696,13 +3582,11 @@
       "kind": "slide"
     },
     "options": [
-      "The part of a hair beneath the skin surface within its follicle",
       "Its deepest expanded region includes the bulb",
       "It is always the exposed portion above the skin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3747,9 +3631,9 @@
   },
   {
     "id": "integumentary-0176",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept hair bulb are correct? Select all that apply.",
+    "question": "Which statement about the skin concept hair bulb is correct?",
     "explanation": "Hair bulb: the expanded base of a growing hair. It contains the matrix around the dermal papilla",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3760,12 +3644,10 @@
     },
     "options": [
       "The expanded base of a growing hair",
-      "It contains the matrix around the dermal papilla",
       "It is the external tip of the hair shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3810,9 +3692,9 @@
   },
   {
     "id": "integumentary-0179",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept hair matrix are correct? Select all that apply.",
+    "question": "Which statement about the skin concept hair matrix is correct?",
     "explanation": "Hair matrix: the proliferating epithelial region producing a growing hair. Its cells differentiate into keratinized hair components",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3822,13 +3704,11 @@
       "kind": "slide"
     },
     "options": [
-      "The proliferating epithelial region producing a growing hair",
       "Its cells differentiate into keratinized hair components",
       "It is the connective-tissue capillary core of the papilla"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3873,9 +3753,9 @@
   },
   {
     "id": "integumentary-0182",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept hair papilla are correct? Select all that apply.",
+    "question": "Which statement about the skin concept hair papilla is correct?",
     "explanation": "Hair papilla: the connective-tissue projection supplying the hair-bulb region. It contains small blood vessels and supporting tissue",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3886,12 +3766,10 @@
     },
     "options": [
       "The connective-tissue projection supplying the hair-bulb region",
-      "It contains small blood vessels and supporting tissue",
       "It is made only of exposed dead shaft cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3936,9 +3814,9 @@
   },
   {
     "id": "integumentary-0185",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept arrector pili are correct? Select all that apply.",
+    "question": "Which statement about the skin concept arrector pili is correct?",
     "explanation": "Arrector pili: the smooth muscle attached to a hair follicle. Sympathetic activation can cause piloerection",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -3948,13 +3826,11 @@
       "kind": "slide"
     },
     "options": [
-      "The smooth muscle attached to a hair follicle",
       "Sympathetic activation can cause piloerection",
       "Its contraction is the universal mechanism closing every sweat pore"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -3999,9 +3875,9 @@
   },
   {
     "id": "integumentary-0188",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept eccrine sweat gland are correct? Select all that apply.",
+    "question": "Which statement about the skin concept eccrine sweat gland is correct?",
     "explanation": "Eccrine sweat gland: a sweat gland important in thermoregulation and usually opening on the skin surface. Its secretion can support evaporative cooling",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4012,12 +3888,10 @@
     },
     "options": [
       "A sweat gland important in thermoregulation and usually opening on the skin surface",
-      "Its secretion can support evaporative cooling",
       "It normally requires destruction of the entire gland cell to release every secretion"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4063,9 +3937,9 @@
   },
   {
     "id": "integumentary-0191",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept apocrine sweat gland are correct? Select all that apply.",
+    "question": "Which statement about the skin concept apocrine sweat gland is correct?",
     "explanation": "Apocrine sweat gland: a follicle-associated sweat gland prominent in selected regions such as the axilla. Its secretion can contribute to odor after microbial processing",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4075,13 +3949,11 @@
       "kind": "slide"
     },
     "options": [
-      "A follicle-associated sweat gland prominent in selected regions such as the axilla",
       "Its secretion can contribute to odor after microbial processing",
       "It is the principal thermoregulatory gland distributed identically to eccrine glands"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4126,9 +3998,9 @@
   },
   {
     "id": "integumentary-0194",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept sebaceous gland are correct? Select all that apply.",
+    "question": "Which statement about the skin concept sebaceous gland is correct?",
     "explanation": "Sebaceous gland: a gland producing lipid-rich sebum. Most are associated with hair follicles and they are absent from palms and soles",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4139,12 +4011,10 @@
     },
     "options": [
       "A gland producing lipid-rich sebum",
-      "Most are associated with hair follicles and they are absent from palms and soles",
       "It is present as a typical follicular oil gland in every palmar ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4189,9 +4059,9 @@
   },
   {
     "id": "integumentary-0197",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept sebum are correct? Select all that apply.",
+    "question": "Which statement about the skin concept sebum is correct?",
     "explanation": "Sebum: the lipid-rich product of sebaceous glands. It contributes lubrication to skin and hair",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4201,13 +4071,11 @@
       "kind": "slide"
     },
     "options": [
-      "The lipid-rich product of sebaceous glands",
       "It contributes lubrication to skin and hair",
       "It is the same as a keratinocyte’s DNA"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4253,9 +4121,9 @@
   },
   {
     "id": "integumentary-0200",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept sebocyte are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept sebocyte is correct?",
     "explanation": "Sebocyte: a lipid-producing cell of a sebaceous gland. Whole-cell breakdown participates in holocrine sebum release",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4267,12 +4135,10 @@
     },
     "options": [
       "A lipid-producing cell of a sebaceous gland",
-      "Whole-cell breakdown participates in holocrine sebum release",
       "It is the principal touch receptor in the epidermis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4318,9 +4184,9 @@
   },
   {
     "id": "integumentary-0203",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept cutaneous thermoregulation are correct? Select all that apply.",
+    "question": "Which statement about the skin concept cutaneous thermoregulation is correct?",
     "explanation": "Cutaneous thermoregulation: skin participation in body-temperature control. Sweating and vascular tone influence heat exchange",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4330,13 +4196,11 @@
       "kind": "slide"
     },
     "options": [
-      "Skin participation in body-temperature control",
       "Sweating and vascular tone influence heat exchange",
       "It requires permanent maximal vasoconstriction in every environment"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4381,9 +4245,9 @@
   },
   {
     "id": "integumentary-0206",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept cutaneous vasodilation are correct? Select all that apply.",
+    "question": "Which statement about the skin concept cutaneous vasodilation is correct?",
     "explanation": "Cutaneous vasodilation: widening of skin blood vessels. It can increase heat transfer to skin when conditions permit",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4394,12 +4258,10 @@
     },
     "options": [
       "Widening of skin blood vessels",
-      "It can increase heat transfer to skin when conditions permit",
       "It means a narrowing of all dermal vessels"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4444,9 +4306,9 @@
   },
   {
     "id": "integumentary-0209",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept cutaneous vasoconstriction are correct? Select all that apply.",
+    "question": "Which statement about the skin concept cutaneous vasoconstriction is correct?",
     "explanation": "Cutaneous vasoconstriction: narrowing of skin blood vessels. It can reduce skin heat transfer in cold conditions",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4456,13 +4318,11 @@
       "kind": "slide"
     },
     "options": [
-      "Narrowing of skin blood vessels",
       "It can reduce skin heat transfer in cold conditions",
       "It always causes maximal evaporative cooling"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4507,9 +4367,9 @@
   },
   {
     "id": "integumentary-0212",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept evaporative cooling are correct? Select all that apply.",
+    "question": "Which statement about the skin concept evaporative cooling is correct?",
     "explanation": "Evaporative cooling: heat removal when surface water changes to vapor. Sweat cools effectively only to the extent it can evaporate",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4520,12 +4380,10 @@
     },
     "options": [
       "Heat removal when surface water changes to vapor",
-      "Sweat cools effectively only to the extent it can evaporate",
       "Sweat dripping away must remove heat identically to complete evaporation"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4571,9 +4429,9 @@
   },
   {
     "id": "integumentary-0215",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept vitamin d3 are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept vitamin d3 is correct?",
     "explanation": "Vitamin D3: cholecalciferol formed in skin-related photochemical and thermal steps. Liver and kidney processing contribute to active-hormone formation",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4584,13 +4442,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Vitamin D3: cholecalciferol formed in skin-related photochemical and thermal steps. Liver and kidney processing contribute to active-hormone formation"
     },
     "options": [
-      "Cholecalciferol formed in skin-related photochemical and thermal steps",
       "Liver and kidney processing contribute to active-hormone formation",
       "It is automatically the fully activated renal hormone immediately upon UV exposure"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4637,9 +4493,9 @@
   },
   {
     "id": "integumentary-0218",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept rickets are correct? Select all that apply.",
+    "question": "Which statement about the skin concept rickets is correct?",
     "explanation": "Rickets: a disorder of impaired mineralization affecting growing bone. Vitamin D deficiency is one possible cause",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4650,12 +4506,10 @@
     },
     "options": [
       "A disorder of impaired mineralization affecting growing bone",
-      "Vitamin D deficiency is one possible cause",
       "It means every adult has identical bone disease"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4700,9 +4554,9 @@
   },
   {
     "id": "integumentary-0221",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept osteomalacia are correct? Select all that apply.",
+    "question": "Which statement about the skin concept osteomalacia is correct?",
     "explanation": "Osteomalacia: impaired mineralization of adult bone. Vitamin D deficiency can contribute",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4712,13 +4566,11 @@
       "kind": "slide"
     },
     "options": [
-      "Impaired mineralization of adult bone",
       "Vitamin D deficiency can contribute",
       "It is a cancer of pigment-producing skin cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4763,9 +4615,9 @@
   },
   {
     "id": "integumentary-0224",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept superficial epidermal burn are correct? Select all that apply.",
+    "question": "Which statement about the skin concept superficial epidermal burn is correct?",
     "explanation": "Superficial epidermal burn: a burn confined to the epidermis in the depth classification. It differs from a burn extending through the dermis",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4776,12 +4628,10 @@
     },
     "options": [
       "A burn confined to the epidermis in the depth classification",
-      "It differs from a burn extending through the dermis",
       "It is defined by exposed deep muscle"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4827,9 +4677,9 @@
   },
   {
     "id": "integumentary-0227",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept partial-thickness burn are correct? Select all that apply.",
+    "question": "Which statement about the skin concept partial-thickness burn is correct?",
     "explanation": "Partial-thickness burn: a burn involving epidermis and part of the dermis. Preserved appendage epithelium can support re-epithelialization",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4839,13 +4689,11 @@
       "kind": "slide"
     },
     "options": [
-      "A burn involving epidermis and part of the dermis",
       "Preserved appendage epithelium can support re-epithelialization",
       "It must destroy the full dermis in every case"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4890,9 +4738,9 @@
   },
   {
     "id": "integumentary-0230",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept full-thickness burn are correct? Select all that apply.",
+    "question": "Which statement about the skin concept full-thickness burn is correct?",
     "explanation": "Full-thickness burn: a burn destroying the full epidermal and dermal thickness. Local nerve injury can reduce sensation without establishing total severity by pain alone",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4903,12 +4751,10 @@
     },
     "options": [
       "A burn destroying the full epidermal and dermal thickness",
-      "Local nerve injury can reduce sensation without establishing total severity by pain alone",
       "It is defined only by a mild red epidermis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -4953,9 +4799,9 @@
   },
   {
     "id": "integumentary-0233",
-    "type": "select_all",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which statements about the skin concept deep burn beyond skin are correct? Select all that apply.",
+    "question": "Which statement about the skin concept deep burn beyond skin is correct?",
     "explanation": "Deep burn beyond skin: a burn extending into subcutaneous or deeper tissues such as muscle. It is more extensive in depth than injury limited to skin",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -4965,13 +4811,11 @@
       "kind": "slide"
     },
     "options": [
-      "A burn extending into subcutaneous or deeper tissues such as muscle",
       "It is more extensive in depth than injury limited to skin",
       "It is identical to every superficial sunburn"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5019,9 +4863,9 @@
   },
   {
     "id": "integumentary-0236",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept re-epithelialization are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept re-epithelialization is correct?",
     "explanation": "Re-epithelialization: restoration of an epithelial surface through surviving cells and their progeny. Its extent depends on surviving epithelial sources and wound conditions",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -5033,12 +4877,10 @@
     },
     "options": [
       "Restoration of an epithelial surface through surviving cells and their progeny",
-      "Its extent depends on surviving epithelial sources and wound conditions",
       "It requires every dead corneocyte to divide"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -5087,9 +4929,9 @@
   },
   {
     "id": "integumentary-0239",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which statements about the skin concept skin graft are correct? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which statement about the skin concept skin graft is correct?",
     "explanation": "Skin graft: skin tissue transferred to cover a recipient wound area. It does not automatically restore every original accessory structure",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -5100,13 +4942,11 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Skin graft: skin tissue transferred to cover a recipient wound area. It does not automatically restore every original accessory structure"
     },
     "options": [
-      "Skin tissue transferred to cover a recipient wound area",
       "It does not automatically restore every original accessory structure",
       "It is a requirement that every burn receive an amputation"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -8458,9 +8298,9 @@
   },
   {
     "id": "integumentary-0391",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Dermis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Dermis?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Dermis is associated with vascular connective-tissue support.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8472,21 +8312,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epidermis is associated with keratinized epithelial barrier; Dermis is associated with vascular connective-tissue support."
     },
     "options": [
-      "Epidermis—keratinized epithelial barrier",
       "Dermis—vascular connective-tissue support",
       "Epidermis—a rich intrinsic capillary network",
       "Dermis—an exclusively dead cornified sheet"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0392",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Hypodermis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Hypodermis?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Hypodermis is associated with subcutaneous areolar and fatty tissue.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8499,20 +8337,18 @@
     },
     "options": [
       "Epidermis—keratinized epithelial barrier",
-      "Hypodermis—subcutaneous areolar and fatty tissue",
       "Epidermis—a rich intrinsic capillary network",
       "Hypodermis—the outermost epidermal stratum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0393",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Keratinocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Keratinocyte?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Keratinocyte is associated with keratin-associated epidermal differentiation.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8524,21 +8360,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epidermis is associated with keratinized epithelial barrier; Keratinocyte is associated with keratin-associated epidermal differentiation."
     },
     "options": [
-      "Epidermis—keratinized epithelial barrier",
       "Keratinocyte—keratin-associated epidermal differentiation",
       "Epidermis—a rich intrinsic capillary network",
       "Keratinocyte—being the red blood cell carrying oxygen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0394",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Melanocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Melanocyte?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Melanocyte is associated with melanin production.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8551,20 +8385,18 @@
     },
     "options": [
       "Epidermis—keratinized epithelial barrier",
-      "Melanocyte—melanin production",
       "Epidermis—a rich intrinsic capillary network",
       "Melanocyte—being the principal collagen-producing fibroblast"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0395",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Merkel cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Merkel cell?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Merkel cell is associated with touch-associated epithelial sensory function.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8576,21 +8408,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epidermis is associated with keratinized epithelial barrier; Merkel cell is associated with touch-associated epithelial sensory function."
     },
     "options": [
-      "Epidermis—keratinized epithelial barrier",
       "Merkel cell—touch-associated epithelial sensory function",
       "Epidermis—a rich intrinsic capillary network",
       "Merkel cell—production of lipid-rich sebum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0396",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Fibroblast?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Fibroblast is associated with dermal matrix production.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8603,20 +8433,18 @@
     },
     "options": [
       "Epidermis—keratinized epithelial barrier",
-      "Fibroblast—dermal matrix production",
       "Epidermis—a rich intrinsic capillary network",
       "Fibroblast—being the principal epidermal melanin producer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0397",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Hair matrix? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Hair matrix?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Hair matrix is associated with production of growing hair material.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8628,21 +8456,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epidermis is associated with keratinized epithelial barrier; Hair matrix is associated with production of growing hair material."
     },
     "options": [
-      "Epidermis—keratinized epithelial barrier",
       "Hair matrix—production of growing hair material",
       "Epidermis—a rich intrinsic capillary network",
       "Hair matrix—a surface sweat pore with no proliferative cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0398",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Hair papilla? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Hair papilla?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Hair papilla is associated with connective and vascular support of the hair bulb.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8655,20 +8481,18 @@
     },
     "options": [
       "Epidermis—keratinized epithelial barrier",
-      "Hair papilla—connective and vascular support of the hair bulb",
       "Epidermis—a rich intrinsic capillary network",
       "Hair papilla—an exposed dead keratin shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0399",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Arrector pili? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Arrector pili?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Arrector pili is associated with smooth-muscle piloerection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8680,21 +8504,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epidermis is associated with keratinized epithelial barrier; Arrector pili is associated with smooth-muscle piloerection."
     },
     "options": [
-      "Epidermis—keratinized epithelial barrier",
       "Arrector pili—smooth-muscle piloerection",
       "Epidermis—a rich intrinsic capillary network",
       "Arrector pili—a universal mechanism closing every eccrine pore"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0400",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Eccrine gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Eccrine gland?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Eccrine gland is associated with thermoregulatory sweat secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8707,20 +8529,18 @@
     },
     "options": [
       "Epidermis—keratinized epithelial barrier",
-      "Eccrine gland—thermoregulatory sweat secretion",
       "Epidermis—a rich intrinsic capillary network",
       "Eccrine gland—the principal production of skin melanin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0401",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Apocrine sweat gland?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8732,21 +8552,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epidermis is associated with keratinized epithelial barrier; Apocrine sweat gland is associated with follicle-associated secretion in selected regions."
     },
     "options": [
-      "Epidermis—keratinized epithelial barrier",
       "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Epidermis—a rich intrinsic capillary network",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0402",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Sebaceous gland?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8759,20 +8577,18 @@
     },
     "options": [
       "Epidermis—keratinized epithelial barrier",
-      "Sebaceous gland—lipid-rich sebum secretion",
       "Epidermis—a rich intrinsic capillary network",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0403",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Meissner corpuscle?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8784,21 +8600,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Epidermis is associated with keratinized epithelial barrier; Meissner corpuscle is associated with light-touch detection."
     },
     "options": [
-      "Epidermis—keratinized epithelial barrier",
       "Meissner corpuscle—light-touch detection",
       "Epidermis—a rich intrinsic capillary network",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0404",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Epidermis and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Epidermis and Lamellar corpuscle?",
     "explanation": "Epidermis is associated with keratinized epithelial barrier; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8811,20 +8625,18 @@
     },
     "options": [
       "Epidermis—keratinized epithelial barrier",
-      "Lamellar corpuscle—pressure and vibration detection",
       "Epidermis—a rich intrinsic capillary network",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0405",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Hypodermis? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Hypodermis?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Hypodermis is associated with subcutaneous areolar and fatty tissue.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8836,21 +8648,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dermis is associated with vascular connective-tissue support; Hypodermis is associated with subcutaneous areolar and fatty tissue."
     },
     "options": [
-      "Dermis—vascular connective-tissue support",
       "Hypodermis—subcutaneous areolar and fatty tissue",
       "Dermis—an exclusively dead cornified sheet",
       "Hypodermis—the outermost epidermal stratum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0406",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Keratinocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Keratinocyte?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Keratinocyte is associated with keratin-associated epidermal differentiation.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8863,20 +8673,18 @@
     },
     "options": [
       "Dermis—vascular connective-tissue support",
-      "Keratinocyte—keratin-associated epidermal differentiation",
       "Dermis—an exclusively dead cornified sheet",
       "Keratinocyte—being the red blood cell carrying oxygen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0407",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Melanocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Melanocyte?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Melanocyte is associated with melanin production.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8888,21 +8696,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dermis is associated with vascular connective-tissue support; Melanocyte is associated with melanin production."
     },
     "options": [
-      "Dermis—vascular connective-tissue support",
       "Melanocyte—melanin production",
       "Dermis—an exclusively dead cornified sheet",
       "Melanocyte—being the principal collagen-producing fibroblast"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0408",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Merkel cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Merkel cell?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Merkel cell is associated with touch-associated epithelial sensory function.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8915,20 +8721,18 @@
     },
     "options": [
       "Dermis—vascular connective-tissue support",
-      "Merkel cell—touch-associated epithelial sensory function",
       "Dermis—an exclusively dead cornified sheet",
       "Merkel cell—production of lipid-rich sebum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0409",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Fibroblast?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Fibroblast is associated with dermal matrix production.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8939,21 +8743,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dermis is associated with vascular connective-tissue support; Fibroblast is associated with dermal matrix production."
     },
     "options": [
-      "Dermis—vascular connective-tissue support",
       "Fibroblast—dermal matrix production",
       "Dermis—an exclusively dead cornified sheet",
       "Fibroblast—being the principal epidermal melanin producer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0410",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Hair matrix? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Hair matrix?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Hair matrix is associated with production of growing hair material.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8966,20 +8768,18 @@
     },
     "options": [
       "Dermis—vascular connective-tissue support",
-      "Hair matrix—production of growing hair material",
       "Dermis—an exclusively dead cornified sheet",
       "Hair matrix—a surface sweat pore with no proliferative cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0411",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Hair papilla? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Hair papilla?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Hair papilla is associated with connective and vascular support of the hair bulb.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -8991,21 +8791,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dermis is associated with vascular connective-tissue support; Hair papilla is associated with connective and vascular support of the hair bulb."
     },
     "options": [
-      "Dermis—vascular connective-tissue support",
       "Hair papilla—connective and vascular support of the hair bulb",
       "Dermis—an exclusively dead cornified sheet",
       "Hair papilla—an exposed dead keratin shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0412",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Arrector pili? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Arrector pili?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Arrector pili is associated with smooth-muscle piloerection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9018,20 +8816,18 @@
     },
     "options": [
       "Dermis—vascular connective-tissue support",
-      "Arrector pili—smooth-muscle piloerection",
       "Dermis—an exclusively dead cornified sheet",
       "Arrector pili—a universal mechanism closing every eccrine pore"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0413",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Eccrine gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Eccrine gland?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Eccrine gland is associated with thermoregulatory sweat secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9043,21 +8839,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dermis is associated with vascular connective-tissue support; Eccrine gland is associated with thermoregulatory sweat secretion."
     },
     "options": [
-      "Dermis—vascular connective-tissue support",
       "Eccrine gland—thermoregulatory sweat secretion",
       "Dermis—an exclusively dead cornified sheet",
       "Eccrine gland—the principal production of skin melanin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0414",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Apocrine sweat gland?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9070,20 +8864,18 @@
     },
     "options": [
       "Dermis—vascular connective-tissue support",
-      "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Dermis—an exclusively dead cornified sheet",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0415",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Sebaceous gland?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9095,21 +8887,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dermis is associated with vascular connective-tissue support; Sebaceous gland is associated with lipid-rich sebum secretion."
     },
     "options": [
-      "Dermis—vascular connective-tissue support",
       "Sebaceous gland—lipid-rich sebum secretion",
       "Dermis—an exclusively dead cornified sheet",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0416",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Meissner corpuscle?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9122,20 +8912,18 @@
     },
     "options": [
       "Dermis—vascular connective-tissue support",
-      "Meissner corpuscle—light-touch detection",
       "Dermis—an exclusively dead cornified sheet",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0417",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Dermis and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Dermis and Lamellar corpuscle?",
     "explanation": "Dermis is associated with vascular connective-tissue support; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9147,21 +8935,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Dermis is associated with vascular connective-tissue support; Lamellar corpuscle is associated with pressure and vibration detection."
     },
     "options": [
-      "Dermis—vascular connective-tissue support",
       "Lamellar corpuscle—pressure and vibration detection",
       "Dermis—an exclusively dead cornified sheet",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0418",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Keratinocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Keratinocyte?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Keratinocyte is associated with keratin-associated epidermal differentiation.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9174,20 +8960,18 @@
     },
     "options": [
       "Hypodermis—subcutaneous areolar and fatty tissue",
-      "Keratinocyte—keratin-associated epidermal differentiation",
       "Hypodermis—the outermost epidermal stratum",
       "Keratinocyte—being the red blood cell carrying oxygen"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0419",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Melanocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Melanocyte?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Melanocyte is associated with melanin production.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9199,21 +8983,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hypodermis is associated with subcutaneous areolar and fatty tissue; Melanocyte is associated with melanin production."
     },
     "options": [
-      "Hypodermis—subcutaneous areolar and fatty tissue",
       "Melanocyte—melanin production",
       "Hypodermis—the outermost epidermal stratum",
       "Melanocyte—being the principal collagen-producing fibroblast"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0420",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Merkel cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Merkel cell?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Merkel cell is associated with touch-associated epithelial sensory function.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9226,20 +9008,18 @@
     },
     "options": [
       "Hypodermis—subcutaneous areolar and fatty tissue",
-      "Merkel cell—touch-associated epithelial sensory function",
       "Hypodermis—the outermost epidermal stratum",
       "Merkel cell—production of lipid-rich sebum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0421",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Fibroblast?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Fibroblast is associated with dermal matrix production.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9251,21 +9031,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hypodermis is associated with subcutaneous areolar and fatty tissue; Fibroblast is associated with dermal matrix production."
     },
     "options": [
-      "Hypodermis—subcutaneous areolar and fatty tissue",
       "Fibroblast—dermal matrix production",
       "Hypodermis—the outermost epidermal stratum",
       "Fibroblast—being the principal epidermal melanin producer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0422",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Hair matrix? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Hair matrix?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Hair matrix is associated with production of growing hair material.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9278,20 +9056,18 @@
     },
     "options": [
       "Hypodermis—subcutaneous areolar and fatty tissue",
-      "Hair matrix—production of growing hair material",
       "Hypodermis—the outermost epidermal stratum",
       "Hair matrix—a surface sweat pore with no proliferative cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0423",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Hair papilla? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Hair papilla?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Hair papilla is associated with connective and vascular support of the hair bulb.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9303,21 +9079,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hypodermis is associated with subcutaneous areolar and fatty tissue; Hair papilla is associated with connective and vascular support of the hair bulb."
     },
     "options": [
-      "Hypodermis—subcutaneous areolar and fatty tissue",
       "Hair papilla—connective and vascular support of the hair bulb",
       "Hypodermis—the outermost epidermal stratum",
       "Hair papilla—an exposed dead keratin shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0424",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Arrector pili? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Arrector pili?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Arrector pili is associated with smooth-muscle piloerection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9330,20 +9104,18 @@
     },
     "options": [
       "Hypodermis—subcutaneous areolar and fatty tissue",
-      "Arrector pili—smooth-muscle piloerection",
       "Hypodermis—the outermost epidermal stratum",
       "Arrector pili—a universal mechanism closing every eccrine pore"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0425",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Eccrine gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Eccrine gland?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Eccrine gland is associated with thermoregulatory sweat secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9355,21 +9127,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hypodermis is associated with subcutaneous areolar and fatty tissue; Eccrine gland is associated with thermoregulatory sweat secretion."
     },
     "options": [
-      "Hypodermis—subcutaneous areolar and fatty tissue",
       "Eccrine gland—thermoregulatory sweat secretion",
       "Hypodermis—the outermost epidermal stratum",
       "Eccrine gland—the principal production of skin melanin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0426",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Apocrine sweat gland?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9382,20 +9152,18 @@
     },
     "options": [
       "Hypodermis—subcutaneous areolar and fatty tissue",
-      "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Hypodermis—the outermost epidermal stratum",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0427",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Sebaceous gland?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9407,21 +9175,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hypodermis is associated with subcutaneous areolar and fatty tissue; Sebaceous gland is associated with lipid-rich sebum secretion."
     },
     "options": [
-      "Hypodermis—subcutaneous areolar and fatty tissue",
       "Sebaceous gland—lipid-rich sebum secretion",
       "Hypodermis—the outermost epidermal stratum",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0428",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Meissner corpuscle?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9434,20 +9200,18 @@
     },
     "options": [
       "Hypodermis—subcutaneous areolar and fatty tissue",
-      "Meissner corpuscle—light-touch detection",
       "Hypodermis—the outermost epidermal stratum",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0429",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hypodermis and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hypodermis and Lamellar corpuscle?",
     "explanation": "Hypodermis is associated with subcutaneous areolar and fatty tissue; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9459,21 +9223,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hypodermis is associated with subcutaneous areolar and fatty tissue; Lamellar corpuscle is associated with pressure and vibration detection."
     },
     "options": [
-      "Hypodermis—subcutaneous areolar and fatty tissue",
       "Lamellar corpuscle—pressure and vibration detection",
       "Hypodermis—the outermost epidermal stratum",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0430",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Melanocyte? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Melanocyte?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Melanocyte is associated with melanin production.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9486,20 +9248,18 @@
     },
     "options": [
       "Keratinocyte—keratin-associated epidermal differentiation",
-      "Melanocyte—melanin production",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Melanocyte—being the principal collagen-producing fibroblast"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0431",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Merkel cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Merkel cell?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Merkel cell is associated with touch-associated epithelial sensory function.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9511,21 +9271,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Keratinocyte is associated with keratin-associated epidermal differentiation; Merkel cell is associated with touch-associated epithelial sensory function."
     },
     "options": [
-      "Keratinocyte—keratin-associated epidermal differentiation",
       "Merkel cell—touch-associated epithelial sensory function",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Merkel cell—production of lipid-rich sebum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0432",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Fibroblast?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Fibroblast is associated with dermal matrix production.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9538,20 +9296,18 @@
     },
     "options": [
       "Keratinocyte—keratin-associated epidermal differentiation",
-      "Fibroblast—dermal matrix production",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Fibroblast—being the principal epidermal melanin producer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0433",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Hair matrix? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Hair matrix?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Hair matrix is associated with production of growing hair material.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9563,21 +9319,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Keratinocyte is associated with keratin-associated epidermal differentiation; Hair matrix is associated with production of growing hair material."
     },
     "options": [
-      "Keratinocyte—keratin-associated epidermal differentiation",
       "Hair matrix—production of growing hair material",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Hair matrix—a surface sweat pore with no proliferative cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0434",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Hair papilla? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Hair papilla?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Hair papilla is associated with connective and vascular support of the hair bulb.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9590,20 +9344,18 @@
     },
     "options": [
       "Keratinocyte—keratin-associated epidermal differentiation",
-      "Hair papilla—connective and vascular support of the hair bulb",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Hair papilla—an exposed dead keratin shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0435",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Arrector pili? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Arrector pili?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Arrector pili is associated with smooth-muscle piloerection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9615,21 +9367,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Keratinocyte is associated with keratin-associated epidermal differentiation; Arrector pili is associated with smooth-muscle piloerection."
     },
     "options": [
-      "Keratinocyte—keratin-associated epidermal differentiation",
       "Arrector pili—smooth-muscle piloerection",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Arrector pili—a universal mechanism closing every eccrine pore"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0436",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Eccrine gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Eccrine gland?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Eccrine gland is associated with thermoregulatory sweat secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9642,20 +9392,18 @@
     },
     "options": [
       "Keratinocyte—keratin-associated epidermal differentiation",
-      "Eccrine gland—thermoregulatory sweat secretion",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Eccrine gland—the principal production of skin melanin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0437",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Apocrine sweat gland?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9667,21 +9415,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Keratinocyte is associated with keratin-associated epidermal differentiation; Apocrine sweat gland is associated with follicle-associated secretion in selected regions."
     },
     "options": [
-      "Keratinocyte—keratin-associated epidermal differentiation",
       "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0438",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Sebaceous gland?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9694,20 +9440,18 @@
     },
     "options": [
       "Keratinocyte—keratin-associated epidermal differentiation",
-      "Sebaceous gland—lipid-rich sebum secretion",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0439",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Meissner corpuscle?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9719,21 +9463,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Keratinocyte is associated with keratin-associated epidermal differentiation; Meissner corpuscle is associated with light-touch detection."
     },
     "options": [
-      "Keratinocyte—keratin-associated epidermal differentiation",
       "Meissner corpuscle—light-touch detection",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0440",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Keratinocyte and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Keratinocyte and Lamellar corpuscle?",
     "explanation": "Keratinocyte is associated with keratin-associated epidermal differentiation; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9746,20 +9488,18 @@
     },
     "options": [
       "Keratinocyte—keratin-associated epidermal differentiation",
-      "Lamellar corpuscle—pressure and vibration detection",
       "Keratinocyte—being the red blood cell carrying oxygen",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0441",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Melanocyte and Merkel cell? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Melanocyte and Merkel cell?",
     "explanation": "Melanocyte is associated with melanin production; Merkel cell is associated with touch-associated epithelial sensory function.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9771,21 +9511,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Melanocyte is associated with melanin production; Merkel cell is associated with touch-associated epithelial sensory function."
     },
     "options": [
-      "Melanocyte—melanin production",
       "Merkel cell—touch-associated epithelial sensory function",
       "Melanocyte—being the principal collagen-producing fibroblast",
       "Merkel cell—production of lipid-rich sebum"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0442",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Melanocyte and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Melanocyte and Fibroblast?",
     "explanation": "Melanocyte is associated with melanin production; Fibroblast is associated with dermal matrix production.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9798,20 +9536,18 @@
     },
     "options": [
       "Melanocyte—melanin production",
-      "Fibroblast—dermal matrix production",
       "Melanocyte—being the principal collagen-producing fibroblast",
       "Fibroblast—being the principal epidermal melanin producer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0443",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Melanocyte and Hair matrix? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Melanocyte and Hair matrix?",
     "explanation": "Melanocyte is associated with melanin production; Hair matrix is associated with production of growing hair material.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9823,21 +9559,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Melanocyte is associated with melanin production; Hair matrix is associated with production of growing hair material."
     },
     "options": [
-      "Melanocyte—melanin production",
       "Hair matrix—production of growing hair material",
       "Melanocyte—being the principal collagen-producing fibroblast",
       "Hair matrix—a surface sweat pore with no proliferative cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0444",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Melanocyte and Hair papilla? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Melanocyte and Hair papilla?",
     "explanation": "Melanocyte is associated with melanin production; Hair papilla is associated with connective and vascular support of the hair bulb.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9850,20 +9584,18 @@
     },
     "options": [
       "Melanocyte—melanin production",
-      "Hair papilla—connective and vascular support of the hair bulb",
       "Melanocyte—being the principal collagen-producing fibroblast",
       "Hair papilla—an exposed dead keratin shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0445",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Melanocyte and Arrector pili? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Melanocyte and Arrector pili?",
     "explanation": "Melanocyte is associated with melanin production; Arrector pili is associated with smooth-muscle piloerection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9875,21 +9607,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Melanocyte is associated with melanin production; Arrector pili is associated with smooth-muscle piloerection."
     },
     "options": [
-      "Melanocyte—melanin production",
       "Arrector pili—smooth-muscle piloerection",
       "Melanocyte—being the principal collagen-producing fibroblast",
       "Arrector pili—a universal mechanism closing every eccrine pore"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0446",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Melanocyte and Eccrine gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Melanocyte and Eccrine gland?",
     "explanation": "Melanocyte is associated with melanin production; Eccrine gland is associated with thermoregulatory sweat secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9902,20 +9632,18 @@
     },
     "options": [
       "Melanocyte—melanin production",
-      "Eccrine gland—thermoregulatory sweat secretion",
       "Melanocyte—being the principal collagen-producing fibroblast",
       "Eccrine gland—the principal production of skin melanin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0447",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Melanocyte and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Melanocyte and Apocrine sweat gland?",
     "explanation": "Melanocyte is associated with melanin production; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9927,21 +9655,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Melanocyte is associated with melanin production; Apocrine sweat gland is associated with follicle-associated secretion in selected regions."
     },
     "options": [
-      "Melanocyte—melanin production",
       "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Melanocyte—being the principal collagen-producing fibroblast",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0448",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Melanocyte and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Melanocyte and Sebaceous gland?",
     "explanation": "Melanocyte is associated with melanin production; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9954,20 +9680,18 @@
     },
     "options": [
       "Melanocyte—melanin production",
-      "Sebaceous gland—lipid-rich sebum secretion",
       "Melanocyte—being the principal collagen-producing fibroblast",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0449",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Melanocyte and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Melanocyte and Meissner corpuscle?",
     "explanation": "Melanocyte is associated with melanin production; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -9979,21 +9703,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Melanocyte is associated with melanin production; Meissner corpuscle is associated with light-touch detection."
     },
     "options": [
-      "Melanocyte—melanin production",
       "Meissner corpuscle—light-touch detection",
       "Melanocyte—being the principal collagen-producing fibroblast",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0450",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Melanocyte and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Melanocyte and Lamellar corpuscle?",
     "explanation": "Melanocyte is associated with melanin production; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10006,20 +9728,18 @@
     },
     "options": [
       "Melanocyte—melanin production",
-      "Lamellar corpuscle—pressure and vibration detection",
       "Melanocyte—being the principal collagen-producing fibroblast",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0451",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Merkel cell and Fibroblast? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Merkel cell and Fibroblast?",
     "explanation": "Merkel cell is associated with touch-associated epithelial sensory function; Fibroblast is associated with dermal matrix production.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10031,21 +9751,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Merkel cell is associated with touch-associated epithelial sensory function; Fibroblast is associated with dermal matrix production."
     },
     "options": [
-      "Merkel cell—touch-associated epithelial sensory function",
       "Fibroblast—dermal matrix production",
       "Merkel cell—production of lipid-rich sebum",
       "Fibroblast—being the principal epidermal melanin producer"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0452",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Merkel cell and Hair matrix? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Merkel cell and Hair matrix?",
     "explanation": "Merkel cell is associated with touch-associated epithelial sensory function; Hair matrix is associated with production of growing hair material.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10058,20 +9776,18 @@
     },
     "options": [
       "Merkel cell—touch-associated epithelial sensory function",
-      "Hair matrix—production of growing hair material",
       "Merkel cell—production of lipid-rich sebum",
       "Hair matrix—a surface sweat pore with no proliferative cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0453",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Merkel cell and Hair papilla? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Merkel cell and Hair papilla?",
     "explanation": "Merkel cell is associated with touch-associated epithelial sensory function; Hair papilla is associated with connective and vascular support of the hair bulb.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10083,21 +9799,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Merkel cell is associated with touch-associated epithelial sensory function; Hair papilla is associated with connective and vascular support of the hair bulb."
     },
     "options": [
-      "Merkel cell—touch-associated epithelial sensory function",
       "Hair papilla—connective and vascular support of the hair bulb",
       "Merkel cell—production of lipid-rich sebum",
       "Hair papilla—an exposed dead keratin shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0454",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Merkel cell and Arrector pili? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Merkel cell and Arrector pili?",
     "explanation": "Merkel cell is associated with touch-associated epithelial sensory function; Arrector pili is associated with smooth-muscle piloerection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10110,20 +9824,18 @@
     },
     "options": [
       "Merkel cell—touch-associated epithelial sensory function",
-      "Arrector pili—smooth-muscle piloerection",
       "Merkel cell—production of lipid-rich sebum",
       "Arrector pili—a universal mechanism closing every eccrine pore"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0455",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Merkel cell and Eccrine gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Merkel cell and Eccrine gland?",
     "explanation": "Merkel cell is associated with touch-associated epithelial sensory function; Eccrine gland is associated with thermoregulatory sweat secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10135,21 +9847,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Merkel cell is associated with touch-associated epithelial sensory function; Eccrine gland is associated with thermoregulatory sweat secretion."
     },
     "options": [
-      "Merkel cell—touch-associated epithelial sensory function",
       "Eccrine gland—thermoregulatory sweat secretion",
       "Merkel cell—production of lipid-rich sebum",
       "Eccrine gland—the principal production of skin melanin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0456",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Merkel cell and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Merkel cell and Apocrine sweat gland?",
     "explanation": "Merkel cell is associated with touch-associated epithelial sensory function; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10162,20 +9872,18 @@
     },
     "options": [
       "Merkel cell—touch-associated epithelial sensory function",
-      "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Merkel cell—production of lipid-rich sebum",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0457",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Merkel cell and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Merkel cell and Sebaceous gland?",
     "explanation": "Merkel cell is associated with touch-associated epithelial sensory function; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10187,21 +9895,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Merkel cell is associated with touch-associated epithelial sensory function; Sebaceous gland is associated with lipid-rich sebum secretion."
     },
     "options": [
-      "Merkel cell—touch-associated epithelial sensory function",
       "Sebaceous gland—lipid-rich sebum secretion",
       "Merkel cell—production of lipid-rich sebum",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0458",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Merkel cell and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Merkel cell and Meissner corpuscle?",
     "explanation": "Merkel cell is associated with touch-associated epithelial sensory function; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10214,20 +9920,18 @@
     },
     "options": [
       "Merkel cell—touch-associated epithelial sensory function",
-      "Meissner corpuscle—light-touch detection",
       "Merkel cell—production of lipid-rich sebum",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0459",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Merkel cell and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Merkel cell and Lamellar corpuscle?",
     "explanation": "Merkel cell is associated with touch-associated epithelial sensory function; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10239,21 +9943,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Merkel cell is associated with touch-associated epithelial sensory function; Lamellar corpuscle is associated with pressure and vibration detection."
     },
     "options": [
-      "Merkel cell—touch-associated epithelial sensory function",
       "Lamellar corpuscle—pressure and vibration detection",
       "Merkel cell—production of lipid-rich sebum",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0460",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Fibroblast and Hair matrix? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Hair matrix?",
     "explanation": "Fibroblast is associated with dermal matrix production; Hair matrix is associated with production of growing hair material.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10266,20 +9968,18 @@
     },
     "options": [
       "Fibroblast—dermal matrix production",
-      "Hair matrix—production of growing hair material",
       "Fibroblast—being the principal epidermal melanin producer",
       "Hair matrix—a surface sweat pore with no proliferative cells"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0461",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Fibroblast and Hair papilla? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Hair papilla?",
     "explanation": "Fibroblast is associated with dermal matrix production; Hair papilla is associated with connective and vascular support of the hair bulb.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10291,21 +9991,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Fibroblast is associated with dermal matrix production; Hair papilla is associated with connective and vascular support of the hair bulb."
     },
     "options": [
-      "Fibroblast—dermal matrix production",
       "Hair papilla—connective and vascular support of the hair bulb",
       "Fibroblast—being the principal epidermal melanin producer",
       "Hair papilla—an exposed dead keratin shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0462",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Fibroblast and Arrector pili? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Arrector pili?",
     "explanation": "Fibroblast is associated with dermal matrix production; Arrector pili is associated with smooth-muscle piloerection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10318,20 +10016,18 @@
     },
     "options": [
       "Fibroblast—dermal matrix production",
-      "Arrector pili—smooth-muscle piloerection",
       "Fibroblast—being the principal epidermal melanin producer",
       "Arrector pili—a universal mechanism closing every eccrine pore"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0463",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Fibroblast and Eccrine gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Eccrine gland?",
     "explanation": "Fibroblast is associated with dermal matrix production; Eccrine gland is associated with thermoregulatory sweat secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10343,21 +10039,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Fibroblast is associated with dermal matrix production; Eccrine gland is associated with thermoregulatory sweat secretion."
     },
     "options": [
-      "Fibroblast—dermal matrix production",
       "Eccrine gland—thermoregulatory sweat secretion",
       "Fibroblast—being the principal epidermal melanin producer",
       "Eccrine gland—the principal production of skin melanin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0464",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Fibroblast and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Apocrine sweat gland?",
     "explanation": "Fibroblast is associated with dermal matrix production; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10370,20 +10064,18 @@
     },
     "options": [
       "Fibroblast—dermal matrix production",
-      "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Fibroblast—being the principal epidermal melanin producer",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0465",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Fibroblast and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Sebaceous gland?",
     "explanation": "Fibroblast is associated with dermal matrix production; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10395,21 +10087,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Fibroblast is associated with dermal matrix production; Sebaceous gland is associated with lipid-rich sebum secretion."
     },
     "options": [
-      "Fibroblast—dermal matrix production",
       "Sebaceous gland—lipid-rich sebum secretion",
       "Fibroblast—being the principal epidermal melanin producer",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0466",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Fibroblast and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Meissner corpuscle?",
     "explanation": "Fibroblast is associated with dermal matrix production; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10422,20 +10112,18 @@
     },
     "options": [
       "Fibroblast—dermal matrix production",
-      "Meissner corpuscle—light-touch detection",
       "Fibroblast—being the principal epidermal melanin producer",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0467",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Fibroblast and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Fibroblast and Lamellar corpuscle?",
     "explanation": "Fibroblast is associated with dermal matrix production; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10447,21 +10135,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Fibroblast is associated with dermal matrix production; Lamellar corpuscle is associated with pressure and vibration detection."
     },
     "options": [
-      "Fibroblast—dermal matrix production",
       "Lamellar corpuscle—pressure and vibration detection",
       "Fibroblast—being the principal epidermal melanin producer",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0468",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair matrix and Hair papilla? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair matrix and Hair papilla?",
     "explanation": "Hair matrix is associated with production of growing hair material; Hair papilla is associated with connective and vascular support of the hair bulb.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10473,20 +10159,18 @@
     },
     "options": [
       "Hair matrix—production of growing hair material",
-      "Hair papilla—connective and vascular support of the hair bulb",
       "Hair matrix—a surface sweat pore with no proliferative cells",
       "Hair papilla—an exposed dead keratin shaft"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0469",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair matrix and Arrector pili? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair matrix and Arrector pili?",
     "explanation": "Hair matrix is associated with production of growing hair material; Arrector pili is associated with smooth-muscle piloerection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10498,21 +10182,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hair matrix is associated with production of growing hair material; Arrector pili is associated with smooth-muscle piloerection."
     },
     "options": [
-      "Hair matrix—production of growing hair material",
       "Arrector pili—smooth-muscle piloerection",
       "Hair matrix—a surface sweat pore with no proliferative cells",
       "Arrector pili—a universal mechanism closing every eccrine pore"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0470",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair matrix and Eccrine gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair matrix and Eccrine gland?",
     "explanation": "Hair matrix is associated with production of growing hair material; Eccrine gland is associated with thermoregulatory sweat secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10525,20 +10207,18 @@
     },
     "options": [
       "Hair matrix—production of growing hair material",
-      "Eccrine gland—thermoregulatory sweat secretion",
       "Hair matrix—a surface sweat pore with no proliferative cells",
       "Eccrine gland—the principal production of skin melanin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0471",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair matrix and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair matrix and Apocrine sweat gland?",
     "explanation": "Hair matrix is associated with production of growing hair material; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10550,21 +10230,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hair matrix is associated with production of growing hair material; Apocrine sweat gland is associated with follicle-associated secretion in selected regions."
     },
     "options": [
-      "Hair matrix—production of growing hair material",
       "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Hair matrix—a surface sweat pore with no proliferative cells",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0472",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair matrix and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair matrix and Sebaceous gland?",
     "explanation": "Hair matrix is associated with production of growing hair material; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10577,20 +10255,18 @@
     },
     "options": [
       "Hair matrix—production of growing hair material",
-      "Sebaceous gland—lipid-rich sebum secretion",
       "Hair matrix—a surface sweat pore with no proliferative cells",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0473",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair matrix and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair matrix and Meissner corpuscle?",
     "explanation": "Hair matrix is associated with production of growing hair material; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10602,21 +10278,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hair matrix is associated with production of growing hair material; Meissner corpuscle is associated with light-touch detection."
     },
     "options": [
-      "Hair matrix—production of growing hair material",
       "Meissner corpuscle—light-touch detection",
       "Hair matrix—a surface sweat pore with no proliferative cells",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0474",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair matrix and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair matrix and Lamellar corpuscle?",
     "explanation": "Hair matrix is associated with production of growing hair material; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10629,20 +10303,18 @@
     },
     "options": [
       "Hair matrix—production of growing hair material",
-      "Lamellar corpuscle—pressure and vibration detection",
       "Hair matrix—a surface sweat pore with no proliferative cells",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0475",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair papilla and Arrector pili? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair papilla and Arrector pili?",
     "explanation": "Hair papilla is associated with connective and vascular support of the hair bulb; Arrector pili is associated with smooth-muscle piloerection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10654,21 +10326,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hair papilla is associated with connective and vascular support of the hair bulb; Arrector pili is associated with smooth-muscle piloerection."
     },
     "options": [
-      "Hair papilla—connective and vascular support of the hair bulb",
       "Arrector pili—smooth-muscle piloerection",
       "Hair papilla—an exposed dead keratin shaft",
       "Arrector pili—a universal mechanism closing every eccrine pore"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0476",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair papilla and Eccrine gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair papilla and Eccrine gland?",
     "explanation": "Hair papilla is associated with connective and vascular support of the hair bulb; Eccrine gland is associated with thermoregulatory sweat secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10681,20 +10351,18 @@
     },
     "options": [
       "Hair papilla—connective and vascular support of the hair bulb",
-      "Eccrine gland—thermoregulatory sweat secretion",
       "Hair papilla—an exposed dead keratin shaft",
       "Eccrine gland—the principal production of skin melanin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0477",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair papilla and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair papilla and Apocrine sweat gland?",
     "explanation": "Hair papilla is associated with connective and vascular support of the hair bulb; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10706,21 +10374,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hair papilla is associated with connective and vascular support of the hair bulb; Apocrine sweat gland is associated with follicle-associated secretion in selected regions."
     },
     "options": [
-      "Hair papilla—connective and vascular support of the hair bulb",
       "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Hair papilla—an exposed dead keratin shaft",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0478",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair papilla and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair papilla and Sebaceous gland?",
     "explanation": "Hair papilla is associated with connective and vascular support of the hair bulb; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10733,20 +10399,18 @@
     },
     "options": [
       "Hair papilla—connective and vascular support of the hair bulb",
-      "Sebaceous gland—lipid-rich sebum secretion",
       "Hair papilla—an exposed dead keratin shaft",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0479",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair papilla and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair papilla and Meissner corpuscle?",
     "explanation": "Hair papilla is associated with connective and vascular support of the hair bulb; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10758,21 +10422,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Hair papilla is associated with connective and vascular support of the hair bulb; Meissner corpuscle is associated with light-touch detection."
     },
     "options": [
-      "Hair papilla—connective and vascular support of the hair bulb",
       "Meissner corpuscle—light-touch detection",
       "Hair papilla—an exposed dead keratin shaft",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0480",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Hair papilla and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Hair papilla and Lamellar corpuscle?",
     "explanation": "Hair papilla is associated with connective and vascular support of the hair bulb; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10785,20 +10447,18 @@
     },
     "options": [
       "Hair papilla—connective and vascular support of the hair bulb",
-      "Lamellar corpuscle—pressure and vibration detection",
       "Hair papilla—an exposed dead keratin shaft",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0481",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Arrector pili and Eccrine gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Arrector pili and Eccrine gland?",
     "explanation": "Arrector pili is associated with smooth-muscle piloerection; Eccrine gland is associated with thermoregulatory sweat secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10810,21 +10470,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Arrector pili is associated with smooth-muscle piloerection; Eccrine gland is associated with thermoregulatory sweat secretion."
     },
     "options": [
-      "Arrector pili—smooth-muscle piloerection",
       "Eccrine gland—thermoregulatory sweat secretion",
       "Arrector pili—a universal mechanism closing every eccrine pore",
       "Eccrine gland—the principal production of skin melanin"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0482",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Arrector pili and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Arrector pili and Apocrine sweat gland?",
     "explanation": "Arrector pili is associated with smooth-muscle piloerection; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10837,20 +10495,18 @@
     },
     "options": [
       "Arrector pili—smooth-muscle piloerection",
-      "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Arrector pili—a universal mechanism closing every eccrine pore",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0483",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Arrector pili and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Arrector pili and Sebaceous gland?",
     "explanation": "Arrector pili is associated with smooth-muscle piloerection; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10862,21 +10518,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Arrector pili is associated with smooth-muscle piloerection; Sebaceous gland is associated with lipid-rich sebum secretion."
     },
     "options": [
-      "Arrector pili—smooth-muscle piloerection",
       "Sebaceous gland—lipid-rich sebum secretion",
       "Arrector pili—a universal mechanism closing every eccrine pore",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0484",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Arrector pili and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Arrector pili and Meissner corpuscle?",
     "explanation": "Arrector pili is associated with smooth-muscle piloerection; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10889,20 +10543,18 @@
     },
     "options": [
       "Arrector pili—smooth-muscle piloerection",
-      "Meissner corpuscle—light-touch detection",
       "Arrector pili—a universal mechanism closing every eccrine pore",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0485",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Arrector pili and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Arrector pili and Lamellar corpuscle?",
     "explanation": "Arrector pili is associated with smooth-muscle piloerection; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10914,21 +10566,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Arrector pili is associated with smooth-muscle piloerection; Lamellar corpuscle is associated with pressure and vibration detection."
     },
     "options": [
-      "Arrector pili—smooth-muscle piloerection",
       "Lamellar corpuscle—pressure and vibration detection",
       "Arrector pili—a universal mechanism closing every eccrine pore",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0486",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Eccrine gland and Apocrine sweat gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Eccrine gland and Apocrine sweat gland?",
     "explanation": "Eccrine gland is associated with thermoregulatory sweat secretion; Apocrine sweat gland is associated with follicle-associated secretion in selected regions.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10941,20 +10591,18 @@
     },
     "options": [
       "Eccrine gland—thermoregulatory sweat secretion",
-      "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Eccrine gland—the principal production of skin melanin",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0487",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Eccrine gland and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Eccrine gland and Sebaceous gland?",
     "explanation": "Eccrine gland is associated with thermoregulatory sweat secretion; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10966,21 +10614,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Eccrine gland is associated with thermoregulatory sweat secretion; Sebaceous gland is associated with lipid-rich sebum secretion."
     },
     "options": [
-      "Eccrine gland—thermoregulatory sweat secretion",
       "Sebaceous gland—lipid-rich sebum secretion",
       "Eccrine gland—the principal production of skin melanin",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0488",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Eccrine gland and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Eccrine gland and Meissner corpuscle?",
     "explanation": "Eccrine gland is associated with thermoregulatory sweat secretion; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -10993,20 +10639,18 @@
     },
     "options": [
       "Eccrine gland—thermoregulatory sweat secretion",
-      "Meissner corpuscle—light-touch detection",
       "Eccrine gland—the principal production of skin melanin",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0489",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Eccrine gland and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Eccrine gland and Lamellar corpuscle?",
     "explanation": "Eccrine gland is associated with thermoregulatory sweat secretion; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -11018,21 +10662,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Eccrine gland is associated with thermoregulatory sweat secretion; Lamellar corpuscle is associated with pressure and vibration detection."
     },
     "options": [
-      "Eccrine gland—thermoregulatory sweat secretion",
       "Lamellar corpuscle—pressure and vibration detection",
       "Eccrine gland—the principal production of skin melanin",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0490",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Apocrine sweat gland and Sebaceous gland? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Apocrine sweat gland and Sebaceous gland?",
     "explanation": "Apocrine sweat gland is associated with follicle-associated secretion in selected regions; Sebaceous gland is associated with lipid-rich sebum secretion.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -11045,20 +10687,18 @@
     },
     "options": [
       "Apocrine sweat gland—follicle-associated secretion in selected regions",
-      "Sebaceous gland—lipid-rich sebum secretion",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0491",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Apocrine sweat gland and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Apocrine sweat gland and Meissner corpuscle?",
     "explanation": "Apocrine sweat gland is associated with follicle-associated secretion in selected regions; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -11070,21 +10710,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Apocrine sweat gland is associated with follicle-associated secretion in selected regions; Meissner corpuscle is associated with light-touch detection."
     },
     "options": [
-      "Apocrine sweat gland—follicle-associated secretion in selected regions",
       "Meissner corpuscle—light-touch detection",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0492",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Apocrine sweat gland and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Apocrine sweat gland and Lamellar corpuscle?",
     "explanation": "Apocrine sweat gland is associated with follicle-associated secretion in selected regions; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -11097,20 +10735,18 @@
     },
     "options": [
       "Apocrine sweat gland—follicle-associated secretion in selected regions",
-      "Lamellar corpuscle—pressure and vibration detection",
       "Apocrine sweat gland—the follicular oil gland’s sebum as an identical product",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0493",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Sebaceous gland and Meissner corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Sebaceous gland and Meissner corpuscle?",
     "explanation": "Sebaceous gland is associated with lipid-rich sebum secretion; Meissner corpuscle is associated with light-touch detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -11122,21 +10758,19 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Sebaceous gland is associated with lipid-rich sebum secretion; Meissner corpuscle is associated with light-touch detection."
     },
     "options": [
-      "Sebaceous gland—lipid-rich sebum secretion",
       "Meissner corpuscle—light-touch detection",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge",
       "Meissner corpuscle—production of keratinized hair"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0494",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Sebaceous gland and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Sebaceous gland and Lamellar corpuscle?",
     "explanation": "Sebaceous gland is associated with lipid-rich sebum secretion; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -11149,20 +10783,18 @@
     },
     "options": [
       "Sebaceous gland—lipid-rich sebum secretion",
-      "Lamellar corpuscle—pressure and vibration detection",
       "Sebaceous gland—an obligatory gland in every palmar friction ridge",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
     "id": "integumentary-0495",
-    "type": "select_all",
-    "difficulty": "hard",
-    "question": "Which integumentary structure–function pairings are correct for Meissner corpuscle and Lamellar corpuscle? Select all that apply.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question": "Which pairing is correct for Meissner corpuscle and Lamellar corpuscle?",
     "explanation": "Meissner corpuscle is associated with light-touch detection; Lamellar corpuscle is associated with pressure and vibration detection.",
     "source": {
       "file": "Integumentary System Chapter 5.pptx",
@@ -11174,14 +10806,12 @@
       "rationale": "Extends the cited mechanism or anatomical relationship: Meissner corpuscle is associated with light-touch detection; Lamellar corpuscle is associated with pressure and vibration detection."
     },
     "options": [
-      "Meissner corpuscle—light-touch detection",
       "Lamellar corpuscle—pressure and vibration detection",
       "Meissner corpuscle—production of keratinized hair",
       "Lamellar corpuscle—epidermal pigment synthesis"
     ],
     "correct": [
-      0,
-      1
+      0
     ]
   },
   {
