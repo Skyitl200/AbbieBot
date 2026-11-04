@@ -739,7 +739,7 @@ test('A&P Lecture selection opens the new banks, then count selection', async ()
     await handleStudyInteraction(interaction, {}, ['class', 'u']);
     const menu = interaction.calls.at(-1)[1].components[0].toJSON().components[0];
     assert.equal(menu.custom_id, 'study:topic:u');
-    assert.ok(menu.options.some(option => option.value === 'urinary' && /600/.test(option.description)));
+    assert.ok(menu.options.some(option => option.value === 'urinary' && option.description === STUDY_TOPICS.find(topic => topic.id === 'urinary').description));
     const length = fakeInteraction('', { values: ['urinary'] });
     await handleStudyInteraction(length, {}, ['topic', 'u']);
     assert.equal(length.calls.at(-1)[1].components[0].toJSON().components[0].options[0].value, '1');

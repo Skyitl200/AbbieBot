@@ -67,12 +67,11 @@ export function countMessage(ownerId, title, available, customId) {
 }
 
 export function topicMessage(ownerId, banks) {
-    const total = [...banks.values()].reduce((sum, questions) => sum + questions.length, 0);
     const menu = new StringSelectMenuBuilder().setCustomId(`study:topic:${ownerId}`)
         .setPlaceholder('Choose a study topic').addOptions(
-            { label: 'Random A&P', value: 'random', emoji: '🎲', description: `${total} questions available` },
+            { label: 'Random A&P', value: 'random', emoji: '🎲', description: 'Mix topics for a varied study session' },
             ...STUDY_TOPICS.map(topic => ({ label: topic.label, value: topic.id, emoji: topic.emoji,
-                description: banks.get(topic.id)?.length ? `${banks.get(topic.id).length} questions available` : 'Question bank being prepared' })),
+                description: banks.get(topic.id)?.length ? topic.description : 'Question bank being prepared' })),
         );
     return { content: '', embeds: [new EmbedBuilder().setTitle('🫀 Anatomy and Physiology Lecture')
         .setDescription('Choose a topic, then the number of questions. Practice includes multiple choice, fill in the blank, and ordering.')], components: [row(menu), row(button(`study:classes:${ownerId}`, '📚 Classes', ButtonStyle.Secondary))] };
