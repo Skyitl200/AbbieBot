@@ -36,6 +36,9 @@ for path in sorted((ROOT/'study-data').glob('*.json')):
         query=tokens(q['question']+' '+answer+' '+q['explanation']);focus=tokens(answer)
         candidates=[]
         allowed={q['source']['file']}
+        if q.get('figure_source'):
+            if q['figure_source'] not in registered: raise ValueError(f"Unknown lecture figure source: {q['id']}")
+            allowed.add(q['figure_source'])
         if 'Automatic Nervous' in q['source']['file']:
             terms=' '.join(query)
             if query & {'sweat','eccrine','sudomotor','pilomotor','piloerection'}: allowed={'Integumentary System Chapter 5.pptx'}
@@ -54,7 +57,7 @@ for path in sorted((ROOT/'study-data').glob('*.json')):
             if not same:score-=7
             candidates.append((score,asset,occ,cited,same))
         if q.get('figure_slide') is not None:
-            selected=[candidate for candidate in candidates if candidate[4] and candidate[2]['slide']==q['figure_slide']]
+            selected=[candidate for candidate in candidates if candidate[2]['source']==q.get('figure_source',q['source']['file']) and candidate[2]['slide']==q['figure_slide']]
             if not selected: raise ValueError(f"No figure on requested source slide: {q['id']}")
             _,asset,occ,cited,same=max(selected,key=lambda x:x[0])
         elif q['id'] in previous['questions']:

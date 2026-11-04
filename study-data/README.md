@@ -1,7 +1,7 @@
 # Anatomy study questions: work in progress
 
 The requested final bank is **23 topics × 600 questions = 13,800**. The current
-bank contains **12,600 questions**:
+bank contains **13,200 questions**:
 
 | Topic | Multiple choice | Fill in the blank | Ordering | Total |
 | --- | ---: | ---: | ---: | ---: |
@@ -26,11 +26,12 @@ bank contains **12,600 questions**:
 | Digestive System | 380 | 160 | 60 | 600 |
 | Immune System | 452 | 102 | 46 | 600 |
 | Urinary System | 453 | 92 | 55 | 600 |
+| Water & Fluid Balance | 380 | 160 | 60 | 600 |
 
-The other 2 new topic banks are not yet populated. **1,200 questions remain**
+The remaining new topic bank is not yet populated. **600 questions remain**
 to reach the requested total. Anatomical Directions, Basic Chemistry, Living Cells,
-Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Blood Vessels, Lymphatic System, Respiratory System, Digestive System, Autonomic Nervous System, Immune System, and Urinary
-System have reached their 600-question targets; the other 2 topics remain
+Tissues, Integumentary System, Skeletal System, Joints, Muscular System, Nervous System & Nervous Tissue, Central Nervous System, Special Senses, Endocrine System, Blood Cells, Circulatory System, Blood Vessels, Lymphatic System, Respiratory System, Digestive System, Water & Fluid Balance, Autonomic Nervous System, Immune System, and Urinary
+System have reached their 600-question targets; Reproductive System remains
 incomplete. These are authored
 study drafts, not a claim of independent medical review. The
 existing `quiz-data` files and database rows have been retained until replacements
@@ -748,7 +749,7 @@ Circulatory source qualifications applied during authoring:
 
 ## Lecture images
 
-All 12,600 currently authored A&P Lecture questions have a lecture figure
+All 13,200 currently authored A&P Lecture questions have a lecture figure
 reference. Shared figures appear with explanations; **Preview figure** opens a
 private optional hint that may contain answer labels. Source lecture and slide
 are displayed separately from the question's source. Matching is automatic, and
@@ -778,8 +779,7 @@ study draft, not independent medical review.
 
 Rebuild the new bank with `python scripts/study-authoring/blood_vessels.py`;
 run `python scripts/buildStudyImageIndex.py --extend` to add new figure references
-while preserving mappings for existing questions. Two topics remain empty:
-Water & Fluid Balance and Reproductive System.
+while preserving mappings for existing questions. One topic remains empty: Reproductive System.
 
 
 ### Lymphatic System
@@ -878,4 +878,45 @@ mappings are preserved.
 These are authored study drafts, not independent medical review.
 
 Validation: `npm run validate:study:complete -- --topics=digestive`,
+`npm run validate:study:images`, and `npm run test:study`.
+
+
+### Water & Fluid Balance
+
+The Water & Fluid Balance bank adds 600 introductory exercises: 380 multiple
+choice, 160 fill-in-the-blank, and 60 three-step ordering tasks. It covers body
+fluid spaces, osmosis and tonicity, intake and loss, ADH and RAAS, electrolyte
+concentrations, calcium regulation, buffering, renal bicarbonate handling, and
+primary acid-base disturbances with simple compensation examples. Normal pH
+references are included, without calculation sweeps, conversion exercises, or
+complex blood-gas/compensation formulas.
+
+Related exercises revisit concepts through identification, functional facts,
+missing details, and applications; they are not 600 distinct biological facts.
+Extensions and corrections beyond the lecture wording are identified in source
+metadata. Rebuild with `python scripts/study-authoring/fluid_balance.py`.
+
+Clarifications distinguish specialized transcellular fluids from ordinary tissue
+interstitial fluid; osmolality uses solvent mass, while osmolarity uses solution
+volume. ADH is synthesized in hypothalamic neurons and released from posterior
+pituitary terminals. Sodium concentration is not total sodium or volume status;
+edema can coexist with reduced effective circulation. Aldosterone ion transport
+is distinguished from ADH's aquaporin pathway. Calcitonin is not the dominant
+routine adult calcium regulator, and PTH-related bone resorption includes
+indirect signaling. The normal arterial pH range is not assigned to every body
+fluid. Weak acids can affect pH, buffers have finite capacity, and acidemia is
+a measured state rather than a primary-mechanism diagnosis. Bicarbonate
+reclamation is distinguished from new bicarbonate generation and net acid
+excretion. Compensation does not establish that the cause is cured.
+
+Each question has a lecture-image reference. Where the fluid slides have no
+appropriate embedded illustration, selected Living Cells tonicity/osmosis
+figures and the Respiratory CO2/bicarbonate figure are reused. Their actual
+lecture and slide citations are displayed separately from question provenance.
+Author-specified `figure_source` must name a registered uploaded lecture, and
+`figure_slide` must resolve to an actual extracted figure. All 12,600 previously
+published question-image mappings are preserved. These are authored study
+drafts, not independent medical review.
+
+Validation: `npm run validate:study:complete -- --topics=fluid_balance`,
 `npm run validate:study:images`, and `npm run test:study`.
