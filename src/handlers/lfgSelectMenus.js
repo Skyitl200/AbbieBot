@@ -548,14 +548,21 @@ const subject =
             );
 
             /*
-             * Remove the capacity selector
-             * from the user's ephemeral message.
+             * Acknowledge the selection, then dismiss the private setup message.
+             * Keep the public LFG card and its Join button.
              */
             await interaction.update({
                 content:
                     '✅ Your LFG has been created!',
+                embeds: [],
                 components: []
             });
+            try {
+                await interaction.deleteReply();
+            } catch (cleanupError) {
+                // The public post succeeded; a dismissed/expired prompt is harmless.
+                logger.warn('Could not dismiss completed LFG setup:', cleanupError);
+            }
 
         } catch (error) {
 

@@ -88,3 +88,41 @@ test('uploaded artwork is attached to the correct subject and program cards', as
     assert.equal(teas.files, undefined);
     assert.match(teas.embeds[0].toJSON().thumbnail.url, /1557576611115565076/);
 });
+
+test('description replaces the original private menu instead of adding a reply', async () => {
+    const { default: modal } = await import('../src/interactions/modals/lfg/lfgDescription.js');
+    const { pendingLfgDescriptions } = await import('../src/handlers/lfgSelectMenus.js');
+    let prompt;
+    await modal.execute({
+        user: { id: 'cleanup-student' },
+        fields: { getTextInputValue: () => 'Review anatomy' },
+        isFromMessage: () => true,
+        update: async payload => { prompt = payload; },
+        reply: async () => assert.fail('Should reuse the existing message')
+    }, null, ['cleanup-student', 'anatomy_1']);
+    assert.deepEqual(prompt.embeds, []);
+    assert.equal(prompt.components.length, 1);
+    pendingLfgDescriptions.delete('cleanup-student');
+});
+
+test('successful LFG removes private setup only after publishing the public card', async () => {
+    const { lfgCapacitySelectMenu, pendingLfgDescriptions } = await import('../src/handlers/lfgSelectMenus.js');
+    const { unregisterLfgChannel } = await import('../src/services/lfg/lfgService.js');
+    const calls = [];
+    const room = { id: 'cleanup-room', name: 'Study Room', guild: { id: 'guild' },
+        setUserLimit: async () => {}, permissionOverwrites: { edit: async () => {} },
+        createInvite: async () => ({ url: 'https://discord.gg/study' }) };
+    pendingLfgDescriptions.set('cleanup-student', { selectedSubject: 'anatomy_1', description: 'Review anatomy' });
+    await lfgCapacitySelectMenu.execute({
+        customId: 'lfg_capacity:cleanup-student', values: ['4'],
+        user: { id: 'cleanup-student', tag: 'Student', displayAvatarURL: () => 'https://cdn.discordapp.com/embed/avatars/0.png' },
+        member: { displayName: 'Student', voice: { channel: room } },
+        channel: { send: async payload => { assert.equal(payload.components.length, 1); calls.push('post'); } },
+        update: async payload => { assert.deepEqual(payload.components, []); calls.push('acknowledge'); },
+        deleteReply: async () => calls.push('dismiss'),
+        reply: async () => assert.fail('Success must not create another reply')
+    });
+    assert.deepEqual(calls, ['post', 'acknowledge', 'dismiss']);
+    assert.equal(pendingLfgDescriptions.has('cleanup-student'), false);
+    unregisterLfgChannel(room.id);
+});

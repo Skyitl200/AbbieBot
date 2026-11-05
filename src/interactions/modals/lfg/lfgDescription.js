@@ -166,14 +166,17 @@ const selectedProgram =
              * Show the capacity selector
              * privately to the creator.
              */
-            await interaction.reply({
-                content:
-                    '👥 **How many people should be allowed in your Study Room?**',
-                components: [
-                    row
-                ],
-                ephemeral: true
-            });
+            // Reuse the original private menu instead of leaving another setup message.
+            const capacityPrompt = {
+                content: '👥 **How many people should be allowed in your Study Room?**',
+                embeds: [],
+                components: [row]
+            };
+            if (interaction.isFromMessage()) {
+                await interaction.update(capacityPrompt);
+            } else {
+                await interaction.reply({ ...capacityPrompt, ephemeral: true });
+            }
 
         } catch (error) {
 
