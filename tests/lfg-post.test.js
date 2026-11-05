@@ -66,3 +66,25 @@ test('program selection is registered and supports the longest requested name', 
     assert.ok(modal.title.length <= 45);
     assert.equal(modal.custom_id, 'lfg_description:123456789012345678:program:radiologic_technologist');
 });
+
+test('uploaded artwork is attached to the correct subject and program cards', async () => {
+    const { SUBJECTS, PROGRAMS } = await import('../src/services/lfg/lfgCatalog.js');
+    const { readFileSync } = await import('node:fs');
+    const entries = [...Object.entries(SUBJECTS), ...Object.entries(PROGRAMS)]
+        .filter(([key]) => !['program', 'teas'].includes(key));
+    assert.equal(entries.length, 15);
+    for (const [key, subject] of entries) {
+        const post = buildLfgPost({ hostName: 'Student', subject, description: 'Study together',
+            capacity: 4, channel: { id: '123456789012345678' }, inviteUrl: 'https://discord.gg/study' });
+        assert.equal(post.files.length, 1, key);
+        assert.equal(post.files[0].name, subject.image);
+        assert.equal(post.embeds[0].toJSON().thumbnail.url, `attachment://${subject.image}`);
+        assert.deepEqual([...readFileSync(post.files[0].attachment).subarray(0, 8)],
+            [137, 80, 78, 71, 13, 10, 26, 10]);
+        assert.equal(post.components[0].toJSON().components[0].url, 'https://discord.gg/study');
+    }
+    const teas = buildLfgPost({ hostName: 'Student', subject: SUBJECTS.teas, description: 'Practice',
+        capacity: 2, channel: { id: '123456789012345678' }, inviteUrl: 'https://discord.gg/study' });
+    assert.equal(teas.files, undefined);
+    assert.match(teas.embeds[0].toJSON().thumbnail.url, /1557576611115565076/);
+});

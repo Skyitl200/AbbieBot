@@ -1,6 +1,7 @@
 # LFG artwork
 
-Place the supplied PNG artwork here using these filenames. Cards attach the
+The supplied ZIP artwork is installed for 15 choices using these filenames.
+TEAS was absent from the ZIP and currently uses its subject icon. Cards attach the
 matching image as a thumbnail beside the study-group details and Join button.
 If an image is unavailable, the card uses its matching subject emoji instead.
 
@@ -25,5 +26,5 @@ Programs:
 - medical_school.png
 
 Use the radiologic technology badge for radiologic_technologist; the respiratory
-therapy (RRT) badge is for respiratory_therapist. PTA needs its own artwork;
-do not substitute a PA or PT badge.
+therapy (RRT) badge is for respiratory_therapist. The supplied PT badge is used as physical therapy artwork for the PTA option.
+The extra radiation therapy badge is not used for radiologic technology.
