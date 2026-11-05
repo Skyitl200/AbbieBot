@@ -6,7 +6,7 @@ import {
     StringSelectMenuBuilder,
     EmbedBuilder
 } from 'discord.js';
-import path from 'node:path';
+import { buildLfgPost } from '../services/lfg/lfgPost.js';
 
 import { logger } from '../utils/logger.js';
 
@@ -31,25 +31,21 @@ const SUBJECTS = {
     anatomy_1: {
         label: 'Anatomy & Physiology I',
         emoji: '<:AP1:1557576078518648842>',
-        image: 'LFGAP1.png'
     },
 
     anatomy_2: {
         label: 'Anatomy & Physiology II',
         emoji: '<:AP2:1557576103256784896>',
-        image: 'LFGAP2.png'
     },
 
     microbiology: {
         label: 'Microbiology',
         emoji: '<:Microbiology:1557576299365671013>',
-        image: 'LFGMICROBIOLOGY.png'
     },
 
     teas: {
         label: 'TEAS',
         emoji: '<:TEAS:1557576611115565076>',
-        image: 'LFGTEAS.png'
     },
 
     program: {
@@ -60,19 +56,16 @@ const SUBJECTS = {
     chemistry: {
         label: 'Chemistry',
         emoji: '<:Chemistry:1557576122500120587>',
-        image: 'LFGCHEMISTRY.png'
     },
 
     physics: {
         label: 'Physics',
         emoji: '<:Physics:1557576410917507082>',
-        image: 'LFGPHYSICS.png'
     },
 
     math: {
         label: 'Math',
         emoji: '<:Math:1558128316253470861>',
-        image: 'LFGMATH.png'
     }
 
 };
@@ -83,55 +76,46 @@ const PROGRAMS = {
     nursing: {
         label: 'Nursing School',
         emoji: '🩺',
-        image: 'LFGRNPROGRAM.png'
     },
 
     dental_hygienist: {
         label: 'Dental Hygienist School',
         emoji: '🦷',
-        image: 'LFGDENTALHYGIENISTPROGRAM.png'
     },
 
     dental_assistant: {
         label: 'Dental Assistant School',
         emoji: '🦷',
-        image: 'LFGDENTALASSISTANTPROGRAM.png'
     },
 
     radiologic_technologist: {
         label: 'Radiologic Technologist School',
         emoji: '🩻',
-        image: 'LFGRADIOLOGICTECHNOLOGISTPROGRAM.png'
     },
 
     diagnostic_medical_sonography: {
         label: 'Diagnostic Medical Sonography',
         emoji: '🔊',
-        image: 'LFGDIAGNOSTICMEDICALSONOGRAPHYPROGRAM.png'
     },
 
     respiratory_therapist: {
         label: 'Respiratory Therapist School',
         emoji: '🫁',
-        image: 'LFGRESPIRATORYTHERAPISTPROGRAM.png'
     },
 
     physical_therapy_assistant: {
         label: 'Physical Therapy Assistant School',
         emoji: '🏃',
-        image: 'LFGPHYSICALTHERAPYASSISTANTPROGRAM.png'
     },
 
     physician_assistant: {
         label: 'Physician Assistant School',
         emoji: '🩺',
-        image: 'LFGPHYSICIANASSISTANTPROGRAM.png'
     },
 
     medical_school: {
         label: 'Medical School',
         emoji: '🧑‍⚕️',
-        image: 'LFGMEDICALSCHOOL.png'
     }
 };
 /*
@@ -607,8 +591,8 @@ const subject =
             /*
              * Create a REAL Discord voice invite.
              *
-             * Discord handles the native
-             * voice invite card and join UI.
+             * The invite is placed in the card
+             * link button without an extra preview.
              */
             let voiceInvite;
 
@@ -638,89 +622,16 @@ const subject =
 
             }
 
-            /*
-             * Create the public LFG post.
-             *
-             * Example:
-             *
-             * 👥 Woods is looking for a study group!
-             *
-             * 🫀 Subject: Anatomy & Physiology II
-             *
-             * 📝 Description: Studying cardiovascular...
-             *
-             * 👥 Maximum: 3 people
-             *
-             * 🔊 Woods's Study Room
-             */
-            const program =
-    selectedProgram
-        ? PROGRAMS[selectedProgram]
-        : null;
-        const lfgImage =
-    program?.image || subject.image;
-            const lfgEmbed =
-    new EmbedBuilder()
-        .setDescription(
-            `👥 **${interaction.member.displayName} is looking for a study group!**\n\n` +
-
-            (
-                subject.label === 'Program' && program
-                    ? `${program.emoji} **Program:** ${program.label}\n\n`
-                    : `${subject.emoji} **Subject:** ${subject.label}\n\n`
-            ) +
-
-            `📝 **Description:** ${description}\n\n` +
-
-            `👥 **Maximum:** ${selectedCapacity} people\n\n` +
-
-            `🔊 **${channel.name}**`
-        );
-if (lfgImage) {
-    lfgEmbed.setThumbnail(
-        `attachment://${lfgImage}`
-    );
-}
-            /*
-             * Send the LFG information first.
-             */
-            const lfgImagePath = lfgImage
-    ? path.join(
-        process.cwd(),
-        'src',
-        'assets',
-        'lfg',
-        lfgImage
-    )
-    : null;
-
-await interaction.channel.send({
-    embeds: [
-        lfgEmbed
-    ],
-    ...(lfgImagePath
-        ? {
-            files: [
-                {
-                    attachment: lfgImagePath,
-                    name: lfgImage
-                }
-            ]
-        }
-        : {})
-});
-
-            /*
-             * Send the REAL Discord voice invite.
-             *
-             * Discord should render its native
-             * voice-channel invite UI underneath
-             * the LFG information.
-             */
-            await interaction.channel.send({
-                content:
-                    voiceInvite.url
-            });
+            const program = selectedProgram ? PROGRAMS[selectedProgram] : null;
+            await interaction.channel.send(buildLfgPost({
+                hostName: interaction.member.displayName,
+                hostAvatar: interaction.user.displayAvatarURL(),
+                subject: program || subject,
+                description,
+                capacity: selectedCapacity,
+                channel,
+                inviteUrl: voiceInvite.url
+            }));
 
             /*
              * Remove temporary LFG data.
