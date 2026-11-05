@@ -29,3 +29,40 @@ test('subjects and programs get distinct thumbnails without missing local files'
     assert.notEqual(subjectThumbnail('🦷'), subjectThumbnail('🩺'));
     assert.match(subjectThumbnail('<a:Study:123456789012345678>'), /\.gif\?size=256$/);
 });
+
+test('LFG offers seven subjects and all nine programs in separate valid dropdowns', async () => {
+    const { buildLfgMenus, SUBJECTS, PROGRAMS } = await import('../src/services/lfg/lfgCatalog.js');
+    const rows = buildLfgMenus('123456789012345678').map(row => row.toJSON());
+    assert.equal(rows.length, 2);
+    const subjects = rows[0].components[0];
+    const programs = rows[1].components[0];
+    assert.equal(subjects.custom_id, 'lfg_subject');
+    assert.equal(programs.custom_id, 'lfg_program:123456789012345678');
+    assert.equal(subjects.options.length, 7);
+    assert.equal(programs.options.length, 9);
+    assert.deepEqual(subjects.options.map(option => option.value).sort(),
+        ['anatomy_1', 'anatomy_2', 'microbiology', 'chemistry', 'physics', 'math', 'teas'].sort());
+    assert.equal(PROGRAMS.nursing.label, 'Nursing School (RN)');
+    assert.equal(PROGRAMS.radiologic_technologist.label, 'X-Ray Technician School (Radiologic Technology)');
+    assert.equal(PROGRAMS.physical_therapy_assistant.label, 'Physical Therapy Assistant School (PTA)');
+    for (const choice of [...subjects.options, ...programs.options]) {
+        const entry = SUBJECTS[choice.value] || PROGRAMS[choice.value];
+        assert.equal(entry.image, `${choice.value}.png`);
+        assert.ok(choice.label.length <= 100);
+    }
+});
+
+test('program selection is registered and supports the longest requested name', async () => {
+    const { default: handler } = await import('../src/interactions/selectMenus/lfg/lfgProgram.js');
+    assert.equal(handler.name, 'lfg_program');
+    let modal;
+    await handler.execute({
+        customId: 'lfg_program:123456789012345678',
+        user: { id: '123456789012345678' },
+        values: ['radiologic_technologist'],
+        showModal: async value => { modal = value.toJSON(); },
+        reply: async () => { assert.fail('Valid program must open its form'); }
+    });
+    assert.ok(modal.title.length <= 45);
+    assert.equal(modal.custom_id, 'lfg_description:123456789012345678:program:radiologic_technologist');
+});

@@ -23,101 +23,8 @@ const LFG_DESCRIPTION_MODAL_PREFIX =
 const LFG_CAPACITY_SELECT_PREFIX =
     'lfg_capacity:';
 
-/*
- * LFG subjects.
- */
-const SUBJECTS = {
+import { SUBJECTS, PROGRAMS } from '../services/lfg/lfgCatalog.js';
 
-    anatomy_1: {
-        label: 'Anatomy & Physiology I',
-        emoji: '<:AP1:1557576078518648842>',
-    },
-
-    anatomy_2: {
-        label: 'Anatomy & Physiology II',
-        emoji: '<:AP2:1557576103256784896>',
-    },
-
-    microbiology: {
-        label: 'Microbiology',
-        emoji: '<:Microbiology:1557576299365671013>',
-    },
-
-    teas: {
-        label: 'TEAS',
-        emoji: '<:TEAS:1557576611115565076>',
-    },
-
-    program: {
-        label: 'Program',
-        emoji: '🎓'
-    },
-
-    chemistry: {
-        label: 'Chemistry',
-        emoji: '<:Chemistry:1557576122500120587>',
-    },
-
-    physics: {
-        label: 'Physics',
-        emoji: '<:Physics:1557576410917507082>',
-    },
-
-    math: {
-        label: 'Math',
-        emoji: '<:Math:1558128316253470861>',
-    }
-
-};
-/*
- * Healthcare programs.
- */
-const PROGRAMS = {
-    nursing: {
-        label: 'Nursing School',
-        emoji: '🩺',
-    },
-
-    dental_hygienist: {
-        label: 'Dental Hygienist School',
-        emoji: '🦷',
-    },
-
-    dental_assistant: {
-        label: 'Dental Assistant School',
-        emoji: '🦷',
-    },
-
-    radiologic_technologist: {
-        label: 'Radiologic Technologist School',
-        emoji: '🩻',
-    },
-
-    diagnostic_medical_sonography: {
-        label: 'Diagnostic Medical Sonography',
-        emoji: '🔊',
-    },
-
-    respiratory_therapist: {
-        label: 'Respiratory Therapist School',
-        emoji: '🫁',
-    },
-
-    physical_therapy_assistant: {
-        label: 'Physical Therapy Assistant School',
-        emoji: '🏃',
-    },
-
-    physician_assistant: {
-        label: 'Physician Assistant School',
-        emoji: '🩺',
-    },
-
-    medical_school: {
-        label: 'Medical School',
-        emoji: '🧑‍⚕️',
-    }
-};
 /*
  * Temporarily stores LFG information
  * between the description modal and
@@ -362,7 +269,7 @@ export const lfgProgramSelectMenu = {
                         `${LFG_DESCRIPTION_MODAL_PREFIX}${interaction.user.id}:program:${selectedProgram}`
                     )
                     .setTitle(
-                        `${program.label} — LFG`
+                        `${program.label} — LFG`.slice(0, 45)
                     );
 
             const descriptionInput =

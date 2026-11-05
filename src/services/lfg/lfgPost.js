@@ -1,3 +1,5 @@
+import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, escapeMarkdown } from 'discord.js';
 
 // Reuse the server's subject artwork; healthcare programs use matching emoji art.
@@ -12,6 +14,10 @@ export function subjectThumbnail(emoji) {
 }
 
 export function buildLfgPost({ hostName, hostAvatar, subject, description, capacity, channel, inviteUrl }) {
+    const imagePath = subject.image
+        ? fileURLToPath(new URL(`../../assets/lfg/${subject.image}`, import.meta.url))
+        : null;
+    const hasArtwork = imagePath && existsSync(imagePath);
     // Construct the payload directly to preserve this card's emojis and footer.
     const embed = new EmbedBuilder({
         color: 0x2dd4bf,
@@ -24,7 +30,7 @@ export function buildLfgPost({ hostName, hostAvatar, subject, description, capac
             { name: '🔊 Study Room', value: `<#${channel.id}>`, inline: true },
             { name: '👥 Group Size', value: `Up to ${capacity} people`, inline: true }
         ],
-        thumbnail: { url: subjectThumbnail(subject.emoji) },
+        thumbnail: { url: hasArtwork ? `attachment://${subject.image}` : subjectThumbnail(subject.emoji) },
         footer: { text: 'Join the voice room to study together.' },
         timestamp: new Date().toISOString()
     });
@@ -34,6 +40,7 @@ export function buildLfgPost({ hostName, hostAvatar, subject, description, capac
         .setStyle(ButtonStyle.Link)
         .setURL(inviteUrl);
     return {
+        ...(hasArtwork ? { files: [{ attachment: imagePath, name: subject.image }] } : {}),
         embeds: [embed],
         components: [new ActionRowBuilder().addComponents(join)],
         allowedMentions: { parse: [] }

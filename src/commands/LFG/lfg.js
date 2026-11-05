@@ -1,8 +1,7 @@
+import { buildLfgMenus } from '../../services/lfg/lfgCatalog.js';
 import {
     SlashCommandBuilder,
-    EmbedBuilder,
-    StringSelectMenuBuilder,
-    ActionRowBuilder
+    EmbedBuilder
 } from 'discord.js';
 
 import {
@@ -121,60 +120,6 @@ export default {
             isSubscriber
                 ? '⭐ Subscriber — Unlimited'
                 : 'LFG post started.';
-        const subjectMenu =
-    new StringSelectMenuBuilder()
-        .setCustomId('lfg_subject')
-        .setPlaceholder(
-            'Select a subject or course'
-        )
-        .addOptions(
-    {
-        label: 'Anatomy & Physiology I',
-        value: 'anatomy_1',
-        emoji: '🦴'
-    },
-    {
-        label: 'Anatomy & Physiology II',
-        value: 'anatomy_2',
-        emoji: '🫀'
-    },
-    {
-        label: 'Microbiology',
-        value: 'microbiology',
-        emoji: '🦠'
-    },
-    {
-        label: 'TEAS',
-        value: 'teas',
-        emoji: '📚'
-    },
-    {
-        label: 'Program',
-        value: 'program',
-        emoji: '🎓'
-    },
-    {
-        label: 'Chemistry',
-        value: 'chemistry',
-        emoji: '🧪'
-    },
-    {
-        label: 'Physics',
-        value: 'physics',
-        emoji: '⚛️'
-    },
-    {
-        label: 'Math',
-        value: 'math',
-        emoji: '📐'
-    }
-);
-           
-
-const subjectRow =
-    new ActionRowBuilder()
-        .addComponents(subjectMenu);
-
         return interaction.reply({
     embeds: [
         new EmbedBuilder()
@@ -183,12 +128,10 @@ const subjectRow =
             )
             .setDescription(
                 `${remainingText}\n\n` +
-                `**Step 1:** Select the subject or course you want to study.`
+                `**Step 1:** Choose a subject OR a healthcare program below.`
             )
     ],
-    components: [
-        subjectRow
-    ],
+    components: buildLfgMenus(interaction.user.id),
     ephemeral: true
 });
     }
