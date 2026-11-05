@@ -176,3 +176,52 @@ test('Microbemon routes load without exceeding Discord command limit', async () 
     assert.equal(client.modals.get('microbemon').execute, handleMicrobemon);
     assert.ok(client.commands.get('test').data.toJSON().options.some(option => option.name === 'microbemon'));
 });
+
+test('new Microbemon sessions are public and identify their owner', async () => {
+    const { openMicrobemon } = await import('../src/services/microbemon/controller.js');
+    const s = storage(); let deferred; let message;
+    await openMicrobemon({ client: s.client, guildId: 'guild', user: { id: 'owner', username: 'Student' },
+        member: { displayName: 'Student' }, deferReply: async options => { deferred = options; },
+        editReply: async value => { message = value; } });
+    assert.equal(deferred, undefined, 'Public game must not request ephemeral flags');
+    assert.equal(message.embeds[0].toJSON().author.name, "Student's Microbemon");
+    assert.deepEqual(message.allowedMentions, { parse: [] });
+});
+
+test('each organism and shiny variant has its own file and habitat context', async () => {
+    const { ARTWORK, speciesArtwork } = await import('../src/services/microbemon/artwork.js');
+    const { readFileSync } = await import('node:fs');
+    const { createHash } = await import('node:crypto');
+    assert.deepEqual(Object.keys(ARTWORK).sort(), SPECIES.map(s => s.id).sort());
+    const hashes = new Set(); const paths = new Set();
+    for (const species of SPECIES) for (const shiny of [false, true]) {
+        const asset = speciesArtwork(species.id, shiny);
+        const bytes = readFileSync(asset.path);
+        assert.deepEqual([...bytes.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10]);
+        hashes.add(createHash('sha256').update(bytes).digest('hex')); paths.add(asset.path);
+        const p = newProfile();
+        p.encounter = { id: 'portrait-check', speciesId: species.id, shiny, level: 7, hp: 40,
+            playerHp: 60, attempts: 3, revision: 0, expiresAt: Date.now() + ENCOUNTER_MS };
+        const encounter = renderGame(p, 'owner');
+        assert.equal(encounter.files.length, 1);
+        assert.equal(encounter.files[0].attachment, asset.path);
+        assert.equal(encounter.embeds[0].toJSON().image.url, `attachment://${asset.name}`);
+        assert.match(encounter.embeds[0].toJSON().fields[0].value, new RegExp(ARTWORK[species.id].habitat.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+        p.pets.push({ id: 'pet', speciesId: species.id, shiny, level: 7, caughtAt: now });
+        p.encounter.speciesId = SPECIES.find(other => other.id !== species.id).id;
+        const collection = renderGame(p, 'owner', { view: 'collection' });
+        assert.equal(collection.files[0].attachment, asset.path, 'Collection must show its pet, not the active encounter');
+    }
+    assert.equal(paths.size, 38); assert.equal(hashes.size, 38, 'Shared image copies cannot substitute for unique portraits');
+    assert.equal(speciesArtwork('unknown'), null);
+});
+
+test('guide and empty lobby do not show the old three-creature scene', () => {
+    const p = newProfile();
+    for (const view of ['home', 'guide', 'collection']) {
+        const message = renderGame(p, 'owner', { view });
+        assert.equal(message.embeds[0].toJSON().image, undefined);
+        assert.equal(message.files.length, 0);
+        assert.deepEqual(message.attachments, []);
+    }
+});

@@ -305,8 +305,12 @@ AbbieBot's existing command entry to stay within Discord's 100-command limit.
 Normal `/test` study sessions are unchanged. The first version has 19 organisms
 from the lab notes, easy study battles, three free capture attempts per encounter,
 collection browsing, nicknames, and a favorite companion. It does not spend or
-award Merit Coins. Artwork shows a shared illustrated habitat, with a separate
-shiny colorway; it is not an identification image for each species.
+award Merit Coins. Every organism has a standalone portrait in its own habitat or life-cycle
+setting, plus a separate shiny portrait. The same species/variant appears in
+encounters and collections. Parasite environment labels distinguish outdoor
+transmission scenes from the adult host habitat. These are original stylized
+characters, not diagnostic microscopy images. Sessions are public in the channel;
+only the player who started the session controls battles, catches, and pet names.
 
 Rarity tiers share total encounter weights of 55% common, 30% uncommon, 12% rare,
 and 3% epic, divided uniformly among each tier's organisms. Every encounter has

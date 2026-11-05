@@ -6,10 +6,10 @@ import { renderGame } from './interface.js';
 import { logger } from '../../utils/logger.js';
 
 export async function openMicrobemon(interaction) {
-    await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+    await interaction.deferReply();
     try {
         const { profile } = await withProfile(interaction.client, interaction.guildId, interaction.user.id, () => {});
-        await interaction.editReply(renderGame(profile, interaction.user.id));
+        await interaction.editReply(renderGame(profile, interaction.user.id, { ownerName: interaction.member?.displayName || interaction.user.username }));
     } catch (error) {
         logger.warn('Microbemon could not open:', error.message);
         await interaction.editReply({ content: 'Microbemon could not open its saved collection. Make sure the persistent database is available and play inside a server.', components: [] });
@@ -32,7 +32,7 @@ export async function handleMicrobemon(interaction, client, args) {
         });
         const view = ['collection', 'companion', 'nickname'].includes(action) ? 'collection' : action === 'guide' ? 'guide' : 'home';
         const page = ['companion', 'nickname'].includes(action) ? profile.pets.findIndex(p => p.id === token) : Number(token) || 0;
-        await interaction.editReply(renderGame(profile, owner, { view, page, notice: value }));
+        await interaction.editReply(renderGame(profile, owner, { view, page, notice: value, ownerName: interaction.member?.displayName || interaction.user.username }));
     } catch (error) {
         // Errors do not consume a capsule or lose a pet: the transaction rolls back.
         logger.warn('Microbemon interaction failed:', error.message);
