@@ -297,3 +297,33 @@ as appropriate. Discord controls the embed background; the template customizes
 the accent color, headings, spacing, and emojis. Custom embed previews preserve
 moderator-entered emojis, footers, and optional timestamps. Run `npm run test:rules` to verify
 the preview and posting flow.
+
+### Microbemon
+
+Run `/test microbemon:true` inside a server, then choose **Explore**. This shares
+AbbieBot's existing command entry to stay within Discord's 100-command limit.
+Normal `/test` study sessions are unchanged. The first version has 19 organisms
+from the lab notes, easy study battles, three free capture attempts per encounter,
+collection browsing, nicknames, and a favorite companion. It does not spend or
+award Merit Coins. Artwork shows a shared illustrated habitat, with a separate
+shiny colorway; it is not an identification image for each species.
+
+Rarity tiers share total encounter weights of 55% common, 30% uncommon, 12% rare,
+and 3% epic, divided uniformly among each tier's organisms. Every encounter has
+an independent 1/1,000 shiny roll. Shiny status is cosmetic and has the same
+capture rules. Explore has a 30-second cooldown; encounters expire after 15
+minutes. Collections hold up to 1,000 captured pets, including duplicates.
+
+The existing PostgreSQL `temp_data` table stores one namespaced, non-expiring
+profile per server/member. A database transaction with a per-profile advisory
+lock commits the encounter and collection together. Stale buttons and repeated
+catch requests cannot award a second pet. Persistent PostgreSQL is required;
+the game refuses volatile in-memory fallback. No migration or Discord token is
+needed for `npm run test:microbemon`; the persistence tests use a transaction
+adapter, not a live database. Production connection and Discord behavior still
+need live verification after deployment. The bot needs Embed Links and Attach
+Files to show the artwork.
+
+Scientific corrections include Ascaris versus pinworm life cycles, Giardia as a
+flagellated protist, Toxoplasma tissue cysts, and the intestinal fluke name
+Fasciolopsis buski. Game rarity is not real-world prevalence or medical severity.
