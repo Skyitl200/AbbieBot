@@ -998,3 +998,16 @@ test('multiple choice letters match shuffled answer buttons and preserve grading
         assert.equal(buttons[index].custom_id.split(':').at(-1), String(value));
     });
 });
+
+test('ordering questions also use letters in options, selection menus, and chosen order', () => {
+    const session = createStudySession('order-letters', 'u', [order], topic.id);
+    const first = session.displayOrder[0];
+    let message = questionMessage(session);
+    assert.ok(message.embeds[0].toJSON().description.includes(`**A.** ${order.options[first]}`));
+    const menu = message.components[0].toJSON().components[0];
+    assert.equal(menu.options[0].label, `A. ${order.options[first]}`);
+    assert.equal(menu.options[0].value, String(first));
+    chooseOrderItem(session, first);
+    message = questionMessage(session);
+    assert.match(message.embeds[0].toJSON().description, /\*\*Your order:\*\* A/);
+});

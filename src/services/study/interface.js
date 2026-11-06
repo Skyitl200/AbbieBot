@@ -85,17 +85,17 @@ export function questionMessage(session) {
         description += '\n\nSelect **Enter answer** to type the missing term.';
         components.push(row(button(actionId(session, 'blank'), 'Enter answer')));
     } else {
-        description += '\n\n' + session.displayOrder.map((value, i) => `**${q.type === 'multiple_choice' ? String.fromCharCode(65 + i) : i + 1}.** ${q.options[value]}`).join('\n');
+        description += '\n\n' + session.displayOrder.map((value, i) => `**${String.fromCharCode(65 + i)}.** ${q.options[value]}`).join('\n');
         if (q.type === 'multiple_choice') {
             const buttons = session.displayOrder.map((value, i) => button(`${actionId(session, 'choice')}:${value}`, String.fromCharCode(65 + i)));
             for (let i = 0; i < buttons.length; i += 5) components.push(row(...buttons.slice(i, i + 5)));
         } else {
             description += '\n\nChoose items **one at a time** in the requested order. You can undo a choice before submitting.';
-            if (session.order.length) description += '\n\n**Your order:** ' + session.order.map(value => String(session.displayOrder.indexOf(value) + 1)).join(' → ');
+            if (session.order.length) description += '\n\n**Your order:** ' + session.order.map(value => String.fromCharCode(65 + session.displayOrder.indexOf(value))).join(' → ');
             const remaining = session.displayOrder.filter(value => !session.order.includes(value));
             if (remaining.length) components.push(row(new StringSelectMenuBuilder().setCustomId(actionId(session, 'order'))
                 .setPlaceholder(`Choose item ${session.order.length + 1}`).addOptions(remaining.map(value => ({
-                    label: `${session.displayOrder.indexOf(value) + 1}. ${q.options[value]}`.slice(0, 100), value: String(value),
+                    label: `${String.fromCharCode(65 + session.displayOrder.indexOf(value))}. ${q.options[value]}`.slice(0, 100), value: String(value),
                 })))));
             if (session.order.length) components.push(row(
                 button(actionId(session, 'undo'), 'Undo last choice', ButtonStyle.Secondary),
