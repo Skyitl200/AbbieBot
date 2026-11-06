@@ -13,17 +13,17 @@
           "id": "lab-early-oocyte-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What is this, and what is happening here?",
+          "question": "What is this? And what is happening here?",
           "options": [
-            "Secondary oocyte - sperm passing through its surrounding layers",
-            "Fertilization - sperm entering the oocyte",
-            "Pronuclear stage - maternal and paternal pronuclei approach each other",
-            "Zygote created - begins cleavage"
+            "Secondary oocyte - sperm breaking through",
+            "Fertilization occurring - sperm entering oocyte",
+            "Pronuclei - moving together",
+            "Zygote created - divides"
           ],
           "correct": [
             0
           ],
-          "explanation": "The ovulated human cell is a secondary oocyte. Fertilization involves sperm passing through its surrounding layers.",
+          "explanation": "Sperm pass through the layers around the secondary oocyte.",
           "requiresModelImage": true,
           "typedAnswers": [
             "secondary oocyte",
@@ -32,7 +32,8 @@
             "ovum",
             "Secondary oocyte - sperm passing through its surrounding layers",
             "secondary oocyte - sperm breaking through",
-            "secondary oocyte - sperm passing through corona radiata"
+            "secondary oocyte - sperm passing through corona radiata",
+            "Secondary oocyte - sperm breaking through"
           ]
         }
       ],
@@ -49,17 +50,17 @@
           "id": "lab-early-sperm-entry-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What is happening here, and how?",
+          "question": "What is happening here? And how?",
           "options": [
-            "Fertilization - sperm entering the oocyte",
-            "Secondary oocyte - sperm passing through its surrounding layers",
-            "Pronuclear stage - maternal and paternal pronuclei approach each other",
-            "Zygote created - begins cleavage"
+            "Fertilization occurring - sperm entering oocyte",
+            "Secondary oocyte - sperm breaking through",
+            "Pronuclei - moving together",
+            "Zygote created - divides"
           ],
           "correct": [
             0
           ],
-          "explanation": "Sperm entry is part of fertilization and triggers events including completion of the secondary oocyte’s second meiotic division.",
+          "explanation": "Sperm entering the oocyte is part of fertilization.",
           "requiresModelImage": true,
           "typedAnswers": [
             "sperm entry",
@@ -69,7 +70,8 @@
             "Fertilization - sperm entering the oocyte",
             "sperm entering oocyte",
             "sperm entering the egg",
-            "fertilization occurring - sperm entering oocyte"
+            "fertilization occurring - sperm entering oocyte",
+            "Fertilization occurring - sperm entering oocyte"
           ]
         }
       ],
@@ -86,17 +88,17 @@
           "id": "lab-early-pronuclei-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What is happening here, and how?",
+          "question": "What's happening here? And how?",
           "options": [
-            "Pronuclear stage - maternal and paternal pronuclei approach each other",
-            "Secondary oocyte - sperm passing through its surrounding layers",
-            "Fertilization - sperm entering the oocyte",
-            "Zygote created - begins cleavage"
+            "Pronuclei - moving together",
+            "Secondary oocyte - sperm breaking through",
+            "Fertilization occurring - sperm entering oocyte",
+            "Zygote created - divides"
           ],
           "correct": [
             0
           ],
-          "explanation": "After sperm entry, the maternal and paternal pronuclei approach each other. Their chromosomes come together for the first mitotic division; this is distinct from the completed two-cell stage.",
+          "explanation": "The maternal and paternal pronuclei move toward each other before cleavage.",
           "requiresModelImage": true,
           "typedAnswers": [
             "pronuclear stage",
@@ -106,7 +108,8 @@
             "Pronuclear stage - maternal and paternal pronuclei approach each other",
             "pronuclei approaching each other",
             "male and female pronuclei approaching",
-            "maternal and paternal pronuclei approach each other"
+            "maternal and paternal pronuclei approach each other",
+            "Pronuclei - moving together"
           ]
         }
       ],
@@ -123,17 +126,17 @@
           "id": "lab-early-zygote-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What has happened here, and what does it do?",
+          "question": "What has happened here? And what does it do?",
           "options": [
-            "Zygote created - begins cleavage",
-            "Secondary oocyte - sperm passing through its surrounding layers",
-            "Fertilization - sperm entering the oocyte",
-            "Pronuclear stage - maternal and paternal pronuclei approach each other"
+            "Zygote created - divides",
+            "Secondary oocyte - sperm breaking through",
+            "Fertilization occurring - sperm entering oocyte",
+            "Pronuclei - moving together"
           ],
           "correct": [
             0
           ],
-          "explanation": "Fertilization produces a zygote. Its first cleavage produces the two-cell stage.",
+          "explanation": "The zygote divides by cleavage.",
           "requiresModelImage": true,
           "typedAnswers": [
             "zygote",
@@ -144,7 +147,8 @@
             "Zygote created - begins cleavage",
             "zygote created - divides",
             "zygote - cleavage",
-            "zygote begins cleavage"
+            "zygote begins cleavage",
+            "Zygote created - divides"
           ]
         }
       ],
@@ -164,14 +168,14 @@
           "question": "What is this?",
           "options": [
             "2 cell stage",
-            "Secondary oocyte - sperm passing through its surrounding layers",
-            "Fertilization - sperm entering the oocyte",
-            "Pronuclear stage - maternal and paternal pronuclei approach each other"
+            "Secondary oocyte - sperm breaking through",
+            "Fertilization occurring - sperm entering oocyte",
+            "Pronuclei - moving together"
           ],
           "correct": [
             0
           ],
-          "explanation": "The first cleavage divides the zygote into two blastomeres without substantially increasing its overall size.",
+          "explanation": "The first cleavage produces two cells.",
           "requiresModelImage": true,
           "typedAnswers": [
             "two-cell stage",
@@ -199,14 +203,14 @@
           "question": "What is this?",
           "options": [
             "4 cell stage",
-            "Secondary oocyte - sperm passing through its surrounding layers",
-            "Fertilization - sperm entering the oocyte",
-            "Pronuclear stage - maternal and paternal pronuclei approach each other"
+            "Secondary oocyte - sperm breaking through",
+            "Fertilization occurring - sperm entering oocyte",
+            "Pronuclei - moving together"
           ],
           "correct": [
             0
           ],
-          "explanation": "A further round of cleavage after the two-cell stage produces four blastomeres.",
+          "explanation": "Further cleavage produces four cells.",
           "requiresModelImage": true,
           "typedAnswers": [
             "four-cell stage",
@@ -234,14 +238,14 @@
           "question": "What is this?",
           "options": [
             "16 cell stage",
-            "Secondary oocyte - sperm passing through its surrounding layers",
-            "Fertilization - sperm entering the oocyte",
-            "Pronuclear stage - maternal and paternal pronuclei approach each other"
+            "Secondary oocyte - sperm breaking through",
+            "Fertilization occurring - sperm entering oocyte",
+            "Pronuclei - moving together"
           ],
           "correct": [
             0
           ],
-          "explanation": "The base identifies this as the sixteen-cell stage. The cutaway exposes only some blastomeres, so counting the visible sections alone would be misleading.",
+          "explanation": "This cutaway model represents sixteen cells.",
           "requiresModelImage": true,
           "typedAnswers": [
             "sixteen-cell stage",
@@ -266,17 +270,17 @@
           "id": "lab-early-implantation-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What is this, and what is happening?",
+          "question": "What is this? And what is happening?",
           "options": [
-            "Blastocyst - burrowing into the endometrium",
-            "Secondary oocyte - sperm passing through its surrounding layers",
-            "Fertilization - sperm entering the oocyte",
-            "Pronuclear stage - maternal and paternal pronuclei approach each other"
+            "Blastocyst - burrowing into endometrium",
+            "Secondary oocyte - sperm breaking through",
+            "Fertilization occurring - sperm entering oocyte",
+            "Pronuclei - moving together"
           ],
           "correct": [
             0
           ],
-          "explanation": "During implantation, the blastocyst attaches to and begins embedding within the endometrium.",
+          "explanation": "The blastocyst embeds in the endometrium.",
           "requiresModelImage": true,
           "typedAnswers": [
             "blastocyst implantation",
@@ -285,7 +289,8 @@
             "blastocyst",
             "Blastocyst - burrowing into the endometrium",
             "blastocyst - burrowing into endometrium",
-            "implantation - blastocyst burrowing into endometrium"
+            "implantation - blastocyst burrowing into endometrium",
+            "Blastocyst - burrowing into endometrium"
           ]
         }
       ],

@@ -1139,7 +1139,7 @@ test('grouped set contains exactly eight stage-only questions in both modes', as
         const questions = labQuestions('early-development', mode);
         assert.equal(questions.length, 8);
         assert.equal(new Set(questions.map(q => q.labModelId)).size, 8);
-        assert.ok(questions.every(q => q.requiresModelImage && /^What (?:is|has)/.test(q.question)));
+        assert.ok(questions.every(q => q.requiresModelImage && /^What(?: (?:is|has)|'s)/.test(q.question)));
         for (const q of questions) {
             const display = questionMessage(createStudySession('stages', 'u', [q], 'lab_reproductive'));
             assert.ok(!display.embeds[0].toJSON().description.includes(`Model: ${q.modelName}`), 'Do not reveal the stage name before answering');
@@ -1205,7 +1205,25 @@ test('Quizlet-style lab prompts use dashes and accept spelling slips without con
     ]) assert.equal(gradeQuestion(by(id), answer), false, `${id}: ${answer}`);
     for (const q of labQuestions('early-development', 'multiple_choice')) {
         assert.ok(!q.options.some(option => /→|->/.test(option)));
-        assert.match(q.question, /^What (?:is|has)/);
+        assert.match(q.question, /^What(?: (?:is|has)|'s)/);
     }
     assert.equal(gradeQuestion(blank, 'parasympathetci'), false, 'Unrelated lecture grading remains unchanged');
+});
+
+test('model answers stay as short as the supplied Quizlet labels', async () => {
+    const { LAB_MODELS } = await import('../src/services/study/labModels.js');
+    const expected = [
+        'Secondary oocyte - sperm breaking through',
+        'Fertilization occurring - sperm entering oocyte',
+        'Pronuclei - moving together', 'Zygote created - divides',
+        '2 cell stage', '4 cell stage', '16 cell stage',
+        'Blastocyst - burrowing into endometrium',
+    ];
+    assert.deepEqual(LAB_MODELS.map(m => m.questions[0].options[0]), expected);
+    for (const model of LAB_MODELS) {
+        const q = model.questions[0];
+        assert.ok(q.options.every(answer => answer.length <= 50));
+        assert.ok(q.explanation.length <= 90);
+        assert.ok(q.typedAnswers.includes(q.options[0]));
+    }
 });
