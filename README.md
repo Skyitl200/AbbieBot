@@ -420,7 +420,7 @@ match; otherwise the server role named Sponsor is used (case-insensitive,
 decorations ignored).
 
 **Respiratory Tract** is a separate Anatomy Lab category. Its first set is
-**Upper Respiratory 3D Model**, containing 26 cyan-blue arrow images with exactly one question per image; the three pharynx questions include location clues. Soft palate and cribriform plate are excluded.
+**Upper Respiratory 3D Model**, containing 25 cyan-blue arrow images with exactly one question per image; the three pharynx questions include location clues. Soft palate, cribriform plate and fauces are excluded.
 Choose that set, then A–D multiple choice or typed answers. Typed mode accepts
 common anatomical aliases and minor typos, but rejects matches that are equally
 close to another structure (such as internal versus external nares). Attachments
@@ -428,3 +428,10 @@ use neutral filenames so filenames do not reveal the answer. Public questions,
 owner-only controls, private feedback and 5–30 Merit Coin rewards are retained.
 Add future respiratory sets to `LAB_SETS` with category `respiratory`; they will
 appear alongside this set rather than replacing it.
+
+Respiratory cards are now lossless PNG overlays on the unmarked original photo
+from `jjjjjj.png.zip`, not generated/redrawn model variants. The source image
+and its SHA-256 are stored with the set; each card records its arrow coordinates.
+Run `python scripts/renderRespiratoryPointers.py` (Pillow required for this
+developer-only build step) to rebuild. Tests verify that every pixel outside
+the arrow remains identical to the original photograph.

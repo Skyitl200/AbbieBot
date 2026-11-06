@@ -3,7 +3,7 @@
   "lectureReference": "Respiratory System, Chapter 22",
   "category": "Respiratory Tract",
   "modelGroup": "Upper Respiratory 3D Model",
-  "source": "User-approved cyan-pointer versions of supplied upper respiratory physical model photograph",
+  "source": "Original unmarked photograph supplied in jjjjjj.png.zip; deterministic cyan-arrow overlays only",
   "models": [
     {
       "id": "resp-01",
@@ -31,9 +31,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-01.jpg",
-      "imageSha256": "ad0b6d542e6c83bdbc233c37e635dd41c5474402d4e0362d50a07975c56d51a0",
-      "originalImageFile": "01-palatine-tonsil.jpg"
+      "expectedImageFile": "upper-respiratory/ur-01.png",
+      "imageSha256": "b78fc5046d3cbe4fa6ea272d9fcd375eeeacb83200890e15d29c47ca9c443fd4",
+      "originalImageFile": "01-palatine-tonsil.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          546,
+          523
+        ],
+        "tip": [
+          366,
+          527
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            366,
+            527
+          ],
+          [
+            377,
+            522
+          ],
+          [
+            377,
+            524
+          ],
+          [
+            546,
+            521
+          ],
+          [
+            546,
+            525
+          ],
+          [
+            377,
+            529
+          ],
+          [
+            377,
+            532
+          ]
+        ]
+      }
     },
     {
       "id": "resp-02",
@@ -61,9 +107,55 @@
           "questionKind": "location"
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-02.jpg",
-      "imageSha256": "783a24891c54dc2d3d7967ea92808a5a7a5b7921e5f89651f6f7e220d0669061",
-      "originalImageFile": "02-oropharynx.jpg"
+      "expectedImageFile": "upper-respiratory/ur-02.png",
+      "imageSha256": "6612e0671e8747cff574e89571c4cf840d0a6d9b3bdd6bf2425993b1adaff914",
+      "originalImageFile": "02-oropharynx.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          549,
+          468
+        ],
+        "tip": [
+          384,
+          507
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            384,
+            507
+          ],
+          [
+            394,
+            500
+          ],
+          [
+            394,
+            502
+          ],
+          [
+            548,
+            466
+          ],
+          [
+            550,
+            470
+          ],
+          [
+            395,
+            507
+          ],
+          [
+            396,
+            509
+          ]
+        ]
+      }
     },
     {
       "id": "resp-03",
@@ -91,9 +183,55 @@
           "questionKind": "location"
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-03.jpg",
-      "imageSha256": "eaa5ea684e5af560b974e13df8a48f76b84cfc8aee6ad71767c49c7f14179ea3",
-      "originalImageFile": "03-laryngopharynx.jpg"
+      "expectedImageFile": "upper-respiratory/ur-03.png",
+      "imageSha256": "ebac53924bc47919b12094161b2c2eb02de0330fde728695499cac5fdbe56db6",
+      "originalImageFile": "03-laryngopharynx.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          558,
+          583
+        ],
+        "tip": [
+          378,
+          591
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            378,
+            591
+          ],
+          [
+            389,
+            586
+          ],
+          [
+            389,
+            588
+          ],
+          [
+            558,
+            581
+          ],
+          [
+            558,
+            585
+          ],
+          [
+            389,
+            593
+          ],
+          [
+            389,
+            596
+          ]
+        ]
+      }
     },
     {
       "id": "resp-04",
@@ -120,9 +258,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-04.jpg",
-      "imageSha256": "b88b54e49e634b89e73913b745a90cb18593e5dcf90a6171beb45534b9bd9ecf",
-      "originalImageFile": "04-frontal-sinus.jpg"
+      "expectedImageFile": "upper-respiratory/ur-04.png",
+      "imageSha256": "70bdf1f2fbb102338ac6964406021889a857205cc91e4b8c68d8d62538e889f6",
+      "originalImageFile": "04-frontal-sinus.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          117,
+          171
+        ],
+        "tip": [
+          224,
+          240
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            224,
+            240
+          ],
+          [
+            212,
+            238
+          ],
+          [
+            213,
+            236
+          ],
+          [
+            116,
+            173
+          ],
+          [
+            118,
+            169
+          ],
+          [
+            216,
+            232
+          ],
+          [
+            217,
+            230
+          ]
+        ]
+      }
     },
     {
       "id": "resp-05",
@@ -153,10 +337,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-05.jpg",
-      "imageSha256": "2bad3c6cf2fc656e0e88f048e232e84128884a56475dac59f214b4c92711f097",
+      "expectedImageFile": "upper-respiratory/ur-05.png",
+      "imageSha256": "e35e37f3d972ca185787088a67f30a0787fe83e94df383b26ff30125a5209ada",
       "originalImageFile": "05-external-nares-nostrils.jpg",
-      "imageRevision": 2
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          67,
+          451
+        ],
+        "tip": [
+          159,
+          398
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            159,
+            398
+          ],
+          [
+            152,
+            408
+          ],
+          [
+            151,
+            406
+          ],
+          [
+            68,
+            453
+          ],
+          [
+            66,
+            449
+          ],
+          [
+            148,
+            401
+          ],
+          [
+            147,
+            399
+          ]
+        ]
+      }
     },
     {
       "id": "resp-06",
@@ -186,10 +415,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-06.jpg",
-      "imageSha256": "143877fb1cd8134a1a09254552587f1ad184764dd4b2c44546af78a717a85d3a",
+      "expectedImageFile": "upper-respiratory/ur-06.png",
+      "imageSha256": "7907661ca2b4d156d08f476fefd5490732ae65bb4b65aaa5f6bb70b82fda2c6e",
       "originalImageFile": "06-superior-concha.jpg",
-      "imageRevision": 2
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          155,
+          226
+        ],
+        "tip": [
+          304,
+          307
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            304,
+            307
+          ],
+          [
+            292,
+            306
+          ],
+          [
+            293,
+            304
+          ],
+          [
+            154,
+            228
+          ],
+          [
+            156,
+            224
+          ],
+          [
+            296,
+            300
+          ],
+          [
+            297,
+            297
+          ]
+        ]
+      }
     },
     {
       "id": "resp-07",
@@ -219,9 +493,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-07.jpg",
-      "imageSha256": "c5b9452d2e099ab29a2d052a7e44233990847ffebfa90474536b164149ed8d70",
-      "originalImageFile": "07-middle-concha.jpg"
+      "expectedImageFile": "upper-respiratory/ur-07.png",
+      "imageSha256": "46b7a6201e3a83b9ffddd9c2bfe43627da5f83e163b0f223a2579bfec61f7bab",
+      "originalImageFile": "07-middle-concha.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          117,
+          303
+        ],
+        "tip": [
+          293,
+          343
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            293,
+            343
+          ],
+          [
+            281,
+            345
+          ],
+          [
+            282,
+            343
+          ],
+          [
+            116,
+            305
+          ],
+          [
+            118,
+            301
+          ],
+          [
+            283,
+            338
+          ],
+          [
+            283,
+            336
+          ]
+        ]
+      }
     },
     {
       "id": "resp-08",
@@ -251,10 +571,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-08.jpg",
-      "imageSha256": "dc28630f646a94c96777c85d413f8e39c145f112c30a4a2d2f99c867a5ea23d7",
+      "expectedImageFile": "upper-respiratory/ur-08.png",
+      "imageSha256": "f6bb0e6009f5d393c4df934016d6a9253301c48040a79ffb74678af466ae8aba",
       "originalImageFile": "08-inferior-concha.jpg",
-      "imageRevision": 2
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          89,
+          358
+        ],
+        "tip": [
+          282,
+          382
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            282,
+            382
+          ],
+          [
+            270,
+            386
+          ],
+          [
+            271,
+            383
+          ],
+          [
+            89,
+            360
+          ],
+          [
+            89,
+            356
+          ],
+          [
+            271,
+            378
+          ],
+          [
+            272,
+            376
+          ]
+        ]
+      }
     },
     {
       "id": "resp-09",
@@ -282,9 +647,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-09.jpg",
-      "imageSha256": "6d26b8c3927e27824e5d7bf3226ece16d8f43e624dee7a05ab398036cce81477",
-      "originalImageFile": "09-superior-meatus.jpg"
+      "expectedImageFile": "upper-respiratory/ur-09.png",
+      "imageSha256": "5c19c4549d1188d7ea82c1d1e818a8a354d5e28e2f241568d63d1afb8a84540c",
+      "originalImageFile": "09-superior-meatus.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          513,
+          266
+        ],
+        "tip": [
+          316,
+          326
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            316,
+            326
+          ],
+          [
+            325,
+            318
+          ],
+          [
+            326,
+            320
+          ],
+          [
+            512,
+            264
+          ],
+          [
+            514,
+            268
+          ],
+          [
+            327,
+            325
+          ],
+          [
+            328,
+            328
+          ]
+        ]
+      }
     },
     {
       "id": "resp-10",
@@ -312,10 +723,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-10.jpg",
-      "imageSha256": "7a62b37c5a8a209330b4f4b90962a6ecf0228441a652150cf0ae8f034e2f88e9",
+      "expectedImageFile": "upper-respiratory/ur-10.png",
+      "imageSha256": "3a18f227517b3df4f8244d9f8c717c9d97f65e29f7b4b3ac6c0de6e7fc338ff8",
       "originalImageFile": "10-middle-meatus.jpg",
-      "imageRevision": 2
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          122,
+          351
+        ],
+        "tip": [
+          290,
+          361
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            290,
+            361
+          ],
+          [
+            279,
+            365
+          ],
+          [
+            279,
+            363
+          ],
+          [
+            122,
+            353
+          ],
+          [
+            122,
+            349
+          ],
+          [
+            279,
+            358
+          ],
+          [
+            279,
+            355
+          ]
+        ]
+      }
     },
     {
       "id": "resp-11",
@@ -343,9 +799,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-11.jpg",
-      "imageSha256": "73647ff17cd7065c3f60a5aa695ef1306029e69bff9a404b7021b75ca01ae06f",
-      "originalImageFile": "11-inferior-meatus.jpg"
+      "expectedImageFile": "upper-respiratory/ur-11.png",
+      "imageSha256": "61feb243a451adcd7e2dc667b11d4538710a166f0295a11effdfb5d7e4f444f1",
+      "originalImageFile": "11-inferior-meatus.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          127,
+          468
+        ],
+        "tip": [
+          284,
+          406
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            284,
+            406
+          ],
+          [
+            276,
+            415
+          ],
+          [
+            275,
+            412
+          ],
+          [
+            128,
+            470
+          ],
+          [
+            126,
+            466
+          ],
+          [
+            273,
+            408
+          ],
+          [
+            272,
+            405
+          ]
+        ]
+      }
     },
     {
       "id": "resp-13",
@@ -373,9 +875,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-13.jpg",
-      "imageSha256": "827ef53d5c3917374b97c574c1b5c158362af648d62cbb5bdf080d7af2d515a9",
-      "originalImageFile": "13-sphenoidal-sinus.jpg"
+      "expectedImageFile": "upper-respiratory/ur-13.png",
+      "imageSha256": "c78e8efd95f153a32c0dba51b3a223c8dd35ebae078b12162294735bf2a4bec7",
+      "originalImageFile": "13-sphenoidal-sinus.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          555,
+          318
+        ],
+        "tip": [
+          379,
+          340
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            379,
+            340
+          ],
+          [
+            389,
+            334
+          ],
+          [
+            390,
+            336
+          ],
+          [
+            555,
+            316
+          ],
+          [
+            555,
+            320
+          ],
+          [
+            390,
+            341
+          ],
+          [
+            391,
+            344
+          ]
+        ]
+      }
     },
     {
       "id": "resp-14",
@@ -405,9 +953,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-14.jpg",
-      "imageSha256": "d7c6b21af08d2ecec65336d97a16f238f65759a5f6d739a4b726da063f1425cf",
-      "originalImageFile": "14-internal-nares.jpg"
+      "expectedImageFile": "upper-respiratory/ur-14.png",
+      "imageSha256": "3ead54366e78928685dd0e2051cb616d4be69dc678afc62bc17e7ea3850245a1",
+      "originalImageFile": "14-internal-nares.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          573,
+          378
+        ],
+        "tip": [
+          350,
+          410
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            350,
+            410
+          ],
+          [
+            360,
+            403
+          ],
+          [
+            361,
+            406
+          ],
+          [
+            573,
+            376
+          ],
+          [
+            573,
+            380
+          ],
+          [
+            361,
+            411
+          ],
+          [
+            362,
+            413
+          ]
+        ]
+      }
     },
     {
       "id": "resp-15",
@@ -435,9 +1029,55 @@
           "questionKind": "location"
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-15.jpg",
-      "imageSha256": "77286d89e1621526ccaf02afc900769b44e51f74305cf3522907245629a57f04",
-      "originalImageFile": "15-nasopharynx.jpg"
+      "expectedImageFile": "upper-respiratory/ur-15.png",
+      "imageSha256": "52ad8318bb5054df0811b68e186cecc1190ef3241d15da54b6107a290f2247a4",
+      "originalImageFile": "15-nasopharynx.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          569,
+          446
+        ],
+        "tip": [
+          386,
+          416
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            386,
+            416
+          ],
+          [
+            398,
+            413
+          ],
+          [
+            397,
+            415
+          ],
+          [
+            569,
+            444
+          ],
+          [
+            569,
+            448
+          ],
+          [
+            396,
+            420
+          ],
+          [
+            396,
+            423
+          ]
+        ]
+      }
     },
     {
       "id": "resp-16",
@@ -464,9 +1104,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-16.jpg",
-      "imageSha256": "72d040e095567be7cabf74ea9edb121891268c551c8cf0bacd08c5e2ca700dd0",
-      "originalImageFile": "16-uvula.jpg"
+      "expectedImageFile": "upper-respiratory/ur-16.png",
+      "imageSha256": "de429a1880891251b3b6561dd4bcfad7366ff72605425d6483c5a475e0fad70b",
+      "originalImageFile": "16-uvula.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          555,
+          478
+        ],
+        "tip": [
+          372,
+          493
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            372,
+            493
+          ],
+          [
+            383,
+            487
+          ],
+          [
+            383,
+            490
+          ],
+          [
+            555,
+            476
+          ],
+          [
+            555,
+            480
+          ],
+          [
+            383,
+            495
+          ],
+          [
+            383,
+            497
+          ]
+        ]
+      }
     },
     {
       "id": "resp-17",
@@ -494,38 +1180,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-17.jpg",
-      "imageSha256": "8f11cac4ee96aa3a47d63334d34137ba4c21365e6b25688bdbbd80ce1740cba0",
-      "originalImageFile": "17-lingual-tonsil.jpg"
-    },
-    {
-      "id": "resp-18",
-      "name": "Fauces",
-      "questions": [
-        {
-          "id": "lab-upper-respiratory-18",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "question": "What structure is indicated by the arrow?",
-          "options": [
-            "Fauces",
-            "Hard palate",
-            "Uvula",
-            "Palatine tonsil"
+      "expectedImageFile": "upper-respiratory/ur-17.png",
+      "imageSha256": "31afb137c0139a93f4a04f3ac76f960a9f6e0e1656b34940e19db74e497a8760",
+      "originalImageFile": "17-lingual-tonsil.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          170,
+          600
+        ],
+        "tip": [
+          334,
+          550
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            334,
+            550
           ],
-          "correct": [
-            0
+          [
+            325,
+            558
           ],
-          "explanation": "Fauces.",
-          "requiresModelImage": true,
-          "typedAnswers": [
-            "Fauces"
+          [
+            324,
+            556
+          ],
+          [
+            171,
+            602
+          ],
+          [
+            169,
+            598
+          ],
+          [
+            323,
+            551
+          ],
+          [
+            322,
+            548
           ]
-        }
-      ],
-      "expectedImageFile": "upper-respiratory/ur-18.jpg",
-      "imageSha256": "976bfe7d85f96a5ff8e7256c7ffa8cbccfa94e45a8ff57a87aef0d70688abfca",
-      "originalImageFile": "18-fauces.jpg"
+        ]
+      }
     },
     {
       "id": "resp-19",
@@ -556,10 +1259,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-19.jpg",
-      "imageSha256": "c43fb77b354a36689f0a1422604c7f1d0cafbc192a3e6ae7508096a821e1113d",
+      "expectedImageFile": "upper-respiratory/ur-19.png",
+      "imageSha256": "b57eacb1062e1277efa08320c97a68fa330ee4754c7859fe5d48958f15c0a899",
       "originalImageFile": "19-vestibular-fold-top-part.jpg",
-      "imageRevision": 2
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          208,
+          598
+        ],
+        "tip": [
+          321,
+          624
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            321,
+            624
+          ],
+          [
+            309,
+            626
+          ],
+          [
+            310,
+            624
+          ],
+          [
+            207,
+            600
+          ],
+          [
+            209,
+            596
+          ],
+          [
+            311,
+            619
+          ],
+          [
+            311,
+            617
+          ]
+        ]
+      }
     },
     {
       "id": "resp-20",
@@ -590,10 +1338,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-20.jpg",
-      "imageSha256": "93b5c0ef0357b43c1f3bf2719c0dfd158fa7614438ba87335f968ef0e86f6712",
+      "expectedImageFile": "upper-respiratory/ur-20.png",
+      "imageSha256": "c9ad1703ca1c05ce112ac01dbcd2e76fc04c2a08e016eb9a2ff6213c8aebaffa",
       "originalImageFile": "20-vocal-fold-bottom-part.jpg",
-      "imageRevision": 2
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          190,
+          685
+        ],
+        "tip": [
+          321,
+          637
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            321,
+            637
+          ],
+          [
+            312,
+            645
+          ],
+          [
+            312,
+            643
+          ],
+          [
+            191,
+            687
+          ],
+          [
+            189,
+            683
+          ],
+          [
+            310,
+            638
+          ],
+          [
+            309,
+            636
+          ]
+        ]
+      }
     },
     {
       "id": "resp-21",
@@ -621,10 +1414,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-21.jpg",
-      "imageSha256": "10b161074e440a11ee8bc682f1f201dc82681356fedcddcdfb1166c55273ad87",
+      "expectedImageFile": "upper-respiratory/ur-21.png",
+      "imageSha256": "ee92b4494ccd6d23da1d7f4973f44da2d8678c8c06fa4ecdb5dc1daceba1585e",
       "originalImageFile": "21-esophagus.jpg",
-      "imageRevision": 2
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          554,
+          658
+        ],
+        "tip": [
+          385,
+          672
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            385,
+            672
+          ],
+          [
+            396,
+            666
+          ],
+          [
+            396,
+            669
+          ],
+          [
+            554,
+            656
+          ],
+          [
+            554,
+            660
+          ],
+          [
+            396,
+            674
+          ],
+          [
+            396,
+            676
+          ]
+        ]
+      }
     },
     {
       "id": "resp-22",
@@ -651,9 +1489,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-22.jpg",
-      "imageSha256": "335d49e258f3bd72fd0a9c3e82c5b7b4640879142a0d56218f1d4dd50cc5cea7",
-      "originalImageFile": "22-trachea.jpg"
+      "expectedImageFile": "upper-respiratory/ur-22.png",
+      "imageSha256": "72b758d4d247b39f5eb8ebdd3643de28167690fb5fbb0d34ef91ac300e6eb532",
+      "originalImageFile": "22-trachea.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          325,
+          796
+        ],
+        "tip": [
+          325,
+          700
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            325,
+            700
+          ],
+          [
+            330,
+            711
+          ],
+          [
+            328,
+            711
+          ],
+          [
+            328,
+            796
+          ],
+          [
+            322,
+            796
+          ],
+          [
+            322,
+            711
+          ],
+          [
+            320,
+            711
+          ]
+        ]
+      }
     },
     {
       "id": "resp-23",
@@ -680,9 +1564,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-23.jpg",
-      "imageSha256": "d25e5f81520b707c90205bcc3eb3c2ba26efe05a35b59bad7c815058407927a0",
-      "originalImageFile": "23-epiglottis.jpg"
+      "expectedImageFile": "upper-respiratory/ur-23.png",
+      "imageSha256": "67d3d929c92ae631129a7da2256656b957edc190d8fcccbda07c3045ce3d933a",
+      "originalImageFile": "23-epiglottis.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          190,
+          551
+        ],
+        "tip": [
+          326,
+          588
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            326,
+            588
+          ],
+          [
+            314,
+            590
+          ],
+          [
+            315,
+            588
+          ],
+          [
+            189,
+            553
+          ],
+          [
+            191,
+            549
+          ],
+          [
+            316,
+            583
+          ],
+          [
+            317,
+            580
+          ]
+        ]
+      }
     },
     {
       "id": "resp-24",
@@ -710,9 +1640,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-24.jpg",
-      "imageSha256": "fefcb2a4acb9e26f506f1aea4e3b5bbaa21963de6f10526cdbdc2350f5c66038",
-      "originalImageFile": "24-hyoid-bone.jpg"
+      "expectedImageFile": "upper-respiratory/ur-24.png",
+      "imageSha256": "0a2c501923667d0c588928da8937de7320404037e46353e88974544bf14a21cd",
+      "originalImageFile": "24-hyoid-bone.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          167,
+          644
+        ],
+        "tip": [
+          272,
+          607
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            272,
+            607
+          ],
+          [
+            263,
+            615
+          ],
+          [
+            262,
+            613
+          ],
+          [
+            168,
+            646
+          ],
+          [
+            166,
+            642
+          ],
+          [
+            261,
+            608
+          ],
+          [
+            260,
+            606
+          ]
+        ]
+      }
     },
     {
       "id": "resp-25",
@@ -739,9 +1715,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-25.jpg",
-      "imageSha256": "ee995747252b336aba101076c4ebdf8e98f54c8c36b9d0b45c0a046eb853d1e7",
-      "originalImageFile": "25-hard-palate.jpg"
+      "expectedImageFile": "upper-respiratory/ur-25.png",
+      "imageSha256": "808bad400df7b0bcf34ae0bbf7eb456a9b71c3b8863a09052c2ec582fde47bc8",
+      "originalImageFile": "25-hard-palate.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          138,
+          448
+        ],
+        "tip": [
+          280,
+          421
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            280,
+            421
+          ],
+          [
+            270,
+            428
+          ],
+          [
+            270,
+            426
+          ],
+          [
+            138,
+            450
+          ],
+          [
+            138,
+            446
+          ],
+          [
+            269,
+            421
+          ],
+          [
+            268,
+            418
+          ]
+        ]
+      }
     },
     {
       "id": "resp-27",
@@ -769,10 +1791,55 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-27.jpg",
-      "imageSha256": "61b2d3114a30e293da52792c43df7263f18a1f1b0643d1c7edbb40550e2de378",
+      "expectedImageFile": "upper-respiratory/ur-27.png",
+      "imageSha256": "ffdfb27d217a2c8c0e5ae3b31e4e0d21e94a863b81659b09602096becc2a02aa",
       "originalImageFile": "27-vestibule.jpg",
-      "imageRevision": 2
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          85,
+          321
+        ],
+        "tip": [
+          179,
+          380
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            179,
+            380
+          ],
+          [
+            167,
+            378
+          ],
+          [
+            168,
+            376
+          ],
+          [
+            84,
+            323
+          ],
+          [
+            86,
+            319
+          ],
+          [
+            171,
+            372
+          ],
+          [
+            172,
+            370
+          ]
+        ]
+      }
     },
     {
       "id": "resp-28",
@@ -802,9 +1869,57 @@
           ]
         }
       ],
-      "expectedImageFile": "upper-respiratory/ur-28.jpg",
-      "imageSha256": "432e0aea4d4944ef663c3c734163cd2e2b457bcb9ab3adcc794c03eb7b3e34c9",
-      "originalImageFile": "28-pharyngeal-tonsil.jpg"
+      "expectedImageFile": "upper-respiratory/ur-28.png",
+      "imageSha256": "48b6d99bc58831babb8ccc3577c09ed6ff993e0a89be286e88e95169b66a9202",
+      "originalImageFile": "28-pharyngeal-tonsil.jpg",
+      "imageRevision": 3,
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          556,
+          395
+        ],
+        "tip": [
+          398,
+          395
+        ],
+        "shaftWidth": 3,
+        "headWidth": 8,
+        "headLength": 10,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            398,
+            395
+          ],
+          [
+            409,
+            390
+          ],
+          [
+            409,
+            392
+          ],
+          [
+            556,
+            392
+          ],
+          [
+            556,
+            398
+          ],
+          [
+            409,
+            398
+          ],
+          [
+            409,
+            400
+          ]
+        ]
+      }
     }
-  ]
+  ],
+  "sourceImageFile": "upper-respiratory-original.png",
+  "sourceImageSha256": "588d346397062140c28750fc1601c5e7396d3e02effeeea365ac9a8de272bfbb"
 }

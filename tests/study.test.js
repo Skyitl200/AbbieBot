@@ -1228,7 +1228,7 @@ test('model answers stay as short as the supplied Quizlet labels', async () => {
     }
 });
 
-test('Respiratory Tract contains one 26-image set and both quiz modes attach cyan-arrow photos', async () => {
+test('Respiratory Tract contains one 25-image set and both quiz modes attach cyan-arrow photos', async () => {
     const { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labModelImage, LAB_SETS } = await import('../src/services/study/labModels.js');
     const { readFile } = await import('node:fs/promises');
     const { createHash } = await import('node:crypto');
@@ -1240,30 +1240,30 @@ test('Respiratory Tract contains one 26-image set and both quiz modes attach cya
     const mode = labModeMessage('u', 'upper-respiratory');
     assert.equal(mode.components[1].toJSON().components[0].custom_id, 'study:labcategory:u:respiratory');
     const models = LAB_SETS.find(set => set.id === 'upper-respiratory').models;
-    assert.equal(models.length, 26);
+    assert.equal(models.length, 25);
     const hashes = new Set();
     for (const model of models) {
         const figure = labModelImage({ labModelId: model.id });
         assert.ok(figure);
-        assert.match(figure.asset.file, /^ur-\d{2}\.jpg$/, 'Image filenames cannot reveal answers');
+        assert.match(figure.asset.file, /^ur-\d{2}\.png$/, 'Image filenames cannot reveal answers');
         const bytes = await readFile(figure.path);
         const hash = createHash('sha256').update(bytes).digest('hex');
-        assert.equal(hash, model.imageSha256, 'Use the approved cyan-pointer file');
+        assert.equal(hash, model.imageSha256, 'Use the verified original-photo arrow overlay');
         hashes.add(hash);
     }
-    assert.equal(hashes.size, 26);
+    assert.equal(hashes.size, 25);
     for (const answerMode of ['multiple_choice', 'typed']) {
         const start = fakeInteraction('', { values: [answerMode] });
         await handleStudyInteraction(start, {}, ['labmode', 'u', 'upper-respiratory']);
         const payload = start.calls.find(([type]) => type === 'followUp')[1];
         const args = payload.components[0].toJSON().components[0].custom_id.split(':').slice(1);
         const session = getStudySession('g', 'u', args[2]);
-        assert.equal(session.questions.length, 26);
+        assert.equal(session.questions.length, 25);
         assert.equal(session.topicId, 'lab_respiratory');
         assert.match(session.topicLabel, /Respiratory Tract.*Upper Respiratory/);
         assert.equal(payload.flags, 0);
         assert.equal(payload.files.length, 1);
-        assert.match(payload.embeds[0].toJSON().image.url, /^attachment:\/\/ur-\d{2}\.jpg$/);
+        assert.match(payload.embeds[0].toJSON().image.url, /^attachment:\/\/ur-\d{2}\.png$/);
         assert.equal(session.questions.filter(q => q.questionKind === 'location').length, 3);
         assert.ok(session.questions.every(q => q.questionKind === 'location' || q.question === 'What structure is indicated by the arrow?'));
         if (answerMode === 'multiple_choice') assert.deepEqual(payload.components[0].toJSON().components.map(button => button.label), ['A', 'B', 'C', 'D']);
@@ -1294,15 +1294,15 @@ test('respiratory typed answers accept synonyms and typos while protecting nearb
     ]) assert.equal(gradeQuestion(by(name), answer), false, `${name}: ${answer}`);
 });
 
-test('respiratory adjustments remove both terms and include short pharynx-location practice without extra questions', async () => {
+test('respiratory adjustments remove excluded terms and include pharynx-location practice without extra questions', async () => {
     const { LAB_SETS, labQuestions } = await import('../src/services/study/labModels.js');
     const set = LAB_SETS.find(set => set.id === 'upper-respiratory');
-    assert.equal(set.models.length, 26);
+    assert.equal(set.models.length, 25);
     assert.ok(set.models.every(model => model.questions.length === 1), 'Exactly one question per image');
-    assert.ok(!set.models.some(model => ['Soft palate', 'Cribriform plate of ethmoid'].includes(model.name)));
+    assert.ok(!set.models.some(model => ['Soft palate', 'Cribriform plate of ethmoid', 'Fauces'].includes(model.name)));
     for (const mode of ['multiple_choice', 'typed']) {
         const questions = labQuestions('upper-respiratory', mode);
-        assert.equal(questions.length, 26);
+        assert.equal(questions.length, 25);
         const locations = questions.filter(q => q.questionKind === 'location');
         assert.equal(locations.length, 3);
         for (const q of locations) {
@@ -1314,7 +1314,51 @@ test('respiratory adjustments remove both terms and include short pharynx-locati
         if (mode === 'multiple_choice') for (const q of questions) {
             assert.equal(q.options.length, 4);
             assert.equal(new Set(q.options).size, 4);
-            assert.ok(!q.options.some(option => ['Soft palate', 'Cribriform plate of ethmoid'].includes(option)));
+            assert.ok(!q.options.some(option => ['Soft palate', 'Cribriform plate of ethmoid', 'Fauces'].includes(option)));
         }
+    }
+});
+
+test('all respiratory cards preserve original anatomy pixel-for-pixel outside their arrows', async () => {
+    const { PNG } = await import('pngjs');
+    const { readFile } = await import('node:fs/promises');
+    const { createHash } = await import('node:crypto');
+    const data = JSON.parse(await readFile(new URL('../study-data/lab-models/upper-respiratory.json', import.meta.url), 'utf8'));
+    const source = await readFile(new URL(`../study-assets/lab-models/${data.sourceImageFile}`, import.meta.url));
+    assert.equal(createHash('sha256').update(source).digest('hex'), data.sourceImageSha256);
+    const original = PNG.sync.read(source);
+    assert.equal(original.width, 761);
+    assert.equal(original.height, 1024);
+    assert.equal(data.models.length, 25);
+    assert.ok(!data.models.some(model => model.name === 'Fauces'));
+    function nearPolygon(x, y, vertices) {
+        let inside = false;
+        for (let i = 0, j = vertices.length - 1; i < vertices.length; j = i++) {
+            const [ax, ay] = vertices[j], [bx, by] = vertices[i];
+            if ((ay > y) !== (by > y) && x < (bx - ax) * (y - ay) / (by - ay) + ax) inside = !inside;
+            const dx = bx - ax, dy = by - ay;
+            const t = Math.max(0, Math.min(1, ((x - ax) * dx + (y - ay) * dy) / (dx * dx + dy * dy || 1)));
+            if (Math.hypot(x - ax - t * dx, y - ay - t * dy) <= 1.5) return true;
+        }
+        return inside;
+    }
+    for (const model of data.models) {
+        const raw = await readFile(new URL(`../study-assets/lab-models/${model.expectedImageFile}`, import.meta.url));
+        assert.equal(createHash('sha256').update(raw).digest('hex'), model.imageSha256);
+        const image = PNG.sync.read(raw);
+        assert.equal(model.renderMethod, 'original-photo-arrow-overlay');
+        assert.equal(image.width, original.width);
+        assert.equal(image.height, original.height);
+        let changed = 0;
+        for (let pixel = 0; pixel < image.width * image.height; pixel++) {
+            const i = pixel * 4;
+            if (image.data[i] !== original.data[i] || image.data[i + 1] !== original.data[i + 1] || image.data[i + 2] !== original.data[i + 2]) {
+                changed++;
+                assert.ok(nearPolygon(pixel % image.width, Math.floor(pixel / image.width), model.annotation.overlayPolygon), `${model.id}: anatomy changed outside arrow at pixel ${pixel}`);
+                const rgb = [...image.data.subarray(i, i + 3)];
+                assert.ok(rgb.every(value => value === 0) || rgb.join(',') === '0,229,255', 'Changes must contain only black outline or cyan pointer pixels');
+            }
+        }
+        assert.ok(changed > 0 && changed < image.width * image.height * 0.02);
     }
 });
