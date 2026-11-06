@@ -126,6 +126,7 @@ function collectCommandPayloads(client) {
     const registeredNames = new Set();
 
     for (const command of client.commands.values()) {
+        if (command.guildOnly) continue;
         if (!command.data || typeof command.data.toJSON !== 'function') {
             logger.warn(`Command missing data or toJSON method: ${command}`);
             continue;
@@ -263,12 +264,34 @@ async function registerGlobalCommands(client, clientId, commands, totalSubcomman
     logger.info('Global commands may take up to an hour to appear in all servers on first deploy');
 }
 
+// Server commands have their own Discord allowance. Upsert individually so
+// unrelated server-specific commands are never removed by a bulk replacement.
+export async function registerGuildCommands(client, clientId) {
+    const commands = [...client.commands.values()].filter(command => command.guildOnly);
+    if (!commands.length) return;
+    if (!clientId || !client.rest?.post) throw new Error('Discord REST client and CLIENT_ID are required for server commands');
+    const payloads = commands.map(command => command.data.toJSON());
+    validateCommands(payloads);
+    if (payloads.length > MAX_COMMANDS) throw new Error('Too many server-specific commands');
+    let after;
+    do {
+        const guilds = await client.guilds.fetch({ limit: 200, ...(after ? { after } : {}) });
+        for (const guildId of guilds.keys()) {
+            for (const body of payloads) {
+                await client.rest.post(`/applications/${clientId}/guilds/${guildId}/commands`, { body });
+            }
+        }
+        after = guilds.size === 200 ? [...guilds.keys()].at(-1) : null;
+    } while (after);
+}
+
 export async function registerCommands(client, options = {}) {
     const { clientId = null } = options;
 
     try {
         const { commands, totalSubcommands } = collectCommandPayloads(client);
         await registerGlobalCommands(client, clientId, commands, totalSubcommands);
+        await registerGuildCommands(client, clientId);
     } catch (error) {
         logger.error('Error registering commands:', error);
         throw error;

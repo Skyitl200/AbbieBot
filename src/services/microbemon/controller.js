@@ -17,7 +17,7 @@ export async function openMicrobemon(interaction) {
 }
 export async function handleMicrobemon(interaction, client, args, runAction = act) {
     const [owner, action, token, revision, answer] = args;
-    if (owner !== interaction.user.id) return interaction.reply({ content: 'Open your own Microbemon game with /test microbemon:true.', flags: MessageFlags.Ephemeral });
+    if (owner !== interaction.user.id) return interaction.reply({ content: 'Open your own Microbemon game with /microbemon.', flags: MessageFlags.Ephemeral });
     if (action === 'rename') {
         const modal = new ModalBuilder().setCustomId(`microbemon:${owner}:nickname:${token}`).setTitle('Nickname your Microbemon')
             .addComponents(new ActionRowBuilder().addComponents(new TextInputBuilder().setCustomId('nickname').setLabel('Nickname').setStyle(TextInputStyle.Short).setMinLength(1).setMaxLength(24).setRequired(true)));

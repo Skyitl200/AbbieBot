@@ -300,12 +300,15 @@ the preview and posting flow.
 
 ### Microbemon
 
-Run `/test microbemon:true` inside a server, then choose **Explore**.
+Run `/microbemon` inside a server, then choose **Explore**.
+The older `/test microbemon:true` option still works as an alias.
 After a successful catch is saved, the public card opens the **Microbedeck** on
 the newly caught pet, with its portrait, shiny status, level, habitat, basic
 facts, and nickname/companion controls. The Microbedeck button reopens the saved
-collection at any time. This shares
-AbbieBot's existing command entry to stay within Discord's 100-command limit.
+collection at any time. The standalone command is registered per server at startup using Discord's
+separate server-command allowance, preserving all 100 existing global commands.
+Registration upserts only `/microbemon`; it does not replace unrelated server
+commands. Restart after joining a new server to register the command there.
 Normal `/test` study sessions are unchanged. The first version has 19 organisms
 from the lab notes, easy study battles, three free capture attempts per encounter,
 collection browsing, nicknames, and a favorite companion. It does not spend or

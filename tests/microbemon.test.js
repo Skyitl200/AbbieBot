@@ -171,10 +171,11 @@ test('Microbemon routes load without exceeding Discord command limit', async () 
     const { default: loadInteractions } = await import('../src/handlers/loaders/interactions.js');
     const client = { buttons: new Collection(), selectMenus: new Collection(), modals: new Collection() };
     await loadCommands(client); await loadInteractions(client);
-    assert.ok(client.commands.size <= 100);
+    assert.ok([...client.commands.values()].filter(command => !command.guildOnly).length <= 100);
     assert.equal(client.buttons.get('microbemon').execute, handleMicrobemon);
     assert.equal(client.modals.get('microbemon').execute, handleMicrobemon);
     assert.ok(client.commands.get('test').data.toJSON().options.some(option => option.name === 'microbemon'));
+    assert.equal(client.commands.get('microbemon').guildOnly, true);
 });
 
 test('new Microbemon sessions are public and identify their owner', async () => {
@@ -311,4 +312,36 @@ test('failed catches stay in battle; failed saves never show a Microbedeck catch
         (p, a, opts) => act(p, a, { ...opts, rng: rolls(0) }));
     assert.equal(message, null);
     assert.equal(s.data.get('microbemon:guild:owner').pets.length, 0);
+});
+
+test('direct /microbemon opens the existing public game', async () => {
+    const { default: command } = await import('../src/commands/Community/microbemon.js');
+    const { openMicrobemon } = await import('../src/services/microbemon/controller.js');
+    assert.equal(command.data.name, 'microbemon');
+    assert.equal(command.execute, openMicrobemon);
+    assert.equal(command.data.toJSON().dm_permission, false);
+});
+
+test('registration keeps 100 global commands and upserts Microbemon separately per server', async () => {
+    const { Collection } = await import('discord.js');
+    const { loadCommands, registerCommands } = await import('../src/handlers/loaders/commandLoader.js');
+    const calls = [];
+    const client = { rest: {
+        put: async (route, payload) => calls.push({ method: 'PUT', route, body: payload.body }),
+        post: async (route, payload) => calls.push({ method: 'POST', route, body: payload.body })
+    }, guilds: { fetch: async () => new Collection([['guild-one', {}], ['guild-two', {}]]) } };
+    await loadCommands(client);
+    await registerCommands(client, { clientId: 'application' });
+    const global = calls.find(call => call.method === 'PUT' && call.body.length > 0);
+    assert.equal(global.route, '/applications/application/commands');
+    assert.equal(global.body.length, 100);
+    assert.ok(!global.body.some(command => command.name === 'microbemon'));
+    assert.ok(global.body.some(command => command.name === 'test'));
+    const server = calls.filter(call => call.method === 'POST');
+    assert.equal(server.length, 2);
+    assert.equal(server[0].route, '/applications/application/guilds/guild-one/commands');
+    assert.equal(server[1].route, '/applications/application/guilds/guild-two/commands');
+    assert.ok(server.every(call => call.body.name === 'microbemon'));
+    assert.ok(!calls.some(call => call.method === 'PUT' && call.route.includes('/guilds/')),
+        'Never bulk-delete unrelated server commands');
 });

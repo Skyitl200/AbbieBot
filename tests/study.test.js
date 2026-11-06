@@ -706,7 +706,7 @@ test('test replaces quiz within the 100-command limit and all interaction routes
     await loadInteractions(client);
     assert.ok(client.commands.has('test'));
     assert.ok(!client.commands.has('quiz'));
-    assert.ok(client.commands.size <= 100, `Discord only permits 100 commands, got ${client.commands.size}`);
+    assert.ok([...client.commands.values()].filter(command => !command.guildOnly).length <= 100, 'Discord permits 100 global commands');
     const command = client.commands.get('test').data.toJSON();
     assert.equal(command.options[0].name, 'other-subjects');
     for (const type of ['buttons', 'selectMenus', 'modals']) assert.equal(client[type].get('study').execute, handleStudyInteraction);
