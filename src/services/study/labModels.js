@@ -28,7 +28,7 @@ export function labCategoryMessage(owner) {
 }
 export function labModelsMessage(owner) {
     const missing = LAB_MODELS.some(model => !labModelImage({ labModelId: model.id }));
-    return { content: '', embeds: [new EmbedBuilder({ title: 'Reproductive System · Early Development Models', description: 'All eight photos are grouped into one Early Development Models set. Study them together in a mixed session.\n\n' + (missing ? 'Stage identification only: each photo asks which stage is shown. The original photos are not installed yet, so starting this set is unavailable until they are added.' : 'Each photo asks only: Which stage is shown?') })], components: [
+    return { content: '', embeds: [new EmbedBuilder({ title: 'Reproductive System · Early Development Models', description: 'All eight photos are grouped into one Early Development Models set. Study them together in a mixed session.\n\n' + (missing ? 'Photo identification only: identify the stage and what the model shows. The original photos are not installed yet, so starting this set is unavailable until they are added.' : 'Identify each photo with short Quizlet-style questions.') })], components: [
         row(new StringSelectMenuBuilder().setCustomId(`study:labmodels:${owner}`).setPlaceholder('Choose a model set').addOptions({ label: 'Early Development Models', value: 'early-development', description: 'All 8 photos together: fertilization, cleavage, and implantation' })),
         row(new ButtonBuilder().setCustomId(`study:classes:${owner}`).setLabel('Classes').setStyle(ButtonStyle.Secondary)),
     ] };
@@ -38,7 +38,7 @@ export function labModeMessage(owner, selection) {
     return { content: '', embeds: [new EmbedBuilder({ title: 'Choose your answer mode', description: selection === 'early-development' ? 'Early Development Models — all 8 photos studied together. Choose how you want to answer.' : models.map(model => `• ${model.name}`).join('\n') })], components: [
         row(new StringSelectMenuBuilder().setCustomId(`study:labmode:${owner}:${selection}`).setPlaceholder('Multiple choice or type in').addOptions(
             { label: 'Multiple choice', value: 'multiple_choice', description: 'Answer using A, B, C, or D' },
-            { label: 'Type in answer', value: 'typed', description: 'Type the biological term; common synonyms accepted' })),
+            { label: 'Type in answer', value: 'typed', description: 'Type a short answer; synonyms and minor typos accepted' })),
         back(owner),
     ] };
 }

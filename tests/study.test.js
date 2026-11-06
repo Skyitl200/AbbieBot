@@ -1139,7 +1139,7 @@ test('grouped set contains exactly eight stage-only questions in both modes', as
         const questions = labQuestions('early-development', mode);
         assert.equal(questions.length, 8);
         assert.equal(new Set(questions.map(q => q.labModelId)).size, 8);
-        assert.ok(questions.every(q => q.requiresModelImage && q.question === 'Which stage is shown in this model?'));
+        assert.ok(questions.every(q => q.requiresModelImage && /^What (?:is|has)/.test(q.question)));
         for (const q of questions) {
             const display = questionMessage(createStudySession('stages', 'u', [q], 'lab_reproductive'));
             assert.ok(!display.embeds[0].toJSON().description.includes(`Model: ${q.modelName}`), 'Do not reveal the stage name before answering');
@@ -1184,4 +1184,28 @@ test('all eight installed original model photos attach inline in both answer mod
         assert.equal(message.embeds[0].toJSON().image.url, `attachment://${image.asset.file}`);
         assert.deepEqual(message.attachments, []);
     }
+});
+
+test('Quizlet-style lab prompts use dashes and accept spelling slips without confusing stages', async () => {
+    const { labQuestions } = await import('../src/services/study/labModels.js');
+    const questions = labQuestions('early-development', 'typed');
+    const by = id => questions.find(q => q.labModelId === id);
+    for (const [id, answer] of [
+        ['oocyte', 'secondry oocyte'], ['sperm-entry', 'fertilizaton'],
+        ['pronuclei', 'pronucelar stage'], ['zygote', 'zyogte'],
+        ['two-cell', 'two cells'], ['four-cell', '4 cel stage'], ['four-cell', '4cells'], ['sixteen-cell', '16 cells'],
+        ['sixteen-cell', 'sixteen cell stgae'], ['implantation', 'blastocyst - burrowing into endometruim'],
+        ['implantation', 'Blastocyst → burrowing into the endometrium'],
+    ]) assert.equal(gradeQuestion(by(id), answer), true, `${id}: ${answer}`);
+    for (const [id, answer] of [
+        ['two-cell', '4 cell stage'], ['four-cell', 'two cell stage'],
+        ['sixteen-cell', '6 cell stage'], ['zygote', 'oocyte'],
+        ['implantation', 'morula'], ['implantation', 'not implantation'],
+        ['two-cell', '2 or 4 cell stage'], ['zygote', ''], ['zygote', 'anything'],
+    ]) assert.equal(gradeQuestion(by(id), answer), false, `${id}: ${answer}`);
+    for (const q of labQuestions('early-development', 'multiple_choice')) {
+        assert.ok(!q.options.some(option => /→|->/.test(option)));
+        assert.match(q.question, /^What (?:is|has)/);
+    }
+    assert.equal(gradeQuestion(blank, 'parasympathetci'), false, 'Unrelated lecture grading remains unchanged');
 });

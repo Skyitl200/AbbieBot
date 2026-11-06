@@ -13,12 +13,12 @@
           "id": "lab-early-oocyte-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "Which stage is shown in this model?",
+          "question": "What is this, and what is happening here?",
           "options": [
-            "Secondary oocyte",
-            "Sperm entry during fertilization",
-            "Pronuclear stage",
-            "One-cell zygote"
+            "Secondary oocyte - sperm passing through its surrounding layers",
+            "Fertilization - sperm entering the oocyte",
+            "Pronuclear stage - maternal and paternal pronuclei approach each other",
+            "Zygote created - begins cleavage"
           ],
           "correct": [
             0
@@ -29,7 +29,10 @@
             "secondary oocyte",
             "oocyte",
             "human ovum",
-            "ovum"
+            "ovum",
+            "Secondary oocyte - sperm passing through its surrounding layers",
+            "secondary oocyte - sperm breaking through",
+            "secondary oocyte - sperm passing through corona radiata"
           ]
         }
       ],
@@ -46,12 +49,12 @@
           "id": "lab-early-sperm-entry-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "Which stage is shown in this model?",
+          "question": "What is happening here, and how?",
           "options": [
-            "Sperm entry during fertilization",
-            "Secondary oocyte",
-            "Pronuclear stage",
-            "One-cell zygote"
+            "Fertilization - sperm entering the oocyte",
+            "Secondary oocyte - sperm passing through its surrounding layers",
+            "Pronuclear stage - maternal and paternal pronuclei approach each other",
+            "Zygote created - begins cleavage"
           ],
           "correct": [
             0
@@ -62,7 +65,11 @@
             "sperm entry",
             "fertilization",
             "fertilisation",
-            "sperm entry during fertilization"
+            "sperm entry during fertilization",
+            "Fertilization - sperm entering the oocyte",
+            "sperm entering oocyte",
+            "sperm entering the egg",
+            "fertilization occurring - sperm entering oocyte"
           ]
         }
       ],
@@ -79,12 +86,12 @@
           "id": "lab-early-pronuclei-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "Which stage is shown in this model?",
+          "question": "What is happening here, and how?",
           "options": [
-            "Pronuclear stage",
-            "Secondary oocyte",
-            "Sperm entry during fertilization",
-            "One-cell zygote"
+            "Pronuclear stage - maternal and paternal pronuclei approach each other",
+            "Secondary oocyte - sperm passing through its surrounding layers",
+            "Fertilization - sperm entering the oocyte",
+            "Zygote created - begins cleavage"
           ],
           "correct": [
             0
@@ -95,7 +102,11 @@
             "pronuclear stage",
             "pronuclei",
             "pronuclear",
-            "male and female pronuclei"
+            "male and female pronuclei",
+            "Pronuclear stage - maternal and paternal pronuclei approach each other",
+            "pronuclei approaching each other",
+            "male and female pronuclei approaching",
+            "maternal and paternal pronuclei approach each other"
           ]
         }
       ],
@@ -112,12 +123,12 @@
           "id": "lab-early-zygote-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "Which stage is shown in this model?",
+          "question": "What has happened here, and what does it do?",
           "options": [
-            "One-cell zygote",
-            "Secondary oocyte",
-            "Sperm entry during fertilization",
-            "Pronuclear stage"
+            "Zygote created - begins cleavage",
+            "Secondary oocyte - sperm passing through its surrounding layers",
+            "Fertilization - sperm entering the oocyte",
+            "Pronuclear stage - maternal and paternal pronuclei approach each other"
           ],
           "correct": [
             0
@@ -129,7 +140,11 @@
             "one-cell zygote",
             "one cell stage",
             "1 cell stage",
-            "one-cell stage"
+            "one-cell stage",
+            "Zygote created - begins cleavage",
+            "zygote created - divides",
+            "zygote - cleavage",
+            "zygote begins cleavage"
           ]
         }
       ],
@@ -146,12 +161,12 @@
           "id": "lab-early-two-cell-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "Which stage is shown in this model?",
+          "question": "What is this?",
           "options": [
-            "Two-cell stage",
-            "Secondary oocyte",
-            "Sperm entry during fertilization",
-            "Pronuclear stage"
+            "2 cell stage",
+            "Secondary oocyte - sperm passing through its surrounding layers",
+            "Fertilization - sperm entering the oocyte",
+            "Pronuclear stage - maternal and paternal pronuclei approach each other"
           ],
           "correct": [
             0
@@ -163,7 +178,8 @@
             "two cell stage",
             "2 cell stage",
             "2-cell stage",
-            "two-cell"
+            "two-cell",
+            "2 cell"
           ]
         }
       ],
@@ -180,12 +196,12 @@
           "id": "lab-early-four-cell-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "Which stage is shown in this model?",
+          "question": "What is this?",
           "options": [
-            "Four-cell stage",
-            "Secondary oocyte",
-            "Sperm entry during fertilization",
-            "Pronuclear stage"
+            "4 cell stage",
+            "Secondary oocyte - sperm passing through its surrounding layers",
+            "Fertilization - sperm entering the oocyte",
+            "Pronuclear stage - maternal and paternal pronuclei approach each other"
           ],
           "correct": [
             0
@@ -197,7 +213,8 @@
             "four cell stage",
             "4 cell stage",
             "4-cell stage",
-            "four-cell"
+            "four-cell",
+            "4 cell"
           ]
         }
       ],
@@ -214,12 +231,12 @@
           "id": "lab-early-sixteen-cell-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "Which stage is shown in this model?",
+          "question": "What is this?",
           "options": [
-            "Sixteen-cell stage",
-            "Secondary oocyte",
-            "Sperm entry during fertilization",
-            "Pronuclear stage"
+            "16 cell stage",
+            "Secondary oocyte - sperm passing through its surrounding layers",
+            "Fertilization - sperm entering the oocyte",
+            "Pronuclear stage - maternal and paternal pronuclei approach each other"
           ],
           "correct": [
             0
@@ -231,7 +248,8 @@
             "sixteen cell stage",
             "16 cell stage",
             "16-cell stage",
-            "morula"
+            "morula",
+            "16 cell"
           ]
         }
       ],
@@ -248,12 +266,12 @@
           "id": "lab-early-implantation-1",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "Which stage is shown in this model?",
+          "question": "What is this, and what is happening?",
           "options": [
-            "Blastocyst implantation",
-            "Secondary oocyte",
-            "Sperm entry during fertilization",
-            "Pronuclear stage"
+            "Blastocyst - burrowing into the endometrium",
+            "Secondary oocyte - sperm passing through its surrounding layers",
+            "Fertilization - sperm entering the oocyte",
+            "Pronuclear stage - maternal and paternal pronuclei approach each other"
           ],
           "correct": [
             0
@@ -264,7 +282,10 @@
             "blastocyst implantation",
             "implantation",
             "implanting blastocyst",
-            "blastocyst"
+            "blastocyst",
+            "Blastocyst - burrowing into the endometrium",
+            "blastocyst - burrowing into endometrium",
+            "implantation - blastocyst burrowing into endometrium"
           ]
         }
       ],

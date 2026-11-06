@@ -399,9 +399,9 @@ The original habitat artwork is retained; the proposed flat 2D redraw was cancel
 
 `/test` → **Anatomy Lab** → **Reproductive System** → choose the
 **Early Development Models** set → **Multiple choice** or **Type in answer**.
-All eight photos, including the 16-cell stage, belong to one set and are mixed together. This set asks only “Which stage is shown in this model?” for each of the eight photos. This authored section
+All eight photos, including the 16-cell stage, belong to one set and are mixed together. This set uses short Quizlet-style identification questions for each of the eight photos, with dash-separated stage/process answers. This authored section
 works without saved database questions; **Other saved lab categories** retains
-access to existing lab quizzes. Typed mode accepts curated biological synonyms.
+access to existing lab quizzes. Typed mode accepts curated biological synonyms, punctuation variations, and minor spelling mistakes. Cell counts must still match (2-cell and 4-cell are different answers).
 Questions use the same public-card, owner-only answer controls and Merit Coin rewards.
 
 All eight original user-supplied photographs are installed in `study-assets/lab-models/`
