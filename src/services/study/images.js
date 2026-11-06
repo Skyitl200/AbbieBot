@@ -24,10 +24,7 @@ export function addLectureImage(payload, question) {
     const figure = imageForQuestion(question);
     if (!figure) return { ...payload, attachments: [], files: [] };
     const embed = payload.embeds[0];
-    embed.setImage(`attachment://${figure.asset.file}`).addFields({
-        name: '📖 Lecture reference figure',
-        value: `${figure.source.file.replace(/\.pptx$/, '')} • slide ${figure.source.slide}\n${figure.match === 'cited-slide' ? 'Figure from a cited slide.' : 'Related figure; may show broader context.'}\nLecture: Ahmed Katsha, RVCC. OpenStax / Rice University, CC BY 4.0, except where credited in the original figure.`,
-    });
+    embed.setImage(`attachment://${figure.asset.file}`);
     return { ...payload, attachments: [], files: [new AttachmentBuilder(figure.path, { name: figure.asset.file })] };
 }
 export function lecturePreview(question) {

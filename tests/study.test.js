@@ -986,3 +986,15 @@ test('public questions keep answers and rewards private and reject spectators', 
     assert.equal(feedback.flags, 64);
     assert.match(feedback.embeds[0].toJSON().title, /Correct/);
 });
+
+test('multiple choice letters match shuffled answer buttons and preserve grading values', () => {
+    const question = { ...mc, options: ['First', 'Second', 'Third', 'Fourth'], correct: [2] };
+    const session = createStudySession('letters-guild', 'letters-user', [question], topic.id);
+    const payload = questionMessage(session);
+    const buttons = payload.components.flatMap(row => row.toJSON().components);
+    assert.deepEqual(buttons.map(button => button.label), ['A', 'B', 'C', 'D']);
+    session.displayOrder.forEach((value, index) => {
+        assert.ok(payload.embeds[0].toJSON().description.includes(`**${String.fromCharCode(65 + index)}.** ${question.options[value]}`));
+        assert.equal(buttons[index].custom_id.split(':').at(-1), String(value));
+    });
+});

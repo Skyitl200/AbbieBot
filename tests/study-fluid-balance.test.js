@@ -104,7 +104,7 @@ test('fluid slide clarifications distinguish blood pH, buffer capacity, tonicity
     }
 });
 
-test('fluid questions retain topic provenance while cross-lecture figures show their actual citations', async () => {
+test('fluid questions retain internal topic and figure provenance without displaying lecture references', async () => {
     const bank = (await loadQuestionBanks()).get('fluid_balance');
     const illustrated = new Set([5, 6, 7, 8, 9, 12, 14, 15, 19, 20, 21, 22, 23, 28, 29]);
     let cross = 0;
@@ -134,6 +134,8 @@ test('fluid questions retain topic provenance while cross-lecture figures show t
     assert.equal(crossSources.size, 2);
     const q = bank.find(q => q.figure_source === 'Respiratory System Chapter 22.pptx');
     const payload = lecturePreview(q);
-    assert.match(payload.embeds[0].toJSON().fields.at(-1).value, /Respiratory System Chapter 22.*slide 47/s);
+    assert.equal(payload.embeds[0].toJSON().fields, undefined);
+    assert.equal(imageForQuestion(q).source.file, 'Respiratory System Chapter 22.pptx');
+    assert.equal(imageForQuestion(q).source.slide, 47);
     assert.equal(payload.files[0].attachment, imageForQuestion(q).path);
 });

@@ -63,3 +63,14 @@ test('returning to classes clears the previous lecture attachment', async () => 
     assert.deepEqual(payload.attachments, []);
     assert.deepEqual(payload.files, []);
 });
+
+test('question images display without lecture reference text', async () => {
+    const banks = await loadQuestionBanks();
+    const question = [...banks.values()].flat().find(q => imageForQuestion(q));
+    const session = createStudySession('reference-guild', 'reference-user', [question], 'random');
+    for (const payload of [questionMessage(session), resultMessage(session, true)]) {
+        const embed = payload.embeds[0].toJSON();
+        assert.ok(embed.image.url.startsWith('attachment://'));
+        assert.ok(!(embed.fields || []).some(field => /lecture reference|cited slide|RVCC/i.test(field.name + field.value)));
+    }
+});

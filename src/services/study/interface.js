@@ -85,9 +85,9 @@ export function questionMessage(session) {
         description += '\n\nSelect **Enter answer** to type the missing term.';
         components.push(row(button(actionId(session, 'blank'), 'Enter answer')));
     } else {
-        description += '\n\n' + session.displayOrder.map((value, i) => `**${i + 1}.** ${q.options[value]}`).join('\n');
+        description += '\n\n' + session.displayOrder.map((value, i) => `**${q.type === 'multiple_choice' ? String.fromCharCode(65 + i) : i + 1}.** ${q.options[value]}`).join('\n');
         if (q.type === 'multiple_choice') {
-            const buttons = session.displayOrder.map((value, i) => button(`${actionId(session, 'choice')}:${value}`, `Answer ${i + 1}`));
+            const buttons = session.displayOrder.map((value, i) => button(`${actionId(session, 'choice')}:${value}`, String.fromCharCode(65 + i)));
             for (let i = 0; i < buttons.length; i += 5) components.push(row(...buttons.slice(i, i + 5)));
         } else {
             description += '\n\nChoose items **one at a time** in the requested order. You can undo a choice before submitting.';
