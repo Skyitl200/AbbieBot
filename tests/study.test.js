@@ -802,8 +802,9 @@ function walletFixture(initial = 3387) {
     return { client, balance: () => data.wallet, data: () => data, writes: () => writes };
 }
 
-test('every question format earns ten coins once and displays the wallet and progress', async () => {
+test('every question format earns 5–30 coins once and displays the wallet and progress', async () => {
     const wallet = walletFixture();
+    let total = 0;
     for (const q of [mc, blank, order]) {
         const session = createStudySession('g', 'u', [q], topic.id);
         let action; let extras = {}; let choice;
@@ -817,13 +818,15 @@ test('every question format earns ten coins once and displays the wallet and pro
             handleStudyInteraction(fakeInteraction('', extras), wallet.client, args),
         ]);
         assert.equal(session.score, 1);
-        assert.equal(session.moneyEarned, 10);
+        assert.equal(session.moneyEarned, session.reward.amount);
+    assert.ok(session.reward.amount >= 5 && session.reward.amount <= 30);
         const message = interaction.calls.find(call => call[0] === 'editReply')[1].embeds[0].toJSON();
-        assert.match(message.description, /\+10 Merit Coins/);
+        assert.ok(message.description.includes(`+${session.reward.amount} Merit Coins`));
+        total += session.reward.amount;
         assert.match(message.description, /New Balance/);
         assert.ok(message.fields.some(field => field.name === 'Quiz Progress' && /Incorrect: \*\*0/.test(field.value)));
     }
-    assert.equal(wallet.balance(), 3417);
+    assert.equal(wallet.balance(), 3387 + total);
     assert.equal(wallet.writes(), 3);
     assert.equal(wallet.data().bank, 500);
     assert.equal(wallet.data().inventory.book, 2);
@@ -854,14 +857,17 @@ test('coin-save failures are retryable without regrading or duplicate awards aft
     const interaction = fakeInteraction('');
     await handleStudyInteraction(interaction, wallet.client, ['choice', 'u', session.id, '0', '0', '1']);
     assert.equal(session.reward.status, 'failed');
+    const originalAmount = session.reward.amount;
     assert.equal(session.moneyEarned, 0);
-    assert.equal(wallet.balance(), 3397);
+    assert.equal(wallet.balance(), 3387 + session.reward.amount);
     assert.throws(() => nextStudyQuestion(session), /not saved yet/);
     assert.match(interaction.calls.at(-1)[1].components[0].toJSON().components[0].label, /Retry coins/);
     await handleStudyInteraction(fakeInteraction(''), wallet.client, ['reward', 'u', session.id, '0', String(session.revision)]);
     assert.equal(session.reward.status, 'saved');
-    assert.equal(session.moneyEarned, 10);
-    assert.equal(wallet.balance(), 3397);
+    assert.equal(session.reward.amount, originalAmount);
+    assert.equal(session.moneyEarned, session.reward.amount);
+    assert.ok(session.reward.amount >= 5 && session.reward.amount <= 30);
+    assert.equal(wallet.balance(), 3387 + session.reward.amount);
     assert.equal(wallet.writes(), 1);
     assert.equal(session.score, 1);
     nextStudyQuestion(session);
@@ -881,9 +887,9 @@ test('read failure never resets an existing wallet and concurrent study credits 
     const second = createStudySession('g', 'u', [mc], topic.id);
     submitStudyAnswer(second, [1]);
     await Promise.all([settleStudyReward(first, wallet.client), settleStudyReward(second, wallet.client)]);
-    assert.equal(wallet.balance(), 3407);
-    assert.equal(first.moneyEarned, 10);
-    assert.equal(second.moneyEarned, 10);
+    assert.equal(wallet.balance(), 3387 + first.reward.amount + second.reward.amount);
+    assert.equal(first.moneyEarned, first.reward.amount);
+    assert.equal(second.moneyEarned, second.reward.amount);
 });
 
 test('database fallback never reports persistent coins and DM practice can still advance', async () => {
@@ -1010,4 +1016,15 @@ test('ordering questions also use letters in options, selection menus, and chose
     chooseOrderItem(session, first);
     message = questionMessage(session);
     assert.match(message.embeds[0].toJSON().description, /\*\*Your order:\*\* A/);
+});
+
+test('Merit Coin weights cover 5 through 30 and strictly favor every higher amount', async () => {
+    const { rollMeritReward } = await import('../src/utils/meritRewards.js');
+    const counts = new Map();
+    for (let roll = 0; roll < 351; roll++) {
+        const amount = rollMeritReward(max => { assert.equal(max, 351); return roll; });
+        counts.set(amount, (counts.get(amount) || 0) + 1);
+    }
+    assert.equal(counts.size, 26);
+    for (let amount = 5; amount <= 30; amount++) assert.equal(counts.get(amount), amount - 4);
 });

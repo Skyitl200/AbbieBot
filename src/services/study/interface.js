@@ -27,7 +27,7 @@ export function classMessage(ownerId) {
             description: course.description || `Choose a ${course.label} category`,
         })));
     return { content: '', embeds: [new EmbedBuilder().setTitle('📚 Study Classes')
-        .setDescription('Choose your class, then a category and session length. Correct answers earn **10 Merit Coins**.')], components: [row(menu)] };
+        .setDescription('Choose your class, then a category and session length. Correct answers earn **5–30 Merit Coins**, with higher amounts more likely.')], components: [row(menu)] };
 }
 
 export function classCategoriesMessage(ownerId, classId, categories, requestedPage = 0) {

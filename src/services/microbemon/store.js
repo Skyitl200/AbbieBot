@@ -1,3 +1,4 @@
+import { awardCatchReward, COIN_EMOJI, BALANCE_EMOJI } from '../study/rewards.js';
 import { MicrobemonError } from './errors.js';
 import pgConfig from '../../config/database/postgres.js';
 import { newProfile, normalizeProfile } from './engine.js';
@@ -17,7 +18,13 @@ export async function withProfile(client, guildId, userId, operation) {
         const profile = result.rows[0]?.value || newProfile();
         if (profile.version !== 1 || !Array.isArray(profile.pets)) throw new MicrobemonError('Saved Microbemon data could not be loaded safely.');
         normalizeProfile(profile);
-        const value = await operation(profile);
+        const existingPets = new Set(profile.pets.map(pet => pet.id));
+        let value = await operation(profile);
+        for (const pet of profile.pets.filter(pet => !existingPets.has(pet.id))) {
+            const reward = await awardCatchReward(connection, client, guildId, userId, pet.id);
+            pet.catchReward = reward;
+            value = `${value || ''}\n${COIN_EMOJI} You earned **+${reward.amount} Merit Coins**!\n${BALANCE_EMOJI} New Balance: **${reward.balance.toLocaleString()} Merit Coins**`;
+        }
         await connection.query(`INSERT INTO ${pgConfig.tables.temp_data} (key, value, expires_at)
             VALUES ($1, $2::jsonb, NULL) ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value, expires_at = NULL`,
         [key, JSON.stringify(profile)]);

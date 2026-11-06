@@ -12,18 +12,25 @@ const turn = p => ({ encounterId: p.encounter.id, revision: p.encounter.revision
 
 // A simple transactional adapter permits testing failures without a Discord token or live DB.
 function storage() {
-    const data = new Map(); const calls = []; let fail = false;
+    const data = new Map(); const calls = []; let fail = false; let failProfile = false; let balance = 100; let receipts = new Set();
     const client = { db: { pool: { connect: async () => {
-        let pending;
+        let pending; let pendingBalance = balance; const pendingReceipts = new Set(receipts);
         return { query: async (sql, params) => {
             calls.push({ sql, params });
             if (sql.startsWith('SELECT value')) return { rows: data.has(params[0]) ? [{ value: structuredClone(data.get(params[0])) }] : [] };
-            if (sql.startsWith('INSERT')) { if (fail) throw new Error('write failed'); pending = [params[0], JSON.parse(params[1])]; }
-            if (sql === 'COMMIT' && pending) data.set(...pending);
+            if (sql.trimStart().startsWith('INSERT')) {
+                if (fail) throw new Error('write failed');
+                if (sql.includes('RETURNING balance')) {
+                    if (!pendingReceipts.has(params[3])) { pendingBalance += params[2]; pendingReceipts.add(params[3]); }
+                    return { rows: [{ balance: pendingBalance }] };
+                }
+                if (sql.includes('expires_at')) { if (failProfile) throw new Error('profile write failed'); pending = [params[0], JSON.parse(params[1])]; }
+            }
+            if (sql === 'COMMIT' && pending) { data.set(...pending); balance = pendingBalance; receipts = pendingReceipts; }
             return { rows: [] };
         }, release: () => calls.push({ sql: 'RELEASE' }) };
     } } } };
-    return { client, data, calls, fail: () => { fail = true; } };
+    return { client, data, calls, balance: () => balance, failProfile: () => { failProfile = true; }, fail: () => { fail = true; } };
 }
 
 test('all 100 encounter rolls match the advertised tier weights', () => {
@@ -290,6 +297,8 @@ test('a catch opens the Microbedeck on the newly saved pet, including shiny port
     const embed = message.embeds[0].toJSON();
     assert.match(embed.title, /Microbedeck/);
     assert.ok(embed.description.includes('Caught a shiny'));
+    assert.ok(embed.description.includes(`+${saved.pets[1].catchReward.amount} Merit Coins`));
+    assert.ok(embed.description.includes(`New Balance: **${s.balance()}`));
     assert.equal(embed.fields.find(field => field.name === 'Microbedeck').value, '2 / 2');
     assert.match(embed.image.url, /solium-shiny.png/);
     assert.ok(embed.fields.find(field => field.name.includes('Know your Microbemon')));
@@ -604,4 +613,50 @@ test('jumping to any of the 20 boxes works and release/switch controls are owner
         await handleMicrobemon({ user: { id: 'other' }, reply: async value => { response = value; } }, s.client, ['owner', action, 'owned-pet']);
         assert.equal(response.flags, 64);
     }
+});
+
+test('catch reward and new balance commit once with the pet and survive reload', async () => {
+    const s = storage();
+    const saved = await withProfile(s.client, 'guild', 'user', p => {
+        act(p, 'explore', { now, rng: rolls(0, 0, 0, 0) });
+        return act(p, 'catch', { ...turn(p), rng: rolls(0) });
+    });
+    const reward = saved.profile.pets[0].catchReward;
+    assert.ok(reward.amount >= 5 && reward.amount <= 30);
+    assert.equal(reward.balance, 100 + reward.amount);
+    assert.equal(s.balance(), reward.balance);
+    assert.ok(saved.value.includes(`+${reward.amount} Merit Coins`));
+    assert.ok(saved.value.includes(`New Balance: **${reward.balance}`));
+    const reload = await withProfile(s.client, 'guild', 'user', () => {});
+    assert.deepEqual(reload.profile.pets[0].catchReward, reward);
+    assert.equal(s.balance(), reward.balance);
+});
+
+test('wallet failure rolls back the catch and awards no coins', async () => {
+    const s = storage();
+    await withProfile(s.client, 'guild', 'user', p => act(p, 'explore', { now, rng: rolls(0, 0, 0, 0) }));
+    s.fail();
+    await assert.rejects(withProfile(s.client, 'guild', 'user', p => act(p, 'catch', { ...turn(p), rng: rolls(0) })), /write failed/);
+    assert.equal(s.balance(), 100);
+    assert.equal(s.data.get('microbemon:guild:user').pets.length, 0);
+});
+
+test('a profile-save failure after wallet credit rolls back both coins and pet', async () => {
+    const s = storage();
+    await withProfile(s.client, 'guild', 'user', p => act(p, 'explore', { now, rng: rolls(0, 0, 0, 0) }));
+    s.failProfile();
+    await assert.rejects(withProfile(s.client, 'guild', 'user', p => act(p, 'catch', { ...turn(p), rng: rolls(0) })), /profile write failed/);
+    assert.ok(s.calls.some(call => call.sql.includes('RETURNING balance')));
+    assert.equal(s.balance(), 100);
+    assert.equal(s.data.get('microbemon:guild:user').pets.length, 0);
+    assert.ok(s.data.get('microbemon:guild:user').encounter);
+});
+
+test('failed capture attempts do not award coins', async () => {
+    const s = storage();
+    await withProfile(s.client, 'guild', 'user', p => act(p, 'explore', { now, rng: rolls(0, 0, 0, 0) }));
+    const result = await withProfile(s.client, 'guild', 'user', p => act(p, 'catch', { ...turn(p), rng: rolls(99) }));
+    assert.equal(s.balance(), 100);
+    assert.equal(result.profile.pets.length, 0);
+    assert.ok(!result.value.includes('Merit Coins'));
 });

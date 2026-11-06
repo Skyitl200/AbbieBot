@@ -1,8 +1,7 @@
 import { DEFAULT_ECONOMY_DATA } from '../../utils/constants.js';
 import { normalizeEconomyData } from '../../utils/schemas.js';
 import pgConfig from '../../config/database/postgres.js';
-
-export const STUDY_REWARD = 10;
+import { rollMeritReward } from '../../utils/meritRewards.js';
 export const COIN_EMOJI = '<a:MeritCoins:1553709164012900404>';
 export const BALANCE_EMOJI = '<a:ManyMerits:1553716009456898098>';
 const walletLocks = new Map();
@@ -71,7 +70,7 @@ export function settleStudyReward(session, client) {
     if (!session.answered) throw new Error('Answer the current question first.');
     if (session.reward?.status === 'saved') return Promise.resolve(session.reward);
     if (session.reward?.status === 'pending') return session.reward.promise;
-    const reward = { status: 'pending', amount: session.lastCorrect ? STUDY_REWARD : 0, balance: null };
+    const reward = { status: 'pending', amount: session.reward?.amount ?? (session.lastCorrect ? rollMeritReward() : 0), balance: null };
     session.reward = reward;
     reward.promise = (async () => {
         try {
@@ -88,4 +87,16 @@ export function settleStudyReward(session, client) {
         return reward;
     })();
     return reward.promise;
+}
+
+// Use the caller's transaction so the catch and wallet credit commit together.
+export async function awardCatchReward(connection, client, guildId, userId, petId) {
+    const amount = rollMeritReward();
+    const starting = client.config?.economy?.startingBalance ?? DEFAULT_ECONOMY_DATA.wallet;
+    if (!Number.isSafeInteger(starting) || starting < 0 || starting > Number.MAX_SAFE_INTEGER - amount) throw new Error('Invalid starting wallet balance');
+    await connection.query(`INSERT INTO ${pgConfig.tables.guilds} (id) VALUES ($1) ON CONFLICT (id) DO NOTHING`, [guildId]);
+    await connection.query(`INSERT INTO ${pgConfig.tables.users} (id) VALUES ($1) ON CONFLICT (id) DO NOTHING`, [userId]);
+    const result = await connection.query(STUDY_AWARD_SQL, [guildId, userId, amount, `microbemon:${petId}`, starting]);
+    if (!result.rows.length) throw new Error('Unable to save catch reward');
+    return { amount, balance: Number(result.rows[0].balance) };
 }

@@ -311,8 +311,11 @@ Registration upserts only `/microbemon`; it does not replace unrelated server
 commands. Restart after joining a new server to register the command there.
 Normal `/test` study sessions are unchanged. The first version has 19 organisms
 from the lab notes, easy study battles, three free capture attempts per encounter,
-collection browsing, nicknames, and a favorite companion. It does not spend or
-award Merit Coins. Every organism has a standalone portrait in its own habitat or life-cycle
+collection browsing, nicknames, and a favorite companion. Each successful catch awards
+5–30 Merit Coins and displays the new wallet balance; correct `/test` answers use
+the same range. Higher amounts have higher odds (weight = amount minus 4).
+Catch rewards and pets commit together, and quiz reward retries preserve the original
+amount without awarding twice. Microbemon does not spend Merit Coins. Every organism has a standalone portrait in its own habitat or life-cycle
 setting, plus a separate shiny portrait. The same species/variant appears in
 encounters and collections. Parasite environment labels distinguish outdoor
 transmission scenes from the adult host habitat. These are original stylized
