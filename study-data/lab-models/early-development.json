@@ -1,0 +1,421 @@
+{
+  "course": "Anatomy Lab",
+  "lectureReference": "Reproductive System, Chapter 26",
+  "category": "Reproductive System",
+  "modelGroup": "Early Development Models",
+  "source": "Eight individual model photographs supplied in chat, associated with Quizlet set 1061983841",
+  "models": [
+    {
+      "id": "oocyte",
+      "name": "Secondary oocyte and surrounding layers",
+      "questions": [
+        {
+          "id": "lab-early-oocyte-1",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which cell is shown surrounded by protective layers as sperm approach?",
+          "options": [
+            "Secondary oocyte",
+            "Morula",
+            "Four-cell embryo",
+            "Implanting blastocyst"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The ovulated human cell is a secondary oocyte. Fertilization involves sperm passing through its surrounding layers.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Secondary oocyte",
+            "Secondary oocyte and surrounding layers"
+          ]
+        },
+        {
+          "id": "lab-early-oocyte-2",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which layer lies between the oocyte membrane and the outer corona radiata?",
+          "options": [
+            "Zona pellucida",
+            "Endometrium",
+            "Myometrium",
+            "Perimetrium"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The zona pellucida surrounds the oocyte; the corona radiata lies outside it.",
+          "typedQuestion": "Which layer lies between the oocyte membrane and the outer corona radiata?",
+          "typedAnswers": [
+            "zona pellucida"
+          ]
+        }
+      ],
+      "photoNumber": 1,
+      "expectedImageFile": "01-oocyte.jpg"
+    },
+    {
+      "id": "sperm-entry",
+      "name": "Sperm entry",
+      "questions": [
+        {
+          "id": "lab-early-sperm-entry-1",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which process is illustrated by sperm entering the oocyte?",
+          "options": [
+            "Fertilization",
+            "Implantation",
+            "Gastrulation",
+            "Four-cell cleavage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Sperm entry is part of fertilization and triggers events including completion of the secondary oocyte’s second meiotic division.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Fertilization",
+            "Sperm entry"
+          ]
+        },
+        {
+          "id": "lab-early-sperm-entry-2",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Where does fertilization most commonly occur?",
+          "options": [
+            "Ampulla of the uterine tube",
+            "Endometrium of the uterus",
+            "Cervix",
+            "Vagina"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The ampulla, a widened region of the uterine tube, is the usual site of fertilization.",
+          "typedQuestion": "In which region of the uterine tube does fertilization usually occur?",
+          "typedAnswers": [
+            "ampulla",
+            "ampulla of the uterine tube",
+            "ampulla of uterine tube",
+            "ampulla of the fallopian tube"
+          ]
+        }
+      ],
+      "photoNumber": 2,
+      "expectedImageFile": "02-sperm-entry.jpg"
+    },
+    {
+      "id": "pronuclei",
+      "name": "Pronuclear stage",
+      "questions": [
+        {
+          "id": "lab-early-pronuclei-1",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "The model shows two pronuclei approaching each other. What do these represent?",
+          "options": [
+            "Maternal and paternal genetic contributions",
+            "Two fully separated blastomeres",
+            "The future placenta and uterus",
+            "Two layers of the uterine wall"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "After sperm entry, the maternal and paternal pronuclei approach each other. Their chromosomes come together for the first mitotic division; this is distinct from the completed two-cell stage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Maternal and paternal genetic contributions",
+            "Pronuclear stage"
+          ]
+        },
+        {
+          "id": "lab-early-pronuclei-2",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Where are these pronuclei located?",
+          "options": [
+            "Inside the fertilized egg",
+            "Inside the endometrium",
+            "Inside the cervical canal",
+            "Inside separate ovarian follicles"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Both pronuclei are within the same fertilized egg before the first cleavage.",
+          "typedQuestion": "Before the first cleavage, the maternal and paternal pronuclei are inside which single cell?",
+          "typedAnswers": [
+            "zygote",
+            "fertilized egg",
+            "fertilised egg",
+            "fertilized oocyte",
+            "fertilised oocyte"
+          ]
+        }
+      ],
+      "photoNumber": 3,
+      "expectedImageFile": "03-pronuclei.jpg"
+    },
+    {
+      "id": "zygote",
+      "name": "One-cell zygote",
+      "questions": [
+        {
+          "id": "lab-early-zygote-1",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which stage follows fertilization and precedes the first cleavage?",
+          "options": [
+            "One-cell zygote",
+            "Two-cell embryo",
+            "Morula",
+            "Implanting blastocyst"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Fertilization produces a zygote. Its first cleavage produces the two-cell stage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "One-cell zygote",
+            "One-cell zygote"
+          ]
+        },
+        {
+          "id": "lab-early-zygote-2",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which process will produce two blastomeres from the zygote?",
+          "options": [
+            "Mitotic cleavage",
+            "Implantation",
+            "Ovulation",
+            "Gastrulation"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Cleavage consists of mitotic divisions that produce progressively smaller blastomeres.",
+          "typedQuestion": "What is the name of the series of early mitotic divisions that produces blastomeres?",
+          "typedAnswers": [
+            "cleavage",
+            "mitotic cleavage",
+            "cleavage divisions"
+          ]
+        }
+      ],
+      "photoNumber": 4,
+      "expectedImageFile": "04-zygote.jpg"
+    },
+    {
+      "id": "two-cell",
+      "name": "Two-cell stage",
+      "questions": [
+        {
+          "id": "lab-early-two-cell-1",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which early developmental stage is shown by the two visible blastomeres?",
+          "options": [
+            "Two-cell stage",
+            "Four-cell stage",
+            "Morula",
+            "Blastocyst"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The first cleavage divides the zygote into two blastomeres without substantially increasing its overall size.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Two-cell stage",
+            "Two-cell stage"
+          ]
+        },
+        {
+          "id": "lab-early-two-cell-2",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Where does cleavage normally begin?",
+          "options": [
+            "Uterine tube",
+            "Cervical canal",
+            "Vagina",
+            "Ovarian cortex"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Fertilization usually occurs in the uterine tube, and early cleavage begins as the embryo travels toward the uterus.",
+          "typedQuestion": "In which tube does early cleavage normally begin?",
+          "typedAnswers": [
+            "uterine tube",
+            "fallopian tube",
+            "oviduct",
+            "the uterine tube",
+            "the fallopian tube"
+          ]
+        }
+      ],
+      "photoNumber": 5,
+      "expectedImageFile": "05-two-cell.jpg"
+    },
+    {
+      "id": "four-cell",
+      "name": "Four-cell stage",
+      "questions": [
+        {
+          "id": "lab-early-four-cell-1",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which stage is shown by the four visible blastomeres?",
+          "options": [
+            "Four-cell stage",
+            "Two-cell stage",
+            "Blastocyst",
+            "Gastrula"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "A further round of cleavage after the two-cell stage produces four blastomeres.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Four-cell stage",
+            "Four-cell stage"
+          ]
+        },
+        {
+          "id": "lab-early-four-cell-2",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What normally happens to individual blastomere size during early cleavage?",
+          "options": [
+            "It decreases while the embryo’s overall size stays roughly similar",
+            "It doubles after every division",
+            "It remains constant while the embryo doubles in diameter",
+            "It increases until each cell is larger than the original oocyte"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Early cleavage partitions the original cytoplasm into smaller cells rather than producing major growth of the entire embryo.",
+          "typedQuestion": "During cleavage, does the size of each blastomere generally increase or decrease?",
+          "typedAnswers": [
+            "decrease",
+            "decreases",
+            "smaller",
+            "gets smaller",
+            "decreasing"
+          ]
+        }
+      ],
+      "photoNumber": 6,
+      "expectedImageFile": "06-four-cell.jpg"
+    },
+    {
+      "id": "sixteen-cell",
+      "name": "Sixteen-cell stage",
+      "questions": [
+        {
+          "id": "lab-early-sixteen-cell-1",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which developmental stage is represented by this cutaway model?",
+          "options": [
+            "Sixteen-cell stage",
+            "Four-cell stage",
+            "Two-cell stage",
+            "Implanting blastocyst"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The base identifies this as the sixteen-cell stage. The cutaway exposes only some blastomeres, so counting the visible sections alone would be misleading.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Sixteen-cell stage",
+            "Sixteen-cell stage"
+          ]
+        },
+        {
+          "id": "lab-early-sixteen-cell-2",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "A solid ball of approximately 16–32 blastomeres is generally called what?",
+          "options": [
+            "Morula",
+            "Zygote",
+            "Gastrula",
+            "Secondary oocyte"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The morula is a solid cluster of blastomeres. A blastocyst develops a fluid-filled cavity and distinct inner and outer cell populations.",
+          "typedQuestion": "What is a solid ball of approximately 16–32 blastomeres called?",
+          "typedAnswers": [
+            "morula",
+            "a morula"
+          ]
+        }
+      ],
+      "photoNumber": 7,
+      "expectedImageFile": "07-sixteen-cell.jpg"
+    },
+    {
+      "id": "implantation",
+      "name": "Blastocyst implantation",
+      "questions": [
+        {
+          "id": "lab-early-implantation-1",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What process is shown as the blastocyst embeds in the uterine lining?",
+          "options": [
+            "Implantation",
+            "Ovulation",
+            "First cleavage",
+            "Sperm penetration"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "During implantation, the blastocyst attaches to and begins embedding within the endometrium.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Implantation",
+            "Blastocyst implantation"
+          ]
+        },
+        {
+          "id": "lab-early-implantation-2",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which tissue is the blastocyst embedding into?",
+          "options": [
+            "Endometrium",
+            "Myometrium",
+            "Ovarian cortex",
+            "Cervical cartilage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The endometrium is the inner lining of the uterus and the normal site of implantation.",
+          "typedQuestion": "Which uterine tissue does the blastocyst normally embed into?",
+          "typedAnswers": [
+            "endometrium",
+            "the endometrium",
+            "uterine endometrium"
+          ]
+        }
+      ],
+      "photoNumber": 8,
+      "expectedImageFile": "08-implantation.jpg"
+    }
+  ]
+}

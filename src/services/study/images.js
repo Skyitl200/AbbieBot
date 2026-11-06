@@ -1,3 +1,4 @@
+import { labModelImage } from './labModels.js';
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { AttachmentBuilder, EmbedBuilder } from 'discord.js';
@@ -12,6 +13,7 @@ export function studyImageIndex() {
     return cached;
 }
 export function imageForQuestion(question) {
+    if (question.labModelId) return labModelImage(question);
     const index = studyImageIndex();
     const reference = index?.questions?.[question.id];
     const asset = index?.assets?.[reference?.asset];

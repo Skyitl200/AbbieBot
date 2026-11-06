@@ -1,3 +1,4 @@
+import { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions } from './labModels.js';
 import {
     ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, MessageFlags,
     ModalBuilder, StringSelectMenuBuilder, TextInputBuilder, TextInputStyle,
@@ -79,10 +80,10 @@ export function topicMessage(ownerId, banks) {
 
 export function questionMessage(session) {
     const q = session.questions[session.index];
-    let description = q.question;
+    let description = q.labModelId && !q.requiresModelImage ? `**Model: ${q.modelName}**\n\n${q.question}` : q.question;
     const components = [];
     if (q.type === 'fill_blank') {
-        description += '\n\nSelect **Enter answer** to type the missing term.';
+        description += q.labModelId ? '\n\nSelect **Enter answer** to type your answer.' : '\n\nSelect **Enter answer** to type the missing term.';
         components.push(row(button(actionId(session, 'blank'), 'Enter answer')));
     } else {
         description += '\n\n' + session.displayOrder.map((value, i) => `**${String.fromCharCode(65 + i)}.** ${q.options[value]}`).join('\n');
@@ -171,12 +172,36 @@ export async function handleStudyInteraction(interaction, client, args) {
             const classId = action === 'class' ? interaction.values[0] : token;
             if (!CLASS_BY_ID.has(classId)) throw new Error('Unknown study class');
             await interaction.deferUpdate();
-            if (classId === 'ap_lecture') {
+            if (classId === 'ap_lab' && action === 'class') {
+                await editStudyReply(interaction, labCategoryMessage(ownerId));
+            } else if (classId === 'ap_lecture') {
                 await editStudyReply(interaction, topicMessage(ownerId, await loadQuestionBanks()));
             } else {
                 const categories = await loadClassCategories(client, classId);
                 await editStudyReply(interaction, classCategoriesMessage(ownerId, classId, categories, action === 'classpage' ? Number(index) : 0));
             }
+            return;
+        }
+        if (action === 'labcategory') {
+            if ((interaction.values?.[0] || token) !== 'reproductive') throw new Error('Unknown lab category');
+            await interaction.deferUpdate();
+            await editStudyReply(interaction, labModelsMessage(ownerId));
+            return;
+        }
+        if (action === 'labmodels') {
+            const payload = labModeMessage(ownerId, (interaction.values || []).join(','));
+            await interaction.deferUpdate();
+            await editStudyReply(interaction, payload);
+            return;
+        }
+        if (action === 'labmode') {
+            const mode = interaction.values?.[0];
+            const questions = labQuestions(token, mode);
+            const session = createStudySession(interaction.guildId, ownerId, questions, 'lab_reproductive');
+            session.classId = 'ap_lab';
+            session.topicLabel = `Anatomy Lab • Reproductive System • ${mode === 'typed' ? 'Type in' : 'Multiple choice'}`;
+            await interaction.deferUpdate();
+            await publishQuestion(interaction, session);
             return;
         }
         if (action === 'category') {

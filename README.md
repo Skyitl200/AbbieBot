@@ -394,3 +394,20 @@ within 60 seconds. This removes only that pet and its XP. Cancel keeps it. The
 current active battler cannot be released during a live encounter; switch first.
 Release confirmations are bound to the player and pet, expire, and are single-use.
 The original habitat artwork is retained; the proposed flat 2D redraw was cancelled.
+
+### Anatomy Lab model practice
+
+`/test` → **Anatomy Lab** → **Reproductive System** → select one or more
+**Early Development Models** → **Multiple choice** or **Type in answer**.
+Eight models are configured, including the 16-cell stage. This authored section
+works without saved database questions; **Other saved lab categories** retains
+access to existing lab quizzes. Typed mode accepts curated biological synonyms.
+Questions use the same public-card, owner-only answer controls and Merit Coin rewards.
+
+Original photographs have not yet been installed: names, locations, and process
+questions are available now, and the model picker states this limitation.
+Photo-dependent identification questions are excluded until the matching original
+image is present. Place the eight user-supplied photos in `study-assets/lab-models/`
+using each `expectedImageFile` from `study-data/lab-models/early-development.json`.
+They will appear inline automatically, enabling their identification questions.
+Do not substitute generated images for the user's physical models.

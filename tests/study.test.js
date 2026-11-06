@@ -1028,3 +1028,88 @@ test('Merit Coin weights cover 5 through 30 and strictly favor every higher amou
     assert.equal(counts.size, 26);
     for (let amount = 5; amount <= 30; amount++) assert.equal(counts.get(amount), amount - 4);
 });
+
+test('Anatomy Lab opens category → multiple models → answer mode without a database', async () => {
+    const course = fakeInteraction('', { values: ['ap_lab'] });
+    await handleStudyInteraction(course, {}, ['class', 'u']);
+    const category = course.calls.at(-1)[1].components[0].toJSON().components[0];
+    assert.equal(category.custom_id, 'study:labcategory:u');
+    assert.equal(category.options[0].label, 'Reproductive System');
+    const models = fakeInteraction('', { values: ['reproductive'] });
+    await handleStudyInteraction(models, {}, ['labcategory', 'u']);
+    const picker = models.calls.at(-1)[1].components[0].toJSON().components[0];
+    assert.equal(picker.options.length, 8);
+    assert.equal(picker.max_values, 8);
+    assert.ok(picker.options.some(option => option.label === 'Sixteen-cell stage'));
+    const mode = fakeInteraction('', { values: ['0', '7'] });
+    await handleStudyInteraction(mode, {}, ['labmodels', 'u']);
+    const modes = mode.calls.at(-1)[1].components[0].toJSON().components[0];
+    assert.equal(modes.custom_id, 'study:labmode:u:0,7');
+    assert.deepEqual(modes.options.map(option => option.value), ['multiple_choice', 'typed']);
+    for (const answerMode of ['multiple_choice', 'typed']) {
+        const start = fakeInteraction('', { values: [answerMode] });
+        await handleStudyInteraction(start, {}, ['labmode', 'u', '0,7']);
+        const publicQuestion = start.calls.find(([type]) => type === 'followUp')[1];
+        assert.equal(publicQuestion.flags, 0);
+        const control = publicQuestion.components[0].toJSON().components[0];
+        const args = control.custom_id.split(':').slice(1);
+        const session = getStudySession('g', 'u', args[2]);
+        assert.equal(session.classId, 'ap_lab');
+        assert.ok(session.questions.every(q => ['oocyte', 'implantation'].includes(q.labModelId)));
+        if (answerMode === 'typed') {
+            assert.equal(control.label, 'Enter answer');
+            assert.ok(session.questions.every(q => q.type === 'fill_blank' && !q.options));
+            const question = session.questions.find(q => q.labModelId === 'implantation');
+            assert.equal(gradeQuestion(question, 'THE ENDOMETRIUM'), true);
+            assert.equal(gradeQuestion(question, 'myometrium'), false);
+        } else {
+            assert.deepEqual(publicQuestion.components[0].toJSON().components.map(button => button.label), ['A', 'B', 'C', 'D']);
+        }
+    }
+});
+
+test('lab model selection and mode reject invalid values and foreign users', async () => {
+    const { labQuestions, labModeMessage, LAB_MODELS } = await import('../src/services/study/labModels.js');
+    assert.throws(() => labQuestions('0,0', 'typed'), /Unknown model/);
+    assert.throws(() => labQuestions('8', 'typed'), /Unknown model/);
+    assert.throws(() => labQuestions('', 'typed'), /Unknown model/);
+    assert.throws(() => labQuestions('0', 'invalid'), /Unknown answer mode/);
+    const all = labModeMessage('123456789012345678', '0,1,2,3,4,5,6,7');
+    for (const row of all.components) for (const component of row.toJSON().components) assert.ok(component.custom_id.length <= 100);
+    assert.equal(LAB_MODELS.length, 8);
+    for (const mode of ['multiple_choice', 'typed']) {
+        const questions = labQuestions('0,1,2,3,4,5,6,7', mode);
+        assert.ok(questions.length >= 8);
+        for (const q of questions) {
+            assert.ok(q.explanation);
+            assert.ok(q.labModelId);
+            if (mode === 'typed') assert.ok(q.answers.length);
+            else { assert.equal(q.options.length, 4); assert.equal(gradeQuestion(q, q.correct), true); }
+        }
+    }
+    const stranger = fakeInteraction('', { user: { id: 'someone-else' }, values: ['0'] });
+    await handleStudyInteraction(stranger, {}, ['labmodels', 'u']);
+    assert.match(stranger.calls[0][1].content, /another student/);
+});
+
+test('typed lab questions open a modal and award coins once for a valid synonym', async () => {
+    const { labQuestions } = await import('../src/services/study/labModels.js');
+    const question = labQuestions('7', 'typed')[0];
+    const session = createStudySession('g', 'u', [question], 'lab_reproductive');
+    session.publicQuestionId = 'lab-public-question';
+    const modal = fakeInteraction('');
+    await handleStudyInteraction(modal, {}, ['blank', 'u', session.id, '0', '0']);
+    assert.equal(modal.calls[0][0], 'showModal');
+    const wallet = walletFixture();
+    const interaction = fakeInteraction('', {
+        fields: { getTextInputValue: () => 'The endometrium' },
+        webhook: { async editMessage(id, payload) { assert.equal(id, 'lab-public-question'); assert.deepEqual(payload.components, []); } },
+    });
+    const args = ['typed', 'u', session.id, '0', '0'];
+    await handleStudyInteraction(interaction, wallet.client, args);
+    await handleStudyInteraction(fakeInteraction(''), wallet.client, args);
+    assert.equal(session.score, 1);
+    assert.equal(wallet.writes(), 1);
+    assert.ok(session.moneyEarned >= 5 && session.moneyEarned <= 30);
+    assert.equal(interaction.calls.find(([type]) => type === 'followUp')[1].flags, 64);
+});
