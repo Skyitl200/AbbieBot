@@ -1029,7 +1029,26 @@ test('Merit Coin weights cover 5 through 30 and strictly favor every higher amou
     for (let amount = 5; amount <= 30; amount++) assert.equal(counts.get(amount), amount - 4);
 });
 
-test('Anatomy Lab opens category → multiple models → answer mode without a database', async () => {
+async function withLabPhotoFixtures(run) {
+    const { mkdir, copyFile, access, unlink } = await import('node:fs/promises');
+    const { LAB_MODELS } = await import('../src/services/study/labModels.js');
+    const directory = new URL('../study-assets/lab-models/', import.meta.url);
+    await mkdir(directory, { recursive: true });
+    const created = [];
+    try {
+        for (const model of LAB_MODELS) {
+            const target = new URL(model.expectedImageFile, directory);
+            try { await access(target); }
+            catch {
+                await copyFile(new URL('../study-assets/843e25e2bf357a44015b.jpg', import.meta.url), target);
+                created.push(target);
+            }
+        }
+        await run();
+    } finally { for (const target of created) await unlink(target); }
+}
+
+test('Anatomy Lab opens category → grouped model set → answer mode without a database', async () => withLabPhotoFixtures(async () => {
     const course = fakeInteraction('', { values: ['ap_lab'] });
     await handleStudyInteraction(course, {}, ['class', 'u']);
     const category = course.calls.at(-1)[1].components[0].toJSON().components[0];
@@ -1038,35 +1057,35 @@ test('Anatomy Lab opens category → multiple models → answer mode without a d
     const models = fakeInteraction('', { values: ['reproductive'] });
     await handleStudyInteraction(models, {}, ['labcategory', 'u']);
     const picker = models.calls.at(-1)[1].components[0].toJSON().components[0];
-    assert.equal(picker.options.length, 8);
-    assert.equal(picker.max_values, 8);
-    assert.ok(picker.options.some(option => option.label === 'Sixteen-cell stage'));
-    const mode = fakeInteraction('', { values: ['0', '7'] });
+    assert.equal(picker.options.length, 1);
+    assert.equal(picker.options[0].label, 'Early Development Models');
+    assert.equal(picker.options[0].value, 'early-development');
+    const mode = fakeInteraction('', { values: ['early-development'] });
     await handleStudyInteraction(mode, {}, ['labmodels', 'u']);
     const modes = mode.calls.at(-1)[1].components[0].toJSON().components[0];
-    assert.equal(modes.custom_id, 'study:labmode:u:0,7');
+    assert.equal(modes.custom_id, 'study:labmode:u:early-development');
     assert.deepEqual(modes.options.map(option => option.value), ['multiple_choice', 'typed']);
     for (const answerMode of ['multiple_choice', 'typed']) {
         const start = fakeInteraction('', { values: [answerMode] });
-        await handleStudyInteraction(start, {}, ['labmode', 'u', '0,7']);
+        await handleStudyInteraction(start, {}, ['labmode', 'u', 'early-development']);
         const publicQuestion = start.calls.find(([type]) => type === 'followUp')[1];
         assert.equal(publicQuestion.flags, 0);
         const control = publicQuestion.components[0].toJSON().components[0];
         const args = control.custom_id.split(':').slice(1);
         const session = getStudySession('g', 'u', args[2]);
         assert.equal(session.classId, 'ap_lab');
-        assert.ok(session.questions.every(q => ['oocyte', 'implantation'].includes(q.labModelId)));
+        assert.equal(new Set(session.questions.map(q => q.labModelId)).size, 8);
         if (answerMode === 'typed') {
             assert.equal(control.label, 'Enter answer');
             assert.ok(session.questions.every(q => q.type === 'fill_blank' && !q.options));
             const question = session.questions.find(q => q.labModelId === 'implantation');
-            assert.equal(gradeQuestion(question, 'THE ENDOMETRIUM'), true);
+            assert.equal(gradeQuestion(question, 'IMPLANTATION'), true);
             assert.equal(gradeQuestion(question, 'myometrium'), false);
         } else {
             assert.deepEqual(publicQuestion.components[0].toJSON().components.map(button => button.label), ['A', 'B', 'C', 'D']);
         }
     }
-});
+}));
 
 test('lab model selection and mode reject invalid values and foreign users', async () => {
     const { labQuestions, labModeMessage, LAB_MODELS } = await import('../src/services/study/labModels.js');
@@ -1094,7 +1113,7 @@ test('lab model selection and mode reject invalid values and foreign users', asy
 
 test('typed lab questions open a modal and award coins once for a valid synonym', async () => {
     const { labQuestions } = await import('../src/services/study/labModels.js');
-    const question = labQuestions('7', 'typed')[0];
+    const question = labQuestions('4', 'typed')[0];
     const session = createStudySession('g', 'u', [question], 'lab_reproductive');
     session.publicQuestionId = 'lab-public-question';
     const modal = fakeInteraction('');
@@ -1102,7 +1121,7 @@ test('typed lab questions open a modal and award coins once for a valid synonym'
     assert.equal(modal.calls[0][0], 'showModal');
     const wallet = walletFixture();
     const interaction = fakeInteraction('', {
-        fields: { getTextInputValue: () => 'The endometrium' },
+        fields: { getTextInputValue: () => '2 cell stage' },
         webhook: { async editMessage(id, payload) { assert.equal(id, 'lab-public-question'); assert.deepEqual(payload.components, []); } },
     });
     const args = ['typed', 'u', session.id, '0', '0'];
@@ -1112,4 +1131,32 @@ test('typed lab questions open a modal and award coins once for a valid synonym'
     assert.equal(wallet.writes(), 1);
     assert.ok(session.moneyEarned >= 5 && session.moneyEarned <= 30);
     assert.equal(interaction.calls.find(([type]) => type === 'followUp')[1].flags, 64);
+});
+
+test('grouped set contains exactly eight stage-only questions in both modes', async () => {
+    const { labQuestions, labModeMessage, LAB_MODELS } = await import('../src/services/study/labModels.js');
+    for (const mode of ['multiple_choice', 'typed']) {
+        const questions = labQuestions('early-development', mode);
+        assert.equal(questions.length, 8);
+        assert.equal(new Set(questions.map(q => q.labModelId)).size, 8);
+        assert.ok(questions.every(q => q.requiresModelImage && q.question === 'Which stage is shown in this model?'));
+        for (const q of questions) {
+            const display = questionMessage(createStudySession('stages', 'u', [q], 'lab_reproductive'));
+            assert.ok(!display.embeds[0].toJSON().description.includes(`Model: ${q.modelName}`), 'Do not reveal the stage name before answering');
+        }
+    }
+    assert.ok(LAB_MODELS.every(model => model.questions.length === 1));
+    const menu = labModeMessage('u', 'early-development');
+    assert.match(menu.embeds[0].toJSON().description, /all 8 photos/);
+});
+
+test('a stage-only quiz cannot publish an identification question without its photo', async () => {
+    const { labModelImage } = await import('../src/services/study/labModels.js');
+    if (labModelImage({ labModelId: 'oocyte' })) return;
+    const start = fakeInteraction('', { values: ['multiple_choice'] });
+    await handleStudyInteraction(start, {}, ['labmode', 'u', 'early-development']);
+    assert.equal(start.calls.length, 1);
+    assert.equal(start.calls[0][0], 'reply');
+    assert.equal(start.calls[0][1].flags, 64);
+    assert.match(start.calls[0][1].content, /needs its original photos/);
 });

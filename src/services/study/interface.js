@@ -197,6 +197,7 @@ export async function handleStudyInteraction(interaction, client, args) {
         if (action === 'labmode') {
             const mode = interaction.values?.[0];
             const questions = labQuestions(token, mode);
+            if (questions.some(question => !imageForQuestion(question))) return await privateError(interaction, 'This stage-identification set needs its original photos before it can start. The eight photos are visible in chat but have not been installed as bot image files yet.');
             const session = createStudySession(interaction.guildId, ownerId, questions, 'lab_reproductive');
             session.classId = 'ap_lab';
             session.topicLabel = `Anatomy Lab • Reproductive System • ${mode === 'typed' ? 'Type in' : 'Multiple choice'}`;

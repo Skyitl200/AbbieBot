@@ -397,17 +397,16 @@ The original habitat artwork is retained; the proposed flat 2D redraw was cancel
 
 ### Anatomy Lab model practice
 
-`/test` → **Anatomy Lab** → **Reproductive System** → select one or more
-**Early Development Models** → **Multiple choice** or **Type in answer**.
-Eight models are configured, including the 16-cell stage. This authored section
+`/test` → **Anatomy Lab** → **Reproductive System** → choose the
+**Early Development Models** set → **Multiple choice** or **Type in answer**.
+All eight photos, including the 16-cell stage, belong to one set and are mixed together. Once photos are installed, this set asks only “Which stage is shown in this model?” for each of the eight photos. This authored section
 works without saved database questions; **Other saved lab categories** retains
 access to existing lab quizzes. Typed mode accepts curated biological synonyms.
 Questions use the same public-card, owner-only answer controls and Merit Coin rewards.
 
-Original photographs have not yet been installed: names, locations, and process
-questions are available now, and the model picker states this limitation.
-Photo-dependent identification questions are excluded until the matching original
-image is present. Place the eight user-supplied photos in `study-assets/lab-models/`
+Original photographs have not yet been installed. The set can be selected, but
+starting a quiz is blocked until its original images are available. There are no
+lecture, location, function, or process questions in this set. Place the eight user-supplied photos in `study-assets/lab-models/`
 using each `expectedImageFile` from `study-data/lab-models/early-development.json`.
 They will appear inline automatically, enabling their identification questions.
 Do not substitute generated images for the user's physical models.
