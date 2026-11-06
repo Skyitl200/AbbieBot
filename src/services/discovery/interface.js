@@ -11,26 +11,26 @@ export function inventoryMessage(inventory, user, notice = '') {
     if (user.displayAvatarURL) embed.setThumbnail(user.displayAvatarURL());
     return { embeds: [embed], components: [new ActionRowBuilder().addComponents(
         new ButtonBuilder().setCustomId(`discovery:open:${user.id}:${createOpenToken()}`).setLabel(`Open ${CACHE_NAME}`).setStyle(ButtonStyle.Success).setDisabled(!(Number(inventory[CACHE_ID]) > 0)),
-        new ButtonBuilder().setCustomId(`discovery:rewards:${user.id}`).setLabel('Possible Cache Rewards').setStyle(ButtonStyle.Secondary),
+        new ButtonBuilder().setCustomId(`discovery:rewards:${user.id}`).setLabel('Possible Crate Rewards').setStyle(ButtonStyle.Secondary),
     )] };
 }
 export function cacheRewardsMessage() {
     return { embeds: [new EmbedBuilder({ title: `${CACHE_NAME} · Reward List`, color: 0x2dd4bf,
-        description: 'Each correct /test answer or successful Microbemon catch independently has a **1-in-300** chance to drop a cache. Open one from /inventory to receive **one** reward. Collectibles stay in your inventory permanently; they are cosmetic items, with no server role or pet bonuses.',
+        description: 'Each correct /test answer or successful Microbemon catch independently has a **1-in-300** chance to drop a crate. Open one from /inventory to receive **one** reward. Collectibles stay in your inventory permanently; they are cosmetic items, with no server role or pet bonuses.',
         fields: CACHE_REWARDS.map(item => ({ name: `${item.name} · ${item.rarity} · ${item.weight}%`, value: item.description })),
     })], components: [] };
 }
 export async function handleDiscoveryInteraction(interaction, client, args) {
     const [action, ownerId, token] = args;
-    if (interaction.user.id !== ownerId) return interaction.reply({ content: 'Use /inventory to open your own Discovery Caches.', flags: MessageFlags.Ephemeral });
+    if (interaction.user.id !== ownerId) return interaction.reply({ content: 'Use /inventory to open your own Treasure Crates.', flags: MessageFlags.Ephemeral });
     if (action === 'rewards') return interaction.reply({ ...cacheRewardsMessage(), flags: MessageFlags.Ephemeral });
-    if (action !== 'open') return interaction.reply({ content: 'Open /inventory to use the latest cache buttons.', flags: MessageFlags.Ephemeral });
+    if (action !== 'open') return interaction.reply({ content: 'Open /inventory to use the latest crate buttons.', flags: MessageFlags.Ephemeral });
     await interaction.deferUpdate();
     let result;
     try {
         result = await openDiscoveryCache(client, interaction.guildId, ownerId, token);
     } catch (error) {
-        const message = error instanceof DiscoveryCacheError ? error.message : 'Could not confirm your cache opening. Please try the same button again; an already-saved reward will not be awarded twice.';
+        const message = error instanceof DiscoveryCacheError ? error.message : 'Could not confirm your crate opening. Please try the same button again; an already-saved reward will not be awarded twice.';
         return interaction.followUp({ content: message, flags: MessageFlags.Ephemeral });
     }
     const reward = result.reward;

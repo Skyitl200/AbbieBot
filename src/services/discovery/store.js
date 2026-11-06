@@ -7,15 +7,15 @@ export class DiscoveryCacheError extends Error {}
 export const OPEN_TOKEN_MS = 60 * 60_000;
 export const createOpenToken = (now = Date.now()) => `${now.toString(36)}-${randomUUID()}`;
 export function checkOpenToken(token, now = Date.now()) {
-    if (typeof token !== 'string' || !/^[a-z0-9]+-[a-f0-9-]{36}$/.test(token)) throw new DiscoveryCacheError('This cache button has expired. Open /inventory again.');
+    if (typeof token !== 'string' || !/^[a-z0-9]+-[a-f0-9-]{36}$/.test(token)) throw new DiscoveryCacheError('This crate button has expired. Open /inventory again.');
     const issued = parseInt(token.split('-')[0], 36);
-    if (!Number.isSafeInteger(issued) || issued > now + 30_000 || now - issued >= OPEN_TOKEN_MS) throw new DiscoveryCacheError('This cache button has expired. Open /inventory again.');
+    if (!Number.isSafeInteger(issued) || issued > now + 30_000 || now - issued >= OPEN_TOKEN_MS) throw new DiscoveryCacheError('This crate button has expired. Open /inventory again.');
     return issued;
 }
 
 export async function openDiscoveryCache(client, guildId, userId, token, { now = Date.now(), roll = rollCacheReward } = {}) {
     const issued = checkOpenToken(token, now);
-    if (!guildId) throw new DiscoveryCacheError('Open Discovery Caches inside a server.');
+    if (!guildId) throw new DiscoveryCacheError('Open Treasure Crates inside a server.');
     const pool = client.db?.db?.pool || client.db?.pool;
     if (!pool?.connect || client.db?.useFallback) throw new DiscoveryCacheError('The persistent inventory is unavailable. Please try again later.');
     const connection = await pool.connect();
@@ -36,13 +36,13 @@ export async function openDiscoveryCache(client, guildId, userId, token, { now =
         const data = saved?.data || {};
         const inventory = { ...data.inventory };
         const count = Number(inventory[CACHE_ID] || 0);
-        if (!Number.isSafeInteger(count) || count < 1) throw new DiscoveryCacheError('You do not have a Discovery Cache yet. Correct /test answers and successful Microbemon catches each have a 1-in-300 chance.');
+        if (!Number.isSafeInteger(count) || count < 1) throw new DiscoveryCacheError('You do not have a Treasure Crate yet. Correct /test answers and successful Microbemon catches each have a 1-in-300 chance.');
         const reward = roll();
         inventory[CACHE_ID] = count - 1;
         let balance = Number(data.wallet ?? saved.balance ?? 0);
         if (!Number.isSafeInteger(balance) || balance < 0) throw new DiscoveryCacheError('Your wallet could not be loaded safely.');
         if (reward.id === 'merit_coins') {
-            if (!Number.isSafeInteger(reward.amount) || reward.amount < 5 || reward.amount > 30) throw new DiscoveryCacheError('Invalid cache coin reward');
+            if (!Number.isSafeInteger(reward.amount) || reward.amount < 5 || reward.amount > 30) throw new DiscoveryCacheError('Invalid crate coin reward');
             balance += reward.amount;
         } else {
             const quantity = Number(inventory[reward.id] || 0);

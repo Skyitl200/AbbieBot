@@ -2,7 +2,7 @@ import { randomInt } from 'node:crypto';
 import { rollMeritReward } from '../../utils/meritRewards.js';
 
 export const CACHE_ID = 'discovery_cache';
-export const CACHE_NAME = 'Discovery Cache';
+export const CACHE_NAME = 'Treasure Crate';
 export const DROP_ODDS = 300;
 export const CACHE_ITEM = { id: CACHE_ID, name: CACHE_NAME, description: 'Open from /inventory for one random reward.' };
 // All non-currency rewards are permanent inventory collectibles, not server roles.
@@ -16,7 +16,7 @@ export const CACHE_REWARDS = [
     { id: 'discovery_silver_specimen', name: 'Silver Specimen', rarity: 'Rare', weight: 6, description: 'A silver specimen for your collection.' },
     { id: 'discovery_golden_microbe', name: 'Golden Microbe', rarity: 'Epic', weight: 4, description: 'A gold microbe collectible, separate from Microbemon pets.' },
     { id: 'discovery_prismatic_helix', name: 'Prismatic Helix', rarity: 'Epic', weight: 3, description: 'A shimmering helix collectible.' },
-    { id: 'discovery_guild_relic', name: 'Guild Relic', rarity: 'Legendary', weight: 2, description: 'The rarest permanent collectible in this cache.' },
+    { id: 'discovery_guild_relic', name: 'Guild Relic', rarity: 'Legendary', weight: 2, description: 'The rarest permanent collectible in this crate.' },
 ];
 export const DISCOVERY_ITEMS = [CACHE_ITEM, ...CACHE_REWARDS.filter(item => item.id !== 'merit_coins')];
 export const rollCacheDrop = (rng = randomInt) => rng(DROP_ODDS) === 0;

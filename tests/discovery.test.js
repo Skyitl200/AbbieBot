@@ -68,7 +68,7 @@ test('correct study answers store and notify cache drops once, including lost-re
     assert.equal(wallet.inventory[CACHE_ID], 1);
     assert.equal(wallet.inventory.pickaxe, 1);
     assert.equal(writes, 1);
-    assert.match(resultMessage(session, true).embeds[0].toJSON().description, /You found a \*\*Discovery Cache\*\*/);
+    assert.match(resultMessage(session, true).embeds[0].toJSON().description, /You found a \*\*Treasure Crate\*\*/);
     assert.match(STUDY_AWARD_SQL, /inventory/);
     assert.match(STUDY_AWARD_SQL, /CASE WHEN.*studyRewardReceipts.*THEN 0 ELSE \$6/s);
     const wrong = createStudySession('g', 'wrong', [question], 'random');
@@ -132,7 +132,7 @@ test('opening controls are owner-bound, expire, and show the complete reward lis
     assert.throws(() => checkOpenToken(token, now + OPEN_TOKEN_MS), /expired/);
     assert.throws(() => checkOpenToken('malformed'), /expired/);
     const payload = inventoryMessage({ [CACHE_ID]: 2, discovery_guild_relic: 1, pickaxe: 1 }, { id: 'u', username: 'Student' });
-    assert.match(payload.embeds[0].toJSON().description, /Discovery Cache.*2x/);
+    assert.match(payload.embeds[0].toJSON().description, /Treasure Crate.*2x/);
     assert.match(payload.embeds[0].toJSON().description, /Guild Relic/);
     const buttons = payload.components[0].toJSON().components;
     assert.equal(buttons[0].disabled, false);
@@ -142,7 +142,7 @@ test('opening controls are owner-bound, expire, and show the complete reward lis
     let response;
     await handleDiscoveryInteraction({ user: { id: 'foreign' }, reply: async payload => { response = payload; } }, {}, ['open', 'u', token]);
     assert.equal(response.flags, 64);
-    assert.match(response.content, /own Discovery/);
+    assert.match(response.content, /own Treasure/);
     const { default: route } = await import('../src/interactions/buttons/discovery/discovery.js');
     assert.equal(route.execute, handleDiscoveryInteraction);
 });
@@ -154,6 +154,6 @@ test('a failed message update still confirms the already-saved reward', async ()
         async editReply() { throw new Error('message unavailable'); }, async followUp(payload) { notification = payload; } },
     s.client, ['open', 'u', createOpenToken()]);
     assert.equal(s.data().inventory[CACHE_ID], 0);
-    assert.match(notification.content, /Opened a \*\*Discovery Cache\*\*/);
+    assert.match(notification.content, /Opened a \*\*Treasure Crate\*\*/);
     assert.equal(notification.flags, 64);
 });

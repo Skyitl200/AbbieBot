@@ -1,12 +1,12 @@
-# Discovery Caches
+# Treasure Crates
 
 Each correct `/test` answer and successful Microbemon catch independently has a
-**1-in-300** chance to award a Discovery Cache. Incorrect answers and failed
+**1-in-300** chance to award a Treasure Crate. Incorrect answers and failed
 catches do not roll. Existing Sponsor catch limits still apply.
 
-The activity result announces a saved cache. `/inventory` displays owned caches,
-provides an **Open Discovery Cache** button, and lists **Possible Cache Rewards**.
-Opening consumes one cache and grants one reward:
+The activity result announces a saved crate. `/inventory` displays owned crates,
+provides an **Open Treasure Crate** button, and lists **Possible Crate Rewards**.
+Opening consumes one crate and grants one reward:
 
 | Reward | Rarity | Chance per opening |
 | --- | --- | --- |

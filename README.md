@@ -436,7 +436,7 @@ Run `python scripts/renderRespiratoryPointers.py` (Pillow required for this
 developer-only build step) to rebuild. Tests verify that every pixel outside
 the arrow remains identical to the original photograph.
 
-Discovery Caches drop with a **1-in-300** chance for each correct `/test` answer
+Treasure Crates drop with a **1-in-300** chance for each correct `/test` answer
 and successful Microbemon catch. The activity result announces a saved drop.
-Use `/inventory` to open owned caches or view **Possible Cache Rewards**.
+Use `/inventory` to open owned crates or view **Possible Crate Rewards**.
 See [the reward list and behavior](docs/discovery-caches.md).

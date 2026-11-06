@@ -755,7 +755,7 @@ test('a 1-in-300 cache drop saves with the catch and reports the saved cache', a
     }, { rng: () => 0 });
     assert.equal(saved.profile.pets[0].catchReward.cacheDrop, true);
     assert.equal(s.caches(), 1);
-    assert.match(saved.value, /You found a \*\*Discovery Cache\*\*/);
+    assert.match(saved.value, /You found a \*\*Treasure Crate\*\*/);
     await withProfile(s.client, 'guild', 'user', () => {});
     assert.equal(s.caches(), 1);
     const failed = storage();
