@@ -708,7 +708,7 @@ test('test replaces quiz within the 100-command limit and all interaction routes
     assert.ok(!client.commands.has('quiz'));
     assert.ok([...client.commands.values()].filter(command => !command.guildOnly).length <= 100, 'Discord permits 100 global commands');
     const command = client.commands.get('test').data.toJSON();
-    assert.equal(command.options[0].name, 'other-subjects');
+    assert.deepEqual(command.options ?? [], [], '/test should have no slash-command options');
     for (const type of ['buttons', 'selectMenus', 'modals']) assert.equal(client[type].get('study').execute, handleStudyInteraction);
     for (const name of ['quiz', 'quiznext']) assert.ok(client.buttons.has(name), `Legacy button missing: ${name}`);
     for (const name of ['quiz-subject-select', 'quiz-category-select', 'quiz-count-select']) assert.ok(client.selectMenus.has(name), `Legacy menu missing: ${name}`);
