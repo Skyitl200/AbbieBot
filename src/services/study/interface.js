@@ -103,10 +103,9 @@ export function questionMessage(session) {
             ));
         }
     }
-    if (imageForQuestion(q)) components.push(row(button(actionId(session, 'image'), '📖 Preview figure (may show labels)', ButtonStyle.Secondary)));
     const label = session.topicLabel || TOPIC_BY_ID.get(session.topicId)?.label || 'Random A&P';
-    return { content: '', embeds: [new EmbedBuilder().setTitle(`Question ${session.index + 1} of ${session.questions.length}`)
-        .setDescription(description).setFooter({ text: `${label} • ${TYPE_LABELS[q.type]} • ${q.difficulty} • Score: ${session.score}` })], components };
+    return addLectureImage({ content: '', embeds: [new EmbedBuilder().setTitle(`Question ${session.index + 1} of ${session.questions.length}`)
+        .setDescription(description).setFooter({ text: `${label} • ${TYPE_LABELS[q.type]} • ${q.difficulty}` })], components }, q);
 }
 
 export function resultMessage(session, correct) {
@@ -137,6 +136,20 @@ export function resultMessage(session, correct) {
 
 async function editStudyReply(interaction, payload) {
     return interaction.editReply({ attachments: [], files: [], ...payload });
+}
+
+// Setup and feedback stay ephemeral; only question cards are published.
+async function publishQuestion(interaction, session) {
+    await editStudyReply(interaction, { content: 'Your question is posted below. Only you can answer it.', embeds: [], components: [] });
+    const message = await interaction.followUp({ ...questionMessage(session), flags: 0, allowedMentions: { parse: [] } });
+    session.publicQuestionId = message.id;
+}
+
+async function showResult(interaction, session, correct) {
+    if (!session.publicQuestionId) return editStudyReply(interaction, resultMessage(session, correct));
+    // Keep the question and image visible without publishing the student's answer or score.
+    await interaction.webhook.editMessage(session.publicQuestionId, { components: [] });
+    await interaction.followUp({ ...resultMessage(session, correct), flags: MessageFlags.Ephemeral });
 }
 
 async function privateError(interaction, message) {
@@ -186,7 +199,7 @@ export async function handleStudyInteraction(interaction, client, args) {
             const session = createStudySession(interaction.guildId, ownerId, questions, `class_${token}`);
             session.classId = token;
             session.topicLabel = `${course.label} • ${categories.find(item => item.token === index)?.label || 'Random'}`;
-            await editStudyReply(interaction, questionMessage(session));
+            await publishQuestion(interaction, session);
             return;
         }
         if (action === 'topic') {
@@ -205,7 +218,7 @@ export async function handleStudyInteraction(interaction, client, args) {
             const questions = selectQuestions(banks, token, Number(interaction.values[0]));
             const session = createStudySession(interaction.guildId, ownerId, questions, token);
             session.classId = 'ap_lecture';
-            await editStudyReply(interaction, questionMessage(session));
+            await publishQuestion(interaction, session);
             return;
         }
         const session = getStudySession(interaction.guildId, ownerId, token);
@@ -233,11 +246,13 @@ export async function handleStudyInteraction(interaction, client, args) {
             const pending = settleStudyReward(session, client);
             await interaction.deferUpdate();
             await pending;
-            await editStudyReply(interaction, resultMessage(session, true));
+            await showResult(interaction, session, true);
             return;
         } else if (action === 'next') {
             nextStudyQuestion(session);
-            payload = questionMessage(session);
+            await interaction.deferUpdate();
+            await publishQuestion(interaction, session);
+            return;
         } else if (action === 'order' && q.type === 'ordering') {
             chooseOrderItem(session, Number(interaction.values[0]));
             payload = questionMessage(session);
@@ -254,11 +269,12 @@ export async function handleStudyInteraction(interaction, client, args) {
             const pending = settleStudyReward(session, client);
             await interaction.deferUpdate();
             await pending;
-            await editStudyReply(interaction, resultMessage(session, correct));
+            await showResult(interaction, session, correct);
             return;
         }
         await interaction.deferUpdate();
-        await editStudyReply(interaction, payload);
+        if (session.publicQuestionId) await interaction.webhook.editMessage(session.publicQuestionId, { attachments: [], files: [], ...payload });
+        else await editStudyReply(interaction, payload);
     } catch (error) {
         // Log the detailed failure; malformed banks should never be presented as student answers.
         const { logger } = await import('../../utils/logger.js');

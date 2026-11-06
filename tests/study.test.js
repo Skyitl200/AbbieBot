@@ -124,7 +124,7 @@ function fakeInteraction(customId, extras = {}) {
     const calls = [];
     return { guildId: 'g', user: { id: 'u' }, customId, calls,
         async reply(p) { calls.push(['reply', p]); this.replied = true; },
-        async followUp(p) { calls.push(['followUp', p]); },
+        async followUp(p) { calls.push(['followUp', p]); return { id: 'question-message' }; },
         async deferUpdate() { this.deferred = true; },
         async editReply(p) { calls.push(['editReply', p]); },
         async showModal(p) { calls.push(['showModal', p.toJSON()]); }, ...extras };
@@ -955,4 +955,34 @@ test('introductory Circulatory arithmetic supplies formulas and has independentl
         assert.ok(match, q.id);
         assert.equal(q.options[q.correct[0]], `${Number(match[1]) - Number(match[2])} mL/beat`, q.id);
     }
+});
+
+test('public questions keep answers and rewards private and reject spectators', async () => {
+    const posted = [];
+    const start = fakeInteraction('', { values: ['1'], async followUp(payload) { posted.push(payload); return { id: 'public-question' }; } });
+    await handleStudyInteraction(start, {}, ['count', 'u', topic.id]);
+    assert.equal(posted.length, 1);
+    assert.equal(posted[0].flags, 0);
+    const control = posted[0].components.flatMap(row => row.toJSON().components)[0];
+    const args = control.custom_id.split(':').slice(1);
+    const session = getStudySession('g', 'u', args[2]);
+    assert.equal(session.publicQuestionId, 'public-question');
+    const stranger = fakeInteraction('', { user: { id: 'spectator' } });
+    await handleStudyInteraction(stranger, {}, args);
+    assert.equal(session.answered, false);
+    assert.equal(stranger.calls[0][1].flags, 64);
+    const edits = [];
+    const q = session.questions[0];
+    const answer = fakeInteraction('', { webhook: { async editMessage(id, payload) { edits.push([id, payload]); } },
+        fields: { getTextInputValue: () => q.answers?.[0] } });
+    let answerArgs;
+    if (q.type === 'ordering') {
+        q.correct.forEach(value => chooseOrderItem(session, value));
+        answerArgs = ['ordered', 'u', session.id, '0', String(session.revision)];
+    } else answerArgs = [q.type === 'fill_blank' ? 'typed' : 'choice', 'u', session.id, '0', String(session.revision), String(q.correct?.[0])];
+    await handleStudyInteraction(answer, walletFixture().client, answerArgs);
+    assert.deepEqual(edits, [['public-question', { components: [] }]]);
+    const feedback = answer.calls.find(([type]) => type === 'followUp')[1];
+    assert.equal(feedback.flags, 64);
+    assert.match(feedback.embeds[0].toJSON().title, /Correct/);
 });

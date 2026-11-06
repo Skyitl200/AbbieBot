@@ -11,12 +11,12 @@ test('every authored question has a shipped, hash-verified lecture figure and va
     assert.equal(report.questions, [...(await loadQuestionBanks()).values()].flat().length);
     assert.ok(report.images > 100);
 });
-test('labeled figures stay out of questions, previews and explanations attach the actual figure', async () => {
+test('questions automatically attach figures, as do explanations', async () => {
     const question = [...(await loadQuestionBanks()).values()].flat()[0];
     const session = createStudySession('image-guild', 'image-user', [question], 'random');
     const before = questionMessage(session);
-    assert.equal(before.embeds[0].toJSON().image, undefined);
-    assert.ok(before.components.some(row => row.toJSON().components.some(c => c.custom_id?.includes('study:image:'))));
+    assert.ok(before.embeds[0].toJSON().image.url.startsWith('attachment://'));
+    assert.ok(!before.components.some(row => row.toJSON().components.some(c => c.custom_id?.includes('study:image:'))));
     const image = imageForQuestion(question);
     const preview = lecturePreview(question);
     assert.equal(preview.embeds[0].toJSON().image.url, `attachment://${image.asset.file}`);

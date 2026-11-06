@@ -301,7 +301,7 @@ the preview and posting flow.
 ### Microbemon
 
 Run `/microbemon` inside a server, then choose **Explore**.
-The older `/test microbemon:true` option still works as an alias.
+Use `/microbemon` to play; the old `/test microbemon` option has been removed. `/test` keeps setup and feedback private while posting questions and their figures publicly; only the initiating student can answer.
 After a successful catch is saved, the public card opens the **Microbedeck** on
 the newly caught pet, with its portrait, shiny status, level, habitat, basic
 facts, and nickname/companion controls. The Microbedeck button reopens the saved

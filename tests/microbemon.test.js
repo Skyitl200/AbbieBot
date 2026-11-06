@@ -174,7 +174,7 @@ test('Microbemon routes load without exceeding Discord command limit', async () 
     assert.ok([...client.commands.values()].filter(command => !command.guildOnly).length <= 100);
     assert.equal(client.buttons.get('microbemon').execute, handleMicrobemon);
     assert.equal(client.modals.get('microbemon').execute, handleMicrobemon);
-    assert.ok(client.commands.get('test').data.toJSON().options.some(option => option.name === 'microbemon'));
+    assert.ok(!client.commands.get('test').data.toJSON().options.some(option => option.name === 'microbemon'));
     assert.equal(client.commands.get('microbemon').guildOnly, true);
 });
 
