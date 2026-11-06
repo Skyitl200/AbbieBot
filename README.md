@@ -410,3 +410,12 @@ lecture, location, function, or process questions in this set. Place the eight u
 using each `expectedImageFile` from `study-data/lab-models/early-development.json`.
 They will appear inline automatically, enabling their identification questions.
 Do not substitute generated images for the user's physical models.
+
+Microbemon members without the **Sponsor** role are limited to **4 successful
+catches per calendar day**, resetting at midnight **America/New_York** (Eastern
+Time, including DST). Sponsors are unlimited. Failed attempts do not count, and
+releasing a pet does not restore the allowance. The counter is persisted with
+the profile, pet, and catch reward in the same transaction. Sponsor membership
+is refreshed before catches. Set `MICROBEMON_SPONSOR_ROLE_ID` for an exact role
+match; otherwise the server role named Sponsor is used (case-insensitive,
+decorations ignored).

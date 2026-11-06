@@ -1,3 +1,4 @@
+import { checkCatchLimit } from './catchLimits.js';
 import { MAX_HP, MAX_PETS, MAX_LEVEL, hpForLevel, attackForLevel, wildAttackForLevel, xpToNextLevel } from './constants.js';
 import { questionsForSpecies, microbeBasics } from './questions.js';
 import { MicrobemonError } from './errors.js';
@@ -77,7 +78,7 @@ export function prepareQuestion(encounter, rng = randomInt) {
     encounter.question = { id: selected.id, topic: selected.topic, text: selected.text,
         answers, correct: answers.indexOf(correctText), explanation: selected.explanation, source: selected.source };
 }
-export function act(profile, action, { encounterId, revision, answer, petId, nickname, confirmation, now = Date.now(), rng = randomInt } = {}) {
+export function act(profile, action, { encounterId, revision, answer, petId, nickname, confirmation, sponsor = false, now = Date.now(), rng = randomInt } = {}) {
     normalizeProfile(profile);
     if (action === 'explore') {
         if (profile.encounter && profile.encounter.expiresAt > now) return 'Your current encounter is waiting.';
@@ -158,15 +159,17 @@ export function act(profile, action, { encounterId, revision, answer, petId, nic
     if (action === 'catch') {
         if (profile.pets.length >= MAX_PETS) throw new MicrobemonError('Your 20 storage boxes are full (240 pets).');
         if (e.question) throw new MicrobemonError('Answer the current battle question before catching.');
+        const daily = checkCatchLimit(profile, sponsor, now);
         const caught = rng(100) < captureChance(e);
         e.attempts--; e.revision++;
         if (caught) {
             if (profile.pets.length >= MAX_PETS) throw new MicrobemonError('Your collection is full.');
+            daily.count++;
             const xpMessage = gainXp(profile, activePet(profile), 40, e);
             const pet = { id: e.id, speciesId: e.speciesId, shiny: e.shiny, level: e.level, xp: 0, nickname: '', caughtAt: now };
             profile.pets.push(pet); if (!profile.companion) profile.companion = pet.id;
             profile.encounter = null;
-            return `Caught ${e.shiny ? 'a shiny ' : ''}${speciesById(e.speciesId).name}! Added to your Microbedeck.${xpMessage}`;
+            return `Caught ${e.shiny ? 'a shiny ' : ''}${speciesById(e.speciesId).name}! Added to your Microbedeck.${xpMessage}\n${sponsor ? `Sponsor: unlimited catches (${daily.count} today).` : `Daily catches: ${daily.count}/4. Resets at midnight Eastern Time.`}`;
         }
         if (!e.attempts) profile.encounter = null;
         return e.attempts ? `It broke free! ${e.attempts} capsule attempts remain.` : 'It escaped after three catch attempts. Try another encounter!';

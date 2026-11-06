@@ -1,3 +1,4 @@
+import { isSponsorForCatch } from './catchLimits.js';
 import { MicrobemonError } from './errors.js';
 import { MessageFlags, ModalBuilder, TextInputBuilder, TextInputStyle, ActionRowBuilder } from 'discord.js';
 import { withProfile } from './store.js';
@@ -30,6 +31,7 @@ export async function handleMicrobemon(interaction, client, args, runAction = ac
     }
     await interaction.deferUpdate();
     try {
+        const sponsor = action === 'catch' ? await isSponsorForCatch(interaction) : false;
         const { profile, value } = await withProfile(client, interaction.guildId, owner, profile => {
             if (action === 'party') {
                 if (!profile.encounter || profile.encounter.id !== token || profile.encounter.revision !== Number(revision) || profile.encounter.expiresAt <= Date.now()) throw new MicrobemonError('This encounter has changed. Use the latest Microbemon game card.');
@@ -40,7 +42,7 @@ export async function handleMicrobemon(interaction, client, args, runAction = ac
                 if (!profile.pets.some(pet => pet.id === token)) throw new MicrobemonError('That pet is not in your Microbedeck.');
                 return '';
             }
-            return runAction(profile, action, { encounterId: token, revision: Number(revision), answer: Number(answer), petId: action === 'switch' ? interaction.values?.[0] : token, confirmation: revision,
+            return runAction(profile, action, { sponsor, encounterId: token, revision: Number(revision), answer: Number(answer), petId: action === 'switch' ? interaction.values?.[0] : token, confirmation: revision,
                 nickname: action === 'nickname' ? interaction.fields.getTextInputValue('nickname') : undefined });
         });
         const caughtIndex = action === 'catch' ? profile.pets.findIndex(pet => pet.id === token) : -1;

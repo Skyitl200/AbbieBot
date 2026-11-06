@@ -660,3 +660,89 @@ test('failed capture attempts do not award coins', async () => {
     assert.equal(result.profile.pets.length, 0);
     assert.ok(!result.value.includes('Merit Coins'));
 });
+
+const dailyStart = Date.parse('2026-11-06T05:00:00Z'); // midnight Eastern
+function dailyCatch(profile, n, sponsor = false) {
+    const at = dailyStart + n * COOLDOWN_MS;
+    act(profile, 'explore', { now: at, rng: rolls(0, 0, 1, 0) });
+    return act(profile, 'catch', { ...turn(profile), now: at, sponsor, rng: rolls(0) });
+}
+
+test('members can catch four per day; fifth blocks without consuming an attempt', () => {
+    const profile = newProfile();
+    for (let i = 0; i < 4; i++) dailyCatch(profile, i);
+    assert.equal(profile.dailyCatches.count, 4);
+    assert.throws(() => dailyCatch(profile, 4), /4 successful catches/);
+    assert.equal(profile.pets.length, 4);
+    assert.equal(profile.encounter.attempts, 3);
+    assert.equal(profile.encounter.revision, 0);
+});
+
+test('Sponsors can exceed four; losing Sponsor applies the existing daily count', () => {
+    const profile = newProfile();
+    for (let i = 0; i < 6; i++) assert.match(dailyCatch(profile, i, true), /Sponsor: unlimited/);
+    assert.equal(profile.pets.length, 6);
+    assert.equal(profile.dailyCatches.count, 6);
+    assert.throws(() => dailyCatch(profile, 6, false), /4 successful catches/);
+});
+
+test('releasing a pet cannot restore a daily catch, and failed attempts do not count', () => {
+    const profile = newProfile();
+    for (let i = 0; i < 4; i++) dailyCatch(profile, i);
+    const petId = profile.pets[0].id;
+    act(profile, 'release_prompt', { petId, now: dailyStart + 4 * COOLDOWN_MS });
+    act(profile, 'release_confirm', { petId, confirmation: profile.pendingRelease.token, now: dailyStart + 4 * COOLDOWN_MS });
+    assert.equal(profile.pets.length, 3);
+    assert.throws(() => dailyCatch(profile, 4), /4 successful catches/);
+    const other = newProfile();
+    act(other, 'explore', { now: dailyStart, rng: rolls(0, 0, 1, 0) });
+    act(other, 'catch', { ...turn(other), now: dailyStart, rng: rolls(99) });
+    assert.equal(other.dailyCatches.count, 0);
+});
+
+test('daily counter resets at Eastern midnight and handles daylight-saving boundaries', async () => {
+    const { catchDay, dailyCatches } = await import('../src/services/microbemon/catchLimits.js');
+    assert.equal(catchDay(Date.parse('2026-11-07T04:59:59Z')), '2026-11-06');
+    assert.equal(catchDay(Date.parse('2026-11-07T05:00:00Z')), '2026-11-07');
+    assert.equal(catchDay(Date.parse('2026-07-02T03:59:59Z')), '2026-07-01');
+    assert.equal(catchDay(Date.parse('2026-07-02T04:00:00Z')), '2026-07-02');
+    const profile = newProfile();
+    for (let i = 0; i < 4; i++) dailyCatch(profile, i);
+    assert.equal(dailyCatches(profile, dailyStart + 24 * 60 * 60_000).count, 0);
+    act(profile, 'explore', { now: dailyStart + 24 * 60 * 60_000, rng: rolls(0, 0, 1, 0) });
+    act(profile, 'catch', { ...turn(profile), now: dailyStart + 24 * 60 * 60_000, rng: rolls(0) });
+    assert.equal(profile.dailyCatches.count, 1);
+});
+
+test('old profiles seed today’s count from pets and persisted counts survive reload', async () => {
+    const { dailyCatches } = await import('../src/services/microbemon/catchLimits.js');
+    const old = newProfile();
+    old.pets = [{ caughtAt: dailyStart }, { caughtAt: dailyStart - 1000 }];
+    assert.equal(dailyCatches(old, dailyStart).count, 1);
+    const s = storage();
+    for (let i = 0; i < 4; i++) await withProfile(s.client, 'guild', 'user', p => dailyCatch(p, i));
+    const reloaded = await withProfile(s.client, 'guild', 'user', () => {});
+    assert.equal(reloaded.profile.dailyCatches.count, 4);
+    const balance = s.balance();
+    await assert.rejects(withProfile(s.client, 'guild', 'user', p => dailyCatch(p, 4)), /4 successful catches/);
+    assert.equal(s.balance(), balance);
+    assert.equal(s.data.get('microbemon:guild:user').pets.length, 4);
+});
+
+test('Sponsor role matching supports member objects, raw role IDs and exact configuration', async () => {
+    const { memberHasSponsorRole, isSponsorForCatch } = await import('../src/services/microbemon/catchLimits.js');
+    const sponsor = { id: 'sponsor', name: '💎 SPONSOR' };
+    const guild = { roles: { cache: new Map([['sponsor', sponsor]]) } };
+    assert.equal(memberHasSponsorRole({ roles: ['sponsor'] }, guild, ''), true);
+    assert.equal(memberHasSponsorRole({ roles: { cache: new Map([['sponsor', sponsor]]) } }, guild, ''), true);
+    assert.equal(memberHasSponsorRole({ roles: ['sponsor'] }, guild, 'different-role'), false);
+    assert.equal(memberHasSponsorRole({ roles: ['special'] }, guild, 'special'), true);
+    assert.equal(memberHasSponsorRole({ roles: ['member'] }, guild, ''), false);
+    assert.equal(memberHasSponsorRole({ roles: { cache: new Map([['x', { name: 'Not Sponsor' }]]) } }, guild, ''), false);
+    let fetched = false;
+    assert.equal(await isSponsorForCatch({ user: { id: 'u' }, member: { roles: ['sponsor'] }, guild: {
+        ...guild, members: { async fetch(options) { fetched = options.force; return { roles: [] }; } },
+    } }), false);
+    assert.equal(fetched, true);
+    await assert.rejects(isSponsorForCatch({ user: { id: 'u' }, guild: { members: { async fetch() { throw new Error('offline'); } } } }), /Unable to verify/);
+});
