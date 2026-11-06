@@ -1,6 +1,8 @@
+import { logger } from '../../utils/logger.js';
+import { deckPage, renderDeckGrid } from './deck.js';
 import { microbeBasics } from './questions.js';
 import { ARTWORK, speciesArtwork } from './artwork.js';
-import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, escapeMarkdown } from 'discord.js';
+import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, StringSelectMenuBuilder, escapeMarkdown } from 'discord.js';
 import { existsSync } from 'node:fs';
 import { speciesById, SPECIES } from './catalog.js';
 import { captureChance } from './engine.js';
@@ -17,7 +19,26 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
     if (ownerName) embed.author = { name: `${ownerName}'s Microbemon`.slice(0, 256) };
     let portrait = null;
     const components = [];
-    if (view === 'collection') {
+    if (view === 'deck') {
+        const box = deckPage(profile, page);
+        embed.title = '📦 Your Microbedeck';
+        embed.description = `**${profile.pets.length} owned pets** · **${new Set(profile.pets.map(pet => pet.speciesId)).size}/${SPECIES.length} species** · **${profile.pets.filter(pet => pet.shiny).length} shiny**\nBox **${box.page + 1}/${box.pages}** · Select an owned pet below to view its details.`;
+        if (!box.pets.length) embed.description += '\n\nNo microbes caught yet. Choose Explore, then Catch to save your first pet.';
+        for (let column = 0; column < 3; column++) {
+            const subset = box.pets.slice(column * 4, (column + 1) * 4);
+            if (subset.length) embed.fields = [...(embed.fields || []), { name: 'Owned Microbemon', inline: true,
+                value: subset.map((pet, offset) => `**${box.start + column * 4 + offset + 1}.** ${petName(pet)} · Lv. ${pet.level}${profile.companion === pet.id ? ' 💚' : ''}\n*${speciesById(pet.speciesId).name}*`).join('\n\n') }];
+        }
+        if (box.pets.length) components.push(row(new StringSelectMenuBuilder()
+            .setCustomId(`microbemon:${user}:pet`).setPlaceholder('Choose one of your owned microbes')
+            .addOptions(box.pets.map((pet, index) => ({
+                label: `${box.start + index + 1}. ${pet.nickname || speciesById(pet.speciesId).name}`.slice(0, 100),
+                description: `${pet.shiny ? 'Shiny · ' : ''}${speciesById(pet.speciesId).common} · Level ${pet.level}`.slice(0, 100),
+                value: pet.id, emoji: pet.shiny ? '✨' : '🧬'
+            })))));
+        components.push(row(button(user, 'deck', 'Previous Box', [box.page - 1]).setDisabled(box.page === 0),
+            button(user, 'deck', 'Next Box', [box.page + 1]).setDisabled(box.page + 1 >= box.pages)));
+    } else if (view === 'collection') {
         page = Math.max(0, Math.min(Math.floor(page) || 0, profile.pets.length - 1));
         const pet = profile.pets[page];
         embed.title = '📚 Your Microbedeck';
@@ -60,7 +81,7 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
     }
     if (notice) embed.description += `\n\n${notice.slice(0, 1100)}`;
     components.push(row(button(user, 'explore', e ? 'Resume Encounter' : '🌿 Explore', [], ButtonStyle.Success),
-        button(user, 'collection', '📚 Microbedeck', [0]), button(user, 'guide', 'How to Play')));
+        button(user, 'deck', '📦 Microbedeck', [0]), button(user, 'home', '🧬 Microbemon'), button(user, 'guide', 'How to Play')));
     // Encounters and collection entries always use the exact species and variant.
     // Missing art never falls back to an unrelated group scene.
     const selectedArt = portrait;
@@ -69,4 +90,21 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
     if (files.length) embed.image = { url: `attachment://${selectedArt.name}` };
     return { embeds: [new EmbedBuilder(embed)], components, attachments: [],
         files: embed.image ? files : [], allowedMentions: { parse: [] } };
+}
+
+export async function renderSession(profile, user, options = {}) {
+    const message = renderGame(profile, user, options);
+    if (options.view === 'deck' && profile.pets.length) {
+        const box = deckPage(profile, options.page);
+        const name = `microbedeck-box-${box.page + 1}.png`;
+        try {
+            message.files = [{ attachment: await renderDeckGrid(profile, box.page), name }];
+            message.embeds[0].setImage(`attachment://${name}`);
+        } catch (error) {
+            logger.warn('Microbedeck portrait grid unavailable:', error.message);
+            // Keep the owned-pet list and selection working if artwork is unavailable.
+            message.embeds[0].addFields({ name: 'Portrait preview', value: 'The picture preview is unavailable. Your owned microbes are listed above.' });
+        }
+    }
+    return message;
 }

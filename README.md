@@ -349,3 +349,14 @@ encounter until the available pool is exhausted; feedback uses the selected
 question's explanation. Existing in-progress questions remain answerable.
 The uploaded full textbook PDF was not accessible; these new questions are
 verified against the lecture slides, not claimed to come from reading that PDF.
+
+The **Microbedeck** button opens a storage-box overview of owned pets, with 12
+numbered portraits per box, shiny highlights, companion markers, owned/species
+counts, and an owned-pet dropdown. Previous/Next Box browses larger collections;
+selecting a pet opens its existing detail/nickname/companion card. The
+**Microbemon** navigation button returns to the game or active encounter. Older
+Microbedeck buttons are supported. If another player clicks a deck or game
+navigation button on a public card, they open their own session rather than
+changing the original player's collection. Battle and pet-edit controls remain
+owner-only. The renderer uses `pngjs` and bounded small-thumbnail caching; no
+Discord credentials or external image service is needed to build a box preview.

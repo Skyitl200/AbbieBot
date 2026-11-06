@@ -345,3 +345,89 @@ test('registration keeps 100 global commands and upserts Microbemon separately p
     assert.ok(!calls.some(call => call.method === 'PUT' && call.route.includes('/guilds/')),
         'Never bulk-delete unrelated server commands');
 });
+
+test('Microbedeck boxes list exactly the owned pets, including duplicates and shinies', async () => {
+    const { deckPage } = await import('../src/services/microbemon/deck.js');
+    const p = newProfile();
+    p.pets = Array.from({ length: 15 }, (_, i) => ({ id: `pet-${i}`, speciesId: i % 2 ? 'solium' : 'amoeba', shiny: i === 13, level: 3 + i, caughtAt: now }));
+    assert.equal(deckPage(p, 1).pets.length, 3);
+    assert.equal(deckPage(p, 100).page, 1);
+    assert.equal(deckPage(p, -10).page, 0);
+    const message = renderGame(p, 'owner', { view: 'deck', page: 1 });
+    const embed = message.embeds[0].toJSON();
+    assert.match(embed.description, /15 owned pets/);
+    assert.match(embed.description, /2\/19 species/);
+    const selector = message.components[0].toJSON().components[0];
+    assert.equal(selector.custom_id, 'microbemon:owner:pet');
+    assert.deepEqual(selector.options.map(o => o.value), ['pet-12', 'pet-13', 'pet-14']);
+    assert.match(selector.options[1].description, /Shiny/);
+    assert.ok(embed.fields.every(field => field.value.length <= 1024));
+    assert.ok(message.components.length <= 5);
+});
+
+test('storage grid renders a decodable PNG with shiny and companion indicators', async () => {
+    const { renderDeckGrid } = await import('../src/services/microbemon/deck.js');
+    const { PNG } = await import('pngjs');
+    const p = newProfile();
+    p.pets = [
+        { id: 'normal', speciesId: 'amoeba', shiny: false, level: 4 },
+        { id: 'shiny', speciesId: 'solium', shiny: true, level: 7 }
+    ]; p.companion = 'normal';
+    const grid = PNG.sync.read(await renderDeckGrid(p));
+    assert.equal(grid.width, 804); assert.equal(grid.height, 552);
+    const pixel = (x, y) => [...grid.data.subarray((y * grid.width + x) * 4, (y * grid.width + x) * 4 + 3)];
+    assert.deepEqual(pixel(10, 10), [45, 180, 165]);
+    assert.deepEqual(pixel(206, 10), [245, 199, 75]);
+    assert.deepEqual(pixel(402, 10), [30, 48, 58]);
+});
+
+test('Microbedeck and pet selector routes reach saved pets; Microbemon returns to the game', async () => {
+    const s = storage();
+    await withProfile(s.client, 'guild', 'owner', p => {
+        p.pets = [{ id: 'one', speciesId: 'amoeba', level: 3, shiny: false, caughtAt: now },
+            { id: 'two', speciesId: 'solium', level: 7, shiny: true, caughtAt: now }];
+    });
+    let message;
+    const interaction = { client: s.client, guildId: 'guild', user: { id: 'owner' },
+        values: ['two'], deferUpdate: async () => {}, editReply: async value => { message = value; },
+        followUp: async () => assert.fail('Saved-pet navigation must work') };
+    await handleMicrobemon(interaction, s.client, ['owner', 'deck', '0']);
+    assert.match(message.embeds[0].toJSON().title, /Microbedeck/);
+    assert.ok(Buffer.isBuffer(message.files[0].attachment));
+    assert.ok(message.components.some(row => row.toJSON().components.some(component => component.custom_id === 'microbemon:owner:home')));
+    await handleMicrobemon(interaction, s.client, ['owner', 'pet']);
+    assert.match(message.embeds[0].toJSON().description, /Taenia solium/);
+    assert.equal(message.embeds[0].toJSON().fields.find(f => f.name === 'Microbedeck').value, '2 / 2');
+    await handleMicrobemon(interaction, s.client, ['owner', 'home']);
+    assert.equal(message.embeds[0].toJSON().title, '🧬 Microbemon');
+});
+
+test('old Microbedeck buttons open the new box view', async () => {
+    const s = storage(); let message;
+    await handleMicrobemon({ client: s.client, guildId: 'guild', user: { id: 'owner' },
+        component: { label: '📚 Microbedeck' }, deferUpdate: async () => {},
+        editReply: async value => { message = value; }, followUp: async () => assert.fail('Old deck button should work') },
+    s.client, ['owner', 'collection', '0']);
+    assert.match(message.embeds[0].toJSON().description, /No microbes caught yet/);
+});
+
+test('a viewer can open their own deck without overwriting another player’s message or pets', async () => {
+    const s = storage(); let message;
+    await withProfile(s.client, 'guild', 'host', p => { p.pets = [{ id: 'host-pet', speciesId: 'amoeba', level: 3, caughtAt: now }]; });
+    await handleMicrobemon({ client: s.client, guildId: 'guild', user: { id: 'viewer', username: 'Viewer' },
+        deferReply: async () => {}, editReply: async value => { message = value; },
+        deferUpdate: async () => assert.fail('Never replace another player’s message') }, s.client, ['host', 'deck', '0']);
+    assert.match(message.embeds[0].toJSON().description, /0 owned pets/);
+    assert.equal(s.data.get('microbemon:guild:host').pets.length, 1);
+    assert.equal(s.data.get('microbemon:guild:viewer').pets.length, 0);
+});
+
+test('the pet selector is registered and cannot select an unowned pet', async () => {
+    const { default: selector } = await import('../src/interactions/selectMenus/microbemon/microbemon.js');
+    assert.equal(selector.name, 'microbemon'); assert.equal(selector.execute, handleMicrobemon);
+    const s = storage(); let error;
+    await selector.execute({ guildId: 'guild', user: { id: 'owner' }, values: ['stolen-pet'],
+        deferUpdate: async () => {}, editReply: async () => assert.fail('Do not show unowned pets'),
+        followUp: async value => { error = value; } }, s.client, ['owner', 'pet']);
+    assert.match(error.content, /not in your Microbedeck/);
+});
