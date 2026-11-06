@@ -225,3 +225,90 @@ test('guide and empty lobby do not show the old three-creature scene', () => {
         assert.deepEqual(message.attachments, []);
     }
 });
+
+test('slide-backed battle pools cover every organism with varied non-taxonomy questions', async () => {
+    const { BATTLE_QUESTIONS, questionsForSpecies } = await import('../src/services/microbemon/questions.js');
+    assert.equal(BATTLE_QUESTIONS.length, 70);
+    assert.equal(new Set(BATTLE_QUESTIONS.map(q => q.id)).size, 70);
+    for (const question of BATTLE_QUESTIONS) {
+        assert.equal(new Set(question.answers).size, 3, question.id);
+        assert.ok(question.source.slide >= 29 && question.source.slide <= 61);
+        assert.equal(question.source.file, 'Chapter 12 (1).pptx');
+        assert.ok(question.explanation.length > 20 && question.explanation.length < 1024);
+    }
+    for (const species of SPECIES) {
+        const pool = questionsForSpecies(species.id);
+        assert.ok(pool.length >= 7, species.id);
+        assert.ok(new Set(pool.map(q => q.topic)).size >= 3, species.id);
+    }
+    const tapeworm = questionsForSpecies('solium');
+    assert.ok(tapeworm.some(q => q.topic === 'Nutrition'));
+    assert.ok(tapeworm.some(q => q.topic === 'Transmission'));
+    assert.ok(tapeworm.some(q => q.topic === 'Appearance'));
+});
+
+test('battle questions do not repeat until the pool is exhausted and keep correct shuffled answers', async () => {
+    const { prepareQuestion } = await import('../src/services/microbemon/engine.js');
+    const { questionsForSpecies } = await import('../src/services/microbemon/questions.js');
+    for (const species of SPECIES) {
+        const e = { speciesId: species.id };
+        const pool = questionsForSpecies(species.id); const seen = new Set();
+        for (let i = 0; i < pool.length; i++) {
+            prepareQuestion(e, rolls(0, 0, 0));
+            assert.ok(!seen.has(e.question.id)); seen.add(e.question.id);
+            const original = pool.find(q => q.id === e.question.id);
+            assert.equal(e.question.answers[e.question.correct], original.answers[original.correct]);
+            assert.equal(e.question.explanation, original.explanation);
+        }
+        prepareQuestion(e, rolls(0, 0, 0));
+        assert.equal(e.usedQuestionIds.length, 1);
+    }
+});
+
+test('answer feedback explains the selected topic rather than repeating a generic species fact', () => {
+    const p = started(); act(p, 'battle', { ...turn(p), rng: rolls(0, 0, 0) });
+    const explanation = p.encounter.question.explanation;
+    const feedback = act(p, 'answer', { ...turn(p), answer: p.encounter.question.correct });
+    assert.ok(feedback.includes(explanation));
+});
+
+test('a catch opens the Microbedeck on the newly saved pet, including shiny portrait', async () => {
+    const s = storage();
+    await withProfile(s.client, 'guild', 'owner', p => {
+        p.pets.push({ id: 'older-pet', speciesId: 'amoeba', level: 3, shiny: false, nickname: 'Oldie', caughtAt: now - 1000 });
+        act(p, 'explore', { now, rng: rolls(90, 0, 0, 0) });
+    });
+    const e = s.data.get('microbemon:guild:owner').encounter;
+    let message;
+    await handleMicrobemon({ guildId: 'guild', user: { id: 'owner', username: 'Student' },
+        deferUpdate: async () => {}, editReply: async value => { message = value; },
+        followUp: async () => assert.fail('Successful catch must show its pet') }, s.client,
+    ['owner', 'catch', e.id, '0'], (profile, action, options) => act(profile, action, { ...options, rng: rolls(0) }));
+    const saved = s.data.get('microbemon:guild:owner');
+    assert.equal(saved.pets.length, 2);
+    const embed = message.embeds[0].toJSON();
+    assert.match(embed.title, /Microbedeck/);
+    assert.ok(embed.description.includes('Caught a shiny'));
+    assert.equal(embed.fields.find(field => field.name === 'Microbedeck').value, '2 / 2');
+    assert.match(embed.image.url, /solium-shiny.png/);
+    assert.ok(embed.fields.find(field => field.name.includes('Know your Microbemon')));
+    assert.equal(saved.pets[1].id, e.id);
+});
+
+test('failed catches stay in battle; failed saves never show a Microbedeck catch confirmation', async () => {
+    const s = storage();
+    await withProfile(s.client, 'guild', 'owner', p => act(p, 'explore', { now, rng: rolls(0, 0, 1, 0) }));
+    const e = s.data.get('microbemon:guild:owner').encounter;
+    let message;
+    const interaction = { guildId: 'guild', user: { id: 'owner' }, deferUpdate: async () => {},
+        editReply: async value => { message = value; }, followUp: async () => {} };
+    await handleMicrobemon(interaction, s.client, ['owner', 'catch', e.id, '0'],
+        (p, a, opts) => act(p, a, { ...opts, rng: rolls(99) }));
+    assert.match(message.embeds[0].toJSON().title, /Wild/);
+    assert.equal(s.data.get('microbemon:guild:owner').pets.length, 0);
+    message = null; s.fail();
+    await handleMicrobemon(interaction, s.client, ['owner', 'catch', e.id, '1'],
+        (p, a, opts) => act(p, a, { ...opts, rng: rolls(0) }));
+    assert.equal(message, null);
+    assert.equal(s.data.get('microbemon:guild:owner').pets.length, 0);
+});

@@ -300,7 +300,11 @@ the preview and posting flow.
 
 ### Microbemon
 
-Run `/test microbemon:true` inside a server, then choose **Explore**. This shares
+Run `/test microbemon:true` inside a server, then choose **Explore**.
+After a successful catch is saved, the public card opens the **Microbedeck** on
+the newly caught pet, with its portrait, shiny status, level, habitat, basic
+facts, and nickname/companion controls. The Microbedeck button reopens the saved
+collection at any time. This shares
 AbbieBot's existing command entry to stay within Discord's 100-command limit.
 Normal `/test` study sessions are unchanged. The first version has 19 organisms
 from the lab notes, easy study battles, three free capture attempts per encounter,
@@ -331,3 +335,14 @@ Files to show the artwork.
 Scientific corrections include Ascaris versus pinworm life cycles, Giardia as a
 flagellated protist, Toxoplasma tissue cysts, and the intestinal fluke name
 Fasciolopsis buski. Game rarity is not real-world prevalence or medical severity.
+
+Microbemon battle questions now use 70 original questions based on the supplied
+`Chapter 12 (1).pptx` lecture outline (Nester, 10th edition), with slide references
+stored on each question. Each species receives 7–17 applicable questions across
+movement, nutrition, host cells, appearance, transmission, disease, and life
+cycles. Shared group facts are used where the slides do not discuss a species
+individually. Questions shuffle their choices and do not repeat within an
+encounter until the available pool is exhausted; feedback uses the selected
+question's explanation. Existing in-progress questions remain answerable.
+The uploaded full textbook PDF was not accessible; these new questions are
+verified against the lecture slides, not claimed to come from reading that PDF.

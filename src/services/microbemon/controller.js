@@ -15,7 +15,7 @@ export async function openMicrobemon(interaction) {
         await interaction.editReply({ content: 'Microbemon could not open its saved collection. Make sure the persistent database is available and play inside a server.', components: [] });
     }
 }
-export async function handleMicrobemon(interaction, client, args) {
+export async function handleMicrobemon(interaction, client, args, runAction = act) {
     const [owner, action, token, revision, answer] = args;
     if (owner !== interaction.user.id) return interaction.reply({ content: 'Open your own Microbemon game with /test microbemon:true.', flags: MessageFlags.Ephemeral });
     if (action === 'rename') {
@@ -27,11 +27,19 @@ export async function handleMicrobemon(interaction, client, args) {
     try {
         const { profile, value } = await withProfile(client, interaction.guildId, owner, profile => {
             if (action === 'collection' || action === 'guide') return '';
-            return act(profile, action, { encounterId: token, revision: Number(revision), answer: Number(answer), petId: token,
+            return runAction(profile, action, { encounterId: token, revision: Number(revision), answer: Number(answer), petId: token,
                 nickname: action === 'nickname' ? interaction.fields.getTextInputValue('nickname') : undefined });
         });
-        const view = ['collection', 'companion', 'nickname'].includes(action) ? 'collection' : action === 'guide' ? 'guide' : 'home';
-        const page = ['companion', 'nickname'].includes(action) ? profile.pets.findIndex(p => p.id === token) : Number(token) || 0;
+        const caughtIndex = action === 'catch' ? profile.pets.findIndex(pet => pet.id === token) : -1;
+        let view = action === 'guide' ? 'guide' : 'home';
+        let page = Number(token) || 0;
+        if (caughtIndex >= 0) {
+            view = 'collection';
+            page = caughtIndex;
+        } else if (['collection', 'companion', 'nickname'].includes(action)) {
+            view = 'collection';
+            if (action !== 'collection') page = profile.pets.findIndex(pet => pet.id === token);
+        }
         await interaction.editReply(renderGame(profile, owner, { view, page, notice: value, ownerName: interaction.member?.displayName || interaction.user.username }));
     } catch (error) {
         // Errors do not consume a capsule or lose a pet: the transaction rolls back.

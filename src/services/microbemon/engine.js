@@ -1,3 +1,4 @@
+import { questionsForSpecies, microbeBasics } from './questions.js';
 import { MicrobemonError } from './errors.js';
 import { randomInt, randomUUID } from 'node:crypto';
 import { SPECIES, TIERS, speciesById } from './catalog.js';
@@ -10,22 +11,23 @@ export function rollEncounter(rng = randomInt, now = Date.now()) {
     const tier = TIERS.find(t => { roll -= t.weight; return roll < 0; }).name;
     const pool = SPECIES.filter(species => species.tier === tier);
     return { id: randomUUID(), speciesId: pool[rng(pool.length)].id, shiny: rng(1000) === 0,
-        level: 3 + rng(8), hp: 40, playerHp: 60, attempts: 3, revision: 0, expiresAt: now + ENCOUNTER_MS, question: null };
+        level: 3 + rng(8), hp: 40, playerHp: 60, attempts: 3, revision: 0, expiresAt: now + ENCOUNTER_MS, question: null, usedQuestionIds: [] };
 }
 export function captureChance(encounter) { return Math.min(90, 35 + Math.floor((40 - encounter.hp) / 40 * 55)); }
 export function prepareQuestion(encounter, rng = randomInt) {
-    const species = speciesById(encounter.speciesId);
-    // Two accessible question types per organism; shuffle choices every time.
-    const classification = rng(2) === 1;
-    const otherGroups = [...new Set(SPECIES.map(s => s.group))].filter(group => group !== species.group);
-    const answers = classification
-        ? [species.group, ...otherGroups.slice(0, 2)] : [...species.answers];
-    const correctText = answers[classification ? 0 : species.correct];
+    const pool = questionsForSpecies(encounter.speciesId);
+    const used = encounter.usedQuestionIds || [];
+    let available = pool.filter(question => !used.includes(question.id));
+    if (!available.length) { available = pool; encounter.usedQuestionIds = []; }
+    const selected = available[rng(available.length)];
+    const answers = [...selected.answers];
+    const correctText = answers[selected.correct];
     for (let i = answers.length - 1; i > 0; i--) {
         const j = rng(i + 1); [answers[i], answers[j]] = [answers[j], answers[i]];
     }
-    encounter.question = { text: classification ? `Which group does ${species.name} belong to?` : species.question,
-        answers, correct: answers.indexOf(correctText) };
+    encounter.usedQuestionIds = [...(encounter.usedQuestionIds || []), selected.id];
+    encounter.question = { id: selected.id, topic: selected.topic, text: selected.text,
+        answers, correct: answers.indexOf(correctText), explanation: selected.explanation, source: selected.source };
 }
 export function act(profile, action, { encounterId, revision, answer, petId, nickname, now = Date.now(), rng = randomInt } = {}) {
     if (action === 'explore') {
@@ -47,7 +49,7 @@ export function act(profile, action, { encounterId, revision, answer, petId, nic
     const e = profile.encounter;
     if (!e || e.id !== encounterId || e.expiresAt <= now) throw new MicrobemonError('This encounter has ended. Choose Explore for another.');
     if (e.revision !== revision) throw new MicrobemonError('That button is from an earlier turn. Use the latest encounter message.');
-    if (action === 'inspect') return speciesById(e.speciesId).fact;
+    if (action === 'inspect') return [speciesById(e.speciesId).fact, ...microbeBasics(e.speciesId)].join('\n');
     if (action === 'leave') { profile.encounter = null; return 'You left the encounter.'; }
     if (action === 'battle') {
         if (e.hp <= 0) throw new MicrobemonError('It is ready to catch—choose Catch!');
@@ -58,10 +60,11 @@ export function act(profile, action, { encounterId, revision, answer, petId, nic
         if (!e.question || !Number.isInteger(answer) || answer < 0 || answer >= e.question.answers.length) throw new MicrobemonError('Choose an answer from the current question.');
         const correct = answer === e.question.correct;
         const correctText = e.question.answers[e.question.correct];
+        const explanation = e.question.explanation || speciesById(e.speciesId).fact;
         e.question = null; e.revision++;
         if (correct) e.hp = Math.max(0, e.hp - 15); else e.playerHp = Math.max(0, e.playerHp - 15);
         if (!e.playerHp) profile.encounter = null;
-        return `${correct ? 'Correct! You dealt 15 damage.' : `The answer is ${correctText}. You lost 15 HP.`} ${speciesById(e.speciesId).fact}${!e.playerHp ? ' Your encounter ended.' : ''}`;
+        return `${correct ? 'Correct! You dealt 15 damage.' : `The answer is ${correctText}. You lost 15 HP.`} ${explanation}${!e.playerHp ? ' Your encounter ended.' : ''}`;
     }
     if (action === 'catch') {
         if (e.question) throw new MicrobemonError('Answer the current battle question before catching.');
@@ -72,7 +75,7 @@ export function act(profile, action, { encounterId, revision, answer, petId, nic
             const pet = { id: e.id, speciesId: e.speciesId, shiny: e.shiny, level: e.level, nickname: '', caughtAt: now };
             profile.pets.push(pet); if (!profile.companion) profile.companion = pet.id;
             profile.encounter = null;
-            return `Caught ${e.shiny ? 'a shiny ' : ''}${speciesById(e.speciesId).name}! Saved to your collection.`;
+            return `Caught ${e.shiny ? 'a shiny ' : ''}${speciesById(e.speciesId).name}! Added to your Microbedeck.`;
         }
         if (!e.attempts) profile.encounter = null;
         return e.attempts ? `It broke free! ${e.attempts} capsule attempts remain.` : 'It escaped after three catch attempts. Try another encounter!';
