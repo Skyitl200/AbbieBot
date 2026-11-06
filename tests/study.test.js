@@ -1258,7 +1258,7 @@ test('Respiratory Tract contains one 26-image set and both quiz modes attach cya
         const payload = start.calls.find(([type]) => type === 'followUp')[1];
         const args = payload.components[0].toJSON().components[0].custom_id.split(':').slice(1);
         const session = getStudySession('g', 'u', args[2]);
-        assert.equal(session.questions.length, 29);
+        assert.equal(session.questions.length, 26);
         assert.equal(session.topicId, 'lab_respiratory');
         assert.match(session.topicLabel, /Respiratory Tract.*Upper Respiratory/);
         assert.equal(payload.flags, 0);
@@ -1294,14 +1294,15 @@ test('respiratory typed answers accept synonyms and typos while protecting nearb
     ]) assert.equal(gradeQuestion(by(name), answer), false, `${name}: ${answer}`);
 });
 
-test('respiratory adjustments remove both terms and add short pharynx-location practice', async () => {
+test('respiratory adjustments remove both terms and include short pharynx-location practice without extra questions', async () => {
     const { LAB_SETS, labQuestions } = await import('../src/services/study/labModels.js');
     const set = LAB_SETS.find(set => set.id === 'upper-respiratory');
     assert.equal(set.models.length, 26);
+    assert.ok(set.models.every(model => model.questions.length === 1), 'Exactly one question per image');
     assert.ok(!set.models.some(model => ['Soft palate', 'Cribriform plate of ethmoid'].includes(model.name)));
     for (const mode of ['multiple_choice', 'typed']) {
         const questions = labQuestions('upper-respiratory', mode);
-        assert.equal(questions.length, 29);
+        assert.equal(questions.length, 26);
         const locations = questions.filter(q => q.questionKind === 'location');
         assert.equal(locations.length, 3);
         for (const q of locations) {

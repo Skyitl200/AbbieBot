@@ -43,32 +43,12 @@
           "id": "lab-upper-respiratory-02",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What structure is indicated by the arrow?",
+          "question": "Which part of the pharynx is indicated behind the oral cavity?",
           "options": [
             "Oropharynx",
             "Nasopharynx",
             "Laryngopharynx",
             "Esophagus"
-          ],
-          "correct": [
-            0
-          ],
-          "explanation": "Oropharynx.",
-          "requiresModelImage": true,
-          "typedAnswers": [
-            "Oropharynx"
-          ]
-        },
-        {
-          "id": "lab-upper-respiratory-02-location",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "question": "Which part of the pharynx lies behind the oral cavity?",
-          "options": [
-            "Oropharynx",
-            "Nasopharynx",
-            "Laryngopharynx",
-            "Fauces"
           ],
           "correct": [
             0
@@ -93,32 +73,12 @@
           "id": "lab-upper-respiratory-03",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What structure is indicated by the arrow?",
+          "question": "Which part of the pharynx is indicated behind the larynx?",
           "options": [
             "Laryngopharynx",
             "Nasopharynx",
             "Oropharynx",
             "Esophagus"
-          ],
-          "correct": [
-            0
-          ],
-          "explanation": "Laryngopharynx.",
-          "requiresModelImage": true,
-          "typedAnswers": [
-            "Laryngopharynx"
-          ]
-        },
-        {
-          "id": "lab-upper-respiratory-03-location",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "question": "Which part of the pharynx lies behind the larynx?",
-          "options": [
-            "Laryngopharynx",
-            "Nasopharynx",
-            "Oropharynx",
-            "Fauces"
           ],
           "correct": [
             0
@@ -457,32 +417,12 @@
           "id": "lab-upper-respiratory-15",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What structure is indicated by the arrow?",
+          "question": "Which part of the pharynx is indicated behind the nasal cavity?",
           "options": [
             "Nasopharynx",
             "Oropharynx",
             "Laryngopharynx",
             "Esophagus"
-          ],
-          "correct": [
-            0
-          ],
-          "explanation": "Nasopharynx.",
-          "requiresModelImage": true,
-          "typedAnswers": [
-            "Nasopharynx"
-          ]
-        },
-        {
-          "id": "lab-upper-respiratory-15-location",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "question": "Which part of the pharynx lies behind the nasal cavity?",
-          "options": [
-            "Nasopharynx",
-            "Oropharynx",
-            "Laryngopharynx",
-            "Fauces"
           ],
           "correct": [
             0
