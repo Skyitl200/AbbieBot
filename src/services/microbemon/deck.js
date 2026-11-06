@@ -3,9 +3,10 @@ import { readFile } from 'node:fs/promises';
 import { speciesArtwork } from './artwork.js';
 import { speciesById } from './catalog.js';
 
-export const BOX_SIZE = 12;
+import { BOX_SIZE, MAX_BOXES } from './constants.js';
+export { BOX_SIZE } from './constants.js';
 export function deckPage(profile, requested = 0) {
-    const pages = Math.max(1, Math.ceil(profile.pets.length / BOX_SIZE));
+    const pages = Math.max(MAX_BOXES, Math.ceil(profile.pets.length / BOX_SIZE));
     const page = Math.max(0, Math.min(Math.floor(Number(requested)) || 0, pages - 1));
     return { page, pages, start: page * BOX_SIZE, pets: profile.pets.slice(page * BOX_SIZE, (page + 1) * BOX_SIZE) };
 }

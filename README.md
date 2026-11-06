@@ -323,7 +323,7 @@ Rarity tiers share total encounter weights of 55% common, 30% uncommon, 12% rare
 and 3% epic, divided uniformly among each tier's organisms. Every encounter has
 an independent 1/1,000 shiny roll. Shiny status is cosmetic and has the same
 capture rules. Explore has a 30-second cooldown; encounters expire after 15
-minutes. Collections hold up to 1,000 captured pets, including duplicates.
+minutes. Collections hold up to 240 captured pets in 20 boxes of 12, including duplicates.
 
 The existing PostgreSQL `temp_data` table stores one namespaced, non-expiring
 profile per server/member. A database transaction with a per-profile advisory
@@ -360,3 +360,34 @@ navigation button on a public card, they open their own session rather than
 changing the original player's collection. Battle and pet-edit controls remain
 owner-only. The renderer uses `pngjs` and bounded small-thumbnail caching; no
 Discord credentials or external image service is needed to build a box preview.
+
+### Microbemon teams, leveling, and storage
+
+All 20 boxes are available, including empty boxes; the box dropdown jumps directly
+to a page. New catches stop at 240 owned pets. Previously saved pets are never
+deleted to enforce the new capacity; any legacy overflow remains viewable.
+Full storage still allows study battles, but catching requires a free slot.
+
+Choose a favorite companion in Microbedeck to set the default battler for the
+next encounter. During an encounter, **Switch Microbemon** opens your owned-pet
+picker. Each pet keeps its remaining HP for that encounter, including when
+switched out and back in. Fainted pets cannot be selected. A fresh encounter
+restores the team to full health. Until the first catch, a researcher study kit
+lets a new player battle and catch their first pet.
+
+Base HP is 100 at level 1 and increases by 10 per level. Wild HP scales with its
+level too. Correct-answer damage is 25 + 3 × (ally level − 1); an incorrect answer
+allows wild damage of 20 + 2 × (wild level − 1). The active pet gains 20 XP for a
+correct answer and 40 XP for a successful catch. Other pets receive no passive
+XP. The next level costs 50 + 25 × (current level − 1) XP, carrying surplus XP
+forward, up to level 100. Level-ups increase max HP (and current HP by the
+increase) and strengthen future attacks. Shinies have identical battle rules.
+These gains share the same atomic profile transaction as the answered question
+or catch; retries cannot grant extra XP. Existing pet levels are retained and
+start with zero XP; existing encounter HP percentages are preserved on upgrade.
+
+Use **Release** on a pet's detail card, then confirm **Release permanently**
+within 60 seconds. This removes only that pet and its XP. Cancel keeps it. The
+current active battler cannot be released during a live encounter; switch first.
+Release confirmations are bound to the player and pet, expire, and are single-use.
+The original habitat artwork is retained; the proposed flat 2D redraw was cancelled.

@@ -46,9 +46,9 @@ test('battle answers change HP, reject stale answers, and improve capture chance
     act(p, 'battle', { ...turn(p), rng: rolls(0, 0, 0) });
     const previous = turn(p); const answer = p.encounter.question.correct;
     act(p, 'answer', { ...previous, answer });
-    assert.equal(p.encounter.hp, 25); assert.ok(captureChance(p.encounter) > 35);
+    assert.equal(p.encounter.hp, 95); assert.ok(captureChance(p.encounter) > 35);
     assert.throws(() => act(p, 'answer', { ...previous, answer }), /earlier turn/);
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 4; i++) {
         act(p, 'battle', { ...turn(p), rng: rolls(0, 0, 0) });
         act(p, 'answer', { ...turn(p), answer: p.encounter.question.correct });
     }
@@ -60,7 +60,7 @@ test('correct answers are stored after shuffling; wrong answers harm the player'
     act(p, 'battle', { ...turn(p), rng: rolls(0, 0, 0) });
     const correct = p.encounter.question.correct;
     act(p, 'answer', { ...turn(p), answer: (correct + 1) % 3 });
-    assert.equal(p.encounter.playerHp, 45); assert.equal(p.encounter.hp, 40);
+    assert.equal(p.encounter.playerHp, 76); assert.equal(p.encounter.hp, 120);
 });
 
 test('catches save a unique pet and default companion; duplicate clicks cannot duplicate it', () => {
@@ -351,7 +351,8 @@ test('Microbedeck boxes list exactly the owned pets, including duplicates and sh
     const p = newProfile();
     p.pets = Array.from({ length: 15 }, (_, i) => ({ id: `pet-${i}`, speciesId: i % 2 ? 'solium' : 'amoeba', shiny: i === 13, level: 3 + i, caughtAt: now }));
     assert.equal(deckPage(p, 1).pets.length, 3);
-    assert.equal(deckPage(p, 100).page, 1);
+    assert.equal(deckPage(p, 100).page, 19);
+    assert.equal(deckPage(p).pages, 20);
     assert.equal(deckPage(p, -10).page, 0);
     const message = renderGame(p, 'owner', { view: 'deck', page: 1 });
     const embed = message.embeds[0].toJSON();
@@ -430,4 +431,177 @@ test('the pet selector is registered and cannot select an unowned pet', async ()
         deferUpdate: async () => {}, editReply: async () => assert.fail('Do not show unowned pets'),
         followUp: async value => { error = value; } }, s.client, ['owner', 'pet']);
     assert.match(error.content, /not in your Microbedeck/);
+});
+
+function teamProfile() {
+    const p = newProfile();
+    p.pets = [
+        { id: 'ally-one', speciesId: 'amoeba', level: 1, xp: 0, caughtAt: now },
+        { id: 'ally-two', speciesId: 'solium', level: 3, xp: 0, caughtAt: now }
+    ]; p.companion = 'ally-one';
+    act(p, 'explore', { now, rng: rolls(90, 0, 1, 0) });
+    return p;
+}
+
+test('storage has 20 pages of 12; a 241st catch is rejected without deleting existing pets', async () => {
+    const { deckPage } = await import('../src/services/microbemon/deck.js');
+    const p = teamProfile();
+    p.pets = Array.from({ length: 240 }, (_, i) => ({ id: `owned-${i}`, speciesId: 'amoeba', level: 1, xp: 0 }));
+    assert.equal(deckPage(p).pages, 20);
+    assert.equal(deckPage(p, 19).pets.length, 12);
+    assert.equal(deckPage(newProfile(), 19).page, 19);
+    assert.equal(deckPage(newProfile(), 19).pages, 20);
+    const before = p.encounter.attempts;
+    assert.throws(() => act(p, 'catch', { ...turn(p), rng: rolls(0) }), /240 pets/);
+    assert.equal(p.pets.length, 240); assert.equal(p.encounter.attempts, before);
+});
+
+test('switching selects an owned battler and preserves both pets’ HP without resetting the question', () => {
+    const p = teamProfile();
+    act(p, 'battle', { ...turn(p), rng: rolls(0, 0, 0) });
+    const questionId = p.encounter.question.id;
+    p.encounter.playerHp = 40; p.encounter.petHp['ally-one'] = 40;
+    const stale = turn(p);
+    act(p, 'switch', { ...turn(p), petId: 'ally-two' });
+    assert.equal(p.encounter.activePetId, 'ally-two');
+    assert.equal(p.encounter.playerHp, 120);
+    assert.equal(p.encounter.question.id, questionId);
+    assert.throws(() => act(p, 'switch', { ...stale, petId: 'ally-one' }), /earlier turn/);
+    act(p, 'switch', { ...turn(p), petId: 'ally-one' });
+    assert.equal(p.encounter.playerHp, 40);
+    assert.throws(() => act(p, 'switch', { ...turn(p), petId: 'not-owned' }), /you own/);
+});
+
+test('fainted pets cannot attack or switch in, but a healthy teammate can continue', () => {
+    const p = teamProfile();
+    p.encounter.playerHp = 1; p.encounter.petHp['ally-one'] = 1;
+    act(p, 'battle', { ...turn(p), rng: rolls(0, 0, 0) });
+    act(p, 'answer', { ...turn(p), answer: (p.encounter.question.correct + 1) % 3 });
+    assert.equal(p.encounter.playerHp, 0);
+    assert.throws(() => act(p, 'battle', turn(p)), /healthy/);
+    assert.throws(() => act(p, 'switch', { ...turn(p), petId: 'ally-one' }), /fainted/);
+    act(p, 'switch', { ...turn(p), petId: 'ally-two' });
+    assert.equal(p.encounter.playerHp, 120);
+    act(p, 'battle', { ...turn(p), rng: rolls(0, 0, 0) });
+    assert.ok(p.encounter.question);
+});
+
+test('only the active pet earns answer XP; level-ups increase HP and duplicate answers cannot award again', () => {
+    const p = teamProfile(); p.pets[0].xp = 40;
+    p.encounter.playerHp = 80; p.encounter.petHp['ally-one'] = 80;
+    act(p, 'battle', { ...turn(p), rng: rolls(0, 0, 0) });
+    const previous = turn(p); const answer = p.encounter.question.correct;
+    const result = act(p, 'answer', { ...previous, answer });
+    assert.equal(p.pets[0].level, 2); assert.equal(p.pets[0].xp, 10);
+    assert.equal(p.pets[1].xp, 0);
+    assert.equal(p.encounter.playerMaxHp, 110); assert.equal(p.encounter.playerHp, 90);
+    assert.match(result, /Level up/);
+    assert.throws(() => act(p, 'answer', { ...previous, answer }), /earlier turn/);
+    assert.equal(p.pets[0].xp, 10);
+});
+
+test('a successful catch rewards the battling pet, while the new pet starts with zero XP', () => {
+    const p = teamProfile();
+    act(p, 'catch', { ...turn(p), rng: rolls(0) });
+    assert.equal(p.pets[0].xp, 40); assert.equal(p.pets[1].xp, 0);
+    assert.equal(p.pets[2].xp, 0);
+});
+
+test('HP scales with level and legacy encounters preserve their health percentage', async () => {
+    const { hpForLevel } = await import('../src/services/microbemon/constants.js');
+    const { normalizeProfile } = await import('../src/services/microbemon/engine.js');
+    assert.equal(hpForLevel(1), 100); assert.equal(hpForLevel(5), 140); assert.equal(hpForLevel(10), 190);
+    const p = newProfile(); p.pets = [{ id: 'legacy', speciesId: 'amoeba', level: 3 }];
+    p.encounter = { id: 'old', speciesId: 'solium', level: 3, hp: 20, playerHp: 30, revision: 0 };
+    normalizeProfile(p);
+    assert.equal(p.encounter.hp, 60); assert.equal(p.encounter.maxHp, 120);
+    assert.equal(p.encounter.playerHp, 60); assert.equal(p.encounter.playerMaxHp, 120);
+    assert.equal(p.pets[0].xp, 0);
+});
+
+test('release requires an unexpired confirmation and cannot remove an active battler', () => {
+    const p = teamProfile();
+    assert.throws(() => act(p, 'release_prompt', { petId: 'ally-one', now }), /Switch away/);
+    assert.throws(() => act(p, 'release_confirm', { petId: 'ally-two', confirmation: 'fake', now }), /confirmation expired/);
+    act(p, 'release_prompt', { petId: 'ally-two', now });
+    const token = p.pendingRelease.token;
+    assert.throws(() => act(p, 'release_confirm', { petId: 'ally-two', confirmation: token, now: now + 60_001 }), /expired/);
+    assert.equal(p.pets.length, 2);
+    act(p, 'release_prompt', { petId: 'ally-two', now });
+    act(p, 'release_cancel', { petId: 'ally-two', now });
+    assert.equal(p.pets.length, 2); assert.equal(p.pendingRelease, null);
+    act(p, 'release_prompt', { petId: 'ally-two', now });
+    act(p, 'release_confirm', { petId: 'ally-two', confirmation: p.pendingRelease.token, now });
+    assert.deepEqual(p.pets.map(pet => pet.id), ['ally-one']);
+    assert.throws(() => act(p, 'release_confirm', { petId: 'ally-two', confirmation: token, now }), /not in your Microbedeck/);
+});
+
+test('party picker routes a pet selection into battle, with valid Discord component sizes', async () => {
+    const s = storage();
+    await withProfile(s.client, 'guild', 'owner', p => Object.assign(p, teamProfile()));
+    let message;
+    const e = s.data.get('microbemon:guild:owner').encounter;
+    const interaction = { client: s.client, guildId: 'guild', user: { id: 'owner' }, values: ['ally-two'],
+        deferUpdate: async () => {}, editReply: async value => { message = value; },
+        followUp: async () => assert.fail('Battle picker must work') };
+    await handleMicrobemon(interaction, s.client, ['owner', 'party', e.id, '0', '0']);
+    const selector = message.components[0].toJSON().components[0];
+    assert.equal(selector.custom_id, `microbemon:owner:switch:${e.id}:0`);
+    assert.equal(selector.options.length, 2);
+    for (const row of message.components) for (const component of row.toJSON().components) assert.ok(component.custom_id.length <= 100);
+    assert.ok(message.components.length <= 5);
+    await handleMicrobemon(interaction, s.client, ['owner', 'switch', e.id, '0']);
+    assert.equal(s.data.get('microbemon:guild:owner').encounter.activePetId, 'ally-two');
+    assert.match(message.embeds[0].toJSON().description, /120\/120/);
+    assert.match(message.embeds[0].toJSON().thumbnail.url, /solium.png/);
+});
+
+test('release UI confirms exactly one pet and returns to storage', async () => {
+    const s = storage();
+    await withProfile(s.client, 'guild', 'owner', p => {
+        p.pets = [{ id: 'release-me', speciesId: 'amoeba', level: 4, xp: 20, caughtAt: now }]; p.companion = 'release-me';
+    });
+    let message;
+    const interaction = { guildId: 'guild', user: { id: 'owner' }, deferUpdate: async () => {},
+        editReply: async value => { message = value; }, followUp: async () => assert.fail('Release controls should work') };
+    await handleMicrobemon(interaction, s.client, ['owner', 'release_prompt', 'release-me']);
+    assert.match(message.embeds[0].toJSON().description, /cannot be undone/);
+    const confirm = message.components[0].toJSON().components[0];
+    const args = confirm.custom_id.split(':').slice(1);
+    await handleMicrobemon(interaction, s.client, args);
+    assert.equal(s.data.get('microbemon:guild:owner').pets.length, 0);
+    assert.equal(s.data.get('microbemon:guild:owner').companion, null);
+    assert.match(message.embeds[0].toJSON().title, /Microbedeck/);
+});
+
+test('battle XP and levels survive reload, and a failed write cannot grant XP', async () => {
+    const s = storage();
+    await withProfile(s.client, 'guild', 'owner', p => Object.assign(p, teamProfile()));
+    await withProfile(s.client, 'guild', 'owner', p => {
+        act(p, 'battle', { ...turn(p), rng: rolls(0, 0, 0) });
+        act(p, 'answer', { ...turn(p), answer: p.encounter.question.correct });
+    });
+    const loaded = await withProfile(s.client, 'guild', 'owner', () => {});
+    assert.equal(loaded.profile.pets[0].xp, 20);
+    s.fail();
+    await assert.rejects(withProfile(s.client, 'guild', 'owner', p => {
+        act(p, 'battle', { ...turn(p), rng: rolls(0, 0, 0) });
+        act(p, 'answer', { ...turn(p), answer: p.encounter.question.correct });
+    }), /write failed/);
+    assert.equal(s.data.get('microbemon:guild:owner').pets[0].xp, 20);
+});
+
+test('jumping to any of the 20 boxes works and release/switch controls are owner-only', async () => {
+    const s = storage(); let message;
+    const interaction = { client: s.client, guildId: 'guild', user: { id: 'owner' }, values: ['19'],
+        deferUpdate: async () => {}, editReply: async value => { message = value; }, followUp: async () => assert.fail('Box navigation should work') };
+    await handleMicrobemon(interaction, s.client, ['owner', 'box']);
+    assert.match(message.embeds[0].toJSON().description, /20\/20/);
+    const picker = message.components.find(row => row.toJSON().components.some(c => c.custom_id === 'microbemon:owner:box')).toJSON().components[0];
+    assert.equal(picker.options.length, 20);
+    for (const action of ['party', 'switch', 'release_prompt', 'release_confirm']) {
+        let response;
+        await handleMicrobemon({ user: { id: 'other' }, reply: async value => { response = value; } }, s.client, ['owner', action, 'owned-pet']);
+        assert.equal(response.flags, 64);
+    }
 });
