@@ -76,7 +76,7 @@ export async function loadQuestionBanks(directory = defaultDirectory, { complete
 }
 
 export function gradeQuestion(question, answer) {
-    if (question.type === 'fill_blank' && question.labModelId) return matchesLabAnswer(answer, question.answers);
+    if (question.type === 'fill_blank' && question.labModelId) return matchesLabAnswer(answer, question.answers, question.competingAnswers);
     if (question.type === 'fill_blank') return question.answers.some(a => normalizeAnswer(a) === normalizeAnswer(answer));
     if (!Array.isArray(answer) || answer.some(i => !Number.isInteger(i)) || new Set(answer).size !== answer.length) return false;
     const expected = question.correct;

@@ -1,4 +1,4 @@
-import { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions } from './labModels.js';
+import { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labSetForSelection } from './labModels.js';
 import {
     ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, MessageFlags,
     ModalBuilder, StringSelectMenuBuilder, TextInputBuilder, TextInputStyle,
@@ -182,10 +182,15 @@ export async function handleStudyInteraction(interaction, client, args) {
             }
             return;
         }
-        if (action === 'labcategory') {
-            if ((interaction.values?.[0] || token) !== 'reproductive') throw new Error('Unknown lab category');
+        if (action === 'labhome') {
             await interaction.deferUpdate();
-            await editStudyReply(interaction, labModelsMessage(ownerId));
+            await editStudyReply(interaction, labCategoryMessage(ownerId));
+            return;
+        }
+        if (action === 'labcategory') {
+            const payload = labModelsMessage(ownerId, interaction.values?.[0] || token);
+            await interaction.deferUpdate();
+            await editStudyReply(interaction, payload);
             return;
         }
         if (action === 'labmodels') {
@@ -197,10 +202,12 @@ export async function handleStudyInteraction(interaction, client, args) {
         if (action === 'labmode') {
             const mode = interaction.values?.[0];
             const questions = labQuestions(token, mode);
-            if (questions.some(question => !imageForQuestion(question))) return await privateError(interaction, 'This stage-identification set needs its original photos before it can start. The eight photos are visible in chat but have not been installed as bot image files yet.');
-            const session = createStudySession(interaction.guildId, ownerId, questions, 'lab_reproductive');
+            if (questions.some(question => !imageForQuestion(question))) return await privateError(interaction, 'This model set needs its image files before it can start. Please try again after the photos are installed.');
+            const set = labSetForSelection(token);
+            const category = set.category === 'respiratory' ? 'Respiratory Tract' : 'Reproductive System';
+            const session = createStudySession(interaction.guildId, ownerId, questions, `lab_${set.category}`);
             session.classId = 'ap_lab';
-            session.topicLabel = `Anatomy Lab • Reproductive System • ${mode === 'typed' ? 'Type in' : 'Multiple choice'}`;
+            session.topicLabel = `Anatomy Lab • ${category} • ${set.title} • ${mode === 'typed' ? 'Type in' : 'Multiple choice'}`;
             await interaction.deferUpdate();
             await publishQuestion(interaction, session);
             return;

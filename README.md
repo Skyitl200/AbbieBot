@@ -418,3 +418,13 @@ the profile, pet, and catch reward in the same transaction. Sponsor membership
 is refreshed before catches. Set `MICROBEMON_SPONSOR_ROLE_ID` for an exact role
 match; otherwise the server role named Sponsor is used (case-insensitive,
 decorations ignored).
+
+**Respiratory Tract** is a separate Anatomy Lab category. Its first set is
+**Upper Respiratory 3D Model**, containing all 28 approved cyan-blue arrow images.
+Choose that set, then A–D multiple choice or typed answers. Typed mode accepts
+common anatomical aliases and minor typos, but rejects matches that are equally
+close to another structure (such as internal versus external nares). Attachments
+use neutral filenames so filenames do not reveal the answer. Public questions,
+owner-only controls, private feedback and 5–30 Merit Coin rewards are retained.
+Add future respiratory sets to `LAB_SETS` with category `respiratory`; they will
+appear alongside this set rather than replacing it.

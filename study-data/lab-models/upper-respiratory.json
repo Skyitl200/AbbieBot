@@ -1,0 +1,860 @@
+{
+  "course": "Anatomy Lab",
+  "lectureReference": "Respiratory System, Chapter 22",
+  "category": "Respiratory Tract",
+  "modelGroup": "Upper Respiratory 3D Model",
+  "source": "User-approved cyan-pointer versions of supplied upper respiratory physical model photograph",
+  "models": [
+    {
+      "id": "resp-01",
+      "name": "Palatine tonsil",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Palatine tonsil",
+            "Lingual tonsil",
+            "Pharyngeal tonsil",
+            "Uvula"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Palatine tonsil.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Palatine tonsil",
+            "palatine tonsils"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-01.jpg",
+      "imageSha256": "ad0b6d542e6c83bdbc233c37e635dd41c5474402d4e0362d50a07975c56d51a0",
+      "originalImageFile": "01-palatine-tonsil.jpg"
+    },
+    {
+      "id": "resp-02",
+      "name": "Oropharynx",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Oropharynx",
+            "Nasopharynx",
+            "Laryngopharynx",
+            "Esophagus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Oropharynx.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Oropharynx"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-02.jpg",
+      "imageSha256": "783a24891c54dc2d3d7967ea92808a5a7a5b7921e5f89651f6f7e220d0669061",
+      "originalImageFile": "02-oropharynx.jpg"
+    },
+    {
+      "id": "resp-03",
+      "name": "Laryngopharynx",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Laryngopharynx",
+            "Nasopharynx",
+            "Oropharynx",
+            "Esophagus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Laryngopharynx.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Laryngopharynx"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-03.jpg",
+      "imageSha256": "eaa5ea684e5af560b974e13df8a48f76b84cfc8aee6ad71767c49c7f14179ea3",
+      "originalImageFile": "03-laryngopharynx.jpg"
+    },
+    {
+      "id": "resp-04",
+      "name": "Frontal sinus",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Frontal sinus",
+            "Sphenoidal sinus",
+            "External nares",
+            "Internal nares"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Frontal sinus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Frontal sinus"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-04.jpg",
+      "imageSha256": "b88b54e49e634b89e73913b745a90cb18593e5dcf90a6171beb45534b9bd9ecf",
+      "originalImageFile": "04-frontal-sinus.jpg"
+    },
+    {
+      "id": "resp-05",
+      "name": "External nares",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "External nares",
+            "Frontal sinus",
+            "Sphenoidal sinus",
+            "Internal nares"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "External nares.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "External nares",
+            "External nares (nostrils)",
+            "nostrils",
+            "nostril",
+            "external naris"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-05.jpg",
+      "imageSha256": "cc98fb515eb6c07a9c6c943fb6d953732b57a00228f3e9d940dd616fecf0ebb2",
+      "originalImageFile": "05-external-nares-nostrils.jpg"
+    },
+    {
+      "id": "resp-06",
+      "name": "Superior concha",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Superior concha",
+            "Middle concha",
+            "Inferior concha",
+            "Hard palate"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Superior concha.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Superior concha",
+            "superior nasal concha",
+            "superior turbinate",
+            "superior nasal turbinate"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-06.jpg",
+      "imageSha256": "5034267120d7791ad46d7aa84beaeab88522d5a6c5251500177925745947e6a3",
+      "originalImageFile": "06-superior-concha.jpg"
+    },
+    {
+      "id": "resp-07",
+      "name": "Middle concha",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Middle concha",
+            "Superior concha",
+            "Inferior concha",
+            "Hard palate"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Middle concha.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Middle concha",
+            "middle nasal concha",
+            "middle turbinate",
+            "middle nasal turbinate"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-07.jpg",
+      "imageSha256": "c5b9452d2e099ab29a2d052a7e44233990847ffebfa90474536b164149ed8d70",
+      "originalImageFile": "07-middle-concha.jpg"
+    },
+    {
+      "id": "resp-08",
+      "name": "Inferior concha",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Inferior concha",
+            "Superior concha",
+            "Middle concha",
+            "Hard palate"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Inferior concha.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Inferior concha",
+            "inferior nasal concha",
+            "inferior turbinate",
+            "inferior nasal turbinate"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-08.jpg",
+      "imageSha256": "db86887b7be7430c5b9dde5bce4cd1c5338dbf62881d79f0ae1e8d77f7342551",
+      "originalImageFile": "08-inferior-concha.jpg"
+    },
+    {
+      "id": "resp-09",
+      "name": "Superior meatus",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-09",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Superior meatus",
+            "Middle meatus",
+            "Inferior meatus",
+            "Internal nares"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Superior meatus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Superior meatus",
+            "superior nasal meatus"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-09.jpg",
+      "imageSha256": "6d26b8c3927e27824e5d7bf3226ece16d8f43e624dee7a05ab398036cce81477",
+      "originalImageFile": "09-superior-meatus.jpg"
+    },
+    {
+      "id": "resp-10",
+      "name": "Middle meatus",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-10",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Middle meatus",
+            "Superior meatus",
+            "Inferior meatus",
+            "Internal nares"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Middle meatus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Middle meatus",
+            "middle nasal meatus"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-10.jpg",
+      "imageSha256": "191441fd9e9b199bff20333cd61f5907da15fd565a04ccb9bd3e9d0461d3c96d",
+      "originalImageFile": "10-middle-meatus.jpg"
+    },
+    {
+      "id": "resp-11",
+      "name": "Inferior meatus",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-11",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Inferior meatus",
+            "Superior meatus",
+            "Middle meatus",
+            "Internal nares"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Inferior meatus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Inferior meatus",
+            "inferior nasal meatus"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-11.jpg",
+      "imageSha256": "73647ff17cd7065c3f60a5aa695ef1306029e69bff9a404b7021b75ca01ae06f",
+      "originalImageFile": "11-inferior-meatus.jpg"
+    },
+    {
+      "id": "resp-12",
+      "name": "Cribriform plate of ethmoid",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-12",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Cribriform plate of ethmoid",
+            "Palatine tonsil",
+            "Oropharynx",
+            "Laryngopharynx"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Cribriform plate of ethmoid.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Cribriform plate of ethmoid",
+            "cribriform plate",
+            "ethmoid cribriform plate",
+            "cribriform plate of the ethmoid bone"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-12.jpg",
+      "imageSha256": "63c540773133d64c0523ba88c569a80473023c26efb751ff7712d312ef97a018",
+      "originalImageFile": "12-cribriform-plate-of-ethmoid.jpg"
+    },
+    {
+      "id": "resp-13",
+      "name": "Sphenoidal sinus",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-13",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Sphenoidal sinus",
+            "Frontal sinus",
+            "External nares",
+            "Internal nares"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Sphenoidal sinus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Sphenoidal sinus",
+            "sphenoid sinus"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-13.jpg",
+      "imageSha256": "827ef53d5c3917374b97c574c1b5c158362af648d62cbb5bdf080d7af2d515a9",
+      "originalImageFile": "13-sphenoidal-sinus.jpg"
+    },
+    {
+      "id": "resp-14",
+      "name": "Internal nares",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-14",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Internal nares",
+            "Superior meatus",
+            "Middle meatus",
+            "Inferior meatus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Internal nares.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Internal nares",
+            "choanae",
+            "choana",
+            "internal naris"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-14.jpg",
+      "imageSha256": "d7c6b21af08d2ecec65336d97a16f238f65759a5f6d739a4b726da063f1425cf",
+      "originalImageFile": "14-internal-nares.jpg"
+    },
+    {
+      "id": "resp-15",
+      "name": "Nasopharynx",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-15",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Nasopharynx",
+            "Oropharynx",
+            "Laryngopharynx",
+            "Esophagus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Nasopharynx.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Nasopharynx"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-15.jpg",
+      "imageSha256": "77286d89e1621526ccaf02afc900769b44e51f74305cf3522907245629a57f04",
+      "originalImageFile": "15-nasopharynx.jpg"
+    },
+    {
+      "id": "resp-16",
+      "name": "Uvula",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-16",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Uvula",
+            "Palatine tonsil",
+            "Lingual tonsil",
+            "Pharyngeal tonsil"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Uvula.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Uvula"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-16.jpg",
+      "imageSha256": "72d040e095567be7cabf74ea9edb121891268c551c8cf0bacd08c5e2ca700dd0",
+      "originalImageFile": "16-uvula.jpg"
+    },
+    {
+      "id": "resp-17",
+      "name": "Lingual tonsil",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-17",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Lingual tonsil",
+            "Palatine tonsil",
+            "Pharyngeal tonsil",
+            "Uvula"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Lingual tonsil.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Lingual tonsil",
+            "lingual tonsils"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-17.jpg",
+      "imageSha256": "8f11cac4ee96aa3a47d63334d34137ba4c21365e6b25688bdbbd80ce1740cba0",
+      "originalImageFile": "17-lingual-tonsil.jpg"
+    },
+    {
+      "id": "resp-18",
+      "name": "Fauces",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-18",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Fauces",
+            "Hard palate",
+            "Soft palate",
+            "Uvula"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Fauces.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Fauces"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-18.jpg",
+      "imageSha256": "976bfe7d85f96a5ff8e7256c7ffa8cbccfa94e45a8ff57a87aef0d70688abfca",
+      "originalImageFile": "18-fauces.jpg"
+    },
+    {
+      "id": "resp-19",
+      "name": "Vestibular fold",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-19",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Vestibular fold",
+            "Vocal fold",
+            "Epiglottis",
+            "Trachea"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Vestibular fold.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Vestibular fold",
+            "Vestibular fold (top part)",
+            "false vocal fold",
+            "false vocal cord",
+            "vestibular folds"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-19.jpg",
+      "imageSha256": "1147f3fb4384d911b9eb601b5998172eeb69886f13ee2e408151f689bdf55c05",
+      "originalImageFile": "19-vestibular-fold-top-part.jpg"
+    },
+    {
+      "id": "resp-20",
+      "name": "Vocal fold",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-20",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Vocal fold",
+            "Vestibular fold",
+            "Epiglottis",
+            "Trachea"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Vocal fold.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Vocal fold",
+            "Vocal fold (bottom part)",
+            "true vocal fold",
+            "true vocal cord",
+            "vocal cord"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-20.jpg",
+      "imageSha256": "04dc1bea1f4d42983bf27cadc5e067884721e5a2e2b8396414dd36abee79e21b",
+      "originalImageFile": "20-vocal-fold-bottom-part.jpg"
+    },
+    {
+      "id": "resp-21",
+      "name": "Esophagus",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-21",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Esophagus",
+            "Nasopharynx",
+            "Oropharynx",
+            "Laryngopharynx"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Esophagus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Esophagus",
+            "oesophagus"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-21.jpg",
+      "imageSha256": "b46ed9dc2c2a77e01706d19dae4c36bd6685f0c4e09c901206a2bd3262e764f6",
+      "originalImageFile": "21-esophagus.jpg"
+    },
+    {
+      "id": "resp-22",
+      "name": "Trachea",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-22",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Trachea",
+            "Vestibular fold",
+            "Vocal fold",
+            "Epiglottis"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Trachea. Only its upper end is visible here.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Trachea"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-22.jpg",
+      "imageSha256": "335d49e258f3bd72fd0a9c3e82c5b7b4640879142a0d56218f1d4dd50cc5cea7",
+      "originalImageFile": "22-trachea.jpg"
+    },
+    {
+      "id": "resp-23",
+      "name": "Epiglottis",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-23",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Epiglottis",
+            "Vestibular fold",
+            "Vocal fold",
+            "Trachea"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Epiglottis.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Epiglottis"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-23.jpg",
+      "imageSha256": "d25e5f81520b707c90205bcc3eb3c2ba26efe05a35b59bad7c815058407927a0",
+      "originalImageFile": "23-epiglottis.jpg"
+    },
+    {
+      "id": "resp-24",
+      "name": "Hyoid bone",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-24",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Hyoid bone",
+            "Palatine tonsil",
+            "Oropharynx",
+            "Laryngopharynx"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Hyoid bone.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Hyoid bone",
+            "hyoid"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-24.jpg",
+      "imageSha256": "fefcb2a4acb9e26f506f1aea4e3b5bbaa21963de6f10526cdbdc2350f5c66038",
+      "originalImageFile": "24-hyoid-bone.jpg"
+    },
+    {
+      "id": "resp-25",
+      "name": "Hard palate",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-25",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Hard palate",
+            "Superior concha",
+            "Middle concha",
+            "Inferior concha"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Hard palate.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Hard palate"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-25.jpg",
+      "imageSha256": "ee995747252b336aba101076c4ebdf8e98f54c8c36b9d0b45c0a046eb853d1e7",
+      "originalImageFile": "25-hard-palate.jpg"
+    },
+    {
+      "id": "resp-26",
+      "name": "Soft palate",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-26",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Soft palate",
+            "Hard palate",
+            "Uvula",
+            "Fauces"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Soft palate.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Soft palate"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-26.jpg",
+      "imageSha256": "e185529d6d316023f4fd2916ed0018d0b2a851e15ab1e55bfea5a8011e79cf47",
+      "originalImageFile": "26-soft-palate.jpg"
+    },
+    {
+      "id": "resp-27",
+      "name": "Vestibule",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-27",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Vestibule",
+            "Palatine tonsil",
+            "Oropharynx",
+            "Laryngopharynx"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Vestibule.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Vestibule",
+            "nasal vestibule"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-27.jpg",
+      "imageSha256": "a2754d618106132dab5d54ae7c9ff262f9e31c4f5c73770b792e5914e3048a3b",
+      "originalImageFile": "27-vestibule.jpg"
+    },
+    {
+      "id": "resp-28",
+      "name": "Pharyngeal tonsil",
+      "questions": [
+        {
+          "id": "lab-upper-respiratory-28",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Pharyngeal tonsil",
+            "Palatine tonsil",
+            "Lingual tonsil",
+            "Uvula"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Pharyngeal tonsil.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Pharyngeal tonsil",
+            "adenoid",
+            "adenoids",
+            "pharyngeal tonsils"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-respiratory/ur-28.jpg",
+      "imageSha256": "432e0aea4d4944ef663c3c734163cd2e2b457bcb9ab3adcc794c03eb7b3e34c9",
+      "originalImageFile": "28-pharyngeal-tonsil.jpg"
+    }
+  ]
+}

@@ -19,18 +19,21 @@ function distance(a, b) {
     }
     return rows[a.length][b.length];
 }
-export function matchesLabAnswer(answer, accepted) {
+export function matchesLabAnswer(answer, accepted, competing = []) {
     if (typeof answer !== 'string' || answer.length > 300 || /\b(?:not|no|never|isn't|isnt|isn’t)\b/i.test(answer)) return false;
     const actual = normalize(answer);
     if (!actual) return false;
-    return accepted.some(value => {
+    const score = value => {
         const expected = normalize(value);
-        if (!expected) return false;
-        if ((actual.match(/\d+/g) || []).join(',') !== (expected.match(/\d+/g) || []).join(',')) return false;
-        if (actual === expected) return true;
+        if (!expected || (actual.match(/\d+/g) || []).join(',') !== (expected.match(/\d+/g) || []).join(',')) return Infinity;
+        if (actual === expected) return 0;
         const length = Math.min(actual.length, expected.length);
         const allowance = length < 4 ? 0 : length <= 8 ? 1 : length <= 20 ? 2 : 3;
-        if (Math.abs(actual.length - expected.length) > allowance) return false;
-        return distance(actual, expected) <= allowance;
-    });
+        if (Math.abs(actual.length - expected.length) > allowance) return Infinity;
+        const difference = distance(actual, expected);
+        return difference <= allowance ? difference : Infinity;
+    };
+    const best = Math.min(...accepted.map(score));
+    // A typo must be closer to the correct term than to any other structure in the set.
+    return Number.isFinite(best) && best < Math.min(...competing.map(score));
 }

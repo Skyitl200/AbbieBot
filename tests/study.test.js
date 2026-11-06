@@ -1227,3 +1227,68 @@ test('model answers stay as short as the supplied Quizlet labels', async () => {
         assert.ok(q.typedAnswers.includes(q.options[0]));
     }
 });
+
+test('Respiratory Tract contains one 28-image set and both quiz modes attach cyan-arrow photos', async () => {
+    const { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labModelImage, LAB_SETS } = await import('../src/services/study/labModels.js');
+    const { readFile } = await import('node:fs/promises');
+    const { createHash } = await import('node:crypto');
+    const categories = labCategoryMessage('u').components[0].toJSON().components[0].options;
+    assert.ok(categories.some(category => category.label === 'Respiratory Tract' && category.value === 'respiratory'));
+    const sets = labModelsMessage('u', 'respiratory').components[0].toJSON().components[0].options;
+    assert.deepEqual(sets.map(set => set.label), ['Upper Respiratory 3D Model']);
+    assert.equal(sets[0].value, 'upper-respiratory');
+    const mode = labModeMessage('u', 'upper-respiratory');
+    assert.equal(mode.components[1].toJSON().components[0].custom_id, 'study:labcategory:u:respiratory');
+    const models = LAB_SETS.find(set => set.id === 'upper-respiratory').models;
+    assert.equal(models.length, 28);
+    const hashes = new Set();
+    for (const model of models) {
+        const figure = labModelImage({ labModelId: model.id });
+        assert.ok(figure);
+        assert.match(figure.asset.file, /^ur-\d{2}\.jpg$/, 'Image filenames cannot reveal answers');
+        const bytes = await readFile(figure.path);
+        const hash = createHash('sha256').update(bytes).digest('hex');
+        assert.equal(hash, model.imageSha256, 'Use the approved cyan-pointer file');
+        hashes.add(hash);
+    }
+    assert.equal(hashes.size, 28);
+    for (const answerMode of ['multiple_choice', 'typed']) {
+        const start = fakeInteraction('', { values: [answerMode] });
+        await handleStudyInteraction(start, {}, ['labmode', 'u', 'upper-respiratory']);
+        const payload = start.calls.find(([type]) => type === 'followUp')[1];
+        const args = payload.components[0].toJSON().components[0].custom_id.split(':').slice(1);
+        const session = getStudySession('g', 'u', args[2]);
+        assert.equal(session.questions.length, 28);
+        assert.equal(session.topicId, 'lab_respiratory');
+        assert.match(session.topicLabel, /Respiratory Tract.*Upper Respiratory/);
+        assert.equal(payload.flags, 0);
+        assert.equal(payload.files.length, 1);
+        assert.match(payload.embeds[0].toJSON().image.url, /^attachment:\/\/ur-\d{2}\.jpg$/);
+        assert.ok(session.questions.every(q => q.question === 'What structure is indicated by the arrow?'));
+        if (answerMode === 'multiple_choice') assert.deepEqual(payload.components[0].toJSON().components.map(button => button.label), ['A', 'B', 'C', 'D']);
+        else assert.equal(payload.components[0].toJSON().components[0].label, 'Enter answer');
+    }
+    const category = fakeInteraction('', { values: ['respiratory'] });
+    await handleStudyInteraction(category, {}, ['labcategory', 'u']);
+    assert.match(category.calls.at(-1)[1].embeds[0].toJSON().title, /Respiratory Tract/);
+    assert.throws(() => labModelsMessage('u', 'unknown'), /Unknown lab category/);
+    assert.equal(labQuestions('early-development', 'typed').length, 8, 'Existing reproductive set remains separate');
+});
+
+test('respiratory typed answers accept synonyms and typos while protecting nearby structures', async () => {
+    const { labQuestions } = await import('../src/services/study/labModels.js');
+    const questions = labQuestions('upper-respiratory', 'typed');
+    const by = name => questions.find(q => q.modelName === name);
+    for (const [name, answer] of [
+        ['Pharyngeal tonsil', 'adenoids'], ['External nares', 'nostrils'],
+        ['Internal nares', 'choanae'], ['Vestibular fold', 'false vocal fold'],
+        ['Vocal fold', 'true vocal cord'], ['Esophagus', 'oesophagus'],
+        ['Epiglottis', 'epiglotis'], ['Superior concha', 'superior turbinate'],
+        ['Vestibule', 'nasal vestibule'],
+    ]) assert.equal(gradeQuestion(by(name), answer), true, `${name}: ${answer}`);
+    for (const [name, answer] of [
+        ['Internal nares', 'external nares'], ['External nares', 'internal nares'],
+        ['Superior concha', 'inferior concha'], ['Vocal fold', 'vestibular fold'],
+        ['Vestibule', 'oral vestibule'], ['Trachea', 'esophagus'],
+    ]) assert.equal(gradeQuestion(by(name), answer), false, `${name}: ${answer}`);
+});
