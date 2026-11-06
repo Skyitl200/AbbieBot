@@ -12,25 +12,25 @@ const turn = p => ({ encounterId: p.encounter.id, revision: p.encounter.revision
 
 // A simple transactional adapter permits testing failures without a Discord token or live DB.
 function storage() {
-    const data = new Map(); const calls = []; let fail = false; let failProfile = false; let balance = 100; let receipts = new Set();
+    const data = new Map(); const calls = []; let fail = false; let failProfile = false; let balance = 100; let receipts = new Set(); let caches = 0;
     const client = { db: { pool: { connect: async () => {
-        let pending; let pendingBalance = balance; const pendingReceipts = new Set(receipts);
+        let pending; let pendingBalance = balance; let pendingCaches = caches; const pendingReceipts = new Set(receipts);
         return { query: async (sql, params) => {
             calls.push({ sql, params });
             if (sql.startsWith('SELECT value')) return { rows: data.has(params[0]) ? [{ value: structuredClone(data.get(params[0])) }] : [] };
             if (sql.trimStart().startsWith('INSERT')) {
                 if (fail) throw new Error('write failed');
                 if (sql.includes('RETURNING balance')) {
-                    if (!pendingReceipts.has(params[3])) { pendingBalance += params[2]; pendingReceipts.add(params[3]); }
+                    if (!pendingReceipts.has(params[3])) { pendingBalance += params[2]; pendingCaches += params[5] || 0; pendingReceipts.add(params[3]); }
                     return { rows: [{ balance: pendingBalance }] };
                 }
                 if (sql.includes('expires_at')) { if (failProfile) throw new Error('profile write failed'); pending = [params[0], JSON.parse(params[1])]; }
             }
-            if (sql === 'COMMIT' && pending) { data.set(...pending); balance = pendingBalance; receipts = pendingReceipts; }
+            if (sql === 'COMMIT' && pending) { data.set(...pending); balance = pendingBalance; caches = pendingCaches; receipts = pendingReceipts; }
             return { rows: [] };
         }, release: () => calls.push({ sql: 'RELEASE' }) };
     } } } };
-    return { client, data, calls, balance: () => balance, failProfile: () => { failProfile = true; }, fail: () => { fail = true; } };
+    return { client, data, calls, balance: () => balance, caches: () => caches, failProfile: () => { failProfile = true; }, fail: () => { fail = true; } };
 }
 
 test('all 100 encounter rolls match the advertised tier weights', () => {
@@ -745,4 +745,23 @@ test('Sponsor role matching supports member objects, raw role IDs and exact conf
     } }), false);
     assert.equal(fetched, true);
     await assert.rejects(isSponsorForCatch({ user: { id: 'u' }, guild: { members: { async fetch() { throw new Error('offline'); } } } }), /Unable to verify/);
+});
+
+test('a 1-in-300 cache drop saves with the catch and reports the saved cache', async () => {
+    const s = storage();
+    const saved = await withProfile(s.client, 'guild', 'user', p => {
+        act(p, 'explore', { now, rng: rolls(0, 0, 0, 0) });
+        return act(p, 'catch', { ...turn(p), rng: rolls(0) });
+    }, { rng: () => 0 });
+    assert.equal(saved.profile.pets[0].catchReward.cacheDrop, true);
+    assert.equal(s.caches(), 1);
+    assert.match(saved.value, /You found a \*\*Discovery Cache\*\*/);
+    await withProfile(s.client, 'guild', 'user', () => {});
+    assert.equal(s.caches(), 1);
+    const failed = storage();
+    await withProfile(failed.client, 'guild', 'user', p => act(p, 'explore', { now, rng: rolls(0, 0, 0, 0) }));
+    failed.failProfile();
+    await assert.rejects(withProfile(failed.client, 'guild', 'user', p => act(p, 'catch', { ...turn(p), rng: rolls(0) }), { rng: () => 0 }), /profile write failed/);
+    assert.equal(failed.caches(), 0);
+    assert.equal(failed.data.get('microbemon:guild:user').pets.length, 0);
 });

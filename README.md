@@ -435,3 +435,8 @@ and its SHA-256 are stored with the set; each card records its arrow coordinates
 Run `python scripts/renderRespiratoryPointers.py` (Pillow required for this
 developer-only build step) to rebuild. Tests verify that every pixel outside
 the arrow remains identical to the original photograph.
+
+Discovery Caches drop with a **1-in-300** chance for each correct `/test` answer
+and successful Microbemon catch. The activity result announces a saved drop.
+Use `/inventory` to open owned caches or view **Possible Cache Rewards**.
+See [the reward list and behavior](docs/discovery-caches.md).

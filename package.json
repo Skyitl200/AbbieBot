@@ -19,7 +19,8 @@
     "backup:db": "node scripts/backup.js",
     "restore:db": "node scripts/restore.js",
     "backup:drill": "node scripts/restore-drill.js",
-    "test:microbemon": "node --test tests/microbemon.test.js"
+    "test:microbemon": "node --test tests/microbemon.test.js",
+    "test:discovery": "node --test tests/discovery.test.js"
   },
   "dependencies": {
     "@discordjs/rest": "^2.6.1",

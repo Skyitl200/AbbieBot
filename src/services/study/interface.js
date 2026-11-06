@@ -1,3 +1,4 @@
+import { cacheFoundNotice } from '../discovery/catalog.js';
 import { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labSetForSelection } from './labModels.js';
 import {
     ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, MessageFlags,
@@ -120,6 +121,7 @@ export function resultMessage(session, correct) {
         description = correct ? 'Your answer is correct. The coin award could not be confirmed. Select **Retry coins** to check and save it.' : 'No Merit Coins earned for this answer. Your wallet balance is currently unavailable.';
         if (!session.guildId) description = 'Merit Coins are available when studying in a server.';
     }
+    if (reward?.status === 'saved' && reward.cacheDrop) description += `\n\n${cacheFoundNotice()}`;
     const embed = new EmbedBuilder().setTitle(correct ? 'Correct! ✅' : 'Incorrect ❌').setDescription(description)
         .setColor(correct ? 0x22aa55 : 0xdd5555)
         .addFields(
