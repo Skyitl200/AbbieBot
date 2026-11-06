@@ -58,6 +58,27 @@
           "typedAnswers": [
             "Oropharynx"
           ]
+        },
+        {
+          "id": "lab-upper-respiratory-02-location",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which part of the pharynx lies behind the oral cavity?",
+          "options": [
+            "Oropharynx",
+            "Nasopharynx",
+            "Laryngopharynx",
+            "Fauces"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The oropharynx lies behind the mouth.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Oropharynx"
+          ],
+          "questionKind": "location"
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-02.jpg",
@@ -87,6 +108,27 @@
           "typedAnswers": [
             "Laryngopharynx"
           ]
+        },
+        {
+          "id": "lab-upper-respiratory-03-location",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which part of the pharynx lies behind the larynx?",
+          "options": [
+            "Laryngopharynx",
+            "Nasopharynx",
+            "Oropharynx",
+            "Fauces"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The laryngopharynx lies behind the larynx.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Laryngopharynx"
+          ],
+          "questionKind": "location"
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-03.jpg",
@@ -152,8 +194,9 @@
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-05.jpg",
-      "imageSha256": "cc98fb515eb6c07a9c6c943fb6d953732b57a00228f3e9d940dd616fecf0ebb2",
-      "originalImageFile": "05-external-nares-nostrils.jpg"
+      "imageSha256": "2bad3c6cf2fc656e0e88f048e232e84128884a56475dac59f214b4c92711f097",
+      "originalImageFile": "05-external-nares-nostrils.jpg",
+      "imageRevision": 2
     },
     {
       "id": "resp-06",
@@ -184,8 +227,9 @@
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-06.jpg",
-      "imageSha256": "5034267120d7791ad46d7aa84beaeab88522d5a6c5251500177925745947e6a3",
-      "originalImageFile": "06-superior-concha.jpg"
+      "imageSha256": "143877fb1cd8134a1a09254552587f1ad184764dd4b2c44546af78a717a85d3a",
+      "originalImageFile": "06-superior-concha.jpg",
+      "imageRevision": 2
     },
     {
       "id": "resp-07",
@@ -248,8 +292,9 @@
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-08.jpg",
-      "imageSha256": "db86887b7be7430c5b9dde5bce4cd1c5338dbf62881d79f0ae1e8d77f7342551",
-      "originalImageFile": "08-inferior-concha.jpg"
+      "imageSha256": "dc28630f646a94c96777c85d413f8e39c145f112c30a4a2d2f99c867a5ea23d7",
+      "originalImageFile": "08-inferior-concha.jpg",
+      "imageRevision": 2
     },
     {
       "id": "resp-09",
@@ -308,8 +353,9 @@
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-10.jpg",
-      "imageSha256": "191441fd9e9b199bff20333cd61f5907da15fd565a04ccb9bd3e9d0461d3c96d",
-      "originalImageFile": "10-middle-meatus.jpg"
+      "imageSha256": "7a62b37c5a8a209330b4f4b90962a6ecf0228441a652150cf0ae8f034e2f88e9",
+      "originalImageFile": "10-middle-meatus.jpg",
+      "imageRevision": 2
     },
     {
       "id": "resp-11",
@@ -340,38 +386,6 @@
       "expectedImageFile": "upper-respiratory/ur-11.jpg",
       "imageSha256": "73647ff17cd7065c3f60a5aa695ef1306029e69bff9a404b7021b75ca01ae06f",
       "originalImageFile": "11-inferior-meatus.jpg"
-    },
-    {
-      "id": "resp-12",
-      "name": "Cribriform plate of ethmoid",
-      "questions": [
-        {
-          "id": "lab-upper-respiratory-12",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "question": "What structure is indicated by the arrow?",
-          "options": [
-            "Cribriform plate of ethmoid",
-            "Palatine tonsil",
-            "Oropharynx",
-            "Laryngopharynx"
-          ],
-          "correct": [
-            0
-          ],
-          "explanation": "Cribriform plate of ethmoid.",
-          "requiresModelImage": true,
-          "typedAnswers": [
-            "Cribriform plate of ethmoid",
-            "cribriform plate",
-            "ethmoid cribriform plate",
-            "cribriform plate of the ethmoid bone"
-          ]
-        }
-      ],
-      "expectedImageFile": "upper-respiratory/ur-12.jpg",
-      "imageSha256": "63c540773133d64c0523ba88c569a80473023c26efb751ff7712d312ef97a018",
-      "originalImageFile": "12-cribriform-plate-of-ethmoid.jpg"
     },
     {
       "id": "resp-13",
@@ -458,6 +472,27 @@
           "typedAnswers": [
             "Nasopharynx"
           ]
+        },
+        {
+          "id": "lab-upper-respiratory-15-location",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which part of the pharynx lies behind the nasal cavity?",
+          "options": [
+            "Nasopharynx",
+            "Oropharynx",
+            "Laryngopharynx",
+            "Fauces"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The nasopharynx lies behind the nose.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Nasopharynx"
+          ],
+          "questionKind": "location"
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-15.jpg",
@@ -535,8 +570,8 @@
           "options": [
             "Fauces",
             "Hard palate",
-            "Soft palate",
-            "Uvula"
+            "Uvula",
+            "Palatine tonsil"
           ],
           "correct": [
             0
@@ -582,8 +617,9 @@
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-19.jpg",
-      "imageSha256": "1147f3fb4384d911b9eb601b5998172eeb69886f13ee2e408151f689bdf55c05",
-      "originalImageFile": "19-vestibular-fold-top-part.jpg"
+      "imageSha256": "c43fb77b354a36689f0a1422604c7f1d0cafbc192a3e6ae7508096a821e1113d",
+      "originalImageFile": "19-vestibular-fold-top-part.jpg",
+      "imageRevision": 2
     },
     {
       "id": "resp-20",
@@ -615,8 +651,9 @@
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-20.jpg",
-      "imageSha256": "04dc1bea1f4d42983bf27cadc5e067884721e5a2e2b8396414dd36abee79e21b",
-      "originalImageFile": "20-vocal-fold-bottom-part.jpg"
+      "imageSha256": "93b5c0ef0357b43c1f3bf2719c0dfd158fa7614438ba87335f968ef0e86f6712",
+      "originalImageFile": "20-vocal-fold-bottom-part.jpg",
+      "imageRevision": 2
     },
     {
       "id": "resp-21",
@@ -645,8 +682,9 @@
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-21.jpg",
-      "imageSha256": "b46ed9dc2c2a77e01706d19dae4c36bd6685f0c4e09c901206a2bd3262e764f6",
-      "originalImageFile": "21-esophagus.jpg"
+      "imageSha256": "10b161074e440a11ee8bc682f1f201dc82681356fedcddcdfb1166c55273ad87",
+      "originalImageFile": "21-esophagus.jpg",
+      "imageRevision": 2
     },
     {
       "id": "resp-22",
@@ -766,35 +804,6 @@
       "originalImageFile": "25-hard-palate.jpg"
     },
     {
-      "id": "resp-26",
-      "name": "Soft palate",
-      "questions": [
-        {
-          "id": "lab-upper-respiratory-26",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "question": "What structure is indicated by the arrow?",
-          "options": [
-            "Soft palate",
-            "Hard palate",
-            "Uvula",
-            "Fauces"
-          ],
-          "correct": [
-            0
-          ],
-          "explanation": "Soft palate.",
-          "requiresModelImage": true,
-          "typedAnswers": [
-            "Soft palate"
-          ]
-        }
-      ],
-      "expectedImageFile": "upper-respiratory/ur-26.jpg",
-      "imageSha256": "e185529d6d316023f4fd2916ed0018d0b2a851e15ab1e55bfea5a8011e79cf47",
-      "originalImageFile": "26-soft-palate.jpg"
-    },
-    {
       "id": "resp-27",
       "name": "Vestibule",
       "questions": [
@@ -821,8 +830,9 @@
         }
       ],
       "expectedImageFile": "upper-respiratory/ur-27.jpg",
-      "imageSha256": "a2754d618106132dab5d54ae7c9ff262f9e31c4f5c73770b792e5914e3048a3b",
-      "originalImageFile": "27-vestibule.jpg"
+      "imageSha256": "61b2d3114a30e293da52792c43df7263f18a1f1b0643d1c7edbb40550e2de378",
+      "originalImageFile": "27-vestibule.jpg",
+      "imageRevision": 2
     },
     {
       "id": "resp-28",

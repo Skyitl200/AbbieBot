@@ -1228,7 +1228,7 @@ test('model answers stay as short as the supplied Quizlet labels', async () => {
     }
 });
 
-test('Respiratory Tract contains one 28-image set and both quiz modes attach cyan-arrow photos', async () => {
+test('Respiratory Tract contains one 26-image set and both quiz modes attach cyan-arrow photos', async () => {
     const { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labModelImage, LAB_SETS } = await import('../src/services/study/labModels.js');
     const { readFile } = await import('node:fs/promises');
     const { createHash } = await import('node:crypto');
@@ -1240,7 +1240,7 @@ test('Respiratory Tract contains one 28-image set and both quiz modes attach cya
     const mode = labModeMessage('u', 'upper-respiratory');
     assert.equal(mode.components[1].toJSON().components[0].custom_id, 'study:labcategory:u:respiratory');
     const models = LAB_SETS.find(set => set.id === 'upper-respiratory').models;
-    assert.equal(models.length, 28);
+    assert.equal(models.length, 26);
     const hashes = new Set();
     for (const model of models) {
         const figure = labModelImage({ labModelId: model.id });
@@ -1251,20 +1251,21 @@ test('Respiratory Tract contains one 28-image set and both quiz modes attach cya
         assert.equal(hash, model.imageSha256, 'Use the approved cyan-pointer file');
         hashes.add(hash);
     }
-    assert.equal(hashes.size, 28);
+    assert.equal(hashes.size, 26);
     for (const answerMode of ['multiple_choice', 'typed']) {
         const start = fakeInteraction('', { values: [answerMode] });
         await handleStudyInteraction(start, {}, ['labmode', 'u', 'upper-respiratory']);
         const payload = start.calls.find(([type]) => type === 'followUp')[1];
         const args = payload.components[0].toJSON().components[0].custom_id.split(':').slice(1);
         const session = getStudySession('g', 'u', args[2]);
-        assert.equal(session.questions.length, 28);
+        assert.equal(session.questions.length, 29);
         assert.equal(session.topicId, 'lab_respiratory');
         assert.match(session.topicLabel, /Respiratory Tract.*Upper Respiratory/);
         assert.equal(payload.flags, 0);
         assert.equal(payload.files.length, 1);
         assert.match(payload.embeds[0].toJSON().image.url, /^attachment:\/\/ur-\d{2}\.jpg$/);
-        assert.ok(session.questions.every(q => q.question === 'What structure is indicated by the arrow?'));
+        assert.equal(session.questions.filter(q => q.questionKind === 'location').length, 3);
+        assert.ok(session.questions.every(q => q.questionKind === 'location' || q.question === 'What structure is indicated by the arrow?'));
         if (answerMode === 'multiple_choice') assert.deepEqual(payload.components[0].toJSON().components.map(button => button.label), ['A', 'B', 'C', 'D']);
         else assert.equal(payload.components[0].toJSON().components[0].label, 'Enter answer');
     }
@@ -1291,4 +1292,28 @@ test('respiratory typed answers accept synonyms and typos while protecting nearb
         ['Superior concha', 'inferior concha'], ['Vocal fold', 'vestibular fold'],
         ['Vestibule', 'oral vestibule'], ['Trachea', 'esophagus'],
     ]) assert.equal(gradeQuestion(by(name), answer), false, `${name}: ${answer}`);
+});
+
+test('respiratory adjustments remove both terms and add short pharynx-location practice', async () => {
+    const { LAB_SETS, labQuestions } = await import('../src/services/study/labModels.js');
+    const set = LAB_SETS.find(set => set.id === 'upper-respiratory');
+    assert.equal(set.models.length, 26);
+    assert.ok(!set.models.some(model => ['Soft palate', 'Cribriform plate of ethmoid'].includes(model.name)));
+    for (const mode of ['multiple_choice', 'typed']) {
+        const questions = labQuestions('upper-respiratory', mode);
+        assert.equal(questions.length, 29);
+        const locations = questions.filter(q => q.questionKind === 'location');
+        assert.equal(locations.length, 3);
+        for (const q of locations) {
+            assert.ok(/behind the (?:nasal cavity|oral cavity|larynx)/.test(q.question));
+            const correct = mode === 'typed' ? q.answers[0] : q.options[q.correct[0]];
+            assert.equal(correct, q.modelName);
+            assert.equal(gradeQuestion(q, mode === 'typed' ? correct : q.correct), true);
+        }
+        if (mode === 'multiple_choice') for (const q of questions) {
+            assert.equal(q.options.length, 4);
+            assert.equal(new Set(q.options).size, 4);
+            assert.ok(!q.options.some(option => ['Soft palate', 'Cribriform plate of ethmoid'].includes(option)));
+        }
+    }
 });

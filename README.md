@@ -420,7 +420,7 @@ match; otherwise the server role named Sponsor is used (case-insensitive,
 decorations ignored).
 
 **Respiratory Tract** is a separate Anatomy Lab category. Its first set is
-**Upper Respiratory 3D Model**, containing all 28 approved cyan-blue arrow images.
+**Upper Respiratory 3D Model**, containing 26 cyan-blue arrow images and three additional pharynx-location questions. Soft palate and cribriform plate are excluded.
 Choose that set, then A–D multiple choice or typed answers. Typed mode accepts
 common anatomical aliases and minor typos, but rejects matches that are equally
 close to another structure (such as internal versus external nares). Attachments
