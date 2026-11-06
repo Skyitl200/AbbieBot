@@ -399,17 +399,16 @@ The original habitat artwork is retained; the proposed flat 2D redraw was cancel
 
 `/test` → **Anatomy Lab** → **Reproductive System** → choose the
 **Early Development Models** set → **Multiple choice** or **Type in answer**.
-All eight photos, including the 16-cell stage, belong to one set and are mixed together. Once photos are installed, this set asks only “Which stage is shown in this model?” for each of the eight photos. This authored section
+All eight photos, including the 16-cell stage, belong to one set and are mixed together. This set asks only “Which stage is shown in this model?” for each of the eight photos. This authored section
 works without saved database questions; **Other saved lab categories** retains
 access to existing lab quizzes. Typed mode accepts curated biological synonyms.
 Questions use the same public-card, owner-only answer controls and Merit Coin rewards.
 
-Original photographs have not yet been installed. The set can be selected, but
-starting a quiz is blocked until its original images are available. There are no
-lecture, location, function, or process questions in this set. Place the eight user-supplied photos in `study-assets/lab-models/`
-using each `expectedImageFile` from `study-data/lab-models/early-development.json`.
-They will appear inline automatically, enabling their identification questions.
-Do not substitute generated images for the user's physical models.
+All eight original user-supplied photographs are installed in `study-assets/lab-models/`
+and appear inline on their matching stage questions. The set contains only stage
+identification questions, with A–D choices or typed answers and accepted synonyms.
+The image manifest records each ZIP filename and SHA-256 so tests verify the exact
+original files. No generated or substitute model images are used.
 
 Microbemon members without the **Sponsor** role are limited to **4 successful
 catches per calendar day**, resetting at midnight **America/New_York** (Eastern

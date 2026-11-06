@@ -34,7 +34,9 @@
         }
       ],
       "photoNumber": 1,
-      "expectedImageFile": "01-oocyte.jpg"
+      "expectedImageFile": "01-oocyte.png",
+      "originalImageFile": "ok2.png",
+      "imageSha256": "9fa86d380321c6c4b1ab09f91580c18b9718b5447d6d469107b33dc7b32aa3e5"
     },
     {
       "id": "sperm-entry",
@@ -65,7 +67,9 @@
         }
       ],
       "photoNumber": 2,
-      "expectedImageFile": "02-sperm-entry.jpg"
+      "expectedImageFile": "02-sperm-entry.png",
+      "originalImageFile": "0k3.png",
+      "imageSha256": "bc5de7b4f5445e67024dd291e55c7f6ee400c40fa64100346651bc6dc0a6c753"
     },
     {
       "id": "pronuclei",
@@ -96,7 +100,9 @@
         }
       ],
       "photoNumber": 3,
-      "expectedImageFile": "03-pronuclei.jpg"
+      "expectedImageFile": "03-pronuclei.png",
+      "originalImageFile": "ok4.png",
+      "imageSha256": "c1516b95c3f6d6e2707952fd5c3e86a2943451e9f8b53785156fb892e448d64b"
     },
     {
       "id": "zygote",
@@ -128,7 +134,9 @@
         }
       ],
       "photoNumber": 4,
-      "expectedImageFile": "04-zygote.jpg"
+      "expectedImageFile": "04-zygote.png",
+      "originalImageFile": "ok5.png",
+      "imageSha256": "699701998ff7bdd0004649c5ca2ef2e6e2e40468946439b595c483947ec37233"
     },
     {
       "id": "two-cell",
@@ -160,7 +168,9 @@
         }
       ],
       "photoNumber": 5,
-      "expectedImageFile": "05-two-cell.jpg"
+      "expectedImageFile": "05-two-cell.png",
+      "originalImageFile": "ok6.png",
+      "imageSha256": "ff45244741341c287321f3c2182d7c783bb8917dbd69e1d88b96b44a0d057b0e"
     },
     {
       "id": "four-cell",
@@ -192,7 +202,9 @@
         }
       ],
       "photoNumber": 6,
-      "expectedImageFile": "06-four-cell.jpg"
+      "expectedImageFile": "06-four-cell.png",
+      "originalImageFile": "ok7.png",
+      "imageSha256": "314dfd60991b1d22a6158a44ba7b33dc461534b34f6b7bcea2b4e164bb0ff86e"
     },
     {
       "id": "sixteen-cell",
@@ -224,7 +236,9 @@
         }
       ],
       "photoNumber": 7,
-      "expectedImageFile": "07-sixteen-cell.jpg"
+      "expectedImageFile": "07-sixteen-cell.png",
+      "originalImageFile": "ok8.png",
+      "imageSha256": "7f9a36fd0321ec88251016c9ec4fdd9531b2fe9cf79df9ee50fb35ef39fc7264"
     },
     {
       "id": "implantation",
@@ -255,7 +269,9 @@
         }
       ],
       "photoNumber": 8,
-      "expectedImageFile": "08-implantation.jpg"
+      "expectedImageFile": "08-implantation.png",
+      "originalImageFile": "ok9.png",
+      "imageSha256": "9beb87207a81a63571f1044ee8c5bb9e3d7053e6a5e2662e88af111a261a4344"
     }
   ]
 }

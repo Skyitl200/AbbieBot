@@ -1160,3 +1160,28 @@ test('a stage-only quiz cannot publish an identification question without its ph
     assert.equal(start.calls[0][1].flags, 64);
     assert.match(start.calls[0][1].content, /needs its original photos/);
 });
+
+test('all eight installed original model photos attach inline in both answer modes', async () => {
+    const { LAB_MODELS, labQuestions, labModelImage } = await import('../src/services/study/labModels.js');
+    const { readFile } = await import('node:fs/promises');
+    const { createHash } = await import('node:crypto');
+    const hashes = new Set();
+    for (const model of LAB_MODELS) {
+        const image = labModelImage({ labModelId: model.id });
+        assert.ok(image, `${model.id} must have its photo installed`);
+        const bytes = await readFile(image.path);
+        assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+        const hash = createHash('sha256').update(bytes).digest('hex');
+        assert.equal(hash, model.imageSha256, `${model.id} must use the exact original photo`);
+        hashes.add(hash);
+    }
+    assert.equal(hashes.size, 8);
+    for (const mode of ['multiple_choice', 'typed']) for (const question of labQuestions('early-development', mode)) {
+        const message = questionMessage(createStudySession('original-images', 'u', [question], 'lab_reproductive'));
+        const image = labModelImage(question);
+        assert.equal(message.files.length, 1);
+        assert.equal(message.files[0].attachment, image.path);
+        assert.equal(message.embeds[0].toJSON().image.url, `attachment://${image.asset.file}`);
+        assert.deepEqual(message.attachments, []);
+    }
+});
