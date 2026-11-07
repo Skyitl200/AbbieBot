@@ -1235,8 +1235,8 @@ test('Respiratory Tract retains its 25-image set alongside the lungs set and bot
     const categories = labCategoryMessage('u').components[0].toJSON().components[0].options;
     assert.ok(categories.some(category => category.label === 'Respiratory Tract' && category.value === 'respiratory'));
     const sets = labModelsMessage('u', 'respiratory').components[0].toJSON().components[0].options;
-    assert.deepEqual(sets.map(set => set.label), ['Upper Respiratory 3D Model', 'Lungs and Larynx 3D Model', 'Bronchial Tree 3D Model']);
-    assert.equal(sets[0].value, 'upper-respiratory');
+    assert.deepEqual(sets.map(set => set.label), ['3D Model of Larynx Posterior view', 'Upper Respiratory 3D Model', 'Lungs and Larynx 3D Model', 'Bronchial Tree 3D Model']);
+    assert.ok(sets.some(set => set.value === 'upper-respiratory'));
     const mode = labModeMessage('u', 'upper-respiratory');
     assert.equal(mode.components[1].toJSON().components[0].custom_id, 'study:labcategory:u:respiratory');
     const models = LAB_SETS.find(set => set.id === 'upper-respiratory').models;
@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618]]) {
+for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1560,6 +1560,34 @@ test('lower urinary model has nine pictured structures and identifies the visibl
                 assert.ok(matchesLabAnswer(alias,q.answers,q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong,q.answers,q.competingAnswers));
             }
+        }
+    }
+});
+
+
+test('posterior larynx set contains six referenced structures and preserves the small-cartilage distinction', async () => {
+    const { labQuestions, labModelImage, labModelsMessage, labModeMessage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'respiratory').components[0].toJSON().components[0].options.some(o => o.value === 'larynx-posterior'));
+    assert.equal(labModeMessage('u', 'larynx-posterior').components[1].toJSON().components[0].custom_id, 'study:labcategory:u:respiratory');
+    for (const mode of ['multiple_choice','typed']) {
+        const qs = labQuestions('larynx-posterior', mode);
+        assert.equal(qs.length, 6);
+        assert.equal(new Set(qs.map(q => q.labModelId)).size, 6);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') {
+                assert.equal(q.options.length, 4);
+                assert.equal(q.options[q.correct[0]], q.modelName);
+            } else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        const cuneiform = qs.find(q => q.modelName === 'Cuneiform cartilage');
+        assert.match(cuneiform.question, /Quizlet/);
+        assert.match(cuneiform.explanation, /aryepiglottic fold/);
+        if (mode === 'typed') {
+            assert.ok(!matchesLabAnswer('corniculate cartilage', cuneiform.answers, cuneiform.competingAnswers));
+            const corniculate=qs.find(q=>q.modelName==='Corniculate cartilage');
+            assert.ok(!matchesLabAnswer('cuneiform cartilage', corniculate.answers, corniculate.competingAnswers));
         }
     }
 });

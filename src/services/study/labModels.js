@@ -7,6 +7,7 @@ const loadModels = file => JSON.parse(readFileSync(new URL(`../../../study-data/
 export const LAB_MODELS = loadModels('early-development.json');
 export const LAB_SETS = [
     { id: 'early-development', title: 'Early Development Models', category: 'reproductive', models: LAB_MODELS },
+    { id: 'larynx-posterior', title: '3D Model of Larynx Posterior view', category: 'respiratory', models: loadModels('larynx-posterior.json') },
     { id: 'upper-respiratory', title: 'Upper Respiratory 3D Model', category: 'respiratory', models: loadModels('upper-respiratory.json') },
     { id: 'lungs-larynx', title: 'Lungs and Larynx 3D Model', category: 'respiratory', models: loadModels('lungs-larynx.json') },
     { id: 'lower-urinary', title: '3D Model of the Ureters, Urinary Bladder, and Urethra', category: 'urinary', models: loadModels('lower-urinary.json') },

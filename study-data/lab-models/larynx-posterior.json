@@ -1,0 +1,459 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Respiratory Tract",
+  "modelGroup": "3D Model of Larynx Posterior view",
+  "source": "Exact original koko.jpg.zip photograph; cyan arrow overlays only.",
+  "sourceImageFile": "larynx-posterior-original.png",
+  "sourceImageSha256": "f6b7d0d418102a271607006a9072cf964c252097de33964e6b6f2e3945ae0721",
+  "originalUploadFile": "larynx-posterior-original.jpg",
+  "originalUploadSha256": "e966c2a021699ce3e98f8cfbff9b33a145e1cb0c50e49b7a54dcdd20e08668dc",
+  "models": [
+    {
+      "id": "larynx-posterior-01",
+      "name": "Epiglottis",
+      "questions": [
+        {
+          "id": "lab-larynx-posterior-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Epiglottis",
+            "Hyoid bone",
+            "Cricoid cartilage",
+            "Arytenoid cartilage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Epiglottis.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "epiglottis"
+          ]
+        }
+      ],
+      "expectedImageFile": "larynx-posterior/lp-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          581,
+          264
+        ],
+        "tip": [
+          360,
+          239
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            360,
+            239
+          ],
+          [
+            378,
+            233
+          ],
+          [
+            377,
+            238
+          ],
+          [
+            581,
+            261
+          ],
+          [
+            581,
+            267
+          ],
+          [
+            377,
+            244
+          ],
+          [
+            376,
+            248
+          ]
+        ]
+      },
+      "imageSha256": "702c41d4c799a40e7440ef1b4f544779b961c6e55a870c0102d904fadd2ad607"
+    },
+    {
+      "id": "larynx-posterior-02",
+      "name": "Cricoid cartilage",
+      "questions": [
+        {
+          "id": "lab-larynx-posterior-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Cricoid cartilage",
+            "Arytenoid cartilage",
+            "Hyoid bone",
+            "Thyroid cartilage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Cricoid cartilage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "cricoid cartilage",
+            "cricoid"
+          ]
+        }
+      ],
+      "expectedImageFile": "larynx-posterior/lp-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          591,
+          583
+        ],
+        "tip": [
+          399,
+          552
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            399,
+            552
+          ],
+          [
+            417,
+            547
+          ],
+          [
+            416,
+            552
+          ],
+          [
+            591,
+            580
+          ],
+          [
+            591,
+            586
+          ],
+          [
+            415,
+            558
+          ],
+          [
+            415,
+            562
+          ]
+        ]
+      },
+      "imageSha256": "288b37d60411aa064f28dadbdc38c5d1224b3d1fb242bef04a04c12d2745f77c"
+    },
+    {
+      "id": "larynx-posterior-03",
+      "name": "Arytenoid cartilage",
+      "questions": [
+        {
+          "id": "lab-larynx-posterior-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Arytenoid cartilage",
+            "Cricoid cartilage",
+            "Corniculate cartilage",
+            "Cuneiform cartilage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Arytenoid cartilage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "arytenoid cartilage",
+            "arytenoid",
+            "arytenoid cartilages"
+          ]
+        }
+      ],
+      "expectedImageFile": "larynx-posterior/lp-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          599,
+          405
+        ],
+        "tip": [
+          405,
+          432
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            405,
+            432
+          ],
+          [
+            421,
+            422
+          ],
+          [
+            421,
+            427
+          ],
+          [
+            599,
+            402
+          ],
+          [
+            599,
+            408
+          ],
+          [
+            422,
+            433
+          ],
+          [
+            423,
+            437
+          ]
+        ]
+      },
+      "imageSha256": "017e069d6b6d90d12c8258dd609ccda16726b7ca1ef2737830d5b6ddbbd9865f"
+    },
+    {
+      "name": "Corniculate cartilage",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Corniculate cartilage",
+            "Cuneiform cartilage",
+            "Arytenoid cartilage",
+            "Cricoid cartilage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Corniculate cartilage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "corniculate cartilage",
+            "corniculate cartilages",
+            "corniculate"
+          ],
+          "id": "lab-larynx-posterior-04"
+        }
+      ],
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          654,
+          345
+        ],
+        "tip": [
+          471,
+          340
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            471,
+            340
+          ],
+          [
+            488,
+            333
+          ],
+          [
+            488,
+            337
+          ],
+          [
+            654,
+            342
+          ],
+          [
+            654,
+            348
+          ],
+          [
+            488,
+            343
+          ],
+          [
+            488,
+            348
+          ]
+        ]
+      },
+      "id": "larynx-posterior-04",
+      "expectedImageFile": "larynx-posterior/lp-04.png",
+      "imageSha256": "8a1340a042a7169734f3d0fc1cfebebe5a3ef93787053e68010fb98d1a160aee"
+    },
+    {
+      "name": "Cuneiform cartilage",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which cartilage does your Quizlet identify at the arrow?",
+          "options": [
+            "Cuneiform cartilage",
+            "Corniculate cartilage",
+            "Arytenoid cartilage",
+            "Hyoid bone"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Quizlet label: Cuneiform cartilage. This marker follows your supplied reference; anatomically, cuneiform cartilage is usually within the aryepiglottic fold.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "cuneiform cartilage",
+            "cuneiform cartilages",
+            "cuneiform"
+          ],
+          "id": "lab-larynx-posterior-05"
+        }
+      ],
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          53,
+          137
+        ],
+        "tip": [
+          166,
+          153
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            166,
+            153
+          ],
+          [
+            148,
+            158
+          ],
+          [
+            149,
+            154
+          ],
+          [
+            53,
+            140
+          ],
+          [
+            53,
+            134
+          ],
+          [
+            150,
+            148
+          ],
+          [
+            150,
+            143
+          ]
+        ]
+      },
+      "referenceNote": "User-supplied Quizlet screenshot marker; location is atypical for anatomical cuneiform cartilage.",
+      "id": "larynx-posterior-05",
+      "expectedImageFile": "larynx-posterior/lp-05.png",
+      "imageSha256": "29d5d089faaf070ba49397a17c1913eecddfb3f23441b472067cae9e18b42fb2"
+    },
+    {
+      "id": "larynx-posterior-06",
+      "name": "Hyoid bone",
+      "questions": [
+        {
+          "id": "lab-larynx-posterior-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Hyoid bone",
+            "Epiglottis",
+            "Thyroid cartilage",
+            "Cricoid cartilage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Hyoid bone.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "hyoid bone",
+            "hyoid"
+          ]
+        }
+      ],
+      "expectedImageFile": "larynx-posterior/lp-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          641,
+          112
+        ],
+        "tip": [
+          478,
+          221
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            478,
+            221
+          ],
+          [
+            488,
+            205
+          ],
+          [
+            490,
+            209
+          ],
+          [
+            639,
+            110
+          ],
+          [
+            643,
+            114
+          ],
+          [
+            494,
+            214
+          ],
+          [
+            496,
+            218
+          ]
+        ]
+      },
+      "imageSha256": "f37bd30dac0d8cfe74df6f33a1ed04bddcdc0d278217d856582293d2c641bd0c"
+    }
+  ]
+}

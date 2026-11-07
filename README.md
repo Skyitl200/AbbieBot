@@ -486,3 +486,9 @@ cards in Urinary System. The visible urethral segment is labeled Prostatic
 urethra rather than spongy urethra; a cyan triangle marks the trigone. Both quiz
 modes accept short anatomical aliases. Rebuild with
 `python scripts/renderRespiratoryPointers.py lower-urinary.json`.
+
+**3D Model of Larynx Posterior view** adds six cards from `koko.jpg.zip`
+in Respiratory Tract. Corniculate and cuneiform markers follow user-supplied
+Quizlet screenshots; the cuneiform prompt explicitly attributes the atypical
+marker to Quizlet and explains the usual aryepiglottic-fold location.
+Rebuild with `python scripts/renderRespiratoryPointers.py larynx-posterior.json`.
