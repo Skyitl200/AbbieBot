@@ -1388,6 +1388,17 @@ test('lungs and larynx set offers all 18 structures in both answer modes with or
                 assert.ok(question.answers.length > 0);
             }
         }
-        assert.match(questions.find(q => q.modelName === 'Carina').question, /internal ridge/);
+        assert.ok(!questions.some(q => q.modelName === 'Carina'));
+        const trachea = questions.find(q => q.question.includes('carries air from the larynx'));
+        assert.equal(trachea.modelName, 'Trachea');
+        assert.match(trachea.question, /bracket/);
+        if (mode === 'typed') {
+            const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+            for (const q of questions.filter(q => q.modelName === 'Trachea')) {
+                assert.ok(matchesLabAnswer('trachea', q.answers, q.competingAnswers));
+                assert.ok(matchesLabAnswer('trachae', q.answers, q.competingAnswers));
+                assert.ok(!matchesLabAnswer('larynx', q.answers, q.competingAnswers));
+            }
+        }
     }
 });

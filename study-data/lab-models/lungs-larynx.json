@@ -310,77 +310,138 @@
     },
     {
       "id": "lung-05",
-      "name": "Carina",
+      "name": "Trachea",
       "questions": [
         {
           "id": "lab-lungs-larynx-05",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "Which internal ridge lies at the tracheal division indicated by the arrow?",
+          "question": "Which airway, marked by the bracket, carries air from the larynx to the primary bronchi?",
           "options": [
-            "Carina",
             "Trachea",
+            "Larynx",
             "Left primary bronchus",
             "Right primary bronchus"
           ],
           "correct": [
             0
           ],
-          "explanation": "Carina - the internal ridge at the tracheal division. The arrow marks its location; the ridge is inside the airway.",
+          "explanation": "Trachea - carries air from the larynx to the primary bronchi.",
           "requiresModelImage": true,
           "typedAnswers": [
-            "carina",
-            "tracheal carina"
+            "trachea",
+            "windpipe"
           ]
         }
       ],
       "expectedImageFile": "lungs-larynx/ll-05.png",
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
-        "tail": [
-          545,
-          438
+        "kind": "bracket",
+        "outerPolygon": [
+          [
+            390,
+            416
+          ],
+          [
+            369,
+            416
+          ],
+          [
+            369,
+            483
+          ],
+          [
+            390,
+            483
+          ],
+          [
+            390,
+            475
+          ],
+          [
+            377,
+            475
+          ],
+          [
+            377,
+            424
+          ],
+          [
+            390,
+            424
+          ]
         ],
-        "tip": [
-          408,
-          480
+        "innerPolygon": [
+          [
+            388,
+            418
+          ],
+          [
+            371,
+            418
+          ],
+          [
+            371,
+            481
+          ],
+          [
+            388,
+            481
+          ],
+          [
+            388,
+            477
+          ],
+          [
+            375,
+            477
+          ],
+          [
+            375,
+            422
+          ],
+          [
+            388,
+            422
+          ]
         ],
-        "shaftWidth": 4,
-        "headWidth": 12,
-        "headLength": 15,
-        "outlineWidth": 1,
         "overlayPolygon": [
           [
-            408,
-            480
+            390,
+            416
           ],
           [
-            421,
-            469
+            369,
+            416
           ],
           [
-            422,
-            472
+            369,
+            483
           ],
           [
-            544,
-            435
+            390,
+            483
           ],
           [
-            546,
-            441
+            390,
+            475
           ],
           [
-            424,
-            478
+            377,
+            475
           ],
           [
-            425,
-            482
+            377,
+            424
+          ],
+          [
+            390,
+            424
           ]
         ]
       },
-      "imageSha256": "0de321157201acd8aa693bd44d5a0d55e2266a7fd011992f5ab1586a09f5ee6b"
+      "imageSha256": "aa2f875a4ed4aedaca6ef6658efc3e8c9fc0c5d841ce6674424bfc2ea75bfab7"
     },
     {
       "id": "lung-06",

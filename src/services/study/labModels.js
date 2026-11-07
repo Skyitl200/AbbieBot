@@ -68,6 +68,6 @@ export function labQuestions(selection, mode) {
             const base = { ...question, labModelId: model.id, modelName: model.name };
             if (mode === 'multiple_choice') return base;
             const { options, correct, ...typed } = base;
-            return { ...typed, type: 'fill_blank', question: question.typedQuestion || question.question, answers: [...new Set(question.typedAnswers)], competingAnswers: models.filter(other => other.id !== model.id).flatMap(other => other.questions.flatMap(q => q.typedAnswers)) };
+            return { ...typed, type: 'fill_blank', question: question.typedQuestion || question.question, answers: [...new Set(question.typedAnswers)], competingAnswers: models.filter(other => other.id !== model.id && other.name !== model.name).flatMap(other => other.questions.flatMap(q => q.typedAnswers)) };
         })));
 }
