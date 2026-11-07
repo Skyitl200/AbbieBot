@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 18, 821]]) {
+for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1366,18 +1366,18 @@ for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-
 
 }
 
-test('lungs and larynx set offers all 18 structures in both answer modes with original-image attachments', async () => {
+test('lungs and larynx set offers all 17 structures in both answer modes with original-image attachments', async () => {
     const { LAB_SETS, labQuestions, labModelImage, labModeMessage } = await import('../src/services/study/labModels.js');
     const set = LAB_SETS.find(set => set.id === 'lungs-larynx');
-    assert.equal(set.models.length, 18);
-    assert.equal(new Set(set.models.map(model => model.id)).size, 18);
+    assert.equal(set.models.length, 17);
+    assert.equal(new Set(set.models.map(model => model.id)).size, 17);
     assert.ok(set.models.some(model => model.name === 'Thyrohyoid membrane'));
     assert.ok(set.models.some(model => model.name === 'Right middle lobe'));
     const mode = labModeMessage('u', set.id);
     assert.equal(mode.components[1].toJSON().components[0].custom_id, 'study:labcategory:u:respiratory');
     for (const mode of ['multiple_choice', 'typed']) {
         const questions = labQuestions(set.id, mode);
-        assert.equal(questions.length, 18);
+        assert.equal(questions.length, 17);
         for (const question of questions) {
             assert.ok(labModelImage(question));
             if (mode === 'multiple_choice') {
@@ -1388,17 +1388,15 @@ test('lungs and larynx set offers all 18 structures in both answer modes with or
                 assert.ok(question.answers.length > 0);
             }
         }
-        assert.ok(!questions.some(q => q.modelName === 'Carina'));
-        const trachea = questions.find(q => q.question.includes('carries air from the larynx'));
-        assert.equal(trachea.modelName, 'Trachea');
-        assert.match(trachea.question, /bracket/);
+        assert.ok(!questions.some(q => q.modelName === 'Trachea'));
+        const carina = questions.find(q => q.modelName === 'Carina');
+        assert.ok(carina);
+        assert.match(carina.question, /internal ridge/);
         if (mode === 'typed') {
             const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
-            for (const q of questions.filter(q => q.modelName === 'Trachea')) {
-                assert.ok(matchesLabAnswer('trachea', q.answers, q.competingAnswers));
-                assert.ok(matchesLabAnswer('trachae', q.answers, q.competingAnswers));
-                assert.ok(!matchesLabAnswer('larynx', q.answers, q.competingAnswers));
-            }
+            assert.ok(matchesLabAnswer('carina', carina.answers, carina.competingAnswers));
+            assert.ok(matchesLabAnswer('corina', carina.answers, carina.competingAnswers));
+            assert.ok(!matchesLabAnswer('trachea', carina.answers, carina.competingAnswers));
         }
     }
 });

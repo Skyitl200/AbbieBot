@@ -441,11 +441,11 @@ and successful Microbemon catch. The activity result announces a saved drop.
 Use `/inventory` to open owned crates or view **Possible Crate Rewards**.
 See [the reward list and behavior](docs/discovery-caches.md).
 
-**Lungs and Larynx 3D Model** is the second Respiratory Tract set, with 18
+**Lungs and Larynx 3D Model** is the second Respiratory Tract set, with 17
 cyan-arrow identification cards from the original `9911.jpg.zip` photograph.
 It supports A–D and typed answers with short anatomical aliases and minor typo
-matching. Anatomical right is the viewer's left. A bracket marks the visible trachea for a short airway-function question,
-in addition to its identification card. A separate bracket spans the whole larynx. Rebuild only its arrow overlays
+matching. Anatomical right is the viewer's left. The carina question marks the tracheal division and asks for the internal ridge there;
+the ridge itself is not exposed. Trachea questions are excluded from this set. A separate bracket spans the whole larynx. Rebuild only its arrow overlays
 with `python scripts/renderRespiratoryPointers.py lungs-larynx.json`.
 Original JPEG, lossless decoded source, image hashes and pointer coordinates are
 retained; regression tests verify unchanged anatomy outside every arrow.

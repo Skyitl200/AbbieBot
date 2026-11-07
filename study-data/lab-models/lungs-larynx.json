@@ -310,138 +310,78 @@
     },
     {
       "id": "lung-05",
-      "name": "Trachea",
+      "name": "Carina",
       "questions": [
         {
           "id": "lab-lungs-larynx-05",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "Which airway, marked by the bracket, carries air from the larynx to the primary bronchi?",
+          "question": "Which internal ridge lies at the tracheal division indicated by the arrow?",
           "options": [
+            "Carina",
             "Trachea",
-            "Larynx",
             "Left primary bronchus",
             "Right primary bronchus"
           ],
           "correct": [
             0
           ],
-          "explanation": "Trachea - carries air from the larynx to the primary bronchi.",
+          "explanation": "Carina - the internal ridge at the tracheal division. The arrow marks its location; the ridge is inside the airway.",
           "requiresModelImage": true,
           "typedAnswers": [
-            "trachea",
-            "windpipe"
+            "carina",
+            "tracheal carina",
+            "corina"
           ]
         }
       ],
       "expectedImageFile": "lungs-larynx/ll-05.png",
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
-        "kind": "bracket",
-        "outerPolygon": [
-          [
-            390,
-            416
-          ],
-          [
-            369,
-            416
-          ],
-          [
-            369,
-            483
-          ],
-          [
-            390,
-            483
-          ],
-          [
-            390,
-            475
-          ],
-          [
-            377,
-            475
-          ],
-          [
-            377,
-            424
-          ],
-          [
-            390,
-            424
-          ]
+        "tail": [
+          545,
+          438
         ],
-        "innerPolygon": [
-          [
-            388,
-            418
-          ],
-          [
-            371,
-            418
-          ],
-          [
-            371,
-            481
-          ],
-          [
-            388,
-            481
-          ],
-          [
-            388,
-            477
-          ],
-          [
-            375,
-            477
-          ],
-          [
-            375,
-            422
-          ],
-          [
-            388,
-            422
-          ]
+        "tip": [
+          408,
+          480
         ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
         "overlayPolygon": [
           [
-            390,
-            416
+            408,
+            480
           ],
           [
-            369,
-            416
+            421,
+            469
           ],
           [
-            369,
-            483
+            422,
+            472
           ],
           [
-            390,
-            483
+            544,
+            435
           ],
           [
-            390,
-            475
+            546,
+            441
           ],
           [
-            377,
-            475
+            424,
+            478
           ],
           [
-            377,
-            424
-          ],
-          [
-            390,
-            424
+            425,
+            482
           ]
         ]
       },
-      "imageSha256": "aa2f875a4ed4aedaca6ef6658efc3e8c9fc0c5d841ce6674424bfc2ea75bfab7"
+      "imageSha256": "0de321157201acd8aa693bd44d5a0d55e2266a7fd011992f5ab1586a09f5ee6b"
     },
     {
       "id": "lung-06",
@@ -1320,80 +1260,6 @@
         ]
       },
       "imageSha256": "dc5dc089d46acd2ecd16e9f8f9053e49154d8fa9cc349dfe6b96ca5c35766e47"
-    },
-    {
-      "id": "lung-17",
-      "name": "Trachea",
-      "questions": [
-        {
-          "id": "lab-lungs-larynx-17",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "question": "What structure is indicated by the arrow?",
-          "options": [
-            "Trachea",
-            "Larynx",
-            "Right primary bronchus",
-            "Left primary bronchus"
-          ],
-          "correct": [
-            0
-          ],
-          "explanation": "Trachea.",
-          "requiresModelImage": true,
-          "typedAnswers": [
-            "trachea",
-            "windpipe"
-          ]
-        }
-      ],
-      "expectedImageFile": "lungs-larynx/ll-17.png",
-      "renderMethod": "original-photo-arrow-overlay",
-      "annotation": {
-        "tail": [
-          554,
-          403
-        ],
-        "tip": [
-          407,
-          445
-        ],
-        "shaftWidth": 4,
-        "headWidth": 12,
-        "headLength": 15,
-        "outlineWidth": 1,
-        "overlayPolygon": [
-          [
-            407,
-            445
-          ],
-          [
-            420,
-            434
-          ],
-          [
-            422,
-            438
-          ],
-          [
-            553,
-            400
-          ],
-          [
-            555,
-            406
-          ],
-          [
-            423,
-            443
-          ],
-          [
-            424,
-            447
-          ]
-        ]
-      },
-      "imageSha256": "fed251ea6d9337c13ee0bde8151eeed69d3a8cabe13d90eab1cc315dd30188d6"
     },
     {
       "id": "lung-18",
