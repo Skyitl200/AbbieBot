@@ -475,3 +475,8 @@ from the original `Nephron model.jpg.zip`. Both modes accept PCT/DCT and full
 tubule names. The corpuscle outline includes the glomerulus and capsule; the
 loop bracket marks the hairpin turn. Rebuild with
 `python scripts/renderRespiratoryPointers.py nephron-1.json`.
+
+**Nephron Model 2** adds eleven renal-corpuscle close-up cards from `3113.jpg.zip`
+in Urinary System. Short labels and anatomical aliases work in typed mode;
+macula densa is identified as the DCT region next to the afferent arteriole.
+Rebuild with `python scripts/renderRespiratoryPointers.py nephron-2.json`.

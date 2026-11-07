@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702]]) {
+for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1500,6 +1500,33 @@ test('Nephron Model 1 includes 18 pictured structures with short aliases and pro
         }
         if (mode === 'typed') {
             for (const [name, alias, wrong] of [['P.C.T.', 'proximal convoluted tubule', 'DCT'], ['D.C.T.', 'distal convoluted tubule', 'PCT'], ['Afferent arteriole', 'afferent', 'efferent arteriole'], ['Interlobular artery', 'cortical radiate artery', 'interlobar artery'], ["Bowman's capsule", 'glomerular capsule', 'glomerulus'], ['Renal corpuscle', 'renal corpuscle', 'glomerulus']]) {
+                const q = qs.find(q => q.modelName === name);
+                assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
+        }
+    }
+});
+
+
+test('Nephron Model 2 groups eleven corpuscle details in both modes and protects nearby structures', async () => {
+    const { labQuestions, labModelImage, labModeMessage, labModelsMessage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'urinary').components[0].toJSON().components[0].options.some(o => o.value === 'nephron-2'));
+    assert.equal(labModeMessage('u', 'nephron-2').components[1].toJSON().components[0].custom_id, 'study:labcategory:u:urinary');
+    for (const mode of ['multiple_choice', 'typed']) {
+        const qs = labQuestions('nephron-2', mode);
+        assert.equal(qs.length, 11);
+        assert.equal(new Set(qs.map(q => q.labModelId)).size, 11);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') {
+                assert.equal(q.options.length, 4);
+                assert.equal(q.options[q.correct[0]], q.modelName);
+            } else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, alias, wrong] of [['Pedicels','foot processes','podocyte'], ['Capsule space','capsular space',"Bowman's capsule"], ['Podocyte nucleus','nucleus of podocyte','podocyte'], ['P.C.T.','proximal convoluted tubule','DCT'], ['D.C.T.','distal convoluted tubule','PCT'], ['Efferent arteriole','efferent','afferent arteriole']]) {
                 const q = qs.find(q => q.modelName === name);
                 assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));

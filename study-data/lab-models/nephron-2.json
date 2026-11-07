@@ -1,0 +1,838 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Urinary System",
+  "modelGroup": "Nephron Model 2",
+  "source": "Exact original 3113.jpg.zip photograph; cyan arrow overlays only. Renal corpuscle close-up.",
+  "sourceImageFile": "nephron-2-original.png",
+  "sourceImageSha256": "63f19833e72ceaab0c5d5aea9a253f235c32d8c615a9b3591b1232482e88795c",
+  "originalUploadFile": "nephron-2-original.jpg",
+  "originalUploadSha256": "0a13a69a4e145bf6d841518d5d67bcdf9b2b72954dba922d17edb6e8370fe1da",
+  "models": [
+    {
+      "id": "nephron2-01",
+      "name": "Efferent arteriole",
+      "questions": [
+        {
+          "id": "lab-nephron2-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Efferent arteriole",
+            "Afferent arteriole",
+            "Glomerulus",
+            "D.C.T."
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Efferent arteriole.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "efferent arteriole",
+            "efferent"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          582,
+          126
+        ],
+        "tip": [
+          447,
+          234
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            447,
+            234
+          ],
+          [
+            456,
+            218
+          ],
+          [
+            458,
+            221
+          ],
+          [
+            580,
+            124
+          ],
+          [
+            584,
+            128
+          ],
+          [
+            462,
+            226
+          ],
+          [
+            465,
+            229
+          ]
+        ]
+      },
+      "imageSha256": "f91afd8c5e77f8ce3753da9b277e1bc215572783b37650084da286c02faa0918"
+    },
+    {
+      "id": "nephron2-02",
+      "name": "Podocyte",
+      "questions": [
+        {
+          "id": "lab-nephron2-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Podocyte",
+            "Pedicels",
+            "Podocyte nucleus",
+            "Bowman's capsule"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Podocyte.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "podocyte",
+            "podocytes"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          58,
+          412
+        ],
+        "tip": [
+          211,
+          465
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            211,
+            465
+          ],
+          [
+            192,
+            467
+          ],
+          [
+            194,
+            462
+          ],
+          [
+            57,
+            415
+          ],
+          [
+            59,
+            409
+          ],
+          [
+            196,
+            457
+          ],
+          [
+            197,
+            452
+          ]
+        ]
+      },
+      "imageSha256": "ba91b44d73455afb98a9703f8163dd6df6a79aa29e740bc7225196e36b02e2cd"
+    },
+    {
+      "id": "nephron2-03",
+      "name": "Pedicels",
+      "questions": [
+        {
+          "id": "lab-nephron2-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Pedicels",
+            "Podocyte",
+            "Podocyte nucleus",
+            "Macula densa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Pedicels.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "pedicels",
+            "pedicel",
+            "foot processes",
+            "podocyte foot processes"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          42,
+          537
+        ],
+        "tip": [
+          227,
+          504
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            227,
+            504
+          ],
+          [
+            212,
+            514
+          ],
+          [
+            211,
+            510
+          ],
+          [
+            43,
+            540
+          ],
+          [
+            41,
+            534
+          ],
+          [
+            210,
+            504
+          ],
+          [
+            209,
+            500
+          ]
+        ]
+      },
+      "imageSha256": "189c8f05e4546d75e342531a5d15f206e5cee91eff807965e237044794fd8bcb"
+    },
+    {
+      "id": "nephron2-04",
+      "name": "Afferent arteriole",
+      "questions": [
+        {
+          "id": "lab-nephron2-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Afferent arteriole",
+            "Efferent arteriole",
+            "Glomerulus",
+            "D.C.T."
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Afferent arteriole.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "afferent arteriole",
+            "afferent"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          42,
+          130
+        ],
+        "tip": [
+          156,
+          231
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            156,
+            231
+          ],
+          [
+            138,
+            225
+          ],
+          [
+            141,
+            222
+          ],
+          [
+            40,
+            132
+          ],
+          [
+            44,
+            128
+          ],
+          [
+            145,
+            217
+          ],
+          [
+            148,
+            214
+          ]
+        ]
+      },
+      "imageSha256": "f8523070623352e612a96ff92fa7d6846d9af837ba8bda5e375117677f6c3211"
+    },
+    {
+      "id": "nephron2-05",
+      "name": "Bowman's capsule",
+      "questions": [
+        {
+          "id": "lab-nephron2-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Bowman's capsule",
+            "Capsule space",
+            "Podocyte",
+            "Glomerulus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Bowman's capsule.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Bowman's capsule",
+            "bowmans capsule",
+            "glomerular capsule",
+            "bowman capsule"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          28,
+          635
+        ],
+        "tip": [
+          88,
+          531
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            88,
+            531
+          ],
+          [
+            86,
+            549
+          ],
+          [
+            82,
+            547
+          ],
+          [
+            31,
+            636
+          ],
+          [
+            25,
+            634
+          ],
+          [
+            77,
+            544
+          ],
+          [
+            73,
+            542
+          ]
+        ]
+      },
+      "imageSha256": "f084b20856988ea135d72dd1dadd342f382d54cb15a97fcaebb2a28269f1c41c"
+    },
+    {
+      "id": "nephron2-06",
+      "name": "Capsule space",
+      "questions": [
+        {
+          "id": "lab-nephron2-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Capsule space",
+            "Bowman's capsule",
+            "Glomerulus",
+            "P.C.T."
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Capsule space.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "capsule space",
+            "capsular space",
+            "bowmans space",
+            "Bowman's space",
+            "urinary space"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          598,
+          791
+        ],
+        "tip": [
+          378,
+          714
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            378,
+            714
+          ],
+          [
+            397,
+            713
+          ],
+          [
+            395,
+            717
+          ],
+          [
+            599,
+            788
+          ],
+          [
+            597,
+            794
+          ],
+          [
+            393,
+            722
+          ],
+          [
+            392,
+            727
+          ]
+        ]
+      },
+      "imageSha256": "a4ee09c1c1c9404c34ff58aeaae171ad3e3dbd69802e9deecfaee619b496e1cf"
+    },
+    {
+      "id": "nephron2-07",
+      "name": "Glomerulus",
+      "questions": [
+        {
+          "id": "lab-nephron2-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What capillary tuft is indicated?",
+          "options": [
+            "Glomerulus",
+            "Podocyte",
+            "Bowman's capsule",
+            "Capsule space"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Glomerulus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "glomerulus",
+            "glomerular capillaries",
+            "glomerular tuft"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          591,
+          493
+        ],
+        "tip": [
+          438,
+          571
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            438,
+            571
+          ],
+          [
+            450,
+            557
+          ],
+          [
+            452,
+            561
+          ],
+          [
+            590,
+            490
+          ],
+          [
+            592,
+            496
+          ],
+          [
+            455,
+            566
+          ],
+          [
+            457,
+            570
+          ]
+        ]
+      },
+      "imageSha256": "136158f627626496078b1d5f4f028fe05cbd84ad15e2c19c06642a247ef5d385"
+    },
+    {
+      "id": "nephron2-08",
+      "name": "P.C.T.",
+      "questions": [
+        {
+          "id": "lab-nephron2-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "P.C.T.",
+            "D.C.T.",
+            "Capsule space",
+            "Macula densa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "P.C.T..",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "P.C.T.",
+            "PCT",
+            "proximal convoluted tubule",
+            "proximal tubule"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          542,
+          959
+        ],
+        "tip": [
+          367,
+          851
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            367,
+            851
+          ],
+          [
+            385,
+            854
+          ],
+          [
+            383,
+            857
+          ],
+          [
+            544,
+            956
+          ],
+          [
+            540,
+            962
+          ],
+          [
+            380,
+            862
+          ],
+          [
+            378,
+            866
+          ]
+        ]
+      },
+      "imageSha256": "04844178a6d00870c724a2a1d471331882d15eee44b5bf0e5f74c3e295ddbe19"
+    },
+    {
+      "id": "nephron2-09",
+      "name": "D.C.T.",
+      "questions": [
+        {
+          "id": "lab-nephron2-09",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "D.C.T.",
+            "P.C.T.",
+            "Afferent arteriole",
+            "Efferent arteriole"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "D.C.T..",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "D.C.T.",
+            "DCT",
+            "distal convoluted tubule",
+            "distal tubule"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          583,
+          57
+        ],
+        "tip": [
+          372,
+          103
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            372,
+            103
+          ],
+          [
+            387,
+            92
+          ],
+          [
+            388,
+            96
+          ],
+          [
+            582,
+            54
+          ],
+          [
+            584,
+            60
+          ],
+          [
+            389,
+            102
+          ],
+          [
+            390,
+            107
+          ]
+        ]
+      },
+      "imageSha256": "88b47de7bd717904be9c77a4e2d4740292bd81caee5c93142ada9e7949f81244"
+    },
+    {
+      "id": "nephron2-10",
+      "name": "Macula densa",
+      "questions": [
+        {
+          "id": "lab-nephron2-10",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What specialized D.C.T. region beside the afferent arteriole is indicated?",
+          "options": [
+            "Macula densa",
+            "Podocyte",
+            "Pedicels",
+            "Podocyte nucleus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Macula densa.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "macula densa"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-10.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          146,
+          70
+        ],
+        "tip": [
+          304,
+          168
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            304,
+            168
+          ],
+          [
+            286,
+            165
+          ],
+          [
+            288,
+            162
+          ],
+          [
+            144,
+            73
+          ],
+          [
+            148,
+            67
+          ],
+          [
+            291,
+            156
+          ],
+          [
+            294,
+            153
+          ]
+        ]
+      },
+      "imageSha256": "55b442764014cb2b364ac1b9baff9d105cb51d4cf9d477a600401c6153a81d70"
+    },
+    {
+      "id": "nephron2-11",
+      "name": "Podocyte nucleus",
+      "questions": [
+        {
+          "id": "lab-nephron2-11",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Podocyte nucleus",
+            "Podocyte",
+            "Pedicels",
+            "Glomerulus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Podocyte nucleus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "podocyte nucleus",
+            "nucleus of podocyte",
+            "podocyte nuclei"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-2/nc-11.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          65,
+          354
+        ],
+        "tip": [
+          213,
+          439
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            213,
+            439
+          ],
+          [
+            195,
+            437
+          ],
+          [
+            197,
+            433
+          ],
+          [
+            64,
+            357
+          ],
+          [
+            66,
+            351
+          ],
+          [
+            200,
+            428
+          ],
+          [
+            202,
+            424
+          ]
+        ]
+      },
+      "imageSha256": "fd9cb5109c896acfdd6074659bd511c4d80f11e7cc55dd20682685ab690d2570"
+    }
+  ]
+}
