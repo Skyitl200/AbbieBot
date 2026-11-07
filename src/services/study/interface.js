@@ -1,3 +1,4 @@
+import { withCrateArtwork } from '../discovery/artwork.js';
 import { cacheFoundNotice } from '../discovery/catalog.js';
 import { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labSetForSelection } from './labModels.js';
 import {
@@ -134,7 +135,7 @@ export function resultMessage(session, correct) {
     const components = unpaid ? [row(button(actionId(session, 'reward'), '🪙 Retry coins'))]
         : finished ? [row(button(`study:classes:${session.userId}`, '📚 Choose another class', ButtonStyle.Secondary))]
         : [row(button(actionId(session, 'next'), '➡️ Next Question'))];
-    return addLectureImage({ content: '', embeds: [embed], components }, q);
+    return withCrateArtwork(addLectureImage({ content: '', embeds: [embed], components }, q), reward?.status === 'saved' && reward.cacheDrop);
 }
 
 async function editStudyReply(interaction, payload) {

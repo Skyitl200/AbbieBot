@@ -1,3 +1,8 @@
+import { readFileSync } from 'node:fs';
+import { CRATE_ART, withCrateArtwork } from '../src/services/discovery/artwork.js';
+import { cacheFoundNotice } from '../src/services/discovery/catalog.js';
+import { newProfile } from '../src/services/microbemon/engine.js';
+import { renderGame } from '../src/services/microbemon/interface.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { CACHE_ID, CACHE_REWARDS, rollCacheDrop, rollCacheReward } from '../src/services/discovery/catalog.js';
@@ -69,6 +74,8 @@ test('correct study answers store and notify cache drops once, including lost-re
     assert.equal(wallet.inventory.pickaxe, 1);
     assert.equal(writes, 1);
     assert.match(resultMessage(session, true).embeds[0].toJSON().description, /You found a \*\*Treasure Crate\*\*/);
+    assert.equal(resultMessage(session, true).embeds.at(-1).toJSON().image.url, 'attachment://treasure-crate.gif');
+    assert.ok(resultMessage(session, true).files.some(file => file.name === CRATE_ART.name));
     assert.match(STUDY_AWARD_SQL, /inventory/);
     assert.match(STUDY_AWARD_SQL, /CASE WHEN.*studyRewardReceipts.*THEN 0 ELSE \$6/s);
     const wrong = createStudySession('g', 'wrong', [question], 'random');
@@ -156,4 +163,23 @@ test('a failed message update still confirms the already-saved reward', async ()
     assert.equal(s.data().inventory[CACHE_ID], 0);
     assert.match(notification.content, /Opened a \*\*Treasure Crate\*\*/);
     assert.equal(notification.flags, 64);
+});
+
+ test('crate artwork keeps the uploaded GIF and activity images intact, only on confirmed drops', () => {
+    const original = readFileSync(CRATE_ART.path);
+    assert.equal(original.subarray(0, 6).toString(), 'GIF89a');
+    const base = { embeds: [{ image: { url: 'attachment://model.png' } }], files: [{ name: 'model.png' }] };
+    assert.equal(withCrateArtwork(base, false), base);
+    const decorated = withCrateArtwork(base, true);
+    assert.equal(decorated.embeds[0], base.embeds[0]);
+    assert.equal(decorated.files[0], base.files[0]);
+    assert.equal(decorated.files[1].attachment, CRATE_ART.path);
+    assert.equal(base.files.length, 1);
+    const profile = newProfile();
+    const normal = renderGame(profile, 'u');
+    const drop = renderGame(profile, 'u', { notice: cacheFoundNotice() });
+    assert.equal(normal.embeds.length, 1);
+    assert.equal(drop.embeds.length, 2);
+    assert.equal(drop.embeds[1].toJSON().image.url, 'attachment://treasure-crate.gif');
+    assert.ok(drop.files.some(file => file.name === CRATE_ART.name));
 });

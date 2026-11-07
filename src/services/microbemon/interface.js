@@ -1,3 +1,5 @@
+import { withCrateArtwork } from '../discovery/artwork.js';
+import { cacheFoundNotice } from '../discovery/catalog.js';
 import { MAX_HP, MAX_PETS, MAX_BOXES, hpForLevel, xpToNextLevel } from './constants.js';
 import { logger } from '../../utils/logger.js';
 import { deckPage, renderDeckGrid } from './deck.js';
@@ -122,8 +124,8 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
         embed.thumbnail = { url: `attachment://${allyPortrait.name}` };
     }
     if (selectedArt && files.some(file => file.name === selectedArt.name)) embed.image = { url: `attachment://${selectedArt.name}` };
-    return { embeds: [new EmbedBuilder(embed)], components, attachments: [],
-        files, allowedMentions: { parse: [] } };
+    return withCrateArtwork({ embeds: [new EmbedBuilder(embed)], components, attachments: [],
+        files, allowedMentions: { parse: [] } }, notice.includes(cacheFoundNotice()));
 }
 
 export async function renderSession(profile, user, options = {}) {

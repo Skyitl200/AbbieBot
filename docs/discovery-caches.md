@@ -34,3 +34,6 @@ cache. Persistent database failures leave the transaction uncommitted.
 
 Validation: `npm run test:discovery`, `npm run test:study`, and
 `npm run test:microbemon`.
+
+Drop notifications in /test and Microbemon include the original user-supplied
+animated chest GIF inline, alongside existing activity images.
