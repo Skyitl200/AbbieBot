@@ -1,0 +1,1351 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Respiratory Tract",
+  "modelGroup": "Lungs and Larynx 3D Model",
+  "source": "Original photograph from 9911.jpg.zip; cyan-arrow overlays only. Anatomical right is viewer left.",
+  "sourceImageFile": "lungs-larynx-original.png",
+  "sourceImageSha256": "e0ff998b70688a2f361e960ebf5409eb134e558f9ba30969efa88d99e4782072",
+  "originalUploadFile": "lungs-larynx-original.jpg",
+  "originalUploadSha256": "5fef5f5b1d7b8cdb6a80433e74993913622e4f092245312ef85f9a85d3bfb194",
+  "models": [
+    {
+      "id": "lung-01",
+      "name": "Thyrohyoid membrane",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Thyrohyoid membrane",
+            "Thyroid cartilage",
+            "Cricoid cartilage",
+            "Hyoid bone"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Thyrohyoid membrane.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "thyrohyoid membrane",
+            "thyrohyoid ligament",
+            "thyrohoid membrane"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          540,
+          42
+        ],
+        "tip": [
+          406,
+          43
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            406,
+            43
+          ],
+          [
+            422,
+            36
+          ],
+          [
+            422,
+            40
+          ],
+          [
+            540,
+            39
+          ],
+          [
+            540,
+            45
+          ],
+          [
+            422,
+            46
+          ],
+          [
+            422,
+            50
+          ]
+        ]
+      },
+      "imageSha256": "4b7040f9b79ea3aa8ef1dbc1e33f740f725eb9dd998a6f89e832c1a96010c759"
+    },
+    {
+      "id": "lung-02",
+      "name": "Right superior lobe",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Right superior lobe",
+            "Right middle lobe",
+            "Right inferior lobe",
+            "Left superior lobe"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Right superior lobe.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "right superior lobe",
+            "right upper lobe",
+            "superior lobe of right lung"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          70,
+          390
+        ],
+        "tip": [
+          256,
+          412
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            256,
+            412
+          ],
+          [
+            239,
+            417
+          ],
+          [
+            240,
+            413
+          ],
+          [
+            70,
+            393
+          ],
+          [
+            70,
+            387
+          ],
+          [
+            240,
+            407
+          ],
+          [
+            241,
+            403
+          ]
+        ]
+      },
+      "imageSha256": "b6f4a023998dff271ef9f9abaf346339f9d34e443900abe73a3a8472994cea8f"
+    },
+    {
+      "id": "lung-03",
+      "name": "Right primary bronchus",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Right primary bronchus",
+            "Left primary bronchus",
+            "Trachea",
+            "Carina"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Right primary bronchus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "right primary bronchus",
+            "right main bronchus",
+            "right mainstem bronchus"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          270,
+          475
+        ],
+        "tip": [
+          371,
+          520
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            371,
+            520
+          ],
+          [
+            354,
+            520
+          ],
+          [
+            355,
+            516
+          ],
+          [
+            269,
+            478
+          ],
+          [
+            271,
+            472
+          ],
+          [
+            358,
+            511
+          ],
+          [
+            359,
+            507
+          ]
+        ]
+      },
+      "imageSha256": "0a361d935933729ffef65c6a8ac7a53a339b9bdd928b8e02a852c2a9f2861cc6"
+    },
+    {
+      "id": "lung-04",
+      "name": "Left primary bronchus",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Left primary bronchus",
+            "Right primary bronchus",
+            "Trachea",
+            "Carina"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Left primary bronchus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "left primary bronchus",
+            "left main bronchus",
+            "left mainstem bronchus"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          585,
+          540
+        ],
+        "tip": [
+          456,
+          509
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            456,
+            509
+          ],
+          [
+            473,
+            506
+          ],
+          [
+            472,
+            510
+          ],
+          [
+            586,
+            537
+          ],
+          [
+            584,
+            543
+          ],
+          [
+            471,
+            516
+          ],
+          [
+            470,
+            520
+          ]
+        ]
+      },
+      "imageSha256": "74aad621445e3d4d8a23ee7ec1d19c7ab7d98d1f6bc7a3f0fe66480e91dd0aef"
+    },
+    {
+      "id": "lung-05",
+      "name": "Carina",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which internal ridge lies at the tracheal division indicated by the arrow?",
+          "options": [
+            "Carina",
+            "Trachea",
+            "Left primary bronchus",
+            "Right primary bronchus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Carina - the internal ridge at the tracheal division. The arrow marks its location; the ridge is inside the airway.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "carina",
+            "tracheal carina"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          545,
+          438
+        ],
+        "tip": [
+          408,
+          480
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            408,
+            480
+          ],
+          [
+            421,
+            469
+          ],
+          [
+            422,
+            472
+          ],
+          [
+            544,
+            435
+          ],
+          [
+            546,
+            441
+          ],
+          [
+            424,
+            478
+          ],
+          [
+            425,
+            482
+          ]
+        ]
+      },
+      "imageSha256": "0de321157201acd8aa693bd44d5a0d55e2266a7fd011992f5ab1586a09f5ee6b"
+    },
+    {
+      "id": "lung-06",
+      "name": "Hyoid bone",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Hyoid bone",
+            "Thyroid cartilage",
+            "Cricoid cartilage",
+            "Thyrohyoid membrane"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Hyoid bone.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "hyoid bone",
+            "hyoid"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          536,
+          18
+        ],
+        "tip": [
+          410,
+          22
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            410,
+            22
+          ],
+          [
+            426,
+            14
+          ],
+          [
+            426,
+            18
+          ],
+          [
+            536,
+            15
+          ],
+          [
+            536,
+            21
+          ],
+          [
+            426,
+            24
+          ],
+          [
+            426,
+            28
+          ]
+        ]
+      },
+      "imageSha256": "c19fb8911f7643271028904fa61d7fc73411473eb15071e7bbc195fe2c0a7ea1"
+    },
+    {
+      "id": "lung-07",
+      "name": "Thyroid cartilage",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Thyroid cartilage",
+            "Cricoid cartilage",
+            "Hyoid bone",
+            "Thyrohyoid membrane"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Thyroid cartilage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "thyroid cartilage"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          578,
+          108
+        ],
+        "tip": [
+          432,
+          103
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            432,
+            103
+          ],
+          [
+            448,
+            97
+          ],
+          [
+            448,
+            101
+          ],
+          [
+            578,
+            105
+          ],
+          [
+            578,
+            111
+          ],
+          [
+            448,
+            107
+          ],
+          [
+            448,
+            111
+          ]
+        ]
+      },
+      "imageSha256": "f72d269b8a75ded2a00f08602b1af6e2d4bb3f0493f40fc8459cd111b91724d5"
+    },
+    {
+      "id": "lung-08",
+      "name": "Cricoid cartilage",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Cricoid cartilage",
+            "Thyroid cartilage",
+            "Hyoid bone",
+            "Trachea"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Cricoid cartilage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "cricoid cartilage",
+            "cricoid"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          566,
+          163
+        ],
+        "tip": [
+          430,
+          161
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            430,
+            161
+          ],
+          [
+            446,
+            154
+          ],
+          [
+            446,
+            158
+          ],
+          [
+            566,
+            160
+          ],
+          [
+            566,
+            166
+          ],
+          [
+            446,
+            164
+          ],
+          [
+            446,
+            168
+          ]
+        ]
+      },
+      "imageSha256": "632b1ee669d7dd7d4e1ef9d244292ced21404bcfb10c91d99565ed53d2d924ce"
+    },
+    {
+      "id": "lung-09",
+      "name": "Larynx",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-09",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What organ is indicated by the arrow?",
+          "options": [
+            "Larynx",
+            "Trachea",
+            "Right primary bronchus",
+            "Left primary bronchus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Larynx.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "larynx",
+            "voice box"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          242,
+          113
+        ],
+        "tip": [
+          347,
+          109
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            347,
+            109
+          ],
+          [
+            331,
+            117
+          ],
+          [
+            331,
+            113
+          ],
+          [
+            242,
+            116
+          ],
+          [
+            242,
+            110
+          ],
+          [
+            331,
+            107
+          ],
+          [
+            331,
+            103
+          ]
+        ]
+      },
+      "imageSha256": "17246731f64eb2b497b8724444f6e0d57a0d7ddad753c260b343186c0677f5dd"
+    },
+    {
+      "id": "lung-10",
+      "name": "Right middle lobe",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-10",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Right middle lobe",
+            "Right superior lobe",
+            "Right inferior lobe",
+            "Left inferior lobe"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Right middle lobe.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "right middle lobe",
+            "middle lobe",
+            "middle lobe of right lung"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-10.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          66,
+          604
+        ],
+        "tip": [
+          261,
+          604
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            261,
+            604
+          ],
+          [
+            245,
+            611
+          ],
+          [
+            245,
+            607
+          ],
+          [
+            66,
+            607
+          ],
+          [
+            66,
+            601
+          ],
+          [
+            245,
+            601
+          ],
+          [
+            245,
+            597
+          ]
+        ]
+      },
+      "imageSha256": "972dd4adb7a5d767148abc57c62f6611ec46d93c239338b8d84dce3d3763595b"
+    },
+    {
+      "id": "lung-11",
+      "name": "Right inferior lobe",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-11",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Right inferior lobe",
+            "Right middle lobe",
+            "Right superior lobe",
+            "Left inferior lobe"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Right inferior lobe.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "right inferior lobe",
+            "right lower lobe",
+            "inferior lobe of right lung"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-11.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          57,
+          703
+        ],
+        "tip": [
+          150,
+          692
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            150,
+            692
+          ],
+          [
+            135,
+            701
+          ],
+          [
+            134,
+            697
+          ],
+          [
+            57,
+            706
+          ],
+          [
+            57,
+            700
+          ],
+          [
+            134,
+            691
+          ],
+          [
+            133,
+            687
+          ]
+        ]
+      },
+      "imageSha256": "0bdff611b54ec52e8a5dc76e8d65f6349424d719a664f644d87caa6d754dee5a"
+    },
+    {
+      "id": "lung-12",
+      "name": "Diaphragm",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-12",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Diaphragm",
+            "Right inferior lobe",
+            "Left inferior lobe",
+            "Trachea"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Diaphragm.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "diaphragm"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-12.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          704,
+          858
+        ],
+        "tip": [
+          567,
+          811
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            567,
+            811
+          ],
+          [
+            584,
+            810
+          ],
+          [
+            583,
+            813
+          ],
+          [
+            705,
+            855
+          ],
+          [
+            703,
+            861
+          ],
+          [
+            581,
+            819
+          ],
+          [
+            580,
+            823
+          ]
+        ]
+      },
+      "imageSha256": "49914066e949ca9d0bfa6514db421d395ed6db7f4a9ad82bb9744f5dcae6c642"
+    },
+    {
+      "id": "lung-13",
+      "name": "Left inferior lobe",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-13",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Left inferior lobe",
+            "Left superior lobe",
+            "Right inferior lobe",
+            "Diaphragm"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Left inferior lobe.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "left inferior lobe",
+            "left lower lobe",
+            "inferior lobe of left lung"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-13.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          757,
+          677
+        ],
+        "tip": [
+          645,
+          636
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            645,
+            636
+          ],
+          [
+            662,
+            635
+          ],
+          [
+            661,
+            639
+          ],
+          [
+            758,
+            674
+          ],
+          [
+            756,
+            680
+          ],
+          [
+            659,
+            644
+          ],
+          [
+            658,
+            648
+          ]
+        ]
+      },
+      "imageSha256": "3626dba81adbdd653eef6ef8e20015b8346adb67283c2a0780cc90a023efefb1"
+    },
+    {
+      "id": "lung-14",
+      "name": "Left oblique fissure",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-14",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Left oblique fissure",
+            "Right oblique fissure",
+            "Horizontal fissure",
+            "Left inferior lobe"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Left oblique fissure.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "left oblique fissure",
+            "oblique fissure of left lung"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-14.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          766,
+          554
+        ],
+        "tip": [
+          634,
+          603
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            634,
+            603
+          ],
+          [
+            647,
+            591
+          ],
+          [
+            648,
+            595
+          ],
+          [
+            765,
+            551
+          ],
+          [
+            767,
+            557
+          ],
+          [
+            650,
+            600
+          ],
+          [
+            651,
+            604
+          ]
+        ]
+      },
+      "imageSha256": "642a730d6f1cb89924e62b2a60eb3d89fc9658af71b74ac5a24e691914398e18"
+    },
+    {
+      "id": "lung-15",
+      "name": "Horizontal fissure",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-15",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Horizontal fissure",
+            "Right oblique fissure",
+            "Left oblique fissure",
+            "Right middle lobe"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Horizontal fissure.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "horizontal fissure",
+            "right horizontal fissure",
+            "horizontal fissure of right lung"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-15.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          56,
+          505
+        ],
+        "tip": [
+          255,
+          554
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            255,
+            554
+          ],
+          [
+            238,
+            557
+          ],
+          [
+            239,
+            553
+          ],
+          [
+            55,
+            508
+          ],
+          [
+            57,
+            502
+          ],
+          [
+            240,
+            547
+          ],
+          [
+            241,
+            543
+          ]
+        ]
+      },
+      "imageSha256": "7588ba67d80e102e582188649b4690fbf442f477cade3ab4cb511f9bdf70cf84"
+    },
+    {
+      "id": "lung-16",
+      "name": "Left superior lobe",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-16",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Left superior lobe",
+            "Left inferior lobe",
+            "Right superior lobe",
+            "Right middle lobe"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Left superior lobe.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "left superior lobe",
+            "left upper lobe",
+            "superior lobe of left lung"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-16.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          753,
+          398
+        ],
+        "tip": [
+          566,
+          432
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            566,
+            432
+          ],
+          [
+            580,
+            422
+          ],
+          [
+            581,
+            426
+          ],
+          [
+            752,
+            395
+          ],
+          [
+            754,
+            401
+          ],
+          [
+            582,
+            432
+          ],
+          [
+            583,
+            436
+          ]
+        ]
+      },
+      "imageSha256": "dc5dc089d46acd2ecd16e9f8f9053e49154d8fa9cc349dfe6b96ca5c35766e47"
+    },
+    {
+      "id": "lung-17",
+      "name": "Trachea",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-17",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Trachea",
+            "Larynx",
+            "Right primary bronchus",
+            "Left primary bronchus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Trachea.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "trachea",
+            "windpipe"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-17.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          554,
+          403
+        ],
+        "tip": [
+          407,
+          445
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            407,
+            445
+          ],
+          [
+            420,
+            434
+          ],
+          [
+            422,
+            438
+          ],
+          [
+            553,
+            400
+          ],
+          [
+            555,
+            406
+          ],
+          [
+            423,
+            443
+          ],
+          [
+            424,
+            447
+          ]
+        ]
+      },
+      "imageSha256": "fed251ea6d9337c13ee0bde8151eeed69d3a8cabe13d90eab1cc315dd30188d6"
+    },
+    {
+      "id": "lung-18",
+      "name": "Right oblique fissure",
+      "questions": [
+        {
+          "id": "lab-lungs-larynx-18",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Right oblique fissure",
+            "Left oblique fissure",
+            "Horizontal fissure",
+            "Right inferior lobe"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Right oblique fissure.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "right oblique fissure",
+            "oblique fissure of right lung"
+          ]
+        }
+      ],
+      "expectedImageFile": "lungs-larynx/ll-18.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          57,
+          649
+        ],
+        "tip": [
+          155,
+          650
+        ],
+        "shaftWidth": 4,
+        "headWidth": 12,
+        "headLength": 15,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            155,
+            650
+          ],
+          [
+            139,
+            657
+          ],
+          [
+            139,
+            653
+          ],
+          [
+            57,
+            652
+          ],
+          [
+            57,
+            646
+          ],
+          [
+            139,
+            647
+          ],
+          [
+            139,
+            643
+          ]
+        ]
+      },
+      "imageSha256": "0414b4734276444b06ac65358e01a53c15c3bdde1695bb3ae2ed5f8f518901b5"
+    }
+  ]
+}

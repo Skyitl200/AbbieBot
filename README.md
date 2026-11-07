@@ -440,3 +440,13 @@ Treasure Crates drop with a **1-in-300** chance for each correct `/test` answer
 and successful Microbemon catch. The activity result announces a saved drop.
 Use `/inventory` to open owned crates or view **Possible Crate Rewards**.
 See [the reward list and behavior](docs/discovery-caches.md).
+
+**Lungs and Larynx 3D Model** is the second Respiratory Tract set, with 18
+cyan-arrow identification cards from the original `9911.jpg.zip` photograph.
+It supports A–D and typed answers with short anatomical aliases and minor typo
+matching. Anatomical right is the viewer's left. The carina question identifies
+the internal ridge by its location at the externally indicated tracheal division.
+The ridge itself is not exposed in this view. Rebuild only its arrow overlays
+with `python scripts/renderRespiratoryPointers.py lungs-larynx.json`.
+Original JPEG, lossless decoded source, image hashes and pointer coordinates are
+retained; regression tests verify unchanged anatomy outside every arrow.

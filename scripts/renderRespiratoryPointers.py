@@ -8,10 +8,11 @@ from pathlib import Path
 import hashlib
 import json
 import math
+import sys
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / 'study-data/lab-models/upper-respiratory.json'
+DATA = ROOT / 'study-data/lab-models' / (sys.argv[1] if len(sys.argv) > 1 else 'upper-respiratory.json')
 
 def polygon(tail, tip, shaft, head_width, head_length):
     dx, dy = tip[0] - tail[0], tip[1] - tail[1]
