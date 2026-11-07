@@ -1,6 +1,7 @@
 import { logger } from '../utils/logger.js';
 
 export const botConfig = {
+  name: 'StudyBot',
   // =========================
   // BOT PRESENCE (what users see under the bot name)
   // =========================
@@ -141,7 +142,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "StudyBot",
       // Footer icon URL (null = no icon).
       icon: null,
     },

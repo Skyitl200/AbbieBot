@@ -6,7 +6,7 @@ export default {
 
 async execute(reaction, user, details, client) {
     try {
-            // Ignore AbbieBot and other bots.
+            // Ignore StudyBot and other bots.
             if (user.bot) return;
 
             // Fetch the reaction if Discord only gave us partial data.
@@ -65,7 +65,7 @@ async execute(reaction, user, details, client) {
                 return;
             }
 
-            // Safety: AbbieBot cannot manage roles above itself.
+            // Safety: StudyBot cannot manage roles above itself.
             const botMember =
                 message.guild.members.me;
 
@@ -74,8 +74,8 @@ async execute(reaction, user, details, client) {
                 botMember.roles.highest.position
             ) {
                 console.error(
-                    `AbbieBot cannot manage ${career.name}. ` +
-                    `Move AbbieBot above this role.`
+                    `StudyBot cannot manage ${career.name}. ` +
+                    `Move StudyBot above this role.`
                 );
 
                 return;

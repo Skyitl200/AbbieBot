@@ -64,7 +64,7 @@ async execute(reaction, user, details, client) {
                 return;
             }
 
-            // Make sure AbbieBot can manage this role.
+            // Make sure StudyBot can manage this role.
             const botMember =
                 message.guild.members.me;
 
@@ -73,7 +73,7 @@ async execute(reaction, user, details, client) {
                 botMember.roles.highest.position
             ) {
                 console.error(
-                    `AbbieBot cannot manage ${career.name}.`
+                    `StudyBot cannot manage ${career.name}.`
                 );
                 return;
             }

@@ -1,3 +1,4 @@
+import { synchronizeBotIdentity } from '../services/botIdentity.js';
 import { Events } from "discord.js";
 import { logger, startupLog } from "../utils/logger.js";
 import config from "../config/application.js";
@@ -12,6 +13,7 @@ export default {
 
   async execute(client) {
     try {
+      await synchronizeBotIdentity(client, config.bot.name);
       client.user.setPresence(config.bot.presence);
 
       startupLog(`Ready! Logged in as ${client.user.tag}`);

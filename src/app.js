@@ -60,7 +60,7 @@ class TitanBot extends Client {
 
   async start() {
     try {
-      startupLog('Starting TitanBot...');
+      startupLog('Starting StudyBot...');
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       startupLog('Initializing database...');
@@ -261,7 +261,7 @@ app.post('/paypal/webhook', express.json(), async (req, res) => {
         'Missing BIOLOGYHQ_GUILD_ID or SUBSCRIBER_ROLE_ID'
       );
     }
-// Make sure AbbieBot is connected to Discord before changing roles.
+// Make sure StudyBot is connected to Discord before changing roles.
 // Returning 503 tells PayPal this was a temporary failure so it can retry.
 if (!this.isReady()) {
   logger.warn('PayPal webhook received before Discord client was ready', {
@@ -504,7 +504,7 @@ app.get('/subscribe', (req, res) => {
 
     app.get('/', (req, res) => {
       res.status(200).json({
-        message: 'TitanBot System Online',
+        message: 'StudyBot System Online',
         version: pkg.version,
         timestamp: new Date().toISOString()
       });

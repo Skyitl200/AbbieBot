@@ -99,19 +99,19 @@ export default {
         const botMember =
             interaction.guild.members.me;
 
-        // Make sure AbbieBot has Manage Roles.
+        // Make sure StudyBot has Manage Roles.
         if (
             !botMember.permissions.has(
                 PermissionFlagsBits.ManageRoles
             )
         ) {
             return interaction.editReply(
-                '❌ AbbieBot needs the **Manage Roles** permission.'
+                '❌ StudyBot needs the **Manage Roles** permission.'
             );
         }
 
         // Check that every BiologyHQ career role exists
-        // and is below AbbieBot in the role hierarchy.
+        // and is below StudyBot in the role hierarchy.
         const invalidRoles = [];
 
         for (const career of CAREER_ROLES) {
@@ -136,7 +136,7 @@ export default {
                 botMember.roles.highest.position
             ) {
                 invalidRoles.push(
-                    `${career.name} — role is above AbbieBot in the role list`
+                    `${career.name} — role is above StudyBot in the role list`
                 );
             }
         }
@@ -145,7 +145,7 @@ export default {
             return interaction.editReply(
                 `❌ I can't manage some career roles:\n\n` +
                 `${invalidRoles.join('\n')}\n\n` +
-                `Move **AbbieBot's role above all of the student roles** and try again.`
+                `Move **StudyBot's role above all of the student roles** and try again.`
             );
         }
 
