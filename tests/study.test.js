@@ -1355,7 +1355,7 @@ for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-
                 const i = pixel * 4;
                 if (image.data[i] !== original.data[i] || image.data[i + 1] !== original.data[i + 1] || image.data[i + 2] !== original.data[i + 2]) {
                     changed++;
-                    assert.ok(nearPolygon(pixel % image.width, Math.floor(pixel / image.width), model.annotation.overlayPolygon), `${model.id}: anatomy changed outside arrow at pixel ${pixel}`);
+                    assert.ok((model.annotation.overlayPolygons || [model.annotation.overlayPolygon]).some(polygon => nearPolygon(pixel % image.width, Math.floor(pixel / image.width), polygon)), `${model.id}: anatomy changed outside arrow at pixel ${pixel}`);
                     const rgb = [...image.data.subarray(i, i + 3)];
                     assert.ok(rgb.every(value => value === 0) || rgb.join(',') === '0,229,255', 'Changes must contain only black outline or cyan pointer pixels');
                 }

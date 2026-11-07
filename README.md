@@ -457,7 +457,7 @@ The carina question marks the division location and asks about the internal ridg
 Rebuild with `python scripts/renderRespiratoryPointers.py bronchial-tree.json`.
 
 **Urinary System → Kidney 3D Model** adds 19 original-photo identification cards
-from `MYkidney.jpg.zip`. Cyan arrows mark individual structures; brackets mark
-the renal medulla and hilum. Both answer modes accept short anatomical labels,
+from `MYkidney.jpg.zip`. Cyan arrows mark individual structures; outlines show a cortex section and
+the hilum, while multiple brackets identify the medullary region. Both answer modes accept short anatomical labels,
 including cortical radiate/interlobular vessel synonyms and calyx/calyces.
 Rebuild with `python scripts/renderRespiratoryPointers.py kidney.json`.

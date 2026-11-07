@@ -530,7 +530,7 @@
           "id": "lab-kidney-08",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What structure is indicated by the arrow?",
+          "question": "What outer kidney region is outlined?",
           "options": [
             "Renal cortex",
             "Renal medulla",
@@ -551,50 +551,107 @@
       "expectedImageFile": "kidney/kd-08.png",
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
-        "tail": [
-          770,
-          210
+        "kind": "regions",
+        "paths": [
+          [
+            [
+              624,
+              626
+            ],
+            [
+              659,
+              643
+            ],
+            [
+              627,
+              714
+            ],
+            [
+              590,
+              693
+            ],
+            [
+              624,
+              626
+            ]
+          ]
         ],
-        "tip": [
-          621,
-          296
-        ],
-        "shaftWidth": 4,
-        "headWidth": 13,
-        "headLength": 16,
-        "outlineWidth": 1,
-        "overlayPolygon": [
+        "overlayPolygons": [
           [
-            621,
-            296
+            [
+              623,
+              629
+            ],
+            [
+              658,
+              646
+            ],
+            [
+              660,
+              640
+            ],
+            [
+              625,
+              623
+            ]
           ],
           [
-            632,
-            281
+            [
+              656,
+              642
+            ],
+            [
+              624,
+              713
+            ],
+            [
+              630,
+              715
+            ],
+            [
+              662,
+              644
+            ]
           ],
           [
-            634,
-            285
+            [
+              628,
+              711
+            ],
+            [
+              591,
+              690
+            ],
+            [
+              589,
+              696
+            ],
+            [
+              626,
+              717
+            ]
           ],
           [
-            769,
-            207
-          ],
-          [
-            771,
-            213
-          ],
-          [
-            637,
-            290
-          ],
-          [
-            639,
-            294
+            [
+              593,
+              694
+            ],
+            [
+              627,
+              627
+            ],
+            [
+              621,
+              625
+            ],
+            [
+              587,
+              692
+            ]
           ]
         ]
       },
-      "imageSha256": "5968fb58b8d81c39aaaf0f7405a49fd2a0cbc8b4686196e81d5e1fec8565d0be"
+      "imageSha256": "7995d0c878c1e930678380dddf82cb75093bcd29fb7426dc0f4ca0d4812b75d5"
     },
     {
       "id": "kidney-09",
@@ -627,12 +684,12 @@
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
         "tail": [
-          100,
-          153
+          121,
+          207
         ],
         "tip": [
-          289,
-          306
+          291,
+          315
         ],
         "shaftWidth": 4,
         "headWidth": 13,
@@ -640,36 +697,36 @@
         "outlineWidth": 1,
         "overlayPolygon": [
           [
-            289,
-            306
+            291,
+            315
           ],
           [
-            271,
-            301
+            273,
+            312
           ],
           [
-            274,
-            298
+            275,
+            308
           ],
           [
-            98,
-            155
+            119,
+            210
           ],
           [
-            102,
-            151
+            123,
+            204
           ],
           [
             278,
-            293
+            303
           ],
           [
             281,
-            289
+            300
           ]
         ]
       },
-      "imageSha256": "f8da4b600c799af2c73c6667aa919a447ec5064d9061a5eaa91bb4773fc6666e"
+      "imageSha256": "4bddb52815d2926498f3eb1b3bc0018ab4fd73e89d5524ad49082b1b3c1590ee"
     },
     {
       "id": "kidney-10",
@@ -702,12 +759,12 @@
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
         "tail": [
-          766,
-          135
+          119,
+          972
         ],
         "tip": [
-          653,
-          221
+          352,
+          991
         ],
         "shaftWidth": 4,
         "headWidth": 13,
@@ -715,36 +772,36 @@
         "outlineWidth": 1,
         "overlayPolygon": [
           [
-            653,
-            221
+            352,
+            991
           ],
           [
-            662,
-            205
+            334,
+            997
           ],
           [
-            665,
-            208
+            335,
+            993
           ],
           [
-            764,
-            133
+            119,
+            975
           ],
           [
-            768,
-            137
+            119,
+            969
           ],
           [
-            668,
-            213
+            335,
+            987
           ],
           [
-            671,
-            217
+            336,
+            982
           ]
         ]
       },
-      "imageSha256": "48f59f7ed3f5dd6c5ef5477cff0c9ee9077c69f4fc1a48b9f657aa04de515a7a"
+      "imageSha256": "d03a45486918f9a4bad13e4eb4a250f9317d3ddd7582a7880b6594fa7a218efe"
     },
     {
       "id": "kidney-11",
@@ -927,12 +984,12 @@
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
         "tail": [
-          59,
-          116
+          80,
+          100
         ],
         "tip": [
-          204,
-          152
+          213,
+          139
         ],
         "shaftWidth": 4,
         "headWidth": 13,
@@ -940,36 +997,36 @@
         "outlineWidth": 1,
         "overlayPolygon": [
           [
-            204,
-            152
+            213,
+            139
           ],
           [
-            186,
-            155
-          ],
-          [
-            187,
-            151
-          ],
-          [
-            58,
-            119
-          ],
-          [
-            60,
-            113
-          ],
-          [
-            188,
-            145
-          ],
-          [
-            189,
+            195,
             141
+          ],
+          [
+            196,
+            137
+          ],
+          [
+            79,
+            103
+          ],
+          [
+            81,
+            97
+          ],
+          [
+            198,
+            131
+          ],
+          [
+            199,
+            127
           ]
         ]
       },
-      "imageSha256": "8fe658494607e67e8102914324a5b0675ea51e6794607db522703c03cd22559a"
+      "imageSha256": "2afc654767e0913221658ec0bdfc59256f76a57b2145dc04efb4ede46f78b01d"
     },
     {
       "id": "kidney-14",
@@ -1055,7 +1112,7 @@
           "id": "lab-kidney-15",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What inner region of the kidney is marked by the bracket?",
+          "question": "What inner kidney region contains all the bracketed areas?",
           "options": [
             "Renal medulla",
             "Renal cortex",
@@ -1065,7 +1122,7 @@
           "correct": [
             0
           ],
-          "explanation": "Renal medulla.",
+          "explanation": "Renal medulla - the inner region containing the renal pyramids.",
           "requiresModelImage": true,
           "typedAnswers": [
             "renal medulla",
@@ -1076,111 +1133,301 @@
       "expectedImageFile": "kidney/kd-15.png",
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
-        "kind": "bracket",
-        "outerPolygon": [
+        "kind": "regions",
+        "paths": [
           [
-            211,
-            166
+            [
+              226,
+              177
+            ],
+            [
+              205,
+              177
+            ],
+            [
+              205,
+              262
+            ],
+            [
+              226,
+              262
+            ]
           ],
           [
-            189,
-            166
+            [
+              520,
+              258
+            ],
+            [
+              501,
+              258
+            ],
+            [
+              501,
+              309
+            ],
+            [
+              520,
+              309
+            ]
           ],
           [
-            189,
-            279
+            [
+              564,
+              476
+            ],
+            [
+              545,
+              476
+            ],
+            [
+              545,
+              537
+            ],
+            [
+              564,
+              537
+            ]
           ],
           [
-            211,
-            279
-          ],
-          [
-            211,
-            271
-          ],
-          [
-            197,
-            271
-          ],
-          [
-            197,
-            174
-          ],
-          [
-            211,
-            174
+            [
+              501,
+              699
+            ],
+            [
+              480,
+              699
+            ],
+            [
+              480,
+              766
+            ],
+            [
+              501,
+              766
+            ]
           ]
         ],
-        "innerPolygon": [
+        "overlayPolygons": [
           [
-            209,
-            168
+            [
+              226,
+              174
+            ],
+            [
+              205,
+              174
+            ],
+            [
+              205,
+              180
+            ],
+            [
+              226,
+              180
+            ]
           ],
           [
-            191,
-            168
+            [
+              202,
+              177
+            ],
+            [
+              202,
+              262
+            ],
+            [
+              208,
+              262
+            ],
+            [
+              208,
+              177
+            ]
           ],
           [
-            191,
-            277
+            [
+              205,
+              265
+            ],
+            [
+              226,
+              265
+            ],
+            [
+              226,
+              259
+            ],
+            [
+              205,
+              259
+            ]
           ],
           [
-            209,
-            277
+            [
+              520,
+              255
+            ],
+            [
+              501,
+              255
+            ],
+            [
+              501,
+              261
+            ],
+            [
+              520,
+              261
+            ]
           ],
           [
-            209,
-            273
+            [
+              498,
+              258
+            ],
+            [
+              498,
+              309
+            ],
+            [
+              504,
+              309
+            ],
+            [
+              504,
+              258
+            ]
           ],
           [
-            195,
-            273
+            [
+              501,
+              312
+            ],
+            [
+              520,
+              312
+            ],
+            [
+              520,
+              306
+            ],
+            [
+              501,
+              306
+            ]
           ],
           [
-            195,
-            172
+            [
+              564,
+              473
+            ],
+            [
+              545,
+              473
+            ],
+            [
+              545,
+              479
+            ],
+            [
+              564,
+              479
+            ]
           ],
           [
-            209,
-            172
-          ]
-        ],
-        "overlayPolygon": [
-          [
-            211,
-            166
+            [
+              542,
+              476
+            ],
+            [
+              542,
+              537
+            ],
+            [
+              548,
+              537
+            ],
+            [
+              548,
+              476
+            ]
           ],
           [
-            189,
-            166
+            [
+              545,
+              540
+            ],
+            [
+              564,
+              540
+            ],
+            [
+              564,
+              534
+            ],
+            [
+              545,
+              534
+            ]
           ],
           [
-            189,
-            279
+            [
+              501,
+              696
+            ],
+            [
+              480,
+              696
+            ],
+            [
+              480,
+              702
+            ],
+            [
+              501,
+              702
+            ]
           ],
           [
-            211,
-            279
+            [
+              477,
+              699
+            ],
+            [
+              477,
+              766
+            ],
+            [
+              483,
+              766
+            ],
+            [
+              483,
+              699
+            ]
           ],
           [
-            211,
-            271
-          ],
-          [
-            197,
-            271
-          ],
-          [
-            197,
-            174
-          ],
-          [
-            211,
-            174
+            [
+              480,
+              769
+            ],
+            [
+              501,
+              769
+            ],
+            [
+              501,
+              763
+            ],
+            [
+              480,
+              763
+            ]
           ]
         ]
       },
-      "imageSha256": "0d2767bbae123cfb0eaa50502b7574b7e2e44e077c7d8b155491c055335c9bea"
+      "imageSha256": "1b736d85db9b0ca8ad39d797cd6a4ae8c2bde529240dd36a10b7eddee7c2e834"
     },
     {
       "id": "kidney-16",
@@ -1190,7 +1437,7 @@
           "id": "lab-kidney-16",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What medial entry and exit region is indicated by the bracket?",
+          "question": "What medial entry and exit region is outlined?",
           "options": [
             "Renal hilum",
             "Renal pelvis",
@@ -1200,7 +1447,7 @@
           "correct": [
             0
           ],
-          "explanation": "Renal hilum.",
+          "explanation": "Renal hilum - the medial opening for vessels and the ureter; nearby tissue is shown for orientation.",
           "requiresModelImage": true,
           "typedAnswers": [
             "renal hilum",
@@ -1213,111 +1460,173 @@
       "expectedImageFile": "kidney/kd-16.png",
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
-        "kind": "bracket",
-        "outerPolygon": [
+        "kind": "regions",
+        "paths": [
           [
-            100,
-            476
-          ],
-          [
-            78,
-            476
-          ],
-          [
-            78,
-            612
-          ],
-          [
-            100,
-            612
-          ],
-          [
-            100,
-            604
-          ],
-          [
-            86,
-            604
-          ],
-          [
-            86,
-            484
-          ],
-          [
-            100,
-            484
+            [
+              125,
+              477
+            ],
+            [
+              241,
+              460
+            ],
+            [
+              301,
+              498
+            ],
+            [
+              310,
+              567
+            ],
+            [
+              274,
+              619
+            ],
+            [
+              169,
+              646
+            ],
+            [
+              116,
+              604
+            ],
+            [
+              125,
+              477
+            ]
           ]
         ],
-        "innerPolygon": [
+        "overlayPolygons": [
           [
-            98,
-            478
+            [
+              125,
+              480
+            ],
+            [
+              241,
+              463
+            ],
+            [
+              241,
+              457
+            ],
+            [
+              125,
+              474
+            ]
           ],
           [
-            80,
-            478
+            [
+              239,
+              463
+            ],
+            [
+              299,
+              501
+            ],
+            [
+              303,
+              495
+            ],
+            [
+              243,
+              457
+            ]
           ],
           [
-            80,
-            610
+            [
+              298,
+              498
+            ],
+            [
+              307,
+              567
+            ],
+            [
+              313,
+              567
+            ],
+            [
+              304,
+              498
+            ]
           ],
           [
-            98,
-            610
+            [
+              308,
+              565
+            ],
+            [
+              272,
+              617
+            ],
+            [
+              276,
+              621
+            ],
+            [
+              312,
+              569
+            ]
           ],
           [
-            98,
-            606
+            [
+              273,
+              616
+            ],
+            [
+              168,
+              643
+            ],
+            [
+              170,
+              649
+            ],
+            [
+              275,
+              622
+            ]
           ],
           [
-            84,
-            606
+            [
+              171,
+              644
+            ],
+            [
+              118,
+              602
+            ],
+            [
+              114,
+              606
+            ],
+            [
+              167,
+              648
+            ]
           ],
           [
-            84,
-            482
-          ],
-          [
-            98,
-            482
-          ]
-        ],
-        "overlayPolygon": [
-          [
-            100,
-            476
-          ],
-          [
-            78,
-            476
-          ],
-          [
-            78,
-            612
-          ],
-          [
-            100,
-            612
-          ],
-          [
-            100,
-            604
-          ],
-          [
-            86,
-            604
-          ],
-          [
-            86,
-            484
-          ],
-          [
-            100,
-            484
+            [
+              119,
+              604
+            ],
+            [
+              128,
+              477
+            ],
+            [
+              122,
+              477
+            ],
+            [
+              113,
+              604
+            ]
           ]
         ]
       },
-      "imageSha256": "59357d17cdcf910f72fde8542218b4d4c4d35038ab771834f537766e84b5d935"
+      "imageSha256": "38d65b70ce2d1c57a3a253a0484c62b7f54d201c0d483b614bffa63a50fd0163"
     },
     {
       "id": "kidney-17",

@@ -33,6 +33,23 @@ def main():
     original = Image.open(source).convert('RGB')
     for model in data['models']:
         a = model['annotation']
+        if a.get('kind') == 'regions':
+            image = original.copy(); draw = ImageDraw.Draw(image)
+            polygons = []
+            for path_points in a['paths']:
+                for tail, tip in zip(path_points, path_points[1:]):
+                    dx, dy = tip[0]-tail[0], tip[1]-tail[1]
+                    length = math.hypot(dx, dy); vx, vy = -dy/length, dx/length
+                    def rectangle(width):
+                        return [[round(x), round(y)] for x, y in [(tail[0]+vx*width/2, tail[1]+vy*width/2), (tip[0]+vx*width/2, tip[1]+vy*width/2), (tip[0]-vx*width/2, tip[1]-vy*width/2), (tail[0]-vx*width/2, tail[1]-vy*width/2)]]
+                    outer = rectangle(6); inner = rectangle(3)
+                    draw.polygon([tuple(p) for p in outer], fill=(0,0,0)); draw.polygon([tuple(p) for p in inner], fill=(0,229,255))
+                    polygons.append(outer)
+            path = ROOT / 'study-assets/lab-models' / model['expectedImageFile']
+            image.save(path, format='PNG', optimize=True)
+            model['imageSha256'] = hashlib.sha256(path.read_bytes()).hexdigest()
+            a['overlayPolygons'] = polygons
+            continue
         if a.get('kind') == 'bracket':
             outer = a['outerPolygon']
             inner = a['innerPolygon']
