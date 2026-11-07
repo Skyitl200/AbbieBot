@@ -9,6 +9,7 @@ export const LAB_SETS = [
     { id: 'early-development', title: 'Early Development Models', category: 'reproductive', models: LAB_MODELS },
     { id: 'upper-respiratory', title: 'Upper Respiratory 3D Model', category: 'respiratory', models: loadModels('upper-respiratory.json') },
     { id: 'lungs-larynx', title: 'Lungs and Larynx 3D Model', category: 'respiratory', models: loadModels('lungs-larynx.json') },
+    { id: 'nephron-1', title: 'Nephron Model 1', category: 'urinary', models: loadModels('nephron-1.json') },
     { id: 'urinary-system', title: '3D Model of Urinary System', category: 'urinary', models: loadModels('urinary-system.json') },
     { id: 'kidney', title: 'Kidney 3D Model', category: 'urinary', models: loadModels('kidney.json') },
     { id: 'bronchial-tree', title: 'Bronchial Tree 3D Model', category: 'respiratory', models: loadModels('bronchial-tree.json') },

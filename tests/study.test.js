@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771]]) {
+for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1475,6 +1475,33 @@ test('extended urinary-system set groups six pictured structures in both answer 
         if (mode === 'typed') {
             for (const [name, wrong] of [['Ureter','urethra'], ['Urethra','ureter'], ['Renal artery','renal vein'], ['Left kidney','right kidney']]) {
                 const q = qs.find(q => q.modelName === name);
+                assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
+        }
+    }
+});
+
+
+test('Nephron Model 1 includes 18 pictured structures with short aliases and protected vessel and tubule distinctions', async () => {
+    const { labQuestions, labModelImage, labModelsMessage, labModeMessage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'urinary').components[0].toJSON().components[0].options.some(o => o.value === 'nephron-1' && o.label === 'Nephron Model 1'));
+    assert.equal(labModeMessage('u', 'nephron-1').components[1].toJSON().components[0].custom_id, 'study:labcategory:u:urinary');
+    for (const mode of ['multiple_choice', 'typed']) {
+        const qs = labQuestions('nephron-1', mode);
+        assert.equal(qs.length, 18);
+        assert.equal(new Set(qs.map(q => q.labModelId)).size, 18);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') {
+                assert.equal(q.options.length, 4);
+                assert.equal(q.options[q.correct[0]], q.modelName);
+            } else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, alias, wrong] of [['P.C.T.', 'proximal convoluted tubule', 'DCT'], ['D.C.T.', 'distal convoluted tubule', 'PCT'], ['Afferent arteriole', 'afferent', 'efferent arteriole'], ['Interlobular artery', 'cortical radiate artery', 'interlobar artery'], ["Bowman's capsule", 'glomerular capsule', 'glomerulus'], ['Renal corpuscle', 'renal corpuscle', 'glomerulus']]) {
+                const q = qs.find(q => q.modelName === name);
+                assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
             }
         }

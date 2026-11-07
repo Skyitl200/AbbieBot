@@ -469,3 +469,9 @@ Rebuild with `python scripts/renderRespiratoryPointers.py urinary-system.json`.
 
 StudyBot synchronizes its Discord username and legacy AbbieBot nicknames on
 startup. See [identity behavior](docs/studybot-identity.md).
+
+**Nephron Model 1** adds 18 cyan-pointer cards in Anatomy Lab → Urinary System,
+from the original `Nephron model.jpg.zip`. Both modes accept PCT/DCT and full
+tubule names. The corpuscle outline includes the glomerulus and capsule; the
+loop bracket marks the hairpin turn. Rebuild with
+`python scripts/renderRespiratoryPointers.py nephron-1.json`.

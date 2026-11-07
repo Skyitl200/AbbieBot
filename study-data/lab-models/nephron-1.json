@@ -1,0 +1,2769 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Urinary System",
+  "modelGroup": "Nephron Model 1",
+  "source": "Exact original Nephron model.jpg.zip photograph with cyan annotation overlays only.",
+  "sourceImageFile": "nephron-1-original.png",
+  "sourceImageSha256": "f44d321aedae8eaac7a1cc3793c868b5ea826ebf01493efb949bac03b315177f",
+  "originalUploadFile": "nephron-1-original.jpg",
+  "originalUploadSha256": "772d343306013d787a6153c4286b4de8d9184ac19570d08717be01e4274671d1",
+  "models": [
+    {
+      "id": "nephron1-01",
+      "name": "Interlobar artery",
+      "questions": [
+        {
+          "id": "lab-nephron1-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Interlobar artery",
+            "Arcuate artery",
+            "Interlobular artery",
+            "Arcuate vein"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Interlobar artery.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "interlobar artery"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          36,
+          872
+        ],
+        "tip": [
+          155,
+          871
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            155,
+            871
+          ],
+          [
+            138,
+            879
+          ],
+          [
+            138,
+            874
+          ],
+          [
+            36,
+            875
+          ],
+          [
+            36,
+            869
+          ],
+          [
+            138,
+            868
+          ],
+          [
+            138,
+            864
+          ]
+        ]
+      },
+      "imageSha256": "402fff5d27d252930dbaaca80e12d6bd732e97008ba1d051c734b47e0a1cc1fd"
+    },
+    {
+      "id": "nephron1-02",
+      "name": "Arcuate artery",
+      "questions": [
+        {
+          "id": "lab-nephron1-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Arcuate artery",
+            "Interlobar artery",
+            "Interlobular artery",
+            "Arcuate vein"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Arcuate artery.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "arcuate artery"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          36,
+          707
+        ],
+        "tip": [
+          115,
+          770
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            115,
+            770
+          ],
+          [
+            97,
+            765
+          ],
+          [
+            100,
+            762
+          ],
+          [
+            34,
+            709
+          ],
+          [
+            38,
+            705
+          ],
+          [
+            104,
+            757
+          ],
+          [
+            106,
+            754
+          ]
+        ]
+      },
+      "imageSha256": "b8de07ad30a416ff5648efc5bbb79a38dbf74d2ce738904dfc382b3d11244e39"
+    },
+    {
+      "id": "nephron1-03",
+      "name": "Afferent arteriole",
+      "questions": [
+        {
+          "id": "lab-nephron1-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Afferent arteriole",
+            "Efferent arteriole",
+            "Interlobular artery",
+            "Peritubular capillaries"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Afferent arteriole.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "afferent arteriole",
+            "afferent arteriole enter",
+            "afferent"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          144,
+          216
+        ],
+        "tip": [
+          359,
+          257
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            359,
+            257
+          ],
+          [
+            341,
+            261
+          ],
+          [
+            342,
+            257
+          ],
+          [
+            143,
+            219
+          ],
+          [
+            145,
+            213
+          ],
+          [
+            343,
+            251
+          ],
+          [
+            344,
+            246
+          ]
+        ]
+      },
+      "imageSha256": "4c9451836bca9f2abac93ec52ac0241936e00ee8660a21fe6fc5fdac6f082e3e"
+    },
+    {
+      "id": "nephron1-04",
+      "name": "Glomerulus",
+      "questions": [
+        {
+          "id": "lab-nephron1-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Glomerulus",
+            "Bowman's capsule",
+            "Renal corpuscle",
+            "Peritubular capillaries"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Glomerulus - the tuft of capillaries.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "glomerulus",
+            "glomerular capillaries",
+            "glomerular tuft"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          589,
+          337
+        ],
+        "tip": [
+          439,
+          235
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            439,
+            235
+          ],
+          [
+            457,
+            238
+          ],
+          [
+            455,
+            242
+          ],
+          [
+            591,
+            335
+          ],
+          [
+            587,
+            339
+          ],
+          [
+            451,
+            247
+          ],
+          [
+            449,
+            251
+          ]
+        ]
+      },
+      "imageSha256": "684bb5144df35299f5fe81c48337579878187f90b07264797d8280c3724aee49"
+    },
+    {
+      "id": "nephron1-05",
+      "name": "Efferent arteriole",
+      "questions": [
+        {
+          "id": "lab-nephron1-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Efferent arteriole",
+            "Afferent arteriole",
+            "Interlobular artery",
+            "Peritubular capillaries"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Efferent arteriole.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "efferent arteriole",
+            "efferent arteriole exit",
+            "efferent"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          167,
+          146
+        ],
+        "tip": [
+          365,
+          233
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            365,
+            233
+          ],
+          [
+            346,
+            233
+          ],
+          [
+            348,
+            229
+          ],
+          [
+            166,
+            149
+          ],
+          [
+            168,
+            143
+          ],
+          [
+            351,
+            223
+          ],
+          [
+            352,
+            219
+          ]
+        ]
+      },
+      "imageSha256": "00e52418b5c563f79cc39a2daf312290799e3ef428b44e72e9286e409625a3ca"
+    },
+    {
+      "id": "nephron1-06",
+      "name": "P.C.T.",
+      "questions": [
+        {
+          "id": "lab-nephron1-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "P.C.T.",
+            "D.C.T.",
+            "Collecting duct",
+            "Descending limb"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "P.C.T..",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "P.C.T.",
+            "PCT",
+            "proximal convoluted tubule",
+            "proximal tubule"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          171,
+          91
+        ],
+        "tip": [
+          407,
+          160
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            407,
+            160
+          ],
+          [
+            389,
+            162
+          ],
+          [
+            390,
+            158
+          ],
+          [
+            170,
+            94
+          ],
+          [
+            172,
+            88
+          ],
+          [
+            392,
+            152
+          ],
+          [
+            393,
+            148
+          ]
+        ]
+      },
+      "imageSha256": "132b9d3c080b85da59fd5c42ceea7586a9289dd196f0c7123b37afd0f364655e"
+    },
+    {
+      "id": "nephron1-07",
+      "name": "D.C.T.",
+      "questions": [
+        {
+          "id": "lab-nephron1-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "D.C.T.",
+            "P.C.T.",
+            "Collecting duct",
+            "Ascending limb"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "D.C.T..",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "D.C.T.",
+            "DCT",
+            "distal convoluted tubule",
+            "distal tubule"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          674,
+          49
+        ],
+        "tip": [
+          616,
+          145
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            616,
+            145
+          ],
+          [
+            618,
+            127
+          ],
+          [
+            622,
+            129
+          ],
+          [
+            671,
+            47
+          ],
+          [
+            677,
+            51
+          ],
+          [
+            627,
+            132
+          ],
+          [
+            631,
+            134
+          ]
+        ]
+      },
+      "imageSha256": "d62a2f780dd1bc356ad5ee6cc428a64f9673dd50022a53688c01e1d5235174d5"
+    },
+    {
+      "id": "nephron1-08",
+      "name": "Interlobular vein",
+      "questions": [
+        {
+          "id": "lab-nephron1-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Interlobular vein",
+            "Arcuate vein",
+            "Interlobular artery",
+            "Vasa recta"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Interlobular vein.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "interlobular vein",
+            "cortical radiate vein"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          31,
+          396
+        ],
+        "tip": [
+          164,
+          320
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            164,
+            320
+          ],
+          [
+            153,
+            335
+          ],
+          [
+            151,
+            331
+          ],
+          [
+            32,
+            399
+          ],
+          [
+            30,
+            393
+          ],
+          [
+            148,
+            326
+          ],
+          [
+            146,
+            322
+          ]
+        ]
+      },
+      "imageSha256": "82058c754cff5978c090c36ba1176b270f1716860b28bfe4a0c068c95b205fc4"
+    },
+    {
+      "id": "nephron1-09",
+      "name": "Descending limb",
+      "questions": [
+        {
+          "id": "lab-nephron1-09",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Descending limb",
+            "Ascending limb",
+            "Collecting duct",
+            "P.C.T."
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Descending limb.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "descending limb",
+            "descending limb of loop of henle",
+            "descending limb of nephron loop"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          202,
+          697
+        ],
+        "tip": [
+          408,
+          735
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            408,
+            735
+          ],
+          [
+            390,
+            739
+          ],
+          [
+            391,
+            735
+          ],
+          [
+            201,
+            700
+          ],
+          [
+            203,
+            694
+          ],
+          [
+            392,
+            729
+          ],
+          [
+            393,
+            725
+          ]
+        ]
+      },
+      "imageSha256": "2824f9e25c2e0ed66ba3c025767ec2ee84f4ec9e9d212b2369340e381e5020c0"
+    },
+    {
+      "id": "nephron1-10",
+      "name": "Ascending limb",
+      "questions": [
+        {
+          "id": "lab-nephron1-10",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Ascending limb",
+            "Descending limb",
+            "Collecting duct",
+            "D.C.T."
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Ascending limb.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "ascending limb",
+            "ascending limb of loop of henle",
+            "ascending limb of nephron loop"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-10.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          612,
+          677
+        ],
+        "tip": [
+          485,
+          734
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            485,
+            734
+          ],
+          [
+            497,
+            720
+          ],
+          [
+            499,
+            724
+          ],
+          [
+            611,
+            674
+          ],
+          [
+            613,
+            680
+          ],
+          [
+            502,
+            730
+          ],
+          [
+            504,
+            734
+          ]
+        ]
+      },
+      "imageSha256": "1293cce50603047760c0222fcc69828ae660fd8a0dab2e56c95e0e861e7c5fe4"
+    },
+    {
+      "id": "nephron1-11",
+      "name": "Collecting duct",
+      "questions": [
+        {
+          "id": "lab-nephron1-11",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Collecting duct",
+            "Ascending limb",
+            "Descending limb",
+            "D.C.T."
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Collecting duct.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "collecting duct",
+            "collecting tubule"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-11.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          549,
+          433
+        ],
+        "tip": [
+          652,
+          516
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            652,
+            516
+          ],
+          [
+            634,
+            511
+          ],
+          [
+            637,
+            508
+          ],
+          [
+            547,
+            435
+          ],
+          [
+            551,
+            431
+          ],
+          [
+            641,
+            503
+          ],
+          [
+            643,
+            499
+          ]
+        ]
+      },
+      "imageSha256": "b6aa0748d6dbdf5db74721f28120f1fc8628526a1a164941cd45ceed92e9c56f"
+    },
+    {
+      "id": "nephron1-12",
+      "name": "Interlobular artery",
+      "questions": [
+        {
+          "id": "lab-nephron1-12",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Interlobular artery",
+            "Interlobar artery",
+            "Arcuate artery",
+            "Interlobular vein"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Interlobular artery.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "interlobular artery",
+            "cortical radiate artery"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-12.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          32,
+          467
+        ],
+        "tip": [
+          260,
+          416
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            260,
+            416
+          ],
+          [
+            245,
+            427
+          ],
+          [
+            244,
+            423
+          ],
+          [
+            33,
+            470
+          ],
+          [
+            31,
+            464
+          ],
+          [
+            243,
+            417
+          ],
+          [
+            242,
+            412
+          ]
+        ]
+      },
+      "imageSha256": "cef5d175c9fc190ad55a64b16ed461f23e65509ab3aa1a1f0ffc46aa2f955469"
+    },
+    {
+      "id": "nephron1-13",
+      "name": "Peritubular capillaries",
+      "questions": [
+        {
+          "id": "lab-nephron1-13",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Peritubular capillaries",
+            "Vasa recta",
+            "Glomerulus",
+            "Afferent arteriole"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Peritubular capillaries.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "peritubular capillaries",
+            "peritubular capillary",
+            "peritubular capillary network"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-13.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          614,
+          387
+        ],
+        "tip": [
+          423,
+          338
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            423,
+            338
+          ],
+          [
+            441,
+            335
+          ],
+          [
+            440,
+            339
+          ],
+          [
+            615,
+            384
+          ],
+          [
+            613,
+            390
+          ],
+          [
+            439,
+            345
+          ],
+          [
+            438,
+            349
+          ]
+        ]
+      },
+      "imageSha256": "56c0a9567a3c16dbedc500f5dabbde08e74912fcdda219c1f52ba72072e15b89"
+    },
+    {
+      "id": "nephron1-14",
+      "name": "Arcuate vein",
+      "questions": [
+        {
+          "id": "lab-nephron1-14",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Arcuate vein",
+            "Arcuate artery",
+            "Interlobular vein",
+            "Vasa recta"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Arcuate vein.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "arcuate vein"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-14.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          25,
+          548
+        ],
+        "tip": [
+          137,
+          623
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            137,
+            623
+          ],
+          [
+            119,
+            620
+          ],
+          [
+            121,
+            616
+          ],
+          [
+            23,
+            550
+          ],
+          [
+            27,
+            546
+          ],
+          [
+            125,
+            611
+          ],
+          [
+            127,
+            607
+          ]
+        ]
+      },
+      "imageSha256": "ab6693c1d5c19d104374cc4900086996942a8d96032c9c0f70bcc6d986e8e57d"
+    },
+    {
+      "id": "nephron1-15",
+      "name": "Renal corpuscle",
+      "questions": [
+        {
+          "id": "lab-nephron1-15",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What entire structure is outlined?",
+          "options": [
+            "Renal corpuscle",
+            "Glomerulus",
+            "Bowman's capsule",
+            "P.C.T."
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal corpuscle - glomerulus and Bowman\u2019s capsule together.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal corpuscle",
+            "malpighian corpuscle"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-15.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 5,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              492,
+              236
+            ],
+            [
+              492,
+              241
+            ],
+            [
+              491,
+              246
+            ],
+            [
+              490,
+              250
+            ],
+            [
+              488,
+              255
+            ],
+            [
+              486,
+              259
+            ],
+            [
+              483,
+              263
+            ],
+            [
+              480,
+              267
+            ],
+            [
+              477,
+              271
+            ],
+            [
+              473,
+              274
+            ],
+            [
+              469,
+              277
+            ],
+            [
+              465,
+              279
+            ],
+            [
+              461,
+              281
+            ],
+            [
+              456,
+              283
+            ],
+            [
+              451,
+              284
+            ],
+            [
+              446,
+              285
+            ],
+            [
+              441,
+              285
+            ],
+            [
+              436,
+              285
+            ],
+            [
+              431,
+              284
+            ],
+            [
+              426,
+              283
+            ],
+            [
+              421,
+              281
+            ],
+            [
+              417,
+              279
+            ],
+            [
+              413,
+              277
+            ],
+            [
+              409,
+              274
+            ],
+            [
+              405,
+              271
+            ],
+            [
+              402,
+              267
+            ],
+            [
+              399,
+              263
+            ],
+            [
+              396,
+              259
+            ],
+            [
+              394,
+              255
+            ],
+            [
+              392,
+              250
+            ],
+            [
+              391,
+              246
+            ],
+            [
+              390,
+              241
+            ],
+            [
+              390,
+              236
+            ],
+            [
+              390,
+              231
+            ],
+            [
+              391,
+              226
+            ],
+            [
+              392,
+              222
+            ],
+            [
+              394,
+              217
+            ],
+            [
+              396,
+              213
+            ],
+            [
+              399,
+              209
+            ],
+            [
+              402,
+              205
+            ],
+            [
+              405,
+              201
+            ],
+            [
+              409,
+              198
+            ],
+            [
+              413,
+              195
+            ],
+            [
+              417,
+              193
+            ],
+            [
+              421,
+              191
+            ],
+            [
+              426,
+              189
+            ],
+            [
+              431,
+              188
+            ],
+            [
+              436,
+              187
+            ],
+            [
+              441,
+              187
+            ],
+            [
+              446,
+              187
+            ],
+            [
+              451,
+              188
+            ],
+            [
+              456,
+              189
+            ],
+            [
+              461,
+              191
+            ],
+            [
+              465,
+              193
+            ],
+            [
+              469,
+              195
+            ],
+            [
+              473,
+              198
+            ],
+            [
+              477,
+              201
+            ],
+            [
+              480,
+              205
+            ],
+            [
+              483,
+              209
+            ],
+            [
+              486,
+              213
+            ],
+            [
+              488,
+              217
+            ],
+            [
+              490,
+              222
+            ],
+            [
+              491,
+              226
+            ],
+            [
+              492,
+              231
+            ],
+            [
+              492,
+              236
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              488,
+              236
+            ],
+            [
+              488,
+              241
+            ],
+            [
+              496,
+              241
+            ],
+            [
+              496,
+              236
+            ]
+          ],
+          [
+            [
+              489,
+              240
+            ],
+            [
+              488,
+              245
+            ],
+            [
+              494,
+              247
+            ],
+            [
+              495,
+              242
+            ]
+          ],
+          [
+            [
+              488,
+              245
+            ],
+            [
+              487,
+              249
+            ],
+            [
+              493,
+              251
+            ],
+            [
+              494,
+              247
+            ]
+          ],
+          [
+            [
+              487,
+              249
+            ],
+            [
+              485,
+              254
+            ],
+            [
+              491,
+              256
+            ],
+            [
+              493,
+              251
+            ]
+          ],
+          [
+            [
+              485,
+              253
+            ],
+            [
+              483,
+              257
+            ],
+            [
+              489,
+              261
+            ],
+            [
+              491,
+              257
+            ]
+          ],
+          [
+            [
+              483,
+              257
+            ],
+            [
+              480,
+              261
+            ],
+            [
+              486,
+              265
+            ],
+            [
+              489,
+              261
+            ]
+          ],
+          [
+            [
+              480,
+              261
+            ],
+            [
+              477,
+              265
+            ],
+            [
+              483,
+              269
+            ],
+            [
+              486,
+              265
+            ]
+          ],
+          [
+            [
+              477,
+              265
+            ],
+            [
+              474,
+              269
+            ],
+            [
+              480,
+              273
+            ],
+            [
+              483,
+              269
+            ]
+          ],
+          [
+            [
+              475,
+              268
+            ],
+            [
+              471,
+              271
+            ],
+            [
+              475,
+              277
+            ],
+            [
+              479,
+              274
+            ]
+          ],
+          [
+            [
+              471,
+              271
+            ],
+            [
+              467,
+              274
+            ],
+            [
+              471,
+              280
+            ],
+            [
+              475,
+              277
+            ]
+          ],
+          [
+            [
+              467,
+              274
+            ],
+            [
+              463,
+              276
+            ],
+            [
+              467,
+              282
+            ],
+            [
+              471,
+              280
+            ]
+          ],
+          [
+            [
+              463,
+              276
+            ],
+            [
+              459,
+              278
+            ],
+            [
+              463,
+              284
+            ],
+            [
+              467,
+              282
+            ]
+          ],
+          [
+            [
+              460,
+              278
+            ],
+            [
+              455,
+              280
+            ],
+            [
+              457,
+              286
+            ],
+            [
+              462,
+              284
+            ]
+          ],
+          [
+            [
+              455,
+              280
+            ],
+            [
+              450,
+              281
+            ],
+            [
+              452,
+              287
+            ],
+            [
+              457,
+              286
+            ]
+          ],
+          [
+            [
+              450,
+              281
+            ],
+            [
+              445,
+              282
+            ],
+            [
+              447,
+              288
+            ],
+            [
+              452,
+              287
+            ]
+          ],
+          [
+            [
+              446,
+              282
+            ],
+            [
+              441,
+              282
+            ],
+            [
+              441,
+              288
+            ],
+            [
+              446,
+              288
+            ]
+          ],
+          [
+            [
+              441,
+              282
+            ],
+            [
+              436,
+              282
+            ],
+            [
+              436,
+              288
+            ],
+            [
+              441,
+              288
+            ]
+          ],
+          [
+            [
+              437,
+              282
+            ],
+            [
+              432,
+              281
+            ],
+            [
+              430,
+              287
+            ],
+            [
+              435,
+              288
+            ]
+          ],
+          [
+            [
+              432,
+              281
+            ],
+            [
+              427,
+              280
+            ],
+            [
+              425,
+              286
+            ],
+            [
+              430,
+              287
+            ]
+          ],
+          [
+            [
+              427,
+              280
+            ],
+            [
+              422,
+              278
+            ],
+            [
+              420,
+              284
+            ],
+            [
+              425,
+              286
+            ]
+          ],
+          [
+            [
+              423,
+              278
+            ],
+            [
+              419,
+              276
+            ],
+            [
+              415,
+              282
+            ],
+            [
+              419,
+              284
+            ]
+          ],
+          [
+            [
+              419,
+              276
+            ],
+            [
+              415,
+              274
+            ],
+            [
+              411,
+              280
+            ],
+            [
+              415,
+              282
+            ]
+          ],
+          [
+            [
+              415,
+              274
+            ],
+            [
+              411,
+              271
+            ],
+            [
+              407,
+              277
+            ],
+            [
+              411,
+              280
+            ]
+          ],
+          [
+            [
+              411,
+              271
+            ],
+            [
+              407,
+              268
+            ],
+            [
+              403,
+              274
+            ],
+            [
+              407,
+              277
+            ]
+          ],
+          [
+            [
+              408,
+              269
+            ],
+            [
+              405,
+              265
+            ],
+            [
+              399,
+              269
+            ],
+            [
+              402,
+              273
+            ]
+          ],
+          [
+            [
+              405,
+              265
+            ],
+            [
+              402,
+              261
+            ],
+            [
+              396,
+              265
+            ],
+            [
+              399,
+              269
+            ]
+          ],
+          [
+            [
+              402,
+              261
+            ],
+            [
+              399,
+              257
+            ],
+            [
+              393,
+              261
+            ],
+            [
+              396,
+              265
+            ]
+          ],
+          [
+            [
+              399,
+              257
+            ],
+            [
+              397,
+              253
+            ],
+            [
+              391,
+              257
+            ],
+            [
+              393,
+              261
+            ]
+          ],
+          [
+            [
+              397,
+              254
+            ],
+            [
+              395,
+              249
+            ],
+            [
+              389,
+              251
+            ],
+            [
+              391,
+              256
+            ]
+          ],
+          [
+            [
+              395,
+              249
+            ],
+            [
+              394,
+              245
+            ],
+            [
+              388,
+              247
+            ],
+            [
+              389,
+              251
+            ]
+          ],
+          [
+            [
+              394,
+              245
+            ],
+            [
+              393,
+              240
+            ],
+            [
+              387,
+              242
+            ],
+            [
+              388,
+              247
+            ]
+          ],
+          [
+            [
+              394,
+              241
+            ],
+            [
+              394,
+              236
+            ],
+            [
+              386,
+              236
+            ],
+            [
+              386,
+              241
+            ]
+          ],
+          [
+            [
+              394,
+              236
+            ],
+            [
+              394,
+              231
+            ],
+            [
+              386,
+              231
+            ],
+            [
+              386,
+              236
+            ]
+          ],
+          [
+            [
+              393,
+              232
+            ],
+            [
+              394,
+              227
+            ],
+            [
+              388,
+              225
+            ],
+            [
+              387,
+              230
+            ]
+          ],
+          [
+            [
+              394,
+              227
+            ],
+            [
+              395,
+              223
+            ],
+            [
+              389,
+              221
+            ],
+            [
+              388,
+              225
+            ]
+          ],
+          [
+            [
+              395,
+              223
+            ],
+            [
+              397,
+              218
+            ],
+            [
+              391,
+              216
+            ],
+            [
+              389,
+              221
+            ]
+          ],
+          [
+            [
+              397,
+              219
+            ],
+            [
+              399,
+              215
+            ],
+            [
+              393,
+              211
+            ],
+            [
+              391,
+              215
+            ]
+          ],
+          [
+            [
+              399,
+              215
+            ],
+            [
+              402,
+              211
+            ],
+            [
+              396,
+              207
+            ],
+            [
+              393,
+              211
+            ]
+          ],
+          [
+            [
+              402,
+              211
+            ],
+            [
+              405,
+              207
+            ],
+            [
+              399,
+              203
+            ],
+            [
+              396,
+              207
+            ]
+          ],
+          [
+            [
+              405,
+              207
+            ],
+            [
+              408,
+              203
+            ],
+            [
+              402,
+              199
+            ],
+            [
+              399,
+              203
+            ]
+          ],
+          [
+            [
+              407,
+              204
+            ],
+            [
+              411,
+              201
+            ],
+            [
+              407,
+              195
+            ],
+            [
+              403,
+              198
+            ]
+          ],
+          [
+            [
+              411,
+              201
+            ],
+            [
+              415,
+              198
+            ],
+            [
+              411,
+              192
+            ],
+            [
+              407,
+              195
+            ]
+          ],
+          [
+            [
+              415,
+              198
+            ],
+            [
+              419,
+              196
+            ],
+            [
+              415,
+              190
+            ],
+            [
+              411,
+              192
+            ]
+          ],
+          [
+            [
+              419,
+              196
+            ],
+            [
+              423,
+              194
+            ],
+            [
+              419,
+              188
+            ],
+            [
+              415,
+              190
+            ]
+          ],
+          [
+            [
+              422,
+              194
+            ],
+            [
+              427,
+              192
+            ],
+            [
+              425,
+              186
+            ],
+            [
+              420,
+              188
+            ]
+          ],
+          [
+            [
+              427,
+              192
+            ],
+            [
+              432,
+              191
+            ],
+            [
+              430,
+              185
+            ],
+            [
+              425,
+              186
+            ]
+          ],
+          [
+            [
+              432,
+              191
+            ],
+            [
+              437,
+              190
+            ],
+            [
+              435,
+              184
+            ],
+            [
+              430,
+              185
+            ]
+          ],
+          [
+            [
+              436,
+              190
+            ],
+            [
+              441,
+              190
+            ],
+            [
+              441,
+              184
+            ],
+            [
+              436,
+              184
+            ]
+          ],
+          [
+            [
+              441,
+              190
+            ],
+            [
+              446,
+              190
+            ],
+            [
+              446,
+              184
+            ],
+            [
+              441,
+              184
+            ]
+          ],
+          [
+            [
+              445,
+              190
+            ],
+            [
+              450,
+              191
+            ],
+            [
+              452,
+              185
+            ],
+            [
+              447,
+              184
+            ]
+          ],
+          [
+            [
+              450,
+              191
+            ],
+            [
+              455,
+              192
+            ],
+            [
+              457,
+              186
+            ],
+            [
+              452,
+              185
+            ]
+          ],
+          [
+            [
+              455,
+              192
+            ],
+            [
+              460,
+              194
+            ],
+            [
+              462,
+              188
+            ],
+            [
+              457,
+              186
+            ]
+          ],
+          [
+            [
+              459,
+              194
+            ],
+            [
+              463,
+              196
+            ],
+            [
+              467,
+              190
+            ],
+            [
+              463,
+              188
+            ]
+          ],
+          [
+            [
+              463,
+              196
+            ],
+            [
+              467,
+              198
+            ],
+            [
+              471,
+              192
+            ],
+            [
+              467,
+              190
+            ]
+          ],
+          [
+            [
+              467,
+              198
+            ],
+            [
+              471,
+              201
+            ],
+            [
+              475,
+              195
+            ],
+            [
+              471,
+              192
+            ]
+          ],
+          [
+            [
+              471,
+              201
+            ],
+            [
+              475,
+              204
+            ],
+            [
+              479,
+              198
+            ],
+            [
+              475,
+              195
+            ]
+          ],
+          [
+            [
+              474,
+              203
+            ],
+            [
+              477,
+              207
+            ],
+            [
+              483,
+              203
+            ],
+            [
+              480,
+              199
+            ]
+          ],
+          [
+            [
+              477,
+              207
+            ],
+            [
+              480,
+              211
+            ],
+            [
+              486,
+              207
+            ],
+            [
+              483,
+              203
+            ]
+          ],
+          [
+            [
+              480,
+              211
+            ],
+            [
+              483,
+              215
+            ],
+            [
+              489,
+              211
+            ],
+            [
+              486,
+              207
+            ]
+          ],
+          [
+            [
+              483,
+              215
+            ],
+            [
+              485,
+              219
+            ],
+            [
+              491,
+              215
+            ],
+            [
+              489,
+              211
+            ]
+          ],
+          [
+            [
+              485,
+              218
+            ],
+            [
+              487,
+              223
+            ],
+            [
+              493,
+              221
+            ],
+            [
+              491,
+              216
+            ]
+          ],
+          [
+            [
+              487,
+              223
+            ],
+            [
+              488,
+              227
+            ],
+            [
+              494,
+              225
+            ],
+            [
+              493,
+              221
+            ]
+          ],
+          [
+            [
+              488,
+              227
+            ],
+            [
+              489,
+              232
+            ],
+            [
+              495,
+              230
+            ],
+            [
+              494,
+              225
+            ]
+          ],
+          [
+            [
+              488,
+              231
+            ],
+            [
+              488,
+              236
+            ],
+            [
+              496,
+              236
+            ],
+            [
+              496,
+              231
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "c3adbc1276a44ec49c82a4509670e3f691335609eaf6465f5057d79fadb406cc"
+    },
+    {
+      "id": "nephron1-16",
+      "name": "Bowman's capsule",
+      "questions": [
+        {
+          "id": "lab-nephron1-16",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Bowman's capsule",
+            "Glomerulus",
+            "Renal corpuscle",
+            "P.C.T."
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Bowman\u2019s capsule - surrounds the glomerulus and receives filtrate.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "Bowman's capsule",
+            "bowmans capsule",
+            "glomerular capsule",
+            "bowman capsule"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-16.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          600,
+          305
+        ],
+        "tip": [
+          438,
+          279
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            438,
+            279
+          ],
+          [
+            456,
+            274
+          ],
+          [
+            455,
+            279
+          ],
+          [
+            600,
+            302
+          ],
+          [
+            600,
+            308
+          ],
+          [
+            454,
+            285
+          ],
+          [
+            454,
+            289
+          ]
+        ]
+      },
+      "imageSha256": "056b3674e58f20ba84404f0efa65a180fd63c960712e8380014becbefc7c6584"
+    },
+    {
+      "id": "nephron1-17",
+      "name": "Vasa recta",
+      "questions": [
+        {
+          "id": "lab-nephron1-17",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Vasa recta",
+            "Peritubular capillaries",
+            "Interlobular vein",
+            "Arcuate vein"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Vasa recta.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "vasa recta"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-17.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          665,
+          891
+        ],
+        "tip": [
+          531,
+          848
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            531,
+            848
+          ],
+          [
+            549,
+            846
+          ],
+          [
+            548,
+            850
+          ],
+          [
+            666,
+            888
+          ],
+          [
+            664,
+            894
+          ],
+          [
+            546,
+            856
+          ],
+          [
+            545,
+            860
+          ]
+        ]
+      },
+      "imageSha256": "ac4cf73b2fe561bfef72878d66f98bcee8052de7a834f5430b75d0032b7f52a7"
+    },
+    {
+      "id": "nephron1-18",
+      "name": "Loop of Henle",
+      "questions": [
+        {
+          "id": "lab-nephron1-18",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What nephron loop is marked by the bracket?",
+          "options": [
+            "Loop of Henle",
+            "Collecting duct",
+            "D.C.T.",
+            "P.C.T."
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Loop of Henle.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "loop of henle",
+            "henle loop",
+            "nephron loop"
+          ]
+        }
+      ],
+      "expectedImageFile": "nephron-1/np-18.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 5,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              384,
+              921
+            ],
+            [
+              384,
+              996
+            ],
+            [
+              496,
+              996
+            ],
+            [
+              496,
+              921
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              380,
+              921
+            ],
+            [
+              380,
+              996
+            ],
+            [
+              388,
+              996
+            ],
+            [
+              388,
+              921
+            ]
+          ],
+          [
+            [
+              384,
+              1000
+            ],
+            [
+              496,
+              1000
+            ],
+            [
+              496,
+              992
+            ],
+            [
+              384,
+              992
+            ]
+          ],
+          [
+            [
+              500,
+              996
+            ],
+            [
+              500,
+              921
+            ],
+            [
+              492,
+              921
+            ],
+            [
+              492,
+              996
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "067dad63b0d41e0ecd271853cff77bbb01bc743596d33601551fee7212f26596"
+    }
+  ]
+}
