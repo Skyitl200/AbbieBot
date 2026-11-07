@@ -2588,7 +2588,7 @@
           "id": "lab-nephron1-17",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What structure is indicated by the arrow?",
+          "question": "What vessels alongside the Loop of Henle are marked by the brackets?",
           "options": [
             "Vasa recta",
             "Peritubular capillaries",
@@ -2598,7 +2598,7 @@
           "correct": [
             0
           ],
-          "explanation": "Vasa recta.",
+          "explanation": "Vasa recta - the long capillaries running alongside the Loop of Henle.",
           "requiresModelImage": true,
           "typedAnswers": [
             "vasa recta"
@@ -2608,50 +2608,159 @@
       "expectedImageFile": "nephron-1/np-17.png",
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
-        "tail": [
-          665,
-          891
-        ],
-        "tip": [
-          531,
-          848
-        ],
-        "shaftWidth": 4,
-        "headWidth": 13,
-        "headLength": 16,
+        "kind": "regions",
+        "strokeWidth": 5,
         "outlineWidth": 1,
-        "overlayPolygon": [
+        "paths": [
           [
-            531,
-            848
+            [
+              349,
+              695
+            ],
+            [
+              331,
+              695
+            ],
+            [
+              331,
+              883
+            ],
+            [
+              349,
+              883
+            ]
           ],
           [
-            549,
-            846
+            [
+              543,
+              695
+            ],
+            [
+              561,
+              695
+            ],
+            [
+              561,
+              883
+            ],
+            [
+              543,
+              883
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              349,
+              692
+            ],
+            [
+              331,
+              692
+            ],
+            [
+              331,
+              698
+            ],
+            [
+              349,
+              698
+            ]
           ],
           [
-            548,
-            850
+            [
+              328,
+              695
+            ],
+            [
+              328,
+              883
+            ],
+            [
+              334,
+              883
+            ],
+            [
+              334,
+              695
+            ]
           ],
           [
-            666,
-            888
+            [
+              331,
+              886
+            ],
+            [
+              349,
+              886
+            ],
+            [
+              349,
+              880
+            ],
+            [
+              331,
+              880
+            ]
           ],
           [
-            664,
-            894
+            [
+              543,
+              698
+            ],
+            [
+              561,
+              698
+            ],
+            [
+              561,
+              692
+            ],
+            [
+              543,
+              692
+            ]
           ],
           [
-            546,
-            856
+            [
+              558,
+              695
+            ],
+            [
+              558,
+              883
+            ],
+            [
+              564,
+              883
+            ],
+            [
+              564,
+              695
+            ]
           ],
           [
-            545,
-            860
+            [
+              561,
+              880
+            ],
+            [
+              543,
+              880
+            ],
+            [
+              543,
+              886
+            ],
+            [
+              561,
+              886
+            ]
           ]
         ]
       },
-      "imageSha256": "ac4cf73b2fe561bfef72878d66f98bcee8052de7a834f5430b75d0032b7f52a7"
+      "imageSha256": "e5f00461e729cb6196ed99641ba55d9f6745322632ff6536d7fd1b4081b91fa5"
     },
     {
       "id": "nephron1-18",
