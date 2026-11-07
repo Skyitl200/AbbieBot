@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811]]) {
+for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1432,7 +1432,7 @@ test('Urinary System offers 19 kidney structures in both modes with vessel and c
     const { labCategoryMessage, labModelsMessage, labQuestions, labModelImage, labModeMessage } = await import('../src/services/study/labModels.js');
     const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
     assert.ok(labCategoryMessage('u').components[0].toJSON().components[0].options.some(o => o.value === 'urinary' && o.label === 'Urinary System'));
-    assert.equal(labModelsMessage('u', 'urinary').components[0].toJSON().components[0].options[0].value, 'kidney');
+    assert.ok(labModelsMessage('u', 'urinary').components[0].toJSON().components[0].options.some(option => option.value === 'kidney'));
     assert.equal(labModeMessage('u', 'kidney').components[1].toJSON().components[0].custom_id, 'study:labcategory:u:urinary');
     for (const mode of ['multiple_choice', 'typed']) {
         const questions = labQuestions('kidney', mode);
@@ -1449,6 +1449,32 @@ test('Urinary System offers 19 kidney structures in both modes with vessel and c
             for (const [name, alias, wrong] of [['Interlobular artery', 'cortical radiate artery', 'interlobar artery'], ['Interlobular vein', 'cortical radiate vein', 'interlobar vein'], ['Major calyx', 'major calyces', 'minor calyx'], ['Minor calyx', 'minor calyces', 'major calyx'], ['Renal cortex', 'cortex', 'medulla']]) {
                 const q = questions.find(q => q.modelName === name);
                 assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
+        }
+    }
+});
+
+
+test('extended urinary-system set groups six pictured structures in both answer modes', async () => {
+    const { labQuestions, labModelImage, labModeMessage, labModelsMessage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'urinary').components[0].toJSON().components[0].options.some(o => o.value === 'urinary-system'));
+    assert.equal(labModeMessage('u', 'urinary-system').components[1].toJSON().components[0].custom_id, 'study:labcategory:u:urinary');
+    for (const mode of ['multiple_choice', 'typed']) {
+        const qs = labQuestions('urinary-system', mode);
+        assert.equal(qs.length, 6);
+        assert.deepEqual(qs.map(q => q.modelName).sort(), ['Left kidney','Renal vein','Renal artery','Ureter','Urinary bladder','Urethra'].sort());
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') {
+                assert.equal(q.options.length, 4);
+                assert.equal(q.options[q.correct[0]], q.modelName);
+            } else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, wrong] of [['Ureter','urethra'], ['Urethra','ureter'], ['Renal artery','renal vein'], ['Left kidney','right kidney']]) {
+                const q = qs.find(q => q.modelName === name);
                 assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
             }
         }

@@ -461,3 +461,8 @@ from `MYkidney.jpg.zip`. Cyan arrows mark individual structures; outlines show a
 the hilum, while multiple brackets identify the medullary region. Both answer modes accept short anatomical labels,
 including cortical radiate/interlobular vessel synonyms and calyx/calyces.
 Rebuild with `python scripts/renderRespiratoryPointers.py kidney.json`.
+
+**3D Model of Urinary System** adds six short identification cards alongside
+the Kidney set in Urinary System. Original PNG arrows mark the anatomical left
+kidney, renal vein, renal artery, ureter, urinary bladder and urethra.
+Rebuild with `python scripts/renderRespiratoryPointers.py urinary-system.json`.

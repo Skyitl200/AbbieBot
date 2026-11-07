@@ -1,0 +1,449 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Urinary System",
+  "modelGroup": "3D Model of Urinary System",
+  "source": "Exact original PNG from Urinary System Extended.png.zip; cyan arrow overlays only. Anatomical left is viewer right.",
+  "sourceImageFile": "urinary-system-original.png",
+  "sourceImageSha256": "bcc06a26a34ece53cde450031d26de9566b2e6b0de552cfb7048059041ca2fcc",
+  "models": [
+    {
+      "id": "urinary-01",
+      "name": "Left kidney",
+      "questions": [
+        {
+          "id": "lab-urinary-system-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Left kidney",
+            "Right kidney",
+            "Urinary bladder",
+            "Ureter"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "left kidney"
+          ],
+          "explanation": "Left kidney.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "urinary-system/us-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          733,
+          180
+        ],
+        "tip": [
+          601,
+          219
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            601,
+            219
+          ],
+          [
+            615,
+            207
+          ],
+          [
+            616,
+            211
+          ],
+          [
+            732,
+            177
+          ],
+          [
+            734,
+            183
+          ],
+          [
+            618,
+            217
+          ],
+          [
+            619,
+            221
+          ]
+        ]
+      },
+      "imageSha256": "75e8c43296b805e5b631a46c3062abfc60adf3a7a92a43f11e7a7b992aabc200"
+    },
+    {
+      "id": "urinary-02",
+      "name": "Renal vein",
+      "questions": [
+        {
+          "id": "lab-urinary-system-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Renal vein",
+            "Renal artery",
+            "Ureter",
+            "Inferior vena cava"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "renal vein"
+          ],
+          "explanation": "Renal vein.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "urinary-system/us-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          652,
+          395
+        ],
+        "tip": [
+          486,
+          263
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            486,
+            263
+          ],
+          [
+            504,
+            268
+          ],
+          [
+            501,
+            271
+          ],
+          [
+            654,
+            393
+          ],
+          [
+            650,
+            397
+          ],
+          [
+            497,
+            276
+          ],
+          [
+            495,
+            279
+          ]
+        ]
+      },
+      "imageSha256": "dc398c54ea30a2402c483abd11add7974388c4209ce3b08c0ec9ce5dbb905051"
+    },
+    {
+      "id": "urinary-03",
+      "name": "Renal artery",
+      "questions": [
+        {
+          "id": "lab-urinary-system-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Renal artery",
+            "Renal vein",
+            "Ureter",
+            "Abdominal aorta"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "renal artery"
+          ],
+          "explanation": "Renal artery.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "urinary-system/us-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          695,
+          103
+        ],
+        "tip": [
+          514,
+          242
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            514,
+            242
+          ],
+          [
+            523,
+            226
+          ],
+          [
+            526,
+            229
+          ],
+          [
+            693,
+            101
+          ],
+          [
+            697,
+            105
+          ],
+          [
+            529,
+            234
+          ],
+          [
+            532,
+            238
+          ]
+        ]
+      },
+      "imageSha256": "548472f9a1202e2541c054904ed510fe11d89a3c394a484cbb33f671105a6dc9"
+    },
+    {
+      "id": "urinary-04",
+      "name": "Ureter",
+      "questions": [
+        {
+          "id": "lab-urinary-system-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Ureter",
+            "Urethra",
+            "Renal vein",
+            "Renal artery"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "ureter"
+          ],
+          "explanation": "Ureter.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "urinary-system/us-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          705,
+          594
+        ],
+        "tip": [
+          513,
+          601
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            513,
+            601
+          ],
+          [
+            530,
+            593
+          ],
+          [
+            530,
+            597
+          ],
+          [
+            705,
+            591
+          ],
+          [
+            705,
+            597
+          ],
+          [
+            530,
+            603
+          ],
+          [
+            530,
+            608
+          ]
+        ]
+      },
+      "imageSha256": "ce2aef9d2870c2eef0fcc46a9d0e62a46c97aec96e65d8c23352e7ef3fcc9335"
+    },
+    {
+      "id": "urinary-05",
+      "name": "Urinary bladder",
+      "questions": [
+        {
+          "id": "lab-urinary-system-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Urinary bladder",
+            "Left kidney",
+            "Ureter",
+            "Urethra"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "urinary bladder",
+            "bladder"
+          ],
+          "explanation": "Urinary bladder.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "urinary-system/us-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          635,
+          863
+        ],
+        "tip": [
+          386,
+          855
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            386,
+            855
+          ],
+          [
+            403,
+            848
+          ],
+          [
+            403,
+            853
+          ],
+          [
+            635,
+            860
+          ],
+          [
+            635,
+            866
+          ],
+          [
+            403,
+            859
+          ],
+          [
+            403,
+            863
+          ]
+        ]
+      },
+      "imageSha256": "dd17016fdda75835906dee5b553dace4996422cf9ab5b20a760fd17db16806d2"
+    },
+    {
+      "id": "urinary-06",
+      "name": "Urethra",
+      "questions": [
+        {
+          "id": "lab-urinary-system-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Urethra",
+            "Ureter",
+            "Urinary bladder",
+            "Renal artery"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "urethra"
+          ],
+          "explanation": "Urethra.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "urinary-system/us-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          611,
+          972
+        ],
+        "tip": [
+          374,
+          972
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            374,
+            972
+          ],
+          [
+            391,
+            964
+          ],
+          [
+            391,
+            969
+          ],
+          [
+            611,
+            969
+          ],
+          [
+            611,
+            975
+          ],
+          [
+            391,
+            975
+          ],
+          [
+            391,
+            980
+          ]
+        ]
+      },
+      "imageSha256": "4916a15992b644478bf1acf5f00351a7aec6550cb3dfa7035a37bab444870e41"
+    }
+  ]
+}
