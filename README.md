@@ -455,3 +455,9 @@ from the exact PNG embedded in `something..htm.zip`. A bracket marks the larynx;
 secondary/lobar and tertiary/segmental bronchial names are accepted in typed mode.
 The carina question marks the division location and asks about the internal ridge.
 Rebuild with `python scripts/renderRespiratoryPointers.py bronchial-tree.json`.
+
+**Urinary System → Kidney 3D Model** adds 19 original-photo identification cards
+from `MYkidney.jpg.zip`. Cyan arrows mark individual structures; brackets mark
+the renal medulla and hilum. Both answer modes accept short anatomical labels,
+including cortical radiate/interlobular vessel synonyms and calyx/calyces.
+Rebuild with `python scripts/renderRespiratoryPointers.py kidney.json`.

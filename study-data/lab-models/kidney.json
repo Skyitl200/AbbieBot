@@ -1,0 +1,1548 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Urinary System",
+  "modelGroup": "Kidney 3D Model",
+  "source": "Exact original MYkidney.jpg.zip photograph with cyan annotation overlays only.",
+  "sourceImageFile": "kidney-original.png",
+  "sourceImageSha256": "1bc7341ae2b1f18be30d8af27b4b0dab1a1b6ac4a36a1b3f153e245c54b8e304",
+  "originalUploadFile": "kidney-original.jpg",
+  "originalUploadSha256": "6652dbc76a38dc9ef2fe422ab50738174f5fddddfbd226acd3db878b5b9ab2ae",
+  "models": [
+    {
+      "id": "kidney-01",
+      "name": "Renal artery",
+      "questions": [
+        {
+          "id": "lab-kidney-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Renal artery",
+            "Renal vein",
+            "Segmental artery",
+            "Interlobar artery"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal artery.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal artery"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          43,
+          514
+        ],
+        "tip": [
+          173,
+          509
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            173,
+            509
+          ],
+          [
+            156,
+            517
+          ],
+          [
+            156,
+            513
+          ],
+          [
+            43,
+            517
+          ],
+          [
+            43,
+            511
+          ],
+          [
+            156,
+            507
+          ],
+          [
+            156,
+            502
+          ]
+        ]
+      },
+      "imageSha256": "2700eab4c00f6d4af12f246e1e011fd78d8d7a5e93c0d48f06a9158dfc962c29"
+    },
+    {
+      "id": "kidney-02",
+      "name": "Renal vein",
+      "questions": [
+        {
+          "id": "lab-kidney-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Renal vein",
+            "Renal artery",
+            "Interlobar vein",
+            "Interlobular vein"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal vein.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal vein"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          38,
+          587
+        ],
+        "tip": [
+          156,
+          549
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            156,
+            549
+          ],
+          [
+            142,
+            561
+          ],
+          [
+            141,
+            557
+          ],
+          [
+            39,
+            590
+          ],
+          [
+            37,
+            584
+          ],
+          [
+            139,
+            551
+          ],
+          [
+            138,
+            547
+          ]
+        ]
+      },
+      "imageSha256": "adf6133c8ffa01328324730a88764455970b5d27992027e000d8779d94b5c8b9"
+    },
+    {
+      "id": "kidney-03",
+      "name": "Renal pelvis",
+      "questions": [
+        {
+          "id": "lab-kidney-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Renal pelvis",
+            "Major calyx",
+            "Minor calyx",
+            "Ureter"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal pelvis.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal pelvis"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          56,
+          628
+        ],
+        "tip": [
+          250,
+          566
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            250,
+            566
+          ],
+          [
+            236,
+            578
+          ],
+          [
+            235,
+            574
+          ],
+          [
+            57,
+            631
+          ],
+          [
+            55,
+            625
+          ],
+          [
+            233,
+            568
+          ],
+          [
+            232,
+            564
+          ]
+        ]
+      },
+      "imageSha256": "3221e2e118e05b718fd78432f9d4b87c4b15e177d249dadbcfe2e7b0ffa18079"
+    },
+    {
+      "id": "kidney-04",
+      "name": "Ureter",
+      "questions": [
+        {
+          "id": "lab-kidney-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Ureter",
+            "Renal pelvis",
+            "Renal artery",
+            "Renal vein"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Ureter.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "ureter"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          25,
+          759
+        ],
+        "tip": [
+          120,
+          724
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            120,
+            724
+          ],
+          [
+            107,
+            737
+          ],
+          [
+            105,
+            733
+          ],
+          [
+            26,
+            762
+          ],
+          [
+            24,
+            756
+          ],
+          [
+            103,
+            727
+          ],
+          [
+            101,
+            723
+          ]
+        ]
+      },
+      "imageSha256": "6e8c688b26c74f02aa940fe38dbe8c0b34117b57ab5abecff17d30b824fe8257"
+    },
+    {
+      "id": "kidney-05",
+      "name": "Major calyx",
+      "questions": [
+        {
+          "id": "lab-kidney-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Major calyx",
+            "Minor calyx",
+            "Renal pelvis",
+            "Renal papilla"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Major calyx.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "major calyx",
+            "major calyces"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          579,
+          378
+        ],
+        "tip": [
+          344,
+          402
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            344,
+            402
+          ],
+          [
+            360,
+            393
+          ],
+          [
+            361,
+            397
+          ],
+          [
+            579,
+            375
+          ],
+          [
+            579,
+            381
+          ],
+          [
+            361,
+            403
+          ],
+          [
+            362,
+            408
+          ]
+        ]
+      },
+      "imageSha256": "a5f8c299509b997913c43a9248e4a6f9ab6c08d804a58820d01858c64babf39c"
+    },
+    {
+      "id": "kidney-06",
+      "name": "Minor calyx",
+      "questions": [
+        {
+          "id": "lab-kidney-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Minor calyx",
+            "Major calyx",
+            "Renal pelvis",
+            "Renal papilla"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Minor calyx.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "minor calyx",
+            "minor calyces"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          115,
+          231
+        ],
+        "tip": [
+          277,
+          329
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            277,
+            329
+          ],
+          [
+            259,
+            327
+          ],
+          [
+            261,
+            323
+          ],
+          [
+            113,
+            234
+          ],
+          [
+            117,
+            228
+          ],
+          [
+            264,
+            318
+          ],
+          [
+            266,
+            314
+          ]
+        ]
+      },
+      "imageSha256": "6bad8cbc6509649b1c41798b14bb98191f67ffd2c6b23e7838e96ff1a97d831e"
+    },
+    {
+      "id": "kidney-07",
+      "name": "Interlobar vein",
+      "questions": [
+        {
+          "id": "lab-kidney-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Interlobar vein",
+            "Interlobar artery",
+            "Interlobular vein",
+            "Renal vein"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Interlobar vein.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "interlobar vein",
+            "interlobar veins"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          573,
+          254
+        ],
+        "tip": [
+          351,
+          292
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            351,
+            292
+          ],
+          [
+            366,
+            282
+          ],
+          [
+            367,
+            286
+          ],
+          [
+            572,
+            251
+          ],
+          [
+            574,
+            257
+          ],
+          [
+            368,
+            292
+          ],
+          [
+            369,
+            297
+          ]
+        ]
+      },
+      "imageSha256": "681f91f8937da02dbb2c4d7b420b9a294e99a2f3a0759c928e50aa68faeed8e9"
+    },
+    {
+      "id": "kidney-08",
+      "name": "Renal cortex",
+      "questions": [
+        {
+          "id": "lab-kidney-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Renal cortex",
+            "Renal medulla",
+            "Renal capsule",
+            "Renal column"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal cortex.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal cortex",
+            "cortex"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          770,
+          210
+        ],
+        "tip": [
+          621,
+          296
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            621,
+            296
+          ],
+          [
+            632,
+            281
+          ],
+          [
+            634,
+            285
+          ],
+          [
+            769,
+            207
+          ],
+          [
+            771,
+            213
+          ],
+          [
+            637,
+            290
+          ],
+          [
+            639,
+            294
+          ]
+        ]
+      },
+      "imageSha256": "5968fb58b8d81c39aaaf0f7405a49fd2a0cbc8b4686196e81d5e1fec8565d0be"
+    },
+    {
+      "id": "kidney-09",
+      "name": "Renal papilla",
+      "questions": [
+        {
+          "id": "lab-kidney-09",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Renal papilla",
+            "Minor calyx",
+            "Major calyx",
+            "Renal pyramid"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal papilla.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal papilla",
+            "papilla",
+            "renal papillae"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          100,
+          153
+        ],
+        "tip": [
+          289,
+          306
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            289,
+            306
+          ],
+          [
+            271,
+            301
+          ],
+          [
+            274,
+            298
+          ],
+          [
+            98,
+            155
+          ],
+          [
+            102,
+            151
+          ],
+          [
+            278,
+            293
+          ],
+          [
+            281,
+            289
+          ]
+        ]
+      },
+      "imageSha256": "f8da4b600c799af2c73c6667aa919a447ec5064d9061a5eaa91bb4773fc6666e"
+    },
+    {
+      "id": "kidney-10",
+      "name": "Renal capsule",
+      "questions": [
+        {
+          "id": "lab-kidney-10",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Renal capsule",
+            "Renal cortex",
+            "Renal column",
+            "Renal medulla"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal capsule.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal capsule",
+            "fibrous capsule",
+            "kidney capsule"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-10.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          766,
+          135
+        ],
+        "tip": [
+          653,
+          221
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            653,
+            221
+          ],
+          [
+            662,
+            205
+          ],
+          [
+            665,
+            208
+          ],
+          [
+            764,
+            133
+          ],
+          [
+            768,
+            137
+          ],
+          [
+            668,
+            213
+          ],
+          [
+            671,
+            217
+          ]
+        ]
+      },
+      "imageSha256": "48f59f7ed3f5dd6c5ef5477cff0c9ee9077c69f4fc1a48b9f657aa04de515a7a"
+    },
+    {
+      "id": "kidney-11",
+      "name": "Renal pyramids",
+      "questions": [
+        {
+          "id": "lab-kidney-11",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What triangular structures are represented by the one indicated by the arrow?",
+          "options": [
+            "Renal pyramids",
+            "Renal column",
+            "Renal cortex",
+            "Renal papilla"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal pyramids.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal pyramids",
+            "renal pyramid",
+            "medullary pyramid",
+            "medullary pyramids"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-11.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          768,
+          768
+        ],
+        "tip": [
+          533,
+          721
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            533,
+            721
+          ],
+          [
+            551,
+            717
+          ],
+          [
+            550,
+            721
+          ],
+          [
+            769,
+            765
+          ],
+          [
+            767,
+            771
+          ],
+          [
+            549,
+            727
+          ],
+          [
+            548,
+            732
+          ]
+        ]
+      },
+      "imageSha256": "a67d192c0c5d92978a4e427a0e50861469e000f0fc37023b814e381e17ce44ca"
+    },
+    {
+      "id": "kidney-12",
+      "name": "Renal column",
+      "questions": [
+        {
+          "id": "lab-kidney-12",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Renal column",
+            "Renal pyramids",
+            "Renal cortex",
+            "Renal capsule"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal column.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal column",
+            "renal columns",
+            "column of bertin"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-12.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          732,
+          654
+        ],
+        "tip": [
+          487,
+          613
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            487,
+            613
+          ],
+          [
+            505,
+            608
+          ],
+          [
+            504,
+            613
+          ],
+          [
+            732,
+            651
+          ],
+          [
+            732,
+            657
+          ],
+          [
+            503,
+            619
+          ],
+          [
+            503,
+            623
+          ]
+        ]
+      },
+      "imageSha256": "62b8d9f4f926085acf86169d8f6cb1e58d0019859ca38ce6d67d55e34f1b6c7c"
+    },
+    {
+      "id": "kidney-13",
+      "name": "Arcuate artery",
+      "questions": [
+        {
+          "id": "lab-kidney-13",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Arcuate artery",
+            "Interlobar artery",
+            "Interlobular artery",
+            "Segmental artery"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Arcuate artery.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "arcuate artery",
+            "arcuate arteries"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-13.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          59,
+          116
+        ],
+        "tip": [
+          204,
+          152
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            204,
+            152
+          ],
+          [
+            186,
+            155
+          ],
+          [
+            187,
+            151
+          ],
+          [
+            58,
+            119
+          ],
+          [
+            60,
+            113
+          ],
+          [
+            188,
+            145
+          ],
+          [
+            189,
+            141
+          ]
+        ]
+      },
+      "imageSha256": "8fe658494607e67e8102914324a5b0675ea51e6794607db522703c03cd22559a"
+    },
+    {
+      "id": "kidney-14",
+      "name": "Interlobular artery",
+      "questions": [
+        {
+          "id": "lab-kidney-14",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Interlobular artery",
+            "Interlobar artery",
+            "Arcuate artery",
+            "Interlobular vein"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Interlobular artery.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "interlobular artery",
+            "cortical radiate artery",
+            "interlobular arteries",
+            "cortical radiate arteries"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-14.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          174,
+          8
+        ],
+        "tip": [
+          290,
+          86
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            290,
+            86
+          ],
+          [
+            272,
+            83
+          ],
+          [
+            274,
+            79
+          ],
+          [
+            172,
+            10
+          ],
+          [
+            176,
+            6
+          ],
+          [
+            278,
+            74
+          ],
+          [
+            280,
+            70
+          ]
+        ]
+      },
+      "imageSha256": "0fed0e2491d1c96eaed5959e08242719d37fbdcbf6bf3a92041eb5369cef71a8"
+    },
+    {
+      "id": "kidney-15",
+      "name": "Renal medulla",
+      "questions": [
+        {
+          "id": "lab-kidney-15",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What inner region of the kidney is marked by the bracket?",
+          "options": [
+            "Renal medulla",
+            "Renal cortex",
+            "Renal capsule",
+            "Renal pelvis"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal medulla.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal medulla",
+            "medulla"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-15.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "outerPolygon": [
+          [
+            211,
+            166
+          ],
+          [
+            189,
+            166
+          ],
+          [
+            189,
+            279
+          ],
+          [
+            211,
+            279
+          ],
+          [
+            211,
+            271
+          ],
+          [
+            197,
+            271
+          ],
+          [
+            197,
+            174
+          ],
+          [
+            211,
+            174
+          ]
+        ],
+        "innerPolygon": [
+          [
+            209,
+            168
+          ],
+          [
+            191,
+            168
+          ],
+          [
+            191,
+            277
+          ],
+          [
+            209,
+            277
+          ],
+          [
+            209,
+            273
+          ],
+          [
+            195,
+            273
+          ],
+          [
+            195,
+            172
+          ],
+          [
+            209,
+            172
+          ]
+        ],
+        "overlayPolygon": [
+          [
+            211,
+            166
+          ],
+          [
+            189,
+            166
+          ],
+          [
+            189,
+            279
+          ],
+          [
+            211,
+            279
+          ],
+          [
+            211,
+            271
+          ],
+          [
+            197,
+            271
+          ],
+          [
+            197,
+            174
+          ],
+          [
+            211,
+            174
+          ]
+        ]
+      },
+      "imageSha256": "0d2767bbae123cfb0eaa50502b7574b7e2e44e077c7d8b155491c055335c9bea"
+    },
+    {
+      "id": "kidney-16",
+      "name": "Renal hilum",
+      "questions": [
+        {
+          "id": "lab-kidney-16",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What medial entry and exit region is indicated by the bracket?",
+          "options": [
+            "Renal hilum",
+            "Renal pelvis",
+            "Renal capsule",
+            "Renal column"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Renal hilum.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "renal hilum",
+            "hilum",
+            "renal hilus",
+            "hilus"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-16.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "outerPolygon": [
+          [
+            100,
+            476
+          ],
+          [
+            78,
+            476
+          ],
+          [
+            78,
+            612
+          ],
+          [
+            100,
+            612
+          ],
+          [
+            100,
+            604
+          ],
+          [
+            86,
+            604
+          ],
+          [
+            86,
+            484
+          ],
+          [
+            100,
+            484
+          ]
+        ],
+        "innerPolygon": [
+          [
+            98,
+            478
+          ],
+          [
+            80,
+            478
+          ],
+          [
+            80,
+            610
+          ],
+          [
+            98,
+            610
+          ],
+          [
+            98,
+            606
+          ],
+          [
+            84,
+            606
+          ],
+          [
+            84,
+            482
+          ],
+          [
+            98,
+            482
+          ]
+        ],
+        "overlayPolygon": [
+          [
+            100,
+            476
+          ],
+          [
+            78,
+            476
+          ],
+          [
+            78,
+            612
+          ],
+          [
+            100,
+            612
+          ],
+          [
+            100,
+            604
+          ],
+          [
+            86,
+            604
+          ],
+          [
+            86,
+            484
+          ],
+          [
+            100,
+            484
+          ]
+        ]
+      },
+      "imageSha256": "59357d17cdcf910f72fde8542218b4d4c4d35038ab771834f537766e84b5d935"
+    },
+    {
+      "id": "kidney-17",
+      "name": "Interlobar artery",
+      "questions": [
+        {
+          "id": "lab-kidney-17",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Interlobar artery",
+            "Interlobular artery",
+            "Arcuate artery",
+            "Interlobar vein"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Interlobar artery.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "interlobar artery",
+            "interlobar arteries"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-17.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          578,
+          352
+        ],
+        "tip": [
+          349,
+          325
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            349,
+            325
+          ],
+          [
+            367,
+            320
+          ],
+          [
+            366,
+            324
+          ],
+          [
+            578,
+            349
+          ],
+          [
+            578,
+            355
+          ],
+          [
+            366,
+            330
+          ],
+          [
+            365,
+            334
+          ]
+        ]
+      },
+      "imageSha256": "72f5d8611c4cca2d4d422e36ca8ec6e8f39c1a8bd3e8968d65fcfbae97532304"
+    },
+    {
+      "id": "kidney-18",
+      "name": "Interlobular vein",
+      "questions": [
+        {
+          "id": "lab-kidney-18",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Interlobular vein",
+            "Interlobar vein",
+            "Interlobular artery",
+            "Renal vein"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Interlobular vein.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "interlobular vein",
+            "cortical radiate vein",
+            "interlobular veins",
+            "cortical radiate veins"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-18.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          96,
+          34
+        ],
+        "tip": [
+          236,
+          101
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            236,
+            101
+          ],
+          [
+            217,
+            100
+          ],
+          [
+            219,
+            96
+          ],
+          [
+            95,
+            37
+          ],
+          [
+            97,
+            31
+          ],
+          [
+            222,
+            91
+          ],
+          [
+            224,
+            87
+          ]
+        ]
+      },
+      "imageSha256": "480aa3eede315ee52c320524027123da1c7c741c077854b7a09f2bb76f346104"
+    },
+    {
+      "id": "kidney-19",
+      "name": "Segmental artery",
+      "questions": [
+        {
+          "id": "lab-kidney-19",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Segmental artery",
+            "Interlobar artery",
+            "Arcuate artery",
+            "Renal artery"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Segmental artery.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "segmental artery",
+            "segmental arteries",
+            "renal segmental artery"
+          ]
+        }
+      ],
+      "expectedImageFile": "kidney/kd-19.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          73,
+          408
+        ],
+        "tip": [
+          253,
+          447
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            253,
+            447
+          ],
+          [
+            235,
+            451
+          ],
+          [
+            236,
+            446
+          ],
+          [
+            72,
+            411
+          ],
+          [
+            74,
+            405
+          ],
+          [
+            237,
+            440
+          ],
+          [
+            238,
+            436
+          ]
+        ]
+      },
+      "imageSha256": "a372fcea2bd4ba15eae25fb0c5d24e1262e1979d79388baa0191791ee08cec48"
+    }
+  ]
+}
