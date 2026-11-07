@@ -35,5 +35,9 @@ cache. Persistent database failures leave the transaction uncommitted.
 Validation: `npm run test:discovery`, `npm run test:study`, and
 `npm run test:microbemon`.
 
-Drop notifications in /test and Microbemon include the original user-supplied
-animated chest GIF inline, alongside existing activity images.
+Drops from /test and Microbemon post a separate public channel card with the
+original animated chest GIF and an owner-only Redeem Treasure Crate button.
+The public card stays visible after redemption; loot and wallet balance are
+confirmed privately. Other members cannot consume or claim the owner’s crate.
+Normal quiz feedback remains private. The crate is saved before announcing;
+if posting fails or the button expires, it can still be opened from /inventory.

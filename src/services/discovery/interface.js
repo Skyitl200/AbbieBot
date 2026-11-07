@@ -24,7 +24,7 @@ export async function handleDiscoveryInteraction(interaction, client, args) {
     const [action, ownerId, token] = args;
     if (interaction.user.id !== ownerId) return interaction.reply({ content: 'Use /inventory to open your own Treasure Crates.', flags: MessageFlags.Ephemeral });
     if (action === 'rewards') return interaction.reply({ ...cacheRewardsMessage(), flags: MessageFlags.Ephemeral });
-    if (action !== 'open') return interaction.reply({ content: 'Open /inventory to use the latest crate buttons.', flags: MessageFlags.Ephemeral });
+    if (!['open', 'redeem'].includes(action)) return interaction.reply({ content: 'Open /inventory to use the latest crate buttons.', flags: MessageFlags.Ephemeral });
     await interaction.deferUpdate();
     let result;
     try {
@@ -38,7 +38,12 @@ export async function handleDiscoveryInteraction(interaction, client, args) {
         ? `Opened a **${CACHE_NAME}**! You received **+${reward.amount} Merit Coins**.\nNew Balance: **${result.balance.toLocaleString()} Merit Coins**`
         : `Opened a **${CACHE_NAME}**! You received **${reward.name}** (${reward.rarity}). Saved permanently to your inventory.`;
     try {
-        await interaction.editReply(inventoryMessage(result.inventory, interaction.user, notice));
+        if (action === 'redeem') {
+            await interaction.editReply({ embeds: [new EmbedBuilder({ title: 'Treasure Crate redeemed!', color: 0xffcf40,
+                description: `<@${ownerId}> redeemed their Treasure Crate.`, image: { url: 'attachment://treasure-crate.gif' } })],
+                components: [], allowedMentions: { parse: [] } });
+            await interaction.followUp({ content: notice, flags: MessageFlags.Ephemeral });
+        } else await interaction.editReply(inventoryMessage(result.inventory, interaction.user, notice));
     } catch {
         await interaction.followUp({ content: `${notice}\nUse /inventory to refresh your saved items.`, flags: MessageFlags.Ephemeral });
     }

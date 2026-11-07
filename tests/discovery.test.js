@@ -1,3 +1,4 @@
+import { crateDropMessage, announceCrateDrop } from '../src/services/discovery/announcements.js';
 import { readFileSync } from 'node:fs';
 import { CRATE_ART, withCrateArtwork } from '../src/services/discovery/artwork.js';
 import { cacheFoundNotice } from '../src/services/discovery/catalog.js';
@@ -10,7 +11,7 @@ import { createOpenToken, checkOpenToken, openDiscoveryCache, OPEN_TOKEN_MS } fr
 import { inventoryMessage, cacheRewardsMessage, handleDiscoveryInteraction } from '../src/services/discovery/interface.js';
 import { createStudySession, submitStudyAnswer } from '../src/services/study/sessions.js';
 import { settleStudyReward, STUDY_AWARD_SQL } from '../src/services/study/rewards.js';
-import { resultMessage } from '../src/services/study/interface.js';
+import { resultMessage, handleStudyInteraction } from '../src/services/study/interface.js';
 
 function transactionalInventory(caches = 2) {
     let saved = { data: { wallet: 100, bank: 900, xp: 50, inventory: { [CACHE_ID]: caches, pickaxe: 1 } }, receipts: new Map() };
@@ -74,8 +75,7 @@ test('correct study answers store and notify cache drops once, including lost-re
     assert.equal(wallet.inventory.pickaxe, 1);
     assert.equal(writes, 1);
     assert.match(resultMessage(session, true).embeds[0].toJSON().description, /You found a \*\*Treasure Crate\*\*/);
-    assert.equal(resultMessage(session, true).embeds.at(-1).toJSON().image.url, 'attachment://treasure-crate.gif');
-    assert.ok(resultMessage(session, true).files.some(file => file.name === CRATE_ART.name));
+    assert.equal(resultMessage(session, true).embeds.length, 1); // Crate is posted separately in public.
     assert.match(STUDY_AWARD_SQL, /inventory/);
     assert.match(STUDY_AWARD_SQL, /CASE WHEN.*studyRewardReceipts.*THEN 0 ELSE \$6/s);
     const wrong = createStudySession('g', 'wrong', [question], 'random');
@@ -179,7 +179,77 @@ test('a failed message update still confirms the already-saved reward', async ()
     const normal = renderGame(profile, 'u');
     const drop = renderGame(profile, 'u', { notice: cacheFoundNotice() });
     assert.equal(normal.embeds.length, 1);
-    assert.equal(drop.embeds.length, 2);
-    assert.equal(drop.embeds[1].toJSON().image.url, 'attachment://treasure-crate.gif');
-    assert.ok(drop.files.some(file => file.name === CRATE_ART.name));
+    assert.equal(drop.embeds.length, 1); // Gameplay does not own the persistent drop announcement.
+    const publicDrop = crateDropMessage('u');
+    assert.equal(publicDrop.flags, 0);
+    assert.equal(publicDrop.embeds[0].toJSON().image.url, 'attachment://treasure-crate.gif');
+    assert.ok(publicDrop.files.some(file => file.name === CRATE_ART.name));
+});
+
+
+test('saved crate announcements are public, owner-bound, and shared across concurrent retries', async () => {
+    const calls = []; const reward = { cacheDrop: true };
+    const interaction = { async followUp(payload) { calls.push(payload); return { id: 'public-crate' }; } };
+    await Promise.all([announceCrateDrop(interaction, 'u', reward), announceCrateDrop(interaction, 'u', reward)]);
+    await announceCrateDrop(interaction, 'u', reward);
+    assert.equal(calls.length, 1);
+    assert.equal(calls[0].flags, 0);
+    assert.equal(reward.announcementId, 'public-crate');
+    assert.match(calls[0].components[0].toJSON().components[0].custom_id, /^discovery:redeem:u:/);
+    assert.match(calls[0].embeds[0].toJSON().description, /<@u>/);
+    assert.deepEqual(calls[0].allowedMentions, { parse: [] });
+    await announceCrateDrop(interaction, 'u', { cacheDrop: false });
+    assert.equal(calls.length, 1);
+    let attempts = 0;
+    const retry = { cacheDrop: true };
+    const unavailable = { async followUp() { if (++attempts === 1) throw new Error('missing send permission'); return { id: 'retry-card' }; } };
+    await announceCrateDrop(unavailable, 'u', retry);
+    assert.equal(retry.announcementId, undefined);
+    await announceCrateDrop(unavailable, 'u', retry);
+    assert.equal(retry.announcementId, 'retry-card');
+});
+
+test('public redemption rejects strangers and only consumes the owner crate once without exposing their wallet', async () => {
+    const s = transactionalInventory(1), token = createOpenToken();
+    let denied;
+    await handleDiscoveryInteraction({ user: { id: 'stranger' }, async reply(p) { denied = p; } }, s.client, ['redeem', 'u', token]);
+    assert.equal(denied.flags, 64);
+    assert.equal(s.data().inventory[CACHE_ID], 1);
+    const edits = [], notices = [];
+    const owner = { guildId: 'g', user: { id: 'u', username: 'Student' }, async deferUpdate() {}, async editReply(p) { edits.push(p); }, async followUp(p) { notices.push(p); } };
+    await handleDiscoveryInteraction(owner, s.client, ['redeem', 'u', token]);
+    await handleDiscoveryInteraction(owner, s.client, ['redeem', 'u', token]);
+    assert.equal(s.data().inventory[CACHE_ID], 0);
+    assert.equal(edits.length, 2);
+    assert.deepEqual(edits[0].components, []);
+    assert.match(edits[0].embeds[0].toJSON().description, /<@u> redeemed/);
+    assert.doesNotMatch(JSON.stringify(edits), /New Balance|Inventory|wallet/);
+    assert.ok(notices.every(p => p.flags === 64));
+    assert.ok(notices.every(p => /Opened a/.test(p.content)));
+});
+
+
+test('a saved /test crate posts publicly while quiz feedback stays private', async () => {
+    const question = { id: 'public-drop-question', type: 'multiple_choice', question: 'Which?', options: ['A','B'], correct: [0], explanation: 'A is correct.' };
+    const session = createStudySession('public-drop-guild', 'public-drop-user', [question], 'random');
+    submitStudyAnswer(session, [0]);
+    session.publicQuestionId = 'original-question';
+    session.reward = { status: 'failed', amount: 10, cacheDrop: true };
+    let wallet = { wallet: 100, inventory: {} };
+    const client = { db: { async get() { return structuredClone(wallet); }, async set(key, value) { wallet = structuredClone(value); return true; } } };
+    const messages = [], edits = [];
+    const interaction = { guildId: session.guildId, user: { id: session.userId }, async deferUpdate() {},
+        webhook: { async editMessage(id, payload) { edits.push([id, payload]); } },
+        async followUp(payload) { messages.push(payload); return { id: 'crate-announcement' }; },
+        async reply(payload) { assert.fail(JSON.stringify(payload)); } };
+    await handleStudyInteraction(interaction, client, ['reward', session.userId, session.id, String(session.index), String(session.revision)]);
+    assert.equal(messages.length, 2);
+    assert.equal(messages[0].flags, 64);
+    assert.match(messages[0].embeds[0].toJSON().title, /Correct/);
+    assert.equal(messages[1].flags, 0);
+    assert.match(messages[1].components[0].toJSON().components[0].custom_id, /^discovery:redeem:public-drop-user:/);
+    assert.equal(session.reward.announcementId, 'crate-announcement');
+    assert.equal(wallet.inventory[CACHE_ID], 1);
+    assert.equal(wallet.wallet, 110);
+    assert.deepEqual(edits, [['original-question', { components: [] }]]);
 });

@@ -1,4 +1,4 @@
-import { withCrateArtwork } from '../discovery/artwork.js';
+import { announceCrateDrop } from '../discovery/announcements.js';
 import { cacheFoundNotice } from '../discovery/catalog.js';
 import { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labSetForSelection } from './labModels.js';
 import {
@@ -135,7 +135,7 @@ export function resultMessage(session, correct) {
     const components = unpaid ? [row(button(actionId(session, 'reward'), '🪙 Retry coins'))]
         : finished ? [row(button(`study:classes:${session.userId}`, '📚 Choose another class', ButtonStyle.Secondary))]
         : [row(button(actionId(session, 'next'), '➡️ Next Question'))];
-    return withCrateArtwork(addLectureImage({ content: '', embeds: [embed], components }, q), reward?.status === 'saved' && reward.cacheDrop);
+    return addLectureImage({ content: '', embeds: [embed], components }, q);
 }
 
 async function editStudyReply(interaction, payload) {
@@ -150,10 +150,15 @@ async function publishQuestion(interaction, session) {
 }
 
 async function showResult(interaction, session, correct) {
-    if (!session.publicQuestionId) return editStudyReply(interaction, resultMessage(session, correct));
+    if (!session.publicQuestionId) {
+        await editStudyReply(interaction, resultMessage(session, correct));
+        if (session.reward?.status === 'saved') await announceCrateDrop(interaction, session.userId, session.reward);
+        return;
+    }
     // Keep the question and image visible without publishing the student's answer or score.
     await interaction.webhook.editMessage(session.publicQuestionId, { components: [] });
     await interaction.followUp({ ...resultMessage(session, correct), flags: MessageFlags.Ephemeral });
+    if (session.reward?.status === 'saved') await announceCrateDrop(interaction, session.userId, session.reward);
 }
 
 async function privateError(interaction, message) {

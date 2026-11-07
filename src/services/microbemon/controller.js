@@ -1,3 +1,4 @@
+import { announceCrateDrop } from '../discovery/announcements.js';
 import { isSponsorForCatch } from './catchLimits.js';
 import { MicrobemonError } from './errors.js';
 import { MessageFlags, ModalBuilder, TextInputBuilder, TextInputStyle, ActionRowBuilder } from 'discord.js';
@@ -49,6 +50,7 @@ export async function handleMicrobemon(interaction, client, args, runAction = ac
         let view = action === 'guide' ? 'guide' : action === 'deck' ? 'deck' : action === 'party' ? 'party' : action === 'release_prompt' ? 'release' : action === 'release_confirm' ? 'deck' : 'home';
         let page = action === 'party' ? Number(requestedAction === 'partybox' ? interaction.values?.[0] : answer) || 0 : Number(token) || 0;
         if (caughtIndex >= 0) {
+            await announceCrateDrop(interaction, owner, profile.pets[caughtIndex].catchReward);
             view = 'collection';
             page = caughtIndex;
         } else if (['collection', 'companion', 'nickname', 'pet', 'release_cancel'].includes(action)) {
