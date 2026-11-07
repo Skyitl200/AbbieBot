@@ -1235,7 +1235,7 @@ test('Respiratory Tract retains its 25-image set alongside the lungs set and bot
     const categories = labCategoryMessage('u').components[0].toJSON().components[0].options;
     assert.ok(categories.some(category => category.label === 'Respiratory Tract' && category.value === 'respiratory'));
     const sets = labModelsMessage('u', 'respiratory').components[0].toJSON().components[0].options;
-    assert.deepEqual(sets.map(set => set.label), ['Upper Respiratory 3D Model', 'Lungs and Larynx 3D Model']);
+    assert.deepEqual(sets.map(set => set.label), ['Upper Respiratory 3D Model', 'Lungs and Larynx 3D Model', 'Bronchial Tree 3D Model']);
     assert.equal(sets[0].value, 'upper-respiratory');
     const mode = labModeMessage('u', 'upper-respiratory');
     assert.equal(mode.components[1].toJSON().components[0].custom_id, 'study:labcategory:u:respiratory');
@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821]]) {
+for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1397,6 +1397,32 @@ test('lungs and larynx set offers all 17 structures in both answer modes with or
             assert.ok(matchesLabAnswer('carina', carina.answers, carina.competingAnswers));
             assert.ok(matchesLabAnswer('corina', carina.answers, carina.competingAnswers));
             assert.ok(!matchesLabAnswer('trachea', carina.answers, carina.competingAnswers));
+        }
+    }
+});
+
+
+test('bronchial tree set supports seven pictured structures and bronchial aliases in both modes', async () => {
+    const { labQuestions, labModelImage, labModeMessage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.equal(labModeMessage('u', 'bronchial-tree').components[1].toJSON().components[0].custom_id, 'study:labcategory:u:respiratory');
+    for (const mode of ['multiple_choice', 'typed']) {
+        const questions = labQuestions('bronchial-tree', mode);
+        assert.equal(questions.length, 7);
+        for (const q of questions) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') {
+                assert.equal(q.options.length, 4);
+                assert.equal(q.options[q.correct[0]], q.modelName);
+            } else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, alias] of [['Left primary bronchus', 'left main bronchus'], ['Right primary bronchus', 'right mainstem bronchus'], ['Left secondary bronchi', 'left lobar bronchi'], ['Left tertiary bronchi', 'left segmental bronchi']]) {
+                const q = questions.find(q => q.modelName === name);
+                assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
+            }
+            const left = questions.find(q => q.modelName === 'Left primary bronchus');
+            assert.ok(!matchesLabAnswer('right primary bronchus', left.answers, left.competingAnswers));
         }
     }
 });

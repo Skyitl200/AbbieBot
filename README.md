@@ -449,3 +449,9 @@ the ridge itself is not exposed. Trachea questions are excluded from this set. A
 with `python scripts/renderRespiratoryPointers.py lungs-larynx.json`.
 Original JPEG, lossless decoded source, image hashes and pointer coordinates are
 retained; regression tests verify unchanged anatomy outside every arrow.
+
+**Bronchial Tree 3D Model** contains seven short image-identification cards
+from the exact PNG embedded in `something..htm.zip`. A bracket marks the larynx;
+secondary/lobar and tertiary/segmental bronchial names are accepted in typed mode.
+The carina question marks the division location and asks about the internal ridge.
+Rebuild with `python scripts/renderRespiratoryPointers.py bronchial-tree.json`.

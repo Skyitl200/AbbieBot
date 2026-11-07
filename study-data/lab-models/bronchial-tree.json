@@ -1,0 +1,596 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Respiratory Tract",
+  "modelGroup": "Bronchial Tree 3D Model",
+  "source": "Exact PNG embedded in the user-supplied something..htm.zip webpage; annotation overlays only.",
+  "sourceImageFile": "bronchial-tree-original.png",
+  "sourceImageSha256": "ed9ad5f9ddc2616c18b76469f226daddbf20195ca3d3a00c2ed1ee68fec91a06",
+  "models": [
+    {
+      "id": "bronchial-01",
+      "name": "Larynx",
+      "questions": [
+        {
+          "id": "lab-bronchial-tree-01",
+          "question": "What organ is indicated by the bracket?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Larynx",
+            "Trachea",
+            "Carina",
+            "Left primary bronchus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "larynx",
+            "voice box"
+          ],
+          "explanation": "Larynx.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "bronchial-tree/bt-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "outerPolygon": [
+          [
+            314,
+            30
+          ],
+          [
+            287,
+            30
+          ],
+          [
+            287,
+            248
+          ],
+          [
+            314,
+            248
+          ],
+          [
+            314,
+            240
+          ],
+          [
+            295,
+            240
+          ],
+          [
+            295,
+            38
+          ],
+          [
+            314,
+            38
+          ]
+        ],
+        "innerPolygon": [
+          [
+            312,
+            32
+          ],
+          [
+            289,
+            32
+          ],
+          [
+            289,
+            246
+          ],
+          [
+            312,
+            246
+          ],
+          [
+            312,
+            242
+          ],
+          [
+            293,
+            242
+          ],
+          [
+            293,
+            36
+          ],
+          [
+            312,
+            36
+          ]
+        ],
+        "overlayPolygon": [
+          [
+            314,
+            30
+          ],
+          [
+            287,
+            30
+          ],
+          [
+            287,
+            248
+          ],
+          [
+            314,
+            248
+          ],
+          [
+            314,
+            240
+          ],
+          [
+            295,
+            240
+          ],
+          [
+            295,
+            38
+          ],
+          [
+            314,
+            38
+          ]
+        ]
+      },
+      "imageSha256": "6ff13001645ebad5c1d9f6d0fa089c2b4b0314c77b0bdfe73ad533214d8ee1d9"
+    },
+    {
+      "id": "bronchial-02",
+      "name": "Trachea",
+      "questions": [
+        {
+          "id": "lab-bronchial-tree-02",
+          "question": "What structure is indicated by the arrow?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Trachea",
+            "Larynx",
+            "Carina",
+            "Right primary bronchus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "trachea",
+            "windpipe"
+          ],
+          "explanation": "Trachea.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "bronchial-tree/bt-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          178,
+          399
+        ],
+        "tip": [
+          380,
+          400
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            380,
+            400
+          ],
+          [
+            363,
+            407
+          ],
+          [
+            363,
+            403
+          ],
+          [
+            178,
+            402
+          ],
+          [
+            178,
+            396
+          ],
+          [
+            363,
+            397
+          ],
+          [
+            363,
+            392
+          ]
+        ]
+      },
+      "imageSha256": "cd2f89fcd0f11b7e0b2f00399d4054b33c388a688fb61537f4bb5df80c91691f"
+    },
+    {
+      "id": "bronchial-03",
+      "name": "Carina",
+      "questions": [
+        {
+          "id": "lab-bronchial-tree-03",
+          "question": "Which internal ridge lies at the tracheal division indicated by the arrow?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Carina",
+            "Trachea",
+            "Left primary bronchus",
+            "Right primary bronchus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "carina",
+            "tracheal carina",
+            "corina"
+          ],
+          "explanation": "Carina - the internal ridge at the tracheal division. The arrow marks its location; the ridge is inside the airway.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "bronchial-tree/bt-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          566,
+          496
+        ],
+        "tip": [
+          380,
+          568
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            380,
+            568
+          ],
+          [
+            393,
+            555
+          ],
+          [
+            395,
+            559
+          ],
+          [
+            565,
+            493
+          ],
+          [
+            567,
+            499
+          ],
+          [
+            397,
+            565
+          ],
+          [
+            399,
+            569
+          ]
+        ]
+      },
+      "imageSha256": "e1349324e4044ae3b98e064fcdb18247d6f9f67bbc2dc20ae82e28dd18ad6325"
+    },
+    {
+      "id": "bronchial-04",
+      "name": "Left primary bronchus",
+      "questions": [
+        {
+          "id": "lab-bronchial-tree-04",
+          "question": "What structure is indicated by the arrow?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Left primary bronchus",
+            "Right primary bronchus",
+            "Left secondary bronchi",
+            "Left tertiary bronchi"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "left primary bronchus",
+            "left main bronchus",
+            "left mainstem bronchus"
+          ],
+          "explanation": "Left primary bronchus.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "bronchial-tree/bt-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          608,
+          464
+        ],
+        "tip": [
+          434,
+          609
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            434,
+            609
+          ],
+          [
+            442,
+            592
+          ],
+          [
+            445,
+            596
+          ],
+          [
+            606,
+            462
+          ],
+          [
+            610,
+            466
+          ],
+          [
+            449,
+            600
+          ],
+          [
+            452,
+            604
+          ]
+        ]
+      },
+      "imageSha256": "1fc53c5c057da8704ff06c9f54c80571116cb9ad2ad10dfa2c3659b050148fa1"
+    },
+    {
+      "id": "bronchial-05",
+      "name": "Right primary bronchus",
+      "questions": [
+        {
+          "id": "lab-bronchial-tree-05",
+          "question": "What structure is indicated by the arrow?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Right primary bronchus",
+            "Left primary bronchus",
+            "Left secondary bronchi",
+            "Left tertiary bronchi"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "right primary bronchus",
+            "right main bronchus",
+            "right mainstem bronchus"
+          ],
+          "explanation": "Right primary bronchus.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "bronchial-tree/bt-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          162,
+          458
+        ],
+        "tip": [
+          330,
+          597
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            330,
+            597
+          ],
+          [
+            312,
+            592
+          ],
+          [
+            315,
+            588
+          ],
+          [
+            160,
+            460
+          ],
+          [
+            164,
+            456
+          ],
+          [
+            319,
+            584
+          ],
+          [
+            322,
+            580
+          ]
+        ]
+      },
+      "imageSha256": "6cb6a029ac03164608437d99fc2d6476f513d5883a99da261d8588dedaf7e8e6"
+    },
+    {
+      "id": "bronchial-06",
+      "name": "Left secondary bronchi",
+      "questions": [
+        {
+          "id": "lab-bronchial-tree-06",
+          "question": "Which level of bronchi is indicated by the arrow on the left lung side?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Left secondary bronchi",
+            "Left tertiary bronchi",
+            "Left primary bronchus",
+            "Right primary bronchus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "left secondary bronchi",
+            "left lobar bronchi",
+            "left secondary bronchus",
+            "left lobar bronchus"
+          ],
+          "explanation": "Left secondary bronchi.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "bronchial-tree/bt-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          677,
+          729
+        ],
+        "tip": [
+          507,
+          693
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            507,
+            693
+          ],
+          [
+            525,
+            689
+          ],
+          [
+            524,
+            694
+          ],
+          [
+            678,
+            726
+          ],
+          [
+            676,
+            732
+          ],
+          [
+            523,
+            699
+          ],
+          [
+            522,
+            704
+          ]
+        ]
+      },
+      "imageSha256": "6f640116b53d0cf5e539ef4c1463828fe363c361df7dd4c32136445d067917f5"
+    },
+    {
+      "id": "bronchial-07",
+      "name": "Left tertiary bronchi",
+      "questions": [
+        {
+          "id": "lab-bronchial-tree-07",
+          "question": "Which level of bronchi is indicated by the arrow on the left lung side?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Left tertiary bronchi",
+            "Left secondary bronchi",
+            "Left primary bronchus",
+            "Right primary bronchus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "left tertiary bronchi",
+            "left segmental bronchi",
+            "left tertiary bronchus",
+            "left segmental bronchus"
+          ],
+          "explanation": "Left tertiary bronchi.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "bronchial-tree/bt-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          705,
+          807
+        ],
+        "tip": [
+          566,
+          694
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            566,
+            694
+          ],
+          [
+            584,
+            699
+          ],
+          [
+            581,
+            702
+          ],
+          [
+            707,
+            805
+          ],
+          [
+            703,
+            809
+          ],
+          [
+            577,
+            707
+          ],
+          [
+            574,
+            711
+          ]
+        ]
+      },
+      "imageSha256": "875dbb0f5298c84211a896849fac0969aac55c1d39e02c7d7952cbdf4eba631a"
+    }
+  ]
+}
