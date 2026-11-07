@@ -480,3 +480,9 @@ loop bracket marks the hairpin turn. Rebuild with
 in Urinary System. Short labels and anatomical aliases work in typed mode;
 macula densa is identified as the DCT region next to the afferent arteriole.
 Rebuild with `python scripts/renderRespiratoryPointers.py nephron-2.json`.
+
+**3D Model of the Ureters, Urinary Bladder, and Urethra** adds nine original-photo
+cards in Urinary System. The visible urethral segment is labeled Prostatic
+urethra rather than spongy urethra; a cyan triangle marks the trigone. Both quiz
+modes accept short anatomical aliases. Rebuild with
+`python scripts/renderRespiratoryPointers.py lower-urinary.json`.

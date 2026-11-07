@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636]]) {
+for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1530,6 +1530,35 @@ test('Nephron Model 2 groups eleven corpuscle details in both modes and protects
                 const q = qs.find(q => q.modelName === name);
                 assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
+        }
+    }
+});
+
+
+test('lower urinary model has nine pictured structures and identifies the visible prostatic urethra', async () => {
+    const { labQuestions, labModelImage, labModeMessage, labModelsMessage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'urinary').components[0].toJSON().components[0].options.some(o => o.value === 'lower-urinary' && o.label === '3D Model of the Ureters, Urinary Bladder, and Urethra'));
+    assert.equal(labModeMessage('u', 'lower-urinary').components[1].toJSON().components[0].custom_id, 'study:labcategory:u:urinary');
+    for (const mode of ['multiple_choice','typed']) {
+        const qs = labQuestions('lower-urinary', mode);
+        assert.equal(qs.length, 9);
+        assert.equal(new Set(qs.map(q => q.labModelId)).size, 9);
+        assert.ok(qs.some(q => q.modelName === 'Prostatic urethra'));
+        assert.ok(!qs.some(q => q.modelName === 'Spongy urethra'));
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') {
+                assert.equal(q.options.length, 4);
+                assert.equal(q.options[q.correct[0]], q.modelName);
+            } else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, alias, wrong] of [['Ureteral openings','ureteric orifices','internal urethral orifice'],['Internal urethral sphincter','internal sphincter','internal urethral orifice'],['Prostatic urethra','prostatic part of urethra','spongy urethra'],['Detrusor muscle','detrusor','rugae']]) {
+                const q=qs.find(q=>q.modelName===name);
+                assert.ok(matchesLabAnswer(alias,q.answers,q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong,q.answers,q.competingAnswers));
             }
         }
     }

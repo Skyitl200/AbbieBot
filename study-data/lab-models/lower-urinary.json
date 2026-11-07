@@ -1,0 +1,724 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Urinary System",
+  "modelGroup": "3D Model of the Ureters, Urinary Bladder, and Urethra",
+  "source": "Exact original wowmddwsd.jpg.zip photograph; cyan annotation overlays only.",
+  "sourceImageFile": "lower-urinary-original.png",
+  "sourceImageSha256": "9a5cdc875021f2962305f82ed898e81c1d5df477c3262d6ae7611b1bd31c8b39",
+  "originalUploadFile": "lower-urinary-original.jpg",
+  "originalUploadSha256": "e9c89e8cdc48d16300e071a326e4f3de5a5a84e870eeca154aeeafec826de0a6",
+  "models": [
+    {
+      "id": "lower-urinary-01",
+      "name": "Ureters",
+      "questions": [
+        {
+          "id": "lab-lower-urinary-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Ureters",
+            "Ureteral openings",
+            "Urinary bladder",
+            "Urethra"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Ureters.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "ureters",
+            "ureter"
+          ]
+        }
+      ],
+      "expectedImageFile": "lower-urinary/ub-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          34,
+          396
+        ],
+        "tip": [
+          122,
+          438
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            122,
+            438
+          ],
+          [
+            103,
+            437
+          ],
+          [
+            105,
+            433
+          ],
+          [
+            33,
+            399
+          ],
+          [
+            35,
+            393
+          ],
+          [
+            108,
+            428
+          ],
+          [
+            110,
+            424
+          ]
+        ]
+      },
+      "imageSha256": "ab3d03b4e588ffa93d4359f3d363ce11cdfbafaed9ec8f5fe6d24975625ee6e2"
+    },
+    {
+      "id": "lower-urinary-02",
+      "name": "Detrusor muscle",
+      "questions": [
+        {
+          "id": "lab-lower-urinary-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Detrusor muscle",
+            "Rugae",
+            "Trigone",
+            "Prostate gland"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Detrusor muscle.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "detrusor muscle",
+            "detrusor",
+            "detrusor muscles"
+          ]
+        }
+      ],
+      "expectedImageFile": "lower-urinary/ub-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          487,
+          570
+        ],
+        "tip": [
+          306,
+          642
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            306,
+            642
+          ],
+          [
+            319,
+            629
+          ],
+          [
+            321,
+            633
+          ],
+          [
+            486,
+            567
+          ],
+          [
+            488,
+            573
+          ],
+          [
+            323,
+            639
+          ],
+          [
+            325,
+            643
+          ]
+        ]
+      },
+      "imageSha256": "c5e60c1b2208246bcbbd3d7bd471b61d51c960b65faf78597ac6f345f8dfa00b"
+    },
+    {
+      "id": "lower-urinary-03",
+      "name": "Rugae",
+      "questions": [
+        {
+          "id": "lab-lower-urinary-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Rugae",
+            "Detrusor muscle",
+            "Trigone",
+            "Ureteral openings"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Rugae.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "rugae",
+            "bladder rugae",
+            "ruga"
+          ]
+        }
+      ],
+      "expectedImageFile": "lower-urinary/ub-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          45,
+          580
+        ],
+        "tip": [
+          304,
+          728
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            304,
+            728
+          ],
+          [
+            286,
+            726
+          ],
+          [
+            288,
+            722
+          ],
+          [
+            44,
+            583
+          ],
+          [
+            46,
+            577
+          ],
+          [
+            291,
+            717
+          ],
+          [
+            293,
+            713
+          ]
+        ]
+      },
+      "imageSha256": "5e63cce07efb3a105b6abb2f282ef53540c640bf17ca6c438f1211973b75a590"
+    },
+    {
+      "id": "lower-urinary-04",
+      "name": "Ureteral openings",
+      "questions": [
+        {
+          "id": "lab-lower-urinary-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Ureteral openings",
+            "Internal urethral orifice",
+            "Ureters",
+            "Trigone"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Ureteral openings.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "ureteral openings",
+            "ureteral opening",
+            "ureteric orifices",
+            "ureteric orifice",
+            "ureteral orifices",
+            "ureteral orifice"
+          ]
+        }
+      ],
+      "expectedImageFile": "lower-urinary/ub-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          566,
+          775
+        ],
+        "tip": [
+          373,
+          790
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            373,
+            790
+          ],
+          [
+            389,
+            781
+          ],
+          [
+            390,
+            786
+          ],
+          [
+            566,
+            772
+          ],
+          [
+            566,
+            778
+          ],
+          [
+            390,
+            792
+          ],
+          [
+            391,
+            796
+          ]
+        ]
+      },
+      "imageSha256": "a3f30474a7e55eb8d1ef45e01dee917e378063bd968f2603fc24e85128ec174a"
+    },
+    {
+      "id": "lower-urinary-05",
+      "name": "Trigone",
+      "questions": [
+        {
+          "id": "lab-lower-urinary-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What region is outlined?",
+          "options": [
+            "Trigone",
+            "Rugae",
+            "Detrusor muscle",
+            "Internal urethral orifice"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Trigone.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "trigone",
+            "bladder trigone",
+            "trigone of bladder"
+          ]
+        }
+      ],
+      "expectedImageFile": "lower-urinary/ub-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 5,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              215,
+              790
+            ],
+            [
+              376,
+              790
+            ],
+            [
+              284,
+              883
+            ],
+            [
+              215,
+              790
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              215,
+              794
+            ],
+            [
+              376,
+              794
+            ],
+            [
+              376,
+              786
+            ],
+            [
+              215,
+              786
+            ]
+          ],
+          [
+            [
+              374,
+              788
+            ],
+            [
+              282,
+              881
+            ],
+            [
+              286,
+              885
+            ],
+            [
+              378,
+              792
+            ]
+          ],
+          [
+            [
+              287,
+              881
+            ],
+            [
+              218,
+              788
+            ],
+            [
+              212,
+              792
+            ],
+            [
+              281,
+              885
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "fa3865f04f1707b3ade2b0bd58df6795ae5d59b73416f27303b8c7cc10841492"
+    },
+    {
+      "id": "lower-urinary-06",
+      "name": "Internal urethral orifice",
+      "questions": [
+        {
+          "id": "lab-lower-urinary-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Internal urethral orifice",
+            "Ureteral openings",
+            "Internal urethral sphincter",
+            "Trigone"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Internal urethral orifice.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "internal urethral orifice",
+            "internal urethral opening"
+          ]
+        }
+      ],
+      "expectedImageFile": "lower-urinary/ub-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          511,
+          862
+        ],
+        "tip": [
+          284,
+          885
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            284,
+            885
+          ],
+          [
+            300,
+            876
+          ],
+          [
+            301,
+            880
+          ],
+          [
+            511,
+            859
+          ],
+          [
+            511,
+            865
+          ],
+          [
+            301,
+            886
+          ],
+          [
+            302,
+            891
+          ]
+        ]
+      },
+      "imageSha256": "432dd82c9475ac186794275e88fed58b0fa16e429c623908055da0a89188b392"
+    },
+    {
+      "name": "Prostatic urethra",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What part of the urethra is indicated by the arrow?",
+          "options": [
+            "Prostatic urethra",
+            "Spongy urethra",
+            "Membranous urethra",
+            "Ureter"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Prostatic urethra - the segment passing through the prostate gland.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "prostatic urethra",
+            "prostatic part of urethra",
+            "prostatic part of the urethra",
+            "prostate urethra"
+          ],
+          "id": "lab-lower-urinary-07"
+        }
+      ],
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          510,
+          982
+        ],
+        "tip": [
+          283,
+          958
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            283,
+            958
+          ],
+          [
+            301,
+            952
+          ],
+          [
+            300,
+            957
+          ],
+          [
+            510,
+            979
+          ],
+          [
+            510,
+            985
+          ],
+          [
+            300,
+            963
+          ],
+          [
+            299,
+            967
+          ]
+        ]
+      },
+      "id": "lower-urinary-07",
+      "expectedImageFile": "lower-urinary/ub-07.png",
+      "imageSha256": "ac9c1c08e11b251e62ea33806c28afd9d3e87f01c79b9f71bf2383fbc3eabd57"
+    },
+    {
+      "id": "lower-urinary-08",
+      "name": "Prostate gland",
+      "questions": [
+        {
+          "id": "lab-lower-urinary-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Prostate gland",
+            "Detrusor muscle",
+            "Trigone",
+            "Internal urethral sphincter"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Prostate gland.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "prostate gland",
+            "prostate"
+          ]
+        }
+      ],
+      "expectedImageFile": "lower-urinary/ub-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          48,
+          939
+        ],
+        "tip": [
+          232,
+          945
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            232,
+            945
+          ],
+          [
+            215,
+            952
+          ],
+          [
+            215,
+            947
+          ],
+          [
+            48,
+            942
+          ],
+          [
+            48,
+            936
+          ],
+          [
+            215,
+            941
+          ],
+          [
+            215,
+            937
+          ]
+        ]
+      },
+      "imageSha256": "76dbf279e680566549a238e1da8a5756eeed4054882a7d0cf4c404d4fe1d3cc3"
+    },
+    {
+      "id": "lower-urinary-09",
+      "name": "Internal urethral sphincter",
+      "questions": [
+        {
+          "id": "lab-lower-urinary-09",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Internal urethral sphincter",
+            "Internal urethral orifice",
+            "Detrusor muscle",
+            "Prostate gland"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Internal urethral sphincter.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "internal urethral sphincter",
+            "internal sphincter"
+          ]
+        }
+      ],
+      "expectedImageFile": "lower-urinary/ub-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          539,
+          961
+        ],
+        "tip": [
+          311,
+          889
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            311,
+            889
+          ],
+          [
+            329,
+            887
+          ],
+          [
+            328,
+            891
+          ],
+          [
+            540,
+            958
+          ],
+          [
+            538,
+            964
+          ],
+          [
+            326,
+            897
+          ],
+          [
+            325,
+            901
+          ]
+        ]
+      },
+      "imageSha256": "7911f1421aab8c1d70a745c31003f5210a72c310bcba2048f29bbbbcd6fa49fc"
+    }
+  ]
+}
