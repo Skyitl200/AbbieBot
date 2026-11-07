@@ -611,7 +611,7 @@
           "id": "lab-lungs-larynx-09",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What organ is indicated by the arrow?",
+          "question": "What organ is indicated by the bracket?",
           "options": [
             "Larynx",
             "Trachea",
@@ -621,7 +621,7 @@
           "correct": [
             0
           ],
-          "explanation": "Larynx.",
+          "explanation": "Larynx - the bracket spans the voice box, from the hyoid region to the top of the trachea.",
           "requiresModelImage": true,
           "typedAnswers": [
             "larynx",
@@ -632,50 +632,111 @@
       "expectedImageFile": "lungs-larynx/ll-09.png",
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
-        "tail": [
-          242,
-          113
+        "kind": "bracket",
+        "outerPolygon": [
+          [
+            337,
+            5
+          ],
+          [
+            309,
+            5
+          ],
+          [
+            309,
+            227
+          ],
+          [
+            337,
+            227
+          ],
+          [
+            337,
+            219
+          ],
+          [
+            317,
+            219
+          ],
+          [
+            317,
+            13
+          ],
+          [
+            337,
+            13
+          ]
         ],
-        "tip": [
-          347,
-          109
+        "innerPolygon": [
+          [
+            335,
+            7
+          ],
+          [
+            311,
+            7
+          ],
+          [
+            311,
+            225
+          ],
+          [
+            335,
+            225
+          ],
+          [
+            335,
+            221
+          ],
+          [
+            315,
+            221
+          ],
+          [
+            315,
+            11
+          ],
+          [
+            335,
+            11
+          ]
         ],
-        "shaftWidth": 4,
-        "headWidth": 12,
-        "headLength": 15,
-        "outlineWidth": 1,
         "overlayPolygon": [
           [
-            347,
-            109
+            337,
+            5
           ],
           [
-            331,
-            117
+            309,
+            5
           ],
           [
-            331,
-            113
+            309,
+            227
           ],
           [
-            242,
-            116
+            337,
+            227
           ],
           [
-            242,
-            110
+            337,
+            219
           ],
           [
-            331,
-            107
+            317,
+            219
           ],
           [
-            331,
-            103
+            317,
+            13
+          ],
+          [
+            337,
+            13
           ]
         ]
       },
-      "imageSha256": "17246731f64eb2b497b8724444f6e0d57a0d7ddad753c260b343186c0677f5dd"
+      "imageSha256": "6f304c0ae30e4edd202f0c32246c7bcb193c01c50d9fdf27043ddeef5c319d94"
     },
     {
       "id": "lung-10",
