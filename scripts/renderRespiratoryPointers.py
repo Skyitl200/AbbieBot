@@ -42,7 +42,8 @@ def main():
                     length = math.hypot(dx, dy); vx, vy = -dy/length, dx/length
                     def rectangle(width):
                         return [[round(x), round(y)] for x, y in [(tail[0]+vx*width/2, tail[1]+vy*width/2), (tip[0]+vx*width/2, tip[1]+vy*width/2), (tip[0]-vx*width/2, tip[1]-vy*width/2), (tail[0]-vx*width/2, tail[1]-vy*width/2)]]
-                    outer = rectangle(6); inner = rectangle(3)
+                    width = a.get('strokeWidth', 3)
+                    outer = rectangle(width + 2*a.get('outlineWidth', 1.5)); inner = rectangle(width)
                     draw.polygon([tuple(p) for p in outer], fill=(0,0,0)); draw.polygon([tuple(p) for p in inner], fill=(0,229,255))
                     polygons.append(outer)
             path = ROOT / 'study-assets/lab-models' / model['expectedImageFile']
