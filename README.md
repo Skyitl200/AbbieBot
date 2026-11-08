@@ -492,3 +492,9 @@ in Respiratory Tract. Corniculate and cuneiform markers follow user-supplied
 Quizlet screenshots; the cuneiform prompt explicitly attributes the atypical
 marker to Quizlet and explains the usual aryepiglottic-fold location.
 Rebuild with `python scripts/renderRespiratoryPointers.py larynx-posterior.json`.
+
+**Digestive System → 3D Model of the Stomach** adds twelve short identification
+cards from `293023.jpg.zip`. Cyan paths mark both curvatures; the lower
+esophageal sphincter question identifies its location at the gastroesophageal
+junction. Both answer modes accept short names and common aliases.
+Rebuild with `python scripts/renderRespiratoryPointers.py stomach.json`.

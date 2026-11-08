@@ -1,0 +1,1097 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Digestive System",
+  "modelGroup": "3D Model of the Stomach",
+  "source": "Exact original 293023.jpg.zip photograph; cyan annotation overlays only.",
+  "sourceImageFile": "stomach-original.png",
+  "sourceImageSha256": "85a7a8e807f39fecc7841615ea60601a3fb4f7cc69ec827bd1bfd303e958e993",
+  "originalUploadFile": "stomach-original.jpg",
+  "originalUploadSha256": "881005877f91868148d4bf20c55599fa65284fcd2487621c1b66973a4dc2752b",
+  "models": [
+    {
+      "id": "stomach-01",
+      "name": "Esophagus",
+      "questions": [
+        {
+          "id": "lab-stomach-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Esophagus",
+            "Duodenum",
+            "Cardia",
+            "Pyloric canal"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Esophagus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "esophagus",
+            "oesophagus"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          617,
+          95
+        ],
+        "tip": [
+          428,
+          136
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            428,
+            136
+          ],
+          [
+            443,
+            125
+          ],
+          [
+            444,
+            129
+          ],
+          [
+            616,
+            92
+          ],
+          [
+            618,
+            98
+          ],
+          [
+            445,
+            135
+          ],
+          [
+            446,
+            140
+          ]
+        ]
+      },
+      "imageSha256": "3ba9134461fc52f9c82cd4ec0f6a2422f9e81192a01d682d1847a288f28b14cf"
+    },
+    {
+      "id": "stomach-02",
+      "name": "Lower esophageal sphincter",
+      "questions": [
+        {
+          "id": "lab-stomach-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What sphincter is located at the indicated junction?",
+          "options": [
+            "Lower esophageal sphincter",
+            "Pyloric sphincter",
+            "Cardia",
+            "Pyloric canal"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Lower esophageal sphincter - at the esophagus\u2013stomach junction.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "lower esophageal sphincter",
+            "LES",
+            "lower oesophageal sphincter",
+            "gastroesophageal sphincter",
+            "cardiac sphincter"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          284,
+          122
+        ],
+        "tip": [
+          420,
+          226
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            420,
+            226
+          ],
+          [
+            402,
+            222
+          ],
+          [
+            405,
+            218
+          ],
+          [
+            282,
+            124
+          ],
+          [
+            286,
+            120
+          ],
+          [
+            408,
+            213
+          ],
+          [
+            411,
+            210
+          ]
+        ]
+      },
+      "imageSha256": "b063fdb0d2462e13de68ed3ab325d5bda99a2af197fe4ceec3b709eae1c191e1"
+    },
+    {
+      "id": "stomach-03",
+      "name": "Fundus",
+      "questions": [
+        {
+          "id": "lab-stomach-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What region is indicated by the arrow?",
+          "options": [
+            "Fundus",
+            "Body",
+            "Cardia",
+            "Pyloric canal"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Fundus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "fundus",
+            "gastric fundus",
+            "fundus of stomach"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          671,
+          177
+        ],
+        "tip": [
+          542,
+          241
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            542,
+            241
+          ],
+          [
+            554,
+            227
+          ],
+          [
+            556,
+            231
+          ],
+          [
+            670,
+            174
+          ],
+          [
+            672,
+            180
+          ],
+          [
+            559,
+            236
+          ],
+          [
+            561,
+            240
+          ]
+        ]
+      },
+      "imageSha256": "ef275d582b5b1c1b3a7786451cceeb6120754cea412ddfb00664f326829362cf"
+    },
+    {
+      "id": "stomach-04",
+      "name": "Serosa",
+      "questions": [
+        {
+          "id": "lab-stomach-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What outer covering is indicated by the arrow?",
+          "options": [
+            "Serosa",
+            "Rugae",
+            "Body",
+            "Greater curvature"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Serosa.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "serosa",
+            "serosal layer",
+            "visceral peritoneum"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          682,
+          333
+        ],
+        "tip": [
+          605,
+          296
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            605,
+            296
+          ],
+          [
+            624,
+            297
+          ],
+          [
+            622,
+            301
+          ],
+          [
+            683,
+            330
+          ],
+          [
+            681,
+            336
+          ],
+          [
+            619,
+            306
+          ],
+          [
+            617,
+            310
+          ]
+        ]
+      },
+      "imageSha256": "7ef47f85a40c9e305a243fb21003be2b1542bd344e70c1cae8e6e6b59f8d8b76"
+    },
+    {
+      "id": "stomach-05",
+      "name": "Body",
+      "questions": [
+        {
+          "id": "lab-stomach-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What region is indicated by the arrow?",
+          "options": [
+            "Body",
+            "Fundus",
+            "Cardia",
+            "Pyloric canal"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Body.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "body",
+            "gastric body",
+            "body of stomach",
+            "body of the stomach"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          684,
+          394
+        ],
+        "tip": [
+          473,
+          355
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            473,
+            355
+          ],
+          [
+            491,
+            351
+          ],
+          [
+            490,
+            355
+          ],
+          [
+            685,
+            391
+          ],
+          [
+            683,
+            397
+          ],
+          [
+            489,
+            361
+          ],
+          [
+            488,
+            365
+          ]
+        ]
+      },
+      "imageSha256": "75ff6786d2fc98db00ef50df5840440627fdfe17652f1a4a615ecc85c442e9f0"
+    },
+    {
+      "id": "stomach-06",
+      "name": "Greater curvature",
+      "questions": [
+        {
+          "id": "lab-stomach-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What curvature is marked?",
+          "options": [
+            "Greater curvature",
+            "Lesser curvature",
+            "Fundus",
+            "Body"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Greater curvature.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "greater curvature",
+            "greater curvature of stomach",
+            "greater curvature of the stomach"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 5,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              188,
+              475
+            ],
+            [
+              232,
+              499
+            ],
+            [
+              292,
+              519
+            ],
+            [
+              349,
+              522
+            ],
+            [
+              407,
+              512
+            ],
+            [
+              461,
+              493
+            ],
+            [
+              507,
+              469
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              186,
+              478
+            ],
+            [
+              230,
+              502
+            ],
+            [
+              234,
+              496
+            ],
+            [
+              190,
+              472
+            ]
+          ],
+          [
+            [
+              231,
+              502
+            ],
+            [
+              291,
+              522
+            ],
+            [
+              293,
+              516
+            ],
+            [
+              233,
+              496
+            ]
+          ],
+          [
+            [
+              292,
+              522
+            ],
+            [
+              349,
+              525
+            ],
+            [
+              349,
+              519
+            ],
+            [
+              292,
+              516
+            ]
+          ],
+          [
+            [
+              350,
+              525
+            ],
+            [
+              408,
+              515
+            ],
+            [
+              406,
+              509
+            ],
+            [
+              348,
+              519
+            ]
+          ],
+          [
+            [
+              408,
+              515
+            ],
+            [
+              462,
+              496
+            ],
+            [
+              460,
+              490
+            ],
+            [
+              406,
+              509
+            ]
+          ],
+          [
+            [
+              463,
+              496
+            ],
+            [
+              509,
+              472
+            ],
+            [
+              505,
+              466
+            ],
+            [
+              459,
+              490
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "de0ee8a610b83cc770f0661a79d29c2ddad3f94a3840a755876466a2c4b036ce"
+    },
+    {
+      "id": "stomach-07",
+      "name": "Rugae",
+      "questions": [
+        {
+          "id": "lab-stomach-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Rugae",
+            "Serosa",
+            "Body",
+            "Pyloric canal"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Rugae.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "rugae",
+            "gastric rugae",
+            "gastric folds",
+            "ruga"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          563,
+          561
+        ],
+        "tip": [
+          424,
+          405
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            424,
+            405
+          ],
+          [
+            441,
+            413
+          ],
+          [
+            438,
+            416
+          ],
+          [
+            565,
+            559
+          ],
+          [
+            561,
+            563
+          ],
+          [
+            433,
+            420
+          ],
+          [
+            430,
+            423
+          ]
+        ]
+      },
+      "imageSha256": "32df80bdb622ffe79b3afa9da876203b1d2a4de61a46486dd295b9c29cba0036"
+    },
+    {
+      "id": "stomach-08",
+      "name": "Lesser curvature",
+      "questions": [
+        {
+          "id": "lab-stomach-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What curvature is marked?",
+          "options": [
+            "Lesser curvature",
+            "Greater curvature",
+            "Cardia",
+            "Pyloric canal"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Lesser curvature.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "lesser curvature",
+            "lesser curvature of stomach",
+            "lesser curvature of the stomach"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 5,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              177,
+              308
+            ],
+            [
+              223,
+              343
+            ],
+            [
+              269,
+              369
+            ],
+            [
+              286,
+              367
+            ],
+            [
+              320,
+              337
+            ],
+            [
+              350,
+              296
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              175,
+              311
+            ],
+            [
+              221,
+              346
+            ],
+            [
+              225,
+              340
+            ],
+            [
+              179,
+              305
+            ]
+          ],
+          [
+            [
+              221,
+              346
+            ],
+            [
+              267,
+              372
+            ],
+            [
+              271,
+              366
+            ],
+            [
+              225,
+              340
+            ]
+          ],
+          [
+            [
+              269,
+              372
+            ],
+            [
+              286,
+              370
+            ],
+            [
+              286,
+              364
+            ],
+            [
+              269,
+              366
+            ]
+          ],
+          [
+            [
+              288,
+              370
+            ],
+            [
+              322,
+              340
+            ],
+            [
+              318,
+              334
+            ],
+            [
+              284,
+              364
+            ]
+          ],
+          [
+            [
+              323,
+              339
+            ],
+            [
+              353,
+              298
+            ],
+            [
+              347,
+              294
+            ],
+            [
+              317,
+              335
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "ca608036d2624048d360bcd71007011da8ce63ae5134f98c6af68473821b7c2e"
+    },
+    {
+      "id": "stomach-09",
+      "name": "Pyloric sphincter",
+      "questions": [
+        {
+          "id": "lab-stomach-09",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Pyloric sphincter",
+            "Lower esophageal sphincter",
+            "Pyloric canal",
+            "Duodenum"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Pyloric sphincter.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "pyloric sphincter",
+            "pyloric valve",
+            "pyloric sphincter valve"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          48,
+          164
+        ],
+        "tip": [
+          132,
+          342
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            132,
+            342
+          ],
+          [
+            118,
+            330
+          ],
+          [
+            122,
+            328
+          ],
+          [
+            45,
+            165
+          ],
+          [
+            51,
+            163
+          ],
+          [
+            127,
+            325
+          ],
+          [
+            132,
+            323
+          ]
+        ]
+      },
+      "imageSha256": "3aa38453ca0206bb2fa6054f57dc41afcd04a06e918fc0d3f8872dc37e913ca8"
+    },
+    {
+      "id": "stomach-10",
+      "name": "Duodenum",
+      "questions": [
+        {
+          "id": "lab-stomach-10",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Duodenum",
+            "Esophagus",
+            "Pyloric canal",
+            "Body"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Duodenum.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "duodenum"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-10.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          27,
+          449
+        ],
+        "tip": [
+          77,
+          311
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            77,
+            311
+          ],
+          [
+            78,
+            330
+          ],
+          [
+            74,
+            328
+          ],
+          [
+            30,
+            450
+          ],
+          [
+            24,
+            448
+          ],
+          [
+            68,
+            326
+          ],
+          [
+            64,
+            324
+          ]
+        ]
+      },
+      "imageSha256": "c8458aed02c07ee9ccc7f72e1478470354f9caeb754ae792ead783b74e9a68f3"
+    },
+    {
+      "id": "stomach-11",
+      "name": "Cardia",
+      "questions": [
+        {
+          "id": "lab-stomach-11",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What region is indicated by the arrow?",
+          "options": [
+            "Cardia",
+            "Fundus",
+            "Body",
+            "Lower esophageal sphincter"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Cardia.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "cardia",
+            "gastric cardia",
+            "cardiac region"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-11.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          662,
+          91
+        ],
+        "tip": [
+          431,
+          253
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            431,
+            253
+          ],
+          [
+            441,
+            237
+          ],
+          [
+            443,
+            241
+          ],
+          [
+            660,
+            89
+          ],
+          [
+            664,
+            93
+          ],
+          [
+            447,
+            246
+          ],
+          [
+            449,
+            249
+          ]
+        ]
+      },
+      "imageSha256": "597871e81f790a4a5ad13c37b58ae8d1a7f103a8167515f660346c9001647528"
+    },
+    {
+      "id": "stomach-12",
+      "name": "Pyloric canal",
+      "questions": [
+        {
+          "id": "lab-stomach-12",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What region is indicated by the arrow?",
+          "options": [
+            "Pyloric canal",
+            "Pyloric sphincter",
+            "Duodenum",
+            "Cardia"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Pyloric canal.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "pyloric canal",
+            "pyloric channel",
+            "canal of pylorus"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach/st-12.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          217,
+          209
+        ],
+        "tip": [
+          162,
+          358
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            162,
+            358
+          ],
+          [
+            161,
+            339
+          ],
+          [
+            165,
+            341
+          ],
+          [
+            214,
+            208
+          ],
+          [
+            220,
+            210
+          ],
+          [
+            171,
+            343
+          ],
+          [
+            175,
+            345
+          ]
+        ]
+      },
+      "imageSha256": "ce76560fe0fe6e03c7c876276b8799f1a5a5bc56da81dd5e6504be33976fd10c"
+    }
+  ]
+}

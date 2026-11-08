@@ -7,6 +7,7 @@ const loadModels = file => JSON.parse(readFileSync(new URL(`../../../study-data/
 export const LAB_MODELS = loadModels('early-development.json');
 export const LAB_SETS = [
     { id: 'early-development', title: 'Early Development Models', category: 'reproductive', models: LAB_MODELS },
+    { id: 'stomach', title: '3D Model of the Stomach', category: 'digestive', showStructureList: true, models: loadModels('stomach.json') },
     { id: 'larynx-posterior', showStructureList: true, title: '3D Model of Larynx Posterior view', category: 'respiratory', models: loadModels('larynx-posterior.json') },
     { id: 'upper-respiratory', title: 'Upper Respiratory 3D Model', category: 'respiratory', models: loadModels('upper-respiratory.json') },
     { id: 'lungs-larynx', title: 'Lungs and Larynx 3D Model', category: 'respiratory', models: loadModels('lungs-larynx.json') },
@@ -21,6 +22,7 @@ export const LAB_CATEGORIES = [
     { id: 'reproductive', title: 'Reproductive System', chapter: 26 },
     { id: 'respiratory', title: 'Respiratory Tract', chapter: 22 },
     { id: 'urinary', title: 'Urinary System', chapter: 23 },
+    { id: 'digestive', title: 'Digestive System', chapter: 23 },
 ];
 const allModels = LAB_SETS.flatMap(set => set.models);
 const row = component => new ActionRowBuilder().addComponents(component);
