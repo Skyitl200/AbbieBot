@@ -899,12 +899,12 @@
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
         "tail": [
-          27,
-          449
+          21,
+          491
         ],
         "tip": [
-          77,
-          311
+          65,
+          378
         ],
         "shaftWidth": 4,
         "headWidth": 13,
@@ -912,36 +912,36 @@
         "outlineWidth": 1,
         "overlayPolygon": [
           [
-            77,
-            311
+            65,
+            378
           ],
           [
-            78,
-            330
+            66,
+            397
           ],
           [
-            74,
-            328
-          ],
-          [
-            30,
-            450
+            62,
+            395
           ],
           [
             24,
-            448
+            492
           ],
           [
-            68,
-            326
+            18,
+            490
           ],
           [
-            64,
-            324
+            56,
+            393
+          ],
+          [
+            52,
+            391
           ]
         ]
       },
-      "imageSha256": "c8458aed02c07ee9ccc7f72e1478470354f9caeb754ae792ead783b74e9a68f3"
+      "imageSha256": "3d751d89d1708729a7349197a4719de12db1b2aa24515d8f3b29c446cecb44eb"
     },
     {
       "id": "stomach-11",
