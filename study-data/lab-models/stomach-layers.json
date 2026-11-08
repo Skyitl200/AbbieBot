@@ -463,7 +463,7 @@
           "id": "lab-stomachlayers-05",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What surface openings are represented by the one indicated?",
+          "question": "What structures are marked by the vertical line?",
           "options": [
             "Gastric pits",
             "Gastric glands",
@@ -486,50 +486,43 @@
       "expectedImageFile": "stomach-layers/sl-05.png",
       "renderMethod": "original-photo-arrow-overlay",
       "annotation": {
-        "tail": [
-          84,
-          22
-        ],
-        "tip": [
-          263,
-          86
-        ],
-        "shaftWidth": 4,
-        "headWidth": 13,
-        "headLength": 16,
+        "kind": "regions",
+        "strokeWidth": 7,
         "outlineWidth": 1,
-        "overlayPolygon": [
+        "paths": [
           [
-            263,
-            86
-          ],
+            [
+              300,
+              112
+            ],
+            [
+              300,
+              341
+            ]
+          ]
+        ],
+        "overlayPolygons": [
           [
-            244,
-            87
-          ],
-          [
-            246,
-            83
-          ],
-          [
-            83,
-            25
-          ],
-          [
-            85,
-            19
-          ],
-          [
-            248,
-            77
-          ],
-          [
-            250,
-            73
+            [
+              296,
+              112
+            ],
+            [
+              296,
+              341
+            ],
+            [
+              304,
+              341
+            ],
+            [
+              304,
+              112
+            ]
           ]
         ]
       },
-      "imageSha256": "d3dc85b3418643dd7b878b9c2a491ea297e23067e5520124c1dca1db68b7e8f8"
+      "imageSha256": "d42ea8bd71c64bf093b5210626737d101a422793315f9fcd4a3a89ad2c058049"
     },
     {
       "id": "stomachlayers-06",
@@ -4902,7 +4895,7 @@
           "id": "lab-stomachlayers-09",
           "type": "multiple_choice",
           "difficulty": "easy",
-          "question": "What glands are marked by the circle and line?",
+          "question": "What glands are circled?",
           "options": [
             "Gastric glands",
             "Gastric pits",
@@ -4929,16 +4922,6 @@
         "strokeWidth": 7,
         "outlineWidth": 1,
         "paths": [
-          [
-            [
-              300,
-              112
-            ],
-            [
-              300,
-              341
-            ]
-          ],
           [
             [
               374,
@@ -5203,24 +5186,6 @@
           ]
         ],
         "overlayPolygons": [
-          [
-            [
-              296,
-              112
-            ],
-            [
-              296,
-              341
-            ],
-            [
-              304,
-              341
-            ],
-            [
-              304,
-              112
-            ]
-          ],
           [
             [
               370,
@@ -6375,7 +6340,7 @@
           ]
         ]
       },
-      "imageSha256": "bd5ad4ccc139960668f6946e2088485e2cc66b9051e3611c2b70cb0637466423"
+      "imageSha256": "4fad8b6fbba1a70a17032c89599df2ae8ee068ca1918e6569d15a04a71db85b7"
     },
     {
       "id": "stomachlayers-10",
