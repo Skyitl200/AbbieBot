@@ -9,7 +9,7 @@ export function createStudySession(guildId, userId, questions, topicId, now = Da
     for (const [id, session] of sessions) if (session.expiresAt <= now) sessions.delete(id);
     if (!questions.length) throw new Error('Cannot start an empty session');
     const session = { id: randomUUID().slice(0, 8), rewardId: randomUUID(), guildId, userId, topicId, questions,
-        index: 0, score: 0, moneyEarned: 0, answered: false, revision: 0, order: [], expiresAt: now + TTL };
+        index: 0, score: 0, moneyEarned: 0, answeredQuestions: new Map(), answered: false, revision: 0, order: [], expiresAt: now + TTL };
     prepareQuestion(session);
     sessions.set(key(guildId, userId), session);
     return session;
@@ -55,6 +55,7 @@ export function submitStudyAnswer(session, answer) {
     if (session.answered) throw new Error('This question has already been answered.');
     const correct = gradeQuestion(session.questions[session.index], answer);
     session.answered = true;
+    session.answeredQuestions.set(session.index, { displayOrder: [...session.displayOrder], publicQuestionId: session.publicQuestionId || null });
     session.lastCorrect = correct;
     session.revision++;
     if (correct) session.score++;

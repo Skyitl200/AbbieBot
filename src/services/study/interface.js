@@ -1,3 +1,4 @@
+import { questionReportModal, submitQuestionReport } from './reports.js';
 import { announceCrateDrop } from '../discovery/announcements.js';
 import { cacheFoundNotice } from '../discovery/catalog.js';
 import { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labSetForSelection } from './labModels.js';
@@ -135,6 +136,7 @@ export function resultMessage(session, correct) {
     const components = unpaid ? [row(button(actionId(session, 'reward'), '🪙 Retry coins'))]
         : finished ? [row(button(`study:classes:${session.userId}`, '📚 Choose another class', ButtonStyle.Secondary))]
         : [row(button(actionId(session, 'next'), '➡️ Next Question'))];
+    components[0].addComponents(button(actionId(session, 'report'), 'Report', ButtonStyle.Secondary));
     return addLectureImage({ content: '', embeds: [embed], components }, q);
 }
 
@@ -262,7 +264,12 @@ export async function handleStudyInteraction(interaction, client, args) {
             await publishQuestion(interaction, session);
             return;
         }
+        if (action === 'report_submit') return await submitQuestionReport(interaction, client, token);
         const session = getStudySession(interaction.guildId, ownerId, token);
+        if (action === 'report') {
+            if (!session) throw new Error('This study session has expired. Start /test again.');
+            return await interaction.showModal(questionReportModal(session, Number(index), interaction));
+        }
         checkStudyAction(session, index, revision);
         const q = session.questions[session.index];
         if (action === 'image') {
