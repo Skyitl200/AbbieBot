@@ -1,8 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildLfgPost, subjectThumbnail } from '../src/services/lfg/lfgPost.js';
+import { LFG_CHANNEL_ID } from '../src/services/lfg/channelAccess.js';
 
-const lfgContext = () => ({ guildId: 'guild', channelId: 'lfg-text', guild: { id: 'guild', channels: { cache: new Map([['lfg-text', { id: 'lfg-text', name: 'lfg', type: 0 }]]) } } });
+const lfgContext = () => ({ guildId: 'guild', channelId: LFG_CHANNEL_ID, guild: { id: 'guild' } });
 
 test('LFG card includes subject art and a voice-invite link in one message', () => {
     const post = buildLfgPost({

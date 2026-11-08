@@ -1,31 +1,20 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { lfgChannelAccess } from '../src/services/lfg/channelAccess.js';
+import { lfgChannelAccess, LFG_CHANNEL_ONLY_MESSAGE, LFG_CHANNEL_ID } from '../src/services/lfg/channelAccess.js';
 import command from '../src/commands/LFG/lfg.js';
 import { lfgSubjectSelectMenu, lfgProgramSelectMenu, lfgCapacitySelectMenu, pendingLfgDescriptions } from '../src/handlers/lfgSelectMenus.js';
 import descriptionModal from '../src/interactions/modals/lfg/lfgDescription.js';
 
-const fixture = (channelId = 'lfg-channel', channels = [{ id: 'lfg-channel', name: '🔎│lfg', type: 0 }]) => ({
-    guildId: 'guild', channelId, inGuild: () => true,
-    guild: { id: 'guild', channels: { cache: new Map(channels.map(c => [c.id, c])) } },
-});
+const fixture = (channelId = LFG_CHANNEL_ID) => ({ guildId: 'guild', channelId, inGuild: () => true, guild: { id: 'guild' } });
 
-test('only the uniquely named LFG text channel is allowed, including decorated names', () => {
-    assert.equal(lfgChannelAccess(fixture(), '').allowed, true);
-    const wrong = lfgChannelAccess(fixture('general'), '');
-    assert.equal(wrong.allowed, false);
-    assert.match(wrong.message, /<#lfg-channel>/);
-    assert.equal(lfgChannelAccess(fixture('lfg-channel', [{ id: 'lfg-channel', name: 'Looking-For-Group', type: 0 }]), '').allowed, true);
-    assert.equal(lfgChannelAccess(fixture('thread'), '').allowed, false);
-});
-
-test('an explicit channel ID wins and ambiguous or absent channel names cannot bypass the restriction', () => {
-    assert.equal(lfgChannelAccess(fixture('pinned'), 'pinned').allowed, true);
-    assert.equal(lfgChannelAccess(fixture(), 'pinned').allowed, false);
-    assert.equal(lfgChannelAccess(fixture('general', []), '').allowed, false);
-    assert.equal(lfgChannelAccess(fixture('a', [{ id: 'a', name: 'lfg', type: 0 }, { id: 'b', name: 'lfg', type: 0 }]), '').allowed, false);
-    assert.equal(lfgChannelAccess(fixture('voice', [{ id: 'voice', name: 'lfg', type: 2 }]), '').allowed, false);
-    assert.equal(lfgChannelAccess({ inGuild: () => false }, 'pinned').allowed, false);
+test('only the exact user-provided LFG channel ID is accepted, without relying on names or server cache', () => {
+    assert.equal(lfgChannelAccess(fixture()).allowed, true);
+    assert.equal(lfgChannelAccess({ ...fixture(), channel: { name: 'anything' } }).allowed, true);
+    assert.equal(lfgChannelAccess({ ...fixture('other-channel'), channel: { name: 'LFG' } }).allowed, false);
+    assert.equal(lfgChannelAccess({ guildId: 'guild', channel: { id: LFG_CHANNEL_ID } }).allowed, true);
+    assert.equal(lfgChannelAccess({ inGuild: () => false, channelId: LFG_CHANNEL_ID }).allowed, false);
+    assert.equal(lfgChannelAccess(fixture('thread-in-lfg')).allowed, false);
+    assert.equal(lfgChannelAccess(fixture('general')).message, LFG_CHANNEL_ONLY_MESSAGE);
 });
 
 test('wrong-channel /lfg is rejected before member checks or quota work for every member', async () => {
@@ -34,7 +23,7 @@ test('wrong-channel /lfg is rejected before member checks or quota work for ever
         get member() { assert.fail('Must reject before subscriber or quota handling'); } };
     await command.execute(interaction);
     assert.equal(reply.flags, 64);
-    assert.match(reply.content, /<#lfg-channel>/);
+    assert.equal(reply.content, LFG_CHANNEL_ONLY_MESSAGE);
 });
 
 test('allowed-channel subscribers can still open the normal LFG setup', async () => {
@@ -54,7 +43,7 @@ test('old creation controls and modals cannot mutate setup or publish in another
             get member() { assert.fail('Must not modify the study room'); },
             get fields() { assert.fail('Must not mutate description'); } }, null, ['student','anatomy_1']);
         assert.equal(denied.flags, 64);
-        assert.match(denied.content, /<#lfg-channel>/);
+        assert.equal(denied.content, LFG_CHANNEL_ONLY_MESSAGE);
         assert.equal(pendingLfgDescriptions.get('student').description, 'Existing setup');
     }
     pendingLfgDescriptions.delete('student');
