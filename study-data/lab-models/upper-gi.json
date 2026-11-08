@@ -1,0 +1,674 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Digestive System",
+  "modelGroup": "Upper GI Tract 3D Model",
+  "source": "Exact original dkodkodok.jpg.zip photograph; cyan annotation overlays only. Fauces line follows the supplied Quizlet reference.",
+  "sourceImageFile": "upper-gi-original.png",
+  "sourceImageSha256": "3ae872f154843ac7cbec073f0b4ffa4ec0a13124c7843351b53f9685911760fc",
+  "originalUploadFile": "upper-gi-original.jpg",
+  "originalUploadSha256": "93514cb4e9d9730dbc275f06da0457aa6721fa5938fa01ba271812151806f092",
+  "models": [
+    {
+      "id": "uppergi-01",
+      "name": "Hard palate",
+      "questions": [
+        {
+          "id": "lab-uppergi-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Hard palate",
+            "Soft palate",
+            "Tongue",
+            "Epiglottis"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Hard palate.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "hard palate"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-gi/gi-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          119,
+          289
+        ],
+        "tip": [
+          296,
+          321
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            296,
+            321
+          ],
+          [
+            278,
+            325
+          ],
+          [
+            279,
+            321
+          ],
+          [
+            118,
+            292
+          ],
+          [
+            120,
+            286
+          ],
+          [
+            280,
+            315
+          ],
+          [
+            281,
+            311
+          ]
+        ]
+      },
+      "imageSha256": "ba8f2a48203d2077bcf8d987787c0b90b5e6bfb6efe6abd6d06f991c7086dc25"
+    },
+    {
+      "id": "uppergi-02",
+      "name": "Soft palate",
+      "questions": [
+        {
+          "id": "lab-uppergi-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Soft palate",
+            "Hard palate",
+            "Epiglottis",
+            "Fauces"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Soft palate.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "soft palate"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-gi/gi-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          619,
+          363
+        ],
+        "tip": [
+          438,
+          383
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            438,
+            383
+          ],
+          [
+            454,
+            374
+          ],
+          [
+            455,
+            378
+          ],
+          [
+            619,
+            360
+          ],
+          [
+            619,
+            366
+          ],
+          [
+            455,
+            384
+          ],
+          [
+            456,
+            389
+          ]
+        ]
+      },
+      "imageSha256": "76cc87ee79bc73dcf53841c4f791d533d32a270119de346517cbb6f59a4002b2"
+    },
+    {
+      "id": "uppergi-03",
+      "name": "Oral cavity",
+      "questions": [
+        {
+          "id": "lab-uppergi-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What cavity is indicated by the arrow?",
+          "options": [
+            "Oral cavity",
+            "Oropharynx",
+            "Laryngopharynx",
+            "Esophagus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Oral cavity.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "oral cavity",
+            "mouth cavity",
+            "mouth",
+            "buccal cavity"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-gi/gi-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          84,
+          340
+        ],
+        "tip": [
+          237,
+          348
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            237,
+            348
+          ],
+          [
+            220,
+            355
+          ],
+          [
+            220,
+            350
+          ],
+          [
+            84,
+            343
+          ],
+          [
+            84,
+            337
+          ],
+          [
+            220,
+            344
+          ],
+          [
+            220,
+            340
+          ]
+        ]
+      },
+      "imageSha256": "109622a4893ae59b411499da7d07f6ab730a20a6fc4aa527e052f73266043615"
+    },
+    {
+      "id": "uppergi-04",
+      "name": "Epiglottis",
+      "questions": [
+        {
+          "id": "lab-uppergi-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Epiglottis",
+            "Tongue",
+            "Soft palate",
+            "Hard palate"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Epiglottis.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "epiglottis"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-gi/gi-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          545,
+          654
+        ],
+        "tip": [
+          388,
+          583
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            388,
+            583
+          ],
+          [
+            407,
+            583
+          ],
+          [
+            405,
+            587
+          ],
+          [
+            546,
+            651
+          ],
+          [
+            544,
+            657
+          ],
+          [
+            402,
+            593
+          ],
+          [
+            400,
+            597
+          ]
+        ]
+      },
+      "imageSha256": "11fd70397afa63f894cd9b4799d6144795899eebbb23d6163fb22151d82fff49"
+    },
+    {
+      "id": "uppergi-05",
+      "name": "Esophagus",
+      "questions": [
+        {
+          "id": "lab-uppergi-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Esophagus",
+            "Trachea",
+            "Laryngopharynx",
+            "Oropharynx"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Esophagus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "esophagus",
+            "oesophagus"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-gi/gi-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          625,
+          860
+        ],
+        "tip": [
+          437,
+          846
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            437,
+            846
+          ],
+          [
+            455,
+            840
+          ],
+          [
+            454,
+            844
+          ],
+          [
+            625,
+            857
+          ],
+          [
+            625,
+            863
+          ],
+          [
+            454,
+            850
+          ],
+          [
+            453,
+            855
+          ]
+        ]
+      },
+      "imageSha256": "8d8627b43108590351c58c4debd2474a614bb64400842f7c74bebce2cafacd6c"
+    },
+    {
+      "id": "uppergi-06",
+      "name": "Tongue",
+      "questions": [
+        {
+          "id": "lab-uppergi-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Tongue",
+            "Soft palate",
+            "Epiglottis",
+            "Hard palate"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Tongue.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "tongue"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-gi/gi-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          97,
+          618
+        ],
+        "tip": [
+          295,
+          476
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            295,
+            476
+          ],
+          [
+            286,
+            492
+          ],
+          [
+            283,
+            488
+          ],
+          [
+            99,
+            620
+          ],
+          [
+            95,
+            616
+          ],
+          [
+            279,
+            483
+          ],
+          [
+            277,
+            480
+          ]
+        ]
+      },
+      "imageSha256": "fcabb96ff8dd1d4ae51b1328b2d8fb6002399e5df126d2b9e0f096d181680af2"
+    },
+    {
+      "id": "uppergi-07",
+      "name": "Laryngopharynx",
+      "questions": [
+        {
+          "id": "lab-uppergi-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What region of the pharynx is indicated by the arrow?",
+          "options": [
+            "Laryngopharynx",
+            "Oropharynx",
+            "Nasopharynx",
+            "Esophagus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Laryngopharynx.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "laryngopharynx",
+            "hypopharynx",
+            "laryngeal part of pharynx",
+            "laryngeal pharynx"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-gi/gi-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          620,
+          716
+        ],
+        "tip": [
+          430,
+          653
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            430,
+            653
+          ],
+          [
+            448,
+            651
+          ],
+          [
+            447,
+            656
+          ],
+          [
+            621,
+            713
+          ],
+          [
+            619,
+            719
+          ],
+          [
+            445,
+            661
+          ],
+          [
+            444,
+            665
+          ]
+        ]
+      },
+      "imageSha256": "e3d92c3f3db12797f1b62651c00ee3f24fa59f37db0946ed6466a9028904fc06"
+    },
+    {
+      "id": "uppergi-08",
+      "name": "Oropharynx",
+      "questions": [
+        {
+          "id": "lab-uppergi-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What region of the pharynx is indicated by the arrow?",
+          "options": [
+            "Oropharynx",
+            "Laryngopharynx",
+            "Nasopharynx",
+            "Oral cavity"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Oropharynx.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "oropharynx",
+            "oral part of pharynx",
+            "oral pharynx"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-gi/gi-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          642,
+          487
+        ],
+        "tip": [
+          451,
+          514
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            451,
+            514
+          ],
+          [
+            467,
+            504
+          ],
+          [
+            467,
+            509
+          ],
+          [
+            642,
+            484
+          ],
+          [
+            642,
+            490
+          ],
+          [
+            468,
+            515
+          ],
+          [
+            469,
+            519
+          ]
+        ]
+      },
+      "imageSha256": "1f4ec78708091a0fd59a7ae7885e92f0819b112ea508be3badab7ab428196743"
+    },
+    {
+      "id": "uppergi-09",
+      "name": "Fauces",
+      "questions": [
+        {
+          "id": "lab-uppergi-09",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What opening is marked by the line?",
+          "options": [
+            "Fauces",
+            "Oropharynx",
+            "Oral cavity",
+            "Epiglottis"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Fauces.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "fauces",
+            "isthmus of fauces",
+            "oropharyngeal isthmus",
+            "isthmus of the fauces"
+          ]
+        }
+      ],
+      "expectedImageFile": "upper-gi/gi-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 7,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              404,
+              557
+            ],
+            [
+              449,
+              465
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              408,
+              559
+            ],
+            [
+              453,
+              467
+            ],
+            [
+              445,
+              463
+            ],
+            [
+              400,
+              555
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "1162e83ea6ebd04174de2ab8384834b691f6ba0c004fd6c9c2a41f1ffbcbea8b"
+    }
+  ]
+}

@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768]]) {
+for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1331,7 +1331,7 @@ for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-
         assert.equal(original.width, width);
         assert.equal(original.height, 1024);
         assert.equal(data.models.length, count);
-        assert.ok(!data.models.some(model => model.name === 'Fauces'));
+        if (manifest === 'upper-respiratory') assert.ok(!data.models.some(model => model.name === 'Fauces'));
         function nearPolygon(x, y, vertices) {
             let inside = false;
             for (let i = 0, j = vertices.length - 1; i < vertices.length; j = i++) {
@@ -1617,6 +1617,34 @@ test('Digestive System offers twelve stomach structures in both modes with preci
         assert.match(qs.find(q=>q.modelName==='Lower esophageal sphincter').question,/located at/);
         if (mode==='typed') {
             for (const [name,alias,wrong] of [['Lower esophageal sphincter','LES','cardia'],['Pyloric sphincter','pyloric valve','pyloric canal'],['Serosa','visceral peritoneum','rugae'],['Greater curvature','greater curvature of stomach','lesser curvature'],['Lesser curvature','lesser curvature','greater curvature'],['Body','gastric body','fundus']]) {
+                const q=qs.find(q=>q.modelName===name);
+                assert.ok(matchesLabAnswer(alias,q.answers,q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong,q.answers,q.competingAnswers));
+            }
+        }
+    }
+});
+
+
+test('upper GI set provides nine identification-only image cards with the referenced fauces marker', async () => {
+    const { labQuestions, labModelImage, labModelsMessage, labModeMessage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u','digestive').components[0].toJSON().components[0].options.some(o=>o.value==='upper-gi'));
+    assert.equal(labModeMessage('u','upper-gi').components[1].toJSON().components[0].custom_id,'study:labcategory:u:digestive');
+    for (const mode of ['multiple_choice','typed']) {
+        const qs=labQuestions('upper-gi',mode);
+        assert.equal(qs.length,9);
+        assert.equal(new Set(qs.map(q=>q.labModelId)).size,9);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode==='multiple_choice') {
+                assert.equal(q.options.length,4);
+                assert.equal(q.options[q.correct[0]],q.modelName);
+            } else assert.ok(matchesLabAnswer(q.modelName,q.answers,q.competingAnswers));
+        }
+        assert.match(qs.find(q=>q.modelName==='Fauces').question,/opening.*line/);
+        if (mode==='typed') {
+            for (const [name,alias,wrong] of [['Fauces','oropharyngeal isthmus','oropharynx'],['Laryngopharynx','hypopharynx','oropharynx'],['Oropharynx','oral pharynx','laryngopharynx'],['Hard palate','hard palate','soft palate'],['Esophagus','oesophagus','trachea']]) {
                 const q=qs.find(q=>q.modelName===name);
                 assert.ok(matchesLabAnswer(alias,q.answers,q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong,q.answers,q.competingAnswers));

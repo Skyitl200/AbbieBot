@@ -498,3 +498,9 @@ cards from `293023.jpg.zip`. Cyan paths mark both curvatures; the lower
 esophageal sphincter question identifies its location at the gastroesophageal
 junction. Both answer modes accept short names and common aliases.
 Rebuild with `python scripts/renderRespiratoryPointers.py stomach.json`.
+
+**Upper GI Tract 3D Model** adds nine identification-only cards in Digestive
+System from `dkodkodok.jpg.zip`. The fauces card uses the opening line from
+the supplied Quizlet reference. Both modes accept short anatomical aliases
+while keeping the two pharyngeal regions and the hard/soft palate distinct.
+Rebuild with `python scripts/renderRespiratoryPointers.py upper-gi.json`.
