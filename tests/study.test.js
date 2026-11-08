@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width, height = 1024] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592], ['pancreas', 6, 1024, 827], ['ileum', 12, 655, 1002]]) {
+for (const [manifest, count, width, height = 1024] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592], ['pancreas', 6, 1024, 827], ['ileum', 12, 655, 1002], ['liver', 12, 981]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1767,6 +1767,28 @@ test('ileum set offers twelve digestive location cards with aliases and an attri
         assert.match(qs.find(q => q.modelName === 'Duodenal gland').explanation, /normally occur in the duodenum, not the ileum/);
         if (mode === 'typed') {
             for (const [name, alias, wrong] of [['Absorptive cells', 'enterocytes', 'villi'], ['Intestinal gland', 'crypt of lieberkuhn', 'duodenal gland'], ['Muscularis mucosae', 'muscularis mucosa', 'mucosa'], ['Longitudinal muscularis', 'longitudinal muscle', 'circular muscularis']]) {
+                const q = qs.find(q => q.modelName === name);
+                assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
+        }
+    }
+});
+
+test('liver set offers twelve digestive identification cards with distinct vessels, ducts and lobes', async () => {
+    const { labQuestions, labModelsMessage, labModelImage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'digestive').components[0].toJSON().components[0].options.some(o => o.value === 'liver' && o.label === '3D Model of Liver'));
+    for (const mode of ['multiple_choice', 'typed']) {
+        const qs = labQuestions('liver', mode);
+        assert.equal(qs.length, 12);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') assert.equal(q.options[q.correct[0]], q.modelName);
+            else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, alias, wrong] of [['Bile duct', 'common bile duct', 'common hepatic duct'], ['Hepatic portal vein', 'portal vein', 'hepatic artery'], ['Inferior vena cava', 'ivc', 'hepatic portal vein'], ['Right lobe', 'right hepatic lobe', 'left lobe'], ['Quadrate lobe', 'quadrate lobe of liver', 'caudate lobe']]) {
                 const q = qs.find(q => q.modelName === name);
                 assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));

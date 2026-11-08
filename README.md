@@ -522,3 +522,5 @@ mucosae and visceral peritoneum. Rebuild with
 **3D Model of Pancreas** adds six location cards to Anatomy Lab → Digestive System, using the original photo and cyan circles matched to the supplied reference. Both answer modes are supported. Rebuild with `python scripts/renderRespiratoryPointers.py pancreas.json`.
 
 **3D Model of Ileum** adds twelve digestive location cards using the supplied original photo and reference markers. Absorptive cells accepts enterocytes and the supplied spelling. The duodenal gland card explicitly attributes that reference label and explains that Brunner glands normally occur in duodenum, not ileum. Rebuild with `python scripts/renderRespiratoryPointers.py ileum.json`.
+
+**3D Model of Liver** adds twelve digestive location cards in both answer modes. Original-photo cyan markings distinguish ducts, vessels, and four lobes; the falciform card indicates its inferior attachment and explains the visible round ligament. Rebuild with `python scripts/renderRespiratoryPointers.py liver.json`.
