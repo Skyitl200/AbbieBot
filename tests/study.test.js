@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592]]) {
+for (const [manifest, count, width, height = 1024] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592], ['pancreas', 6, 1024, 827]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1329,7 +1329,7 @@ for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-
         assert.equal(createHash('sha256').update(source).digest('hex'), data.sourceImageSha256);
         const original = PNG.sync.read(source);
         assert.equal(original.width, width);
-        assert.equal(original.height, 1024);
+        assert.equal(original.height, height);
         assert.equal(data.models.length, count);
         if (manifest === 'upper-respiratory') assert.ok(!data.models.some(model => model.name === 'Fauces'));
         function nearPolygon(x, y, vertices) {
@@ -1726,6 +1726,28 @@ test('teeth set offers ten image identification cards in both answer modes', asy
             assert.ok(!matchesLabAnswer('root canal', root.answers, root.competingAnswers));
             const canal = questions.find(q => q.modelName === 'Root canal');
             assert.ok(!matchesLabAnswer('pulp cavity', canal.answers, canal.competingAnswers));
+        }
+    }
+});
+
+test('pancreas set offers six digestive location cards with distinct ducts and papillae', async () => {
+    const { labQuestions, labModelsMessage, labModelImage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'digestive').components[0].toJSON().components[0].options.some(o => o.value === 'pancreas' && o.label === '3D Model of Pancreas'));
+    for (const mode of ['multiple_choice', 'typed']) {
+        const qs = labQuestions('pancreas', mode);
+        assert.equal(qs.length, 6);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') assert.equal(q.options[q.correct[0]], q.modelName);
+            else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, alias, wrong] of [['Main pancreatic duct', 'duct of wirsung', 'accessory pancreatic duct'], ['Accessory pancreatic duct', 'duct of santorini', 'main pancreatic duct'], ['Minor duodenal papilla', 'minor papilla', 'major duodenal papilla'], ['Major duodenal papilla', 'major papilla', 'minor duodenal papilla']]) {
+                const q = qs.find(q => q.modelName === name);
+                assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
         }
     }
 });

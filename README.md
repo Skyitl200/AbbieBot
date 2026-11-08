@@ -518,3 +518,5 @@ Both answer modes accept short anatomical names and aliases such as muscularis
 mucosae and visceral peritoneum. Rebuild with
 `python scripts/renderRespiratoryPointers.py stomach-layers.json`.
 **3D Model of Teeth** adds ten location cards to Anatomy Lab → Digestive System, in both answer modes. Cyan circles and region brackets overlay the original photograph; rebuild with `python scripts/renderRespiratoryPointers.py teeth.json`.
+
+**3D Model of Pancreas** adds six location cards to Anatomy Lab → Digestive System, using the original photo and cyan circles matched to the supplied reference. Both answer modes are supported. Rebuild with `python scripts/renderRespiratoryPointers.py pancreas.json`.
