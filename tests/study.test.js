@@ -1605,21 +1605,48 @@ test('Digestive System offers twelve stomach structures in both modes with preci
     assert.equal(labModeMessage('u','stomach').components[1].toJSON().components[0].custom_id,'study:labcategory:u:digestive');
     for (const mode of ['multiple_choice','typed']) {
         const qs=labQuestions('stomach',mode);
-        assert.equal(qs.length,12);
+        assert.equal(qs.length,24);
         assert.equal(new Set(qs.map(q=>q.labModelId)).size,12);
         for (const q of qs) {
             assert.ok(labModelImage(q));
             if (mode==='multiple_choice') {
                 assert.equal(q.options.length,4);
-                assert.equal(q.options[q.correct[0]],q.modelName);
-            } else assert.ok(matchesLabAnswer(q.modelName,q.answers,q.competingAnswers));
+                if (q.labQuestionRole === 'identification') assert.equal(q.options[q.correct[0]],q.modelName);
+            } else assert.ok(matchesLabAnswer(q.answers[0],q.answers,q.competingAnswers));
         }
-        assert.match(qs.find(q=>q.modelName==='Lower esophageal sphincter').question,/located at/);
+        assert.match(qs.find(q=>q.modelName==='Lower esophageal sphincter' && q.labQuestionRole==='identification').question,/located at/);
         if (mode==='typed') {
             for (const [name,alias,wrong] of [['Lower esophageal sphincter','LES','cardia'],['Pyloric sphincter','pyloric valve','pyloric canal'],['Serosa','visceral peritoneum','rugae'],['Greater curvature','greater curvature of stomach','lesser curvature'],['Lesser curvature','lesser curvature','greater curvature'],['Body','gastric body','fundus']]) {
-                const q=qs.find(q=>q.modelName===name);
+                const q=qs.find(q=>q.modelName===name && q.labQuestionRole==='identification');
                 assert.ok(matchesLabAnswer(alias,q.answers,q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong,q.answers,q.competingAnswers));
+            }
+        }
+    }
+});
+
+
+test('each stomach image has a paired basic follow-up with short correct answers and appropriate distractors', async () => {
+    const { labQuestions, labModeMessage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    const expected = new Map([['Esophagus','Peristalsis'],['Lower esophageal sphincter','Acid reflux'],['Fundus','Swallowed air'],['Serosa','Friction'],['Body','Gastric juice'],['Greater curvature','Longer'],['Rugae','Expand'],['Lesser curvature','Shorter'],['Pyloric sphincter','Chyme'],['Duodenum','First'],['Cardia','Esophagus'],['Pyloric canal','Pyloric sphincter']]);
+    assert.match(labModeMessage('u','stomach').embeds[0].toJSON().description,/24 questions/);
+    for (const mode of ['multiple_choice','typed']) {
+        const qs=labQuestions('stomach',mode);
+        assert.equal(qs.length,24);
+        for (let i=0;i<qs.length;i+=2) {
+            const id=qs[i],follow=qs[i+1];
+            assert.equal(id.labQuestionRole,'identification');
+            assert.equal(follow.labQuestionRole,'followup');
+            assert.equal(id.labModelId,follow.labModelId);
+            assert.notEqual(id.id,follow.id);
+            const correct=expected.get(follow.modelName);
+            assert.ok(correct);
+            if (mode==='multiple_choice') assert.equal(follow.options[follow.correct[0]],correct);
+            else {
+                assert.ok(matchesLabAnswer(correct,follow.answers,follow.competingAnswers));
+                for (const wrong of follow.competingAnswers) assert.ok(!matchesLabAnswer(wrong,follow.answers,follow.competingAnswers));
+                assert.ok(matchesLabAnswer(id.modelName,id.answers,id.competingAnswers));
             }
         }
     }

@@ -31,6 +31,30 @@
           "typedAnswers": [
             "esophagus",
             "oesophagus"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-01",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What movement pushes swallowed food toward the stomach?",
+          "options": [
+            "Peristalsis",
+            "Diffusion",
+            "Filtration",
+            "Segmentation"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Peristalsis pushes food toward the stomach.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "peristalsis",
+            "peristaltic contractions",
+            "peristaltic waves"
           ]
         }
       ],
@@ -108,6 +132,31 @@
             "lower oesophageal sphincter",
             "gastroesophageal sphincter",
             "cardiac sphincter"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-02",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What does this sphincter help prevent?",
+          "options": [
+            "Acid reflux",
+            "Air swallowing",
+            "Bile production",
+            "Saliva production"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "This sphincter helps prevent stomach contents flowing back into the esophagus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "acid reflux",
+            "reflux",
+            "gastroesophageal reflux",
+            "backflow of stomach contents"
           ]
         }
       ],
@@ -183,6 +232,31 @@
             "fundus",
             "gastric fundus",
             "fundus of stomach"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-03",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What commonly collects in this upper stomach region?",
+          "options": [
+            "Swallowed air",
+            "Urine",
+            "Bile",
+            "Saliva"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Swallowed air commonly collects in the fundus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "swallowed air",
+            "air",
+            "gas",
+            "swallowed gas"
           ]
         }
       ],
@@ -258,6 +332,28 @@
             "serosa",
             "serosal layer",
             "visceral peritoneum"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-04",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What does this outer layer reduce as organs move?",
+          "options": [
+            "Friction",
+            "Acidity",
+            "Blood pressure",
+            "Food intake"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Serosa helps reduce friction between moving organs.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "friction"
           ]
         }
       ],
@@ -334,6 +430,29 @@
             "gastric body",
             "body of stomach",
             "body of the stomach"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-05",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What fluid does this region mix with food?",
+          "options": [
+            "Gastric juice",
+            "Bile",
+            "Saliva",
+            "Urine"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The stomach body mixes food with gastric juice.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "gastric juice",
+            "gastric juices"
           ]
         }
       ],
@@ -409,6 +528,30 @@
             "greater curvature",
             "greater curvature of stomach",
             "greater curvature of the stomach"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-06",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Is this the longer or shorter curved border of the stomach?",
+          "options": [
+            "Longer",
+            "Shorter",
+            "The same length",
+            "Neither"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The greater curvature is the longer curved border.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "longer",
+            "longer border",
+            "long"
           ]
         }
       ],
@@ -588,6 +731,31 @@
             "gastric rugae",
             "gastric folds",
             "ruga"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-07",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What do these folds allow the stomach to do?",
+          "options": [
+            "Expand",
+            "Filter blood",
+            "Make bile",
+            "Absorb oxygen"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Rugae flatten as the stomach expands.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "expand",
+            "stretch",
+            "expansion",
+            "stomach expansion"
           ]
         }
       ],
@@ -663,6 +831,30 @@
             "lesser curvature",
             "lesser curvature of stomach",
             "lesser curvature of the stomach"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-08",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Is this the longer or shorter curved border of the stomach?",
+          "options": [
+            "Shorter",
+            "Longer",
+            "The same length",
+            "Neither"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The lesser curvature is the shorter curved border.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "shorter",
+            "shorter border",
+            "short"
           ]
         }
       ],
@@ -819,6 +1011,29 @@
             "pyloric sphincter",
             "pyloric valve",
             "pyloric sphincter valve"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-09",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What mixture passes through this valve into the duodenum?",
+          "options": [
+            "Chyme",
+            "Bile",
+            "Saliva",
+            "Swallowed air"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Chyme is the mixture of partially digested food and gastric juice.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "chyme",
+            "partially digested food"
           ]
         }
       ],
@@ -892,6 +1107,30 @@
           "requiresModelImage": true,
           "typedAnswers": [
             "duodenum"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-10",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which part of the small intestine is this?",
+          "options": [
+            "First",
+            "Middle",
+            "Last",
+            "Not part of the small intestine"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The duodenum is the first part of the small intestine.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "first",
+            "first part",
+            "first section"
           ]
         }
       ],
@@ -967,6 +1206,29 @@
             "cardia",
             "gastric cardia",
             "cardiac region"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-11",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which tube opens into this stomach region?",
+          "options": [
+            "Esophagus",
+            "Duodenum",
+            "Trachea",
+            "Colon"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The esophagus opens into the cardia.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "esophagus",
+            "oesophagus"
           ]
         }
       ],
@@ -1042,6 +1304,29 @@
             "pyloric canal",
             "pyloric channel",
             "canal of pylorus"
+          ],
+          "labQuestionRole": "identification"
+        },
+        {
+          "id": "lab-stomach-followup-12",
+          "labQuestionRole": "followup",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which sphincter is immediately after this canal?",
+          "options": [
+            "Pyloric sphincter",
+            "Lower esophageal sphincter",
+            "Upper esophageal sphincter",
+            "Ileocecal valve"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "The pyloric canal leads to the pyloric sphincter.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "pyloric sphincter",
+            "pyloric valve"
           ]
         }
       ],
