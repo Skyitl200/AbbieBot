@@ -7,7 +7,7 @@ const loadModels = file => JSON.parse(readFileSync(new URL(`../../../study-data/
 export const LAB_MODELS = loadModels('early-development.json');
 export const LAB_SETS = [
     { id: 'early-development', title: 'Early Development Models', category: 'reproductive', models: LAB_MODELS },
-    { id: 'larynx-posterior', title: '3D Model of Larynx Posterior view', category: 'respiratory', models: loadModels('larynx-posterior.json') },
+    { id: 'larynx-posterior', showStructureList: true, title: '3D Model of Larynx Posterior view', category: 'respiratory', models: loadModels('larynx-posterior.json') },
     { id: 'upper-respiratory', title: 'Upper Respiratory 3D Model', category: 'respiratory', models: loadModels('upper-respiratory.json') },
     { id: 'lungs-larynx', title: 'Lungs and Larynx 3D Model', category: 'respiratory', models: loadModels('lungs-larynx.json') },
     { id: 'lower-urinary', title: '3D Model of the Ureters, Urinary Bladder, and Urethra', category: 'urinary', models: loadModels('lower-urinary.json') },
@@ -60,7 +60,7 @@ export function labModelsMessage(owner, categoryId = 'reproductive') {
 export function labModeMessage(owner, selection) {
     const models = selectedLabModels(selection);
     const set = labSetForSelection(selection);
-    return { content: '', embeds: [new EmbedBuilder({ title: 'Choose your answer mode', description: `${set.title} — all ${models.length} photos studied together. Choose how you want to answer.` })], components: [
+    return { content: '', embeds: [new EmbedBuilder({ title: 'Choose your answer mode', description: `${set.title} — all ${models.length} photos studied together. Choose how you want to answer.${set.showStructureList ? `\n\nIncluded structures: ${models.map(model => model.name).join(', ')}.` : ''}` })], components: [
         row(new StringSelectMenuBuilder().setCustomId(`study:labmode:${owner}:${selection}`).setPlaceholder('Multiple choice or type in').addOptions(
             { label: 'Multiple choice', value: 'multiple_choice', description: 'Answer using A, B, C, or D' },
             { label: 'Type in answer', value: 'typed', description: 'Type a short answer; synonyms and minor typos accepted' })),

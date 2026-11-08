@@ -1570,6 +1570,8 @@ test('posterior larynx set contains six referenced structures and preserves the 
     const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
     assert.ok(labModelsMessage('u', 'respiratory').components[0].toJSON().components[0].options.some(o => o.value === 'larynx-posterior'));
     assert.equal(labModeMessage('u', 'larynx-posterior').components[1].toJSON().components[0].custom_id, 'study:labcategory:u:respiratory');
+    const startScreen = labModeMessage('u', 'larynx-posterior').embeds[0].toJSON().description;
+    for (const name of ['Epiglottis','Cricoid cartilage','Arytenoid cartilage','Corniculate cartilage','Cuneiform cartilage','Hyoid bone']) assert.ok(startScreen.includes(name));
     for (const mode of ['multiple_choice','typed']) {
         const qs = labQuestions('larynx-posterior', mode);
         assert.equal(qs.length, 6);
@@ -1583,6 +1585,8 @@ test('posterior larynx set contains six referenced structures and preserves the 
         }
         const cuneiform = qs.find(q => q.modelName === 'Cuneiform cartilage');
         assert.match(cuneiform.question, /Quizlet/);
+        assert.match(cuneiform.question, /circle/);
+        assert.match(qs.find(q => q.modelName === 'Corniculate cartilage').question, /circled/);
         assert.match(cuneiform.explanation, /aryepiglottic fold/);
         if (mode === 'typed') {
             assert.ok(!matchesLabAnswer('corniculate cartilage', cuneiform.answers, cuneiform.competingAnswers));
