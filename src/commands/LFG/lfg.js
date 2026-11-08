@@ -1,3 +1,4 @@
+import { requireLfgChannel } from '../../services/lfg/channelAccess.js';
 import { buildLfgMenus } from '../../services/lfg/lfgCatalog.js';
 import {
     SlashCommandBuilder,
@@ -33,6 +34,8 @@ export default {
                 ephemeral: true
             });
         }
+
+        if (!await requireLfgChannel(interaction)) return;
 
         const member = interaction.member;
 

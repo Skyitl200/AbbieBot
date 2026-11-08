@@ -1,3 +1,4 @@
+import { requireLfgChannel } from '../../../services/lfg/channelAccess.js';
 import {
     ActionRowBuilder,
     StringSelectMenuBuilder
@@ -24,6 +25,7 @@ export default {
         args
     ) {
         try {
+            if (!await requireLfgChannel(interaction)) return;
 
             /*
              * Get the LFG creator ID

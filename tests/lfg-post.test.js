@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildLfgPost, subjectThumbnail } from '../src/services/lfg/lfgPost.js';
 
+const lfgContext = () => ({ guildId: 'guild', channelId: 'lfg-text', guild: { id: 'guild', channels: { cache: new Map([['lfg-text', { id: 'lfg-text', name: 'lfg', type: 0 }]]) } } });
+
 test('LFG card includes subject art and a voice-invite link in one message', () => {
     const post = buildLfgPost({
         hostName: 'Student', hostAvatar: 'https://cdn.discordapp.com/embed/avatars/0.png',
@@ -56,7 +58,7 @@ test('program selection is registered and supports the longest requested name', 
     const { default: handler } = await import('../src/interactions/selectMenus/lfg/lfgProgram.js');
     assert.equal(handler.name, 'lfg_program');
     let modal;
-    await handler.execute({
+    await handler.execute({ ...lfgContext(),
         customId: 'lfg_program:123456789012345678',
         user: { id: '123456789012345678' },
         values: ['radiologic_technologist'],
@@ -93,7 +95,7 @@ test('description replaces the original private menu instead of adding a reply',
     const { default: modal } = await import('../src/interactions/modals/lfg/lfgDescription.js');
     const { pendingLfgDescriptions } = await import('../src/handlers/lfgSelectMenus.js');
     let prompt;
-    await modal.execute({
+    await modal.execute({ ...lfgContext(),
         user: { id: 'cleanup-student' },
         fields: { getTextInputValue: () => 'Review anatomy' },
         isFromMessage: () => true,
@@ -113,7 +115,7 @@ test('successful LFG removes private setup only after publishing the public card
         setUserLimit: async () => {}, permissionOverwrites: { edit: async () => {} },
         createInvite: async () => ({ url: 'https://discord.gg/study' }) };
     pendingLfgDescriptions.set('cleanup-student', { selectedSubject: 'anatomy_1', description: 'Review anatomy' });
-    await lfgCapacitySelectMenu.execute({
+    await lfgCapacitySelectMenu.execute({ ...lfgContext(),
         customId: 'lfg_capacity:cleanup-student', values: ['4'],
         user: { id: 'cleanup-student', tag: 'Student', displayAvatarURL: () => 'https://cdn.discordapp.com/embed/avatars/0.png' },
         member: { displayName: 'Student', voice: { channel: room } },

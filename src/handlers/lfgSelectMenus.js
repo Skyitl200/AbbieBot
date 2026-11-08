@@ -1,3 +1,4 @@
+import { requireLfgChannel } from '../services/lfg/channelAccess.js';
 import {
     ActionRowBuilder,
     ModalBuilder,
@@ -52,6 +53,8 @@ export const lfgSubjectSelectMenu = {
     async execute(interaction) {
 
         try {
+
+            if (!await requireLfgChannel(interaction)) return;
 
 const selectedSubject =
     interaction.values[0];
@@ -212,6 +215,8 @@ export const lfgProgramSelectMenu = {
 
         try {
 
+            if (!await requireLfgChannel(interaction)) return;
+
             /*
              * Custom ID:
              *
@@ -331,6 +336,8 @@ export const lfgCapacitySelectMenu = {
     async execute(interaction) {
 
         try {
+
+            if (!await requireLfgChannel(interaction)) return;
 
             /*
              * Custom ID:
