@@ -504,3 +504,9 @@ System from `dkodkodok.jpg.zip`. The fauces card uses the opening line from
 the supplied Quizlet reference. Both modes accept short anatomical aliases
 while keeping the two pharyngeal regions and the hard/soft palate distinct.
 Rebuild with `python scripts/renderRespiratoryPointers.py upper-gi.json`.
+
+**3D Model of the Digestive System** adds 25 location-identification cards in
+Digestive System from `qwwwwww.jpg.zip`. Brackets distinguish large- and
+small-intestine regions. Rectum, anal canal and anus have separate targets,
+and both answer modes support short anatomical aliases.
+Rebuild with `python scripts/renderRespiratoryPointers.py digestive-system.json`.

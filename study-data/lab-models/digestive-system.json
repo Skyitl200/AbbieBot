@@ -1,0 +1,2079 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Digestive System",
+  "modelGroup": "3D Model of the Digestive System",
+  "source": "Exact original qwwwwww.jpg.zip photograph; cyan annotation overlays only.",
+  "sourceImageFile": "digestive-system-original.png",
+  "sourceImageSha256": "9c105809184b53d618c74af45db4a4e89ff8edb9a16eb412c52b229c63038566",
+  "originalUploadFile": "digestive-system-original.jpg",
+  "originalUploadSha256": "177b29938676fb386e7cc3fab98a969d0263457e6a338330bb915449d853710e",
+  "models": [
+    {
+      "id": "digestive-01",
+      "name": "Duodenum",
+      "questions": [
+        {
+          "id": "lab-digestive-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Duodenum",
+            "Jejunum",
+            "Ileum",
+            "Stomach"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Duodenum.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "duodenum"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          70,
+          444
+        ],
+        "tip": [
+          195,
+          411
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            195,
+            411
+          ],
+          [
+            180,
+            423
+          ],
+          [
+            179,
+            418
+          ],
+          [
+            71,
+            447
+          ],
+          [
+            69,
+            441
+          ],
+          [
+            178,
+            412
+          ],
+          [
+            177,
+            408
+          ]
+        ]
+      },
+      "imageSha256": "3c750a76e8e9b36ffe538d7a9030cdc58a109c4d7865a72e45c0bf2427c0d4c0"
+    },
+    {
+      "id": "digestive-02",
+      "name": "Esophagus",
+      "questions": [
+        {
+          "id": "lab-digestive-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Esophagus",
+            "Stomach",
+            "Duodenum",
+            "Transverse colon"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Esophagus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "esophagus",
+            "oesophagus"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          429,
+          77
+        ],
+        "tip": [
+          288,
+          97
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            288,
+            97
+          ],
+          [
+            304,
+            87
+          ],
+          [
+            304,
+            92
+          ],
+          [
+            429,
+            74
+          ],
+          [
+            429,
+            80
+          ],
+          [
+            305,
+            98
+          ],
+          [
+            306,
+            102
+          ]
+        ]
+      },
+      "imageSha256": "daba5a391e08551f0c6e74f3e52ddaec9d20f4114a904c0c064178209b4cb688"
+    },
+    {
+      "id": "digestive-03",
+      "name": "Liver",
+      "questions": [
+        {
+          "id": "lab-digestive-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Liver",
+            "Spleen",
+            "Pancreas",
+            "Gallbladder"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Liver.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "liver"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          32,
+          153
+        ],
+        "tip": [
+          156,
+          236
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            156,
+            236
+          ],
+          [
+            138,
+            233
+          ],
+          [
+            140,
+            229
+          ],
+          [
+            30,
+            155
+          ],
+          [
+            34,
+            151
+          ],
+          [
+            144,
+            224
+          ],
+          [
+            146,
+            220
+          ]
+        ]
+      },
+      "imageSha256": "4a6aa12a06c3fa1669caf4d0fa5d0bc39ddc119373bea3830da5cc82e6cf1570"
+    },
+    {
+      "id": "digestive-04",
+      "name": "Gallbladder",
+      "questions": [
+        {
+          "id": "lab-digestive-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Gallbladder",
+            "Liver",
+            "Pancreas",
+            "Spleen"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Gallbladder.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "gallbladder",
+            "gall bladder"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          28,
+          321
+        ],
+        "tip": [
+          87,
+          268
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            87,
+            268
+          ],
+          [
+            79,
+            285
+          ],
+          [
+            76,
+            282
+          ],
+          [
+            30,
+            323
+          ],
+          [
+            26,
+            319
+          ],
+          [
+            72,
+            277
+          ],
+          [
+            69,
+            274
+          ]
+        ]
+      },
+      "imageSha256": "7616d2706dea04e3a4db7daadcce3637cf123e2094e2c92c6aa60f53b983e335"
+    },
+    {
+      "id": "digestive-05",
+      "name": "Spleen",
+      "questions": [
+        {
+          "id": "lab-digestive-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Spleen",
+            "Liver",
+            "Pancreas",
+            "Stomach"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Spleen.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "spleen"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          521,
+          302
+        ],
+        "tip": [
+          482,
+          370
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            482,
+            370
+          ],
+          [
+            484,
+            352
+          ],
+          [
+            488,
+            354
+          ],
+          [
+            518,
+            301
+          ],
+          [
+            524,
+            303
+          ],
+          [
+            493,
+            357
+          ],
+          [
+            497,
+            359
+          ]
+        ]
+      },
+      "imageSha256": "d1d520894ab84241e332ddac7cb6e4fb591fe524101098d9ce996a2571fa4f1e"
+    },
+    {
+      "id": "digestive-06",
+      "name": "Pancreas",
+      "questions": [
+        {
+          "id": "lab-digestive-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Pancreas",
+            "Spleen",
+            "Gallbladder",
+            "Liver"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Pancreas.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "pancreas"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          373,
+          539
+        ],
+        "tip": [
+          311,
+          423
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            311,
+            423
+          ],
+          [
+            326,
+            434
+          ],
+          [
+            322,
+            437
+          ],
+          [
+            376,
+            538
+          ],
+          [
+            370,
+            540
+          ],
+          [
+            316,
+            439
+          ],
+          [
+            312,
+            442
+          ]
+        ]
+      },
+      "imageSha256": "e55a1c5543bc64df6d432f6dfda7e0bc0b1bb387e6a47036fe9d3dddb87c4623"
+    },
+    {
+      "id": "digestive-07",
+      "name": "Transverse colon",
+      "questions": [
+        {
+          "id": "lab-digestive-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Transverse colon",
+            "Ascending colon",
+            "Descending colon",
+            "Sigmoid colon"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Transverse colon.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "transverse colon"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          279,
+          550
+        ],
+        "tip": [
+          356,
+          466
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            356,
+            466
+          ],
+          [
+            350,
+            484
+          ],
+          [
+            347,
+            481
+          ],
+          [
+            281,
+            552
+          ],
+          [
+            277,
+            548
+          ],
+          [
+            342,
+            477
+          ],
+          [
+            339,
+            473
+          ]
+        ]
+      },
+      "imageSha256": "eb995513fa1acc808eb9b0028ff5a1d5a065b3c8ce0dee842ba651a0e1cc4c0a"
+    },
+    {
+      "id": "digestive-08",
+      "name": "Descending colon",
+      "questions": [
+        {
+          "id": "lab-digestive-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Descending colon",
+            "Ascending colon",
+            "Transverse colon",
+            "Sigmoid colon"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Descending colon.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "descending colon"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          406,
+          553
+        ],
+        "tip": [
+          510,
+          605
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            510,
+            605
+          ],
+          [
+            491,
+            604
+          ],
+          [
+            493,
+            600
+          ],
+          [
+            405,
+            556
+          ],
+          [
+            407,
+            550
+          ],
+          [
+            496,
+            595
+          ],
+          [
+            498,
+            591
+          ]
+        ]
+      },
+      "imageSha256": "0d08f6bd7c08c7eb4d269ce5064702607c73f37cefdd26848ff3e7c0f731bbf9"
+    },
+    {
+      "id": "digestive-09",
+      "name": "Ascending colon",
+      "questions": [
+        {
+          "id": "lab-digestive-09",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Ascending colon",
+            "Descending colon",
+            "Transverse colon",
+            "Sigmoid colon"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Ascending colon.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "ascending colon"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          31,
+          536
+        ],
+        "tip": [
+          143,
+          575
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            143,
+            575
+          ],
+          [
+            124,
+            576
+          ],
+          [
+            126,
+            572
+          ],
+          [
+            30,
+            539
+          ],
+          [
+            32,
+            533
+          ],
+          [
+            128,
+            567
+          ],
+          [
+            129,
+            562
+          ]
+        ]
+      },
+      "imageSha256": "4328f4a808b434e31c5a9f0e446466393ffba415ea87d2f8287f3a98b3eddd60"
+    },
+    {
+      "id": "digestive-10",
+      "name": "Appendix",
+      "questions": [
+        {
+          "id": "lab-digestive-10",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Appendix",
+            "Ileum",
+            "Sigmoid colon",
+            "Anal canal"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Appendix.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "appendix",
+            "vermiform appendix"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-10.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          39,
+          878
+        ],
+        "tip": [
+          179,
+          810
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            179,
+            810
+          ],
+          [
+            167,
+            824
+          ],
+          [
+            165,
+            820
+          ],
+          [
+            40,
+            881
+          ],
+          [
+            38,
+            875
+          ],
+          [
+            162,
+            815
+          ],
+          [
+            160,
+            811
+          ]
+        ]
+      },
+      "imageSha256": "33c361748d92b5f2724de014abc97f187e4dcebaa505183216c03887a96b7b94"
+    },
+    {
+      "id": "digestive-11",
+      "name": "Anus",
+      "questions": [
+        {
+          "id": "lab-digestive-11",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Anus",
+            "Anal canal",
+            "Rectum",
+            "Appendix"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Anus.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "anus",
+            "anal opening",
+            "external anal opening"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-11.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          217,
+          1000
+        ],
+        "tip": [
+          342,
+          989
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            342,
+            989
+          ],
+          [
+            326,
+            998
+          ],
+          [
+            325,
+            993
+          ],
+          [
+            217,
+            1003
+          ],
+          [
+            217,
+            997
+          ],
+          [
+            325,
+            988
+          ],
+          [
+            324,
+            983
+          ]
+        ]
+      },
+      "imageSha256": "c20473051a6572351c87d83ecde8d4fd932d6cb327333fed522901cdd991cf78"
+    },
+    {
+      "id": "digestive-12",
+      "name": "Rectum",
+      "questions": [
+        {
+          "id": "lab-digestive-12",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Rectum",
+            "Anal canal",
+            "Anus",
+            "Sigmoid colon"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Rectum.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "rectum"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-12.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          470,
+          819
+        ],
+        "tip": [
+          333,
+          804
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            333,
+            804
+          ],
+          [
+            351,
+            798
+          ],
+          [
+            350,
+            803
+          ],
+          [
+            470,
+            816
+          ],
+          [
+            470,
+            822
+          ],
+          [
+            350,
+            809
+          ],
+          [
+            349,
+            813
+          ]
+        ]
+      },
+      "imageSha256": "eaa3035e898a3695b600d25d109f7083318bbff62c910577f2cdb84e1de1687c"
+    },
+    {
+      "id": "digestive-13",
+      "name": "Jejunum",
+      "questions": [
+        {
+          "id": "lab-digestive-13",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Jejunum",
+            "Ileum",
+            "Duodenum",
+            "Transverse colon"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Jejunum.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "jejunum"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-13.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          519,
+          535
+        ],
+        "tip": [
+          437,
+          547
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            437,
+            547
+          ],
+          [
+            453,
+            537
+          ],
+          [
+            453,
+            542
+          ],
+          [
+            519,
+            532
+          ],
+          [
+            519,
+            538
+          ],
+          [
+            454,
+            548
+          ],
+          [
+            455,
+            552
+          ]
+        ]
+      },
+      "imageSha256": "9c566c23ddb6980269511d4e15eb2c619d1e0f90feab3cf717e2f84feaf8fa39"
+    },
+    {
+      "id": "digestive-14",
+      "name": "Ileum",
+      "questions": [
+        {
+          "id": "lab-digestive-14",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Ileum",
+            "Jejunum",
+            "Duodenum",
+            "Sigmoid colon"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Ileum.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "ileum"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-14.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          353,
+          622
+        ],
+        "tip": [
+          280,
+          745
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            280,
+            745
+          ],
+          [
+            282,
+            727
+          ],
+          [
+            286,
+            729
+          ],
+          [
+            350,
+            620
+          ],
+          [
+            356,
+            624
+          ],
+          [
+            291,
+            732
+          ],
+          [
+            295,
+            734
+          ]
+        ]
+      },
+      "imageSha256": "378c0dadf83368bfda3afbbc00b294d8cf9e486a645c89a7e3920b8162e017a2"
+    },
+    {
+      "id": "digestive-15",
+      "name": "Large intestine",
+      "questions": [
+        {
+          "id": "lab-digestive-15",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What intestinal region do the bracketed sections belong to?",
+          "options": [
+            "Large intestine",
+            "Small intestine",
+            "Stomach",
+            "Esophagus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Large intestine.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "large intestine",
+            "large bowel",
+            "colon"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-15.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 5,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              133,
+              531
+            ],
+            [
+              117,
+              531
+            ],
+            [
+              117,
+              613
+            ],
+            [
+              133,
+              613
+            ]
+          ],
+          [
+            [
+              512,
+              541
+            ],
+            [
+              527,
+              541
+            ],
+            [
+              527,
+              671
+            ],
+            [
+              512,
+              671
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              133,
+              528
+            ],
+            [
+              117,
+              528
+            ],
+            [
+              117,
+              534
+            ],
+            [
+              133,
+              534
+            ]
+          ],
+          [
+            [
+              114,
+              531
+            ],
+            [
+              114,
+              613
+            ],
+            [
+              120,
+              613
+            ],
+            [
+              120,
+              531
+            ]
+          ],
+          [
+            [
+              117,
+              616
+            ],
+            [
+              133,
+              616
+            ],
+            [
+              133,
+              610
+            ],
+            [
+              117,
+              610
+            ]
+          ],
+          [
+            [
+              512,
+              544
+            ],
+            [
+              527,
+              544
+            ],
+            [
+              527,
+              538
+            ],
+            [
+              512,
+              538
+            ]
+          ],
+          [
+            [
+              524,
+              541
+            ],
+            [
+              524,
+              671
+            ],
+            [
+              530,
+              671
+            ],
+            [
+              530,
+              541
+            ]
+          ],
+          [
+            [
+              527,
+              668
+            ],
+            [
+              512,
+              668
+            ],
+            [
+              512,
+              674
+            ],
+            [
+              527,
+              674
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "81c7609ebfd3f3a8995f6958bdf6319cf5e72d89703bea401093b5a3102760a3"
+    },
+    {
+      "id": "digestive-16",
+      "name": "Small intestine",
+      "questions": [
+        {
+          "id": "lab-digestive-16",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What intestinal region is marked by the brackets?",
+          "options": [
+            "Small intestine",
+            "Large intestine",
+            "Stomach",
+            "Esophagus"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Small intestine.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "small intestine",
+            "small bowel",
+            "small intestines"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-16.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 5,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              204,
+              546
+            ],
+            [
+              188,
+              546
+            ],
+            [
+              188,
+              654
+            ],
+            [
+              204,
+              654
+            ]
+          ],
+          [
+            [
+              469,
+              550
+            ],
+            [
+              486,
+              550
+            ],
+            [
+              486,
+              708
+            ],
+            [
+              469,
+              708
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              204,
+              542
+            ],
+            [
+              188,
+              542
+            ],
+            [
+              188,
+              550
+            ],
+            [
+              204,
+              550
+            ]
+          ],
+          [
+            [
+              184,
+              546
+            ],
+            [
+              184,
+              654
+            ],
+            [
+              192,
+              654
+            ],
+            [
+              192,
+              546
+            ]
+          ],
+          [
+            [
+              188,
+              658
+            ],
+            [
+              204,
+              658
+            ],
+            [
+              204,
+              650
+            ],
+            [
+              188,
+              650
+            ]
+          ],
+          [
+            [
+              469,
+              554
+            ],
+            [
+              486,
+              554
+            ],
+            [
+              486,
+              546
+            ],
+            [
+              469,
+              546
+            ]
+          ],
+          [
+            [
+              482,
+              550
+            ],
+            [
+              482,
+              708
+            ],
+            [
+              490,
+              708
+            ],
+            [
+              490,
+              550
+            ]
+          ],
+          [
+            [
+              486,
+              704
+            ],
+            [
+              469,
+              704
+            ],
+            [
+              469,
+              712
+            ],
+            [
+              486,
+              712
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "d3458f2e36ea09038cfbe14504746f353b2651e89133b2b284ddecbb355b71a7"
+    },
+    {
+      "id": "digestive-17",
+      "name": "Sigmoid colon",
+      "questions": [
+        {
+          "id": "lab-digestive-17",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Sigmoid colon",
+            "Descending colon",
+            "Ascending colon",
+            "Rectum"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Sigmoid colon.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "sigmoid colon",
+            "sigmoid"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-17.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          493,
+          846
+        ],
+        "tip": [
+          420,
+          773
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            420,
+            773
+          ],
+          [
+            437,
+            780
+          ],
+          [
+            434,
+            783
+          ],
+          [
+            495,
+            844
+          ],
+          [
+            491,
+            848
+          ],
+          [
+            430,
+            787
+          ],
+          [
+            427,
+            790
+          ]
+        ]
+      },
+      "imageSha256": "2663dfcc1c9c32e02721dc5dbe99439684a403133b3d929a0f34b942c7cd9ca9"
+    },
+    {
+      "id": "digestive-18",
+      "name": "Taenia coli",
+      "questions": [
+        {
+          "id": "lab-digestive-18",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What longitudinal muscle band is indicated by the arrow?",
+          "options": [
+            "Taenia coli",
+            "Haustra",
+            "Transverse colon",
+            "Small intestine"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Taenia coli.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "taenia coli",
+            "taeniae coli",
+            "tenia coli",
+            "teniae coli"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-18.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          397,
+          561
+        ],
+        "tip": [
+          299,
+          492
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            299,
+            492
+          ],
+          [
+            317,
+            496
+          ],
+          [
+            315,
+            499
+          ],
+          [
+            399,
+            559
+          ],
+          [
+            395,
+            563
+          ],
+          [
+            311,
+            504
+          ],
+          [
+            309,
+            508
+          ]
+        ]
+      },
+      "imageSha256": "73c42286e4b213d3f6193d0c4fa54e0ae5a6345bd42933894c5bd2cbbd8fddae"
+    },
+    {
+      "id": "digestive-19",
+      "name": "Splenic flexure",
+      "questions": [
+        {
+          "id": "lab-digestive-19",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Splenic flexure",
+            "Hepatic flexure",
+            "Sigmoid colon",
+            "Ileocecal valve"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Splenic flexure.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "splenic flexure",
+            "left colic flexure"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-19.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          519,
+          475
+        ],
+        "tip": [
+          480,
+          438
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            480,
+            438
+          ],
+          [
+            497,
+            444
+          ],
+          [
+            494,
+            448
+          ],
+          [
+            521,
+            473
+          ],
+          [
+            517,
+            477
+          ],
+          [
+            490,
+            452
+          ],
+          [
+            487,
+            455
+          ]
+        ]
+      },
+      "imageSha256": "8f03506543d1d976c92914af222dfd3d67ae514bfc26b3afdbd1c35331c761ed"
+    },
+    {
+      "id": "digestive-20",
+      "name": "Hepatic flexure",
+      "questions": [
+        {
+          "id": "lab-digestive-20",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Hepatic flexure",
+            "Splenic flexure",
+            "Sigmoid colon",
+            "Ileocecal valve"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Hepatic flexure.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "hepatic flexure",
+            "right colic flexure"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-20.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          66,
+          447
+        ],
+        "tip": [
+          174,
+          504
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            174,
+            504
+          ],
+          [
+            155,
+            503
+          ],
+          [
+            158,
+            499
+          ],
+          [
+            65,
+            450
+          ],
+          [
+            67,
+            444
+          ],
+          [
+            160,
+            493
+          ],
+          [
+            162,
+            489
+          ]
+        ]
+      },
+      "imageSha256": "3553b65f97bf925271cad8edc353714ce50e26d80462f8a97ae16860441ca119"
+    },
+    {
+      "id": "digestive-21",
+      "name": "Ileocecal valve",
+      "questions": [
+        {
+          "id": "lab-digestive-21",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Ileocecal valve",
+            "Lower esophageal sphincter",
+            "Appendix",
+            "Anal canal"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Ileocecal valve.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "ileocecal valve",
+            "ileocaecal valve",
+            "ileocecal sphincter"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-21.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          45,
+          617
+        ],
+        "tip": [
+          181,
+          733
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            181,
+            733
+          ],
+          [
+            163,
+            728
+          ],
+          [
+            166,
+            724
+          ],
+          [
+            43,
+            619
+          ],
+          [
+            47,
+            615
+          ],
+          [
+            170,
+            720
+          ],
+          [
+            173,
+            716
+          ]
+        ]
+      },
+      "imageSha256": "a99ef5e9bc0f2d9cf5aac54887303110eb8097275f6538796d8d8fc1990eed12"
+    },
+    {
+      "id": "digestive-22",
+      "name": "Anal canal",
+      "questions": [
+        {
+          "id": "lab-digestive-22",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Anal canal",
+            "Rectum",
+            "Anus",
+            "Sigmoid colon"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Anal canal.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "anal canal"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-22.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          474,
+          923
+        ],
+        "tip": [
+          342,
+          925
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            342,
+            925
+          ],
+          [
+            359,
+            917
+          ],
+          [
+            359,
+            922
+          ],
+          [
+            474,
+            920
+          ],
+          [
+            474,
+            926
+          ],
+          [
+            359,
+            928
+          ],
+          [
+            359,
+            932
+          ]
+        ]
+      },
+      "imageSha256": "609ee9f5be194761f75e69d418435680f85b63c2826cd9d7285ea26218782cec"
+    },
+    {
+      "id": "digestive-23",
+      "name": "Haustra",
+      "questions": [
+        {
+          "id": "lab-digestive-23",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What pouches are represented by the one indicated?",
+          "options": [
+            "Haustra",
+            "Taenia coli",
+            "Small intestine",
+            "Appendix"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Haustra.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "haustra",
+            "haustrum",
+            "haustral pouches",
+            "haustral pouch"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-23.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          512,
+          551
+        ],
+        "tip": [
+          350,
+          505
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            350,
+            505
+          ],
+          [
+            368,
+            502
+          ],
+          [
+            367,
+            507
+          ],
+          [
+            513,
+            548
+          ],
+          [
+            511,
+            554
+          ],
+          [
+            366,
+            513
+          ],
+          [
+            364,
+            517
+          ]
+        ]
+      },
+      "imageSha256": "59722100612e081c59d8a7bbb5c3b3041e83878f810aafa0aaec3beb26834fc6"
+    },
+    {
+      "id": "digestive-24",
+      "name": "Stomach",
+      "questions": [
+        {
+          "id": "lab-digestive-24",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What structure is indicated by the arrow?",
+          "options": [
+            "Stomach",
+            "Duodenum",
+            "Liver",
+            "Pancreas"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Stomach.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "stomach"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-24.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          521,
+          203
+        ],
+        "tip": [
+          420,
+          280
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            420,
+            280
+          ],
+          [
+            429,
+            264
+          ],
+          [
+            432,
+            267
+          ],
+          [
+            519,
+            201
+          ],
+          [
+            523,
+            205
+          ],
+          [
+            435,
+            272
+          ],
+          [
+            438,
+            276
+          ]
+        ]
+      },
+      "imageSha256": "5835e2cf8a539637f28a1dc97f2121a8b2e8eeefd66f56cf56e65f11015790c7"
+    },
+    {
+      "id": "digestive-25",
+      "name": "Lower esophageal sphincter",
+      "questions": [
+        {
+          "id": "lab-digestive-25",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What sphincter is located at the indicated junction?",
+          "options": [
+            "Lower esophageal sphincter",
+            "Ileocecal valve",
+            "Duodenum",
+            "Stomach"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Lower esophageal sphincter - at the esophagus\u2013stomach junction.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "lower esophageal sphincter",
+            "lower oesophageal sphincter",
+            "LES",
+            "cardiac sphincter",
+            "gastroesophageal sphincter"
+          ]
+        }
+      ],
+      "expectedImageFile": "digestive-system/dg-25.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          188,
+          117
+        ],
+        "tip": [
+          337,
+          198
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            337,
+            198
+          ],
+          [
+            318,
+            196
+          ],
+          [
+            321,
+            193
+          ],
+          [
+            187,
+            120
+          ],
+          [
+            189,
+            114
+          ],
+          [
+            323,
+            187
+          ],
+          [
+            326,
+            183
+          ]
+        ]
+      },
+      "imageSha256": "08eab4dc27aca19a98159d12ad13079a8c7be26c670d56dc87ffef0c6a5dac56"
+    }
+  ]
+}
