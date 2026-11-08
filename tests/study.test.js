@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532]]) {
+for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1672,6 +1672,33 @@ test('full digestive model provides all 25 location-only cards in both modes and
         }
         if (mode==='typed') {
             for (const [name,alias,wrong] of [['Rectum','rectum','anal canal'],['Anal canal','anal canal','anus'],['Anus','anal opening','rectum'],['Jejunum','jejunum','ileum'],['Splenic flexure','left colic flexure','hepatic flexure'],['Hepatic flexure','right colic flexure','splenic flexure'],['Taenia coli','taeniae coli','haustra'],['Large intestine','large bowel','small intestine'],['Ileocecal valve','ileocaecal valve','appendix']]) {
+                const q=qs.find(q=>q.modelName===name);
+                assert.ok(matchesLabAnswer(alias,q.answers,q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong,q.answers,q.competingAnswers));
+            }
+        }
+    }
+});
+
+
+test('stomach layers offers ten identification-only cards with separate muscle layers, pits and glands', async () => {
+    const { labQuestions, labModelImage, labModelsMessage, labModeMessage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u','digestive').components[0].toJSON().components[0].options.some(o=>o.value==='stomach-layers' && o.label==='3D Model of Stomach Layers'));
+    assert.equal(labModeMessage('u','stomach-layers').components[1].toJSON().components[0].custom_id,'study:labcategory:u:digestive');
+    for (const mode of ['multiple_choice','typed']) {
+        const qs=labQuestions('stomach-layers',mode);
+        assert.equal(qs.length,10);
+        assert.equal(new Set(qs.map(q=>q.labModelId)).size,10);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode==='multiple_choice') {
+                assert.equal(q.options.length,4);
+                assert.equal(q.options[q.correct[0]],q.modelName);
+            } else assert.ok(matchesLabAnswer(q.modelName,q.answers,q.competingAnswers));
+        }
+        if (mode==='typed') {
+            for (const [name,alias,wrong] of [['Muscularis mucosa','muscularis mucosae','muscularis externa'],['Mucosa','gastric mucosa','submucosa'],['Gastric pits','gastric pit','gastric glands'],['Gastric glands','fundic glands','gastric pits'],['Oblique muscularis','inner oblique layer','circular muscularis'],['Circular muscularis','circular muscle layer','longitudinal muscularis'],['Serosa','visceral peritoneum','submucosa']]) {
                 const q=qs.find(q=>q.modelName===name);
                 assert.ok(matchesLabAnswer(alias,q.answers,q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong,q.answers,q.competingAnswers));

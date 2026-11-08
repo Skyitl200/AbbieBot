@@ -1,0 +1,875 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Digestive System",
+  "modelGroup": "3D Model of Stomach Layers",
+  "source": "Exact original jojojo.jpg.zip photograph; cyan annotation overlays only.",
+  "sourceImageFile": "stomach-layers-original.png",
+  "sourceImageSha256": "c651ee9b35dcf824ed3af342f2713085123293f89c8eea120ebc4dfed8bd143e",
+  "originalUploadFile": "stomach-layers-original.jpg",
+  "originalUploadSha256": "5889adff33504dfdb13933a957a8eb151d62e77617f44def251c7979c63fbdc8",
+  "models": [
+    {
+      "id": "stomachlayers-01",
+      "name": "Mucosa",
+      "questions": [
+        {
+          "id": "lab-stomachlayers-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What wall layer is marked by the bracket?",
+          "options": [
+            "Mucosa",
+            "Submucosa",
+            "Muscularis externa",
+            "Serosa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Mucosa.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "mucosa",
+            "gastric mucosa",
+            "mucosal layer"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach-layers/sl-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 5,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              141,
+              54
+            ],
+            [
+              124,
+              54
+            ],
+            [
+              124,
+              389
+            ],
+            [
+              141,
+              389
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              141,
+              50
+            ],
+            [
+              124,
+              50
+            ],
+            [
+              124,
+              58
+            ],
+            [
+              141,
+              58
+            ]
+          ],
+          [
+            [
+              120,
+              54
+            ],
+            [
+              120,
+              389
+            ],
+            [
+              128,
+              389
+            ],
+            [
+              128,
+              54
+            ]
+          ],
+          [
+            [
+              124,
+              392
+            ],
+            [
+              141,
+              392
+            ],
+            [
+              141,
+              386
+            ],
+            [
+              124,
+              386
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "5fba60bc1ac82faf656243cdf507e1840553a2b30e28e1293893e7ed7b35b8ff"
+    },
+    {
+      "id": "stomachlayers-02",
+      "name": "Submucosa",
+      "questions": [
+        {
+          "id": "lab-stomachlayers-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What layer is indicated by the arrow?",
+          "options": [
+            "Submucosa",
+            "Mucosa",
+            "Muscularis externa",
+            "Serosa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Submucosa.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "submucosa",
+            "submucosal layer"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach-layers/sl-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          63,
+          430
+        ],
+        "tip": [
+          314,
+          454
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            314,
+            454
+          ],
+          [
+            296,
+            460
+          ],
+          [
+            297,
+            455
+          ],
+          [
+            63,
+            433
+          ],
+          [
+            63,
+            427
+          ],
+          [
+            297,
+            449
+          ],
+          [
+            298,
+            445
+          ]
+        ]
+      },
+      "imageSha256": "a7128fd27c849ffda5d836f47661ef6b283ae63012f203f41f32d43e8cd031ea"
+    },
+    {
+      "id": "stomachlayers-03",
+      "name": "Muscularis externa",
+      "questions": [
+        {
+          "id": "lab-stomachlayers-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What muscle layer group is marked by the bracket?",
+          "options": [
+            "Muscularis externa",
+            "Muscularis mucosa",
+            "Submucosa",
+            "Serosa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Muscularis externa.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "muscularis externa",
+            "muscularis propria",
+            "external muscular layer"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach-layers/sl-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 5,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              650,
+              526
+            ],
+            [
+              680,
+              526
+            ],
+            [
+              680,
+              825
+            ],
+            [
+              650,
+              825
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              650,
+              530
+            ],
+            [
+              680,
+              530
+            ],
+            [
+              680,
+              522
+            ],
+            [
+              650,
+              522
+            ]
+          ],
+          [
+            [
+              676,
+              526
+            ],
+            [
+              676,
+              825
+            ],
+            [
+              684,
+              825
+            ],
+            [
+              684,
+              526
+            ]
+          ],
+          [
+            [
+              680,
+              822
+            ],
+            [
+              650,
+              822
+            ],
+            [
+              650,
+              828
+            ],
+            [
+              680,
+              828
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "f414fc9345bf07b52179cede03aa860fe5901840110e5a4e48fd374c37e85b23"
+    },
+    {
+      "id": "stomachlayers-04",
+      "name": "Serosa",
+      "questions": [
+        {
+          "id": "lab-stomachlayers-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What layer is indicated by the arrow?",
+          "options": [
+            "Serosa",
+            "Submucosa",
+            "Mucosa",
+            "Muscularis externa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Serosa.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "serosa",
+            "visceral peritoneum",
+            "serosal layer"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach-layers/sl-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          714,
+          941
+        ],
+        "tip": [
+          527,
+          891
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            527,
+            891
+          ],
+          [
+            545,
+            888
+          ],
+          [
+            544,
+            892
+          ],
+          [
+            715,
+            938
+          ],
+          [
+            713,
+            944
+          ],
+          [
+            543,
+            898
+          ],
+          [
+            541,
+            903
+          ]
+        ]
+      },
+      "imageSha256": "b74f0d4fb76d50f60c8595b24fadef6134434fc7cb66a804bbe98745687f979d"
+    },
+    {
+      "id": "stomachlayers-05",
+      "name": "Gastric pits",
+      "questions": [
+        {
+          "id": "lab-stomachlayers-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What surface openings are represented by the one indicated?",
+          "options": [
+            "Gastric pits",
+            "Gastric glands",
+            "Muscularis mucosa",
+            "Submucosa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Gastric pits.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "gastric pits",
+            "gastric pit",
+            "foveolae",
+            "gastric foveolae"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach-layers/sl-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          84,
+          22
+        ],
+        "tip": [
+          263,
+          86
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            263,
+            86
+          ],
+          [
+            244,
+            87
+          ],
+          [
+            246,
+            83
+          ],
+          [
+            83,
+            25
+          ],
+          [
+            85,
+            19
+          ],
+          [
+            248,
+            77
+          ],
+          [
+            250,
+            73
+          ]
+        ]
+      },
+      "imageSha256": "d3dc85b3418643dd7b878b9c2a491ea297e23067e5520124c1dca1db68b7e8f8"
+    },
+    {
+      "id": "stomachlayers-06",
+      "name": "Muscularis mucosa",
+      "questions": [
+        {
+          "id": "lab-stomachlayers-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What layer is indicated by the arrow?",
+          "options": [
+            "Muscularis mucosa",
+            "Muscularis externa",
+            "Submucosa",
+            "Mucosa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Muscularis mucosa.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "muscularis mucosa",
+            "muscularis mucosae"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach-layers/sl-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          64,
+          324
+        ],
+        "tip": [
+          274,
+          374
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            274,
+            374
+          ],
+          [
+            256,
+            377
+          ],
+          [
+            257,
+            373
+          ],
+          [
+            63,
+            327
+          ],
+          [
+            65,
+            321
+          ],
+          [
+            258,
+            367
+          ],
+          [
+            259,
+            363
+          ]
+        ]
+      },
+      "imageSha256": "1112d0f0a0f1e5725993fed245feeacf476631a755724934f9beb3ad0118bfb5"
+    },
+    {
+      "id": "stomachlayers-07",
+      "name": "Oblique muscularis",
+      "questions": [
+        {
+          "id": "lab-stomachlayers-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What layer is indicated by the arrow?",
+          "options": [
+            "Oblique muscularis",
+            "Circular muscularis",
+            "Longitudinal muscularis",
+            "Muscularis mucosa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Oblique muscularis.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "oblique muscularis",
+            "oblique muscle layer",
+            "inner oblique layer",
+            "oblique muscularis innermost layer",
+            "innermost oblique muscle layer"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach-layers/sl-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          78,
+          571
+        ],
+        "tip": [
+          273,
+          554
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            273,
+            554
+          ],
+          [
+            257,
+            563
+          ],
+          [
+            256,
+            558
+          ],
+          [
+            78,
+            574
+          ],
+          [
+            78,
+            568
+          ],
+          [
+            256,
+            552
+          ],
+          [
+            255,
+            548
+          ]
+        ]
+      },
+      "imageSha256": "594c0b8b66fe5ca0a690d2f17dedf20f1e6bfcf6aa9e2e2c7b539b67fcd01405"
+    },
+    {
+      "id": "stomachlayers-08",
+      "name": "Circular muscularis",
+      "questions": [
+        {
+          "id": "lab-stomachlayers-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What layer is indicated by the arrow?",
+          "options": [
+            "Circular muscularis",
+            "Oblique muscularis",
+            "Longitudinal muscularis",
+            "Muscularis mucosa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Circular muscularis.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "circular muscularis",
+            "circular muscle layer",
+            "middle circular layer"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach-layers/sl-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          103,
+          724
+        ],
+        "tip": [
+          333,
+          642
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            333,
+            642
+          ],
+          [
+            320,
+            655
+          ],
+          [
+            318,
+            651
+          ],
+          [
+            104,
+            727
+          ],
+          [
+            102,
+            721
+          ],
+          [
+            316,
+            645
+          ],
+          [
+            314,
+            641
+          ]
+        ]
+      },
+      "imageSha256": "96f00e9d0d101f329c9fcb80a3313c20d1a3261533f6937cdd093f93c4992e0f"
+    },
+    {
+      "id": "stomachlayers-09",
+      "name": "Gastric glands",
+      "questions": [
+        {
+          "id": "lab-stomachlayers-09",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What glands are marked by the bracket?",
+          "options": [
+            "Gastric glands",
+            "Gastric pits",
+            "Submucosa",
+            "Muscularis mucosa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Gastric glands.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "gastric glands",
+            "gastric gland",
+            "fundic glands",
+            "fundic gland"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach-layers/sl-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "regions",
+        "strokeWidth": 5,
+        "outlineWidth": 1,
+        "paths": [
+          [
+            [
+              451,
+              172
+            ],
+            [
+              474,
+              172
+            ],
+            [
+              474,
+              338
+            ],
+            [
+              451,
+              338
+            ]
+          ]
+        ],
+        "overlayPolygons": [
+          [
+            [
+              451,
+              176
+            ],
+            [
+              474,
+              176
+            ],
+            [
+              474,
+              168
+            ],
+            [
+              451,
+              168
+            ]
+          ],
+          [
+            [
+              470,
+              172
+            ],
+            [
+              470,
+              338
+            ],
+            [
+              478,
+              338
+            ],
+            [
+              478,
+              172
+            ]
+          ],
+          [
+            [
+              474,
+              334
+            ],
+            [
+              451,
+              334
+            ],
+            [
+              451,
+              342
+            ],
+            [
+              474,
+              342
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "f7762fc64f1376f9de8cb83d006f9547ec3ef395b7e5c8f57d93e25810f134a0"
+    },
+    {
+      "id": "stomachlayers-10",
+      "name": "Longitudinal muscularis",
+      "questions": [
+        {
+          "id": "lab-stomachlayers-10",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "What layer is indicated by the arrow?",
+          "options": [
+            "Longitudinal muscularis",
+            "Circular muscularis",
+            "Oblique muscularis",
+            "Muscularis mucosa"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Longitudinal muscularis.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "longitudinal muscularis",
+            "longitudinal muscle layer",
+            "outer longitudinal layer"
+          ]
+        }
+      ],
+      "expectedImageFile": "stomach-layers/sl-10.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "tail": [
+          708,
+          638
+        ],
+        "tip": [
+          574,
+          700
+        ],
+        "shaftWidth": 4,
+        "headWidth": 13,
+        "headLength": 16,
+        "outlineWidth": 1,
+        "overlayPolygon": [
+          [
+            574,
+            700
+          ],
+          [
+            586,
+            686
+          ],
+          [
+            588,
+            690
+          ],
+          [
+            707,
+            635
+          ],
+          [
+            709,
+            641
+          ],
+          [
+            591,
+            696
+          ],
+          [
+            593,
+            700
+          ]
+        ]
+      },
+      "imageSha256": "a6542fa2b1981f4378f83599955ced7b36e54026b9c40def771449ded2c87695"
+    }
+  ]
+}

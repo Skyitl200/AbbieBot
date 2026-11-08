@@ -510,3 +510,10 @@ Digestive System from `qwwwwww.jpg.zip`. Brackets distinguish large- and
 small-intestine regions. Rectum, anal canal and anus have separate targets,
 and both answer modes support short anatomical aliases.
 Rebuild with `python scripts/renderRespiratoryPointers.py digestive-system.json`.
+
+**3D Model of Stomach Layers** adds ten location-identification cards in
+Digestive System from `jojojo.jpg.zip`. Brackets mark whole wall regions, while
+separate cards identify the muscle layers, gastric pits and gastric glands.
+Both answer modes accept short anatomical names and aliases such as muscularis
+mucosae and visceral peritoneum. Rebuild with
+`python scripts/renderRespiratoryPointers.py stomach-layers.json`.
