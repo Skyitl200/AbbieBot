@@ -1319,7 +1319,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768]]) {
+for (const [manifest, count, width] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1703,6 +1703,29 @@ test('stomach layers offers ten identification-only cards with separate muscle l
                 assert.ok(matchesLabAnswer(alias,q.answers,q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong,q.answers,q.competingAnswers));
             }
+        }
+    }
+});
+
+test('teeth set offers ten image identification cards in both answer modes', async () => {
+    const { labQuestions, labModelsMessage, labModelImage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'digestive').components[0].toJSON().components[0].options.some(o => o.value === 'teeth' && o.label === '3D Model of Teeth'));
+    for (const mode of ['multiple_choice', 'typed']) {
+        const questions = labQuestions('teeth', mode);
+        assert.equal(questions.length, 10);
+        for (const q of questions) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') assert.equal(q.options[q.correct[0]], q.modelName);
+            else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            const dentin = questions.find(q => q.modelName === 'Dentin');
+            assert.ok(matchesLabAnswer('dentine', dentin.answers, dentin.competingAnswers));
+            const root = questions.find(q => q.modelName === 'Root');
+            assert.ok(!matchesLabAnswer('root canal', root.answers, root.competingAnswers));
+            const canal = questions.find(q => q.modelName === 'Root canal');
+            assert.ok(!matchesLabAnswer('pulp cavity', canal.answers, canal.competingAnswers));
         }
     }
 });
