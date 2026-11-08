@@ -7,7 +7,7 @@ const loadModels = file => JSON.parse(readFileSync(new URL(`../../../study-data/
 export const LAB_MODELS = loadModels('early-development.json');
 export const LAB_SETS = [
     { id: 'early-development', title: 'Early Development Models', category: 'reproductive', models: LAB_MODELS },
-    { id: 'stomach', groupQuestionsByModel: true, title: '3D Model of the Stomach', category: 'digestive', showStructureList: true, models: loadModels('stomach.json') },
+    { id: 'stomach', title: '3D Model of the Stomach', category: 'digestive', showStructureList: true, models: loadModels('stomach.json') },
     { id: 'larynx-posterior', showStructureList: true, title: '3D Model of Larynx Posterior view', category: 'respiratory', models: loadModels('larynx-posterior.json') },
     { id: 'upper-respiratory', title: 'Upper Respiratory 3D Model', category: 'respiratory', models: loadModels('upper-respiratory.json') },
     { id: 'lungs-larynx', title: 'Lungs and Larynx 3D Model', category: 'respiratory', models: loadModels('lungs-larynx.json') },
@@ -62,7 +62,7 @@ export function labModelsMessage(owner, categoryId = 'reproductive') {
 export function labModeMessage(owner, selection) {
     const models = selectedLabModels(selection);
     const set = labSetForSelection(selection);
-    return { content: '', embeds: [new EmbedBuilder({ title: 'Choose your answer mode', description: `${set.title} — all ${models.length} photos studied together. ${models.reduce((total, model) => total + model.questions.filter(q => q.requiresModelImage).length, 0)} questions. Choose how you want to answer.${set.showStructureList ? `\n\nIncluded structures: ${models.map(model => model.name).join(', ')}.` : ''}` })], components: [
+    return { content: '', embeds: [new EmbedBuilder({ title: 'Choose your answer mode', description: `${set.title} — all ${models.length} photos studied together. Choose how you want to answer.${set.showStructureList ? `\n\nIncluded structures: ${models.map(model => model.name).join(', ')}.` : ''}` })], components: [
         row(new StringSelectMenuBuilder().setCustomId(`study:labmode:${owner}:${selection}`).setPlaceholder('Multiple choice or type in').addOptions(
             { label: 'Multiple choice', value: 'multiple_choice', description: 'Answer using A, B, C, or D' },
             { label: 'Type in answer', value: 'typed', description: 'Type a short answer; synonyms and minor typos accepted' })),
@@ -72,15 +72,12 @@ export function labModeMessage(owner, selection) {
 export function labQuestions(selection, mode) {
     if (!['multiple_choice', 'typed'].includes(mode)) throw new Error('Unknown answer mode');
     const models = selectedLabModels(selection);
-    const grouped = labSetForSelection(selection).groupQuestionsByModel;
-    const orderedModels = grouped ? shuffle([...models]) : models;
-    const questions = orderedModels.flatMap(model => model.questions
+    return shuffle(models.flatMap(model => model.questions
         .filter(question => question.requiresModelImage)
         .map(question => {
             const base = { ...question, labModelId: model.id, modelName: model.name };
             if (mode === 'multiple_choice') return base;
             const { options, correct, ...typed } = base;
-            return { ...typed, type: 'fill_blank', question: question.typedQuestion || question.question, answers: [...new Set(question.typedAnswers)], competingAnswers: question.labQuestionRole === 'followup' ? options.filter((_, index) => !correct.includes(index)) : models.filter(other => other.id !== model.id && other.name !== model.name).flatMap(other => other.questions.filter(q => q.labQuestionRole !== 'followup').flatMap(q => q.typedAnswers)) };
-        }));
-    return grouped ? questions : shuffle(questions);
+            return { ...typed, type: 'fill_blank', question: question.typedQuestion || question.question, answers: [...new Set(question.typedAnswers)], competingAnswers: models.filter(other => other.id !== model.id && other.name !== model.name).flatMap(other => other.questions.flatMap(q => q.typedAnswers)) };
+        })));
 }

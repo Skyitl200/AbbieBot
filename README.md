@@ -498,8 +498,3 @@ cards from `293023.jpg.zip`. Cyan paths mark both curvatures; the lower
 esophageal sphincter question identifies its location at the gastroesophageal
 junction. Both answer modes accept short names and common aliases.
 Rebuild with `python scripts/renderRespiratoryPointers.py stomach.json`.
-
-Each stomach photo now has two questions: structure identification followed by
-a short function or location check. The set contains 24 questions across 12
-images; image groups shuffle while each pair stays together. Both modes remain
-available, with short typed answers and the same Merit Coin rewards.
