@@ -718,7 +718,7 @@ test('test replaces quiz within the 100-command limit and all interaction routes
 test('default /test opens all lecture, lab, TEAS and nursing classes with emojis', async () => {
     const { default: command } = await import('../src/commands/Community/test.js');
     const calls = [];
-    await command.execute({ user: { id: 'u' }, options: { getBoolean: () => false }, async deferReply() {}, async editReply(payload) { calls.push(payload); } });
+    await command.execute({ guildId: 'g', member: { roles: [process.env.SUBSCRIBER_ROLE_ID || '1552123365760831488'] }, user: { id: 'u' }, options: { getBoolean: () => false }, async deferReply() {}, async editReply(payload) { calls.push(payload); } });
     const menu = calls[0].components[0].toJSON().components[0];
     assert.equal(menu.custom_id, 'study:class:u');
     assert.deepEqual(menu.options.map(option => option.label), STUDY_CLASSES.map(course => course.label));
