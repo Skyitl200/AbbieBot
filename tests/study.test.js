@@ -1057,7 +1057,8 @@ test('Anatomy Lab opens category → grouped model set → answer mode without a
     const models = fakeInteraction('', { values: ['reproductive'] });
     await handleStudyInteraction(models, {}, ['labcategory', 'u']);
     const picker = models.calls.at(-1)[1].components[0].toJSON().components[0];
-    assert.equal(picker.options.length, 1);
+    assert.equal(picker.options.length, 2);
+    assert.ok(picker.options.some(option => option.value === 'male-reproductive' && option.label === '3D Model of Male Reproductive System'));
     assert.equal(picker.options[0].label, 'Early Development Models');
     assert.equal(picker.options[0].value, 'early-development');
     const mode = fakeInteraction('', { values: ['early-development'] });
@@ -1319,7 +1320,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width, height = 1024] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592], ['pancreas', 6, 1024, 827], ['ileum', 12, 655, 1002], ['liver', 11, 981]]) {
+for (const [manifest, count, width, height = 1024] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592], ['pancreas', 6, 1024, 827], ['ileum', 12, 655, 1002], ['liver', 11, 981], ['male-reproductive', 15, 825]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1790,6 +1791,28 @@ test('liver set offers eleven digestive identification cards with distinct vesse
         }
         if (mode === 'typed') {
             for (const [name, alias, wrong] of [['Bile duct', 'common bile duct', 'common hepatic duct'], ['Hepatic portal vein', 'portal vein', 'hepatic artery'], ['Right lobe', 'right hepatic lobe', 'left lobe'], ['Quadrate lobe', 'quadrate lobe of liver', 'caudate lobe']]) {
+                const q = qs.find(q => q.modelName === name);
+                assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
+        }
+    }
+});
+
+test('male reproductive set offers fifteen location cards with distinct erectile tissues and urethral regions', async () => {
+    const { labQuestions, labModelsMessage, labModelImage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'reproductive').components[0].toJSON().components[0].options.some(o => o.value === 'male-reproductive' && o.label === '3D Model of Male Reproductive System'));
+    for (const mode of ['multiple_choice', 'typed']) {
+        const qs = labQuestions('male-reproductive', mode);
+        assert.equal(qs.length, 15);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') assert.equal(q.options[q.correct[0]], q.modelName);
+            else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, alias, wrong] of [['Ampulla', 'ampula', 'seminal vesicle'], ['Corpus cavernosum', 'corpora cavernosa', 'corpus spongiosum'], ['Corpus spongiosum', 'corpora spongiosa', 'corpus cavernosum'], ['Spongy urethra', 'penile urethra', 'prostatic urethra'], ['External urethral orifice', 'urethral meatus', 'spongy urethra'], ['Testis', 'testicle', 'epididymis']]) {
                 const q = qs.find(q => q.modelName === name);
                 assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
