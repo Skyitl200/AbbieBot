@@ -530,3 +530,5 @@ mucosae and visceral peritoneum. Rebuild with
 **3D Model of Partially Sectioned Testis and Epididymis** adds eleven reproductive location cards in both answer modes. Original-photo cyan markings distinguish epididymal regions, ducts, lobule and tubules, and tunica vaginalis from its cavity. Rebuild with `python scripts/renderRespiratoryPointers.py testis-epididymis.json`.
 
 **3D Model of Female Reproductive System (Frontal View)** adds twenty reproductive location cards in both answer modes. Original-photo cyan overlays follow the supplied Quizlet reference and distinguish uterine wall layers, cervical openings, and uterine tube regions. Rebuild with `python scripts/renderRespiratoryPointers.py female-reproductive.json`.
+
+**3D Model of Female Reproductive System (Sagittal View)** adds fifteen reproductive location cards in both answer modes, with original-photo cyan overlays. Clitoris accepts the supplied spelling “clitorus”; the vaginal opening is separate from the canal, and cervical openings and labia remain distinct. Rebuild with `python scripts/renderRespiratoryPointers.py female-sagittal.json`.
