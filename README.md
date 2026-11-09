@@ -526,3 +526,5 @@ mucosae and visceral peritoneum. Rebuild with
 **3D Model of Liver** adds eleven digestive location cards in both answer modes. Original-photo cyan markings distinguish ducts, vessels, and four lobes; the falciform card indicates its inferior attachment and explains the visible round ligament. Rebuild with `python scripts/renderRespiratoryPointers.py liver.json`.
 
 **3D Model of Male Reproductive System** adds fifteen reproductive location cards in both answer modes, using original-photo cyan overlays. Short aliases include penile urethra, urethral meatus, testicle, and the supplied spelling “ampula.” Rebuild with `python scripts/renderRespiratoryPointers.py male-reproductive.json`.
+
+**3D Model of Partially Sectioned Testis and Epididymis** adds eleven reproductive location cards in both answer modes. Original-photo cyan markings distinguish epididymal regions, ducts, lobule and tubules, and tunica vaginalis from its cavity. Rebuild with `python scripts/renderRespiratoryPointers.py testis-epididymis.json`.
