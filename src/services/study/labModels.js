@@ -7,6 +7,7 @@ const loadModels = file => JSON.parse(readFileSync(new URL(`../../../study-data/
 export const LAB_MODELS = loadModels('early-development.json');
 export const LAB_SETS = [
     { id: 'early-development', title: 'Early Development Models', category: 'reproductive', models: LAB_MODELS },
+    { id: 'female-reproductive', title: '3D Model of Female Reproductive System (Frontal View)', category: 'reproductive', showStructureList: true, models: loadModels('female-reproductive.json') },
     { id: 'testis-epididymis', title: '3D Model of Partially Sectioned Testis and Epididymis', category: 'reproductive', showStructureList: true, models: loadModels('testis-epididymis.json') },
     { id: 'male-reproductive', title: '3D Model of Male Reproductive System', category: 'reproductive', showStructureList: true, models: loadModels('male-reproductive.json') },
     { id: 'liver', title: '3D Model of Liver', category: 'digestive', showStructureList: true, models: loadModels('liver.json') },

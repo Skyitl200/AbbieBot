@@ -528,3 +528,5 @@ mucosae and visceral peritoneum. Rebuild with
 **3D Model of Male Reproductive System** adds fifteen reproductive location cards in both answer modes, using original-photo cyan overlays. Short aliases include penile urethra, urethral meatus, testicle, and the supplied spelling “ampula.” Rebuild with `python scripts/renderRespiratoryPointers.py male-reproductive.json`.
 
 **3D Model of Partially Sectioned Testis and Epididymis** adds eleven reproductive location cards in both answer modes. Original-photo cyan markings distinguish epididymal regions, ducts, lobule and tubules, and tunica vaginalis from its cavity. Rebuild with `python scripts/renderRespiratoryPointers.py testis-epididymis.json`.
+
+**3D Model of Female Reproductive System (Frontal View)** adds twenty reproductive location cards in both answer modes. Original-photo cyan overlays follow the supplied Quizlet reference and distinguish uterine wall layers, cervical openings, and uterine tube regions. Rebuild with `python scripts/renderRespiratoryPointers.py female-reproductive.json`.
