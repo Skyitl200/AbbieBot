@@ -1057,7 +1057,8 @@ test('Anatomy Lab opens category → grouped model set → answer mode without a
     const models = fakeInteraction('', { values: ['reproductive'] });
     await handleStudyInteraction(models, {}, ['labcategory', 'u']);
     const picker = models.calls.at(-1)[1].components[0].toJSON().components[0];
-    assert.equal(picker.options.length, 5);
+    assert.equal(picker.options.length, 6);
+    assert.ok(picker.options.some(option => option.value === 'ovary'));
     assert.ok(picker.options.some(option => option.value === 'female-sagittal'));
     assert.ok(picker.options.some(option => option.value === 'female-reproductive'));
     assert.ok(picker.options.some(option => option.value === 'testis-epididymis'));
@@ -1323,7 +1324,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width, height = 1024] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592], ['pancreas', 6, 1024, 827], ['ileum', 12, 655, 1002], ['liver', 11, 981], ['male-reproductive', 15, 825], ['testis-epididymis', 11, 768], ['female-reproductive', 20, 1024, 697], ['female-sagittal', 15, 747, 931]]) {
+for (const [manifest, count, width, height = 1024] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592], ['pancreas', 6, 1024, 827], ['ileum', 12, 655, 1002], ['liver', 11, 981], ['male-reproductive', 15, 825], ['testis-epididymis', 11, 768], ['female-reproductive', 20, 1024, 697], ['female-sagittal', 15, 747, 931], ['ovary', 13, 1024, 720]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -1882,6 +1883,29 @@ test('female sagittal set offers fifteen locations with separate vaginal opening
         }
         if (mode === 'typed') {
             for (const [name, alias, wrong] of [['Clitoris', 'clitorus', 'urethra'], ['Vaginal orifice', 'vaginal opening', 'vagina'], ['Vagina', 'vaginal canal', 'vaginal orifice'], ['External os', 'external cervical os', 'internal os'], ['Labia minora', 'inner labia', 'labia majora'], ['Labia majora', 'outer labia', 'labia minora']]) {
+                const q = qs.find(q => q.modelName === name);
+                assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
+        }
+    }
+});
+
+test('ovary set offers thirteen locations with separate follicle stages, corpus stages, and oocyte locations', async () => {
+    const { labQuestions, labModelsMessage, labModelImage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'reproductive').components[0].toJSON().components[0].options.some(o => o.value === 'ovary' && o.label === '3D Model of Ovary'));
+    for (const mode of ['multiple_choice', 'typed']) {
+        const qs = labQuestions('ovary', mode);
+        assert.equal(qs.length, 13);
+        assert.ok(!qs.some(q => q.modelName === 'Mesovarium and blood vessels'));
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') assert.equal(q.options[q.correct[0]], q.modelName);
+            else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, alias, wrong] of [['Germinal epithelium', 'ovarian surface epithelium', 'ovarian ligament'], ['Developing corpus luteum', 'early corpus luteum', 'corpus luteum'], ['Graafian follicle', 'mature follicle', 'secondary follicle'], ['Ovulated oocyte', 'released oocyte', 'oocyte'], ['Oocyte', 'egg cell', 'ovulated oocyte'], ['Antrum', 'follicular cavity', 'oocyte']]) {
                 const q = qs.find(q => q.modelName === name);
                 assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));

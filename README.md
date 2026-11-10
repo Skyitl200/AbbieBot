@@ -532,3 +532,5 @@ mucosae and visceral peritoneum. Rebuild with
 **3D Model of Female Reproductive System (Frontal View)** adds twenty reproductive location cards in both answer modes. Original-photo cyan overlays follow the supplied Quizlet reference and distinguish uterine wall layers, cervical openings, and uterine tube regions. Rebuild with `python scripts/renderRespiratoryPointers.py female-reproductive.json`.
 
 **3D Model of Female Reproductive System (Sagittal View)** adds fifteen reproductive location cards in both answer modes, with original-photo cyan overlays. Clitoris accepts the supplied spelling “clitorus”; the vaginal opening is separate from the canal, and cervical openings and labia remain distinct. Rebuild with `python scripts/renderRespiratoryPointers.py female-sagittal.json`.
+
+**3D Model of Ovary** adds thirteen reproductive location cards in both answer modes using original-photo cyan markers. Follicle and corpus stages, the oocyte and released oocyte, and the antrum remain separate identification cards. Rebuild with `python scripts/renderRespiratoryPointers.py ovary.json`.
