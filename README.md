@@ -536,3 +536,5 @@ mucosae and visceral peritoneum. Rebuild with
 **3D Model of Ovary** adds thirteen reproductive location cards in both answer modes using original-photo cyan markers. Follicle and corpus stages, the oocyte and released oocyte, and the antrum remain separate identification cards. Rebuild with `python scripts/renderRespiratoryPointers.py ovary.json`.
 
 **3D Model of Fetal Circulation** adds five reproductive identification cards with original-photo cyan circles matched to the supplied reference. Both answer modes use short structure names; answer feedback preserves all three supplied fetal-shunt connections. Rebuild with `python scripts/renderRespiratoryPointers.py fetal-circulation.json`.
+
+**Starfish Development** groups eight original stage images (black edge strips cropped from the eight-cell and late gastrula images) into one reproductive lab set, from single cell through late gastrula. Every prompt asks “Which stage is this?” Both modes use short stage names and accept cell counts as words or digits. These are mitotic cleavage and gastrulation stages, not meiosis.

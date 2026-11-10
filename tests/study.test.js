@@ -1057,7 +1057,8 @@ test('Anatomy Lab opens category → grouped model set → answer mode without a
     const models = fakeInteraction('', { values: ['reproductive'] });
     await handleStudyInteraction(models, {}, ['labcategory', 'u']);
     const picker = models.calls.at(-1)[1].components[0].toJSON().components[0];
-    assert.equal(picker.options.length, 7);
+    assert.equal(picker.options.length, 8);
+    assert.ok(picker.options.some(option => option.value === 'starfish-development'));
     assert.ok(picker.options.some(option => option.value === 'fetal-circulation'));
     assert.ok(picker.options.some(option => option.value === 'ovary'));
     assert.ok(picker.options.some(option => option.value === 'female-sagittal'));
@@ -1934,6 +1935,57 @@ test('fetal circulation offers five short identification cards with shunt connec
         if (mode === 'typed') {
             const q = qs.find(q => q.modelName === 'Ductus arteriosus');
             assert.ok(!matchesLabAnswer('ductus venosus', q.answers, q.competingAnswers));
+        }
+    }
+});
+
+test('starfish development groups all eight original stage images with short stage prompts in both modes', async () => {
+    const { labQuestions, labModelsMessage, labModelImage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    const { readFile } = await import('node:fs/promises');
+    const { createHash } = await import('node:crypto');
+    const { PNG } = await import('pngjs');
+    const data = JSON.parse(await readFile(new URL('../study-data/lab-models/starfish-development.json', import.meta.url)));
+    assert.ok(labModelsMessage('u', 'reproductive').components[0].toJSON().components[0].options.some(o => o.value === 'starfish-development' && o.label === 'Starfish Development'));
+    assert.deepEqual(data.models.map(m => m.name), ['Single cell stage', 'Two cell stage', 'Four cell stage', 'Eight cell stage', 'Morula', 'Blastula', 'Early gastrula', 'Late gastrula']);
+    for (const model of data.models) {
+        const raw = await readFile(new URL('../study-assets/lab-models/' + model.expectedImageFile, import.meta.url));
+        assert.equal(createHash('sha256').update(raw).digest('hex'), model.imageSha256);
+        const image = PNG.sync.read(raw);
+        if (model.cropBox) {
+            const originalRaw = await readFile(new URL('../study-assets/lab-models/' + model.originalUploadFile, import.meta.url));
+            assert.equal(createHash('sha256').update(originalRaw).digest('hex'), model.originalUploadSha256);
+            const original = PNG.sync.read(originalRaw);
+            assert.deepEqual(model.cropBox, [0, 0, image.width, original.height]);
+            for (let y = 0; y < image.height; y++) {
+                assert.deepEqual(image.data.subarray(y * image.width * 4, (y + 1) * image.width * 4), original.data.subarray(y * original.width * 4, (y * original.width + image.width) * 4));
+            }
+            for (let y = 0; y < original.height; y++) for (let x = image.width; x < original.width; x++) {
+                const offset = (y * original.width + x) * 4;
+                assert.ok(original.data[offset] < 35 && original.data[offset + 1] < 35 && original.data[offset + 2] < 35);
+            }
+        } else assert.equal(model.imageSha256, model.originalUploadSha256);
+        assert.equal(image.width, model.imageWidth);
+        assert.equal(image.height, model.imageHeight);
+    }
+    for (const mode of ['multiple_choice', 'typed']) {
+        const qs = labQuestions('starfish-development', mode);
+        assert.equal(qs.length, 8);
+        assert.equal(new Set(qs.map(q => q.labModelId)).size, 8);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            assert.equal(q.question, 'Which stage is this?');
+            if (mode === 'multiple_choice') {
+                assert.equal(q.options.length, 4);
+                assert.equal(q.options[q.correct[0]], q.modelName);
+            } else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, alias, wrong] of [['Single cell stage', '1 cell', 'two cell stage'], ['Two cell stage', '2 cell stage', 'four cell stage'], ['Four cell stage', '4 cell', 'eight cell stage'], ['Eight cell stage', '8 cell stage', 'four cell stage'], ['Early gastrula', 'eaten pizza slice', 'late gastrula'], ['Late gastrula', 'late gastrula', 'early gastrula']]) {
+                const q = qs.find(q => q.modelName === name);
+                assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
         }
     }
 });

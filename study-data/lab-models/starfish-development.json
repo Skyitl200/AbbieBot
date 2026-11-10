@@ -1,0 +1,312 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Reproductive System",
+  "modelGroup": "Starfish Development",
+  "source": "Rebuilt from the latest eight mkmk PNG ZIP uploads. Solid black right-edge margins removed from Eight cell stage and Late gastrula only; original stage pixels retained.",
+  "biologyNote": "These are embryonic developmental stages: mitotic cleavage followed by gastrulation, rather than meiotic stages.",
+  "models": [
+    {
+      "id": "starfish-development-01",
+      "name": "Single cell stage",
+      "questions": [
+        {
+          "id": "lab-starfish-development-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which stage is this?",
+          "options": [
+            "Single cell stage",
+            "Two cell stage",
+            "Four cell stage",
+            "Eight cell stage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Single cell stage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "single cell stage",
+            "single cell",
+            "one cell stage",
+            "one cell",
+            "1 cell stage",
+            "1 cell",
+            "zygote"
+          ]
+        }
+      ],
+      "expectedImageFile": "starfish-development/sd-01.png",
+      "photoNumber": 1,
+      "originalUploadFileName": "mkmk1.png",
+      "originalUploadSha256": "742c25e5113e86deac77a948a7dfe6416be6ed3f0c9e016e8ce86ec8d00ce2a2",
+      "imageSha256": "742c25e5113e86deac77a948a7dfe6416be6ed3f0c9e016e8ce86ec8d00ce2a2",
+      "imageWidth": 133,
+      "imageHeight": 152,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "starfish-development-02",
+      "name": "Two cell stage",
+      "questions": [
+        {
+          "id": "lab-starfish-development-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which stage is this?",
+          "options": [
+            "Two cell stage",
+            "Single cell stage",
+            "Four cell stage",
+            "Eight cell stage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Two cell stage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "two cell stage",
+            "two cell",
+            "2 cell stage",
+            "2 cell"
+          ]
+        }
+      ],
+      "expectedImageFile": "starfish-development/sd-02.png",
+      "photoNumber": 2,
+      "originalUploadFileName": "mkmk2.png",
+      "originalUploadSha256": "fb348d491df3696a7e75e829673df9b94e6e5d7495a6ec0674e05c5116e44d4d",
+      "imageSha256": "fb348d491df3696a7e75e829673df9b94e6e5d7495a6ec0674e05c5116e44d4d",
+      "imageWidth": 177,
+      "imageHeight": 145,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "starfish-development-03",
+      "name": "Four cell stage",
+      "questions": [
+        {
+          "id": "lab-starfish-development-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which stage is this?",
+          "options": [
+            "Four cell stage",
+            "Single cell stage",
+            "Two cell stage",
+            "Eight cell stage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Four cell stage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "four cell stage",
+            "four cell",
+            "4 cell stage",
+            "4 cell"
+          ]
+        }
+      ],
+      "expectedImageFile": "starfish-development/sd-03.png",
+      "photoNumber": 3,
+      "originalUploadFileName": "mkmk3.png",
+      "originalUploadSha256": "3dc819f0dbdc0c98f3a516f08bd056a0dc59b1359cca322f99f7187bcda949c7",
+      "imageSha256": "3dc819f0dbdc0c98f3a516f08bd056a0dc59b1359cca322f99f7187bcda949c7",
+      "imageWidth": 164,
+      "imageHeight": 161,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "starfish-development-04",
+      "name": "Eight cell stage",
+      "questions": [
+        {
+          "id": "lab-starfish-development-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which stage is this?",
+          "options": [
+            "Eight cell stage",
+            "Single cell stage",
+            "Two cell stage",
+            "Four cell stage"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Eight cell stage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "eight cell stage",
+            "eight cell",
+            "8 cell stage",
+            "8 cell"
+          ]
+        }
+      ],
+      "expectedImageFile": "starfish-development/sd-04.png",
+      "photoNumber": 4,
+      "originalUploadFileName": "mkmk4.png",
+      "originalUploadSha256": "fde4270cccb348897ed4db35c36154f6deb570d3818b3ba1aa3bf6e053d74533",
+      "imageSha256": "1a5713e6c684190ab9587ae25bf82dadc55fd2740d352eda4998c7ce42e285f9",
+      "imageWidth": 170,
+      "imageHeight": 166,
+      "renderMethod": "original-upload-black-margin-crop",
+      "cropBox": [
+        0,
+        0,
+        170,
+        166
+      ],
+      "originalUploadFile": "starfish-development-originals/sd-04.png"
+    },
+    {
+      "id": "starfish-development-05",
+      "name": "Morula",
+      "questions": [
+        {
+          "id": "lab-starfish-development-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which stage is this?",
+          "options": [
+            "Morula",
+            "Blastula",
+            "Early gastrula",
+            "Late gastrula"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Morula.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "morula"
+          ]
+        }
+      ],
+      "expectedImageFile": "starfish-development/sd-05.png",
+      "photoNumber": 5,
+      "originalUploadFileName": "mkmk5.png",
+      "originalUploadSha256": "eab0ad11bc054be7464a6f7c83087684069548a9fec615682f39a2bebf24ee6c",
+      "imageSha256": "eab0ad11bc054be7464a6f7c83087684069548a9fec615682f39a2bebf24ee6c",
+      "imageWidth": 172,
+      "imageHeight": 180,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "starfish-development-06",
+      "name": "Blastula",
+      "questions": [
+        {
+          "id": "lab-starfish-development-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which stage is this?",
+          "options": [
+            "Blastula",
+            "Morula",
+            "Early gastrula",
+            "Late gastrula"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Blastula.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "blastula"
+          ]
+        }
+      ],
+      "expectedImageFile": "starfish-development/sd-06.png",
+      "photoNumber": 6,
+      "originalUploadFileName": "mkmk6.png",
+      "originalUploadSha256": "c723c62aca6c92950b530ea4bad113260d2b29b8594934ee0448ffe3f60ae6e0",
+      "imageSha256": "c723c62aca6c92950b530ea4bad113260d2b29b8594934ee0448ffe3f60ae6e0",
+      "imageWidth": 173,
+      "imageHeight": 172,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "starfish-development-07",
+      "name": "Early gastrula",
+      "questions": [
+        {
+          "id": "lab-starfish-development-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which stage is this?",
+          "options": [
+            "Early gastrula",
+            "Morula",
+            "Blastula",
+            "Late gastrula"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Early gastrula - eaten pizza slice.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "early gastrula",
+            "early gastrula eaten pizza slice",
+            "eaten pizza slice"
+          ]
+        }
+      ],
+      "expectedImageFile": "starfish-development/sd-07.png",
+      "photoNumber": 7,
+      "originalUploadFileName": "mkmk7.png",
+      "originalUploadSha256": "fa67bf32a48a80f640d351838788e3a10ffa38d0a6f6de894f291bf7e64dc0dd",
+      "imageSha256": "fa67bf32a48a80f640d351838788e3a10ffa38d0a6f6de894f291bf7e64dc0dd",
+      "imageWidth": 146,
+      "imageHeight": 178,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "starfish-development-08",
+      "name": "Late gastrula",
+      "questions": [
+        {
+          "id": "lab-starfish-development-08",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which stage is this?",
+          "options": [
+            "Late gastrula",
+            "Morula",
+            "Blastula",
+            "Early gastrula"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "Late gastrula.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "late gastrula"
+          ]
+        }
+      ],
+      "expectedImageFile": "starfish-development/sd-08.png",
+      "photoNumber": 8,
+      "originalUploadFileName": "mkmk8.png",
+      "originalUploadSha256": "ab9489b3c9588a3467f754b722c9de98de90ecc4662c8a9d77f1758c38f4759b",
+      "imageSha256": "f2f84b65cdf37f465b61a5c302f3392f3f46a734e02cfe0c77eee6d09ac3a590",
+      "imageWidth": 131,
+      "imageHeight": 198,
+      "renderMethod": "original-upload-black-margin-crop",
+      "cropBox": [
+        0,
+        0,
+        131,
+        198
+      ],
+      "originalUploadFile": "starfish-development-originals/sd-08.png"
+    }
+  ]
+}
