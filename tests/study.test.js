@@ -1057,7 +1057,8 @@ test('Anatomy Lab opens category → grouped model set → answer mode without a
     const models = fakeInteraction('', { values: ['reproductive'] });
     await handleStudyInteraction(models, {}, ['labcategory', 'u']);
     const picker = models.calls.at(-1)[1].components[0].toJSON().components[0];
-    assert.equal(picker.options.length, 7);
+    assert.equal(picker.options.length, 8);
+    assert.ok(picker.options.some(option => option.value === 'developing-baby'));
     assert.ok(!picker.options.some(option => option.value === 'starfish-development'));
     assert.ok(picker.options.some(option => option.value === 'fetal-circulation'));
     assert.ok(picker.options.some(option => option.value === 'ovary'));
@@ -1984,6 +1985,45 @@ test('starfish development groups all eight original stage images with short sta
         }
         if (mode === 'typed') {
             for (const [name, alias, wrong] of [['Single cell stage', '1 cell', 'two cell stage'], ['Two cell stage', '2 cell stage', 'four cell stage'], ['Four cell stage', '4 cell', 'eight cell stage'], ['Eight cell stage', '8 cell stage', 'four cell stage'], ['Early gastrula', 'eaten pizza slice', 'late gastrula'], ['Late gastrula', 'late gastrula', 'early gastrula']]) {
+                const q = qs.find(q => q.modelName === name);
+                assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
+        }
+    }
+});
+
+test('developing baby groups seven original photos with age-and-stage prompts, both five-month models and twins', async () => {
+    const { labQuestions, labModelsMessage, labModelImage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    const { readFile } = await import('node:fs/promises');
+    const { createHash } = await import('node:crypto');
+    const data = JSON.parse(await readFile(new URL('../study-data/lab-models/developing-baby.json', import.meta.url)));
+    assert.ok(labModelsMessage('u', 'reproductive').components[0].toJSON().components[0].options.some(o => o.value === 'developing-baby' && o.label === '3D Models of Developing Baby Stages (READ QUESTIONS)'));
+    for (const m of data.models) {
+        const raw = await readFile(new URL('../study-assets/lab-models/' + m.expectedImageFile, import.meta.url));
+        assert.equal(createHash('sha256').update(raw).digest('hex'), m.originalUploadSha256);
+    }
+    for (const mode of ['multiple_choice', 'typed']) {
+        const qs = labQuestions('developing-baby', mode);
+        assert.equal(qs.length, 7);
+        assert.equal(new Set(qs.map(q => q.labModelId)).size, 7);
+        assert.equal(qs.filter(q => q.modelName === '5 months - second trimester').length, 2);
+        assert.equal(qs.filter(q => q.modelName === '5 months - twins').length, 1);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            assert.ok(!q.modelName.includes('->'));
+            if (mode === 'multiple_choice') {
+                assert.equal(q.options.length, 4);
+                assert.equal(new Set(q.options).size, 4);
+                assert.equal(q.options[q.correct[0]], q.modelName);
+            } else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        assert.match(qs.find(q => q.modelName === '2 months - fetal stage').explanation, /after 8 completed weeks/);
+        assert.ok(!qs.find(q => q.modelName === '3 months - first trimester').question.includes('beginning'));
+        assert.match(qs.find(q => q.modelName === '5 months - twins').question, /babies considered/);
+        if (mode === 'typed') {
+            for (const [name, alias, wrong] of [['1 month - embryonic stage', 'one month embryonic stage', '2 months fetal stage'], ['3 months - first trimester', '3 months 1st trimester', '5 months second trimester'], ['5 months - second trimester', 'five months second trimester', '5 months twins'], ['5 months - twins', 'five months twins', '5 months second trimester'], ['7 months - third trimester', '7 months 3rd trimester', '5 months second trimester']]) {
                 const q = qs.find(q => q.modelName === name);
                 assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));

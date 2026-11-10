@@ -1,0 +1,271 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Reproductive System",
+  "modelGroup": "3D Models of Developing Baby Stages (READ QUESTIONS)",
+  "source": "Seven original baby1.jpg through baby7.jpg photographs from Archive.zip, kept byte-for-byte; short labels follow supplied Quizlet.",
+  "datingNote": "The embryonic period lasts through 8 completed weeks after fertilization; fetal development begins in week 9 after fertilization. Gestational dating is about two weeks ahead. Three months is near the end, not the beginning, of the first trimester. Model months are approximate and use supplied Quizlet labels.",
+  "models": [
+    {
+      "id": "developing-baby-01",
+      "name": "1 month - embryonic stage",
+      "questions": [
+        {
+          "id": "lab-developing-baby-01",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "How long has the baby been developing, and what stage is this?",
+          "options": [
+            "1 month - embryonic stage",
+            "2 months - fetal stage",
+            "3 months - first trimester",
+            "5 months - second trimester"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "1 month - embryonic stage.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "1 month - embryonic stage",
+            "1 month embryonic stage",
+            "one month embryonic stage",
+            "1 month embryo",
+            "1 month embryonic"
+          ]
+        }
+      ],
+      "expectedImageFile": "developing-baby/db-01.jpg",
+      "photoNumber": 1,
+      "originalUploadFileName": "baby1.jpg",
+      "originalUploadSha256": "11d1623cb642b73e918a80f503f1d6ef6469f99ff2f3e9f7e66a9538afbd788d",
+      "imageSha256": "11d1623cb642b73e918a80f503f1d6ef6469f99ff2f3e9f7e66a9538afbd788d",
+      "imageWidth": 432,
+      "imageHeight": 500,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "developing-baby-02",
+      "name": "2 months - fetal stage",
+      "questions": [
+        {
+          "id": "lab-developing-baby-02",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "According to your Quizlet, how long has the baby been developing, and what stage is this?",
+          "options": [
+            "2 months - fetal stage",
+            "1 month - embryonic stage",
+            "3 months - first trimester",
+            "5 months - second trimester"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "2 months - fetal stage (Quizlet label). The fetal period starts after 8 completed weeks from fertilization; month labels here are approximate.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "2 months - fetal stage",
+            "2 months fetal stage",
+            "two months fetal stage",
+            "2 months fetus",
+            "2 months fetal"
+          ]
+        }
+      ],
+      "expectedImageFile": "developing-baby/db-02.jpg",
+      "photoNumber": 2,
+      "originalUploadFileName": "baby2.jpg",
+      "originalUploadSha256": "94434cfd04fc0b5a852c74f83801a71d85ac948dc81e0bb01544a809f316c6c2",
+      "imageSha256": "94434cfd04fc0b5a852c74f83801a71d85ac948dc81e0bb01544a809f316c6c2",
+      "imageWidth": 412,
+      "imageHeight": 500,
+      "renderMethod": "original-upload-unmodified",
+      "referenceNote": "The embryonic period lasts through 8 completed weeks after fertilization; fetal development begins in week 9 after fertilization. Gestational dating is about two weeks ahead. Three months is near the end, not the beginning, of the first trimester. Model months are approximate and use supplied Quizlet labels."
+    },
+    {
+      "id": "developing-baby-03",
+      "name": "3 months - first trimester",
+      "questions": [
+        {
+          "id": "lab-developing-baby-03",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "How long has the baby been developing, and which trimester is this?",
+          "options": [
+            "3 months - first trimester",
+            "1 month - embryonic stage",
+            "2 months - fetal stage",
+            "5 months - second trimester"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "3 months - first trimester. Three months is near the end of the first trimester.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "3 months - first trimester",
+            "3 months first trimester",
+            "three months first trimester",
+            "3 months 1st trimester"
+          ]
+        }
+      ],
+      "expectedImageFile": "developing-baby/db-03.jpg",
+      "photoNumber": 3,
+      "originalUploadFileName": "baby3.jpg",
+      "originalUploadSha256": "2f1bacffe3702a85f80c278e101c0c9a9cb254e21d2aa974e3e1312d9a7709b5",
+      "imageSha256": "2f1bacffe3702a85f80c278e101c0c9a9cb254e21d2aa974e3e1312d9a7709b5",
+      "imageWidth": 437,
+      "imageHeight": 500,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "developing-baby-04",
+      "name": "5 months - second trimester",
+      "questions": [
+        {
+          "id": "lab-developing-baby-04",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "How long has the baby been developing, and what stage is this?",
+          "options": [
+            "5 months - second trimester",
+            "1 month - embryonic stage",
+            "2 months - fetal stage",
+            "3 months - first trimester"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "5 months - second trimester.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "5 months - second trimester",
+            "5 months second trimester",
+            "five months second trimester",
+            "5 months 2nd trimester"
+          ]
+        }
+      ],
+      "expectedImageFile": "developing-baby/db-04.jpg",
+      "photoNumber": 4,
+      "originalUploadFileName": "baby4.jpg",
+      "originalUploadSha256": "6c0b0af44fc3f143d8010dce9c62789be6c8dc092851073c70c918dfb700c3d9",
+      "imageSha256": "6c0b0af44fc3f143d8010dce9c62789be6c8dc092851073c70c918dfb700c3d9",
+      "imageWidth": 409,
+      "imageHeight": 500,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "developing-baby-05",
+      "name": "5 months - second trimester",
+      "questions": [
+        {
+          "id": "lab-developing-baby-05",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "How long has the baby been developing, and what stage is this?",
+          "options": [
+            "5 months - second trimester",
+            "1 month - embryonic stage",
+            "2 months - fetal stage",
+            "3 months - first trimester"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "5 months - second trimester.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "5 months - second trimester",
+            "5 months second trimester",
+            "five months second trimester",
+            "5 months 2nd trimester"
+          ]
+        }
+      ],
+      "expectedImageFile": "developing-baby/db-05.jpg",
+      "photoNumber": 5,
+      "originalUploadFileName": "baby5.jpg",
+      "originalUploadSha256": "de058f53a07f7f14c8a2c9875d97cb18649fb74f83bcbc668833f3b4aa3d1f7f",
+      "imageSha256": "de058f53a07f7f14c8a2c9875d97cb18649fb74f83bcbc668833f3b4aa3d1f7f",
+      "imageWidth": 419,
+      "imageHeight": 500,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "developing-baby-06",
+      "name": "5 months - twins",
+      "questions": [
+        {
+          "id": "lab-developing-baby-06",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "How long have the babies been developing, and what are these babies considered?",
+          "options": [
+            "5 months - twins",
+            "1 month - embryonic stage",
+            "2 months - fetal stage",
+            "3 months - first trimester"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "5 months - twins.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "5 months - twins",
+            "5 months twins",
+            "five months twins",
+            "5 months twin babies"
+          ]
+        }
+      ],
+      "expectedImageFile": "developing-baby/db-06.jpg",
+      "photoNumber": 6,
+      "originalUploadFileName": "baby6.jpg",
+      "originalUploadSha256": "e43fe63efd0868fc328eeba13e1638fb306fc9b936bc884a9d94c7ed41f6fc93",
+      "imageSha256": "e43fe63efd0868fc328eeba13e1638fb306fc9b936bc884a9d94c7ed41f6fc93",
+      "imageWidth": 357,
+      "imageHeight": 500,
+      "renderMethod": "original-upload-unmodified"
+    },
+    {
+      "id": "developing-baby-07",
+      "name": "7 months - third trimester",
+      "questions": [
+        {
+          "id": "lab-developing-baby-07",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "How long has the baby been developing, and which trimester is this?",
+          "options": [
+            "7 months - third trimester",
+            "1 month - embryonic stage",
+            "2 months - fetal stage",
+            "3 months - first trimester"
+          ],
+          "correct": [
+            0
+          ],
+          "explanation": "7 months - third trimester.",
+          "requiresModelImage": true,
+          "typedAnswers": [
+            "7 months - third trimester",
+            "7 months third trimester",
+            "seven months third trimester",
+            "7 months 3rd trimester"
+          ]
+        }
+      ],
+      "expectedImageFile": "developing-baby/db-07.jpg",
+      "photoNumber": 7,
+      "originalUploadFileName": "baby7.jpg",
+      "originalUploadSha256": "d68124903216acc1a1173b07189022bef0726f5beec6b59a3201aa78d081e0d5",
+      "imageSha256": "d68124903216acc1a1173b07189022bef0726f5beec6b59a3201aa78d081e0d5",
+      "imageWidth": 353,
+      "imageHeight": 500,
+      "renderMethod": "original-upload-unmodified"
+    }
+  ]
+}
