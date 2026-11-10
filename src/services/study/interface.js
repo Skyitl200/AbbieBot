@@ -1,7 +1,7 @@
 import { questionReportModal, submitQuestionReport } from './reports.js';
 import { announceCrateDrop } from '../discovery/announcements.js';
 import { cacheFoundNotice } from '../discovery/catalog.js';
-import { labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labSetForSelection } from './labModels.js';
+import { LAB_CATEGORIES, labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labSetForSelection } from './labModels.js';
 import {
     ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, MessageFlags,
     ModalBuilder, StringSelectMenuBuilder, TextInputBuilder, TextInputStyle,
@@ -214,7 +214,7 @@ export async function handleStudyInteraction(interaction, client, args) {
             const questions = labQuestions(token, mode);
             if (questions.some(question => !imageForQuestion(question))) return await privateError(interaction, 'This model set needs its image files before it can start. Please try again after the photos are installed.');
             const set = labSetForSelection(token);
-            const category = set.category === 'respiratory' ? 'Respiratory Tract' : 'Reproductive System';
+            const category = LAB_CATEGORIES.find(category => category.id === set.category)?.title || 'Anatomy Lab';
             const session = createStudySession(interaction.guildId, ownerId, questions, `lab_${set.category}`);
             session.classId = 'ap_lab';
             session.topicLabel = `Anatomy Lab • ${category} • ${set.title} • ${mode === 'typed' ? 'Type in' : 'Multiple choice'}`;

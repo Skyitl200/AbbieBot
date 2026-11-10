@@ -1057,8 +1057,8 @@ test('Anatomy Lab opens category → grouped model set → answer mode without a
     const models = fakeInteraction('', { values: ['reproductive'] });
     await handleStudyInteraction(models, {}, ['labcategory', 'u']);
     const picker = models.calls.at(-1)[1].components[0].toJSON().components[0];
-    assert.equal(picker.options.length, 8);
-    assert.ok(picker.options.some(option => option.value === 'starfish-development'));
+    assert.equal(picker.options.length, 7);
+    assert.ok(!picker.options.some(option => option.value === 'starfish-development'));
     assert.ok(picker.options.some(option => option.value === 'fetal-circulation'));
     assert.ok(picker.options.some(option => option.value === 'ovary'));
     assert.ok(picker.options.some(option => option.value === 'female-sagittal'));
@@ -1940,13 +1940,15 @@ test('fetal circulation offers five short identification cards with shunt connec
 });
 
 test('starfish development groups all eight original stage images with short stage prompts in both modes', async () => {
-    const { labQuestions, labModelsMessage, labModelImage } = await import('../src/services/study/labModels.js');
+    const { labQuestions, labModelsMessage, labModelImage, labCategoryMessage, labModeMessage } = await import('../src/services/study/labModels.js');
     const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
     const { readFile } = await import('node:fs/promises');
     const { createHash } = await import('node:crypto');
     const { PNG } = await import('pngjs');
     const data = JSON.parse(await readFile(new URL('../study-data/lab-models/starfish-development.json', import.meta.url)));
-    assert.ok(labModelsMessage('u', 'reproductive').components[0].toJSON().components[0].options.some(o => o.value === 'starfish-development' && o.label === 'Starfish Development'));
+    assert.ok(labCategoryMessage('u').components[0].toJSON().components[0].options.some(o => o.value === 'development' && o.label === 'Cell Division & Development' && !o.description.includes('undefined')));
+    assert.ok(labModelsMessage('u', 'development').components[0].toJSON().components[0].options.some(o => o.value === 'starfish-development' && o.label === 'Starfish Development'));
+    assert.equal(labModeMessage('u', 'starfish-development').components[1].toJSON().components[0].custom_id, 'study:labcategory:u:development');
     assert.deepEqual(data.models.map(m => m.name), ['Single cell stage', 'Two cell stage', 'Four cell stage', 'Eight cell stage', 'Morula', 'Blastula', 'Early gastrula', 'Late gastrula']);
     for (const model of data.models) {
         const raw = await readFile(new URL('../study-assets/lab-models/' + model.expectedImageFile, import.meta.url));

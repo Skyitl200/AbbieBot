@@ -7,7 +7,7 @@ const loadModels = file => JSON.parse(readFileSync(new URL(`../../../study-data/
 export const LAB_MODELS = loadModels('early-development.json');
 export const LAB_SETS = [
     { id: 'early-development', title: 'Early Development Models', category: 'reproductive', models: LAB_MODELS },
-    { id: 'starfish-development', title: 'Starfish Development', category: 'reproductive', showStructureList: true, models: loadModels('starfish-development.json') },
+    { id: 'starfish-development', title: 'Starfish Development', category: 'development', showStructureList: true, models: loadModels('starfish-development.json') },
     { id: 'fetal-circulation', title: '3D Model of Fetal Circulation', category: 'reproductive', showStructureList: true, models: loadModels('fetal-circulation.json') },
     { id: 'ovary', title: '3D Model of Ovary', category: 'reproductive', showStructureList: true, models: loadModels('ovary.json') },
     { id: 'female-sagittal', title: '3D Model of Female Reproductive System (Sagittal View)', category: 'reproductive', showStructureList: true, models: loadModels('female-sagittal.json') },
@@ -37,6 +37,7 @@ export const LAB_CATEGORIES = [
     { id: 'respiratory', title: 'Respiratory Tract', chapter: 22 },
     { id: 'urinary', title: 'Urinary System', chapter: 23 },
     { id: 'digestive', title: 'Digestive System', chapter: 23 },
+    { id: 'development', title: 'Cell Division & Development' },
 ];
 const allModels = LAB_SETS.flatMap(set => set.models);
 const row = component => new ActionRowBuilder().addComponents(component);
@@ -58,7 +59,7 @@ export function selectedLabModels(selection) {
 }
 export function labCategoryMessage(owner) {
     return { content: '', embeds: [new EmbedBuilder({ title: '🔬 Anatomy Lab', description: 'Choose a category, then choose a model set and your answer mode.' })], components: [
-        row(new StringSelectMenuBuilder().setCustomId(`study:labcategory:${owner}`).setPlaceholder('Choose a category').addOptions(LAB_CATEGORIES.map(category => ({ label: category.title, value: category.id, description: `${LAB_SETS.filter(set => set.category === category.id).length} model set(s) · Chapter ${category.chapter}` })))),
+        row(new StringSelectMenuBuilder().setCustomId(`study:labcategory:${owner}`).setPlaceholder('Choose a category').addOptions(LAB_CATEGORIES.map(category => ({ label: category.title, value: category.id, description: `${LAB_SETS.filter(set => set.category === category.id).length} model set(s)${category.chapter ? ` · Chapter ${category.chapter}` : ''}` })))),
         row(new ButtonBuilder().setCustomId(`study:classpage:${owner}:ap_lab:0`).setLabel('Other saved lab categories').setStyle(ButtonStyle.Secondary)),
         row(new ButtonBuilder().setCustomId(`study:classes:${owner}`).setLabel('Classes').setStyle(ButtonStyle.Secondary)),
     ] };
