@@ -1057,7 +1057,8 @@ test('Anatomy Lab opens category → grouped model set → answer mode without a
     const models = fakeInteraction('', { values: ['reproductive'] });
     await handleStudyInteraction(models, {}, ['labcategory', 'u']);
     const picker = models.calls.at(-1)[1].components[0].toJSON().components[0];
-    assert.equal(picker.options.length, 8);
+    assert.equal(picker.options.length, 9);
+    assert.ok(picker.options.some(option => option.value === 'one-month-embryo'));
     assert.ok(picker.options.some(option => option.value === 'developing-baby'));
     assert.ok(!picker.options.some(option => option.value === 'starfish-development'));
     assert.ok(picker.options.some(option => option.value === 'fetal-circulation'));
@@ -1327,7 +1328,7 @@ test('respiratory adjustments remove excluded terms and include pharynx-location
     }
 });
 
-for (const [manifest, count, width, height = 1024] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592], ['pancreas', 6, 1024, 827], ['ileum', 12, 655, 1002], ['liver', 11, 981], ['male-reproductive', 15, 825], ['testis-epididymis', 11, 768], ['female-reproductive', 20, 1024, 697], ['female-sagittal', 15, 747, 931], ['ovary', 13, 1024, 720], ['fetal-circulation', 5, 768]]) {
+for (const [manifest, count, width, height = 1024] of [['upper-respiratory', 25, 761], ['lungs-larynx', 17, 821], ['bronchial-tree', 7, 763], ['kidney', 19, 811], ['urinary-system', 6, 771], ['nephron-1', 18, 702], ['nephron-2', 11, 636], ['lower-urinary', 9, 618], ['larynx-posterior', 6, 768], ['stomach', 12, 768], ['upper-gi', 9, 740], ['digestive-system', 25, 532], ['stomach-layers', 10, 768], ['teeth', 10, 592], ['pancreas', 6, 1024, 827], ['ileum', 12, 655, 1002], ['liver', 11, 981], ['male-reproductive', 15, 825], ['testis-epididymis', 11, 768], ['female-reproductive', 20, 1024, 697], ['female-sagittal', 15, 747, 931], ['ovary', 13, 1024, 720], ['fetal-circulation', 5, 768], ['one-month-embryo', 9, 768]]) {
     test(`${manifest} cards preserve original anatomy pixel-for-pixel outside their arrows`, async () => {
         const { PNG } = await import('pngjs');
         const { readFile } = await import('node:fs/promises');
@@ -2024,6 +2025,28 @@ test('developing baby groups seven original photos with age-and-stage prompts, b
         assert.match(qs.find(q => q.modelName === '5 months - twins').question, /babies considered/);
         if (mode === 'typed') {
             for (const [name, alias, wrong] of [['1 month - embryonic stage', 'one month embryonic stage', '2 months fetal stage'], ['3 months - first trimester', '3 months 1st trimester', '5 months second trimester'], ['5 months - second trimester', 'five months second trimester', '5 months twins'], ['5 months - twins', 'five months twins', '5 months second trimester'], ['7 months - third trimester', '7 months 3rd trimester', '5 months second trimester']]) {
+                const q = qs.find(q => q.modelName === name);
+                assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
+                assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
+            }
+        }
+    }
+});
+
+test('one-month embryo offers nine location cards with separate membranes, spaces and sac outline', async () => {
+    const { labQuestions, labModelsMessage, labModelImage } = await import('../src/services/study/labModels.js');
+    const { matchesLabAnswer } = await import('../src/services/study/answerMatching.js');
+    assert.ok(labModelsMessage('u', 'reproductive').components[0].toJSON().components[0].options.some(o => o.value === 'one-month-embryo' && o.label === '3D Model of 1 Month Embryo Parts'));
+    for (const mode of ['multiple_choice', 'typed']) {
+        const qs = labQuestions('one-month-embryo', mode);
+        assert.equal(qs.length, 9);
+        for (const q of qs) {
+            assert.ok(labModelImage(q));
+            if (mode === 'multiple_choice') assert.equal(q.options[q.correct[0]], q.modelName);
+            else assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
+        }
+        if (mode === 'typed') {
+            for (const [name, alias, wrong] of [['Amniotic cavity', 'amnionic cavity', 'amnion'], ['Amnion', 'amniotic membrane', 'chorion'], ['Chorion', 'chorionic membrane', 'chorionic villi'], ['Gestational sac', 'chorionic sac', 'yolk sac'], ['Intervillous space', 'intervillous spaces', 'amniotic cavity']]) {
                 const q = qs.find(q => q.modelName === name);
                 assert.ok(matchesLabAnswer(alias, q.answers, q.competingAnswers));
                 assert.ok(!matchesLabAnswer(wrong, q.answers, q.competingAnswers));
