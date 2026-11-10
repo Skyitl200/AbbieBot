@@ -534,3 +534,5 @@ mucosae and visceral peritoneum. Rebuild with
 **3D Model of Female Reproductive System (Sagittal View)** adds fifteen reproductive location cards in both answer modes, with original-photo cyan overlays. Clitoris accepts the supplied spelling “clitorus”; the vaginal opening is separate from the canal, and cervical openings and labia remain distinct. Rebuild with `python scripts/renderRespiratoryPointers.py female-sagittal.json`.
 
 **3D Model of Ovary** adds thirteen reproductive location cards in both answer modes using original-photo cyan markers. Follicle and corpus stages, the oocyte and released oocyte, and the antrum remain separate identification cards. Rebuild with `python scripts/renderRespiratoryPointers.py ovary.json`.
+
+**3D Model of Fetal Circulation** adds five reproductive identification cards with original-photo cyan circles matched to the supplied reference. Both answer modes use short structure names; answer feedback preserves all three supplied fetal-shunt connections. Rebuild with `python scripts/renderRespiratoryPointers.py fetal-circulation.json`.
