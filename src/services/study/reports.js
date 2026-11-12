@@ -1,6 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { ActionRowBuilder, EmbedBuilder, MessageFlags, ModalBuilder, TextInputBuilder, TextInputStyle } from 'discord.js';
 import { answerText } from './questions.js';
+import { displayedQuestionPrompt } from './prompts.js';
 import { imageForQuestion } from './images.js';
 import { logger } from '../../utils/logger.js';
 
@@ -54,7 +55,7 @@ function reportMessage(report) {
         { name: 'Reporter', value: `<@${report.ownerId}> (${report.ownerId})`.slice(0, 100) },
         { name: 'Quiz / model', value: `${report.course} · ${report.topic}${q.modelName ? ` · ${q.modelName}` : ''}`.slice(0, 300) },
         { name: 'Question ID', value: String(q.id || q.labModelId || 'Unknown').slice(0, 100) },
-        { name: 'Question', value: String(q.question).slice(0, 1000) },
+        { name: 'Question', value: displayedQuestionPrompt(q).slice(0, 1000) },
     ];
     if (q.options?.length) {
         const order = report.displayOrder.length === q.options.length ? report.displayOrder : q.options.map((_, i) => i);

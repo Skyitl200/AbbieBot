@@ -1,4 +1,5 @@
 import { questionReportModal, submitQuestionReport } from './reports.js';
+import { displayedQuestionPrompt } from './prompts.js';
 import { announceCrateDrop } from '../discovery/announcements.js';
 import { cacheFoundNotice } from '../discovery/catalog.js';
 import { LAB_CATEGORIES, labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labSetForSelection } from './labModels.js';
@@ -83,7 +84,8 @@ export function topicMessage(ownerId, banks) {
 
 export function questionMessage(session) {
     const q = session.questions[session.index];
-    let description = q.labModelId && !q.requiresModelImage ? `**Model: ${q.modelName}**\n\n${q.question}` : q.question;
+    const prompt = displayedQuestionPrompt(q);
+    let description = q.labModelId && !q.requiresModelImage ? `**Model: ${q.modelName}**\n\n${prompt}` : prompt;
     const components = [];
     if (q.type === 'fill_blank') {
         description += q.labModelId ? '\n\nSelect **Enter answer** to type your answer.' : '\n\nSelect **Enter answer** to type the missing term.';
