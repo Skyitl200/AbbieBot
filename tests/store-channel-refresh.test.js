@@ -35,7 +35,7 @@ test('replaces existing image and price, retaining online/book URLs and ticket c
   assert.equal(buttons.find(b => b.custom_id === 'paypal_subscribe').label, 'Subscribe — $14.87/month');
   assert.ok(buttons.some(b => b.custom_id === 'create_ticket'));
   assert.equal(payload.content, '**HealthScienceGuild Store**');
-  assert.equal(payload.files[0].name, 'healthscienceguild-store.png');
+  assert.equal(payload.files[0].name, 'healthscienceguild-store-horizontal.png');
   assert.deepEqual(payload.attachments, []);
   assert.deepEqual(message.components, original);
   message.content = payload.content;
@@ -55,4 +55,14 @@ test('does not edit another author or create a new post', async () => {
 test('continues startup when access fails', async () => {
   const client = { channels: { fetch: async () => { throw new Error('Missing Access'); } } };
   assert.equal(await refreshStoreChannel(client, logger), 'failed');
+});
+
+test('replaces portrait artwork even when pricing and branding are already current', async () => {
+  const { client, edits, message } = fixture();
+  message.content = '**HealthScienceGuild Store**';
+  message.components[0].components.pop();
+  message.components[1].components.find(b => b.custom_id === 'paypal_subscribe').label = 'Subscribe — $14.87/month';
+  message.attachments = new Map([['portrait', { name: 'healthscienceguild-store.png' }]]);
+  assert.equal(await refreshStoreChannel(client, logger), 'updated');
+  assert.equal(edits[0].files[0].name, 'healthscienceguild-store-horizontal.png');
 });

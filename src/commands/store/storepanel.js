@@ -30,7 +30,7 @@ export default {
 
     try {
       const storeImage = new AttachmentBuilder(
-        './src/assets/store/healthscienceguild-store.png'
+        './src/assets/store/healthscienceguild-store-horizontal.png'
       );
 
       // Row 1 — Tutoring

@@ -1,8 +1,8 @@
 import { fileURLToPath } from 'node:url';
 
 export const STORE_CHANNEL_ID = '1551091551726342144';
-const imageName = 'healthscienceguild-store.png';
-const imagePath = fileURLToPath(new URL('../assets/store/healthscienceguild-store.png', import.meta.url));
+const imageName = 'healthscienceguild-store-horizontal.png';
+const imagePath = fileURLToPath(new URL('../assets/store/healthscienceguild-store-horizontal.png', import.meta.url));
 
 const rowsOf = message => message.components.map(row => row.toJSON ? row.toJSON() : row);
 const isSubscription = button => button.custom_id === 'paypal_subscribe';
