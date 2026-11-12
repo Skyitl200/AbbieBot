@@ -221,10 +221,10 @@ export async function handleStudyInteraction(interaction, client, args) {
             const questions = labQuestions(token, mode);
             if (questions.some(question => !imageForQuestion(question))) return await privateError(interaction, 'This model set needs its image files before it can start. Please try again after the photos are installed.');
             const set = labSetForSelection(token);
-            const category = LAB_CATEGORIES.find(category => category.id === set.category)?.title || 'Anatomy Lab';
+            const category = LAB_CATEGORIES.find(category => category.id === set.category)?.title || 'Anatomy and Physiology Lab';
             const session = createStudySession(interaction.guildId, ownerId, questions, `lab_${set.category}`);
             session.classId = 'ap_lab';
-            session.topicLabel = `Anatomy Lab • ${category} • ${set.title} • ${mode === 'typed' ? 'Type in' : 'Multiple choice'}`;
+            session.topicLabel = `Anatomy and Physiology Lab • ${category} • ${set.title} • ${mode === 'typed' ? 'Type in' : 'Multiple choice'}`;
             await interaction.deferUpdate();
             await publishQuestion(interaction, session);
             return;

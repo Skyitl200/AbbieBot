@@ -60,7 +60,7 @@ export function selectedLabModels(selection) {
     return tokens.map(token => LAB_MODELS[Number(token)]);
 }
 export function labCategoryMessage(owner) {
-    return { content: '', embeds: [new EmbedBuilder({ title: '🔬 Anatomy Lab', description: 'Choose a category, then choose a model set and your answer mode.' })], components: [
+    return { content: '', embeds: [new EmbedBuilder({ title: '🔬 Anatomy and Physiology Lab', description: 'Choose a category, then choose a model set and your answer mode.' })], components: [
         row(new StringSelectMenuBuilder().setCustomId(`study:labcategory:${owner}`).setPlaceholder('Choose a category').addOptions(LAB_CATEGORIES.map(category => ({ label: category.title, value: category.id, description: `${LAB_SETS.filter(set => set.category === category.id).length} model set(s)${category.chapter ? ` · Chapter ${category.chapter}` : ''}` })))),
         row(new ButtonBuilder().setCustomId(`study:classpage:${owner}:ap_lab:0`).setLabel('Other saved lab categories').setStyle(ButtonStyle.Secondary)),
         row(new ButtonBuilder().setCustomId(`study:classes:${owner}`).setLabel('Classes').setStyle(ButtonStyle.Secondary)),
@@ -73,7 +73,7 @@ export function labModelsMessage(owner, categoryId = 'reproductive') {
     const missing = sets.some(set => set.models.some(model => !labModelImage({ labModelId: model.id })));
     return { content: '', embeds: [new EmbedBuilder({ title: `${category.title} · Model Sets`, description: 'Choose a set to study its images together.\n\n' + (missing ? 'Some model photos are unavailable. Sets need all their photos before a quiz can start.' : 'Identify the model or the structure indicated by the arrow. Use multiple choice or type your answer.') })], components: [
         row(new StringSelectMenuBuilder().setCustomId(`study:labmodels:${owner}`).setPlaceholder('Choose a model set').addOptions(sets.map(set => ({ label: set.title, value: set.id, description: `${set.models.length} images studied together` })))),
-        row(new ButtonBuilder().setCustomId(`study:labhome:${owner}`).setLabel('Back to Anatomy Lab').setStyle(ButtonStyle.Secondary)),
+        row(new ButtonBuilder().setCustomId(`study:labhome:${owner}`).setLabel('Back to Anatomy and Physiology Lab').setStyle(ButtonStyle.Secondary)),
     ] };
 }
 export function labModeMessage(owner, selection) {

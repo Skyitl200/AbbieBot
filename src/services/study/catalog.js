@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 
 export const STUDY_CLASSES = [
     { id: 'ap_lecture', label: 'Anatomy and Physiology Lecture', emoji: '🫀', description: 'Study anatomy and physiology lecture topics', authored: true },
-    { id: 'ap_lab', label: 'Anatomy Lab', emoji: '🔬', aliases: ['Anatomy Lab', 'Anatomy and Physiology Lab', 'Anatomy & Physiology Lab', 'Physiology and Anatomy Lab', 'Physiology & Anatomy Lab', 'A&P Lab', 'Anatomy and Physiology Laboratory'] },
+    { id: 'ap_lab', label: 'Anatomy and Physiology Lab', emoji: '🔬', aliases: ['Anatomy Lab', 'Anatomy and Physiology Lab', 'Anatomy & Physiology Lab', 'Physiology and Anatomy Lab', 'Physiology & Anatomy Lab', 'A&P Lab', 'Anatomy and Physiology Laboratory'] },
     { id: 'micro_lecture', label: 'Microbiology Lecture', emoji: '🦠', aliases: ['Microbiology Lecture', 'Microbiology'] },
     { id: 'micro_lab', label: 'Microbiology Lab', emoji: '🧫', aliases: ['Microbiology Lab', 'Microbiology Laboratory'] },
     { id: 'chem_lecture', label: 'Chemistry Lecture', emoji: '⚗️', aliases: ['Chemistry Lecture', 'Chemistry'] },
