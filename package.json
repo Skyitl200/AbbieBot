@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node src/app.js",
     "test:rules": "node --test tests/rules-embed.test.js",
-    "test:study": "node --test tests/study.test.js tests/study-images.test.js tests/study-blood-vessels.test.js tests/study-lymphatic.test.js tests/study-respiratory.test.js tests/study-digestive.test.js tests/study-fluid-balance.test.js tests/study-reproductive.test.js tests/study-usage-limit.test.js tests/study-lecture-choices.test.js",
+    "test:study": "node --test tests/study.test.js tests/study-images.test.js tests/study-blood-vessels.test.js tests/study-lymphatic.test.js tests/study-respiratory.test.js tests/study-digestive.test.js tests/study-fluid-balance.test.js tests/study-reproductive.test.js tests/study-usage-limit.test.js tests/study-lecture-choices.test.js tests/study-skip.test.js tests/question-reports.test.js",
     "validate:study:images": "node scripts/validateStudyImages.js",
     "validate:study": "node scripts/validateStudyQuestions.js",
     "validate:study:complete": "node scripts/validateStudyQuestions.js --complete",

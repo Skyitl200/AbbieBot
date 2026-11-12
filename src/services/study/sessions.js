@@ -9,7 +9,7 @@ export function createStudySession(guildId, userId, questions, topicId, now = Da
     for (const [id, session] of sessions) if (session.expiresAt <= now) sessions.delete(id);
     if (!questions.length) throw new Error('Cannot start an empty session');
     const session = { id: randomUUID().slice(0, 8), rewardId: randomUUID(), guildId, userId, topicId, questions,
-        index: 0, score: 0, moneyEarned: 0, answeredQuestions: new Map(), answered: false, revision: 0, order: [], expiresAt: now + TTL };
+        index: 0, score: 0, skipped: 0, moneyEarned: 0, answeredQuestions: new Map(), answered: false, revision: 0, order: [], expiresAt: now + TTL };
     prepareQuestion(session);
     sessions.set(key(guildId, userId), session);
     return session;
@@ -71,4 +71,13 @@ export function nextStudyQuestion(session) {
     session.revision++;
     session.expiresAt = Date.now() + TTL;
     prepareQuestion(session);
+}
+
+export function skipStudyQuestion(session) {
+    if (session.answered) throw new Error('This question has already been answered.');
+    session.answered = true;
+    session.lastCorrect = false;
+    session.skipped = (session.skipped || 0) + 1;
+    session.revision++;
+    session.expiresAt = Date.now() + TTL;
 }

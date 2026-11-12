@@ -13,7 +13,7 @@ import { settleStudyReward, COIN_EMOJI, BALANCE_EMOJI } from './rewards.js';
 import { answerText, loadQuestionBanks, selectQuestions } from './questions.js';
 import {
     createStudySession, getStudySession, checkStudyAction, chooseOrderItem,
-    undoOrderItem, submitStudyAnswer, nextStudyQuestion,
+    undoOrderItem, submitStudyAnswer, nextStudyQuestion, skipStudyQuestion,
 } from './sessions.js';
 
 const TYPE_LABELS = {
@@ -107,6 +107,10 @@ export function questionMessage(session) {
             ));
         }
     }
+    components.push(row(
+        button(actionId(session, 'skip'), 'Skip', ButtonStyle.Secondary),
+        button(actionId(session, 'report'), 'Report', ButtonStyle.Secondary),
+    ));
     const label = session.topicLabel || TOPIC_BY_ID.get(session.topicId)?.label || 'Random A&P';
     return addLectureImage({ content: '', embeds: [new EmbedBuilder().setTitle(`Question ${session.index + 1} of ${session.questions.length}`)
         .setDescription(description).setFooter({ text: `${label} • ${TYPE_LABELS[q.type]} • ${q.difficulty}` })], components }, q);
@@ -129,10 +133,11 @@ export function resultMessage(session, correct) {
         .addFields(
             { name: 'Correct Answer', value: answerText(q).slice(0, 1024) },
             { name: 'Explanation', value: q.explanation.slice(0, 1024) },
-            { name: 'Quiz Progress', value: `Question **${session.index + 1} / ${session.questions.length}**\nCorrect: **${session.score}**\nIncorrect: **${session.index + 1 - session.score}**\n${COIN_EMOJI} Merit Coins Earned So Far: **${session.moneyEarned} Merit Coins**` },
+            { name: 'Quiz Progress', value: `Question **${session.index + 1} / ${session.questions.length}**\nCorrect: **${session.score}**\nIncorrect: **${session.index + 1 - session.score - (session.skipped || 0)}**\nSkipped: **${session.skipped || 0}**\n${COIN_EMOJI} Merit Coins Earned So Far: **${session.moneyEarned} Merit Coins**` },
         );
     const unpaid = correct && reward?.status !== 'saved' && Boolean(session.guildId);
-    if (finished && !unpaid) embed.addFields({ name: '🏆 Test Complete', value: `Score: **${session.score}/${session.questions.length} (${Math.round(session.score / session.questions.length * 100)}%)**\n${COIN_EMOJI} Total Merit Coins Earned: **${session.moneyEarned} Merit Coins**\nUse /test to study again.` });
+    const attempted = session.questions.length - (session.skipped || 0);
+    if (finished && !unpaid) embed.addFields({ name: '🏆 Test Complete', value: `Score: **${session.score}/${attempted} (${attempted ? Math.round(session.score / attempted * 100) : 0}%)**\n${COIN_EMOJI} Total Merit Coins Earned: **${session.moneyEarned} Merit Coins**\nUse /test to study again.` });
     const components = unpaid ? [row(button(actionId(session, 'reward'), '🪙 Retry coins'))]
         : finished ? [row(button(`study:classes:${session.userId}`, '📚 Choose another class', ButtonStyle.Secondary))]
         : [row(button(actionId(session, 'next'), '➡️ Next Question'))];
@@ -268,6 +273,7 @@ export async function handleStudyInteraction(interaction, client, args) {
         const session = getStudySession(interaction.guildId, ownerId, token);
         if (action === 'report') {
             if (!session) throw new Error('This study session has expired. Start /test again.');
+            if (!session.answeredQuestions.has(Number(index))) checkStudyAction(session, index, revision);
             return await interaction.showModal(questionReportModal(session, Number(index), interaction));
         }
         checkStudyAction(session, index, revision);
@@ -295,6 +301,23 @@ export async function handleStudyInteraction(interaction, client, args) {
             await interaction.deferUpdate();
             await pending;
             await showResult(interaction, session, true);
+            return;
+        } else if (action === 'skip') {
+            const previousPublicId = session.publicQuestionId;
+            skipStudyQuestion(session);
+            const finished = session.index + 1 === session.questions.length;
+            if (!finished) nextStudyQuestion(session);
+            if (previousPublicId) await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+            else await interaction.deferUpdate();
+            if (previousPublicId) await interaction.webhook.editMessage(previousPublicId, { components: [] });
+            if (!finished) {
+                await publishQuestion(interaction, session);
+            } else {
+                const summary = { content: '', embeds: [new EmbedBuilder().setTitle('🏆 Test Complete')
+                    .setDescription(`Correct: **${session.score}**\nIncorrect: **${session.questions.length - session.score - session.skipped}**\nSkipped: **${session.skipped}**\n${COIN_EMOJI} Total Merit Coins Earned: **${session.moneyEarned} Merit Coins**`)],
+                    components: [row(button(`study:classes:${ownerId}`, '📚 Choose another class', ButtonStyle.Secondary))], attachments: [], files: [] };
+                await editStudyReply(interaction, summary);
+            }
             return;
         } else if (action === 'next') {
             nextStudyQuestion(session);

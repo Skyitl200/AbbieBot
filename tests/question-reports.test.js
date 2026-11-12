@@ -39,7 +39,7 @@ test('every result has Report beside Next, and final results and coin retries al
     assert.deepEqual(resultMessage(final,true).components[0].toJSON().components.map(b=>b.label), ['📚 Choose another class','Report']);
 });
 
-test('reports are owner-only and can only be opened for an answered question', async () => {
+test('reports are owner-only and reject future unanswered questions', async () => {
     const { session, interaction }=fixture();
     let rejection;
     await handleStudyInteraction({ ...interaction, user:{id:'spectator'}, async reply(payload) { rejection=payload; } },{},['report',session.userId,session.id,'0',String(session.revision)]);
@@ -141,4 +141,46 @@ test('typed and ordering reports retain their correct answer formats', async () 
             assert.ok(answer.indexOf('Esophagus')<answer.indexOf('Stomach'));
         }
     }
+});
+
+test('lecture questions can be reported before answering, retaining their displayed options and image', async () => {
+    const { loadQuestionBanks } = await import('../src/services/study/questions.js');
+    const { questionMessage } = await import('../src/services/study/interface.js');
+    const { imageForQuestion } = await import('../src/services/study/images.js');
+    const question = (await loadQuestionBanks()).get('circulatory')[0];
+    const session = createStudySession('1540000000000000000', `lecture-report-${Math.random()}`, [question, q], 'circulatory');
+    session.classId = 'ap_lecture';
+    session.publicQuestionId = '1540000000000000002';
+    const interaction = { guildId: session.guildId, channelId: '1540000000000000001', user: { id: session.userId } };
+    const buttons = questionMessage(session).components.at(-1).toJSON().components;
+    assert.ok(buttons.some(b => b.label === 'Report'));
+    let modal;
+    await handleStudyInteraction({ ...interaction, async showModal(m) { modal = m; } }, {}, ['report', session.userId, session.id, '0', '0']);
+    assert.ok(modal);
+    assert.equal(session.answered, false);
+    assert.equal(session.score, 0);
+    const shown = session.displayOrder.map((option,i) => `${String.fromCharCode(65+i)}. ${question.options[option]}`).join('\n');
+    const sink = delivery();
+    assert.equal(QUESTION_REPORT_CHANNEL_ID, '1549474402062704675');
+    await submitQuestionReport(submission(interaction, 'The picture does not illustrate this question.'), sink.client, tokenOf(modal));
+    assert.equal(sink.messages.length, 1);
+    const payload = sink.messages[0];
+    const fields = payload.embeds[0].toJSON().fields;
+    assert.equal(fields.find(f => f.name === 'Question ID').value, question.id);
+    assert.equal(fields.find(f => f.name === 'Answer choices (as shown)').value, shown);
+    assert.equal(payload.files[0].attachment, imageForQuestion(question).path);
+    assert.equal(session.answered, false);
+    assert.equal(session.reward, null);
+    assert.deepEqual(payload.allowedMentions, { parse: [] });
+});
+
+test('unanswered reports reject stale controls and future questions', async () => {
+    const session = createStudySession('report-stale-guild', 'report-stale-user', [q, q], 'random');
+    let modal, error;
+    const interaction = { guildId: session.guildId, user: { id: session.userId }, async showModal(m) { modal = m; }, async reply(p) { error = p; } };
+    session.revision++;
+    await handleStudyInteraction(interaction, {}, ['report', session.userId, session.id, '0', '0']);
+    assert.equal(modal, undefined);
+    assert.match(error.content, /expired/);
+    assert.throws(() => questionReportModal(session, 1, interaction), /current|answered/);
 });

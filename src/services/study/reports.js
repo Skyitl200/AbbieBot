@@ -20,10 +20,13 @@ function cleanExpiredReports(now) {
 
 export function questionReportModal(session, index, interaction, now = Date.now()) {
     cleanExpiredReports(now);
-    if (!Number.isInteger(index) || !session?.answeredQuestions?.has(index) || !session.questions[index]) {
-        throw new Error('This question must be answered before it can be reported.');
+    const current = index === session?.index && !session?.answered;
+    if (!Number.isInteger(index) || (!session?.answeredQuestions?.has(index) && !current) || !session.questions[index]) {
+        throw new Error('This question must be current or already answered before it can be reported.');
     }
-    const answered = session.answeredQuestions.get(index);
+    const answered = session.answeredQuestions.get(index) || {
+        publicQuestionId: session.publicQuestionId || null, displayOrder: session.displayOrder,
+    };
     const key = `${session.guildId}:${session.userId}:${session.rewardId}:${index}`;
     let token = reportKeys.get(key);
     let report = reports.get(token);

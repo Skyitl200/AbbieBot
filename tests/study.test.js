@@ -997,7 +997,7 @@ test('multiple choice letters match shuffled answer buttons and preserve grading
     const question = { ...mc, options: ['First', 'Second', 'Third', 'Fourth'], correct: [2] };
     const session = createStudySession('letters-guild', 'letters-user', [question], topic.id);
     const payload = questionMessage(session);
-    const buttons = payload.components.flatMap(row => row.toJSON().components);
+    const buttons = payload.components.flatMap(row => row.toJSON().components).filter(button => button.custom_id?.startsWith('study:choice:'));
     assert.deepEqual(buttons.map(button => button.label), ['A', 'B', 'C', 'D']);
     session.displayOrder.forEach((value, index) => {
         assert.ok(payload.embeds[0].toJSON().description.includes(`**${String.fromCharCode(65 + index)}.** ${question.options[value]}`));
