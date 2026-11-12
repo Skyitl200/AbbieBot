@@ -20,9 +20,10 @@ downloaded 399 selected textbook figures during the final import; the index also
 retains earlier source assets. All 159 study regression tests pass. This is a substantial partial refresh, not a manual review of all 13,800
 questions or a promise of a different base photograph for every question.
 
-Paired lecture checks display separate references when their two concepts have
-different figures. Identical references attach once. Question and result views
-clear previous attachments before displaying the new reference(s).
+Question and result views display one primary reference image, including paired
+lecture checks, and clear previous attachments. Visible image-credit fields are
+omitted; source attribution and licensing remain in the image index and this
+repository.
 
 ## Attribution
 

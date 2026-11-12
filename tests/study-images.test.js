@@ -75,7 +75,7 @@ test('question images display without lecture reference text', async () => {
     }
 });
 
-test('paired lecture checks attach both distinct concept references', async () => {
+test('paired lecture checks show one primary image without visible credits', async () => {
     const questions = [...(await loadQuestionBanks()).values()].flat();
     const primary = questions[0];
     const first = imageForQuestion(primary);
@@ -83,8 +83,10 @@ test('paired lecture checks attach both distinct concept references', async () =
     const paired = { ...primary, lectureChoice: { strategy: 'related_checks', secondaryId: secondary.id } };
     const session = createStudySession('paired-images', 'paired-user', [paired], 'random');
     for (const payload of [questionMessage(session), resultMessage(session, true)]) {
-        assert.equal(payload.files.length, 2);
-        assert.equal(payload.embeds.at(-1).toJSON().image.url, `attachment://${imageForQuestion(secondary).asset.file}`);
+        assert.equal(payload.files.length, 1);
+        assert.equal(payload.embeds.length, 1);
+        assert.equal(payload.embeds[0].toJSON().image.url, `attachment://${first.asset.file}`);
+        assert.ok(!(payload.embeds[0].toJSON().fields || []).some(field => /credit|OpenStax|CC BY/i.test(field.name + field.value)));
         assert.deepEqual(payload.attachments, []);
     }
     paired.lectureChoice.secondaryId = primary.id;
