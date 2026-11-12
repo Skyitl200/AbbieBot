@@ -14,7 +14,11 @@ import { logger } from '../../utils/logger.js';
 export default {
   data: new SlashCommandBuilder()
     .setName('storepanel')
-    .setDescription('Posts the BiologyHQ Store panel.')
+    .setDescription('Posts or updates the HealthScienceGuild Store panel.')
+    .addStringOption(option => option
+      .setName('message_id')
+      .setDescription('Existing bot store message in this channel to replace')
+      .setRequired(false))
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
   category: 'store',
@@ -26,7 +30,7 @@ export default {
 
     try {
       const storeImage = new AttachmentBuilder(
-        './src/assets/store/biologyhq-store.png'
+        './src/assets/store/healthscienceguild-store.png'
       );
 
       // Row 1 — Tutoring
@@ -35,13 +39,7 @@ export default {
           .setLabel('Online Tutoring — $20')
           .setStyle(ButtonStyle.Link)
           .setURL('https://www.paypal.com/ncp/payment/8S3H75QJPACAY')
-          .setEmoji('💻'),
-
-        new ButtonBuilder()
-          .setLabel('In-Person Tutoring — $30')
-          .setStyle(ButtonStyle.Link)
-          .setURL('https://www.paypal.com/ncp/payment/TD4JKV47FSUL2')
-          .setEmoji('🎓')
+          .setEmoji('💻')
       );
 
       // Row 2 — Individual Books
@@ -75,11 +73,11 @@ export default {
 
         new ButtonBuilder()
           .setCustomId('paypal_subscribe')
-          .setLabel('Subscribe — $10/month')
+          .setLabel('Subscribe — $14.87/month')
           .setStyle(ButtonStyle.Success)
           .setEmoji('⭐'),
 
-        // Reuses BiologyHQ's existing ticket system.
+        // Reuses HealthScienceGuild's existing ticket system.
         new ButtonBuilder()
           .setCustomId('create_ticket')
           .setLabel('Open Purchase Ticket')
@@ -87,9 +85,20 @@ export default {
           .setEmoji('🎫')
       );
 
-      await interaction.channel.send({
+      const messageId = interaction.options.getString('message_id');
+      const existingMessage = messageId
+        ? await interaction.channel.messages.fetch(messageId)
+        : null;
+      if (existingMessage && existingMessage.author.id !== interaction.client.user.id) {
+        await InteractionHelper.safeEditReply(interaction, {
+          content: '❌ Choose a store message posted by this bot in this channel.'
+        });
+        return;
+      }
+
+      const payload = {
         content:
-          '**BiologyHQ Store**\n' +
+          '**HealthScienceGuild Store**\n' +
           'Choose an option below. Payments are securely completed through PayPal.\n' +
           'For tutoring scheduling, book questions, or purchase help, open a ticket.',
         files: [storeImage],
@@ -98,24 +107,30 @@ export default {
           booksRow,
           membershipRow
         ]
-      });
+      };
+
+      if (existingMessage) {
+        await existingMessage.edit({ ...payload, attachments: [], embeds: [] });
+      } else {
+        await interaction.channel.send(payload);
+      }
 
       await InteractionHelper.safeEditReply(interaction, {
-        content: '✅ BiologyHQ Store panel posted successfully.'
+        content: '✅ HealthScienceGuild Store panel saved successfully.'
       });
 
-      logger.info('BiologyHQ Store panel posted successfully', {
+      logger.info('HealthScienceGuild Store panel posted successfully', {
         userId: interaction.user.id,
         guildId: interaction.guildId,
         channelId: interaction.channelId
       });
 
     } catch (error) {
-      logger.error('Failed to post BiologyHQ Store panel:', error);
+      logger.error('Failed to post HealthScienceGuild Store panel:', error);
 
       await InteractionHelper.safeEditReply(interaction, {
         content:
-          '❌ I could not post the BiologyHQ Store panel. Check the Railway logs for the error.'
+          '❌ I could not post the HealthScienceGuild Store panel. Check the Railway logs for the error.'
       });
     }
   }

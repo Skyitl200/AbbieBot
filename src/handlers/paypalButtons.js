@@ -40,7 +40,7 @@ export const paypalSubscribeHandler = {
 
       await interaction.reply({
         content:
-          '**BiologyHQ Membership — $10/month**\n\n' +
+          '**HealthScienceGuild Membership — $14.87/month**\n\n' +
           'Click below to continue securely to PayPal. ' +
           'This checkout link is connected to your Discord account.',
         components: [row],
