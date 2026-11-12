@@ -37,7 +37,7 @@ test('all 100 encounter rolls match the advertised tier weights', () => {
     const counts = Object.fromEntries(TIERS.map(t => [t.name, 0]));
     for (let i = 0; i < 100; i++) counts[SPECIES.find(s => s.id === rollEncounter(rolls(i, 0, 1, 0), now).speciesId).tier]++;
     assert.deepEqual(counts, { common: 55, uncommon: 30, rare: 12, epic: 3 });
-    assert.equal(new Set(SPECIES.map(s => s.id)).size, 19);
+    assert.equal(new Set(SPECIES.map(s => s.id)).size, 40);
 });
 
 test('exactly one of the 1,000 shiny roll outcomes is shiny, independent of tier', () => {
@@ -172,6 +172,48 @@ test('all species questions have valid answers and correct note errors', () => {
     assert.equal(SPECIES.find(s => s.id === 'fasciolopsis').name, 'Fasciolopsis buski');
 });
 
+test('textbook bacteria extend the original collection without receiving protozoan questions', async () => {
+    const { BACTERIA } = await import('../src/services/microbemon/bacteria.js');
+    const { questionsForSpecies } = await import('../src/services/microbemon/questions.js');
+    assert.equal(BACTERIA.length, 21);
+    assert.equal(SPECIES.length, 40);
+    assert.deepEqual(SPECIES.slice(0, 19).map(s => s.id), ['amoeba', 'paramecium', 'enterobius', 'ascaris', 'stentor', 'vorticella', 'giardia', 'necator', 'solium', 'saginata', 'entamoeba', 'balantidium', 'fasciola', 'fasciolopsis', 'paragonimus', 'trypanosoma', 'toxoplasma', 'plasmodium', 'schistosoma']);
+    for (const species of BACTERIA) {
+        assert.ok(species.aliases.includes(species.textbookName));
+        assert.equal(species.rosterSource.kind, 'user-textbook-photo');
+        const questions = questionsForSpecies(species.id);
+        assert.ok(questions.length >= 7, species.id);
+        assert.equal(questions.some(q => q.source.file === 'Chapter 12 (1).pptx'), false, species.id);
+        assert.equal(questions.some(q => q.id.startsWith('proto-')), false, species.id);
+    }
+    const corrected = BACTERIA.find(s => s.id === 'enterococcus-faecalis');
+    assert.equal(corrected.name, 'Enterococcus faecalis');
+    assert.equal(corrected.textbookName, 'Enterobacter faecalis');
+    const legacy = BACTERIA.find(s => s.id === 'sarcina-subflava');
+    assert.equal(legacy.shape, null); assert.equal(legacy.stain, null);
+    assert.match(legacy.nameNote, /Unverified/);
+    assert.equal(questionsForSpecies(legacy.id).some(q => q.id === `${legacy.id}-shape`), false);
+});
+
+test('all 40 species fit existing storage menus and bacteria render in deck and companion views', async () => {
+    const { renderDeckGrid } = await import('../src/services/microbemon/deck.js');
+    const { PNG } = await import('pngjs');
+    const p = newProfile();
+    p.pets = SPECIES.map((species, i) => ({ id: `roster-${i}`, speciesId: species.id, level: 1, shiny: i % 2 === 0, caughtAt: now }));
+    for (let page = 0; page < 4; page++) {
+        const message = renderGame(p, 'owner', { view: 'deck', page });
+        for (const row of message.components) for (const component of row.toJSON().components) {
+            if (component.options) assert.ok(component.options.length <= 25);
+        }
+        const png = PNG.sync.read(await renderDeckGrid(p, page));
+        assert.equal(png.width, 804);
+    }
+    p.companion = 'roster-20';
+    const home = renderGame(p, 'owner');
+    assert.equal(Buffer.isBuffer(home.files[0].attachment), true);
+    assert.match(home.files[0].name, /bacillus-cereus/);
+});
+
 test('Microbemon routes load without exceeding Discord command limit', async () => {
     const { Collection } = await import('discord.js');
     const { loadCommands } = await import('../src/handlers/loaders/commandLoader.js');
@@ -204,23 +246,23 @@ test('each organism and shiny variant has its own file and habitat context', asy
     const hashes = new Set(); const paths = new Set();
     for (const species of SPECIES) for (const shiny of [false, true]) {
         const asset = speciesArtwork(species.id, shiny);
-        const bytes = readFileSync(asset.path);
+        const bytes = asset.buffer || readFileSync(asset.path);
         assert.deepEqual([...bytes.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10]);
-        hashes.add(createHash('sha256').update(bytes).digest('hex')); paths.add(asset.path);
+        hashes.add(createHash('sha256').update(bytes).digest('hex')); paths.add(asset.path || asset.name);
         const p = newProfile();
         p.encounter = { id: 'portrait-check', speciesId: species.id, shiny, level: 7, hp: 40,
             playerHp: 60, attempts: 3, revision: 0, expiresAt: Date.now() + ENCOUNTER_MS };
         const encounter = renderGame(p, 'owner');
         assert.equal(encounter.files.length, 1);
-        assert.equal(encounter.files[0].attachment, asset.path);
+        assert.equal(encounter.files[0].attachment, asset.buffer || asset.path);
         assert.equal(encounter.embeds[0].toJSON().image.url, `attachment://${asset.name}`);
         assert.match(encounter.embeds[0].toJSON().fields[0].value, new RegExp(ARTWORK[species.id].habitat.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
         p.pets.push({ id: 'pet', speciesId: species.id, shiny, level: 7, caughtAt: now });
         p.encounter.speciesId = SPECIES.find(other => other.id !== species.id).id;
         const collection = renderGame(p, 'owner', { view: 'collection' });
-        assert.equal(collection.files[0].attachment, asset.path, 'Collection must show its pet, not the active encounter');
+        assert.equal(collection.files[0].attachment, asset.buffer || asset.path, 'Collection must show its pet, not the active encounter');
     }
-    assert.equal(paths.size, 38); assert.equal(hashes.size, 38, 'Shared image copies cannot substitute for unique portraits');
+    assert.equal(paths.size, 80); assert.equal(hashes.size, 80, 'Shared image copies cannot substitute for unique portraits');
     assert.equal(speciesArtwork('unknown'), null);
 });
 
@@ -236,12 +278,17 @@ test('guide and empty lobby do not show the old three-creature scene', () => {
 
 test('slide-backed battle pools cover every organism with varied non-taxonomy questions', async () => {
     const { BATTLE_QUESTIONS, questionsForSpecies } = await import('../src/services/microbemon/questions.js');
-    assert.equal(BATTLE_QUESTIONS.length, 70);
-    assert.equal(new Set(BATTLE_QUESTIONS.map(q => q.id)).size, 70);
+    assert.equal(BATTLE_QUESTIONS.filter(q => q.source.file).length, 70);
+    assert.equal(new Set(BATTLE_QUESTIONS.map(q => q.id)).size, BATTLE_QUESTIONS.length);
     for (const question of BATTLE_QUESTIONS) {
         assert.equal(new Set(question.answers).size, 3, question.id);
-        assert.ok(question.source.slide >= 29 && question.source.slide <= 61);
-        assert.equal(question.source.file, 'Chapter 12 (1).pptx');
+        if (question.source.file) {
+            assert.ok(question.source.slide >= 29 && question.source.slide <= 61);
+            assert.equal(question.source.file, 'Chapter 12 (1).pptx');
+        } else {
+            assert.match(question.source.url, /^https:\/\//);
+            assert.ok(['general-knowledge', 'taxonomy-note'].includes(question.source.kind));
+        }
         assert.ok(question.explanation.length > 20 && question.explanation.length < 1024);
     }
     for (const species of SPECIES) {
@@ -366,7 +413,7 @@ test('Microbedeck boxes list exactly the owned pets, including duplicates and sh
     const message = renderGame(p, 'owner', { view: 'deck', page: 1 });
     const embed = message.embeds[0].toJSON();
     assert.match(embed.description, /15 owned pets/);
-    assert.match(embed.description, /2\/19 species/);
+    assert.match(embed.description, /2\/40 species/);
     const selector = message.components[0].toJSON().components[0];
     assert.equal(selector.custom_id, 'microbemon:owner:pet');
     assert.deepEqual(selector.options.map(o => o.value), ['pet-12', 'pet-13', 'pet-14']);

@@ -1,4 +1,6 @@
 import { fileURLToPath } from 'node:url';
+import { BACTERIA } from './bacteria.js';
+import { bacteriaArtwork } from './bacteriaArtwork.js';
 
 // Outdoor scenes represent ecology/transmission; adult parasites still inhabit hosts.
 export const ARTWORK = {
@@ -20,10 +22,19 @@ export const ARTWORK = {
     trypanosoma: { habitat: 'Humid riverine woodland · tsetse vector', context: 'Tsetse flies transmit T. brucei gambiense; parasites inhabit mammalian body fluids.', design: 'one slender magenta spindle-shaped Trypanosoma single-cell mascot, wavy undulating membrane running along one side, one long free flagellum extending from front, visible central nucleus and tiny kinetoplast, friendly face', scene: 'shaded West or Central African riverine woodland, broad canopy leaves and slow river, humid soft light, fantasy vector-ecology arena, no insects or other animals', shiny: 'electric cyan spindle body with a golden undulating membrane' },
     toxoplasma: { habitat: 'Host-cell microhabitat', context: 'Toxoplasma is intracellular and forms tissue cysts in warm-blooded hosts.', design: 'one small crescent-shaped lilac Toxoplasma single-cell mascot, one end sharply tapered and other rounded, single visible nucleus, curious friendly face, no legs and no flagella', scene: 'stylized non-graphic warm host-cell microhabitat with pearly membrane arcs and softly glowing intracellular fluid, dreamy violet light, no other creatures', shiny: 'warm golden crescent body with emerald nucleus' },
     plasmodium: { habitat: 'Red blood cell · mosquito-borne life cycle', context: 'P. vivax has blood-cell stages and is transmitted by Anopheles mosquitoes.', design: 'one tiny bright blue ring-shaped Plasmodium vivax trophozoite mascot inside one enlarged translucent red blood cell, thin delicate cytoplasm ring with one dark chromatin dot, expressive friendly face incorporated subtly into ring', scene: 'beautiful clean non-graphic microscopic bloodstream arena, one large ruby red blood cell framing the main ring creature, softly blurred cell shapes in distant background, no other parasites', shiny: 'luminous golden ring creature with violet chromatin dot inside the same red blood cell' },
-    schistosoma: { habitat: 'Warm freshwater · larval transmission', context: 'Free-swimming cercariae penetrate skin in freshwater; adult blood flukes inhabit veins.', design: 'one slender pale teal adult blood-fluke mascot with smooth unsegmented cylindrical curved body, small oral and ventral sucker details, gentle friendly face, no tapeworm segments, no hooks, no paired worm', scene: 'warm tropical freshwater lakeshore with reeds and smooth stones under afternoon sunlight, fantasy larval-transmission-themed arena, no other animals', shiny: 'soft pearly pink body with gold sucker accents' }
+    schistosoma: { habitat: 'Warm freshwater · larval transmission', context: 'Free-swimming cercariae penetrate skin in freshwater; adult blood flukes inhabit veins.', design: 'one slender pale teal adult blood-fluke mascot with smooth unsegmented cylindrical curved body, small oral and ventral sucker details, gentle friendly face, no tapeworm segments, no hooks, no paired worm', scene: 'warm tropical freshwater lakeshore with reeds and smooth stones under afternoon sunlight, fantasy larval-transmission-themed arena, no other animals', shiny: 'soft pearly pink body with gold sucker accents' },
+    ...Object.fromEntries(BACTERIA.map(species => [species.id, {
+        habitat: 'Bacterial micro-world · schematic portrait',
+        context: `${species.fact}${species.nameNote ? ` ${species.nameNote}` : ''}`,
+        design: species.shape ? `Stylized ${species.shape}-shaped bacterial mascot; decorative face, no membrane-bound nucleus.` : 'Abstract question-mark badge for an unverified legacy textbook label; morphology is not inferred.',
+        scene: 'Abstract microscopic background; colors are fictional and do not represent a Gram stain.',
+        shiny: 'Alternate fictional palette with a gold sparkle',
+    }]))
 };
 
 export function speciesArtwork(id, shiny = false) {
+    const bacterial = bacteriaArtwork(id, shiny);
+    if (bacterial) return bacterial;
     if (!Object.hasOwn(ARTWORK, id)) return null;
     const name = `${id}${shiny ? '-shiny' : ''}.png`;
     return { name, path: fileURLToPath(new URL(`../../assets/microbemon/species/${name}`, import.meta.url)) };

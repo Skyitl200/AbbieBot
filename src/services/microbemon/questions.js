@@ -1,8 +1,9 @@
 // Original questions paraphrased from the user-provided Chapter 12 (1).pptx.
 // Keep slide references for review; the full textbook was not accessible.
 import { SPECIES } from './catalog.js';
+import { BACTERIA_QUESTIONS } from './bacteriaQuestions.js';
 const groups = {
-    protozoa: SPECIES.filter(s => !['Nematode', 'Cestode', 'Trematode'].includes(s.group)).map(s => s.id),
+    protozoa: SPECIES.filter(s => ['Amoeboid protist', 'Ciliate', 'Flagellated protist', 'Apicomplexan'].includes(s.group)).map(s => s.id),
     freeLiving: ['amoeba', 'paramecium', 'stentor', 'vorticella'],
     amoebae: ['amoeba', 'entamoeba'], ciliates: ['paramecium', 'stentor', 'vorticella', 'balantidium'],
     intestinalProtozoa: ['entamoeba', 'giardia', 'balantidium'],
@@ -86,7 +87,8 @@ export const BATTLE_QUESTIONS = [
     q('schisto-snail', 'schistosoma', 'Life cycle', 61, 'Which host releases the infective cercariae?', 'An infected snail', 'A cow', 'A tsetse fly', 'Infected snails release cercariae into water.'),
     q('schisto-exit', 'schistosoma', 'Life cycle', 61, 'Depending on the species, schistosome eggs can leave the body in…', 'Feces or urine', 'Saliva only', 'Sweat only', 'Schistosome eggs may leave through feces or urine, depending on the species.'),
     q('schisto-sexes', 'schistosoma', 'Reproduction', 60, 'Unlike most tissue flukes, schistosomes have…', 'Separate male and female worms', 'No reproductive organs', 'Only female worms', 'Blood flukes such as Schistosoma have separate sexes.'),
-    q('schisto-damage', 'schistosoma', 'Disease', 61, 'What is a major cause of tissue damage in schistosomiasis?', 'Inflammation around trapped eggs', 'Loss of chloroplasts from red blood cells', 'Adults turning into tapeworm segments', 'Eggs trapped in tissues can trigger inflammation and ongoing tissue damage.')
+    q('schisto-damage', 'schistosoma', 'Disease', 61, 'What is a major cause of tissue damage in schistosomiasis?', 'Inflammation around trapped eggs', 'Loss of chloroplasts from red blood cells', 'Adults turning into tapeworm segments', 'Eggs trapped in tissues can trigger inflammation and ongoing tissue damage.'),
+    ...BACTERIA_QUESTIONS
 ];
 export const questionsForSpecies = id => BATTLE_QUESTIONS.filter(question => question.species.includes(id));
 export function microbeBasics(id) {
