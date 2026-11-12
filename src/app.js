@@ -19,9 +19,9 @@ import { shutdownMusic } from './services/music/playerHandler.js';
 import pkg from '../package.json' with { type: 'json' };
 import { EXPECTED_SCHEMA_VERSION, EXPECTED_SCHEMA_LABEL } from './config/database/schemaVersion.js';
 import {
-  verifyPayPalWebhook,
-  getPayPalSubscription
+  verifyPayPalWebhook
 } from './services/paypal/paypalService.js';
+import { ensureMembershipPlan, processMembershipPayment, reconcileMemberships } from './services/paypal/membershipService.js';
 class TitanBot extends Client {
   constructor() {
     super({
@@ -180,167 +180,8 @@ app.post('/paypal/webhook', express.json(), async (req, res) => {
       });
     }
 
-    const eventType = event?.event_type;
-    const subscriptionId = event?.resource?.id;
-
-    logger.info(`Verified PayPal webhook: ${eventType}`, {
-      eventId: event?.id,
-      subscriptionId,
-    });
-
-    // Only process subscription events that affect the Subscriber role.
-    const activateEvents = new Set([
-      'BILLING.SUBSCRIPTION.ACTIVATED',
-      'BILLING.SUBSCRIPTION.RE-ACTIVATED',
-    ]);
-
-    const removeEvents = new Set([
-      'BILLING.SUBSCRIPTION.CANCELLED',
-      'BILLING.SUBSCRIPTION.EXPIRED',
-      'BILLING.SUBSCRIPTION.SUSPENDED',
-    ]);
-
-    if (!activateEvents.has(eventType) && !removeEvents.has(eventType)) {
-      return res.status(200).json({
-        received: true,
-        ignored: true
-      });
-    }
-
-    if (!subscriptionId) {
-      logger.warn('PayPal subscription webhook had no subscription ID', {
-        eventId: event?.id,
-        eventType,
-      });
-
-      return res.status(200).json({
-        received: true,
-        ignored: true
-      });
-    }
-
-    // 2. Retrieve the subscription directly from PayPal instead of
-    // trusting subscription details supplied only by the webhook.
-    const subscription = await getPayPalSubscription(subscriptionId);
-
-    const expectedPlanId = process.env.PAYPAL_SUBSCRIPTION_PLAN_ID;
-
-    if (!expectedPlanId || subscription?.plan_id !== expectedPlanId) {
-      logger.warn('Ignoring PayPal subscription for an unexpected plan', {
-        eventId: event?.id,
-        subscriptionId,
-        planId: subscription?.plan_id,
-      });
-
-      return res.status(200).json({
-        received: true,
-        ignored: true
-      });
-    }
-
-    // custom_id was set to the Discord user ID by our checkout page.
-    const discordUserId = String(subscription?.custom_id || '');
-
-    if (!/^\d+$/.test(discordUserId)) {
-      logger.warn('PayPal subscription has no valid Discord custom_id', {
-        eventId: event?.id,
-        subscriptionId,
-      });
-
-      return res.status(200).json({
-        received: true,
-        ignored: true
-      });
-    }
-
-    const guildId = process.env.BIOLOGYHQ_GUILD_ID;
-    const subscriberRoleId = process.env.SUBSCRIBER_ROLE_ID;
-
-    if (!guildId || !subscriberRoleId) {
-      throw new Error(
-        'Missing BIOLOGYHQ_GUILD_ID or SUBSCRIBER_ROLE_ID'
-      );
-    }
-// Make sure StudyBot is connected to Discord before changing roles.
-// Returning 503 tells PayPal this was a temporary failure so it can retry.
-if (!this.isReady()) {
-  logger.warn('PayPal webhook received before Discord client was ready', {
-    eventId: event?.id,
-    subscriptionId,
-  });
-
-  return res.status(503).json({
-    error: 'Discord client is temporarily unavailable'
-  });
-}
-    // 3. Find BiologyHQ and the Discord member.
-    const guild =
-      this.guilds.cache.get(guildId) ||
-      await this.guilds.fetch(guildId);
-
-    let member;
-
-try {
-  member = await guild.members.fetch(discordUserId);
-} catch (error) {
-  logger.warn('PayPal subscriber is not currently in the BiologyHQ server', {
-    userId: discordUserId,
-    subscriptionId,
-  });
-
-  return res.status(200).json({
-    received: true,
-    processed: false,
-    reason: 'Discord member not found'
-  });
-}
-
-    // 4. Add or remove Subscriber.
-    if (activateEvents.has(eventType)) {
-      if (subscription.status !== 'ACTIVE') {
-        logger.warn('Activation webhook received but subscription is not ACTIVE', {
-          subscriptionId,
-          status: subscription.status,
-        });
-
-        return res.status(200).json({
-          received: true,
-          ignored: true
-        });
-      }
-
-      if (!member.roles.cache.has(subscriberRoleId)) {
-        await member.roles.add(
-          subscriberRoleId,
-          'Active BiologyHQ PayPal subscription'
-        );
-      }
-
-      logger.info('BiologyHQ Subscriber role granted', {
-        userId: discordUserId,
-        subscriptionId,
-      });
-    }
-
-    if (removeEvents.has(eventType)) {
-      if (member.roles.cache.has(subscriberRoleId)) {
-        await member.roles.remove(
-          subscriberRoleId,
-          `PayPal subscription ${eventType}`
-        );
-      }
-
-      logger.info('BiologyHQ Subscriber role removed', {
-        userId: discordUserId,
-        subscriptionId,
-        eventType,
-      });
-    }
-
-    return res.status(200).json({
-      received: true,
-      processed: true
-    });
+    const result = await processMembershipPayment(this, event);
+    return res.status(200).json({ received: true, ...result });
   } catch (error) {
     logger.error('PayPal webhook processing failed:', error);
 
@@ -350,14 +191,12 @@ try {
   }
 });
 
-app.get('/subscribe', (req, res) => {
+app.get('/subscribe', async (req, res) => {
   try {
     const token = String(req.query.token || '');
     const secret = process.env.SUBSCRIPTION_LINK_SECRET;
     const clientId = process.env.PAYPAL_CLIENT_ID;
-    const planId = process.env.PAYPAL_SUBSCRIPTION_PLAN_ID;
-
-    if (!secret || !clientId || !planId) {
+    if (!secret || !clientId || !process.env.PAYPAL_SUBSCRIPTION_PLAN_ID) {
       return res.status(500).send('Membership checkout is not configured.');
     }
 
@@ -386,6 +225,7 @@ app.get('/subscribe', (req, res) => {
       return res.status(400).send('Invalid or altered subscription link.');
     }
 
+    const planId = await ensureMembershipPlan(this);
     const safePlanId = JSON.stringify(planId);
     const safeDiscordUserId = JSON.stringify(discordUserId);
 
@@ -395,16 +235,16 @@ app.get('/subscribe', (req, res) => {
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>BiologyHQ Membership</title>
+          <title>HealthScienceGuild Membership</title>
         </head>
 
         <body style="font-family: Arial, sans-serif; max-width: 520px; margin: 60px auto; padding: 20px; text-align: center;">
-          <h1>BiologyHQ Membership</h1>
-          <h2>$10/month</h2>
+          <h1>HealthScienceGuild Membership</h1>
+          <h2>$14.87 USD every 30 days</h2>
 
           <p>
             Subscribe securely with PayPal to activate your
-            BiologyHQ Subscriber membership.
+            HealthScienceGuild Subscriber membership. Your role activates after payment is confirmed and lasts 30 days per successful payment. Renews automatically every 30 days until cancelled.
           </p>
 
           <div id="paypal-button-container"></div>
@@ -436,7 +276,7 @@ app.get('/subscribe', (req, res) => {
 
               onApprove: function(data) {
                 document.getElementById('status').textContent =
-                  'Subscription approved! BiologyHQ is processing your Subscriber role.';
+                  'Subscription approved. Your Subscriber role activates after PayPal confirms the $14.87 payment.';
               },
 
               onError: function(err) {
@@ -557,6 +397,7 @@ app.get('/subscribe', (req, res) => {
   }
 
   setupCronJobs() {
+    cron.schedule('* * * * *', runSafeTask('membership_expiry', () => reconcileMemberships(this, logger)));
     cron.schedule('0 6 * * *', runSafeTask('birthday_check', () => checkBirthdays(this)));
     cron.schedule('* * * * *', runSafeTask('giveaway_check', () => checkGiveaways(this)));
     cron.schedule('*/15 * * * *', runSafeTask('counter_update', () => this.updateAllCounters()));

@@ -40,9 +40,10 @@ export const paypalSubscribeHandler = {
 
       await interaction.reply({
         content:
-          '**HealthScienceGuild Membership — $14.87/month**\n\n' +
+          '**HealthScienceGuild Membership — $14.87 every 30 days**\n\n' +
           'Click below to continue securely to PayPal. ' +
-          'This checkout link is connected to your Discord account.',
+          'This checkout link is connected to your Discord account. ' +
+          'Subscriber access lasts 30 days per confirmed payment and renews automatically until cancelled.',
         components: [row],
         flags: MessageFlags.Ephemeral,
       });

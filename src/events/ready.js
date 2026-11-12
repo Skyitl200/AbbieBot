@@ -1,3 +1,4 @@
+import { reconcileMemberships } from '../services/paypal/membershipService.js';
 import { refreshStoreChannel } from '../services/storeChannelRefresh.js';
 import { synchronizeBotIdentity } from '../services/botIdentity.js';
 import { Events } from "discord.js";
@@ -14,6 +15,7 @@ export default {
 
   async execute(client) {
     try {
+      await reconcileMemberships(client, logger);
       await refreshStoreChannel(client, logger);
       await synchronizeBotIdentity(client, config.bot.name);
       client.user.setPresence(config.bot.presence);
