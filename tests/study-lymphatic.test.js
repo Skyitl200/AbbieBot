@@ -111,6 +111,11 @@ test('every Lymphatic question has a source-linked figure; actual cited figures 
     for (const q of bank) {
         const figure = imageForQuestion(q);
         assert.ok(figure, q.id);
+        if (figure.match === 'figure-content') {
+            assert.ok(!q.figure_slide && !q.figure_source, `Authored reference preserved: ${q.id}`);
+            assert.ok(figure.asset.caption || figure.asset.alt || figure.asset.occurrences?.length, q.id);
+            continue;
+        }
         assert.equal(figure.source.file, q.source.file, q.id);
         if (q.source.slides.some(s => slidesWithFigures.has(s))) {
             assert.equal(figure.match, 'cited-slide', q.id);

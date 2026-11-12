@@ -27,7 +27,23 @@ export function addLectureImage(payload, question) {
     if (!figure) return { ...payload, attachments: [], files: [] };
     const embed = payload.embeds[0];
     embed.setImage(`attachment://${figure.asset.file}`);
-    return { ...payload, attachments: [], files: [new AttachmentBuilder(figure.path, { name: figure.asset.file })] };
+    const credit = asset => asset.provider === 'openstax'
+        ? `[OpenStax](${asset.url}) · [CC BY 4.0](${asset.license})` : null;
+    if (credit(figure.asset)) embed.addFields({ name: 'Image credit', value: credit(figure.asset) });
+    const files = [new AttachmentBuilder(figure.path, { name: figure.asset.file })];
+    const embeds = [...payload.embeds];
+    // Paired lecture checks can cover different concepts. Show the second check's
+    // own reference instead of implying the primary figure illustrates both.
+    if (question.lectureChoice?.strategy === 'related_checks') {
+        const second = imageForQuestion({ id: question.lectureChoice.secondaryId });
+        if (second && second.asset.file !== figure.asset.file) {
+            const secondEmbed = new EmbedBuilder().setTitle('Question 2 - reference image').setImage(`attachment://${second.asset.file}`);
+            if (credit(second.asset)) secondEmbed.setDescription(credit(second.asset));
+            embeds.push(secondEmbed);
+            files.push(new AttachmentBuilder(second.path, { name: second.asset.file }));
+        }
+    }
+    return { ...payload, embeds, attachments: [], files };
 }
 export function lecturePreview(question) {
     return addLectureImage({ content: '', embeds: [new EmbedBuilder().setTitle('📖 Lecture figure preview')

@@ -91,6 +91,11 @@ test('named-vessel and fetal questions use a figure from one of their actual cit
     for (const q of bank.filter(q => q.source.slides.every(slide => slide >= 32))) {
         const figure = imageForQuestion(q);
         assert.ok(figure, q.id);
+        if (figure.match === 'figure-content') {
+            assert.ok(!q.figure_slide && !q.figure_source, `Authored reference preserved: ${q.id}`);
+            assert.ok(figure.asset.caption || figure.asset.alt || figure.asset.occurrences?.length, q.id);
+            continue;
+        }
         assert.equal(figure.source.file, q.source.file, q.id);
         assert.ok(q.source.slides.includes(figure.source.slide), q.id);
         assert.equal(figure.match, 'cited-slide', q.id);

@@ -15,9 +15,17 @@ export async function validateStudyImages() {
     for (const question of questions) {
         const image = imageForQuestion(question);
         if (!image) throw new Error(`Missing lecture figure: ${question.id}`);
-        const source = sources.find(s => s.file === image.source.file);
-        if (!source || !Number.isInteger(image.source.slide) || image.source.slide < 1 || image.source.slide > source.slides) throw new Error(`Invalid figure citation: ${question.id}`);
-        if (!image.asset.occurrences.some(o => o.source === image.source.file && o.slide === image.source.slide)) throw new Error(`Figure not present on cited slide: ${question.id}`);
+        if (image.source.kind === 'open-textbook') {
+            if (image.asset.provider !== 'openstax' || image.source.url !== image.asset.url ||
+                !image.asset.url.startsWith('https://raw.githubusercontent.com/openstax/osbooks-anatomy-physiology/9af501aa6e13a75d85003fed4ed1051e9d07b7dc/media/') ||
+                image.asset.license !== 'https://creativecommons.org/licenses/by/4.0/' || !image.asset.credit || !(image.asset.caption || image.asset.alt)) {
+                throw new Error(`Invalid textbook attribution: ${question.id}`);
+            }
+        } else {
+            const source = sources.find(s => s.file === image.source.file);
+            if (!source || !Number.isInteger(image.source.slide) || image.source.slide < 1 || image.source.slide > source.slides) throw new Error(`Invalid figure citation: ${question.id}`);
+            if (!image.asset.occurrences.some(o => o.source === image.source.file && o.slide === image.source.slide)) throw new Error(`Figure not present on cited slide: ${question.id}`);
+        }
         used.add(image.path);
     }
     for (const asset of Object.values(index.assets)) {

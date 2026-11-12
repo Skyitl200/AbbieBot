@@ -110,6 +110,11 @@ test('every Digestive question has a lecture figure with actual cited diagram sl
     for (const q of bank) {
         const figure = imageForQuestion(q);
         assert.ok(figure, q.id);
+        if (figure.match === 'figure-content') {
+            assert.ok(!q.figure_slide && !q.figure_source, `Authored reference preserved: ${q.id}`);
+            assert.ok(figure.asset.caption || figure.asset.alt || figure.asset.occurrences?.length, q.id);
+            continue;
+        }
         assert.equal(figure.source.file, q.source.file, q.id);
         if (q.figure_slide) assert.equal(figure.source.slide, q.figure_slide, q.id);
         if (q.source.slides.length === 1 && q.source.slides[0] === 69) assert.equal(figure.source.slide, 63, q.id);

@@ -6,6 +6,9 @@ references, not image-identification questions or independently reviewed answers
 import collections, hashlib, json, math, re, shutil, sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+existing=ROOT/'study-data/images.json'
+if existing.exists() and any(a.get('provider')=='openstax' for a in json.loads(existing.read_text()).get('assets',{}).values()):
+    raise SystemExit('This index includes textbook figures. Use refreshLectureFigures.py; the legacy builder would discard their citations.')
 local=ROOT/'.local/study-image-candidates'
 data=json.loads((local/'candidates.json').read_text())
 ocr=json.loads((local/'ocr.json').read_text()) if (local/'ocr.json').exists() else {}

@@ -131,6 +131,11 @@ test('each Respiratory question has a lecture figure and prefers actual cited di
     for (const q of bank) {
         const figure = imageForQuestion(q);
         assert.ok(figure, q.id);
+        if (figure.match === 'figure-content') {
+            assert.ok(!q.figure_slide && !q.figure_source, `Authored reference preserved: ${q.id}`);
+            assert.ok(figure.asset.caption || figure.asset.alt || figure.asset.occurrences?.length, q.id);
+            continue;
+        }
         assert.equal(figure.source.file, q.source.file, q.id);
         if (q.figure_slide) assert.equal(figure.source.slide, q.figure_slide, q.id);
         if (q.source.slides.every(s => [55, 56, 57].includes(s))) assert.equal(figure.source.slide, 6, q.id);

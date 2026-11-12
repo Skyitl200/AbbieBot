@@ -74,3 +74,35 @@ test('question images display without lecture reference text', async () => {
         assert.ok(!(embed.fields || []).some(field => /lecture reference|cited slide|RVCC/i.test(field.name + field.value)));
     }
 });
+
+test('paired lecture checks attach both distinct concept references', async () => {
+    const questions = [...(await loadQuestionBanks()).values()].flat();
+    const primary = questions[0];
+    const first = imageForQuestion(primary);
+    const secondary = questions.find(q => imageForQuestion(q)?.asset.file !== first.asset.file);
+    const paired = { ...primary, lectureChoice: { strategy: 'related_checks', secondaryId: secondary.id } };
+    const session = createStudySession('paired-images', 'paired-user', [paired], 'random');
+    for (const payload of [questionMessage(session), resultMessage(session, true)]) {
+        assert.equal(payload.files.length, 2);
+        assert.equal(payload.embeds.at(-1).toJSON().image.url, `attachment://${imageForQuestion(secondary).asset.file}`);
+        assert.deepEqual(payload.attachments, []);
+    }
+    paired.lectureChoice.secondaryId = primary.id;
+    assert.equal(lecturePreview(paired).files.length, 1, 'identical references attach only once');
+});
+
+test('specific lecture concepts receive their corresponding textbook illustrations', () => {
+    const examples = [
+        ['circulatory-0001', 'Position of the Heart in the Thorax'],
+        ['joints-0031', 'Cartilaginous Joints'],
+        ['skeletal-0476', 'Anatomy of a Long Bone'],
+        ['nervous_tissue-0231', 'Receptor Types'],
+        ['muscular-0338', 'Relaxation of a Muscle Fiber'],
+    ];
+    for (const [id, title] of examples) {
+        const figure = imageForQuestion({ id });
+        assert.equal(figure.asset.title, title, id);
+        assert.equal(figure.source.kind, 'open-textbook');
+        assert.equal(figure.asset.license, 'https://creativecommons.org/licenses/by/4.0/');
+    }
+});
