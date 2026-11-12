@@ -49,6 +49,10 @@ export default {
           .setStyle(ButtonStyle.Link)
           .setURL('https://www.paypal.com/ncp/payment/BSBP2HFNXB7B2'),
 
+        new ButtonBuilder()
+          .setLabel('Health Science Chemistry Book — $25')
+          .setStyle(ButtonStyle.Link)
+          .setURL('https://www.paypal.com/ncp/payment/YMPZCT5RSZLCC'),
 
         new ButtonBuilder()
           .setLabel('Microbiology — $25')

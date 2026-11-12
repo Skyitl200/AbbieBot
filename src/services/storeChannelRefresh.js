@@ -5,6 +5,12 @@ const imageName = 'healthscienceguild-store-horizontal.png';
 const imagePath = fileURLToPath(new URL('../assets/store/healthscienceguild-store-horizontal.png', import.meta.url));
 
 const rowsOf = message => message.components.map(row => row.toJSON ? row.toJSON() : row);
+const chemistryButton = {
+  type: 2, style: 5,
+  label: 'Health Science Chemistry Book — $25',
+  url: 'https://www.paypal.com/ncp/payment/YMPZCT5RSZLCC'
+};
+const isChemistry = button => /chemis(?:try|ty)/i.test(button.label || '');
 const isSubscription = button => button.custom_id === 'paypal_subscribe';
 const anatomyPart = button => /^Anatomy\s+(II|2)(?:\s|—|$)/i.test(button.label || '') ? 2
   : /^Anatomy\s+(I|1)(?:\s|—|$)/i.test(button.label || '') && !/&/.test(button.label || '') ? 1 : 0;
@@ -31,6 +37,7 @@ export async function refreshStoreChannel(client, logger) {
         const components = oldRows.map(row => ({
           ...row,
           components: row.components.filter(button => !isInPerson(button) && !(hasAnatomyOne && anatomyPart(button) === 2)).map(button => {
+            if (isChemistry(button)) return { ...button, ...chemistryButton };
             if (isSubscription(button)) return { ...button, label: 'Subscribe — $14.87/month' };
             if (anatomyPart(button) === 1 || /^Anatomy\s+(?:1|I)\s*&\s*(?:2|II)(?:\s|—|$)/i.test(button.label || '')) {
               const { emoji, ...combined } = button;
@@ -39,6 +46,13 @@ export async function refreshStoreChannel(client, logger) {
             return button;
           })
         })).filter(row => row.components.length);
+        if (!components.some(row => row.components.some(isChemistry))) {
+          const bookRow = components.find(row => row.components.length < 5 &&
+            row.components.some(button => /anatomy|microbiology/i.test(button.label || '')));
+          if (bookRow) bookRow.components.push({ ...chemistryButton });
+          else if (components.length < 5) components.push({ type: 1, components: [{ ...chemistryButton }] });
+          else throw new Error('No room for Chemistry button in existing store panel');
+        }
         const content = message.content.replace(/BiologyHQ/g, 'HealthScienceGuild');
         const current = [...message.attachments.values()].some(file => file.name === imageName) &&
           JSON.stringify(oldRows) === JSON.stringify(components) && content === message.content;

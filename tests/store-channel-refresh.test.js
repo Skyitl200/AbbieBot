@@ -31,7 +31,7 @@ test('replaces existing image and price, retaining online/book URLs and ticket c
   assert.equal(edits.length, 1);
   const payload = edits[0];
   const buttons = payload.components.flatMap(row => row.components);
-  assert.deepEqual(buttons.filter(b => b.url).map(b => b.url), ['https://example.com/online', 'https://www.paypal.com/ncp/payment/BSBP2HFNXB7B2']);
+  assert.deepEqual(buttons.filter(b => b.url).map(b => b.url), ['https://example.com/online', 'https://www.paypal.com/ncp/payment/BSBP2HFNXB7B2', 'https://www.paypal.com/ncp/payment/YMPZCT5RSZLCC']);
   assert.equal(buttons.find(b => b.custom_id === 'paypal_subscribe').label, 'Subscribe — $14.87/month');
   assert.ok(buttons.some(b => b.custom_id === 'create_ticket'));
   assert.equal(payload.content, '**HealthScienceGuild Store**');
@@ -89,6 +89,23 @@ test('updates checkout on an already-combined anatomy button and skips repeat ed
   assert.equal(await refreshStoreChannel(client, logger), 'updated');
   assert.equal(edits[0].components[1].components[0].url, 'https://www.paypal.com/ncp/payment/BSBP2HFNXB7B2');
   message.components = edits[0].components;
+  assert.equal(await refreshStoreChannel(client, logger), 'unchanged');
+  assert.equal(edits.length, 1);
+});
+
+test('adds exactly one Chemistry checkout and preserves it across startups', async () => {
+  const { client, edits, message } = fixture();
+  await refreshStoreChannel(client, logger);
+  const payload = edits[0];
+  const chemistry = payload.components.flatMap(row => row.components).filter(b => /Chemistry/.test(b.label));
+  assert.equal(chemistry.length, 1);
+  assert.equal(chemistry[0].label, 'Health Science Chemistry Book — $25');
+  assert.equal(chemistry[0].url, 'https://www.paypal.com/ncp/payment/YMPZCT5RSZLCC');
+  assert.equal(chemistry[0].style, 5);
+  assert.ok(payload.components.every(row => row.components.length <= 5));
+  message.content = payload.content;
+  message.components = payload.components;
+  message.attachments = new Map([['new', { name: payload.files[0].name }]]);
   assert.equal(await refreshStoreChannel(client, logger), 'unchanged');
   assert.equal(edits.length, 1);
 });
