@@ -1,3 +1,4 @@
+import { buildLectureChoiceContext, prepareLectureChoice } from './lectureChoices.js';
 import { matchesLabAnswer } from './answerMatching.js';
 import { readFile } from 'node:fs/promises';
 import { TOPIC_BY_ID, STUDY_TOPICS } from './topics.js';
@@ -98,10 +99,15 @@ export function shuffle(values, random = Math.random) {
     return result;
 }
 
+const lectureChoiceContexts = new WeakMap();
+
 export function selectQuestions(banks, topicId, count) {
     if (topicId !== 'random' && !TOPIC_BY_ID.has(topicId)) throw new Error('Unknown study topic');
     if (![1, 5, 20, 50, 150, 600].includes(count)) throw new Error('Invalid session length');
     const available = topicId === 'random' ? [...banks.values()].flat() : banks.get(topicId) || [];
     if (!available.length) throw new Error('This topic is still being prepared. Please choose another topic.');
-    return shuffle(available).slice(0, count);
+    let context = lectureChoiceContexts.get(banks);
+    if (!context) { context = buildLectureChoiceContext(banks); lectureChoiceContexts.set(banks, context); }
+    const topicById = new Map([...banks].flatMap(([id, questions]) => questions.map(q => [q.id, id])));
+    return shuffle(available).slice(0, count).map(q => prepareLectureChoice(q, context, topicById.get(q.id)));
 }
