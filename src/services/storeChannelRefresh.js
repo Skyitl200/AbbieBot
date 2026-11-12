@@ -6,6 +6,8 @@ const imagePath = fileURLToPath(new URL('../assets/store/healthscienceguild-stor
 
 const rowsOf = message => message.components.map(row => row.toJSON ? row.toJSON() : row);
 const isSubscription = button => button.custom_id === 'paypal_subscribe';
+const anatomyPart = button => /^Anatomy\s+(II|2)(?:\s|—|$)/i.test(button.label || '') ? 2
+  : /^Anatomy\s+(I|1)(?:\s|—|$)/i.test(button.label || '') && !/&/.test(button.label || '') ? 1 : 0;
 const isInPerson = button => /in[\s-]*person\s+tutoring/i.test(button.label || '');
 
 // Update only the owner's specified channel and an existing store post by this bot.
@@ -25,11 +27,17 @@ export async function refreshStoreChannel(client, logger) {
       );
       if (message) {
         const oldRows = rowsOf(message);
+        const hasAnatomyOne = oldRows.some(row => row.components.some(button => anatomyPart(button) === 1));
         const components = oldRows.map(row => ({
           ...row,
-          components: row.components.filter(button => !isInPerson(button)).map(button =>
-            isSubscription(button) ? { ...button, label: 'Subscribe — $14.87/month' } : button
-          )
+          components: row.components.filter(button => !isInPerson(button) && !(hasAnatomyOne && anatomyPart(button) === 2)).map(button => {
+            if (isSubscription(button)) return { ...button, label: 'Subscribe — $14.87/month' };
+            if (anatomyPart(button) === 1) {
+              const { emoji, ...combined } = button;
+              return { ...combined, label: 'Anatomy 1 & 2 — $25' };
+            }
+            return button;
+          })
         })).filter(row => row.components.length);
         const content = message.content.replace(/BiologyHQ/g, 'HealthScienceGuild');
         const current = [...message.attachments.values()].some(file => file.name === imageName) &&

@@ -45,16 +45,10 @@ export default {
       // Row 2 — Individual Books
       const booksRow = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
-          .setLabel('Anatomy I — $25')
+          .setLabel('Anatomy 1 & 2 — $25')
           .setStyle(ButtonStyle.Link)
-          .setURL('https://www.paypal.com/ncp/payment/YMPZCT5RSZLCC')
-          .setEmoji('🧠'),
+          .setURL('https://www.paypal.com/ncp/payment/YMPZCT5RSZLCC'),
 
-        new ButtonBuilder()
-          .setLabel('Anatomy II — $25')
-          .setStyle(ButtonStyle.Link)
-          .setURL('https://www.paypal.com/ncp/payment/BSBP2HFNXB7B2')
-          .setEmoji('🫀'),
 
         new ButtonBuilder()
           .setLabel('Microbiology — $25')

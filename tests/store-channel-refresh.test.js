@@ -66,3 +66,15 @@ test('replaces portrait artwork even when pricing and branding are already curre
   assert.equal(await refreshStoreChannel(client, logger), 'updated');
   assert.equal(edits[0].files[0].name, 'healthscienceguild-store-horizontal.png');
 });
+
+test('combines separate anatomy buttons while preserving the Anatomy I checkout', async () => {
+  const { client, edits, message } = fixture();
+  message.components[1].components.splice(1, 0, { type: 2, style: 5, label: 'Anatomy II — $25', url: 'https://example.com/anatomy2', emoji: { name: 'heart' } });
+  message.components[1].components[0].emoji = { name: 'brain' };
+  await refreshStoreChannel(client, logger);
+  const anatomy = edits[0].components.flatMap(row => row.components).filter(b => /^Anatomy/.test(b.label));
+  assert.equal(anatomy.length, 1);
+  assert.equal(anatomy[0].label, 'Anatomy 1 & 2 — $25');
+  assert.equal(anatomy[0].url, 'https://example.com/book');
+  assert.equal(anatomy[0].emoji, undefined);
+});
