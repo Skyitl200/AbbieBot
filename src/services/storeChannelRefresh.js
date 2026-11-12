@@ -32,9 +32,9 @@ export async function refreshStoreChannel(client, logger) {
           ...row,
           components: row.components.filter(button => !isInPerson(button) && !(hasAnatomyOne && anatomyPart(button) === 2)).map(button => {
             if (isSubscription(button)) return { ...button, label: 'Subscribe — $14.87/month' };
-            if (anatomyPart(button) === 1) {
+            if (anatomyPart(button) === 1 || /^Anatomy\s+(?:1|I)\s*&\s*(?:2|II)(?:\s|—|$)/i.test(button.label || '')) {
               const { emoji, ...combined } = button;
-              return { ...combined, label: 'Anatomy 1 & 2 — $25' };
+              return { ...combined, label: 'Anatomy 1 & 2 — $25', url: 'https://www.paypal.com/ncp/payment/BSBP2HFNXB7B2' };
             }
             return button;
           })

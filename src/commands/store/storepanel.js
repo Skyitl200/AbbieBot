@@ -47,7 +47,7 @@ export default {
         new ButtonBuilder()
           .setLabel('Anatomy 1 & 2 — $25')
           .setStyle(ButtonStyle.Link)
-          .setURL('https://www.paypal.com/ncp/payment/YMPZCT5RSZLCC'),
+          .setURL('https://www.paypal.com/ncp/payment/BSBP2HFNXB7B2'),
 
 
         new ButtonBuilder()

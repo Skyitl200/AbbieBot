@@ -31,7 +31,7 @@ test('replaces existing image and price, retaining online/book URLs and ticket c
   assert.equal(edits.length, 1);
   const payload = edits[0];
   const buttons = payload.components.flatMap(row => row.components);
-  assert.deepEqual(buttons.filter(b => b.url).map(b => b.url), ['https://example.com/online', 'https://example.com/book']);
+  assert.deepEqual(buttons.filter(b => b.url).map(b => b.url), ['https://example.com/online', 'https://www.paypal.com/ncp/payment/BSBP2HFNXB7B2']);
   assert.equal(buttons.find(b => b.custom_id === 'paypal_subscribe').label, 'Subscribe — $14.87/month');
   assert.ok(buttons.some(b => b.custom_id === 'create_ticket'));
   assert.equal(payload.content, '**HealthScienceGuild Store**');
@@ -67,7 +67,7 @@ test('replaces portrait artwork even when pricing and branding are already curre
   assert.equal(edits[0].files[0].name, 'healthscienceguild-store-horizontal.png');
 });
 
-test('combines separate anatomy buttons while preserving the Anatomy I checkout', async () => {
+test('combines separate anatomy buttons using the approved hosted checkout', async () => {
   const { client, edits, message } = fixture();
   message.components[1].components.splice(1, 0, { type: 2, style: 5, label: 'Anatomy II — $25', url: 'https://example.com/anatomy2', emoji: { name: 'heart' } });
   message.components[1].components[0].emoji = { name: 'brain' };
@@ -75,6 +75,20 @@ test('combines separate anatomy buttons while preserving the Anatomy I checkout'
   const anatomy = edits[0].components.flatMap(row => row.components).filter(b => /^Anatomy/.test(b.label));
   assert.equal(anatomy.length, 1);
   assert.equal(anatomy[0].label, 'Anatomy 1 & 2 — $25');
-  assert.equal(anatomy[0].url, 'https://example.com/book');
+  assert.equal(anatomy[0].url, 'https://www.paypal.com/ncp/payment/BSBP2HFNXB7B2');
   assert.equal(anatomy[0].emoji, undefined);
+});
+
+test('updates checkout on an already-combined anatomy button and skips repeat edits', async () => {
+  const { client, edits, message } = fixture();
+  message.content = '**HealthScienceGuild Store**';
+  message.components[0].components.pop();
+  message.components[1].components[0].label = 'Anatomy 1 & 2 — $25';
+  message.components[1].components[1].label = 'Subscribe — $14.87/month';
+  message.attachments = new Map([['new', { name: 'healthscienceguild-store-horizontal.png' }]]);
+  assert.equal(await refreshStoreChannel(client, logger), 'updated');
+  assert.equal(edits[0].components[1].components[0].url, 'https://www.paypal.com/ncp/payment/BSBP2HFNXB7B2');
+  message.components = edits[0].components;
+  assert.equal(await refreshStoreChannel(client, logger), 'unchanged');
+  assert.equal(edits.length, 1);
 });
