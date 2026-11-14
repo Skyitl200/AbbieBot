@@ -86,6 +86,7 @@ export function labModeMessage(owner, selection) {
             { label: 'Multiple choice', value: 'multiple_choice', description: 'Answer using A, B, C, or D' },
             { label: 'Type in answer', value: 'typed', description: 'Type a short answer; synonyms and minor typos accepted' })),
         back(owner, set.category),
+        row(new ButtonBuilder().setCustomId(`study:configurelab:${owner}:${selection}`).setLabel('Choose questions').setStyle(ButtonStyle.Secondary)),
     ] };
 }
 export function labQuestions(selection, mode) {

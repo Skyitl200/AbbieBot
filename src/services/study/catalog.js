@@ -29,10 +29,12 @@ function aliasesFor(classId) {
     if (!course || course.authored) throw new Error('Unknown study class');
     return course.aliases.map(normalizeSubject);
 }
-export async function loadClassCategories(client, classId) {
+export async function loadClassCategories(client, classId, { excludedIds = [] } = {}) {
     const aliases = aliasesFor(classId);
     const pool = await poolFor(client);
-    const result = await pool.query(`SELECT ${categorySql} AS category, COUNT(*)::int AS count FROM quiz_questions WHERE ${subjectSql} GROUP BY ${categorySql} ORDER BY ${categorySql}`, [aliases]);
+    const params = [aliases];
+    const preferenceFilter = excludedIds.length ? ` AND NOT ('saved-' || id::text = ANY($${params.push(excludedIds)}::text[]))` : '';
+    const result = await pool.query(`SELECT ${categorySql} AS category, COUNT(*)::int AS count FROM quiz_questions WHERE ${subjectSql}${preferenceFilter} GROUP BY ${categorySql} ORDER BY ${categorySql}`, params);
     return result.rows.map(row => ({ label: row.category, token: categoryToken(row.category), count: Number(row.count) }));
 }
 export function adaptLegacyQuestion(row) {
@@ -42,17 +44,29 @@ export function adaptLegacyQuestion(row) {
     return { id: `saved-${row.id}`, type: 'multiple_choice', question: String(row.question), options,
         correct: [correct], explanation: String(row.explanation || 'No explanation was provided for this saved question.').slice(0, 2000), difficulty: row.difficulty || 'medium' };
 }
-export async function loadClassQuestions(client, classId, token, count) {
+export async function loadClassQuestions(client, classId, token, count, { excludedIds = [] } = {}) {
     if (![1, 5, 20, 50, 150, 600].includes(count)) throw new Error('Invalid session length');
+    const categories = await loadClassCategories(client, classId, { excludedIds });
+    const category = categories.find(item => item.token === token);
+    if (token !== 'random' && !category) throw new Error('Unknown class category');
+    const pool = await poolFor(client);
+    const params = [aliasesFor(classId)];
+    const filter = category ? ` AND ${categorySql} = $${params.push(category.label)}` : '';
+    const preferenceFilter = excludedIds.length ? ` AND NOT ('saved-' || id::text = ANY($${params.push(excludedIds)}::text[]))` : '';
+    params.push(count);
+    const result = await pool.query(`SELECT * FROM quiz_questions WHERE ${subjectSql}${filter}${preferenceFilter} ORDER BY RANDOM() LIMIT $${params.length}`, params);
+    const questions = result.rows.map(adaptLegacyQuestion).filter(Boolean);
+    if (!questions.length) throw new Error('This class has no playable questions in that category yet. Please choose another category.');
+    return questions;
+}
+
+export async function loadClassQuestionPool(client, classId, token) {
     const categories = await loadClassCategories(client, classId);
     const category = categories.find(item => item.token === token);
     if (token !== 'random' && !category) throw new Error('Unknown class category');
     const pool = await poolFor(client);
     const params = [aliasesFor(classId)];
     const filter = category ? ` AND ${categorySql} = $${params.push(category.label)}` : '';
-    params.push(count);
-    const result = await pool.query(`SELECT * FROM quiz_questions WHERE ${subjectSql}${filter} ORDER BY RANDOM() LIMIT $${params.length}`, params);
-    const questions = result.rows.map(adaptLegacyQuestion).filter(Boolean);
-    if (!questions.length) throw new Error('This class has no playable questions in that category yet. Please choose another category.');
-    return questions;
+    const result = await pool.query(`SELECT * FROM quiz_questions WHERE ${subjectSql}${filter} ORDER BY id`, params);
+    return result.rows.map(adaptLegacyQuestion).filter(Boolean);
 }

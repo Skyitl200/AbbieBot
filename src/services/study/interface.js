@@ -1,3 +1,6 @@
+import { getQuestionPreferences, setQuestionEnabled, enabledQuestions } from './questionPreferences.js';
+import { preferencesButton, questionToggleButton, preferenceList } from './questionPreferenceUi.js';
+import { createQuestionSelection, getQuestionSelection, configureButton, selectionMessage } from './questionSelection.js';
 import { questionReportModal, submitQuestionReport } from './reports.js';
 import { displayedQuestionPrompt } from './prompts.js';
 import { announceCrateDrop } from '../discovery/announcements.js';
@@ -9,13 +12,18 @@ import {
 } from 'discord.js';
 import { imageForQuestion, addLectureImage, lecturePreview } from './images.js';
 import { STUDY_TOPICS, TOPIC_BY_ID } from './topics.js';
-import { STUDY_CLASSES, CLASS_BY_ID, loadClassCategories, loadClassQuestions } from './catalog.js';
+import { STUDY_CLASSES, CLASS_BY_ID, loadClassCategories, loadClassQuestions, loadClassQuestionPool } from './catalog.js';
 import { settleStudyReward, COIN_EMOJI, BALANCE_EMOJI } from './rewards.js';
 import { answerText, loadQuestionBanks, selectQuestions } from './questions.js';
 import {
     createStudySession, getStudySession, checkStudyAction, chooseOrderItem,
     undoOrderItem, submitStudyAnswer, nextStudyQuestion, skipStudyQuestion,
 } from './sessions.js';
+
+// Standalone authored-bank previews can run without a bot database; deployed clients
+// always have a database wrapper and must load their persisted preferences.
+const preferencesFor = (client, guildId, userId) => client?.db ? getQuestionPreferences(client, guildId, userId) : Promise.resolve({});
+const enabledBanks = (banks, disabled) => new Map([...banks].map(([id, questions]) => [id, enabledQuestions(questions, disabled)]));
 
 const TYPE_LABELS = {
     multiple_choice: 'Multiple choice', fill_blank: 'Fill in the blank',
@@ -32,7 +40,7 @@ export function classMessage(ownerId) {
             description: course.description || `Choose a ${course.label} category`,
         })));
     return { content: '', embeds: [new EmbedBuilder().setTitle('📚 Study Classes')
-        .setDescription('Choose your class, then a category and session length. Correct answers earn **5–30 Merit Coins**, with higher amounts more likely.')], components: [row(menu)] };
+        .setDescription('Choose your class, then a category and session length. Correct answers earn **5–30 Merit Coins**, with higher amounts more likely.')], components: [row(menu), row(preferencesButton(ownerId))] };
 }
 
 export function classCategoriesMessage(ownerId, classId, categories, requestedPage = 0) {
@@ -63,12 +71,13 @@ const LENGTHS = [
     [150, '💪', 'Advanced practice session'], [600, '🏆', 'Complete question bank challenge'],
 ];
 export function countMessage(ownerId, title, available, customId) {
+    if (!available) return { content: '', embeds: [new EmbedBuilder().setTitle(`📚 ${title}`).setDescription('No enabled questions are available here. Turn questions back on or choose another topic.')], components: [row(configureButton(ownerId, customId), preferencesButton(ownerId)), row(button(`study:classes:${ownerId}`, '📚 Classes', ButtonStyle.Secondary))] };
     const menu = new StringSelectMenuBuilder().setCustomId(customId).setPlaceholder('Choose number of questions...')
         .addOptions(LENGTHS.filter(([count]) => count <= available).map(([count, emoji, description]) => ({
             label: `${count} ${count === 1 ? 'Question' : 'Questions'}`, value: String(count), emoji, description,
         })));
     return { content: '', embeds: [new EmbedBuilder().setTitle(`📚 ${title}`).setDescription(`${available} questions available. How many would you like to do?`)],
-        components: [row(menu), row(button(`study:classes:${ownerId}`, '📚 Classes', ButtonStyle.Secondary))] };
+        components: [row(menu), row(button(`study:classes:${ownerId}`, '📚 Classes', ButtonStyle.Secondary), configureButton(ownerId, customId))] };
 }
 
 export function topicMessage(ownerId, banks) {
@@ -112,6 +121,7 @@ export function questionMessage(session) {
     components.push(row(
         button(actionId(session, 'skip'), 'Skip', ButtonStyle.Secondary),
         button(actionId(session, 'report'), 'Report', ButtonStyle.Secondary),
+        questionToggleButton(session),
     ));
     const label = session.topicLabel || TOPIC_BY_ID.get(session.topicId)?.label || 'Random A&P';
     return addLectureImage({ content: '', embeds: [new EmbedBuilder().setTitle(`Question ${session.index + 1} of ${session.questions.length}`)
@@ -143,7 +153,7 @@ export function resultMessage(session, correct) {
     const components = unpaid ? [row(button(actionId(session, 'reward'), '🪙 Retry coins'))]
         : finished ? [row(button(`study:classes:${session.userId}`, '📚 Choose another class', ButtonStyle.Secondary))]
         : [row(button(actionId(session, 'next'), '➡️ Next Question'))];
-    components[0].addComponents(button(actionId(session, 'report'), 'Report', ButtonStyle.Secondary));
+    components[0].addComponents(button(actionId(session, 'report'), 'Report', ButtonStyle.Secondary), questionToggleButton(session), preferencesButton(session.userId));
     return addLectureImage({ content: '', embeds: [embed], components }, q);
 }
 
@@ -180,6 +190,77 @@ export async function handleStudyInteraction(interaction, client, args) {
     try {
         const [action, ownerId, token, index, revision, choice] = args;
         if (interaction.user.id !== ownerId) return await privateError(interaction, 'This study test belongs to another student. Use /test to start your own.');
+        if (['configurelab', 'configurelecture', 'configurecourse'].includes(action)) {
+            await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+            let questions, scope;
+            if (action === 'configurelab') {
+                const set = labSetForSelection(token);
+                questions = labQuestions(token, 'multiple_choice');
+                scope = { kind: 'lab', source: token, title: set.title, classId: 'ap_lab' };
+            } else if (action === 'configurelecture') {
+                if (token !== 'random' && !TOPIC_BY_ID.has(token)) throw new Error('Unknown study topic');
+                const banks = await loadQuestionBanks();
+                questions = token === 'random' ? [...banks.values()].flat() : banks.get(token);
+                scope = { kind: 'lecture', source: token, title: TOPIC_BY_ID.get(token)?.label || 'Random A&P', classId: 'ap_lecture' };
+            } else {
+                questions = await loadClassQuestionPool(client, token, index);
+                const categories = await loadClassCategories(client, token);
+                scope = { kind: 'course', source: token, category: index, title: `${CLASS_BY_ID.get(token).label} • ${categories.find(c => c.token === index)?.label || 'Random'}`, classId: token };
+            }
+            const context = createQuestionSelection(interaction.guildId, ownerId, questions, scope);
+            await editStudyReply(interaction, selectionMessage(context, await preferencesFor(client, interaction.guildId, ownerId)));
+            return;
+        }
+        if (['configpage', 'configselect', 'configreturn'].includes(action)) {
+            const context = getQuestionSelection(token, interaction.guildId, ownerId);
+            await interaction.deferUpdate();
+            if (action === 'configselect') {
+                const selected = [...new Set(interaction.values || [])];
+                if (!selected.length || selected.length > 25) throw new Error('This question selection is invalid.');
+                const changes = selected.map(value => {
+                    const separator = value.indexOf('|');
+                    const state = value.slice(0, separator), id = value.slice(separator + 1);
+                    const question = context.questions.find(q => q.id === id);
+                    if (!question || !['on', 'off'].includes(state)) throw new Error('This question selection is invalid.');
+                    return { question, enabled: state === 'on' };
+                });
+                for (const change of changes) await setQuestionEnabled(client, interaction.guildId, ownerId, { ...change.question, classId: context.scope.classId }, change.enabled);
+            }
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            if (action === 'configreturn') {
+                const scope = context.scope;
+                if (scope.kind === 'lab') await editStudyReply(interaction, labModeMessage(ownerId, scope.source));
+                else await editStudyReply(interaction, countMessage(ownerId, scope.title, enabledQuestions(context.questions, disabled).length,
+                    scope.kind === 'lecture' ? `study:count:${ownerId}:${scope.source}` : `study:coursecount:${ownerId}:${scope.source}:${scope.category}`));
+            } else await editStudyReply(interaction, selectionMessage(context, disabled, Number(index) || 0, action === 'configselect' ? 'Your question choices have been saved.' : ''));
+            return;
+        }
+        if (action === 'preferences' || action === 'preferencepage' || action === 'enablequestion') {
+            if (action === 'preferences') await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+            else await interaction.deferUpdate();
+            if (action === 'enablequestion') {
+                const selected = [...new Set(interaction.values || [])];
+                if (!selected.length || selected.length > 25) throw new Error('This question selection is invalid.');
+                for (const id of selected) await setQuestionEnabled(client, interaction.guildId, ownerId, { id }, true);
+            }
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            await editStudyReply(interaction, preferenceList(ownerId, disabled, Number(token) || 0,
+                action === 'enablequestion' ? 'Selected questions are back on for your next quiz.' : ''));
+            return;
+        }
+        if (action === 'prefquestion') {
+            const session = getStudySession(interaction.guildId, ownerId, token);
+            const position = Number(index);
+            if (!session || !Number.isInteger(position) || position < 0 || position > session.index || !['on', 'off'].includes(choice)) throw new Error('This question preference control has expired. Start /test again.');
+            const question = session.questions[position];
+            await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+            const disabled = await setQuestionEnabled(client, interaction.guildId, ownerId, { ...question, classId: session.classId }, choice === 'on');
+            session.disabledQuestions = disabled;
+            await editStudyReply(interaction, preferenceList(ownerId, disabled, 0, choice === 'on'
+                ? 'This question is back on for future quizzes.'
+                : 'This question is turned off for future quizzes. Your current question and score are unchanged.'));
+            return;
+        }
         if (action === 'classes') {
             await interaction.deferUpdate();
             await editStudyReply(interaction, classMessage(ownerId));
@@ -192,7 +273,8 @@ export async function handleStudyInteraction(interaction, client, args) {
             if (classId === 'ap_lab' && action === 'class') {
                 await editStudyReply(interaction, labCategoryMessage(ownerId));
             } else if (classId === 'ap_lecture') {
-                await editStudyReply(interaction, topicMessage(ownerId, await loadQuestionBanks()));
+                const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+                await editStudyReply(interaction, topicMessage(ownerId, enabledBanks(await loadQuestionBanks(), disabled)));
             } else {
                 const categories = await loadClassCategories(client, classId);
                 await editStudyReply(interaction, classCategoriesMessage(ownerId, classId, categories, action === 'classpage' ? Number(index) : 0));
@@ -218,36 +300,45 @@ export async function handleStudyInteraction(interaction, client, args) {
         }
         if (action === 'labmode') {
             const mode = interaction.values?.[0];
-            const questions = labQuestions(token, mode);
+            await interaction.deferUpdate();
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            const questions = enabledQuestions(labQuestions(token, mode), disabled);
+            if (!questions.length) {
+                await editStudyReply(interaction, countMessage(ownerId, 'Anatomy and Physiology Lab', 0, `study:configurelab:${ownerId}:${token}`));
+                return;
+            }
             if (questions.some(question => !imageForQuestion(question))) return await privateError(interaction, 'This model set needs its image files before it can start. Please try again after the photos are installed.');
             const set = labSetForSelection(token);
             const category = LAB_CATEGORIES.find(category => category.id === set.category)?.title || 'Anatomy and Physiology Lab';
             const session = createStudySession(interaction.guildId, ownerId, questions, `lab_${set.category}`);
             session.classId = 'ap_lab';
+            session.disabledQuestions = disabled;
             session.topicLabel = `Anatomy and Physiology Lab • ${category} • ${set.title} • ${mode === 'typed' ? 'Type in' : 'Multiple choice'}`;
-            await interaction.deferUpdate();
             await publishQuestion(interaction, session);
             return;
         }
         if (action === 'category') {
             await interaction.deferUpdate();
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
             const categories = await loadClassCategories(client, token);
             const selected = interaction.values[0];
             const category = categories.find(item => item.token === selected);
             if (selected !== 'random' && !category) throw new Error('Unknown class category');
-            const available = category ? category.count : categories.reduce((sum, item) => sum + item.count, 0);
-            if (!available) throw new Error('This class has no questions in that category yet.');
+            const enabledCategories = await loadClassCategories(client, token, { excludedIds: Object.keys(disabled) });
+            const available = selected === 'random' ? enabledCategories.reduce((sum,item) => sum + item.count,0) : enabledCategories.find(item => item.token === selected)?.count || 0;
             const course = CLASS_BY_ID.get(token);
             await editStudyReply(interaction, countMessage(ownerId, `${course.label} • ${category?.label || 'Random'}`, available, `study:coursecount:${ownerId}:${token}:${selected}`));
             return;
         }
         if (action === 'coursecount') {
             await interaction.deferUpdate();
-            const questions = await loadClassQuestions(client, token, index, Number(interaction.values[0]));
-            const categories = await loadClassCategories(client, token);
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            const categories = await loadClassCategories(client, token, { excludedIds: Object.keys(disabled) });
+            const questions = await loadClassQuestions(client, token, index, Number(interaction.values[0]), { excludedIds: Object.keys(disabled) });
             const course = CLASS_BY_ID.get(token);
             const session = createStudySession(interaction.guildId, ownerId, questions, `class_${token}`);
             session.classId = token;
+            session.disabledQuestions = disabled;
             session.topicLabel = `${course.label} • ${categories.find(item => item.token === index)?.label || 'Random'}`;
             await publishQuestion(interaction, session);
             return;
@@ -256,18 +347,21 @@ export async function handleStudyInteraction(interaction, client, args) {
             const topicId = interaction.values[0];
             if (topicId !== 'random' && !TOPIC_BY_ID.has(topicId)) throw new Error('Unknown study topic');
             await interaction.deferUpdate();
-            const banks = await loadQuestionBanks();
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            const banks = enabledBanks(await loadQuestionBanks(), disabled);
             const available = topicId === 'random' ? [...banks.values()].flat().length : banks.get(topicId).length;
-            if (!available) throw new Error('This topic is still being prepared. Please choose another topic.');
+
             await editStudyReply(interaction, countMessage(ownerId, TOPIC_BY_ID.get(topicId)?.label || 'Random A&P', available, `study:count:${ownerId}:${topicId}`));
             return;
         }
         if (action === 'count') {
             await interaction.deferUpdate();
-            const banks = await loadQuestionBanks();
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            const banks = enabledBanks(await loadQuestionBanks(), disabled);
             const questions = selectQuestions(banks, token, Number(interaction.values[0]));
             const session = createStudySession(interaction.guildId, ownerId, questions, token);
             session.classId = 'ap_lecture';
+            session.disabledQuestions = disabled;
             await publishQuestion(interaction, session);
             return;
         }
