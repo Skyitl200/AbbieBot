@@ -9,7 +9,7 @@ export function questionToggleButton(session, index = session.index) {
   const q = session.questions[index];
   const off = Object.hasOwn(session.disabledQuestions || {}, q.id);
   return new ButtonBuilder().setCustomId(`study:prefquestion:${session.userId}:${session.id}:${index}:${session.revision}:${off ? 'on' : 'off'}`)
-    .setLabel(off ? 'Turn question back on' : 'Turn off for future quizzes').setStyle(ButtonStyle.Secondary);
+    .setLabel(off ? 'Turn question back on' : 'Toggle this question off').setStyle(ButtonStyle.Secondary);
 }
 
 export function preferenceList(ownerId, disabled, requestedPage = 0, notice = '') {
@@ -30,5 +30,5 @@ export function preferenceList(ownerId, disabled, requestedPage = 0, notice = ''
   navigation.push(new ButtonBuilder().setCustomId(`study:classes:${ownerId}`).setLabel('Choose a class').setStyle(ButtonStyle.Secondary));
   components.push(new ActionRowBuilder().addComponents(navigation));
   return { content: notice, embeds: [new EmbedBuilder().setTitle('Your turned-off questions')
-    .setDescription(entries.length ? `${entries.length} question(s) turned off for you in this server. Select any below to turn them back on.\nPage ${page+1} of ${maxPage+1}.` : 'All questions are on. Use **Turn off for future quizzes** on a question to exclude it from your future sessions.')], components, allowedMentions: { parse: [] } };
+    .setDescription(entries.length ? `${entries.length} question(s) turned off for you in this server. Select any below to turn them back on.\nPage ${page+1} of ${maxPage+1}.` : 'All questions are on. Use **Toggle this question off** on a question to exclude it from your future sessions.')], components, allowedMentions: { parse: [] } };
 }

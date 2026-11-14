@@ -128,7 +128,7 @@ test('during-test button saves choice without scoring, skipping, or affecting an
   const s=storage();
   const session=createStudySession('g','u',[q('one')],'random');
   session.classId='ap_lecture';
-  assert.ok(questionMessage(session).components.flatMap(r=>r.toJSON().components).some(b=>b.label==='Turn off for future quizzes'));
+  assert.ok(questionMessage(session).components.flatMap(r=>r.toJSON().components).some(b=>b.label==='Toggle this question off'));
   await handleStudyInteraction(interaction(),s.client,['prefquestion','u',session.id,'0','0','off']);
   assert.equal(session.score,0);
   assert.equal(session.answered,false);

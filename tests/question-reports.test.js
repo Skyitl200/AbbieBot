@@ -29,14 +29,14 @@ function delivery(send = async () => ({ id: 'moderator-report' })) {
 test('every result has Report beside Next, and final results and coin retries also retain Report', () => {
     const { session } = fixture();
     let buttons = resultMessage(session, true).components[0].toJSON().components;
-    assert.deepEqual(buttons.map(b=>b.label), ['➡️ Next Question','Report','Turn off for future quizzes','Turned-off questions']);
+    assert.deepEqual(buttons.map(b=>b.label), ['➡️ Next Question','Report','Toggle this question off','Turned-off questions']);
     assert.ok(buttons.every(b=>b.custom_id.length<=100));
     assert.ok(resultMessage(session,false).components[0].toJSON().components.some(b=>b.label==='Report'));
     session.reward.status='failed';
     buttons=resultMessage(session,true).components[0].toJSON().components;
-    assert.deepEqual(buttons.map(b=>b.label), ['🪙 Retry coins','Report','Turn off for future quizzes','Turned-off questions']);
+    assert.deepEqual(buttons.map(b=>b.label), ['🪙 Retry coins','Report','Toggle this question off','Turned-off questions']);
     const final=fixture([structuredClone(q)]).session;
-    assert.deepEqual(resultMessage(final,true).components[0].toJSON().components.map(b=>b.label), ['📚 Choose another class','Report','Turn off for future quizzes','Turned-off questions']);
+    assert.deepEqual(resultMessage(final,true).components[0].toJSON().components.map(b=>b.label), ['📚 Choose another class','Report','Toggle this question off','Turned-off questions']);
 });
 
 test('reports are owner-only and reject future unanswered questions', async () => {
