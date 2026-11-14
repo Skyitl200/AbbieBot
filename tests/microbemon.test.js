@@ -224,14 +224,28 @@ test('each organism and shiny variant has its own file and habitat context', asy
     assert.equal(speciesArtwork('unknown'), null);
 });
 
-test('guide and empty lobby do not show the old three-creature scene', () => {
+test('guide and empty collection do not show unrelated artwork', () => {
     const p = newProfile();
-    for (const view of ['home', 'guide', 'collection']) {
+    for (const view of ['guide', 'collection']) {
         const message = renderGame(p, 'owner', { view });
         assert.equal(message.embeds[0].toJSON().image, undefined);
         assert.equal(message.files.length, 0);
         assert.deepEqual(message.attachments, []);
     }
+});
+
+test('home uses the uploaded banner and keeps the selected companion as a thumbnail', () => {
+    const p = newProfile();
+    const empty = renderGame(p, 'owner');
+    assert.equal(empty.embeds[0].toJSON().image.url, 'attachment://microbemon-home.png');
+    assert.equal(empty.files.length, 1);
+    p.pets = [{ id: 'companion', speciesId: 'ascaris', shiny: false, level: 1, caughtAt: now }];
+    p.companion = 'companion';
+    const home = renderGame(p, 'owner');
+    assert.equal(home.embeds[0].toJSON().image.url, 'attachment://microbemon-home.png');
+    assert.equal(home.embeds[0].toJSON().thumbnail.url, 'attachment://ascaris.png');
+    assert.equal(home.files.length, 2);
+    assert.deepEqual(home.attachments, []);
 });
 
 test('slide-backed battle pools cover every organism with varied non-taxonomy questions', async () => {
