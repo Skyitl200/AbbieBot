@@ -5,6 +5,7 @@ import { microbeBasics } from './questions.js';
 import { ARTWORK, speciesArtwork } from './artwork.js';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, StringSelectMenuBuilder, escapeMarkdown } from 'discord.js';
 import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { speciesById, SPECIES } from './catalog.js';
 import { captureChance, activePet, petBattleHp } from './engine.js';
 
@@ -13,6 +14,7 @@ const button = (user, action, label, extra = [], style = ButtonStyle.Secondary) 
 export const healthBar = (hp, maxHp = MAX_HP) => '🟩'.repeat(Math.max(0, Math.min(10, Math.ceil(hp / maxHp * 10)))) + '⬛'.repeat(10 - Math.max(0, Math.min(10, Math.ceil(hp / maxHp * 10))));
 const row = (...buttons) => new ActionRowBuilder().addComponents(buttons);
 const petName = pet => `${pet.shiny ? '✨ ' : ''}${escapeMarkdown(pet.nickname || speciesById(pet.speciesId).name)}`;
+const homeArtwork = { name: 'microbemon-home.png', path: fileURLToPath(new URL('../../assets/microbemon/home.png', import.meta.url)) };
 export function renderGame(profile, user, { view = 'home', page = 0, notice = '', ownerName = '', releasePetId = null } = {}) {
     const e = profile.encounter?.expiresAt > Date.now() ? profile.encounter : null;
     const embed = { color: 0x2dd4bf, title: '🧬 Microbemon',
@@ -105,7 +107,8 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
         }
     } else {
         const companion = profile.pets.find(p => p.id === profile.companion);
-        if (companion) portrait = speciesArtwork(companion.speciesId, companion.shiny);
+        portrait = homeArtwork;
+        if (companion) allyPortrait = speciesArtwork(companion.speciesId, companion.shiny);
         embed.fields = [{ name: 'Your Microbedeck', value: `${profile.pets.length} pets · ${profile.pets.filter(p => p.shiny).length} shiny` },
             { name: 'Companion', value: companion ? petName(companion) : 'Catch a pet to get started!' }];
     }
