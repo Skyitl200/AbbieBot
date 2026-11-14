@@ -20,7 +20,7 @@ export function buildLfgPost({ hostName, hostAvatar, subject, description, capac
     const hasArtwork = imagePath && existsSync(imagePath);
     // Construct the payload directly to preserve this card's emojis and footer.
     const embed = new EmbedBuilder({
-        color: 0x2dd4bf,
+        color: 0x9b59b6,
         author: {
             name: `${hostName} is looking for a study group!`.slice(0, 256),
             ...(hostAvatar ? { icon_url: hostAvatar } : {})
