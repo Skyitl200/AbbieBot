@@ -17,14 +17,14 @@ async function thumbnail(pet) {
     if (thumbnails.has(key)) return thumbnails.get(key);
     const asset = speciesArtwork(pet.speciesId, pet.shiny);
     if (!asset) throw new Error('Unknown pet portrait');
-    const source = PNG.sync.read(await readFile(asset.path));
+    const source = PNG.sync.read(asset.buffer || await readFile(asset.path));
     const result = Buffer.alloc(W * H * 4);
     for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
         const src = (Math.floor(y * source.height / H) * source.width + Math.floor(x * source.width / W)) * 4;
         source.data.copy(result, (y * W + x) * 4, src, src + 4);
     }
     // Cache only small thumbnails, not full-size decoded portraits.
-    if (thumbnails.size >= 38) thumbnails.delete(thumbnails.keys().next().value);
+    if (thumbnails.size >= 80) thumbnails.delete(thumbnails.keys().next().value);
     thumbnails.set(key, result);
     return result;
 }

@@ -115,10 +115,11 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
     // Encounters and collection entries always use the exact species and variant.
     // Missing art never falls back to an unrelated group scene.
     const selectedArt = portrait;
-    const files = selectedArt && existsSync(selectedArt.path)
-        ? [{ attachment: selectedArt.path, name: selectedArt.name }] : [];
-    if (allyPortrait && existsSync(allyPortrait.path)) {
-        if (!files.some(file => file.name === allyPortrait.name)) files.push({ attachment: allyPortrait.path, name: allyPortrait.name });
+    const availableArt = art => art && (art.buffer || (art.path && existsSync(art.path)));
+    const files = availableArt(selectedArt)
+        ? [{ attachment: selectedArt.buffer || selectedArt.path, name: selectedArt.name }] : [];
+    if (availableArt(allyPortrait)) {
+        if (!files.some(file => file.name === allyPortrait.name)) files.push({ attachment: allyPortrait.buffer || allyPortrait.path, name: allyPortrait.name });
         embed.thumbnail = { url: `attachment://${allyPortrait.name}` };
     }
     if (selectedArt && files.some(file => file.name === selectedArt.name)) embed.image = { url: `attachment://${selectedArt.name}` };

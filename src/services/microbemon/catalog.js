@@ -1,3 +1,4 @@
+import { BACTERIA } from './bacteria.js';
 // Game rarity is a balancing choice, not real-world prevalence or severity.
 const entry = (id, name, common, tier, group, fact, question, answers, correct = 0) =>
     ({ id, name, common, tier, group, fact, question, answers, correct });
@@ -20,7 +21,8 @@ export const SPECIES = [
     entry('trypanosoma', 'Trypanosoma brucei gambiense', 'Sleeping sickness parasite', 'epic', 'Flagellated protist', 'Trypanosoma brucei gambiense is transmitted by tsetse flies and causes African sleeping sickness.', 'Which insect transmits this parasite?', ['Tsetse fly', 'Flea', 'Housefly']),
     entry('toxoplasma', 'Toxoplasma gondii', 'Toxoplasma', 'epic', 'Apicomplexan', 'Toxoplasma gondii is an apicomplexan parasite that forms tissue cysts.', 'Toxoplasma gondii can form…', ['Tissue cysts', 'Tapeworm segments', 'Bacterial spores']),
     entry('plasmodium', 'Plasmodium vivax', 'Malaria parasite', 'epic', 'Apicomplexan', 'Plasmodium vivax causes malaria and has stages within red blood cells.', 'Plasmodium vivax causes…', ['Malaria', 'Pinworm infection', 'Giardiasis']),
-    entry('schistosoma', 'Schistosoma', 'Blood fluke', 'epic', 'Trematode', 'Schistosoma blood flukes have separate male and female worms, unlike most other flukes.', 'Schistosoma adults have…', ['Separate sexes', 'No reproductive organs', 'Cilia for movement'])
+    entry('schistosoma', 'Schistosoma', 'Blood fluke', 'epic', 'Trematode', 'Schistosoma blood flukes have separate male and female worms, unlike most other flukes.', 'Schistosoma adults have…', ['Separate sexes', 'No reproductive organs', 'Cilia for movement']),
+    ...BACTERIA
 ];
 export const TIERS = [{ name: 'common', weight: 55 }, { name: 'uncommon', weight: 30 }, { name: 'rare', weight: 12 }, { name: 'epic', weight: 3 }];
 export const speciesById = id => SPECIES.find(species => species.id === id);
