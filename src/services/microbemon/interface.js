@@ -17,7 +17,7 @@ const petName = pet => `${pet.shiny ? '✨ ' : ''}${escapeMarkdown(pet.nickname 
 const homeArtwork = { name: 'microbemon-home.png', path: fileURLToPath(new URL('../../assets/microbemon/home.png', import.meta.url)) };
 export function renderGame(profile, user, { view = 'home', page = 0, notice = '', ownerName = '', releasePetId = null } = {}) {
     const e = profile.encounter?.expiresAt > Date.now() ? profile.encounter : null;
-    const embed = { color: 0x2dd4bf, title: '🧬 Microbemon',
+    const embed = { color: 0x9b59b6, title: '🧬 Microbemon',
         description: 'Explore, answer study questions, catch creatures, and collect companions.',
         footer: { text: 'Only the player controls this session. Game rarity is fictional. Shiny roll: 1 in 1,000.' } };
     if (ownerName) embed.author = { name: `${ownerName}'s Microbemon`.slice(0, 256) };
