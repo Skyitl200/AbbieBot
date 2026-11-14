@@ -73,6 +73,11 @@ export const GuildConfigSchema = z
     logIgnore: LogIgnoreSchema.optional(),
     disabledCommands: z.record(z.boolean()).optional(),
     disabledCategories: z.record(z.boolean()).optional(),
+    boostAnnouncements: z.object({
+      enabled: z.boolean(),
+      channelId: z.string().regex(/^\d{16,22}$/).nullable(),
+      xpBonusPercent: z.union([z.literal(0), z.literal(20)]),
+    }).optional(),
     logging: LoggingConfigSchema.optional(),
     ticketLogging: TicketLoggingSchema.optional(),
     enableLogging: z.boolean().optional(),

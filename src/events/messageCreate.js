@@ -1,4 +1,6 @@
 import { Events } from 'discord.js';
+import { handleBoostMessage } from '../services/boosts/handler.js';
+import { boostedMessageXp, getBoostSettings } from '../services/boosts/settings.js';
 import { logger } from '../utils/logger.js';
 import { getLevelingConfig, getUserLevelData } from '../services/leveling/leveling.js';
 import { addXp } from '../services/leveling/xpSystem.js';
@@ -26,6 +28,7 @@ export default {
   name: Events.MessageCreate,
   async execute(message, client) {
     try {
+      if (await handleBoostMessage(message, client)) return;
       if (message.author.bot || !message.guild) return;
 
       logger.debug(`Message received from ${message.author.tag}: ${message.content}`);
@@ -240,6 +243,8 @@ async function handleLeveling(message, client) {
       finalXP = Math.floor(finalXP * levelingConfig.xpMultiplier);
     }
 
+    const boostSettings = await getBoostSettings(client, message.guild.id);
+    finalXP = boostedMessageXp(finalXP, message.member, boostSettings);
     const result = await addXp(client, message.guild, message.member, finalXP);
 
     if (result?.leveledUp) {
