@@ -417,13 +417,19 @@ test('Microbedeck and pet selector routes reach saved pets; Microbemon returns t
         followUp: async () => assert.fail('Saved-pet navigation must work') };
     await handleMicrobemon(interaction, s.client, ['owner', 'deck', '0']);
     assert.match(message.embeds[0].toJSON().title, /Microbedeck/);
+    const petMenu = message.components.flatMap(row => row.toJSON().components).find(component => component.custom_id === 'microbemon:owner:pet');
+    assert.deepEqual(petMenu.options[0].emoji, { id: '1571285873658437692', name: 'worm_dance', animated: true });
+    assert.equal(petMenu.options[1].emoji.name, '✨');
     assert.ok(Buffer.isBuffer(message.files[0].attachment));
     assert.ok(message.components.some(row => row.toJSON().components.some(component => component.custom_id === 'microbemon:owner:home')));
     await handleMicrobemon(interaction, s.client, ['owner', 'pet']);
     assert.match(message.embeds[0].toJSON().description, /Taenia solium/);
     assert.equal(message.embeds[0].toJSON().fields.find(f => f.name === 'Microbedeck').value, '2 / 2');
     await handleMicrobemon(interaction, s.client, ['owner', 'home']);
-    assert.equal(message.embeds[0].toJSON().title, '🧬 Microbemon');
+    assert.equal(message.embeds[0].toJSON().title, '<a:worm_dance:1571285873658437692> Microbemon');
+    const homeButton = message.components.flatMap(row => row.toJSON().components).find(component => component.custom_id === 'microbemon:owner:home');
+    assert.equal(homeButton.label, 'Microbemon');
+    assert.deepEqual(homeButton.emoji, { id: '1571285873658437692', name: 'worm_dance', animated: true });
 });
 
 test('old Microbedeck buttons open the new box view', async () => {

@@ -2,6 +2,7 @@ import { MAX_HP, MAX_PETS, MAX_BOXES, hpForLevel, xpToNextLevel } from './consta
 import { logger } from '../../utils/logger.js';
 import { deckPage, renderDeckGrid } from './deck.js';
 import { microbeBasics } from './questions.js';
+import { MICROBEMON_EMOJI, MICROBEMON_ICON } from './branding.js';
 import { ARTWORK, speciesArtwork } from './artwork.js';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, StringSelectMenuBuilder, escapeMarkdown } from 'discord.js';
 import { existsSync } from 'node:fs';
@@ -17,7 +18,7 @@ const petName = pet => `${pet.shiny ? '✨ ' : ''}${escapeMarkdown(pet.nickname 
 const homeArtwork = { name: 'microbemon-home.png', path: fileURLToPath(new URL('../../assets/microbemon/home.png', import.meta.url)) };
 export function renderGame(profile, user, { view = 'home', page = 0, notice = '', ownerName = '', releasePetId = null } = {}) {
     const e = profile.encounter?.expiresAt > Date.now() ? profile.encounter : null;
-    const embed = { color: 0x9b59b6, title: '🧬 Microbemon',
+    const embed = { color: 0x9b59b6, title: `${MICROBEMON_ICON} Microbemon`,
         description: 'Explore, answer study questions, catch creatures, and collect companions.',
         footer: { text: 'Only the player controls this session. Game rarity is fictional. Shiny roll: 1 in 1,000.' } };
     if (ownerName) embed.author = { name: `${ownerName}'s Microbemon`.slice(0, 256) };
@@ -52,7 +53,7 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
             .addOptions(eligible.map(pet => ({
                 label: `${box.start + box.pets.indexOf(pet) + 1}. ${pet.nickname || speciesById(pet.speciesId).name}`.slice(0, 100),
                 description: `${pet.shiny ? 'Shiny · ' : ''}${speciesById(pet.speciesId).common} · Level ${pet.level}${selecting ? ` · HP ${petBattleHp(e, pet.id)}/${e.petMaxHp?.[pet.id] || hpForLevel(pet.level)}` : ''}`.slice(0, 100),
-                value: pet.id, emoji: pet.shiny ? '✨' : '🧬'
+                value: pet.id, emoji: pet.shiny ? '✨' : MICROBEMON_EMOJI
             })))));
         const boxButton = (label, target) => selecting
             ? button(user, 'party', label, [e.id, e.revision, target]) : button(user, 'deck', label, [target]);
@@ -114,7 +115,7 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
     }
     if (notice) embed.description += `\n\n${notice.slice(0, 1100)}`;
     components.push(row(button(user, 'explore', e ? 'Resume Encounter' : '🌿 Explore', [], ButtonStyle.Success),
-        button(user, 'deck', '📦 Microbedeck', [0]), button(user, 'home', '🧬 Microbemon'), button(user, 'guide', 'How to Play')));
+        button(user, 'deck', '📦 Microbedeck', [0]), button(user, 'home', 'Microbemon').setEmoji(MICROBEMON_EMOJI), button(user, 'guide', 'How to Play')));
     // Encounters and collection entries always use the exact species and variant.
     // Missing art never falls back to an unrelated group scene.
     const selectedArt = portrait;
