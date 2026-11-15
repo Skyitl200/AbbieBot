@@ -16,7 +16,8 @@ export const healthBar = (hp, maxHp = MAX_HP) => '🟩'.repeat(Math.max(0, Math.
 const row = (...buttons) => new ActionRowBuilder().addComponents(buttons);
 const petName = pet => `${pet.shiny ? '✨ ' : ''}${escapeMarkdown(pet.nickname || speciesById(pet.speciesId).name)}`;
 const homeArtwork = { name: 'microbemon-home.png', path: fileURLToPath(new URL('../../assets/microbemon/home.png', import.meta.url)) };
-export function renderGame(profile, user, { view = 'home', page = 0, notice = '', ownerName = '', releasePetId = null } = {}) {
+export function renderGame(profile, user, { view = 'home', page = 0, notice = '', ownerName = '', releasePetId = null, artwork = true } = {}) {
+    const portraitFor = (id, shiny) => artwork ? speciesArtwork(id, shiny) : null;
     const e = profile.encounter?.expiresAt > Date.now() ? profile.encounter : null;
     const embed = { color: 0x9b59b6, title: `${MICROBEMON_ICON} Microbemon`,
         description: 'Explore, answer study questions, catch creatures, and collect companions.',
@@ -30,7 +31,7 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
         const pending = profile.pendingRelease;
         embed.title = '⚠️ Release this Microbemon?';
         if (pet && pending?.petId === pet.id) {
-            portrait = speciesArtwork(pet.speciesId, pet.shiny);
+            portrait = portraitFor(pet.speciesId, pet.shiny);
             embed.description = `**${petName(pet)}** · Level ${pet.level}\n*${speciesById(pet.speciesId).name}*\n\nThis permanently removes this pet and its XP from your Microbedeck. It cannot be undone. Confirmation expires <t:${Math.floor(pending.expiresAt / 1000)}:R>.`;
             components.push(row(button(user, 'release_confirm', 'Release permanently', [pet.id, pending.token], ButtonStyle.Danger),
                 button(user, 'release_cancel', 'Keep this pet', [pet.id], ButtonStyle.Success)));
@@ -70,7 +71,7 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
         embed.title = '📚 Your Microbedeck';
         if (pet) {
             const species = speciesById(pet.speciesId);
-            portrait = speciesArtwork(pet.speciesId, pet.shiny);
+            portrait = portraitFor(pet.speciesId, pet.shiny);
             embed.description = `**${petName(pet)}**\n*${species.name}* — ${species.common}\n${species.tier.toUpperCase()} · Level ${pet.level} · ${pet.shiny ? '✨ Shiny' : 'Normal'} · Max HP ${hpForLevel(pet.level)}\n${profile.companion === pet.id ? '💚 Your companion\n' : ''}\n${species.fact}`;
             embed.fields = [{ name: 'XP / next level', value: xpToNextLevel(pet.level) === null ? 'MAX LEVEL' : `${pet.xp || 0} / ${xpToNextLevel(pet.level)} XP` },
                 { name: 'Caught', value: `<t:${Math.floor(pet.caughtAt / 1000)}:f>` },
@@ -87,14 +88,14 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
         embed.fields = [{ name: 'Organisms', value: `${SPECIES.length} from your lab notes, with corrected names and life-cycle facts.` }];
     } else if (e) {
         const species = speciesById(e.speciesId);
-        portrait = speciesArtwork(e.speciesId, e.shiny);
+        portrait = portraitFor(e.speciesId, e.shiny);
         embed.title = `${e.shiny ? '✨ SHINY' : '🌿 Wild'} ${species.name}`;
         embed.color = e.shiny ? 0xf1c40f : 0x2dd4bf;
         embed.fields = [{ name: 'Habitat / life-cycle setting', value: `${ARTWORK[e.speciesId].habitat}\n${ARTWORK[e.speciesId].context}` }];
         const ally = activePet(profile);
         const allyLabel = ally ? `${petName(ally)} · Lv. ${ally.level}` : 'Researcher (catch your first pet)';
         embed.description = `**${species.common}**\n${species.tier.toUpperCase()} · Level ${e.level} · ${species.group}\n\n❤️ Wild HP: **${e.hp}/${e.maxHp || MAX_HP}**\n${healthBar(e.hp, e.maxHp || MAX_HP)}\n\n⚔️ **${allyLabel}**\n💚 HP: **${e.playerHp}/${e.playerMaxHp || MAX_HP}**\n${healthBar(e.playerHp, e.playerMaxHp || MAX_HP)}${ally ? `\nXP: ${xpToNextLevel(ally.level) === null ? 'MAX LEVEL' : `${ally.xp || 0}/${xpToNextLevel(ally.level)}`}` : ''}\n\n🧪 Catch chance: **${captureChance(e)}%** · Attempts: **${e.attempts}**\nEncounter ends <t:${Math.floor(e.expiresAt / 1000)}:R>.`;
-        if (ally) allyPortrait = speciesArtwork(ally.speciesId, ally.shiny);
+        if (ally) allyPortrait = portraitFor(ally.speciesId, ally.shiny);
         const token = [e.id, e.revision];
         if (e.question) {
             embed.fields.push({ name: `⚔️ Study Battle · ${e.question.topic || 'Review'}`, value: e.question.text }, ...e.question.answers.map((answer, i) => ({ name: String.fromCharCode(65 + i), value: answer, inline: true })));
@@ -108,8 +109,8 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
         }
     } else {
         const companion = profile.pets.find(p => p.id === profile.companion);
-        portrait = homeArtwork;
-        if (companion) allyPortrait = speciesArtwork(companion.speciesId, companion.shiny);
+        portrait = artwork ? homeArtwork : null;
+        if (companion) allyPortrait = portraitFor(companion.speciesId, companion.shiny);
         embed.fields = [{ name: 'Your Microbedeck', value: `${profile.pets.length} pets · ${profile.pets.filter(p => p.shiny).length} shiny` },
             { name: 'Companion', value: companion ? petName(companion) : 'Catch a pet to get started!' }];
     }
@@ -132,7 +133,7 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
 
 export async function renderSession(profile, user, options = {}) {
     const message = renderGame(profile, user, options);
-    if (['deck', 'party'].includes(options.view)) {
+    if (options.artwork !== false && ['deck', 'party'].includes(options.view)) {
         const box = deckPage(profile, options.page);
         const name = `microbedeck-box-${box.page + 1}.png`;
         try {
@@ -146,3 +147,4 @@ export async function renderSession(profile, user, options = {}) {
     }
     return message;
 }
+

@@ -28,6 +28,29 @@ async function displaySession(interaction, message) {
     }
 }
 
+async function presentSession(interaction, profile, owner, options) {
+    try {
+        await displaySession(interaction, await renderSession(profile, owner, options));
+    } catch (error) {
+        logFailure('Microbemon illustrated card failed:', 'display; retrying without artwork', error);
+        const fallback = await renderSession(profile, owner, { ...options, artwork: false });
+        fallback.components = fallback.components.map(row => {
+            const data = row.toJSON();
+            return { ...data, components: data.components.map(component => {
+                const result = { ...component };
+                delete result.emoji;
+                return result;
+            }) };
+        });
+        for (const embed of fallback.embeds) {
+            const data = embed.toJSON();
+            if (data.title) embed.setTitle(data.title.replace(/<a?:[^:>]+:\d+>/g, '').trim());
+        }
+        fallback.content = 'The artwork preview is temporarily unavailable. You can still play and open your Microbedeck.';
+        await interaction.editReply(fallback);
+    }
+}
+
 function logFailure(prefix, stage, error) {
     // Winston's console formatter drops a second string argument. Keep the
     // diagnostic in the message itself, without logging request bodies/tokens.
@@ -40,9 +63,7 @@ export async function openMicrobemon(interaction, options = {}) {
     try {
         const { profile } = await withProfile(interaction.client, interaction.guildId, interaction.user.id, () => {});
         stage = 'render card';
-        const message = await renderSession(profile, interaction.user.id, { view: options.view || 'home', ownerName: interaction.member?.displayName || interaction.user.username });
-        stage = 'send Discord card';
-        await displaySession(interaction, message);
+        await presentSession(interaction, profile, interaction.user.id, { view: options.view || 'home', ownerName: interaction.member?.displayName || interaction.user.username });
     } catch (error) {
         logFailure('Microbemon could not open:', stage, error);
         const content = error instanceof MicrobemonError ? error.message : stage === 'load collection'
@@ -91,7 +112,7 @@ export async function handleMicrobemon(interaction, client, args, runAction = ac
             view = 'collection';
             if (action !== 'collection') page = profile.pets.findIndex(pet => pet.id === token);
         }
-        await displaySession(interaction, await renderSession(profile, owner, { view, page, releasePetId: action === 'release_prompt' ? token : null, notice: value, ownerName: interaction.member?.displayName || interaction.user.username }));
+        await presentSession(interaction, profile, owner, { view, page, releasePetId: action === 'release_prompt' ? token : null, notice: value, ownerName: interaction.member?.displayName || interaction.user.username });
     } catch (error) {
         // Errors do not consume a capsule or lose a pet: the transaction rolls back.
         logFailure('Microbemon interaction failed:', action, error);

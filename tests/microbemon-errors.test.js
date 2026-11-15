@@ -30,7 +30,7 @@ test('unavailable custom emoji retries the display without repeating the collect
     for (const row of i.replies[1].components) for (const component of row.components) assert.ok(!component.emoji?.id);
 });
 
-test('display failures are distinguished from database failures and include details in one log message', async () => {
+test('attachment failures recover a playable card without artwork and log the original error', async () => {
     const i = interaction(); const logs = []; const original = logger.warn;
     logger.warn = message => logs.push(message);
     try {
@@ -40,9 +40,12 @@ test('display failures are distinguished from database failures and include deta
             if (++attempts === 1) throw Object.assign(new Error('Attachment upload failed'), { code: 12345 });
         };
         await openMicrobemon(i);
-        assert.match(i.replies.at(-1).content, /collection loaded.*could not be displayed/);
-        assert.match(logs[0], /send Discord card.*12345.*Attachment upload failed/);
-        assert.equal(attempts, 2, 'Other failures must not retry the original card');
+        assert.match(i.replies.at(-1).content, /artwork preview is temporarily unavailable/);
+        assert.deepEqual(i.replies.at(-1).files, []);
+        assert.ok(i.replies.at(-1).components.length);
+        assert.equal(i.writes(), 1);
+        assert.match(logs[0], /retrying without artwork.*12345.*Attachment upload failed/);
+        assert.equal(attempts, 2, 'The fallback should send once after the failed illustrated card');
     } finally { logger.warn = original; }
 });
 
@@ -52,4 +55,19 @@ test('database failures never claim the saved collection loaded', async () => {
     await openMicrobemon(i);
     assert.match(i.replies.at(-1).content, /could not load your saved collection/);
     assert.equal(i.writes(), 0);
+});
+
+
+test('artwork-free mode renders encounters, companions and decks without image files', async () => {
+    const { renderSession } = await import('../src/services/microbemon/interface.js');
+    const profile = newProfile();
+    profile.pets.push({ id: 'pet', speciesId: 'bacteriophage', shiny: true, level: 5 });
+    profile.companion = 'pet';
+    for (const view of ['home', 'collection', 'deck']) {
+        const message = await renderSession(profile, 'owner', { view, artwork: false });
+        assert.deepEqual(message.files, []);
+        assert.ok(!message.embeds[0].toJSON().image);
+        assert.ok(!message.embeds[0].toJSON().thumbnail);
+        assert.ok(message.components.length);
+    }
 });
