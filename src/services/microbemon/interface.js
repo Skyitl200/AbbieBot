@@ -1,8 +1,9 @@
+import { artworkURL, hostedSpeciesArtwork } from './artworkDelivery.js';
 import { MAX_HP, MAX_PETS, MAX_BOXES, hpForLevel, xpToNextLevel } from './constants.js';
 import { logger } from '../../utils/logger.js';
 import { deckPage, renderDeckGrid } from './deck.js';
 import { microbeBasics } from './questions.js';
-import { MICROBEMON_EMOJI, MICROBEMON_ICON } from './branding.js';
+import { MICROBEMON_ICON } from './branding.js';
 import { ARTWORK, speciesArtwork } from './artwork.js';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, StringSelectMenuBuilder, escapeMarkdown } from 'discord.js';
 import { existsSync } from 'node:fs';
@@ -12,14 +13,14 @@ import { captureChance, activePet, petBattleHp } from './engine.js';
 
 const button = (user, action, label, extra = [], style = ButtonStyle.Secondary) => new ButtonBuilder()
     .setCustomId(['microbemon', user, action, ...extra].join(':')).setLabel(label).setStyle(style);
-export const healthBar = (hp, maxHp = MAX_HP) => '🟩'.repeat(Math.max(0, Math.min(10, Math.ceil(hp / maxHp * 10)))) + '⬛'.repeat(10 - Math.max(0, Math.min(10, Math.ceil(hp / maxHp * 10))));
+export const healthBar = (hp, maxHp = MAX_HP) => '🟪'.repeat(Math.max(0, Math.min(10, Math.ceil(hp / maxHp * 10)))) + '⬛'.repeat(10 - Math.max(0, Math.min(10, Math.ceil(hp / maxHp * 10))));
 const row = (...buttons) => new ActionRowBuilder().addComponents(buttons);
 const petName = pet => `${pet.shiny ? '✨ ' : ''}${escapeMarkdown(pet.nickname || speciesById(pet.speciesId).name)}`;
 const homeArtwork = { name: 'microbemon-home.png', path: fileURLToPath(new URL('../../assets/microbemon/home.png', import.meta.url)) };
-export function renderGame(profile, user, { view = 'home', page = 0, notice = '', ownerName = '', releasePetId = null, artwork = true } = {}) {
-    const portraitFor = (id, shiny) => artwork ? speciesArtwork(id, shiny) : null;
+export function renderGame(profile, user, { view = 'home', page = 0, notice = '', ownerName = '', releasePetId = null, artwork = true, hostedArtwork = false } = {}) {
+    const portraitFor = (id, shiny) => artwork ? (hostedArtwork ? hostedSpeciesArtwork(id, shiny) : speciesArtwork(id, shiny)) : null;
     const e = profile.encounter?.expiresAt > Date.now() ? profile.encounter : null;
-    const embed = { color: 0x9b59b6, title: `${MICROBEMON_ICON} Microbemon`,
+    const embed = { color: 0x8b5cf6, title: `${MICROBEMON_ICON} Microbemon`,
         description: 'Explore, answer study questions, catch creatures, and collect companions.',
         footer: { text: 'Only the player controls this session. Game rarity is fictional. Shiny roll: 1 in 1,000.' } };
     if (ownerName) embed.author = { name: `${ownerName}'s Microbemon`.slice(0, 256) };
@@ -54,7 +55,7 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
             .addOptions(eligible.map(pet => ({
                 label: `${box.start + box.pets.indexOf(pet) + 1}. ${pet.nickname || speciesById(pet.speciesId).name}`.slice(0, 100),
                 description: `${pet.shiny ? 'Shiny · ' : ''}${speciesById(pet.speciesId).common} · Level ${pet.level}${selecting ? ` · HP ${petBattleHp(e, pet.id)}/${e.petMaxHp?.[pet.id] || hpForLevel(pet.level)}` : ''}`.slice(0, 100),
-                value: pet.id, emoji: pet.shiny ? '✨' : MICROBEMON_EMOJI
+                value: pet.id, emoji: pet.shiny ? '✨' : '🪱'
             })))));
         const boxButton = (label, target) => selecting
             ? button(user, 'party', label, [e.id, e.revision, target]) : button(user, 'deck', label, [target]);
@@ -90,7 +91,7 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
         const species = speciesById(e.speciesId);
         portrait = portraitFor(e.speciesId, e.shiny);
         embed.title = `${e.shiny ? '✨ SHINY' : '🌿 Wild'} ${species.name}`;
-        embed.color = e.shiny ? 0xf1c40f : 0x2dd4bf;
+        embed.color = 0x8b5cf6;
         embed.fields = [{ name: 'Habitat / life-cycle setting', value: `${ARTWORK[e.speciesId].habitat}\n${ARTWORK[e.speciesId].context}` }];
         const ally = activePet(profile);
         const allyLabel = ally ? `${petName(ally)} · Lv. ${ally.level}` : 'Researcher (catch your first pet)';
@@ -98,7 +99,7 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
         if (ally) allyPortrait = portraitFor(ally.speciesId, ally.shiny);
         const token = [e.id, e.revision];
         if (e.question) {
-            embed.fields.push({ name: `⚔️ Study Battle · ${e.question.topic || 'Review'}`, value: e.question.text }, ...e.question.answers.map((answer, i) => ({ name: String.fromCharCode(65 + i), value: answer, inline: true })));
+            embed.fields.push({ name: `🟣 Study Battle · ${e.question.topic || 'Review'}`, value: e.question.text }, ...e.question.answers.map((answer, i) => ({ name: String.fromCharCode(65 + i), value: answer, inline: true })));
             components.push(row(...e.question.answers.map((_, i) => button(user, 'answer', String.fromCharCode(65 + i), [...token, i], ButtonStyle.Primary))));
         } else {
             components.push(row(button(user, 'inspect', '🔬 Inspect', token), button(user, 'battle', '⚔️ Battle', token, ButtonStyle.Primary).setDisabled(e.hp === 0 || e.playerHp === 0),
@@ -109,25 +110,25 @@ export function renderGame(profile, user, { view = 'home', page = 0, notice = ''
         }
     } else {
         const companion = profile.pets.find(p => p.id === profile.companion);
-        portrait = artwork ? homeArtwork : null;
+        portrait = artwork ? (hostedArtwork ? { name: homeArtwork.name, url: artworkURL(homeArtwork.name) } : homeArtwork) : null;
         if (companion) allyPortrait = portraitFor(companion.speciesId, companion.shiny);
         embed.fields = [{ name: 'Your Microbedeck', value: `${profile.pets.length} pets · ${profile.pets.filter(p => p.shiny).length} shiny` },
             { name: 'Companion', value: companion ? petName(companion) : 'Catch a pet to get started!' }];
     }
     if (notice) embed.description += `\n\n${notice.slice(0, 1100)}`;
     components.push(row(button(user, 'explore', e ? 'Resume Encounter' : '🌿 Explore', [], ButtonStyle.Success),
-        button(user, 'deck', '📦 Microbedeck', [0]), button(user, 'home', 'Microbemon').setEmoji(MICROBEMON_EMOJI), button(user, 'guide', 'How to Play')));
+        button(user, 'deck', '📦 Microbedeck', [0]), button(user, 'home', 'Microbemon').setEmoji('🪱'), button(user, 'guide', 'How to Play')));
     // Encounters and collection entries always use the exact species and variant.
     // Missing art never falls back to an unrelated group scene.
     const selectedArt = portrait;
-    const files = selectedArt && existsSync(selectedArt.path)
+    const files = selectedArt?.path && existsSync(selectedArt.path)
         ? [{ attachment: selectedArt.path, name: selectedArt.name }] : [];
-    if (allyPortrait && existsSync(allyPortrait.path)) {
-        if (!files.some(file => file.name === allyPortrait.name)) files.push({ attachment: allyPortrait.path, name: allyPortrait.name });
-        embed.thumbnail = { url: `attachment://${allyPortrait.name}` };
+    if (allyPortrait && (allyPortrait.url || existsSync(allyPortrait.path))) {
+        if (allyPortrait.path && !files.some(file => file.name === allyPortrait.name)) files.push({ attachment: allyPortrait.path, name: allyPortrait.name });
+        embed.thumbnail = { url: allyPortrait.url || `attachment://${allyPortrait.name}` };
     }
-    if (selectedArt && files.some(file => file.name === selectedArt.name)) embed.image = { url: `attachment://${selectedArt.name}` };
-    return { embeds: [new EmbedBuilder(embed)], components, attachments: [],
+    if (selectedArt && (selectedArt.url || files.some(file => file.name === selectedArt.name))) embed.image = { url: selectedArt.url || `attachment://${selectedArt.name}` };
+    return { content: '', embeds: [new EmbedBuilder(embed)], components, attachments: [],
         files, allowedMentions: { parse: [] } };
 }
 
@@ -138,7 +139,7 @@ export async function renderSession(profile, user, options = {}) {
         const name = `microbedeck-box-${box.page + 1}.png`;
         try {
             message.files = [{ attachment: await renderDeckGrid(profile, box.page), name }];
-            message.embeds[0].setImage(`attachment://${name}`);
+            message.embeds[0].setImage(`attachment://${name}`).setThumbnail(null);
         } catch (error) {
             logger.warn('Microbedeck portrait grid unavailable:', error.message);
             // Keep the owned-pet list and selection working if artwork is unavailable.

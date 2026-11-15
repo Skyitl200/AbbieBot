@@ -418,7 +418,8 @@ test('Microbedeck and pet selector routes reach saved pets; Microbemon returns t
     await handleMicrobemon(interaction, s.client, ['owner', 'deck', '0']);
     assert.match(message.embeds[0].toJSON().title, /Microbedeck/);
     const petMenu = message.components.flatMap(row => row.toJSON().components).find(component => component.custom_id === 'microbemon:owner:pet');
-    assert.deepEqual(petMenu.options[0].emoji, { id: '1571285873658437692', name: 'worm_dance', animated: true });
+    assert.equal(petMenu.options[0].emoji.name, '🪱');
+    assert.ok(!petMenu.options[0].emoji.id);
     assert.equal(petMenu.options[1].emoji.name, '✨');
     assert.ok(Buffer.isBuffer(message.files[0].attachment));
     assert.ok(message.components.some(row => row.toJSON().components.some(component => component.custom_id === 'microbemon:owner:home')));
@@ -429,7 +430,8 @@ test('Microbedeck and pet selector routes reach saved pets; Microbemon returns t
     assert.equal(message.embeds[0].toJSON().title, '<a:worm_dance:1571285873658437692> Microbemon');
     const homeButton = message.components.flatMap(row => row.toJSON().components).find(component => component.custom_id === 'microbemon:owner:home');
     assert.equal(homeButton.label, 'Microbemon');
-    assert.deepEqual(homeButton.emoji, { id: '1571285873658437692', name: 'worm_dance', animated: true });
+    assert.equal(homeButton.emoji.name, '🪱');
+    assert.ok(!homeButton.emoji.id);
 });
 
 test('old Microbedeck buttons open the new box view', async () => {

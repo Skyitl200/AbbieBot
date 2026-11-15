@@ -20,17 +20,18 @@ async function displaySession(interaction, message) {
             return { ...data, components: data.components.map(component => {
                 const result = { ...component };
                 if (result.emoji?.id) delete result.emoji;
+                if (result.options) result.options = result.options.map(option => { const next = { ...option }; if (next.emoji?.id) delete next.emoji; return next; });
                 return result;
             }) };
         });
         logger.warn(`Microbemon display retry: custom emoji rejected by Discord (code ${error.code}).`);
-        return interaction.editReply({ ...message, components });
+        return interaction.editReply({ ...message, components, attachments: [] });
     }
 }
 
 async function presentSession(interaction, profile, owner, options) {
     try {
-        await displaySession(interaction, await renderSession(profile, owner, options));
+        await displaySession(interaction, await renderSession(profile, owner, { ...options, hostedArtwork: true }));
     } catch (error) {
         logFailure('Microbemon illustrated card failed:', 'display; retrying without artwork', error);
         const fallback = await renderSession(profile, owner, { ...options, artwork: false });

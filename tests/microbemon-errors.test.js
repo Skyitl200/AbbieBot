@@ -20,8 +20,9 @@ test('unavailable custom emoji retries the display without repeating the collect
     const i = interaction(); let attempts = 0;
     i.editReply = async message => {
         i.replies.push(message);
-        if (++attempts === 1) throw Object.assign(new Error('Invalid emoji'), { code: 50035,
-            rawError: { errors: { components: { 0: { components: { 0: { emoji: { _errors: [{ message: 'Invalid emoji' }] } } } } } } } });
+        if (attempts === 1) assert.deepEqual(message.attachments, [], 'Retry must discard attachment IDs mutated by Discord.js');
+        if (++attempts === 1) { message.attachments.push({ id: '0' }, { id: '1' }); throw Object.assign(new Error('Invalid emoji'), { code: 50035,
+            rawError: { errors: { components: { 0: { components: { 0: { emoji: { _errors: [{ message: 'Invalid emoji' }] } } } } } } } }); }
     };
     await openMicrobemon(i);
     assert.equal(attempts, 2);

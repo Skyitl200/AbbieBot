@@ -1,3 +1,4 @@
+import { registerMicrobemonArtwork } from './services/microbemon/artworkDelivery.js';
 ﻿import 'dotenv/config';
 import { Client, Collection, GatewayIntentBits, Partials } from 'discord.js';
 import { REST } from '@discordjs/rest';
@@ -295,6 +296,8 @@ app.get('/subscribe', async (req, res) => {
     return res.status(500).send('Unable to load membership checkout.');
   }
 });
+
+    registerMicrobemonArtwork(app);
 
     app.get('/health', (req, res) => {
       const dbStatus = this.db?.getStatus?.() || { isDegraded: 'unknown' };
@@ -601,3 +604,4 @@ try {
 }
 
 export default TitanBot;
+
