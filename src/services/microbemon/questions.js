@@ -2,13 +2,13 @@
 // Keep slide references for review; the full textbook was not accessible.
 import { SPECIES } from './catalog.js';
 const groups = {
-    protozoa: SPECIES.filter(s => !['Nematode', 'Cestode', 'Trematode'].includes(s.group)).map(s => s.id),
+    protozoa: SPECIES.filter(s => ['Amoeboid protist', 'Ciliate', 'Flagellated protist', 'Apicomplexan'].includes(s.group)).map(s => s.id),
     freeLiving: ['amoeba', 'paramecium', 'stentor', 'vorticella'],
     amoebae: ['amoeba', 'entamoeba'], ciliates: ['paramecium', 'stentor', 'vorticella', 'balantidium'],
     intestinalProtozoa: ['entamoeba', 'giardia', 'balantidium'],
     apicomplexans: ['toxoplasma', 'plasmodium'],
     helminths: SPECIES.filter(s => ['Nematode', 'Cestode', 'Trematode'].includes(s.group)).map(s => s.id),
-    nematodes: ['enterobius', 'ascaris', 'necator'], cestodes: ['solium', 'saginata'],
+    nematodes: ['enterobius', 'ascaris', 'necator', 'trichinella'], cestodes: ['solium', 'saginata'],
     flukes: ['fasciola', 'fasciolopsis', 'paragonimus', 'schistosoma'],
     tissueFlukes: ['fasciola', 'fasciolopsis', 'paragonimus']
 };
@@ -88,9 +88,1313 @@ export const BATTLE_QUESTIONS = [
     q('schisto-sexes', 'schistosoma', 'Reproduction', 60, 'Unlike most tissue flukes, schistosomes have…', 'Separate male and female worms', 'No reproductive organs', 'Only female worms', 'Blood flukes such as Schistosoma have separate sexes.'),
     q('schisto-damage', 'schistosoma', 'Disease', 61, 'What is a major cause of tissue damage in schistosomiasis?', 'Inflammation around trapped eggs', 'Loss of chloroplasts from red blood cells', 'Adults turning into tapeworm segments', 'Eggs trapped in tissues can trigger inflammation and ongoing tissue damage.')
 ];
+BATTLE_QUESTIONS.push(...[
+  {
+    "id": "roster-bacterium-0",
+    "species": [
+      "alcaligenes",
+      "cereus",
+      "megaterium",
+      "aerogenes",
+      "faecalis",
+      "ecoli",
+      "klebsiella",
+      "micrococcus",
+      "mycobacterium",
+      "proteus",
+      "pseudomonas",
+      "salmonella",
+      "serratia",
+      "shigella",
+      "aureus",
+      "epidermidis",
+      "lactococcus",
+      "mitis",
+      "pyogenes",
+      "sarcina",
+      "sporogenes"
+    ],
+    "topic": "Cell basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Bacterium"
+    },
+    "text": "What type of cell is a bacterium?",
+    "answers": [
+      "Prokaryotic",
+      "Animal tissue",
+      "Acellular virus"
+    ],
+    "correct": 0,
+    "explanation": "Bacteria are prokaryotic cells without a membrane-bound nucleus."
+  },
+  {
+    "id": "roster-bacterium-1",
+    "species": [
+      "alcaligenes",
+      "cereus",
+      "megaterium",
+      "aerogenes",
+      "faecalis",
+      "ecoli",
+      "klebsiella",
+      "micrococcus",
+      "mycobacterium",
+      "proteus",
+      "pseudomonas",
+      "salmonella",
+      "serratia",
+      "shigella",
+      "aureus",
+      "epidermidis",
+      "lactococcus",
+      "mitis",
+      "pyogenes",
+      "sarcina",
+      "sporogenes"
+    ],
+    "topic": "Reproduction",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Bacterium"
+    },
+    "text": "How do most bacteria multiply?",
+    "answers": [
+      "Binary fission",
+      "Producing tapeworm eggs",
+      "Budding mushrooms"
+    ],
+    "correct": 0,
+    "explanation": "Most bacteria multiply by binary fission."
+  },
+  {
+    "id": "roster-bacterium-2",
+    "species": [
+      "alcaligenes",
+      "cereus",
+      "megaterium",
+      "aerogenes",
+      "faecalis",
+      "ecoli",
+      "klebsiella",
+      "micrococcus",
+      "mycobacterium",
+      "proteus",
+      "pseudomonas",
+      "salmonella",
+      "serratia",
+      "shigella",
+      "aureus",
+      "epidermidis",
+      "lactococcus",
+      "mitis",
+      "pyogenes",
+      "sarcina",
+      "sporogenes"
+    ],
+    "topic": "Appearance",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Bacterium"
+    },
+    "text": "What does the term bacillus describe?",
+    "answers": [
+      "Rod shape",
+      "A flat worm",
+      "A viral envelope"
+    ],
+    "correct": 0,
+    "explanation": "Bacillus describes a rod-shaped cell; it is also the name of a bacterial genus."
+  },
+  {
+    "id": "roster-bacterium-3",
+    "species": [
+      "alcaligenes",
+      "cereus",
+      "megaterium",
+      "aerogenes",
+      "faecalis",
+      "ecoli",
+      "klebsiella",
+      "micrococcus",
+      "mycobacterium",
+      "proteus",
+      "pseudomonas",
+      "salmonella",
+      "serratia",
+      "shigella",
+      "aureus",
+      "epidermidis",
+      "lactococcus",
+      "mitis",
+      "pyogenes",
+      "sarcina",
+      "sporogenes"
+    ],
+    "topic": "Appearance",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Bacterium"
+    },
+    "text": "What does the term coccus describe?",
+    "answers": [
+      "Spherical shape",
+      "A segmented worm",
+      "A leaf-shaped fluke"
+    ],
+    "correct": 0,
+    "explanation": "Cocci are spherical or approximately spherical bacterial cells."
+  },
+  {
+    "id": "roster-bacterium-4",
+    "species": [
+      "alcaligenes",
+      "cereus",
+      "megaterium",
+      "aerogenes",
+      "faecalis",
+      "ecoli",
+      "klebsiella",
+      "micrococcus",
+      "mycobacterium",
+      "proteus",
+      "pseudomonas",
+      "salmonella",
+      "serratia",
+      "shigella",
+      "aureus",
+      "epidermidis",
+      "lactococcus",
+      "mitis",
+      "pyogenes",
+      "sarcina",
+      "sporogenes"
+    ],
+    "topic": "Cell basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Bacterium"
+    },
+    "text": "What structure commonly surrounds a bacterial cell membrane?",
+    "answers": [
+      "Cell wall",
+      "Nuclear envelope",
+      "Mushroom cap"
+    ],
+    "correct": 0,
+    "explanation": "Most bacteria have a cell wall containing peptidoglycan."
+  },
+  {
+    "id": "roster-bacterium-5",
+    "species": [
+      "alcaligenes",
+      "cereus",
+      "megaterium",
+      "aerogenes",
+      "faecalis",
+      "ecoli",
+      "klebsiella",
+      "micrococcus",
+      "mycobacterium",
+      "proteus",
+      "pseudomonas",
+      "salmonella",
+      "serratia",
+      "shigella",
+      "aureus",
+      "epidermidis",
+      "lactococcus",
+      "mitis",
+      "pyogenes",
+      "sarcina",
+      "sporogenes"
+    ],
+    "topic": "Ecology",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Bacterium"
+    },
+    "text": "Are all bacteria harmful?",
+    "answers": [
+      "No; many have beneficial roles",
+      "Yes; all cause disease",
+      "All are parasites"
+    ],
+    "correct": 0,
+    "explanation": "Bacteria have varied ecological roles; many are beneficial or harmless."
+  },
+  {
+    "id": "roster-fungus-0",
+    "species": [
+      "rhizopus",
+      "mucor",
+      "aspergillus",
+      "penicillium",
+      "peziza",
+      "coprinus",
+      "saccharomyces",
+      "cryptococcus",
+      "candida",
+      "pseudotropicalis"
+    ],
+    "topic": "Cell basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Fungus"
+    },
+    "text": "Fungal cells are…",
+    "answers": [
+      "Eukaryotic",
+      "Acellular",
+      "Prokaryotic"
+    ],
+    "correct": 0,
+    "explanation": "Fungi are eukaryotic organisms with membrane-bound nuclei."
+  },
+  {
+    "id": "roster-fungus-1",
+    "species": [
+      "rhizopus",
+      "mucor",
+      "aspergillus",
+      "penicillium",
+      "peziza",
+      "coprinus",
+      "saccharomyces",
+      "cryptococcus",
+      "candida",
+      "pseudotropicalis"
+    ],
+    "topic": "Nutrition",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Fungus"
+    },
+    "text": "How do fungi obtain nutrients?",
+    "answers": [
+      "Absorption",
+      "Eating with teeth",
+      "Only photosynthesis"
+    ],
+    "correct": 0,
+    "explanation": "Fungi absorb organic nutrients from their surroundings."
+  },
+  {
+    "id": "roster-fungus-2",
+    "species": [
+      "rhizopus",
+      "mucor",
+      "aspergillus",
+      "penicillium",
+      "peziza",
+      "coprinus",
+      "saccharomyces",
+      "cryptococcus",
+      "candida",
+      "pseudotropicalis"
+    ],
+    "topic": "Body basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Fungus"
+    },
+    "text": "What are fungal filaments called?",
+    "answers": [
+      "Hyphae",
+      "Flagella",
+      "Proglottids"
+    ],
+    "correct": 0,
+    "explanation": "Hyphae are fungal filaments; a network of hyphae is a mycelium."
+  },
+  {
+    "id": "roster-fungus-3",
+    "species": [
+      "rhizopus",
+      "mucor",
+      "aspergillus",
+      "penicillium",
+      "peziza",
+      "coprinus",
+      "saccharomyces",
+      "cryptococcus",
+      "candida",
+      "pseudotropicalis"
+    ],
+    "topic": "Body basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Fungus"
+    },
+    "text": "What is a network of fungal hyphae called?",
+    "answers": [
+      "Mycelium",
+      "Scolex",
+      "Capsid"
+    ],
+    "correct": 0,
+    "explanation": "A mycelium is the network formed by fungal hyphae."
+  },
+  {
+    "id": "roster-fungus-4",
+    "species": [
+      "rhizopus",
+      "mucor",
+      "aspergillus",
+      "penicillium",
+      "peziza",
+      "coprinus",
+      "saccharomyces",
+      "cryptococcus",
+      "candida",
+      "pseudotropicalis"
+    ],
+    "topic": "Reproduction",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Fungus"
+    },
+    "text": "Which process is common in yeasts?",
+    "answers": [
+      "Budding",
+      "Laying worm eggs",
+      "Forming cercariae"
+    ],
+    "correct": 0,
+    "explanation": "Many yeasts reproduce asexually by budding."
+  },
+  {
+    "id": "roster-fungus-5",
+    "species": [
+      "rhizopus",
+      "mucor",
+      "aspergillus",
+      "penicillium",
+      "peziza",
+      "coprinus",
+      "saccharomyces",
+      "cryptococcus",
+      "candida",
+      "pseudotropicalis"
+    ],
+    "topic": "Ecology",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Fungus"
+    },
+    "text": "What is an important ecological role of many fungi?",
+    "answers": [
+      "Decomposition",
+      "Making all oxygen",
+      "Preventing nutrient recycling"
+    ],
+    "correct": 0,
+    "explanation": "Many fungi decompose organic matter and recycle nutrients."
+  },
+  {
+    "id": "roster-virus-0",
+    "species": [
+      "bacteriophage",
+      "influenza"
+    ],
+    "topic": "Cell basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Virus"
+    },
+    "text": "A virus is…",
+    "answers": [
+      "Acellular",
+      "A multicellular animal",
+      "A fungal cell"
+    ],
+    "correct": 0,
+    "explanation": "Viruses are acellular infectious agents that depend on host cells for replication."
+  },
+  {
+    "id": "roster-virus-1",
+    "species": [
+      "bacteriophage",
+      "influenza"
+    ],
+    "topic": "Reproduction",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Virus"
+    },
+    "text": "Viruses replicate using…",
+    "answers": [
+      "Host cells",
+      "Only water",
+      "Tapeworm segments"
+    ],
+    "correct": 0,
+    "explanation": "Viruses depend on host-cell machinery to produce new virus particles."
+  },
+  {
+    "id": "roster-virus-2",
+    "species": [
+      "bacteriophage",
+      "influenza"
+    ],
+    "topic": "Body basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Virus"
+    },
+    "text": "What is a viral capsid made of?",
+    "answers": [
+      "Protein",
+      "Peptidoglycan",
+      "Cellulose only"
+    ],
+    "correct": 0,
+    "explanation": "A capsid is the protein coat surrounding a viral genome."
+  },
+  {
+    "id": "roster-virus-3",
+    "species": [
+      "bacteriophage",
+      "influenza"
+    ],
+    "topic": "Cell basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Virus"
+    },
+    "text": "A viral genome can be composed of…",
+    "answers": [
+      "DNA or RNA",
+      "Only protein",
+      "Only sugar"
+    ],
+    "correct": 0,
+    "explanation": "Different viruses have DNA or RNA genomes."
+  },
+  {
+    "id": "roster-virus-4",
+    "species": [
+      "bacteriophage",
+      "influenza"
+    ],
+    "topic": "Body basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Virus"
+    },
+    "text": "What can surround the capsid of an enveloped virus?",
+    "answers": [
+      "Lipid envelope",
+      "Hyphal wall",
+      "Scolex"
+    ],
+    "correct": 0,
+    "explanation": "Enveloped viruses possess a lipid-containing envelope."
+  },
+  {
+    "id": "roster-virus-5",
+    "species": [
+      "bacteriophage",
+      "influenza"
+    ],
+    "topic": "Ecology",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Virus"
+    },
+    "text": "Do all viruses infect the same host?",
+    "answers": [
+      "No; host ranges differ",
+      "Yes; all infect every cell",
+      "All infect only plants"
+    ],
+    "correct": 0,
+    "explanation": "Viruses differ in host range and the cell types they can infect."
+  },
+  {
+    "id": "roster-cestode-0",
+    "species": [
+      "pisiformis"
+    ],
+    "topic": "Body basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Cestode"
+    },
+    "text": "A tapeworm is a…",
+    "answers": [
+      "Flatworm",
+      "Bacterium",
+      "Virus"
+    ],
+    "correct": 0,
+    "explanation": "Tapeworms are multicellular flatworms."
+  },
+  {
+    "id": "roster-cestode-1",
+    "species": [
+      "pisiformis"
+    ],
+    "topic": "Appearance",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Cestode"
+    },
+    "text": "Tapeworm segments are called…",
+    "answers": [
+      "Proglottids",
+      "Pseudopods",
+      "Cilia"
+    ],
+    "correct": 0,
+    "explanation": "Tapeworm bodies consist of segments called proglottids."
+  },
+  {
+    "id": "roster-cestode-2",
+    "species": [
+      "pisiformis"
+    ],
+    "topic": "Body basics",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Cestode"
+    },
+    "text": "The attachment end of a tapeworm is its…",
+    "answers": [
+      "Scolex",
+      "Flagellum",
+      "Capsid"
+    ],
+    "correct": 0,
+    "explanation": "The scolex bears attachment structures such as suckers."
+  },
+  {
+    "id": "roster-cestode-3",
+    "species": [
+      "pisiformis"
+    ],
+    "topic": "Nutrition",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Cestode"
+    },
+    "text": "Tapeworms obtain nutrients mainly by…",
+    "answers": [
+      "Absorption through their surface",
+      "Photosynthesis",
+      "A complete mouth-to-anus gut"
+    ],
+    "correct": 0,
+    "explanation": "Tapeworms lack a digestive tract and absorb nutrients through their surface."
+  },
+  {
+    "id": "roster-cestode-4",
+    "species": [
+      "pisiformis"
+    ],
+    "topic": "Life cycle",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Cestode"
+    },
+    "text": "A definitive host contains a parasite's…",
+    "answers": [
+      "Sexually mature stage",
+      "Bacterial spore",
+      "Viral capsid"
+    ],
+    "correct": 0,
+    "explanation": "Sexual maturity and reproduction occur in the definitive host."
+  },
+  {
+    "id": "roster-cestode-5",
+    "species": [
+      "pisiformis"
+    ],
+    "topic": "Reproduction",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Cestode"
+    },
+    "text": "Tapeworms generally possess…",
+    "answers": [
+      "Male and female reproductive organs",
+      "Only chloroplasts",
+      "No reproductive structures"
+    ],
+    "correct": 0,
+    "explanation": "Tapeworms generally have both male and female reproductive organs."
+  },
+  {
+    "id": "roster-alcaligenes-feature",
+    "species": [
+      "alcaligenes"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Alcaligenes faecalis"
+    },
+    "text": "Which feature or association fits Alcaligenes faecalis?",
+    "answers": [
+      "Rod-shaped",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "A motile rod associated with soil and water."
+  },
+  {
+    "id": "roster-cereus-feature",
+    "species": [
+      "cereus"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Bacillus cereus"
+    },
+    "text": "Which feature or association fits Bacillus cereus?",
+    "answers": [
+      "Endospores",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Bacillus cereus is a rod-shaped bacterium that can form endospores."
+  },
+  {
+    "id": "roster-megaterium-feature",
+    "species": [
+      "megaterium"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Bacillus megaterium"
+    },
+    "text": "Which feature or association fits Bacillus megaterium?",
+    "answers": [
+      "Large rods",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Bacillus megaterium is a large rod-shaped soil bacterium."
+  },
+  {
+    "id": "roster-aerogenes-feature",
+    "species": [
+      "aerogenes"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Klebsiella aerogenes"
+    },
+    "text": "Which feature or association fits Klebsiella aerogenes?",
+    "answers": [
+      "Rod-shaped",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Formerly Enterobacter aerogenes, Klebsiella aerogenes is a motile rod-shaped bacterium."
+  },
+  {
+    "id": "roster-faecalis-feature",
+    "species": [
+      "faecalis"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Enterococcus faecalis"
+    },
+    "text": "Which feature or association fits Enterococcus faecalis?",
+    "answers": [
+      "Cocci in pairs or chains",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Enterococcus faecalis is a coccus often arranged in pairs or short chains."
+  },
+  {
+    "id": "roster-ecoli-feature",
+    "species": [
+      "ecoli"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Escherichia coli"
+    },
+    "text": "Which feature or association fits Escherichia coli?",
+    "answers": [
+      "Rod-shaped",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Escherichia coli is a rod-shaped bacterium commonly found in intestines."
+  },
+  {
+    "id": "roster-klebsiella-feature",
+    "species": [
+      "klebsiella"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Klebsiella pneumoniae"
+    },
+    "text": "Which feature or association fits Klebsiella pneumoniae?",
+    "answers": [
+      "Capsule",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Klebsiella pneumoniae is a nonmotile rod with a prominent capsule."
+  },
+  {
+    "id": "roster-micrococcus-feature",
+    "species": [
+      "micrococcus"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Micrococcus luteus"
+    },
+    "text": "Which feature or association fits Micrococcus luteus?",
+    "answers": [
+      "Tetrads",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Micrococcus luteus forms cocci that commonly occur in tetrads."
+  },
+  {
+    "id": "roster-mycobacterium-feature",
+    "species": [
+      "mycobacterium"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Mycobacterium smegmatis"
+    },
+    "text": "Which feature or association fits Mycobacterium smegmatis?",
+    "answers": [
+      "Acid-fast rods",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Mycobacterium smegmatis is a rod-shaped acid-fast bacterium with a mycolic-acid-rich envelope."
+  },
+  {
+    "id": "roster-proteus-feature",
+    "species": [
+      "proteus"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Proteus vulgaris"
+    },
+    "text": "Which feature or association fits Proteus vulgaris?",
+    "answers": [
+      "Swarming growth",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Proteus vulgaris is a motile rod known for swarming growth."
+  },
+  {
+    "id": "roster-pseudomonas-feature",
+    "species": [
+      "pseudomonas"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Pseudomonas aeruginosa"
+    },
+    "text": "Which feature or association fits Pseudomonas aeruginosa?",
+    "answers": [
+      "Moist environments",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Pseudomonas aeruginosa is a rod-shaped bacterium often associated with moist environments."
+  },
+  {
+    "id": "roster-salmonella-feature",
+    "species": [
+      "salmonella"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Salmonella enterica serovar Typhimurium"
+    },
+    "text": "Which feature or association fits Salmonella enterica serovar Typhimurium?",
+    "answers": [
+      "Rod-shaped",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Salmonella Typhimurium is a rod-shaped bacterium associated with intestinal disease."
+  },
+  {
+    "id": "roster-serratia-feature",
+    "species": [
+      "serratia"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Serratia marcescens"
+    },
+    "text": "Which feature or association fits Serratia marcescens?",
+    "answers": [
+      "Prodigiosin",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Some Serratia marcescens strains produce a red pigment called prodigiosin."
+  },
+  {
+    "id": "roster-shigella-feature",
+    "species": [
+      "shigella"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Shigella dysenteriae"
+    },
+    "text": "Which feature or association fits Shigella dysenteriae?",
+    "answers": [
+      "Nonmotile rods",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Shigella dysenteriae is a nonmotile rod-shaped bacterium."
+  },
+  {
+    "id": "roster-aureus-feature",
+    "species": [
+      "aureus"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Staphylococcus aureus"
+    },
+    "text": "Which feature or association fits Staphylococcus aureus?",
+    "answers": [
+      "Clusters of cocci",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Staphylococcus aureus commonly forms grape-like clusters of cocci."
+  },
+  {
+    "id": "roster-epidermidis-feature",
+    "species": [
+      "epidermidis"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Staphylococcus epidermidis"
+    },
+    "text": "Which feature or association fits Staphylococcus epidermidis?",
+    "answers": [
+      "Skin",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Staphylococcus epidermidis is a common skin-associated coccus."
+  },
+  {
+    "id": "roster-lactococcus-feature",
+    "species": [
+      "lactococcus"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Lactococcus lactis"
+    },
+    "text": "Which feature or association fits Lactococcus lactis?",
+    "answers": [
+      "Dairy fermentation",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Lactococcus lactis, formerly Streptococcus lactis, is used in dairy fermentation."
+  },
+  {
+    "id": "roster-mitis-feature",
+    "species": [
+      "mitis"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Streptococcus mitis"
+    },
+    "text": "Which feature or association fits Streptococcus mitis?",
+    "answers": [
+      "Mouth",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Streptococcus mitis is a coccus associated with the mouth."
+  },
+  {
+    "id": "roster-pyogenes-feature",
+    "species": [
+      "pyogenes"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Streptococcus pyogenes"
+    },
+    "text": "Which feature or association fits Streptococcus pyogenes?",
+    "answers": [
+      "Chains of cocci",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Streptococcus pyogenes commonly forms chains of cocci."
+  },
+  {
+    "id": "roster-sarcina-feature",
+    "species": [
+      "sarcina"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Sarcina subflava"
+    },
+    "text": "Which feature or association fits Sarcina subflava?",
+    "answers": [
+      "Cubical packets",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "The Sarcina body arrangement consists of cubical packets of cocci."
+  },
+  {
+    "id": "roster-sporogenes-feature",
+    "species": [
+      "sporogenes"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Clostridium sporogenes"
+    },
+    "text": "Which feature or association fits Clostridium sporogenes?",
+    "answers": [
+      "Anaerobic spore-forming rods",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Clostridium sporogenes is an anaerobic rod-shaped endospore-forming bacterium."
+  },
+  {
+    "id": "roster-rhizopus-feature",
+    "species": [
+      "rhizopus"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Rhizopus nigricans"
+    },
+    "text": "Which feature or association fits Rhizopus nigricans?",
+    "answers": [
+      "Sporangia",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Rhizopus produces asexual sporangiospores inside sporangia; the name R. nigricans is commonly treated as R. stolonifer."
+  },
+  {
+    "id": "roster-mucor-feature",
+    "species": [
+      "mucor"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Mucor"
+    },
+    "text": "Which feature or association fits Mucor?",
+    "answers": [
+      "Sporangia",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Mucor produces sporangia and generally lacks the rhizoids typical of Rhizopus."
+  },
+  {
+    "id": "roster-aspergillus-feature",
+    "species": [
+      "aspergillus"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Aspergillus niger"
+    },
+    "text": "Which feature or association fits Aspergillus niger?",
+    "answers": [
+      "Conidia",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Aspergillus niger forms dark conidial heads bearing asexual conidia."
+  },
+  {
+    "id": "roster-penicillium-feature",
+    "species": [
+      "penicillium"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Penicillium notatum"
+    },
+    "text": "Which feature or association fits Penicillium notatum?",
+    "answers": [
+      "Brush-like conidiophores",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Penicillium has brush-like conidiophores bearing chains of conidia."
+  },
+  {
+    "id": "roster-peziza-feature",
+    "species": [
+      "peziza"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Peziza"
+    },
+    "text": "Which feature or association fits Peziza?",
+    "answers": [
+      "Cup-shaped fruiting body",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Peziza forms cup-shaped fruiting bodies with asci containing ascospores."
+  },
+  {
+    "id": "roster-coprinus-feature",
+    "species": [
+      "coprinus"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Coprinus"
+    },
+    "text": "Which feature or association fits Coprinus?",
+    "answers": [
+      "Basidiospores",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Coprinus mushrooms produce basidiospores on basidia."
+  },
+  {
+    "id": "roster-saccharomyces-feature",
+    "species": [
+      "saccharomyces"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Saccharomyces cerevisiae"
+    },
+    "text": "Which feature or association fits Saccharomyces cerevisiae?",
+    "answers": [
+      "Budding yeast",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Saccharomyces cerevisiae is a budding yeast used in baking and fermentation."
+  },
+  {
+    "id": "roster-cryptococcus-feature",
+    "species": [
+      "cryptococcus"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Cryptococcus neoformans"
+    },
+    "text": "Which feature or association fits Cryptococcus neoformans?",
+    "answers": [
+      "Capsule",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Cryptococcus neoformans is an encapsulated budding yeast."
+  },
+  {
+    "id": "roster-candida-feature",
+    "species": [
+      "candida"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Candida albicans"
+    },
+    "text": "Which feature or association fits Candida albicans?",
+    "answers": [
+      "Yeast and filamentous forms",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Candida albicans can grow as budding yeast, pseudohyphae, and true hyphae."
+  },
+  {
+    "id": "roster-pseudotropicalis-feature",
+    "species": [
+      "pseudotropicalis"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Candida pseudotropicalis"
+    },
+    "text": "Which feature or association fits Candida pseudotropicalis?",
+    "answers": [
+      "Budding yeast",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Candida pseudotropicalis is an older name associated with Kluyveromyces marxianus, a budding yeast."
+  },
+  {
+    "id": "roster-pisiformis-feature",
+    "species": [
+      "pisiformis"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Taenia pisiformis"
+    },
+    "text": "Which feature or association fits Taenia pisiformis?",
+    "answers": [
+      "Rabbits or hares",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Taenia pisiformis cycles between canids as definitive hosts and rabbits or hares as intermediate hosts."
+  },
+  {
+    "id": "roster-trichinella-feature",
+    "species": [
+      "trichinella"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Trichinella spiralis"
+    },
+    "text": "Which feature or association fits Trichinella spiralis?",
+    "answers": [
+      "Skeletal muscle",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Trichinella spiralis larvae can occupy nurse cells in skeletal muscle."
+  },
+  {
+    "id": "roster-bacteriophage-feature",
+    "species": [
+      "bacteriophage"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Bacteriophage"
+    },
+    "text": "Which feature or association fits Bacteriophage?",
+    "answers": [
+      "Bacteria",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Bacteriophages are viruses that infect bacteria."
+  },
+  {
+    "id": "roster-influenza-feature",
+    "species": [
+      "influenza"
+    ],
+    "topic": "Identification",
+    "source": {
+      "file": "Microbemon roster biology review",
+      "section": "Influenza virus"
+    },
+    "text": "Which feature or association fits Influenza virus?",
+    "answers": [
+      "RNA",
+      "Tapeworm proglottids",
+      "Photosynthetic leaves"
+    ],
+    "correct": 0,
+    "explanation": "Influenza viruses are enveloped RNA viruses associated with respiratory infection."
+  }
+]);
 export const questionsForSpecies = id => BATTLE_QUESTIONS.filter(question => question.species.includes(id));
 export function microbeBasics(id) {
     const questions = questionsForSpecies(id);
     const ordered = [...questions].sort((a, b) => a.species.length - b.species.length || Number(b.topic === 'Movement') - Number(a.topic === 'Movement'));
     return [...new Set(ordered.map(q => q.explanation))].slice(0, 3);
 }
+

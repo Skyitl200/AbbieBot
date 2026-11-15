@@ -1,0 +1,11 @@
+# Microbemon roster and artwork update
+
+The roster has 54 species (21 bacteria, 10 fungi, 10 protozoa, 11 helminths, and 2 virus concepts), each with a normal and shiny portrait from the approved 2D cel-animation collection sheets. Existing species IDs, profiles, pet levels, nicknames, shiny flags, and rarity weights are retained. New species join the existing tier pools; per-species encounter probabilities within each tier change as those pools grow.
+
+The six source sheets and explicit portrait regions are packaged under `src/assets/microbemon/sheets`. `portraits.js` extracts one normal or shiny portrait on demand into a process-specific temporary directory. It caches at most 108 portrait paths and one decoded sheet. Portraits are reused by encounters, companions, collection detail, and Microbedeck thumbnails. No database migration or external artwork host is required. Temporary storage must be writable, as on the standard Railway Node container.
+
+The backgrounds are fantasy habitats and life-cycle settings, not diagnostic illustrations. Visual embellishments are fictional; the tapeworm sheet's bovine-tract heading is excluded from its portrait and the game correctly identifies adult T. saginata as inhabiting the human small intestine. Existing game facts remain authoritative over artwork text.
+
+New battle pools cover bacteria, fungi, viruses, and the two added worms without assigning protozoan questions to bacteria or fungi. The original 70 slide-backed questions retain their source attribution; 59 reviewed roster questions use separate source metadata. The lab list's Enterobacter faecalis is corrected to Enterococcus faecalis; Enterobacter aerogenes is catalogued under its current name Klebsiella aerogenes. Older lab names are retained in explanatory facts where helpful. Toxoplasma tissue cysts and the canid/rabbit T. pisiformis cycle are correctly described.
+
+Validation: `node --test tests/microbemon.test.js tests/microbemon-roster.test.js` covers every normal/shiny attachment, unique image contents, saved species compatibility, all encounter tiers and species, question pools, capture persistence, daily limits, and existing game controls.

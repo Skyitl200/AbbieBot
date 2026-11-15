@@ -1,4 +1,4 @@
-import { fileURLToPath } from 'node:url';
+import { portraitPath } from './portraits.js';
 
 // Outdoor scenes represent ecology/transmission; adult parasites still inhabit hosts.
 export const ARTWORK = {
@@ -23,8 +23,51 @@ export const ARTWORK = {
     schistosoma: { habitat: 'Warm freshwater · larval transmission', context: 'Free-swimming cercariae penetrate skin in freshwater; adult blood flukes inhabit veins.', design: 'one slender pale teal adult blood-fluke mascot with smooth unsegmented cylindrical curved body, small oral and ventral sucker details, gentle friendly face, no tapeworm segments, no hooks, no paired worm', scene: 'warm tropical freshwater lakeshore with reeds and smooth stones under afternoon sunlight, fantasy larval-transmission-themed arena, no other animals', shiny: 'soft pearly pink body with gold sucker accents' }
 };
 
+ARTWORK["alcaligenes"] = {"habitat":"Freshwater","context":"A motile rod associated with soil and water."};
+ARTWORK["cereus"] = {"habitat":"Soil","context":"Bacillus cereus is a rod-shaped bacterium that can form endospores."};
+ARTWORK["megaterium"] = {"habitat":"Garden soil","context":"Bacillus megaterium is a large rod-shaped soil bacterium."};
+ARTWORK["aerogenes"] = {"habitat":"Plant roots","context":"Formerly Enterobacter aerogenes, Klebsiella aerogenes is a motile rod-shaped bacterium."};
+ARTWORK["faecalis"] = {"habitat":"Intestinal habitat","context":"Enterococcus faecalis is a coccus often arranged in pairs or short chains."};
+ARTWORK["ecoli"] = {"habitat":"Intestinal habitat","context":"Escherichia coli is a rod-shaped bacterium commonly found in intestines."};
+ARTWORK["klebsiella"] = {"habitat":"Lung grotto","context":"Klebsiella pneumoniae is a nonmotile rod with a prominent capsule."};
+ARTWORK["micrococcus"] = {"habitat":"Skin landscape","context":"Micrococcus luteus forms cocci that commonly occur in tetrads."};
+ARTWORK["mycobacterium"] = {"habitat":"Moist soil","context":"Mycobacterium smegmatis is a rod-shaped acid-fast bacterium with a mycolic-acid-rich envelope."};
+ARTWORK["proteus"] = {"habitat":"Soil","context":"Proteus vulgaris is a motile rod known for swarming growth."};
+ARTWORK["pseudomonas"] = {"habitat":"Waterfall","context":"Pseudomonas aeruginosa is a rod-shaped bacterium often associated with moist environments."};
+ARTWORK["salmonella"] = {"habitat":"Intestinal habitat","context":"Salmonella Typhimurium is a rod-shaped bacterium associated with intestinal disease."};
+ARTWORK["serratia"] = {"habitat":"Damp stone","context":"Some Serratia marcescens strains produce a red pigment called prodigiosin."};
+ARTWORK["shigella"] = {"habitat":"Intestinal habitat","context":"Shigella dysenteriae is a nonmotile rod-shaped bacterium."};
+ARTWORK["aureus"] = {"habitat":"Skin landscape","context":"Staphylococcus aureus commonly forms grape-like clusters of cocci."};
+ARTWORK["epidermidis"] = {"habitat":"Skin landscape","context":"Staphylococcus epidermidis is a common skin-associated coccus."};
+ARTWORK["lactococcus"] = {"habitat":"Dairy landscape","context":"Lactococcus lactis, formerly Streptococcus lactis, is used in dairy fermentation."};
+ARTWORK["mitis"] = {"habitat":"Tooth grotto","context":"Streptococcus mitis is a coccus associated with the mouth."};
+ARTWORK["pyogenes"] = {"habitat":"Throat grotto","context":"Streptococcus pyogenes commonly forms chains of cocci."};
+ARTWORK["sarcina"] = {"habitat":"Soil","context":"The Sarcina body arrangement consists of cubical packets of cocci."};
+ARTWORK["sporogenes"] = {"habitat":"Anaerobic soil","context":"Clostridium sporogenes is an anaerobic rod-shaped endospore-forming bacterium."};
+ARTWORK["rhizopus"] = {"habitat":"Bread forest","context":"Rhizopus produces asexual sporangiospores inside sporangia; the name R. nigricans is commonly treated as R. stolonifer."};
+ARTWORK["mucor"] = {"habitat":"Decaying forest","context":"Mucor produces sporangia and generally lacks the rhizoids typical of Rhizopus."};
+ARTWORK["aspergillus"] = {"habitat":"Stone cavern","context":"Aspergillus niger forms dark conidial heads bearing asexual conidia."};
+ARTWORK["penicillium"] = {"habitat":"Citrus forest","context":"Penicillium has brush-like conidiophores bearing chains of conidia."};
+ARTWORK["peziza"] = {"habitat":"Damp woodland","context":"Peziza forms cup-shaped fruiting bodies with asci containing ascospores."};
+ARTWORK["coprinus"] = {"habitat":"Rainy woods","context":"Coprinus mushrooms produce basidiospores on basidia."};
+ARTWORK["saccharomyces"] = {"habitat":"Grain mill","context":"Saccharomyces cerevisiae is a budding yeast used in baking and fermentation."};
+ARTWORK["cryptococcus"] = {"habitat":"Moonlit tree","context":"Cryptococcus neoformans is an encapsulated budding yeast."};
+ARTWORK["candida"] = {"habitat":"Mucosal grotto","context":"Candida albicans can grow as budding yeast, pseudohyphae, and true hyphae."};
+ARTWORK["pseudotropicalis"] = {"habitat":"Fruit orchard","context":"Candida pseudotropicalis is an older name associated with Kluyveromyces marxianus, a budding yeast."};
+ARTWORK["pisiformis"] = {"habitat":"Canine intestinal habitat","context":"Taenia pisiformis cycles between canids as definitive hosts and rabbits or hares as intermediate hosts."};
+ARTWORK["trichinella"] = {"habitat":"Muscle landscape","context":"Trichinella spiralis larvae can occupy nurse cells in skeletal muscle."};
+ARTWORK["bacteriophage"] = {"habitat":"Microbial tidepool","context":"Bacteriophages are viruses that infect bacteria."};
+ARTWORK["influenza"] = {"habitat":"Respiratory cloud grotto","context":"Influenza viruses are enveloped RNA viruses associated with respiratory infection."};
+const revisedHabitats = {
+    ascaris: 'Small intestinal habitat', giardia: 'Small intestinal grotto',
+    solium: 'Human small intestine', saginata: 'Human small intestine',
+    trypanosoma: 'Bloodstream', schistosoma: 'Blood vessels · paired blood flukes',
+    fasciola: 'Liver marsh · stylized bile-duct habitat', paragonimus: 'Lung grotto'
+};
+for (const [id, habitat] of Object.entries(revisedHabitats)) ARTWORK[id].habitat = habitat;
 export function speciesArtwork(id, shiny = false) {
     if (!Object.hasOwn(ARTWORK, id)) return null;
     const name = `${id}${shiny ? '-shiny' : ''}.png`;
-    return { name, path: fileURLToPath(new URL(`../../assets/microbemon/species/${name}`, import.meta.url)) };
+    return { name, path: portraitPath(id, shiny) };
 }
+

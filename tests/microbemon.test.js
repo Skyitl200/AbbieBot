@@ -37,7 +37,7 @@ test('all 100 encounter rolls match the advertised tier weights', () => {
     const counts = Object.fromEntries(TIERS.map(t => [t.name, 0]));
     for (let i = 0; i < 100; i++) counts[SPECIES.find(s => s.id === rollEncounter(rolls(i, 0, 1, 0), now).speciesId).tier]++;
     assert.deepEqual(counts, { common: 55, uncommon: 30, rare: 12, epic: 3 });
-    assert.equal(new Set(SPECIES.map(s => s.id)).size, 19);
+    assert.equal(new Set(SPECIES.map(s => s.id)).size, 54);
 });
 
 test('exactly one of the 1,000 shiny roll outcomes is shiny, independent of tier', () => {
@@ -220,7 +220,7 @@ test('each organism and shiny variant has its own file and habitat context', asy
         const collection = renderGame(p, 'owner', { view: 'collection' });
         assert.equal(collection.files[0].attachment, asset.path, 'Collection must show its pet, not the active encounter');
     }
-    assert.equal(paths.size, 38); assert.equal(hashes.size, 38, 'Shared image copies cannot substitute for unique portraits');
+    assert.equal(paths.size, 108); assert.equal(hashes.size, 108, 'Shared image copies cannot substitute for unique portraits');
     assert.equal(speciesArtwork('unknown'), null);
 });
 
@@ -250,9 +250,9 @@ test('home uses the uploaded banner and keeps the selected companion as a thumbn
 
 test('slide-backed battle pools cover every organism with varied non-taxonomy questions', async () => {
     const { BATTLE_QUESTIONS, questionsForSpecies } = await import('../src/services/microbemon/questions.js');
-    assert.equal(BATTLE_QUESTIONS.length, 70);
-    assert.equal(new Set(BATTLE_QUESTIONS.map(q => q.id)).size, 70);
-    for (const question of BATTLE_QUESTIONS) {
+    assert.equal(BATTLE_QUESTIONS.length, 129);
+    assert.equal(new Set(BATTLE_QUESTIONS.map(q => q.id)).size, 129);
+    for (const question of BATTLE_QUESTIONS.slice(0, 70)) {
         assert.equal(new Set(question.answers).size, 3, question.id);
         assert.ok(question.source.slide >= 29 && question.source.slide <= 61);
         assert.equal(question.source.file, 'Chapter 12 (1).pptx');
@@ -380,7 +380,7 @@ test('Microbedeck boxes list exactly the owned pets, including duplicates and sh
     const message = renderGame(p, 'owner', { view: 'deck', page: 1 });
     const embed = message.embeds[0].toJSON();
     assert.match(embed.description, /15 owned pets/);
-    assert.match(embed.description, /2\/19 species/);
+    assert.match(embed.description, /2\/54 species/);
     const selector = message.components[0].toJSON().components[0];
     assert.equal(selector.custom_id, 'microbemon:owner:pet');
     assert.deepEqual(selector.options.map(o => o.value), ['pet-12', 'pet-13', 'pet-14']);
@@ -785,3 +785,4 @@ test('a 1-in-300 cache drop saves with the catch and reports the saved cache', a
     assert.equal(failed.caches(), 0);
     assert.equal(failed.data.get('microbemon:guild:user').pets.length, 0);
 });
+
