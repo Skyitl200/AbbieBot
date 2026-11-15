@@ -7,14 +7,48 @@ import { act } from './engine.js';
 import { renderSession } from './interface.js';
 import { logger } from '../../utils/logger.js';
 
+// Discord rejects an entire card when a custom emoji is unavailable to the bot.
+// Retry that display once without custom emoji; never repeat the saved action.
+async function displaySession(interaction, message) {
+    try {
+        return await interaction.editReply(message);
+    } catch (error) {
+        const details = JSON.stringify(error.rawError?.errors || {});
+        if (Number(error.code) !== 50035 || !/emoji/i.test(details)) throw error;
+        const components = message.components.map(row => {
+            const data = row.toJSON();
+            return { ...data, components: data.components.map(component => {
+                const result = { ...component };
+                if (result.emoji?.id) delete result.emoji;
+                return result;
+            }) };
+        });
+        logger.warn(`Microbemon display retry: custom emoji rejected by Discord (code ${error.code}).`);
+        return interaction.editReply({ ...message, components });
+    }
+}
+
+function logFailure(prefix, stage, error) {
+    // Winston's console formatter drops a second string argument. Keep the
+    // diagnostic in the message itself, without logging request bodies/tokens.
+    logger.warn(`${prefix} [${stage}] ${error.name || 'Error'}${error.code ? ` (${error.code})` : ''}: ${error.message || 'No error message'}`);
+}
+
 export async function openMicrobemon(interaction, options = {}) {
     await interaction.deferReply();
+    let stage = 'load collection';
     try {
         const { profile } = await withProfile(interaction.client, interaction.guildId, interaction.user.id, () => {});
-        await interaction.editReply(await renderSession(profile, interaction.user.id, { view: options.view || 'home', ownerName: interaction.member?.displayName || interaction.user.username }));
+        stage = 'render card';
+        const message = await renderSession(profile, interaction.user.id, { view: options.view || 'home', ownerName: interaction.member?.displayName || interaction.user.username });
+        stage = 'send Discord card';
+        await displaySession(interaction, message);
     } catch (error) {
-        logger.warn('Microbemon could not open:', error.message);
-        await interaction.editReply({ content: 'Microbemon could not open its saved collection. Make sure the persistent database is available and play inside a server.', components: [] });
+        logFailure('Microbemon could not open:', stage, error);
+        const content = error instanceof MicrobemonError ? error.message : stage === 'load collection'
+            ? 'Microbemon could not load your saved collection. Please try again. Your saved pets have not been reset.'
+            : 'Your Microbemon collection loaded, but its game card could not be displayed. Your saved pets have not been reset. Please try /microbemon again.';
+        await interaction.editReply({ content, embeds: [], attachments: [], components: [], allowedMentions: { parse: [] } });
     }
 }
 export async function handleMicrobemon(interaction, client, args, runAction = act) {
@@ -57,12 +91,13 @@ export async function handleMicrobemon(interaction, client, args, runAction = ac
             view = 'collection';
             if (action !== 'collection') page = profile.pets.findIndex(pet => pet.id === token);
         }
-        await interaction.editReply(await renderSession(profile, owner, { view, page, releasePetId: action === 'release_prompt' ? token : null, notice: value, ownerName: interaction.member?.displayName || interaction.user.username }));
+        await displaySession(interaction, await renderSession(profile, owner, { view, page, releasePetId: action === 'release_prompt' ? token : null, notice: value, ownerName: interaction.member?.displayName || interaction.user.username }));
     } catch (error) {
         // Errors do not consume a capsule or lose a pet: the transaction rolls back.
-        logger.warn('Microbemon interaction failed:', error.message);
+        logFailure('Microbemon interaction failed:', action, error);
         const message = error instanceof MicrobemonError
             ? error.message : 'Could not save your game. Please try again; no catch has been confirmed.';
         await interaction.followUp({ content: message.slice(0, 1900), flags: MessageFlags.Ephemeral, allowedMentions: { parse: [] } });
     }
 }
+
