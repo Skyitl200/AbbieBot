@@ -32,7 +32,7 @@ test('purple battles use hosted species art without uploading attachments', asyn
     const embed = card.embeds[0].toJSON();
     assert.equal(embed.color, 0x8b5cf6);
     assert.match(healthBar(50, 100), /^🟪/);
-    assert.match(embed.image.url, /\/microbemon\/art\/ecoli-shiny\.png\?v=3$/);
+    assert.match(embed.image.url, /\/microbemon\/art\/ecoli-shiny\.gif\?v=4$/);
     assert.deepEqual(card.files, []);
     for (const row of card.components) for (const component of row.toJSON().components) assert.notEqual(component.emoji?.id, '1571285873658437692');
 });

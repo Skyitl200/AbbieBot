@@ -314,7 +314,7 @@ test('a catch opens the Microbedeck on the newly saved pet, including shiny port
     assert.ok(embed.description.includes(`+${saved.pets[1].catchReward.amount} Merit Coins`));
     assert.ok(embed.description.includes(`New Balance: **${s.balance()}`));
     assert.equal(embed.fields.find(field => field.name === 'Microbedeck').value, '2 / 2');
-    assert.match(embed.image.url, /solium-shiny.png/);
+    assert.match(embed.image.url, /solium-shiny.gif/);
     assert.ok(embed.fields.find(field => field.name.includes('Know your Microbemon')));
     assert.equal(saved.pets[1].id, e.id);
 });
@@ -785,4 +785,5 @@ test('a 1-in-300 cache drop saves with the catch and reports the saved cache', a
     assert.equal(failed.caches(), 0);
     assert.equal(failed.data.get('microbemon:guild:user').pets.length, 0);
 });
+
 
