@@ -1,815 +1,815 @@
 {
-  "version": 2,
-  "style": "Hand-drawn 2D cel animation with painted habitats",
+  "version": 3,
+  "style": "Label-free full habitat scenes; independent normal and shiny portraits",
   "species": {
     "alcaligenes": {
       "sheet": 1,
       "normal": {
-        "x": 8,
-        "y": 49,
-        "width": 248,
-        "height": 245
+        "x": 2,
+        "y": 2,
+        "width": 291,
+        "height": 291
       },
       "shiny": {
-        "x": 260,
-        "y": 49,
-        "width": 248,
-        "height": 245
+        "x": 2,
+        "y": 297,
+        "width": 291,
+        "height": 292
       }
     },
     "cereus": {
       "sheet": 1,
       "normal": {
-        "x": 519,
-        "y": 49,
-        "width": 245,
-        "height": 245
+        "x": 297,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 768,
-        "y": 49,
-        "width": 245,
-        "height": 245
+        "x": 297,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "megaterium": {
       "sheet": 1,
       "normal": {
-        "x": 1030,
-        "y": 49,
-        "width": 246,
-        "height": 245
+        "x": 593,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 1280,
-        "y": 49,
-        "width": 246,
-        "height": 245
+        "x": 593,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "aerogenes": {
       "sheet": 1,
       "normal": {
-        "x": 8,
-        "y": 375,
-        "width": 248,
-        "height": 240
+        "x": 2,
+        "y": 593,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 375,
-        "width": 248,
-        "height": 240
+        "x": 2,
+        "y": 889,
+        "width": 291,
+        "height": 291
       }
     },
     "faecalis": {
       "sheet": 1,
       "normal": {
-        "x": 519,
-        "y": 375,
-        "width": 245,
-        "height": 240
+        "x": 297,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 375,
-        "width": 245,
-        "height": 240
+        "x": 297,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "ecoli": {
       "sheet": 1,
       "normal": {
-        "x": 1030,
-        "y": 375,
-        "width": 246,
-        "height": 240
+        "x": 593,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 375,
-        "width": 246,
-        "height": 240
+        "x": 593,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "klebsiella": {
       "sheet": 1,
       "normal": {
-        "x": 8,
-        "y": 680,
-        "width": 248,
-        "height": 270
+        "x": 2,
+        "y": 1184,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 680,
-        "width": 248,
-        "height": 270
+        "x": 2,
+        "y": 1480,
+        "width": 291,
+        "height": 292
       }
     },
     "micrococcus": {
       "sheet": 1,
       "normal": {
-        "x": 519,
-        "y": 680,
-        "width": 245,
-        "height": 270
+        "x": 297,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 680,
-        "width": 245,
-        "height": 270
+        "x": 297,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "mycobacterium": {
       "sheet": 1,
       "normal": {
-        "x": 1030,
-        "y": 680,
-        "width": 246,
-        "height": 270
+        "x": 593,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 680,
-        "width": 246,
-        "height": 270
+        "x": 593,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "proteus": {
       "sheet": 2,
       "normal": {
-        "x": 8,
-        "y": 49,
-        "width": 248,
-        "height": 241
+        "x": 2,
+        "y": 2,
+        "width": 291,
+        "height": 291
       },
       "shiny": {
-        "x": 260,
-        "y": 49,
-        "width": 248,
-        "height": 241
+        "x": 2,
+        "y": 297,
+        "width": 291,
+        "height": 292
       }
     },
     "pseudomonas": {
       "sheet": 2,
       "normal": {
-        "x": 519,
-        "y": 49,
-        "width": 245,
-        "height": 241
+        "x": 297,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 768,
-        "y": 49,
-        "width": 245,
-        "height": 241
+        "x": 297,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "salmonella": {
       "sheet": 2,
       "normal": {
-        "x": 1030,
-        "y": 49,
-        "width": 246,
-        "height": 241
+        "x": 593,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 1280,
-        "y": 49,
-        "width": 246,
-        "height": 241
+        "x": 593,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "serratia": {
       "sheet": 2,
       "normal": {
-        "x": 8,
-        "y": 374,
-        "width": 248,
-        "height": 236
+        "x": 2,
+        "y": 593,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 374,
-        "width": 248,
-        "height": 236
+        "x": 2,
+        "y": 889,
+        "width": 291,
+        "height": 291
       }
     },
     "shigella": {
       "sheet": 2,
       "normal": {
-        "x": 519,
-        "y": 374,
-        "width": 245,
-        "height": 236
+        "x": 297,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 374,
-        "width": 245,
-        "height": 236
+        "x": 297,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "aureus": {
       "sheet": 2,
       "normal": {
-        "x": 1030,
-        "y": 374,
-        "width": 246,
-        "height": 236
+        "x": 593,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 374,
-        "width": 246,
-        "height": 236
+        "x": 593,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "epidermidis": {
       "sheet": 2,
       "normal": {
-        "x": 8,
-        "y": 686,
-        "width": 248,
-        "height": 264
+        "x": 2,
+        "y": 1184,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 686,
-        "width": 248,
-        "height": 264
+        "x": 2,
+        "y": 1480,
+        "width": 291,
+        "height": 292
       }
     },
     "lactococcus": {
       "sheet": 2,
       "normal": {
-        "x": 519,
-        "y": 686,
-        "width": 245,
-        "height": 264
+        "x": 297,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 686,
-        "width": 245,
-        "height": 264
+        "x": 297,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "mitis": {
       "sheet": 2,
       "normal": {
-        "x": 1030,
-        "y": 686,
-        "width": 246,
-        "height": 264
+        "x": 593,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 686,
-        "width": 246,
-        "height": 264
+        "x": 593,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "pyogenes": {
       "sheet": 3,
       "normal": {
-        "x": 8,
-        "y": 139,
-        "width": 248,
-        "height": 166
+        "x": 2,
+        "y": 2,
+        "width": 291,
+        "height": 291
       },
       "shiny": {
-        "x": 260,
-        "y": 139,
-        "width": 248,
-        "height": 166
+        "x": 2,
+        "y": 297,
+        "width": 291,
+        "height": 292
       }
     },
     "sarcina": {
       "sheet": 3,
       "normal": {
-        "x": 519,
-        "y": 139,
-        "width": 245,
-        "height": 166
+        "x": 297,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 768,
-        "y": 139,
-        "width": 245,
-        "height": 166
+        "x": 297,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "sporogenes": {
       "sheet": 3,
       "normal": {
-        "x": 1030,
-        "y": 139,
-        "width": 246,
-        "height": 166
+        "x": 593,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 1280,
-        "y": 139,
-        "width": 246,
-        "height": 166
+        "x": 593,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "rhizopus": {
       "sheet": 3,
       "normal": {
-        "x": 8,
-        "y": 415,
-        "width": 248,
-        "height": 199
+        "x": 2,
+        "y": 593,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 415,
-        "width": 248,
-        "height": 199
+        "x": 2,
+        "y": 889,
+        "width": 291,
+        "height": 291
       }
     },
     "mucor": {
       "sheet": 3,
       "normal": {
-        "x": 519,
-        "y": 415,
-        "width": 245,
-        "height": 199
+        "x": 297,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 415,
-        "width": 245,
-        "height": 199
+        "x": 297,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "aspergillus": {
       "sheet": 3,
       "normal": {
-        "x": 1030,
-        "y": 415,
-        "width": 246,
-        "height": 199
+        "x": 593,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 415,
-        "width": 246,
-        "height": 199
+        "x": 593,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "penicillium": {
       "sheet": 3,
       "normal": {
-        "x": 8,
-        "y": 723,
-        "width": 248,
-        "height": 199
+        "x": 2,
+        "y": 1184,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 723,
-        "width": 248,
-        "height": 199
+        "x": 2,
+        "y": 1480,
+        "width": 291,
+        "height": 292
       }
     },
     "peziza": {
       "sheet": 3,
       "normal": {
-        "x": 519,
-        "y": 723,
-        "width": 245,
-        "height": 199
+        "x": 297,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 723,
-        "width": 245,
-        "height": 199
+        "x": 297,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "coprinus": {
       "sheet": 3,
       "normal": {
-        "x": 1030,
-        "y": 723,
-        "width": 246,
-        "height": 199
+        "x": 593,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 723,
-        "width": 246,
-        "height": 199
+        "x": 593,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "saccharomyces": {
       "sheet": 4,
       "normal": {
-        "x": 8,
-        "y": 128,
-        "width": 248,
-        "height": 204
+        "x": 2,
+        "y": 2,
+        "width": 291,
+        "height": 291
       },
       "shiny": {
-        "x": 260,
-        "y": 128,
-        "width": 248,
-        "height": 204
+        "x": 2,
+        "y": 297,
+        "width": 291,
+        "height": 292
       }
     },
     "cryptococcus": {
       "sheet": 4,
       "normal": {
-        "x": 519,
-        "y": 128,
-        "width": 245,
-        "height": 204
+        "x": 297,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 768,
-        "y": 128,
-        "width": 245,
-        "height": 204
+        "x": 297,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "candida": {
       "sheet": 4,
       "normal": {
-        "x": 1030,
-        "y": 128,
-        "width": 246,
-        "height": 204
+        "x": 593,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 1280,
-        "y": 128,
-        "width": 246,
-        "height": 204
+        "x": 593,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "pseudotropicalis": {
       "sheet": 4,
       "normal": {
-        "x": 8,
-        "y": 445,
-        "width": 248,
-        "height": 197
+        "x": 2,
+        "y": 593,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 445,
-        "width": 248,
-        "height": 197
+        "x": 2,
+        "y": 889,
+        "width": 291,
+        "height": 291
       }
     },
     "amoeba": {
       "sheet": 4,
       "normal": {
-        "x": 519,
-        "y": 445,
-        "width": 245,
-        "height": 197
+        "x": 297,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 445,
-        "width": 245,
-        "height": 197
+        "x": 297,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "paramecium": {
       "sheet": 4,
       "normal": {
-        "x": 1030,
-        "y": 445,
-        "width": 246,
-        "height": 197
+        "x": 593,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 445,
-        "width": 246,
-        "height": 197
+        "x": 593,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "stentor": {
       "sheet": 4,
       "normal": {
-        "x": 8,
-        "y": 740,
-        "width": 248,
-        "height": 203
+        "x": 2,
+        "y": 1184,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 740,
-        "width": 248,
-        "height": 203
+        "x": 2,
+        "y": 1480,
+        "width": 291,
+        "height": 292
       }
     },
     "vorticella": {
       "sheet": 4,
       "normal": {
-        "x": 519,
-        "y": 740,
-        "width": 245,
-        "height": 203
+        "x": 297,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 740,
-        "width": 245,
-        "height": 203
+        "x": 297,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "entamoeba": {
       "sheet": 4,
       "normal": {
-        "x": 1030,
-        "y": 740,
-        "width": 246,
-        "height": 203
+        "x": 593,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 740,
-        "width": 246,
-        "height": 203
+        "x": 593,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "balantidium": {
       "sheet": 5,
       "normal": {
-        "x": 8,
-        "y": 80,
-        "width": 248,
-        "height": 203
+        "x": 2,
+        "y": 2,
+        "width": 291,
+        "height": 291
       },
       "shiny": {
-        "x": 260,
-        "y": 80,
-        "width": 248,
-        "height": 203
+        "x": 2,
+        "y": 297,
+        "width": 291,
+        "height": 292
       }
     },
     "giardia": {
       "sheet": 5,
       "normal": {
-        "x": 519,
-        "y": 80,
-        "width": 245,
-        "height": 203
+        "x": 297,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 768,
-        "y": 80,
-        "width": 245,
-        "height": 203
+        "x": 297,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "trypanosoma": {
       "sheet": 5,
       "normal": {
-        "x": 1030,
-        "y": 80,
-        "width": 246,
-        "height": 203
+        "x": 593,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 1280,
-        "y": 80,
-        "width": 246,
-        "height": 203
+        "x": 593,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "toxoplasma": {
       "sheet": 5,
       "normal": {
-        "x": 8,
-        "y": 402,
-        "width": 248,
-        "height": 210
+        "x": 2,
+        "y": 593,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 402,
-        "width": 248,
-        "height": 210
+        "x": 2,
+        "y": 889,
+        "width": 291,
+        "height": 291
       }
     },
     "plasmodium": {
       "sheet": 5,
       "normal": {
-        "x": 519,
-        "y": 402,
-        "width": 245,
-        "height": 210
+        "x": 297,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 402,
-        "width": 245,
-        "height": 210
+        "x": 297,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "solium": {
       "sheet": 5,
       "normal": {
-        "x": 1030,
-        "y": 402,
-        "width": 246,
-        "height": 210
+        "x": 593,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 402,
-        "width": 246,
-        "height": 210
+        "x": 593,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "saginata": {
       "sheet": 5,
       "normal": {
-        "x": 8,
-        "y": 731,
-        "width": 248,
-        "height": 215
+        "x": 2,
+        "y": 1184,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 731,
-        "width": 248,
-        "height": 215
+        "x": 2,
+        "y": 1480,
+        "width": 291,
+        "height": 292
       }
     },
     "pisiformis": {
       "sheet": 5,
       "normal": {
-        "x": 519,
-        "y": 731,
-        "width": 245,
-        "height": 215
+        "x": 297,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 731,
-        "width": 245,
-        "height": 215
+        "x": 297,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "fasciola": {
       "sheet": 5,
       "normal": {
-        "x": 1030,
-        "y": 731,
-        "width": 246,
-        "height": 215
+        "x": 593,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 731,
-        "width": 246,
-        "height": 215
+        "x": 593,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "fasciolopsis": {
       "sheet": 6,
       "normal": {
-        "x": 8,
-        "y": 118,
-        "width": 248,
-        "height": 175
+        "x": 2,
+        "y": 2,
+        "width": 291,
+        "height": 291
       },
       "shiny": {
-        "x": 260,
-        "y": 118,
-        "width": 248,
-        "height": 175
+        "x": 2,
+        "y": 297,
+        "width": 291,
+        "height": 292
       }
     },
     "paragonimus": {
       "sheet": 6,
       "normal": {
-        "x": 519,
-        "y": 118,
-        "width": 245,
-        "height": 175
+        "x": 297,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 768,
-        "y": 118,
-        "width": 245,
-        "height": 175
+        "x": 297,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "schistosoma": {
       "sheet": 6,
       "normal": {
-        "x": 1030,
-        "y": 118,
-        "width": 246,
-        "height": 175
+        "x": 593,
+        "y": 2,
+        "width": 292,
+        "height": 291
       },
       "shiny": {
-        "x": 1280,
-        "y": 118,
-        "width": 246,
-        "height": 175
+        "x": 593,
+        "y": 297,
+        "width": 292,
+        "height": 292
       }
     },
     "ascaris": {
       "sheet": 6,
       "normal": {
-        "x": 8,
-        "y": 440,
-        "width": 248,
-        "height": 170
+        "x": 2,
+        "y": 593,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 440,
-        "width": 248,
-        "height": 170
+        "x": 2,
+        "y": 889,
+        "width": 291,
+        "height": 291
       }
     },
     "enterobius": {
       "sheet": 6,
       "normal": {
-        "x": 519,
-        "y": 440,
-        "width": 245,
-        "height": 170
+        "x": 297,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 440,
-        "width": 245,
-        "height": 170
+        "x": 297,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "necator": {
       "sheet": 6,
       "normal": {
-        "x": 1030,
-        "y": 440,
-        "width": 246,
-        "height": 170
+        "x": 593,
+        "y": 593,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 440,
-        "width": 246,
-        "height": 170
+        "x": 593,
+        "y": 889,
+        "width": 292,
+        "height": 291
       }
     },
     "trichinella": {
       "sheet": 6,
       "normal": {
-        "x": 8,
-        "y": 720,
-        "width": 248,
-        "height": 213
+        "x": 2,
+        "y": 1184,
+        "width": 291,
+        "height": 292
       },
       "shiny": {
-        "x": 260,
-        "y": 720,
-        "width": 248,
-        "height": 213
+        "x": 2,
+        "y": 1480,
+        "width": 291,
+        "height": 292
       }
     },
     "bacteriophage": {
       "sheet": 6,
       "normal": {
-        "x": 519,
-        "y": 720,
-        "width": 245,
-        "height": 213
+        "x": 297,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 768,
-        "y": 720,
-        "width": 245,
-        "height": 213
+        "x": 297,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     },
     "influenza": {
       "sheet": 6,
       "normal": {
-        "x": 1030,
-        "y": 720,
-        "width": 246,
-        "height": 213
+        "x": 593,
+        "y": 1184,
+        "width": 292,
+        "height": 292
       },
       "shiny": {
-        "x": 1280,
-        "y": 720,
-        "width": 246,
-        "height": 213
+        "x": 593,
+        "y": 1480,
+        "width": 292,
+        "height": 292
       }
     }
   }

@@ -32,7 +32,18 @@ test('purple battles use hosted species art without uploading attachments', asyn
     const embed = card.embeds[0].toJSON();
     assert.equal(embed.color, 0x8b5cf6);
     assert.match(healthBar(50, 100), /^🟪/);
-    assert.match(embed.image.url, /\/microbemon\/art\/ecoli-shiny\.png\?v=2$/);
+    assert.match(embed.image.url, /\/microbemon\/art\/ecoli-shiny\.png\?v=3$/);
     assert.deepEqual(card.files, []);
-    for (const row of card.components) for (const component of row.toJSON().components) assert.ok(!component.emoji?.id);
+    for (const row of card.components) for (const component of row.toJSON().components) assert.notEqual(component.emoji?.id, '1571285873658437692');
 });
+
+
+test('full habitat scenes keep normal and shiny portraits separate without tight crops', async () => {
+    const { PORTRAITS } = await import('../src/services/microbemon/portraits.js');
+    for (const [id, entry] of Object.entries(PORTRAITS)) {
+        assert.equal(entry.normal.x, entry.shiny.x, id);
+        assert.ok(entry.shiny.y >= entry.normal.y + entry.normal.height, id);
+        for (const r of [entry.normal, entry.shiny]) assert.ok(Math.abs(r.width - r.height) <= 1, id);
+    }
+});
+

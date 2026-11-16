@@ -3,7 +3,7 @@ import { PORTRAITS, portraitPath } from './portraits.js';
 import { logger } from '../../utils/logger.js';
 
 const origin = (process.env.PUBLIC_BASE_URL || 'https://abbiebot-production-35d6.up.railway.app').replace(/\/+$/, '');
-export const artworkURL = name => `${origin}/microbemon/art/${encodeURIComponent(name)}?v=2`;
+export const artworkURL = name => `${origin}/microbemon/art/${encodeURIComponent(name)}?v=3`;
 export function hostedSpeciesArtwork(id, shiny = false) {
     if (!Object.hasOwn(PORTRAITS, id)) return null;
     const name = `${id}${shiny ? '-shiny' : ''}.png`;
@@ -32,3 +32,4 @@ export function registerMicrobemonArtwork(app) {
         });
     });
 }
+
