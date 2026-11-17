@@ -1,6 +1,6 @@
 import { randomBytes } from 'node:crypto';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, MessageFlags, PermissionFlagsBits, escapeMarkdown } from 'discord.js';
-import { totalsFor, sumTotals, duration, tierFor, monthKey, ZONE } from './model.js';
+import { totalsFor, sumTotals, duration, tierFor, monthKey, dayKey, studyStreak, ZONE } from './model.js';
 import { recordsForGuild, putResource, getResource, creditActivity } from './store.js';
 import { logger } from '../../utils/logger.js';
 const row = (...buttons) => new ActionRowBuilder().addComponents(buttons);
@@ -75,7 +75,7 @@ export function monthlyLevelMessage(record, userId, at = Date.now()) {
 export async function openMonthlyLevel(interaction) {
     await interaction.deferReply();
     try {
-        if (!interaction.guildId) throw new Error('Use /stats me inside a server.');
+        if (!interaction.guildId) throw new Error('Use /stats level inside a server.');
         const rows = await recordsForGuild(interaction.client, interaction.guildId);
         const record = rows.find(row => row.userId === interaction.user.id)?.record;
         const message = monthlyLevelMessage(record, interaction.user.id);
@@ -135,5 +135,38 @@ export async function handleStudyTime(interaction, client, args) {
         logger.warn(`Study time interaction: ${error.message}`);
         if (interaction.deferred || interaction.replied) await interaction.followUp({ content: error.message, flags: MessageFlags.Ephemeral, allowedMentions: { parse: [] } });
         else await interaction.reply({ content: error.message, flags: MessageFlags.Ephemeral, allowedMentions: { parse: [] } });
+    }
+}
+
+export function personalStatsMessage(rows, userId, at = Date.now()) {
+    const record = rows.find(row => row.userId === userId)?.record;
+    const periods = [['Daily', 'day'], ['Weekly', 'week'], ['Monthly', 'month'], ['Alltime', 'all']];
+    const lines = periods.map(([label, period]) => {
+        const hours = (sumTotals(totalsFor(record, period, at)) / 3600000).toFixed(1) + 'h';
+        const index = rankRecords(rows, period, at).findIndex(entry => entry.userId === userId);
+        const place = period === 'day' ? '' : index >= 0 ? `#${index + 1}` : '—';
+        return `${(label + ':').padEnd(10)} ${hours.padStart(7)}   ${place}`;
+    });
+    const month = new Intl.DateTimeFormat('en-US', { month: 'long', timeZone: ZONE }).format(at);
+    const average = sumTotals(totalsFor(record, 'month', at)) / 3600000 / Number(dayKey(at).slice(-2));
+    const streak = studyStreak(record, at);
+    const embed = new EmbedBuilder().setTitle('👑 Personal Study Statistics').addFields(
+        { name: 'Statistics', value: '```\nTimeframe    Hours   Place\n\n' + lines.join('\n') + `\n\nAverage/day (${month}): ${average.toFixed(1)} h\n` + '```' },
+        { name: 'Streak', value: '```\n' + `Current study streak: ${streak.current} days\nLongest study streak: ${streak.longest} days\n` + '```' },
+    ).setFooter({ text: 'Server rankings · Eastern time · Week starts Monday · Daily history and streaks tracked from this update' });
+    return { embeds: [embed], allowedMentions: { parse: [] } };
+}
+export async function openPersonalStats(interaction) {
+    await interaction.deferReply();
+    try {
+        if (!interaction.guildId) throw new Error('Use /stats me inside a server.');
+        const rows = await recordsForGuild(interaction.client, interaction.guildId);
+        const message = personalStatsMessage(rows, interaction.user.id);
+        const avatar = interaction.user.displayAvatarURL?.();
+        message.embeds[0].setAuthor({ name: interaction.user.globalName || interaction.user.username || 'Your study statistics', ...(avatar ? { iconURL: avatar } : {}) });
+        await interaction.editReply(message);
+    } catch (error) {
+        logger.warn(`Personal study statistics: ${error.message}`);
+        await interaction.editReply({ content: error.message, allowedMentions: { parse: [] } });
     }
 }

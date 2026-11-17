@@ -2,7 +2,7 @@
 
 Use `/studytime` to open the monthly server leaderboard. The buttons switch between this month, all time, and personal statistics. `/studytime view:stats` shows the member's tier, next tier, leaderboard rank, tier rank, time until promotion, and source breakdown. Use `member` to inspect another member or `period:all` for all-time statistics. Rankings show ten people per page.
 
-`/stats me` opens a compact monthly level card with a boxed ANSI panel (blue labels and gold values, with no colored side bar) showing the current level, the previous calendar month’s level, level rank out of 11, and hours remaining until promotion (rounded up to one decimal). Missing previous-month history is labeled honestly. `/stats bot` retains bot system statistics.
+`/stats level` opens a compact monthly level card with a boxed ANSI panel (blue labels and gold values, with no colored side bar) showing the current level, the previous calendar month’s level, level rank out of 11, and hours remaining until promotion (rounded up to one decimal). Missing previous-month history is labeled honestly. `/stats bot` retains bot system statistics.
 
 Tracking starts when this feature is deployed. It does not invent historical study time. Each server has independent records.
 
@@ -48,3 +48,5 @@ Voice tracking has a two-minute checkpoint lease. Startup clears old active-sess
 `/studytime` is a server command and does not consume an additional global slash-command slot. Existing XP `/leaderboard` behavior is unchanged. No schema migration or new environment variables are required.
 
 Validation: `node --test tests/study-time.test.js` covers month/DST splits, concurrent receipt deduplication, rollback/retry, atomic game saves, answered-question retries, voice joins/moves/leaves and restart recovery, ranking and pagination, resource credit and invalid URLs, owner-bound controls, and unavailable persistence.
+
+`/stats me` shows daily, weekly, monthly, and all-time hours, server placement (weekly/monthly/all-time), the current month’s hours divided by elapsed calendar days, and current/longest study streaks. Weeks begin Monday in Eastern time. A streak remains current through yesterday and resets after a full missed day. Daily buckets begin with this update; existing monthly/all-time totals are preserved, but earlier daily/weekly history and streaks cannot be reconstructed. Live voice credit is included without changing the stored record.
