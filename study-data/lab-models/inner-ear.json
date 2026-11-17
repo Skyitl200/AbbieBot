@@ -1,0 +1,695 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Nervous System",
+  "modelGroup": "3D Structure of the Inner Ear",
+  "source": "User-provided inner-ear model photograph and Quizlet vocabulary screenshot. Nine structure names transcribed from the screenshot; marker overlays use the original model photograph. Anatomical names were cross-checked against the university-hosted labyrinth key and the SOMSO anatomy model book (page 81).",
+  "sourceImageFile": "inner-ear-original.jpg",
+  "models": [
+    {
+      "id": "inner-ear-01",
+      "name": "Anterior semicircular canal",
+      "questions": [
+        {
+          "id": "lab-inner-ear-01",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Anterior semicircular canal",
+            "Lateral semicircular canal",
+            "Utricle",
+            "Vestibule"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "anterior semicircular canal",
+            "superior semicircular canal",
+            "anterior canal",
+            "superior canal"
+          ],
+          "explanation": "The superior (anterior) bony semicircular canal forms the tall front loop; the exposed duct inside it is a separate membranous structure.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "inner-ear/ie-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tail": [
+          835,
+          70
+        ],
+        "tip": [
+          702,
+          87
+        ],
+        "shaftWidth": 4,
+        "headWidth": 18,
+        "headLength": 19,
+        "outlineWidth": 2,
+        "overlayPolygon": [
+          [
+            702,
+            87
+          ],
+          [
+            720,
+            74
+          ],
+          [
+            721,
+            80
+          ],
+          [
+            834,
+            66
+          ],
+          [
+            836,
+            74
+          ],
+          [
+            722,
+            88
+          ],
+          [
+            723,
+            95
+          ]
+        ]
+      },
+      "imageSha256": "9bd355cca9f87316ebf2e2cc9971b6c326070545257789b58fbf787f6ece090d"
+    },
+    {
+      "id": "inner-ear-02",
+      "name": "Lateral semicircular canal",
+      "questions": [
+        {
+          "id": "lab-inner-ear-02",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Lateral semicircular canal",
+            "Posterior semicircular canal",
+            "Saccule",
+            "Cochlea"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "lateral semicircular canal",
+            "horizontal semicircular canal",
+            "lateral canal",
+            "horizontal canal"
+          ],
+          "explanation": "The lateral (horizontal) semicircular canal forms the low horizontal loop.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "inner-ear/ie-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tail": [
+          974,
+          493
+        ],
+        "tip": [
+          889,
+          432
+        ],
+        "shaftWidth": 4,
+        "headWidth": 18,
+        "headLength": 19,
+        "outlineWidth": 2,
+        "overlayPolygon": [
+          [
+            889,
+            432
+          ],
+          [
+            912,
+            435
+          ],
+          [
+            908,
+            440
+          ],
+          [
+            976,
+            490
+          ],
+          [
+            972,
+            496
+          ],
+          [
+            903,
+            447
+          ],
+          [
+            899,
+            453
+          ]
+        ]
+      },
+      "imageSha256": "8013edfd732f9df769d436578c7dca33b6f4011695baadf145c161df94781bbd"
+    },
+    {
+      "id": "inner-ear-03",
+      "name": "Posterior semicircular canal",
+      "questions": [
+        {
+          "id": "lab-inner-ear-03",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Posterior semicircular canal",
+            "Utricle",
+            "Vestibule",
+            "Ampulla"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "posterior semicircular canal",
+            "posterior canal"
+          ],
+          "explanation": "The posterior semicircular canal is the rear vertical bony loop.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "inner-ear/ie-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tail": [
+          973,
+          231
+        ],
+        "tip": [
+          855,
+          258
+        ],
+        "shaftWidth": 4,
+        "headWidth": 18,
+        "headLength": 19,
+        "outlineWidth": 2,
+        "overlayPolygon": [
+          [
+            855,
+            258
+          ],
+          [
+            872,
+            243
+          ],
+          [
+            874,
+            250
+          ],
+          [
+            972,
+            227
+          ],
+          [
+            974,
+            235
+          ],
+          [
+            875,
+            257
+          ],
+          [
+            877,
+            264
+          ]
+        ]
+      },
+      "imageSha256": "6cc3c6b9596d2c5b2859860bd0215b1e6a35892a496532719fb23c51ca99275f"
+    },
+    {
+      "id": "inner-ear-04",
+      "name": "Utricle",
+      "questions": [
+        {
+          "id": "lab-inner-ear-04",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Utricle",
+            "Saccule",
+            "Cochlea",
+            "Vestibular nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "utricle",
+            "utriculus"
+          ],
+          "explanation": "The utricle is the larger exposed membranous sac, marked 8 on this model.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "inner-ear/ie-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tail": [
+          462,
+          256
+        ],
+        "tip": [
+          619,
+          383
+        ],
+        "shaftWidth": 4,
+        "headWidth": 18,
+        "headLength": 19,
+        "outlineWidth": 2,
+        "overlayPolygon": [
+          [
+            619,
+            383
+          ],
+          [
+            597,
+            379
+          ],
+          [
+            601,
+            374
+          ],
+          [
+            459,
+            259
+          ],
+          [
+            465,
+            253
+          ],
+          [
+            606,
+            367
+          ],
+          [
+            610,
+            362
+          ]
+        ]
+      },
+      "imageSha256": "3132c5121dae9fe517480c1380cb97e606aec3e7f59d3269fb632b78dea4989d"
+    },
+    {
+      "id": "inner-ear-05",
+      "name": "Saccule",
+      "questions": [
+        {
+          "id": "lab-inner-ear-05",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Saccule",
+            "Vestibule",
+            "Ampulla",
+            "Anterior semicircular canal"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "saccule",
+            "sacculus"
+          ],
+          "explanation": "The saccule is the smaller exposed sac anterior to the utricle, marked 9 on this model.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "inner-ear/ie-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tail": [
+          419,
+          470
+        ],
+        "tip": [
+          549,
+          409
+        ],
+        "shaftWidth": 4,
+        "headWidth": 18,
+        "headLength": 19,
+        "outlineWidth": 2,
+        "overlayPolygon": [
+          [
+            549,
+            409
+          ],
+          [
+            536,
+            427
+          ],
+          [
+            533,
+            421
+          ],
+          [
+            421,
+            474
+          ],
+          [
+            417,
+            466
+          ],
+          [
+            529,
+            414
+          ],
+          [
+            526,
+            408
+          ]
+        ]
+      },
+      "imageSha256": "48f720d3e201e605346c3af79044239c9c644f31d4a3734390ef1c3e56648695"
+    },
+    {
+      "id": "inner-ear-06",
+      "name": "Vestibule",
+      "questions": [
+        {
+          "id": "lab-inner-ear-06",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Vestibule",
+            "Cochlea",
+            "Vestibular nerve",
+            "Lateral semicircular canal"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "vestibule",
+            "vestibule of the inner ear",
+            "vestibule of inner ear"
+          ],
+          "explanation": "The vestibule is the central bony chamber between the cochlea and semicircular canals; it contains the utricle and saccule.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "inner-ear/ie-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tail": [
+          671,
+          576
+        ],
+        "tip": [
+          628,
+          467
+        ],
+        "shaftWidth": 4,
+        "headWidth": 18,
+        "headLength": 19,
+        "outlineWidth": 2,
+        "overlayPolygon": [
+          [
+            628,
+            467
+          ],
+          [
+            646,
+            482
+          ],
+          [
+            639,
+            484
+          ],
+          [
+            675,
+            575
+          ],
+          [
+            667,
+            577
+          ],
+          [
+            632,
+            487
+          ],
+          [
+            625,
+            490
+          ]
+        ]
+      },
+      "imageSha256": "3f59350f6b3382946970994c92f0d831335fc776ac046da7a2012b9aa75d7451"
+    },
+    {
+      "id": "inner-ear-07",
+      "name": "Cochlea",
+      "questions": [
+        {
+          "id": "lab-inner-ear-07",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cochlea",
+            "Ampulla",
+            "Anterior semicircular canal",
+            "Posterior semicircular canal"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "cochlea"
+          ],
+          "explanation": "The cochlea is the spiral, snail-shaped part of the inner ear.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "inner-ear/ie-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tail": [
+          78,
+          255
+        ],
+        "tip": [
+          277,
+          379
+        ],
+        "shaftWidth": 4,
+        "headWidth": 18,
+        "headLength": 19,
+        "outlineWidth": 2,
+        "overlayPolygon": [
+          [
+            277,
+            379
+          ],
+          [
+            254,
+            378
+          ],
+          [
+            258,
+            372
+          ],
+          [
+            76,
+            258
+          ],
+          [
+            80,
+            252
+          ],
+          [
+            262,
+            365
+          ],
+          [
+            266,
+            359
+          ]
+        ]
+      },
+      "imageSha256": "fc93b069501fc8a0fc1301a29793ccf118b52928093c2c7aa594f5d3538bb9ea"
+    },
+    {
+      "id": "inner-ear-08",
+      "name": "Ampulla",
+      "questions": [
+        {
+          "id": "lab-inner-ear-08",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Ampulla",
+            "Vestibular nerve",
+            "Lateral semicircular canal",
+            "Utricle"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "ampulla",
+            "semicircular canal ampulla",
+            "ampulla of semicircular canal"
+          ],
+          "explanation": "An ampulla is an expanded end of a semicircular canal or duct; this marker indicates the swelling at the base of the anterior loop.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "inner-ear/ie-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tail": [
+          856,
+          539
+        ],
+        "tip": [
+          712,
+          384
+        ],
+        "shaftWidth": 4,
+        "headWidth": 18,
+        "headLength": 19,
+        "outlineWidth": 2,
+        "overlayPolygon": [
+          [
+            712,
+            384
+          ],
+          [
+            734,
+            391
+          ],
+          [
+            729,
+            396
+          ],
+          [
+            859,
+            536
+          ],
+          [
+            853,
+            542
+          ],
+          [
+            723,
+            401
+          ],
+          [
+            718,
+            406
+          ]
+        ]
+      },
+      "imageSha256": "c16989af7407566bf427c99883e183834d8500d0882af870ec3c6ed0d44e9302"
+    },
+    {
+      "id": "inner-ear-09",
+      "name": "Vestibular nerve",
+      "questions": [
+        {
+          "id": "lab-inner-ear-09",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Vestibular nerve",
+            "Anterior semicircular canal",
+            "Posterior semicircular canal",
+            "Saccule"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "vestibular nerve",
+            "vestibular branch of the vestibulocochlear nerve",
+            "vestibular division of the vestibulocochlear nerve"
+          ],
+          "explanation": "The yellow projection represents the vestibular branch, which carries balance information and is distinct from the cochlear branch.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "inner-ear/ie-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tail": [
+          425,
+          261
+        ],
+        "tip": [
+          541,
+          365
+        ],
+        "shaftWidth": 4,
+        "headWidth": 18,
+        "headLength": 19,
+        "outlineWidth": 2,
+        "overlayPolygon": [
+          [
+            541,
+            365
+          ],
+          [
+            519,
+            360
+          ],
+          [
+            523,
+            355
+          ],
+          [
+            422,
+            264
+          ],
+          [
+            428,
+            258
+          ],
+          [
+            529,
+            349
+          ],
+          [
+            533,
+            343
+          ]
+        ]
+      },
+      "imageSha256": "ab456969885f82c9725f3bb5cc943dfe412bd391a81312f6e6fc649b44b12317"
+    }
+  ],
+  "referenceUrls": [
+    "https://bpb-us-w2.wpmucdn.com/sites.broward.edu/dist/6/45/files/2021/06/The_Labyrinth_modified.pdf",
+    "https://www.doctorswriting.com/uploads/5/3/7/3/53737883/somso_anatomy_model_book.pdf"
+  ],
+  "sourceImageSha256": "e8a1cd049e0e3eb7ad43352aa30980d5ac261c67146d70796a33555149d3b693"
+}
