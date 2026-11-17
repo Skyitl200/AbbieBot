@@ -32,7 +32,7 @@ Discord does not notify bots when someone clicks an ordinary URL, a normal link 
 | A+ Scholar | 40 |
 | Master | 60 |
 | Grandmaster | 80 |
-| Study Dynamo | 140 |
+| Study Sage | 140 |
 | Mythic Mind | 200 |
 
 Tiers are shown in the stats card; the feature does not create or assign Discord roles. Month boundaries use America/New_York, including daylight-saving changes. Monthly views reset automatically at the next calendar month while past months and all-time totals remain saved.
