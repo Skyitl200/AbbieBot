@@ -2,6 +2,8 @@
 
 Use `/studytime` to open the monthly server leaderboard. The buttons switch between this month, all time, and personal statistics. `/studytime view:stats` shows the member's tier, next tier, leaderboard rank, tier rank, time until promotion, and source breakdown. Use `member` to inspect another member or `period:all` for all-time statistics. Rankings show ten people per page.
 
+`/stats me` opens a compact monthly level card showing the current level, the previous calendar month’s level, level rank out of 11, and hours remaining until promotion (rounded up to one decimal). Missing previous-month history is labeled honestly. `/stats bot` retains bot system statistics.
+
 Tracking starts when this feature is deployed. It does not invent historical study time. Each server has independent records.
 
 ## Credit rules

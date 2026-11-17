@@ -1,3 +1,4 @@
+import { openMonthlyLevel } from '../../services/studyTime/interface.js';
 import { SlashCommandBuilder, version, MessageFlags } from 'discord.js';
 import { createEmbed } from '../../utils/embeds.js';
 import { logger } from '../../utils/logger.js';
@@ -6,9 +7,12 @@ import { InteractionHelper } from '../../utils/interactionHelper.js';
 export default {
     data: new SlashCommandBuilder()
     .setName("stats")
-    .setDescription("View bot statistics"),
+    .setDescription("View your study level or bot statistics")
+    .addSubcommand(command => command.setName("me").setDescription("Your current and last monthly study level and promotion progress"))
+    .addSubcommand(command => command.setName("bot").setDescription("View bot system statistics")),
 
   async execute(interaction) {
+    if (interaction.options?.getSubcommand?.() === "me") return openMonthlyLevel(interaction);
     try {
       await InteractionHelper.safeDefer(interaction);
       

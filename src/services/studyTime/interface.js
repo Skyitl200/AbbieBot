@@ -1,6 +1,6 @@
 import { randomBytes } from 'node:crypto';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, MessageFlags, PermissionFlagsBits, escapeMarkdown } from 'discord.js';
-import { totalsFor, sumTotals, duration, tierFor, ZONE } from './model.js';
+import { totalsFor, sumTotals, duration, tierFor, monthKey, ZONE } from './model.js';
 import { recordsForGuild, putResource, getResource, creditActivity } from './store.js';
 import { logger } from '../../utils/logger.js';
 const row = (...buttons) => new ActionRowBuilder().addComponents(buttons);
@@ -45,6 +45,42 @@ export function studyTimeMessage(rows, owner, { period = 'month', view = 'leader
         button('Next', `studytime:${owner}:leaderboard:${period}:${page + 1}`).setDisabled(page + 1 >= pages),
     ));
     return { embeds: [embed], components: nav, allowedMentions: { parse: [] } };
+}
+export function monthlyLevelMessage(record, userId, at = Date.now()) {
+    const currentMonth = monthKey(at);
+    const [year, month] = currentMonth.split('-').map(Number);
+    const previousMonth = `${month === 1 ? year - 1 : year}-${String(month === 1 ? 12 : month - 1).padStart(2, '0')}`;
+    const ms = sumTotals(totalsFor(record, 'month', at));
+    const tier = tierFor(ms);
+    const previous = record?.months?.[previousMonth];
+    const lastLevel = previous ? tierLabel(tierFor(sumTotals(previous)).current) : 'No study time recorded last month';
+    const remaining = tier.next ? Math.ceil(Math.max(0, tier.next.ms - ms) / 360000) / 10 : null;
+    const embed = new EmbedBuilder({
+        title: `☕ Monthly Level Statistics (${periodLabel('month', at)})`,
+        fields: [
+            { name: 'Current monthly level', value: tierLabel(tier.current) },
+            { name: 'Last monthly level', value: lastLevel },
+            { name: 'Level rank', value: `👑 ${tier.rank}/${tier.count}` },
+            { name: 'Level promotion in', value: tier.next ? `${remaining.toFixed(1)} hours until ${tier.next.name}` : 'Highest level reached — Mythic Mind!' },
+        ],
+    }).setColor(0x8b5cf6).setDescription(`<@${userId}>`).setTimestamp(at)
+        .setFooter({ text: 'Monthly levels reset on the first of each month · Eastern time' });
+    return { embeds: [embed], allowedMentions: { parse: [] } };
+}
+export async function openMonthlyLevel(interaction) {
+    await interaction.deferReply();
+    try {
+        if (!interaction.guildId) throw new Error('Use /stats me inside a server.');
+        const rows = await recordsForGuild(interaction.client, interaction.guildId);
+        const record = rows.find(row => row.userId === interaction.user.id)?.record;
+        const message = monthlyLevelMessage(record, interaction.user.id);
+        const avatar = interaction.user.displayAvatarURL?.();
+        message.embeds[0].setAuthor({ name: interaction.user.globalName || interaction.user.username || 'Your study level', ...(avatar ? { iconURL: avatar } : {}) });
+        await interaction.editReply(message);
+    } catch (error) {
+        logger.warn(`Monthly level command: ${error.message}`);
+        await interaction.editReply({ content: error.message, allowedMentions: { parse: [] } });
+    }
 }
 export async function createStudyResourceMessage(client, guildId, title, rawUrl) {
     const url = new URL(rawUrl);

@@ -4,7 +4,7 @@ import { EventEmitter } from 'node:events';
 import { newRecord, addCredit, addVoiceInterval, checkpointVoice, totalsFor, sumTotals, monthKey, tierFor } from '../src/services/studyTime/model.js';
 import { creditActivity, recordsForGuild, saveVoice, profileKey } from '../src/services/studyTime/store.js';
 import { eligibleVoice, trackVoiceState, startStudyTime, creditTestQuestion } from '../src/services/studyTime/tracking.js';
-import { rankRecords, studyTimeMessage, createStudyResourceMessage, handleStudyTime } from '../src/services/studyTime/interface.js';
+import { rankRecords, studyTimeMessage, monthlyLevelMessage, openMonthlyLevel, createStudyResourceMessage, handleStudyTime } from '../src/services/studyTime/interface.js';
 import { withProfile } from '../src/services/microbemon/store.js';
 import { newProfile } from '../src/services/microbemon/engine.js';
 
@@ -193,4 +193,45 @@ test('disconnected gateways pause voice checkpoints instead of trusting stale vo
         await trackVoiceState(voice('g', 'u', null), voice('g', 'u', 'a'), d.client, now);
         assert.equal(d.read(profileKey('g', 'u')), undefined);
     } finally { d.client.emit('invalidated'); }
+});
+
+
+test('monthly level card uses previous calendar month, tier rank and hours to promotion', () => {
+    const record = newRecord();
+    addCredit(record, 'voice', 65.75 * 3600000, now);
+    addCredit(record, 'test', 145 * 3600000, Date.parse('2026-10-15T12:00:00Z'));
+    const data = monthlyLevelMessage(record, 'u', now).embeds[0].toJSON();
+    assert.equal(data.title, '☕ Monthly Level Statistics (November 2026)');
+    assert.deepEqual(data.fields.map(f => f.name), ['Current monthly level', 'Last monthly level', 'Level rank', 'Level promotion in']);
+    assert.equal(data.fields[0].value, 'Master (60–80h)');
+    assert.equal(data.fields[1].value, 'Study Sage (140–200h)');
+    assert.equal(data.fields[2].value, '👑 8/11');
+    assert.equal(data.fields[3].value, '14.3 hours until Grandmaster');
+});
+test('monthly history handles January rollover, missing history and highest level', () => {
+    const at = Date.parse('2027-01-01T05:00:00Z'), record = newRecord();
+    addCredit(record, 'voice', 200 * 3600000, at);
+    addCredit(record, 'voice', 20 * 3600000, Date.parse('2026-12-31T23:00:00Z'));
+    const fields = monthlyLevelMessage(record, 'u', at).embeds[0].data.fields;
+    assert.equal(fields[1].value, 'Exam Expert (20–40h)');
+    assert.match(fields[3].value, /Highest level reached/);
+    const empty = monthlyLevelMessage(undefined, 'u', at).embeds[0].data.fields;
+    assert.match(empty[1].value, /No study time recorded last month/);
+    assert.equal(empty[3].value, '1.0 hours until Budding Bookworm');
+});
+test('/stats exposes me and bot, and me rejects direct messages before loading storage', async () => {
+    const command = (await import('../src/commands/Core/stats.js')).default;
+    assert.deepEqual(command.data.toJSON().options.map(o => o.name), ['me', 'bot']);
+    let response;
+    await command.execute({ options: { getSubcommand: () => 'me' }, deferReply: async () => {}, editReply: async value => { response = value; } });
+    assert.match(response.content, /inside a server/);
+});
+test('/stats me loads the invoking member from persistent server records', async () => {
+    const { client } = database();
+    await creditActivity(client, 'g', 'u', 'test', 'stats-question', now);
+    let response;
+    await openMonthlyLevel({ client, guildId: 'g', user: { id: 'u', username: 'Student' }, deferReply: async () => {}, editReply: async value => { response = value; } });
+    assert.equal(response.embeds[0].data.author.name, 'Student');
+    assert.equal(response.embeds[0].data.description, '<@u>');
+    assert.equal(response.embeds[0].data.fields.length, 4);
 });
