@@ -63,7 +63,7 @@ export function monthlyLevelMessage(record, userId, at = Date.now()) {
             { name: 'Level rank', value: `👑 ${tier.rank}/${tier.count}` },
             { name: 'Level promotion in', value: tier.next ? `${remaining.toFixed(1)} hours until ${tier.next.name}` : 'Highest level reached — Mythic Mind!' },
         ],
-    }).setColor(0x8b5cf6).setDescription(`<@${userId}>`).setTimestamp(at)
+    }).setDescription(`<@${userId}>`).setTimestamp(at)
         .setFooter({ text: 'Monthly levels reset on the first of each month · Eastern time' });
     return { embeds: [embed], allowedMentions: { parse: [] } };
 }
