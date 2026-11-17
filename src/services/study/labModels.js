@@ -34,6 +34,7 @@ export const LAB_SETS = [
     { id: 'kidney', title: 'Kidney 3D Model', category: 'urinary', models: loadModels('kidney.json') },
     { id: 'bronchial-tree', title: 'Bronchial Tree 3D Model', category: 'respiratory', models: loadModels('bronchial-tree.json') },
     { id: 'spinal-nerves', title: '3D Spinal Nerves and Plexuses', category: 'nervous', showStructureList: true, models: loadModels('spinal-nerves.json') },
+    { id: 'inner-ear', title: '3D Structure of the Inner Ear', category: 'nervous', showStructureList: true, models: loadModels('inner-ear.json') },
 ];
 export const LAB_CATEGORIES = [
     { id: 'reproductive', title: 'Reproductive System', chapter: 26 },
