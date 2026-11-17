@@ -257,93 +257,197 @@ export async function handleStudyInteraction(interaction, client, args) {
             await interaction.deferReply({ flags: MessageFlags.Ephemeral });
             const disabled = await setQuestionEnabled(client, interaction.guildId, ownerId, { ...question, classId: session.classId }, choice === 'on');
             session.disabledQuestions = disabled;
-            await editStudyRepl…3355 tokens truncated…ormat('en-US', { month: 'long', year: 'numeric', timeZone: ZONE }).format(at);
-export function rankRecords(rows, period, at) {
-    return rows.map(({ userId, record }) => { const totals = totalsFor(record, period, at); return { userId, totals, ms: sumTotals(totals) }; })
-        .filter(entry => entry.ms > 0).sort((a, b) => b.ms - a.ms || a.userId.localeCompare(b.userId));
-}
-export function studyTimeMessage(rows, owner, { period = 'month', view = 'leaderboard', member = owner, page = 0, at = Date.now() } = {}) {
-    const ranked = rankRecords(rows, period, at);
-    const index = ranked.findIndex(entry => entry.userId === member);
-    const entry = ranked[index] || { totals: totalsFor(null, period, at), ms: 0 };
-    const embed = new EmbedBuilder().setColor(0x8b5cf6).setTimestamp(at);
-    const pages = Math.max(1, Math.ceil(ranked.length / 10));
-    page = Math.max(0, Math.min(Number(page) || 0, pages - 1));
-    if (view === 'stats') {
-        const tier = tierFor(entry.ms);
-        embed.setTitle(`☕ Study Statistics (${periodLabel(period, at)})`).setDescription(`<@${member}>`)
-            .addFields(
-                { name: 'Current study tier', value: `${tier.current.name} · ${duration(entry.ms)}`, inline: true },
-                { name: 'Next tier', value: tier.next ? `${tier.next.name} · ${duration(tier.next.ms)}` : 'Highest tier reached', inline: true },
-                { name: 'Study rank', value: index >= 0 ? `#${index + 1} / ${ranked.length}` : 'Not ranked yet', inline: true },
-                { name: 'Tier rank', value: `${tier.rank} / ${tier.count}`, inline: true },
-                { name: 'Promotion in', value: tier.next ? duration(Math.max(0, tier.next.ms - entry.ms)) : 'You reached Mythic!', inline: true },
-                { name: 'Study-time breakdown', value: `🎙️ Voice: **${duration(entry.totals.voice)}**\n🪱 Microbemon: **${duration(entry.totals.microbemon)}**\n📝 Test questions: **${duration(entry.totals.test)}**\n🎬 Resources: **${duration(entry.totals.links)}**` },
-            );
-    } else {
-        const lines = ranked.slice(page * 10, (page + 1) * 10).map((e, i) => {
-            const rank = page * 10 + i + 1;
-            return `${rank <= 3 ? ['🥇', '🥈', '🥉'][rank - 1] : `**${rank}.**`} **${duration(e.ms)}** · <@${e.userId}>`;
-        });
-        embed.setTitle(`🏆 Study Leaderboard (${periodLabel(period, at)})`)
-            .setDescription(lines.join('\n') || 'No study time recorded yet. Join a voice channel, play Microbemon, or answer a /test question to get started.')
-            .addFields({ name: member === owner ? 'Your standing' : 'Selected member', value: index >= 0 ? `#${index + 1} · ${duration(entry.ms)}` : 'Not ranked yet' });
-    }
-    embed.setFooter({ text: `Estimated study credit · Voice + 30s/game action or answered question + 20s/resource · Monthly reset: Eastern time · Page ${page + 1}/${pages}` });
-    const nav = [row(button('This month', `studytime:${owner}:leaderboard:month:0`), button('All time', `studytime:${owner}:leaderboard:all:0`), button('My stats', `studytime:${owner}:stats:${period}:0`, ButtonStyle.Primary))];
-    if (view === 'leaderboard' && pages > 1) nav.push(row(
-        button('Previous', `studytime:${owner}:leaderboard:${period}:${page - 1}`).setDisabled(page === 0),
-        button('Next', `studytime:${owner}:leaderboard:${period}:${page + 1}`).setDisabled(page + 1 >= pages),
-    ));
-    return { embeds: [embed], components: nav, allowedMentions: { parse: [] } };
-}
-export async function createStudyResourceMessage(client, guildId, title, rawUrl) {
-    const url = new URL(rawUrl);
-    if (url.protocol !== 'https:' || url.username || url.password) throw new Error('Use a valid HTTPS resource link.');
-    title = String(title).trim();
-    if (!title || title.length > 180 || url.href.length > 500) throw new Error('Use a title up to 180 characters and a link up to 500 characters.');
-    const id = randomBytes(12).toString('hex');
-    await putResource(client, guildId, id, { title, url: url.href });
-    return { embeds: [new EmbedBuilder().setColor(0x8b5cf6).setTitle('🎬 Study Resource').setDescription(`${escapeMarkdown(title)}\n\nOpen this resource to add **20 seconds** of study credit, for each Open resource action.`)],
-        components: [row(button('Open resource · +20s', `studytime:resource:${id}`, ButtonStyle.Primary))], allowedMentions: { parse: [] } };
-}
-export async function openStudyTime(interaction) {
-    await interaction.deferReply();
-    try {
-        if (!interaction.guildId) throw new Error('Use study time inside a server.');
-        const view = interaction.options?.getString('view') || 'leaderboard';
-        const period = interaction.options?.getString('period') || 'month';
-        if (view === 'resource') {
-            if (!interaction.memberPermissions?.has(PermissionFlagsBits.ManageGuild)) throw new Error('Manage Server permission is required to publish a tracked resource.');
-            return await interaction.editReply(await createStudyResourceMessage(interaction.client, interaction.guildId,
-                interaction.options.getString('title') || '', interaction.options.getString('url') || ''));
+            await editStudyReply(interaction, preferenceList(ownerId, disabled, 0, choice === 'on'
+                ? 'This question is back on for future quizzes.'
+                : 'This question is turned off for future quizzes. Your current question and score are unchanged.'));
+            return;
         }
-        const member = interaction.options?.getUser('member')?.id || interaction.user.id;
-        const rows = await recordsForGuild(interaction.client, interaction.guildId);
-        await interaction.editReply(studyTimeMessage(rows, interaction.user.id, { view, period, member }));
-    } catch (error) { logger.warn(`Study time command: ${error.message}`); await interaction.editReply({ content: error.message, allowedMentions: { parse: [] } }); }
-}
-export async function handleStudyTime(interaction, client, args) {
-    try {
-        if (!interaction.guildId || interaction.user.bot) throw new Error('Use study time inside a server.');
-        if (args[0] === 'resource') {
-            if (!interaction.id) throw new Error('Please click the resource button again.');
+        if (action === 'classes') {
+            await interaction.deferUpdate();
+            await editStudyReply(interaction, classMessage(ownerId));
+            return;
+        }
+        if (action === 'class' || action === 'classpage') {
+            const classId = action === 'class' ? interaction.values[0] : token;
+            if (!CLASS_BY_ID.has(classId)) throw new Error('Unknown study class');
+            await interaction.deferUpdate();
+            if (classId === 'ap_lab' && action === 'class') {
+                await editStudyReply(interaction, labCategoryMessage(ownerId));
+            } else if (classId === 'ap_lecture') {
+                const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+                await editStudyReply(interaction, topicMessage(ownerId, enabledBanks(await loadQuestionBanks(), disabled)));
+            } else {
+                const categories = await loadClassCategories(client, classId);
+                await editStudyReply(interaction, classCategoriesMessage(ownerId, classId, categories, action === 'classpage' ? Number(index) : 0));
+            }
+            return;
+        }
+        if (action === 'labhome') {
+            await interaction.deferUpdate();
+            await editStudyReply(interaction, labCategoryMessage(ownerId));
+            return;
+        }
+        if (action === 'labcategory') {
+            const payload = labModelsMessage(ownerId, interaction.values?.[0] || token);
+            await interaction.deferUpdate();
+            await editStudyReply(interaction, payload);
+            return;
+        }
+        if (action === 'labmodels') {
+            const payload = labModeMessage(ownerId, (interaction.values || []).join(','));
+            await interaction.deferUpdate();
+            await editStudyReply(interaction, payload);
+            return;
+        }
+        if (action === 'labmode') {
+            const mode = interaction.values?.[0];
+            await interaction.deferUpdate();
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            const questions = enabledQuestions(labQuestions(token, mode), disabled);
+            if (!questions.length) {
+                await editStudyReply(interaction, countMessage(ownerId, 'Anatomy and Physiology Lab', 0, `study:configurelab:${ownerId}:${token}`));
+                return;
+            }
+            if (questions.some(question => !imageForQuestion(question))) return await privateError(interaction, 'This model set needs its image files before it can start. Please try again after the photos are installed.');
+            const set = labSetForSelection(token);
+            const category = LAB_CATEGORIES.find(category => category.id === set.category)?.title || 'Anatomy and Physiology Lab';
+            const session = createStudySession(interaction.guildId, ownerId, questions, `lab_${set.category}`);
+            session.classId = 'ap_lab';
+            session.disabledQuestions = disabled;
+            session.topicLabel = `Anatomy and Physiology Lab • ${category} • ${set.title} • ${mode === 'typed' ? 'Type in' : 'Multiple choice'}`;
+            await publishQuestion(interaction, session);
+            return;
+        }
+        if (action === 'category') {
+            await interaction.deferUpdate();
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            const categories = await loadClassCategories(client, token);
+            const selected = interaction.values[0];
+            const category = categories.find(item => item.token === selected);
+            if (selected !== 'random' && !category) throw new Error('Unknown class category');
+            const enabledCategories = await loadClassCategories(client, token, { excludedIds: Object.keys(disabled) });
+            const available = selected === 'random' ? enabledCategories.reduce((sum,item) => sum + item.count,0) : enabledCategories.find(item => item.token === selected)?.count || 0;
+            const course = CLASS_BY_ID.get(token);
+            await editStudyReply(interaction, countMessage(ownerId, `${course.label} • ${category?.label || 'Random'}`, available, `study:coursecount:${ownerId}:${token}:${selected}`));
+            return;
+        }
+        if (action === 'coursecount') {
+            await interaction.deferUpdate();
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            const categories = await loadClassCategories(client, token, { excludedIds: Object.keys(disabled) });
+            const questions = await loadClassQuestions(client, token, index, Number(interaction.values[0]), { excludedIds: Object.keys(disabled) });
+            const course = CLASS_BY_ID.get(token);
+            const session = createStudySession(interaction.guildId, ownerId, questions, `class_${token}`);
+            session.classId = token;
+            session.disabledQuestions = disabled;
+            session.topicLabel = `${course.label} • ${categories.find(item => item.token === index)?.label || 'Random'}`;
+            await publishQuestion(interaction, session);
+            return;
+        }
+        if (action === 'topic') {
+            const topicId = interaction.values[0];
+            if (topicId !== 'random' && !TOPIC_BY_ID.has(topicId)) throw new Error('Unknown study topic');
+            await interaction.deferUpdate();
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            const banks = enabledBanks(await loadQuestionBanks(), disabled);
+            const available = topicId === 'random' ? [...banks.values()].flat().length : banks.get(topicId).length;
+
+            await editStudyReply(interaction, countMessage(ownerId, TOPIC_BY_ID.get(topicId)?.label || 'Random A&P', available, `study:count:${ownerId}:${topicId}`));
+            return;
+        }
+        if (action === 'count') {
+            await interaction.deferUpdate();
+            const disabled = await preferencesFor(client, interaction.guildId, ownerId);
+            const banks = enabledBanks(await loadQuestionBanks(), disabled);
+            const questions = selectQuestions(banks, token, Number(interaction.values[0]));
+            const session = createStudySession(interaction.guildId, ownerId, questions, token);
+            session.classId = 'ap_lecture';
+            session.disabledQuestions = disabled;
+            await publishQuestion(interaction, session);
+            return;
+        }
+        if (action === 'report_submit') return await submitQuestionReport(interaction, client, token);
+        const session = getStudySession(interaction.guildId, ownerId, token);
+        if (action === 'report') {
+            if (!session) throw new Error('This study session has expired. Start /test again.');
+            if (!session.answeredQuestions.has(Number(index))) checkStudyAction(session, index, revision);
+            return await interaction.showModal(questionReportModal(session, Number(index), interaction));
+        }
+        checkStudyAction(session, index, revision);
+        const q = session.questions[session.index];
+        if (action === 'image') {
+            if (!imageForQuestion(q)) throw new Error('This question has no lecture figure.');
             await interaction.deferReply({ flags: MessageFlags.Ephemeral });
-            const resource = await getResource(client, interaction.guildId, args[1]);
-            if (!resource) throw new Error('This resource is no longer available.');
-            const awarded = await creditActivity(client, interaction.guildId, interaction.user.id, 'links', `${args[1]}:${interaction.id}`);
-            return await interaction.editReply({ content: `${awarded ? 'Added **20 seconds** of study credit.' : 'This click has already been recorded.'}\n**${escapeMarkdown(resource.title)}**`,
-                components: [row(new ButtonBuilder().setStyle(ButtonStyle.Link).setLabel('Visit resource').setURL(resource.url))], allowedMentions: { parse: [] } });
+            await editStudyReply(interaction, lecturePreview(q));
+            return;
         }
-        const [owner, view, period, page] = args;
-        if (owner !== interaction.user.id) return await interaction.reply({ content: 'Open your own leaderboard with /studytime.', flags: MessageFlags.Ephemeral });
-        if (!['stats', 'leaderboard'].includes(view) || !['month', 'all'].includes(period)) throw new Error('Open a fresh /studytime card.');
+        if (action !== 'next' && action !== 'reward' && session.answered) throw new Error('This question has already been answered.');
+        if (action === 'blank') {
+            if (q.type !== 'fill_blank') throw new Error('This question does not accept a typed answer');
+            const modal = new ModalBuilder().setCustomId(actionId(session, 'typed')).setTitle('Fill in the blank')
+                .addComponents(row(new TextInputBuilder().setCustomId('answer').setLabel('Your answer')
+                    .setStyle(TextInputStyle.Short).setRequired(true).setMaxLength(300)));
+            await interaction.showModal(modal);
+            return;
+        }
+        // Mutate synchronously before the first await: repeated deliveries cannot score or advance twice.
+        let payload;
+        if (action === 'reward') {
+            if (!session.answered || !session.lastCorrect || session.reward?.status !== 'failed') throw new Error('This reward is already saved or being processed.');
+            const pending = Promise.all([settleStudyReward(session, client), creditTestQuestion(session, client)]);
+            await interaction.deferUpdate();
+            await pending;
+            await showResult(interaction, session, true);
+            return;
+        } else if (action === 'skip') {
+            const previousPublicId = session.publicQuestionId;
+            skipStudyQuestion(session);
+            const finished = session.index + 1 === session.questions.length;
+            if (!finished) nextStudyQuestion(session);
+            if (previousPublicId) await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+            else await interaction.deferUpdate();
+            if (previousPublicId) await interaction.webhook.editMessage(previousPublicId, { components: [] });
+            if (!finished) {
+                await publishQuestion(interaction, session);
+            } else {
+                const summary = { content: '', embeds: [new EmbedBuilder().setTitle('🏆 Test Complete')
+                    .setDescription(`Correct: **${session.score}**\nIncorrect: **${session.questions.length - session.score - session.skipped}**\nSkipped: **${session.skipped}**\n${COIN_EMOJI} Total Merit Coins Earned: **${session.moneyEarned} Merit Coins**`)],
+                    components: [row(button(`study:classes:${ownerId}`, '📚 Choose another class', ButtonStyle.Secondary))], attachments: [], files: [] };
+                await editStudyReply(interaction, summary);
+            }
+            return;
+        } else if (action === 'next') {
+            nextStudyQuestion(session);
+            await interaction.deferUpdate();
+            await publishQuestion(interaction, session);
+            return;
+        } else if (action === 'order' && q.type === 'ordering') {
+            chooseOrderItem(session, Number(interaction.values[0]));
+            payload = questionMessage(session);
+        } else if (action === 'undo' && q.type === 'ordering') {
+            undoOrderItem(session);
+            payload = questionMessage(session);
+        } else {
+            let answer;
+            if (action === 'choice' && q.type === 'multiple_choice' && session.displayOrder.includes(Number(choice))) answer = [Number(choice)];
+            else if (action === 'typed' && q.type === 'fill_blank') answer = interaction.fields.getTextInputValue('answer');
+            else if (action === 'ordered' && q.type === 'ordering' && session.order.length === q.options.length) answer = [...session.order];
+            else throw new Error('Invalid answer action');
+            const correct = submitStudyAnswer(session, answer);
+            const pending = Promise.all([settleStudyReward(session, client), creditTestQuestion(session, client)]);
+            await interaction.deferUpdate();
+            await pending;
+            await showResult(interaction, session, correct);
+            return;
+        }
         await interaction.deferUpdate();
-        const rows = await recordsForGuild(client, interaction.guildId);
-        await interaction.editReply(studyTimeMessage(rows, owner, { view, period, page }));
+        if (session.publicQuestionId) await interaction.webhook.editMessage(session.publicQuestionId, { attachments: [], files: [], ...payload });
+        else await editStudyReply(interaction, payload);
     } catch (error) {
-        logger.warn(`Study time interaction: ${error.message}`);
-        if (interaction.deferred || interaction.replied) await interaction.followUp({ content: error.message, flags: MessageFlags.Ephemeral, allowedMentions: { parse: [] } });
-        else await interaction.reply({ content: error.message, flags: MessageFlags.Ephemeral, allowedMentions: { parse: [] } });
+        // Log the detailed failure; malformed banks should never be presented as student answers.
+        const { logger } = await import('../../utils/logger.js');
+        logger.warn('Study interaction failed', { message: error.message });
+        await privateError(interaction, error.message.startsWith('This ') || error.message.startsWith('Answer ') || error.message.startsWith('Unknown ')
+            ? error.message : 'Unable to load this study question. Use /test to try again.');
     }
 }
