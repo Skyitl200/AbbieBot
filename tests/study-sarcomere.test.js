@@ -6,7 +6,7 @@ import { LAB_SETS, LAB_CATEGORIES, labCategoryMessage, labModelsMessage, labMode
 import { gradeQuestion } from '../src/services/study/questions.js';
 
 const data = JSON.parse(readFileSync(new URL('../study-data/lab-models/sarcomere.json', import.meta.url), 'utf8'));
-const roster = ['Z disc', 'Thick myofilament (containing myosin)', 'Thin myofilament (containing actin)', 'M line', 'I band (containing thin myofilament)', 'A band (containing thick myofilament)', 'H band (no overlap, just thick myofilament)', 'T tubule', 'Terminal cisternae', 'Triad'];
+const roster = ['Z disc', 'Thick myofilament (containing myosin)', 'Thin myofilament (containing actin)', 'M line', 'I band (containing thin myofilament)', 'A band (containing overlap of thick and thin myofilaments)', 'H band (no overlap, just thick myofilament)', 'T tubule', 'Terminal cisternae', 'Triad'];
 
 test('sarcomere adds the exact ten requested cards under Muscle', () => {
     assert.deepEqual(data.models.map(model => model.name), roster);

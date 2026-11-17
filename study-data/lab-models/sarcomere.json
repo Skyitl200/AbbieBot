@@ -267,7 +267,7 @@
           "difficulty": "easy",
           "options": [
             "I band (containing thin myofilament)",
-            "A band (containing thick myofilament)",
+            "A band (containing overlap of thick and thin myofilaments)",
             "H band (no overlap, just thick myofilament)",
             "M line"
           ],
@@ -313,7 +313,7 @@
     },
     {
       "id": "sarcomere-06",
-      "name": "A band (containing thick myofilament)",
+      "name": "A band (containing overlap of thick and thin myofilaments)",
       "questions": [
         {
           "id": "lab-sarcomere-06",
@@ -321,7 +321,7 @@
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "A band (containing thick myofilament)",
+            "A band (containing overlap of thick and thin myofilaments)",
             "I band (containing thin myofilament)",
             "H band (no overlap, just thick myofilament)",
             "Z disc"
@@ -331,7 +331,8 @@
           ],
           "typedAnswers": [
             "a band (containing thick myofilament)",
-            "a band"
+            "a band",
+            "a band (containing overlap of thick and thin myofilaments)"
           ],
           "explanation": "The A band spans the full length of the thick filaments, including regions of overlap with thin filaments.",
           "requiresModelImage": true
@@ -378,7 +379,7 @@
           "options": [
             "H band (no overlap, just thick myofilament)",
             "I band (containing thin myofilament)",
-            "A band (containing thick myofilament)",
+            "A band (containing overlap of thick and thin myofilaments)",
             "M line"
           ],
           "correct": [
