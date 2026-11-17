@@ -1,0 +1,1941 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Special Senses",
+  "modelGroup": "3D Model of Eye Anatomy",
+  "source": "User-provided two-part joined eye model photograph and requested vocabulary list. Each question uses only the relevant cropped model segment with a marker overlay. Repeated vocabulary items are retained as alternate views. Macula lutea and fovea centralis require labeled-location confirmation before their cards are enabled.",
+  "sourceImageFile": "eye-anatomy-original.jpg",
+  "models": [
+    {
+      "id": "eye-anatomy-01",
+      "name": "Lens",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-01",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Lens",
+            "Ciliary body",
+            "Cornea",
+            "Choroid"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "lens",
+            "crystalline lens"
+          ],
+          "explanation": "The lens focuses light onto the retina.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-01.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          232,
+          245
+        ],
+        "tip": [
+          120,
+          244
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              120,
+              244
+            ],
+            [
+              133,
+              238
+            ],
+            [
+              133,
+              242
+            ],
+            [
+              232,
+              243
+            ],
+            [
+              232,
+              247
+            ],
+            [
+              133,
+              246
+            ],
+            [
+              133,
+              251
+            ]
+          ],
+          [
+            [
+              121,
+              244
+            ],
+            [
+              133,
+              239
+            ],
+            [
+              133,
+              243
+            ],
+            [
+              231,
+              244
+            ],
+            [
+              231,
+              246
+            ],
+            [
+              133,
+              245
+            ],
+            [
+              133,
+              250
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "6f0ee55131ce76dee3fc7e615a8914571935b724b66c9379e06c59fe002903f0"
+    },
+    {
+      "id": "eye-anatomy-02",
+      "name": "Ciliary body",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-02",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Ciliary body",
+            "Ora serrata",
+            "Retina",
+            "Sclera"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "ciliary body"
+          ],
+          "explanation": "The ciliary body includes the muscle that changes lens shape and tissue that produces aqueous humor.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-02.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          240,
+          375
+        ],
+        "tip": [
+          147,
+          326
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              147,
+              326
+            ],
+            [
+              162,
+              326
+            ],
+            [
+              159,
+              330
+            ],
+            [
+              241,
+              373
+            ],
+            [
+              239,
+              377
+            ],
+            [
+              158,
+              334
+            ],
+            [
+              155,
+              338
+            ]
+          ],
+          [
+            [
+              148,
+              326
+            ],
+            [
+              161,
+              327
+            ],
+            [
+              159,
+              331
+            ],
+            [
+              240,
+              374
+            ],
+            [
+              239,
+              375
+            ],
+            [
+              158,
+              333
+            ],
+            [
+              156,
+              337
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "13a7bbdd2a91cf231b66cda842549afac1c2a3e481f9218cd1e5be9449cb4b28"
+    },
+    {
+      "id": "eye-anatomy-03",
+      "name": "Ora serrata",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-03",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Ora serrata",
+            "Cornea",
+            "Choroid",
+            "Optic nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "ora serrata"
+          ],
+          "explanation": "The ora serrata is the serrated anterior boundary of the photosensitive retina.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-03.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          242,
+          96
+        ],
+        "tip": [
+          172,
+          136
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              172,
+              136
+            ],
+            [
+              180,
+              124
+            ],
+            [
+              182,
+              128
+            ],
+            [
+              241,
+              94
+            ],
+            [
+              243,
+              98
+            ],
+            [
+              184,
+              131
+            ],
+            [
+              187,
+              135
+            ]
+          ],
+          [
+            [
+              173,
+              136
+            ],
+            [
+              181,
+              125
+            ],
+            [
+              183,
+              129
+            ],
+            [
+              241,
+              96
+            ],
+            [
+              242,
+              97
+            ],
+            [
+              184,
+              130
+            ],
+            [
+              186,
+              134
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "2ed403d36fff9cde972aefa4185498eaad85cd6c95ee621ae65f31ed9e46d7aa"
+    },
+    {
+      "id": "eye-anatomy-04",
+      "name": "Cornea",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-04",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cornea",
+            "Retina",
+            "Sclera",
+            "Optic disc (blind spot)"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "cornea"
+          ],
+          "explanation": "The cornea is the transparent anterior part of the fibrous outer coat of the eye.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-04.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          17,
+          358
+        ],
+        "tip": [
+          39,
+          252
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              39,
+              252
+            ],
+            [
+              43,
+              266
+            ],
+            [
+              38,
+              265
+            ],
+            [
+              19,
+              358
+            ],
+            [
+              15,
+              358
+            ],
+            [
+              34,
+              264
+            ],
+            [
+              30,
+              263
+            ]
+          ],
+          [
+            [
+              39,
+              253
+            ],
+            [
+              42,
+              266
+            ],
+            [
+              37,
+              265
+            ],
+            [
+              18,
+              357
+            ],
+            [
+              16,
+              357
+            ],
+            [
+              35,
+              265
+            ],
+            [
+              31,
+              264
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "06246fbee4a030363619bd3dac809016e9a76b1c9a7ef25e2ac46c8009c72b2c"
+    },
+    {
+      "id": "eye-anatomy-05",
+      "name": "Retina",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-05",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Retina",
+            "Choroid",
+            "Optic nerve",
+            "Central artery and vein of the retina"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "retina"
+          ],
+          "explanation": "The retina is the inner sensory layer containing photoreceptors.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-05.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          511,
+          135
+        ],
+        "tip": [
+          414,
+          166
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              414,
+              166
+            ],
+            [
+              424,
+              156
+            ],
+            [
+              426,
+              160
+            ],
+            [
+              510,
+              133
+            ],
+            [
+              512,
+              137
+            ],
+            [
+              427,
+              164
+            ],
+            [
+              428,
+              168
+            ]
+          ],
+          [
+            [
+              415,
+              166
+            ],
+            [
+              425,
+              157
+            ],
+            [
+              426,
+              161
+            ],
+            [
+              510,
+              134
+            ],
+            [
+              510,
+              136
+            ],
+            [
+              427,
+              163
+            ],
+            [
+              428,
+              167
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "e5c2ca9cafa82d397aebb667c15c3454b3a239779af1f1e94be892e0bf5ced71"
+    },
+    {
+      "id": "eye-anatomy-06",
+      "name": "Choroid",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-06",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Choroid",
+            "Sclera",
+            "Optic disc (blind spot)",
+            "Posterior cavity"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "choroid",
+            "choroid coat",
+            "choroidal layer"
+          ],
+          "explanation": "The choroid is the pigmented vascular layer between the retina and sclera.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-06.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          496,
+          80
+        ],
+        "tip": [
+          403,
+          135
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              403,
+              135
+            ],
+            [
+              411,
+              123
+            ],
+            [
+              413,
+              127
+            ],
+            [
+              495,
+              78
+            ],
+            [
+              497,
+              82
+            ],
+            [
+              415,
+              130
+            ],
+            [
+              417,
+              134
+            ]
+          ],
+          [
+            [
+              404,
+              134
+            ],
+            [
+              411,
+              124
+            ],
+            [
+              414,
+              128
+            ],
+            [
+              495,
+              80
+            ],
+            [
+              496,
+              81
+            ],
+            [
+              415,
+              129
+            ],
+            [
+              417,
+              133
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "0e81cf32d659b6bad5afc5b70a2b0c913b3baa5be68a4326bcce81e1f1184d55"
+    },
+    {
+      "id": "eye-anatomy-07",
+      "name": "Sclera",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-07",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Sclera",
+            "Optic nerve",
+            "Central artery and vein of the retina",
+            "Pupil"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "sclera",
+            "scleral coat"
+          ],
+          "explanation": "The sclera is the tough outer fibrous coat of the eye.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-07.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          425,
+          20
+        ],
+        "tip": [
+          377,
+          85
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              377,
+              85
+            ],
+            [
+              379,
+              71
+            ],
+            [
+              383,
+              73
+            ],
+            [
+              423,
+              19
+            ],
+            [
+              427,
+              21
+            ],
+            [
+              386,
+              76
+            ],
+            [
+              390,
+              78
+            ]
+          ],
+          [
+            [
+              378,
+              84
+            ],
+            [
+              380,
+              71
+            ],
+            [
+              384,
+              74
+            ],
+            [
+              424,
+              20
+            ],
+            [
+              425,
+              21
+            ],
+            [
+              386,
+              75
+            ],
+            [
+              389,
+              78
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "7d4d3c218a4608c1bee6d40c971938ae2237abd3d81bb553b79baa9e2a009ae1"
+    },
+    {
+      "id": "eye-anatomy-08",
+      "name": "Optic nerve",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-08",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Optic nerve",
+            "Optic disc (blind spot)",
+            "Posterior cavity",
+            "Iris"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "optic nerve",
+            "cranial nerve ii",
+            "cranial nerve 2",
+            "cn ii",
+            "cn 2"
+          ],
+          "explanation": "The optic nerve carries signals from retinal ganglion cells toward the brain.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-08.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          505,
+          358
+        ],
+        "tip": [
+          491,
+          287
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              491,
+              287
+            ],
+            [
+              500,
+              298
+            ],
+            [
+              495,
+              299
+            ],
+            [
+              507,
+              358
+            ],
+            [
+              503,
+              358
+            ],
+            [
+              492,
+              300
+            ],
+            [
+              487,
+              301
+            ]
+          ],
+          [
+            [
+              491,
+              288
+            ],
+            [
+              499,
+              299
+            ],
+            [
+              494,
+              300
+            ],
+            [
+              506,
+              357
+            ],
+            [
+              504,
+              357
+            ],
+            [
+              493,
+              300
+            ],
+            [
+              488,
+              301
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "d808935cc4abcd1cd3a3f9a73a4d75d3169d5562a0f622153a16aa4c76650e49"
+    },
+    {
+      "id": "eye-anatomy-09",
+      "name": "Optic disc (blind spot)",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-09",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Optic disc (blind spot)",
+            "Central artery and vein of the retina",
+            "Pupil",
+            "Macula lutea"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "optic disc",
+            "optic disk",
+            "blind spot",
+            "optic disc blind spot",
+            "optic disk blind spot"
+          ],
+          "explanation": "The optic disc is the site where optic nerve fibers leave the retina and lacks photoreceptors.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-09.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          340,
+          319
+        ],
+        "tip": [
+          409,
+          265
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              409,
+              265
+            ],
+            [
+              403,
+              278
+            ],
+            [
+              400,
+              275
+            ],
+            [
+              341,
+              321
+            ],
+            [
+              339,
+              317
+            ],
+            [
+              398,
+              271
+            ],
+            [
+              395,
+              268
+            ]
+          ],
+          [
+            [
+              408,
+              266
+            ],
+            [
+              402,
+              277
+            ],
+            [
+              399,
+              274
+            ],
+            [
+              341,
+              319
+            ],
+            [
+              340,
+              318
+            ],
+            [
+              398,
+              272
+            ],
+            [
+              395,
+              269
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "719c9787ed988ec181bc43051bdd5bcbcb519d1cc0f98da0be6c3bdc144da4d0"
+    },
+    {
+      "id": "eye-anatomy-10",
+      "name": "Central artery and vein of the retina",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-10",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Central artery and vein of the retina",
+            "Posterior cavity",
+            "Iris",
+            "Fovea centralis"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "central artery and vein of the retina",
+            "central artery and vein of retina",
+            "central retinal artery and vein",
+            "central retinal vein and artery",
+            "central retinal vessels",
+            "central artery and central vein of the retina"
+          ],
+          "explanation": "The central retinal artery supplies the inner retina, and the central retinal vein drains it.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-10.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          510,
+          224
+        ],
+        "tip": [
+          474,
+          273
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              474,
+              273
+            ],
+            [
+              476,
+              259
+            ],
+            [
+              480,
+              261
+            ],
+            [
+              508,
+              223
+            ],
+            [
+              512,
+              225
+            ],
+            [
+              483,
+              264
+            ],
+            [
+              487,
+              266
+            ]
+          ],
+          [
+            [
+              475,
+              272
+            ],
+            [
+              477,
+              259
+            ],
+            [
+              481,
+              262
+            ],
+            [
+              509,
+              224
+            ],
+            [
+              510,
+              225
+            ],
+            [
+              483,
+              263
+            ],
+            [
+              486,
+              266
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "9e341329cdea60b5808506fb804c857291e6c2311b7799de1f7f6e5aa3b7c40c"
+    },
+    {
+      "id": "eye-anatomy-11",
+      "name": "Posterior cavity",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-11",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Posterior cavity",
+            "Pupil",
+            "Macula lutea",
+            "Lens"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "posterior cavity",
+            "posterior cavity of the eye",
+            "vitreous chamber",
+            "vitreous cavity"
+          ],
+          "explanation": "The posterior cavity, or vitreous chamber, lies behind the lens and contains vitreous humor; it is distinct from the smaller aqueous-filled posterior chamber.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-11.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "section",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          490,
+          0,
+          1024,
+          440
+        ],
+        "tail": [
+          243,
+          188
+        ],
+        "tip": [
+          292,
+          244
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              292,
+              244
+            ],
+            [
+              279,
+              238
+            ],
+            [
+              282,
+              236
+            ],
+            [
+              241,
+              189
+            ],
+            [
+              245,
+              187
+            ],
+            [
+              285,
+              233
+            ],
+            [
+              288,
+              230
+            ]
+          ],
+          [
+            [
+              291,
+              243
+            ],
+            [
+              279,
+              238
+            ],
+            [
+              283,
+              235
+            ],
+            [
+              243,
+              189
+            ],
+            [
+              244,
+              188
+            ],
+            [
+              284,
+              234
+            ],
+            [
+              288,
+              231
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "f1fca6310f572e7ad8151d8bcd8168d5f7a294da2b51ca357490c2dd5f7dd6f0"
+    },
+    {
+      "id": "eye-anatomy-12",
+      "name": "Pupil",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-12",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Pupil",
+            "Iris",
+            "Fovea centralis",
+            "Ciliary body"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "pupil"
+          ],
+          "explanation": "The pupil is the opening in the iris through which light enters.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-12.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "anterior",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          0,
+          0,
+          490,
+          440
+        ],
+        "tail": [
+          98,
+          278
+        ],
+        "tip": [
+          223,
+          267
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              223,
+              267
+            ],
+            [
+              211,
+              275
+            ],
+            [
+              210,
+              270
+            ],
+            [
+              98,
+              280
+            ],
+            [
+              98,
+              276
+            ],
+            [
+              210,
+              266
+            ],
+            [
+              209,
+              262
+            ]
+          ],
+          [
+            [
+              222,
+              267
+            ],
+            [
+              211,
+              274
+            ],
+            [
+              210,
+              269
+            ],
+            [
+              99,
+              279
+            ],
+            [
+              99,
+              277
+            ],
+            [
+              210,
+              267
+            ],
+            [
+              210,
+              263
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "08cc224e50ae25f06d2c4c9a5c5fbfe6c5a9048bf131def13cd793a6ab93370e"
+    },
+    {
+      "id": "eye-anatomy-13",
+      "name": "Iris",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-13",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Iris",
+            "Macula lutea",
+            "Lens",
+            "Ora serrata"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "iris"
+          ],
+          "explanation": "The iris is the colored diaphragm that regulates pupil size.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-13.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "anterior",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          0,
+          0,
+          490,
+          440
+        ],
+        "tail": [
+          94,
+          178
+        ],
+        "tip": [
+          219,
+          220
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              219,
+              220
+            ],
+            [
+              205,
+              222
+            ],
+            [
+              206,
+              218
+            ],
+            [
+              93,
+              180
+            ],
+            [
+              95,
+              176
+            ],
+            [
+              207,
+              214
+            ],
+            [
+              209,
+              210
+            ]
+          ],
+          [
+            [
+              218,
+              220
+            ],
+            [
+              205,
+              221
+            ],
+            [
+              206,
+              217
+            ],
+            [
+              95,
+              179
+            ],
+            [
+              95,
+              177
+            ],
+            [
+              207,
+              215
+            ],
+            [
+              208,
+              211
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "3bb43ed6df3ca91c8847809c1e09d30e65fc6de4f84b3f689bb793994a6701e2"
+    },
+    {
+      "id": "eye-anatomy-14",
+      "name": "Sclera",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-14",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Sclera",
+            "Optic nerve",
+            "Central artery and vein of the retina",
+            "Pupil"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "sclera",
+            "scleral coat"
+          ],
+          "explanation": "The sclera is the tough outer fibrous coat of the eye.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-14.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "anterior",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          0,
+          0,
+          490,
+          440
+        ],
+        "tail": [
+          373,
+          142
+        ],
+        "tip": [
+          219,
+          151
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              219,
+              151
+            ],
+            [
+              232,
+              144
+            ],
+            [
+              232,
+              148
+            ],
+            [
+              373,
+              140
+            ],
+            [
+              373,
+              144
+            ],
+            [
+              232,
+              152
+            ],
+            [
+              232,
+              157
+            ]
+          ],
+          [
+            [
+              220,
+              151
+            ],
+            [
+              232,
+              145
+            ],
+            [
+              232,
+              149
+            ],
+            [
+              372,
+              141
+            ],
+            [
+              372,
+              143
+            ],
+            [
+              232,
+              151
+            ],
+            [
+              232,
+              156
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "0aefbdd521d2bac28af0db2d043d54e14c6434f4002b77a9e3e183ce11b66ffd"
+    },
+    {
+      "id": "eye-anatomy-15",
+      "name": "Posterior cavity",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-15",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Posterior cavity",
+            "Pupil",
+            "Macula lutea",
+            "Lens"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "posterior cavity",
+            "posterior cavity of the eye",
+            "vitreous chamber",
+            "vitreous cavity"
+          ],
+          "explanation": "The posterior cavity, or vitreous chamber, lies behind the lens and contains vitreous humor; it is distinct from the smaller aqueous-filled posterior chamber.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-15.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "anterior",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          0,
+          0,
+          490,
+          440
+        ],
+        "tail": [
+          391,
+          43
+        ],
+        "tip": [
+          233,
+          78
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              233,
+              78
+            ],
+            [
+              244,
+              69
+            ],
+            [
+              245,
+              73
+            ],
+            [
+              391,
+              41
+            ],
+            [
+              391,
+              45
+            ],
+            [
+              246,
+              77
+            ],
+            [
+              247,
+              82
+            ]
+          ],
+          [
+            [
+              234,
+              78
+            ],
+            [
+              245,
+              70
+            ],
+            [
+              245,
+              74
+            ],
+            [
+              390,
+              42
+            ],
+            [
+              390,
+              44
+            ],
+            [
+              246,
+              76
+            ],
+            [
+              247,
+              81
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "5f19c3f415c27b8c2fe5caab2e470fe7f97db50c3d28c1c19cc08af5240bf08b"
+    },
+    {
+      "id": "eye-anatomy-16",
+      "name": "Macula lutea",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-16",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Macula lutea",
+            "Fovea centralis",
+            "Ciliary body",
+            "Cornea"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "macula lutea",
+            "macula"
+          ],
+          "explanation": "The macula lutea is a specialized central retinal region important for detailed central vision.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-16.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "verificationStatus": "pending",
+      "sourceView": "section",
+      "verificationReason": "The macular region and its central pit are not separately discernible in the provided photo or unlabeled reference dots."
+    },
+    {
+      "id": "eye-anatomy-17",
+      "name": "Fovea centralis",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-17",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Fovea centralis",
+            "Lens",
+            "Ora serrata",
+            "Retina"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "fovea centralis",
+            "fovea"
+          ],
+          "explanation": "The fovea centralis is the small central depression within the macula associated with high visual acuity.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-17.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "verificationStatus": "pending",
+      "sourceView": "section",
+      "verificationReason": "The macular region and its central pit are not separately discernible in the provided photo or unlabeled reference dots."
+    },
+    {
+      "id": "eye-anatomy-18",
+      "name": "Cornea",
+      "questions": [
+        {
+          "id": "lab-eye-anatomy-18",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cornea",
+            "Retina",
+            "Sclera",
+            "Optic disc (blind spot)"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "cornea"
+          ],
+          "explanation": "The cornea is the transparent anterior part of the fibrous outer coat of the eye.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "eye-anatomy/eye-18.png",
+      "renderMethod": "original-photo-crop-arrow-overlay",
+      "sourceView": "anterior",
+      "verificationStatus": "verified",
+      "annotation": {
+        "kind": "arrow",
+        "cropBox": [
+          0,
+          0,
+          490,
+          440
+        ],
+        "tail": [
+          365,
+          348
+        ],
+        "tip": [
+          225,
+          313
+        ],
+        "shaftWidth": 2,
+        "headWidth": 11,
+        "headLength": 12,
+        "outlineWidth": 1,
+        "overlayPolygons": [
+          [
+            [
+              225,
+              313
+            ],
+            [
+              239,
+              310
+            ],
+            [
+              238,
+              314
+            ],
+            [
+              365,
+              346
+            ],
+            [
+              365,
+              350
+            ],
+            [
+              237,
+              318
+            ],
+            [
+              236,
+              322
+            ]
+          ],
+          [
+            [
+              226,
+              313
+            ],
+            [
+              239,
+              311
+            ],
+            [
+              238,
+              315
+            ],
+            [
+              364,
+              347
+            ],
+            [
+              364,
+              349
+            ],
+            [
+              237,
+              317
+            ],
+            [
+              236,
+              321
+            ]
+          ]
+        ]
+      },
+      "imageSha256": "d34679dc12cfbb22fcff06c5ba79c44c3ddec458b7490683b78496801347bc7d"
+    }
+  ],
+  "sourceImageSha256": "af8ff8c98d1316f88482b240b49e6f23edb795ac67d43ba6c2e990c5c473b61b",
+  "referenceImageUrl": "https://quizlet.com/1032072514/3d-model-of-eye-anatomy-diagram/",
+  "sourceViews": {
+    "anterior": {
+      "cropBox": [
+        0,
+        0,
+        490,
+        440
+      ]
+    },
+    "section": {
+      "cropBox": [
+        490,
+        0,
+        1024,
+        440
+      ]
+    }
+  }
+}

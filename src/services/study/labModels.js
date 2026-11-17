@@ -5,6 +5,7 @@ import { shuffle } from './questions.js';
 
 const loadModels = file => JSON.parse(readFileSync(new URL(`../../../study-data/lab-models/${file}`, import.meta.url), 'utf8')).models;
 export const LAB_MODELS = loadModels('early-development.json');
+const eyeAnatomyModels = loadModels('eye-anatomy.json');
 export const LAB_SETS = [
     { id: 'early-development', title: 'Early Development Models', category: 'reproductive', models: LAB_MODELS },
     { id: 'one-month-embryo', title: '3D Model of 1 Month Embryo Parts', category: 'reproductive', showStructureList: true, models: loadModels('one-month-embryo.json') },
@@ -35,6 +36,7 @@ export const LAB_SETS = [
     { id: 'bronchial-tree', title: 'Bronchial Tree 3D Model', category: 'respiratory', models: loadModels('bronchial-tree.json') },
     { id: 'spinal-nerves', title: '3D Spinal Nerves and Plexuses', category: 'nervous', showStructureList: true, models: loadModels('spinal-nerves.json') },
     { id: 'inner-ear', title: '3D Structure of the Inner Ear', category: 'special-senses', showStructureList: true, models: loadModels('inner-ear.json') },
+    { id: 'eye-anatomy', title: '3D Model of Eye Anatomy', category: 'special-senses', showStructureList: true, models: eyeAnatomyModels.filter(model => model.verificationStatus !== 'pending'), pendingStructures: eyeAnatomyModels.filter(model => model.verificationStatus === 'pending').map(model => model.name) },
 ];
 export const LAB_CATEGORIES = [
     { id: 'reproductive', title: 'Reproductive System', chapter: 26 },
@@ -83,7 +85,7 @@ export function labModelsMessage(owner, categoryId = 'reproductive') {
 export function labModeMessage(owner, selection) {
     const models = selectedLabModels(selection);
     const set = labSetForSelection(selection);
-    return { content: '', embeds: [new EmbedBuilder({ title: 'Choose your answer mode', description: `${set.title} — all ${models.length} photos studied together. Choose how you want to answer.${set.showStructureList ? `\n\nIncluded structures: ${models.map(model => model.name).join(', ')}.` : ''}` })], components: [
+    return { content: '', embeds: [new EmbedBuilder({ title: 'Choose your answer mode', description: `${set.title} — all ${models.length} photos studied together. Choose how you want to answer.${set.showStructureList ? `\n\nIncluded structures: ${models.map(model => model.name).join(', ')}.` : ''}${set.pendingStructures?.length ? `\n\nAwaiting a labeled reference: ${set.pendingStructures.join(', ')}. These structures are not included in this quiz yet.` : ''}` })], components: [
         row(new StringSelectMenuBuilder().setCustomId(`study:labmode:${owner}:${selection}`).setPlaceholder('Multiple choice or type in').addOptions(
             { label: 'Multiple choice', value: 'multiple_choice', description: 'Answer using A, B, C, or D' },
             { label: 'Type in answer', value: 'typed', description: 'Type a short answer; synonyms and minor typos accepted' })),
