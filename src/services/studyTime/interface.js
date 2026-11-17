@@ -55,14 +55,19 @@ export function monthlyLevelMessage(record, userId, at = Date.now()) {
     const previous = record?.months?.[previousMonth];
     const lastLevel = previous ? tierLabel(tierFor(sumTotals(previous)).current) : 'No study time recorded last month';
     const remaining = tier.next ? Math.ceil(Math.max(0, tier.next.ms - ms) / 360000) / 10 : null;
+    const lines = [
+        ['Current monthly level', tierLabel(tier.current)],
+        ['Last monthly level', lastLevel],
+        ['Level rank', `${tier.rank}/${tier.count}`],
+        ['Level promotion in', tier.next ? `${remaining.toFixed(1)} hours until ${tier.next.name}` : 'Highest level reached — Mythic Mind!'],
+    ];
+    // Discord renders ANSI code fences as a boxed, monospace panel. Values and
+    // labels use separate colors; the embed deliberately has no accent color.
+    const panel = '```ansi\n' + lines.map(([label, value]) =>
+        `\u001b[1;34m${label}:\u001b[0m\n\u001b[1;33m${value}\u001b[0m`).join('\n\n') + '\n```';
     const embed = new EmbedBuilder({
         title: `☕ Monthly Level Statistics (${periodLabel('month', at)})`,
-        fields: [
-            { name: 'Current monthly level', value: tierLabel(tier.current) },
-            { name: 'Last monthly level', value: lastLevel },
-            { name: 'Level rank', value: `👑 ${tier.rank}/${tier.count}` },
-            { name: 'Level promotion in', value: tier.next ? `${remaining.toFixed(1)} hours until ${tier.next.name}` : 'Highest level reached — Mythic Mind!' },
-        ],
+        fields: [{ name: 'Monthly levels', value: panel }],
     }).setDescription(`<@${userId}>`).setTimestamp(at)
         .setFooter({ text: 'Monthly levels reset on the first of each month · Eastern time' });
     return { embeds: [embed], allowedMentions: { parse: [] } };

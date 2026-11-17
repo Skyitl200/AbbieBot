@@ -202,22 +202,23 @@ test('monthly level card uses previous calendar month, tier rank and hours to pr
     addCredit(record, 'test', 145 * 3600000, Date.parse('2026-10-15T12:00:00Z'));
     const data = monthlyLevelMessage(record, 'u', now).embeds[0].toJSON();
     assert.equal(data.title, '☕ Monthly Level Statistics (November 2026)');
-    assert.deepEqual(data.fields.map(f => f.name), ['Current monthly level', 'Last monthly level', 'Level rank', 'Level promotion in']);
-    assert.equal(data.fields[0].value, 'Master (60–80h)');
-    assert.equal(data.fields[1].value, 'Study Sage (140–200h)');
-    assert.equal(data.fields[2].value, '👑 8/11');
-    assert.equal(data.fields[3].value, '14.3 hours until Grandmaster');
+    const panel = data.fields[0].value;
+    assert.ok(panel.startsWith('```ansi\n'));
+    for (const text of ['Current monthly level', 'Last monthly level', 'Level rank', 'Level promotion in', 'Master (60–80h)', 'Study Sage (140–200h)', '8/11', '14.3 hours until Grandmaster']) assert.ok(panel.includes(text));
+    assert.ok(panel.includes('\u001b[1;34m'));
+    assert.ok(panel.includes('\u001b[1;33m'));
+    assert.equal(data.color, undefined);
 });
 test('monthly history handles January rollover, missing history and highest level', () => {
     const at = Date.parse('2027-01-01T05:00:00Z'), record = newRecord();
     addCredit(record, 'voice', 200 * 3600000, at);
     addCredit(record, 'voice', 20 * 3600000, Date.parse('2026-12-31T23:00:00Z'));
     const fields = monthlyLevelMessage(record, 'u', at).embeds[0].data.fields;
-    assert.equal(fields[1].value, 'Exam Expert (20–40h)');
-    assert.match(fields[3].value, /Highest level reached/);
+    assert.ok(fields[0].value.includes('Exam Expert (20–40h)'));
+    assert.match(fields[0].value, /Highest level reached/);
     const empty = monthlyLevelMessage(undefined, 'u', at).embeds[0].data.fields;
-    assert.match(empty[1].value, /No study time recorded last month/);
-    assert.equal(empty[3].value, '1.0 hours until Budding Bookworm');
+    assert.match(empty[0].value, /No study time recorded last month/);
+    assert.ok(empty[0].value.includes('1.0 hours until Budding Bookworm'));
 });
 test('/stats exposes me and bot, and me rejects direct messages before loading storage', async () => {
     const command = (await import('../src/commands/Core/stats.js')).default;
@@ -233,5 +234,5 @@ test('/stats me loads the invoking member from persistent server records', async
     await openMonthlyLevel({ client, guildId: 'g', user: { id: 'u', username: 'Student' }, deferReply: async () => {}, editReply: async value => { response = value; } });
     assert.equal(response.embeds[0].data.author.name, 'Student');
     assert.equal(response.embeds[0].data.description, '<@u>');
-    assert.equal(response.embeds[0].data.fields.length, 4);
+    assert.equal(response.embeds[0].data.fields.length, 1);
 });
