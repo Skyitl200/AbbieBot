@@ -34,7 +34,7 @@ export const LAB_SETS = [
     { id: 'kidney', title: 'Kidney 3D Model', category: 'urinary', models: loadModels('kidney.json') },
     { id: 'bronchial-tree', title: 'Bronchial Tree 3D Model', category: 'respiratory', models: loadModels('bronchial-tree.json') },
     { id: 'spinal-nerves', title: '3D Spinal Nerves and Plexuses', category: 'nervous', showStructureList: true, models: loadModels('spinal-nerves.json') },
-    { id: 'inner-ear', title: '3D Structure of the Inner Ear', category: 'nervous', showStructureList: true, models: loadModels('inner-ear.json') },
+    { id: 'inner-ear', title: '3D Structure of the Inner Ear', category: 'special-senses', showStructureList: true, models: loadModels('inner-ear.json') },
 ];
 export const LAB_CATEGORIES = [
     { id: 'reproductive', title: 'Reproductive System', chapter: 26 },
@@ -43,6 +43,7 @@ export const LAB_CATEGORIES = [
     { id: 'digestive', title: 'Digestive System', chapter: 23 },
     { id: 'development', title: 'Cell Division & Development' },
     { id: 'nervous', title: 'Nervous System' },
+    { id: 'special-senses', title: 'Special Senses' },
 ];
 const allModels = LAB_SETS.flatMap(set => set.models);
 const row = component => new ActionRowBuilder().addComponents(component);
