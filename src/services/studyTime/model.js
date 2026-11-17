@@ -50,8 +50,8 @@ export function duration(ms) {
     return hours ? `${hours}h ${minutes}m` : minutes ? `${minutes}m ${seconds % 60}s` : `${seconds}s`;
 }
 export const TIERS = [
-    ['Novice', 0], ['Beginner', 1], ['Learner', 3], ['Intermediate', 5], ['Advanced', 10],
-    ['Expert', 20], ['Elite', 40], ['Master', 60], ['Grandmaster', 80], ['Legend', 140], ['Mythic', 200],
+    ['Fresh Scholar', 0], ['Budding Bookworm', 1], ['Page Turner', 3], ['Focus Pro', 6], ['Knowledge Builder', 10],
+    ['Exam Expert', 20], ['A+ Scholar', 40], ['Master', 60], ['Grandmaster', 80], ['Study Dynamo', 140], ['Mythic Mind', 200],
 ].map(([name, hours]) => ({ name, ms: hours * 3600000 }));
 export function tierFor(ms) {
     const index = TIERS.findLastIndex(t => ms >= t.ms);

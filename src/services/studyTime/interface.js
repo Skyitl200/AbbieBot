@@ -5,6 +5,7 @@ import { recordsForGuild, putResource, getResource, creditActivity } from './sto
 import { logger } from '../../utils/logger.js';
 const row = (...buttons) => new ActionRowBuilder().addComponents(buttons);
 const button = (label, id, style = ButtonStyle.Secondary) => new ButtonBuilder().setLabel(label).setCustomId(id).setStyle(style);
+const tierLabel = tier => { const next = tierFor(tier.ms).next; return `${tier.name} (${tier.ms / 3600000}${next ? `–${next.ms / 3600000}` : '+'}h)`; };
 const periodLabel = (period, at) => period === 'all' ? 'All Time' : new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric', timeZone: ZONE }).format(at);
 export function rankRecords(rows, period, at) {
     return rows.map(({ userId, record }) => { const totals = totalsFor(record, period, at); return { userId, totals, ms: sumTotals(totals) }; })
@@ -21,19 +22,19 @@ export function studyTimeMessage(rows, owner, { period = 'month', view = 'leader
         const tier = tierFor(entry.ms);
         embed.setTitle(`☕ Study Statistics (${periodLabel(period, at)})`).setDescription(`<@${member}>`)
             .addFields(
-                { name: 'Current study tier', value: `${tier.current.name} · ${duration(entry.ms)}`, inline: true },
-                { name: 'Next tier', value: tier.next ? `${tier.next.name} · ${duration(tier.next.ms)}` : 'Highest tier reached', inline: true },
+                { name: 'Current study tier', value: `${tierLabel(tier.current)} · ${duration(entry.ms)}`, inline: true },
+                { name: 'Next tier', value: tier.next ? `${tierLabel(tier.next)}` : 'Highest tier reached', inline: true },
                 { name: 'Study rank', value: index >= 0 ? `#${index + 1} / ${ranked.length}` : 'Not ranked yet', inline: true },
-                { name: 'Tier rank', value: `${tier.rank} / ${tier.count}`, inline: true },
-                { name: 'Promotion in', value: tier.next ? duration(Math.max(0, tier.next.ms - entry.ms)) : 'You reached Mythic!', inline: true },
+                { name: 'Tier rank', value: `👑 ${tier.rank} / ${tier.count}`, inline: true },
+                { name: 'Promotion in', value: tier.next ? duration(Math.max(0, tier.next.ms - entry.ms)) : 'You reached Mythic Mind!', inline: true },
                 { name: 'Study-time breakdown', value: `🎙️ Voice: **${duration(entry.totals.voice)}**\n🪱 Microbemon: **${duration(entry.totals.microbemon)}**\n📝 Test questions: **${duration(entry.totals.test)}**\n🎬 Resources: **${duration(entry.totals.links)}**` },
             );
     } else {
         const lines = ranked.slice(page * 10, (page + 1) * 10).map((e, i) => {
             const rank = page * 10 + i + 1;
-            return `${rank <= 3 ? ['🥇', '🥈', '🥉'][rank - 1] : `**${rank}.**`} **${duration(e.ms)}** · <@${e.userId}>`;
+            return `${rank <= 3 ? ['🥇', '🥈', '🥉'][rank - 1] : `**${rank}.**`} **${duration(e.ms)}** · <@${e.userId}> · ${tierFor(e.ms).current.name}`;
         });
-        embed.setTitle(`🏆 Study Leaderboard (${periodLabel(period, at)})`)
+        embed.setTitle(`☕ Study Leaderboard (${periodLabel(period, at)})`)
             .setDescription(lines.join('\n') || 'No study time recorded yet. Join a voice channel, play Microbemon, or answer a /test question to get started.')
             .addFields({ name: member === owner ? 'Your standing' : 'Selected member', value: index >= 0 ? `#${index + 1} · ${duration(entry.ms)}` : 'Not ranked yet' });
     }

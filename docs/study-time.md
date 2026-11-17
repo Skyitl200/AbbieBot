@@ -23,17 +23,17 @@ Discord does not notify bots when someone clicks an ordinary URL, a normal link 
 
 | Tier | Hours required |
 | --- | ---: |
-| Novice | 0 |
-| Beginner | 1 |
-| Learner | 3 |
-| Intermediate | 5 |
-| Advanced | 10 |
-| Expert | 20 |
-| Elite | 40 |
+| Fresh Scholar | 0 |
+| Budding Bookworm | 1 |
+| Page Turner | 3 |
+| Focus Pro | 6 |
+| Knowledge Builder | 10 |
+| Exam Expert | 20 |
+| A+ Scholar | 40 |
 | Master | 60 |
 | Grandmaster | 80 |
-| Legend | 140 |
-| Mythic | 200 |
+| Study Dynamo | 140 |
+| Mythic Mind | 200 |
 
 Tiers are shown in the stats card; the feature does not create or assign Discord roles. Month boundaries use America/New_York, including daylight-saving changes. Monthly views reset automatically at the next calendar month while past months and all-time totals remain saved.
 
