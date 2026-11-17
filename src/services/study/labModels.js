@@ -37,6 +37,7 @@ export const LAB_SETS = [
     { id: 'spinal-nerves', title: '3D Spinal Nerves and Plexuses', category: 'nervous', showStructureList: true, models: loadModels('spinal-nerves.json') },
     { id: 'inner-ear', title: '3D Structure of the Inner Ear', category: 'special-senses', showStructureList: true, models: loadModels('inner-ear.json') },
     { id: 'eye-anatomy', title: '3D Model of Eye Anatomy', category: 'special-senses', showStructureList: true, models: eyeAnatomyModels.filter(model => model.verificationStatus !== 'pending'), pendingStructures: eyeAnatomyModels.filter(model => model.verificationStatus === 'pending').map(model => model.name) },
+    { id: 'sarcomere', title: '3D Model of Sarcomere', category: 'muscular', showStructureList: true, models: loadModels('sarcomere.json') },
 ];
 export const LAB_CATEGORIES = [
     { id: 'reproductive', title: 'Reproductive System', chapter: 26 },
@@ -46,6 +47,7 @@ export const LAB_CATEGORIES = [
     { id: 'development', title: 'Cell Division & Development' },
     { id: 'nervous', title: 'Nervous System' },
     { id: 'special-senses', title: 'Special Senses' },
+    { id: 'muscular', title: 'Muscle' },
 ];
 const allModels = LAB_SETS.flatMap(set => set.models);
 const row = component => new ActionRowBuilder().addComponents(component);

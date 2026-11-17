@@ -1,0 +1,628 @@
+{
+  "course": "Anatomy Lab",
+  "category": "Muscle",
+  "modelGroup": "3D Model of Sarcomere",
+  "source": "The replacement centered user-provided sarcomere photograph supplies the exposed myofilament view. The second original user photo supplies the T-tubule/terminal-cisternae view. The user-provided reference worksheet guides bracket-style region markers. Photographs are cropped to the relevant model section and annotated for the ten requested structures.",
+  "models": [
+    {
+      "id": "sarcomere-01",
+      "name": "Z disc",
+      "questions": [
+        {
+          "id": "lab-sarcomere-01",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Z disc",
+            "M line",
+            "I band (containing thin myofilament)",
+            "H band (no overlap, just thick myofilament)"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "z disc",
+            "z disk",
+            "z line"
+          ],
+          "explanation": "The Z disc marks a sarcomere boundary and anchors thin filaments.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "sarcomere/sarc-01.jpg",
+      "renderMethod": "original-photo-crop-marker-overlay",
+      "sourceView": "open",
+      "annotation": {
+        "cropBox": [
+          125,
+          750,
+          2760,
+          1530
+        ],
+        "renderSize": [
+          1280,
+          379
+        ],
+        "paddingTop": 80,
+        "paddingBottom": 35,
+        "kind": "arrows",
+        "arrows": [
+          {
+            "tail": [
+              48,
+              163
+            ],
+            "tip": [
+              78,
+              240
+            ]
+          }
+        ]
+      },
+      "imageSha256": "3767e3376165460e66e36dda05df1e1b55956b0b8a73dcb387ad215739803342",
+      "imageSize": [
+        1280,
+        494
+      ]
+    },
+    {
+      "id": "sarcomere-02",
+      "name": "Thick myofilament (containing myosin)",
+      "questions": [
+        {
+          "id": "lab-sarcomere-02",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Thick myofilament (containing myosin)",
+            "Thin myofilament (containing actin)",
+            "Z disc",
+            "M line"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "thick myofilament (containing myosin)",
+            "thick myofilament",
+            "thick filament",
+            "myosin filament"
+          ],
+          "explanation": "Thick myofilaments contain myosin.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "sarcomere/sarc-02.jpg",
+      "renderMethod": "original-photo-crop-marker-overlay",
+      "sourceView": "open",
+      "annotation": {
+        "cropBox": [
+          125,
+          750,
+          2760,
+          1530
+        ],
+        "renderSize": [
+          1280,
+          379
+        ],
+        "paddingTop": 80,
+        "paddingBottom": 35,
+        "kind": "arrows",
+        "arrows": [
+          {
+            "tail": [
+              575,
+              207
+            ],
+            "tip": [
+              522,
+              255
+            ]
+          }
+        ]
+      },
+      "imageSha256": "e21885c7d30d64f698beb4167074e583887926f6949dd6455a15f6efa8c6fdbc",
+      "imageSize": [
+        1280,
+        494
+      ]
+    },
+    {
+      "id": "sarcomere-03",
+      "name": "Thin myofilament (containing actin)",
+      "questions": [
+        {
+          "id": "lab-sarcomere-03",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Thin myofilament (containing actin)",
+            "Thick myofilament (containing myosin)",
+            "Z disc",
+            "M line"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "thin myofilament (containing actin)",
+            "thin myofilament",
+            "thin filament",
+            "actin filament"
+          ],
+          "explanation": "Thin myofilaments contain actin.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "sarcomere/sarc-03.jpg",
+      "renderMethod": "original-photo-crop-marker-overlay",
+      "sourceView": "open",
+      "annotation": {
+        "cropBox": [
+          125,
+          750,
+          2760,
+          1530
+        ],
+        "renderSize": [
+          1280,
+          379
+        ],
+        "paddingTop": 80,
+        "paddingBottom": 35,
+        "kind": "arrows",
+        "arrows": [
+          {
+            "tail": [
+              377,
+              133
+            ],
+            "tip": [
+              364,
+              163
+            ]
+          }
+        ]
+      },
+      "imageSha256": "456316e3503f7903a237346c469fe9f3b9325d51a3f3b34dff8c4d6af3bfb326",
+      "imageSize": [
+        1280,
+        494
+      ]
+    },
+    {
+      "id": "sarcomere-04",
+      "name": "M line",
+      "questions": [
+        {
+          "id": "lab-sarcomere-04",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "M line",
+            "Z disc",
+            "I band (containing thin myofilament)",
+            "H band (no overlap, just thick myofilament)"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "m line"
+          ],
+          "explanation": "The M line lies at the center of the sarcomere and helps align thick filaments.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "sarcomere/sarc-04.jpg",
+      "renderMethod": "original-photo-crop-marker-overlay",
+      "sourceView": "open",
+      "annotation": {
+        "cropBox": [
+          125,
+          750,
+          2760,
+          1530
+        ],
+        "renderSize": [
+          1280,
+          379
+        ],
+        "paddingTop": 80,
+        "paddingBottom": 35,
+        "kind": "arrows",
+        "arrows": [
+          {
+            "tail": [
+              729,
+              210
+            ],
+            "tip": [
+              651,
+              265
+            ]
+          }
+        ]
+      },
+      "imageSha256": "80191a395008f44a5ababf21e251aafaa2cc495a1f5df7659c534807e30c175c",
+      "imageSize": [
+        1280,
+        494
+      ]
+    },
+    {
+      "id": "sarcomere-05",
+      "name": "I band (containing thin myofilament)",
+      "questions": [
+        {
+          "id": "lab-sarcomere-05",
+          "question": "Which region is indicated by the bracket?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "I band (containing thin myofilament)",
+            "A band (containing thick myofilament)",
+            "H band (no overlap, just thick myofilament)",
+            "M line"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "i band (containing thin myofilament)",
+            "i band"
+          ],
+          "explanation": "The I band contains thin filaments without overlapping thick filaments.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "sarcomere/sarc-05.jpg",
+      "renderMethod": "original-photo-crop-marker-overlay",
+      "sourceView": "open",
+      "annotation": {
+        "cropBox": [
+          125,
+          750,
+          2760,
+          1530
+        ],
+        "renderSize": [
+          1280,
+          379
+        ],
+        "paddingTop": 80,
+        "paddingBottom": 35,
+        "kind": "bracket",
+        "position": "top",
+        "x1": 134,
+        "x2": 308,
+        "y": 35,
+        "guideY": 255
+      },
+      "imageSha256": "e32692cfac53ad2c9affc1165265fbf47e369c98e070e5ff850865dad7957d00",
+      "imageSize": [
+        1280,
+        494
+      ]
+    },
+    {
+      "id": "sarcomere-06",
+      "name": "A band (containing thick myofilament)",
+      "questions": [
+        {
+          "id": "lab-sarcomere-06",
+          "question": "Which region is indicated by the bracket?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "A band (containing thick myofilament)",
+            "I band (containing thin myofilament)",
+            "H band (no overlap, just thick myofilament)",
+            "Z disc"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "a band (containing thick myofilament)",
+            "a band"
+          ],
+          "explanation": "The A band spans the full length of the thick filaments, including regions of overlap with thin filaments.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "sarcomere/sarc-06.jpg",
+      "renderMethod": "original-photo-crop-marker-overlay",
+      "sourceView": "open",
+      "annotation": {
+        "cropBox": [
+          125,
+          750,
+          2760,
+          1530
+        ],
+        "renderSize": [
+          1280,
+          379
+        ],
+        "paddingTop": 80,
+        "paddingBottom": 35,
+        "kind": "bracket",
+        "position": "top",
+        "x1": 308,
+        "x2": 1027,
+        "y": 35,
+        "guideY": 255
+      },
+      "imageSha256": "6bdb5a6c2eada6516e9aa1ee53972b164a2df0f3ca517c3573197770d5e6bfcf",
+      "imageSize": [
+        1280,
+        494
+      ]
+    },
+    {
+      "id": "sarcomere-07",
+      "name": "H band (no overlap, just thick myofilament)",
+      "questions": [
+        {
+          "id": "lab-sarcomere-07",
+          "question": "Which region is indicated by the bracket?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "H band (no overlap, just thick myofilament)",
+            "I band (containing thin myofilament)",
+            "A band (containing thick myofilament)",
+            "M line"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "h band containing only thick myofilament",
+            "h band",
+            "h zone"
+          ],
+          "explanation": "The H band, also called the H zone, contains thick filaments without overlapping thin filaments.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "sarcomere/sarc-07.jpg",
+      "renderMethod": "original-photo-crop-marker-overlay",
+      "sourceView": "open",
+      "annotation": {
+        "cropBox": [
+          125,
+          750,
+          2760,
+          1530
+        ],
+        "renderSize": [
+          1280,
+          379
+        ],
+        "paddingTop": 80,
+        "paddingBottom": 35,
+        "kind": "bracket",
+        "position": "top",
+        "x1": 474,
+        "x2": 785,
+        "y": 35,
+        "guideY": 255
+      },
+      "imageSha256": "92852395392546e9cc2f5357bdd2604c249b48672d0dc3520db48f79a2c25ca7",
+      "imageSize": [
+        1280,
+        494
+      ]
+    },
+    {
+      "id": "sarcomere-08",
+      "name": "T tubule",
+      "questions": [
+        {
+          "id": "lab-sarcomere-08",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "T tubule",
+            "Terminal cisternae",
+            "Triad",
+            "Z disc"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "t tubule",
+            "t-tubule",
+            "transverse tubule"
+          ],
+          "explanation": "A T tubule is an inward extension of the muscle cell membrane.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "sarcomere/sarc-08.jpg",
+      "renderMethod": "original-photo-crop-marker-overlay",
+      "sourceView": "covered",
+      "annotation": {
+        "cropBox": [
+          1730,
+          575,
+          2390,
+          1340
+        ],
+        "renderSize": [
+          528,
+          612
+        ],
+        "paddingTop": 45,
+        "paddingBottom": 70,
+        "kind": "arrows",
+        "arrows": [
+          {
+            "tail": [
+              80,
+              392
+            ],
+            "tip": [
+              278,
+              417
+            ]
+          }
+        ]
+      },
+      "imageSha256": "e2769882bd0d379000ebc468c8ad427d034cc50671b31e98a75556817b8cea44",
+      "imageSize": [
+        528,
+        727
+      ]
+    },
+    {
+      "id": "sarcomere-09",
+      "name": "Terminal cisternae",
+      "questions": [
+        {
+          "id": "lab-sarcomere-09",
+          "question": "What structure is indicated by the marker?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Terminal cisternae",
+            "T tubule",
+            "Triad",
+            "M line"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "terminal cisternae",
+            "terminal cisterna",
+            "terminal cisterns"
+          ],
+          "explanation": "Terminal cisternae are enlarged regions of the sarcoplasmic reticulum adjacent to a T tubule.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "sarcomere/sarc-09.jpg",
+      "renderMethod": "original-photo-crop-marker-overlay",
+      "sourceView": "covered",
+      "annotation": {
+        "cropBox": [
+          1730,
+          575,
+          2390,
+          1340
+        ],
+        "renderSize": [
+          528,
+          612
+        ],
+        "paddingTop": 45,
+        "paddingBottom": 70,
+        "kind": "arrows",
+        "arrows": [
+          {
+            "tail": [
+              102,
+              566
+            ],
+            "tip": [
+              187,
+              459
+            ]
+          },
+          {
+            "tail": [
+              451,
+              563
+            ],
+            "tip": [
+              391,
+              459
+            ]
+          }
+        ]
+      },
+      "imageSha256": "ecfe3404517496ec893daee859594d7a8a0e846516715277b1887393fc7a97a4",
+      "imageSize": [
+        528,
+        727
+      ]
+    },
+    {
+      "id": "sarcomere-10",
+      "name": "Triad",
+      "questions": [
+        {
+          "id": "lab-sarcomere-10",
+          "question": "Which group of structures is indicated by the bracket?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Triad",
+            "T tubule",
+            "Terminal cisternae",
+            "M line"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "triad",
+            "muscle triad",
+            "skeletal muscle triad"
+          ],
+          "explanation": "A skeletal muscle triad consists of one T tubule and two terminal cisternae.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "sarcomere/sarc-10.jpg",
+      "renderMethod": "original-photo-crop-marker-overlay",
+      "sourceView": "covered",
+      "annotation": {
+        "cropBox": [
+          1730,
+          575,
+          2390,
+          1340
+        ],
+        "renderSize": [
+          528,
+          612
+        ],
+        "paddingTop": 45,
+        "paddingBottom": 70,
+        "kind": "bracket",
+        "position": "bottom",
+        "x1": 178,
+        "x2": 402,
+        "y": 688,
+        "guideY": 604
+      },
+      "imageSha256": "9b155ec3197ec29de57568a174a21a0354f19d7b8f4473a68106a8f99dba4983",
+      "imageSize": [
+        528,
+        727
+      ]
+    }
+  ],
+  "sourceImages": {
+    "open": {
+      "file": "sarcomere-open-original.png",
+      "sha256": "b68d27a1b4e42b0e2409e53c9d79706b9ad66e62f7ceb3f182f8dd5adc042779"
+    },
+    "covered": {
+      "file": "sarcomere-covered-original.jpg",
+      "sha256": "b0253a29361f1a912323ea9e91745e0448914eb808195566af770679b1e802de"
+    }
+  }
+}
