@@ -360,11 +360,13 @@ test('registration keeps 100 global commands and upserts Microbemon separately p
     assert.equal(global.body.length, 100);
     assert.ok(!global.body.some(command => command.name === 'microbemon'));
     assert.ok(global.body.some(command => command.name === 'test'));
-    const server = calls.filter(call => call.method === 'POST');
+    const server = calls.filter(call => call.method === 'POST' && call.body.name === 'microbemon');
     assert.equal(server.length, 2);
     assert.equal(server[0].route, '/applications/application/guilds/guild-one/commands');
     assert.equal(server[1].route, '/applications/application/guilds/guild-two/commands');
     assert.ok(server.every(call => call.body.name === 'microbemon'));
+    assert.equal(calls.filter(call => call.method === 'POST' && call.body.name === 'studytime').length, 2);
+    assert.ok(!global.body.some(command => command.name === 'studytime'));
     assert.ok(!calls.some(call => call.method === 'PUT' && call.route.includes('/guilds/')),
         'Never bulk-delete unrelated server commands');
 });

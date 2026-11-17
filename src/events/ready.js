@@ -1,3 +1,4 @@
+import { startStudyTime } from '../services/studyTime/tracking.js';
 import { reconcileMemberships } from '../services/paypal/membershipService.js';
 import { refreshStoreChannel } from '../services/storeChannelRefresh.js';
 import { synchronizeBotIdentity } from '../services/botIdentity.js';
@@ -15,6 +16,7 @@ export default {
 
   async execute(client) {
     try {
+      await startStudyTime(client);
       await reconcileMemberships(client, logger);
       await refreshStoreChannel(client, logger);
       await synchronizeBotIdentity(client, config.bot.name);

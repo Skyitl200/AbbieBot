@@ -305,6 +305,7 @@ app.get('/subscribe', async (req, res) => {
         status: 'healthy',
         timestamp: new Date().toISOString(),
         uptime: process.uptime(),
+        studyTime: { enabled: this.studyTimeEnabled === true },
         database: {
           connected: dbStatus.connectionType !== 'none',
           degraded: dbStatus.isDegraded,

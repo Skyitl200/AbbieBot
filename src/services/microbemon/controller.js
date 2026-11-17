@@ -1,3 +1,4 @@
+import { microbemonActivity } from '../studyTime/tracking.js';
 import { announceCrateDrop } from '../discovery/announcements.js';
 import { isSponsorForCatch } from './catchLimits.js';
 import { MicrobemonError } from './errors.js';
@@ -62,7 +63,7 @@ export async function openMicrobemon(interaction, options = {}) {
     await interaction.deferReply();
     let stage = 'load collection';
     try {
-        const { profile } = await withProfile(interaction.client, interaction.guildId, interaction.user.id, () => {});
+        const { profile } = await withProfile(interaction.client, interaction.guildId, interaction.user.id, () => {}, { studyActivity: microbemonActivity(interaction.client, interaction) });
         stage = 'render card';
         await presentSession(interaction, profile, interaction.user.id, { view: options.view || 'home', ownerName: interaction.member?.displayName || interaction.user.username });
     } catch (error) {
@@ -101,7 +102,7 @@ export async function handleMicrobemon(interaction, client, args, runAction = ac
             }
             return runAction(profile, action, { sponsor, encounterId: token, revision: Number(revision), answer: Number(answer), petId: action === 'switch' ? interaction.values?.[0] : token, confirmation: revision,
                 nickname: action === 'nickname' ? interaction.fields.getTextInputValue('nickname') : undefined });
-        });
+        }, { studyActivity: microbemonActivity(client, interaction) });
         const caughtIndex = action === 'catch' ? profile.pets.findIndex(pet => pet.id === token) : -1;
         let view = action === 'guide' ? 'guide' : action === 'deck' ? 'deck' : action === 'party' ? 'party' : action === 'release_prompt' ? 'release' : action === 'release_confirm' ? 'deck' : 'home';
         let page = action === 'party' ? Number(requestedAction === 'partybox' ? interaction.values?.[0] : answer) || 0 : Number(token) || 0;

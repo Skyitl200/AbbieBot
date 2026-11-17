@@ -1,3 +1,4 @@
+import { trackVoiceState } from '../services/studyTime/tracking.js';
 import { ChannelType, PermissionFlagsBits } from 'discord.js';
 import {
     getJoinToCreateConfig, 
@@ -22,7 +23,9 @@ const MAX_TRACKED_COOLDOWNS = 10000;
 export default {
     name: 'voiceStateUpdate',
     async execute(oldState, newState, client) {
-        if (newState.member.user.bot) return;
+        if (!newState.member || newState.member.user.bot) return;
+        try { await trackVoiceState(oldState, newState, client); }
+        catch (error) { logger.warn(`Study-time voice event: ${error.message}`); }
 
         const guildId = newState.guild.id;
         const userId = newState.member.id;
