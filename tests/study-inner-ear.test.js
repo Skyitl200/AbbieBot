@@ -1,21 +1,25 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { LAB_SETS, labModelsMessage, labModeMessage, labQuestions, labModelImage } from '../src/services/study/labModels.js';
+import { LAB_SETS, labCategoryMessage, labModelsMessage, labModeMessage, labQuestions, labModelImage } from '../src/services/study/labModels.js';
 import { gradeQuestion } from '../src/services/study/questions.js';
 
 const roster = ['Anterior semicircular canal', 'Lateral semicircular canal', 'Posterior semicircular canal', 'Utricle', 'Saccule', 'Vestibule', 'Cochlea', 'Ampulla', 'Vestibular nerve'];
 const data = JSON.parse(readFileSync(new URL('../study-data/lab-models/inner-ear.json', import.meta.url), 'utf8'));
 
-test('inner ear is available in the nervous-system lab with the exact nine requested structures', () => {
+test('inner ear is available in the special-senses lab with the exact nine requested structures', () => {
     const set = LAB_SETS.find(set => set.id === 'inner-ear');
-    assert.equal(set.category, 'nervous');
+    assert.equal(set.category, 'special-senses');
     assert.equal(set.title, '3D Structure of the Inner Ear');
     assert.deepEqual(set.models.map(model => model.name), roster);
     assert.equal(data.sourceImageFile, 'inner-ear-original.jpg');
     assert.match(data.source, /user-provided/i);
     assert.match(data.source, /Quizlet/);
-    const menu = labModelsMessage('owner', 'nervous');
+    const categories = labCategoryMessage('owner').components[0].toJSON().components[0].options;
+    assert.ok(categories.some(option => option.value === 'special-senses' && option.label === 'Special Senses'));
+    const nervousMenu = labModelsMessage('owner', 'nervous').components[0].toJSON().components[0].options;
+    assert.equal(nervousMenu.some(option => option.value === 'inner-ear'), false);
+    const menu = labModelsMessage('owner', 'special-senses');
     assert.ok(menu.components[0].toJSON().components[0].options.some(option => option.value === 'inner-ear'));
     const modes = labModeMessage('owner', 'inner-ear').components[0].toJSON().components[0].options;
     assert.deepEqual(modes.map(option => option.value), ['multiple_choice', 'typed']);

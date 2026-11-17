@@ -1,6 +1,6 @@
 # Inner-ear lab set
 
-Path: `/test` → Anatomy and Physiology Lab → Nervous System → 3D Structure of the Inner Ear.
+Path: `/test` → Anatomy and Physiology Lab → Special Senses → 3D Structure of the Inner Ear.
 
 Nine image-identification questions support multiple choice and typed answers. The answer-labeled preview below is for review; quiz images contain one arrow and no added answer label.
 
