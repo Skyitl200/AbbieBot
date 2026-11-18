@@ -946,7 +946,7 @@
       "name": "Inferior colliculus",
       "expectedImageFile": "brain-left-sagittal/brain-20.png",
       "renderMethod": "original-photo-arrow-and-ring-overlay",
-      "imageSha256": "1e05a427e4402fa29acb23695f0279963277494cc8b5621d259ccc40b4cef31d",
+      "imageSha256": "3027d5101d5e04ddea478b621000cf7cb97aee8fa4cdba9b7bcfc8ae6d51db48",
       "questions": [
         {
           "id": "lab-brain-left-sagittal-20",
@@ -974,19 +974,19 @@
       "annotation": {
         "kind": "arrow-and-open-ring",
         "target": [
-          518,
-          354
+          495,
+          364
         ],
         "tail": [
-          577,
-          311
+          554,
+          321
         ],
         "radius": 7,
         "overlayBounds": [
-          506,
-          305,
-          583,
-          366
+          483,
+          315,
+          560,
+          376
         ]
       }
     },
@@ -995,7 +995,7 @@
       "name": "Superior colliculus",
       "expectedImageFile": "brain-left-sagittal/brain-21.png",
       "renderMethod": "original-photo-arrow-and-ring-overlay",
-      "imageSha256": "534f1c3cb08324490e20768d8d5902d9a6fac56646b17d323cd85e02717ff51f",
+      "imageSha256": "2e2683c2e9e9ab3c1f4c7165ed0d44beccb99b954738357b730527fb524053e1",
       "questions": [
         {
           "id": "lab-brain-left-sagittal-21",
@@ -1023,19 +1023,19 @@
       "annotation": {
         "kind": "arrow-and-open-ring",
         "target": [
-          507,
-          340
+          488,
+          331
         ],
         "tail": [
-          566,
-          297
+          547,
+          288
         ],
         "radius": 7,
         "overlayBounds": [
-          495,
-          291,
-          572,
-          352
+          476,
+          282,
+          553,
+          343
         ]
       }
     },

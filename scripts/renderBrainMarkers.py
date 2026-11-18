@@ -6,8 +6,9 @@ from PIL import Image, ImageDraw
 ROOT=Path(__file__).resolve().parents[1]
 FILE=ROOT/'study-data/lab-models/brain-left-sagittal.json'
 # Coordinates use the user's unaltered 772 x 1024 source photograph.
-# Colliculi target the posterior tectal elevations, not the anterior aqueduct rim.
-TARGETS=[(548,108),(281,156),(443,195),(441,225),(431,158),(405,277),(365,309),(377,343),(416,346),(428,321),(443,406),(449,355),(459,487),(428,640),(592,461),(550,406),(493,405),(476,350),(655,366),(518,354),(507,340),(510,323),(437,295),(456,299),(479,283),(444,249)]
+# Colliculi match the user's two circled model screenshots: superior first,
+# inferior second. Coordinates are mapped back onto the original photograph.
+TARGETS=[(548,108),(281,156),(443,195),(441,225),(431,158),(405,277),(365,309),(377,343),(416,346),(428,321),(443,406),(449,355),(459,487),(428,640),(592,461),(550,406),(493,405),(476,350),(655,366),(495,364),(488,331),(510,323),(437,295),(456,299),(479,283),(444,249)]
 def main():
  data=json.loads(FILE.read_text());source=ROOT/'study-assets/lab-models'/data['sourceImageFile']
  assert hashlib.sha256(source.read_bytes()).hexdigest()==data['sourceImageSha256']
