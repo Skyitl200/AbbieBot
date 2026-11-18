@@ -52,3 +52,5 @@ Voice tracking has a two-minute checkpoint lease. Startup clears old active-sess
 Validation: `node --test tests/study-time.test.js` covers month/DST splits, concurrent receipt deduplication, rollback/retry, atomic game saves, answered-question retries, voice joins/moves/leaves and restart recovery, ranking and pagination, resource credit and invalid URLs, owner-bound controls, and unavailable persistence.
 
 `/stats level` displays Current monthly level and Next monthly level as mentions of matching existing server roles, with hour ranges. Decorated role names such as `🌱 Fresh Scholar (0–1h)` are supported. Missing roles fall back to tier names; the card does not create, assign, or notify roles. The highest tier displays “Highest level reached.”
+
+The 11 supplied study-tier role IDs take priority over name matching, so renamed roles still display correctly. `/stats me` also includes a Current monthly level role field. IDs are only used when present in the current server, avoiding references to another server’s roles.

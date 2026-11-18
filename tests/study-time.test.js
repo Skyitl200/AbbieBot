@@ -235,7 +235,7 @@ test('/stats me loads the invoking member from persistent server records', async
     await openPersonalStudy({ client, guildId: 'g', user: { id: 'u', username: 'Student' }, deferReply: async () => {}, editReply: async value => { response = value; } });
     assert.equal(response.embeds[0].data.author.name, 'Student');
     assert.equal(response.embeds[0].data.description, '<@u>');
-    assert.equal(response.embeds[0].data.fields.length, 2);
+    assert.equal(response.embeds[0].data.fields.length, 3);
 });
 
 
@@ -267,7 +267,7 @@ test('personal stats show all four periods, placements, daily average and live v
     const data = personalStudyMessage([{ userId: 'u', record }, { userId: 'other', record: other }], 'u', now + 60000).embeds[0].toJSON();
     assert.equal(data.title, '👑 Personal Study Statistics');
     assert.equal(data.color, undefined);
-    assert.deepEqual(data.fields.map(f => f.name), ['Statistics', 'Streak']);
+    assert.deepEqual(data.fields.map(f => f.name), ['Statistics', 'Streak', 'Current monthly level']);
     for (const text of ['Daily', 'Weekly', 'Monthly', 'Alltime', '#2', 'Average/day (November)']) assert.ok(data.fields[0].value.includes(text));
     assert.ok(data.fields[0].value.startsWith('```ansi'));
     assert.ok(data.fields[1].value.includes('1'));
@@ -294,4 +294,19 @@ test('monthly levels mention matching server roles and fall back to tier names',
     assert.deepEqual(message.allowedMentions, { parse: [] });
     const fallback = monthlyLevelMessage(undefined, 'u', now, []).embeds[0].toJSON().description;
     assert.match(fallback, /Fresh Scholar \(0–1h\)/);
+});
+
+test('explicit role IDs take priority over names and appear on both statistics cards', () => {
+    const roles = [
+        { id: 'wrong', name: 'Fresh Scholar' },
+        { id: '1572340048647426230', name: 'Renamed current role' },
+        { id: '1572340340399145030', name: 'Renamed next role' },
+    ];
+    const level = monthlyLevelMessage(undefined, 'u', now, roles).embeds[0].toJSON();
+    assert.match(level.description, /<@&1572340048647426230>/);
+    assert.match(level.description, /<@&1572340340399145030>/);
+    const personal = personalStudyMessage([], 'u', now, roles).embeds[0].toJSON();
+    assert.match(personal.fields.find(field => field.name === 'Current monthly level').value, /<@&1572340048647426230>/);
+    const otherServer = personalStudyMessage([], 'u', now, []).embeds[0].toJSON();
+    assert.equal(otherServer.fields.at(-1).value, 'Fresh Scholar (0–1h)');
 });
