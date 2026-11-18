@@ -30,7 +30,7 @@ test('each identification card has its own marked image and supports both answer
             const model = manifest.models.find(model => model.id === question.labModelId);
             assert.equal(createHash('sha256').update(bytes).digest('hex'), model.imageSha256);
             assert.notEqual(model.imageSha256, manifest.sourceImageSha256);
-            assert.equal(question.question, 'Identify the structure indicated by the cyan arrow and open ring.');
+            assert.equal(question.question, model.questions[0].question);
             assert.ok(question.requiresModelImage);
             assert.ok(question.question.length > 30);
             if (mode === 'multiple_choice') {
@@ -70,4 +70,17 @@ for model in data['models']:
 print('26 pixel-preserving overlays verified')
 `], { cwd: new URL('..', import.meta.url), encoding: 'utf8' });
     assert.match(result, /26 pixel-preserving overlays verified/);
+});
+
+
+test('cerebellum highlights the full section while arbor vitae identifies multiple white branches', () => {
+    const cerebellum = manifest.models.find(m => m.name === 'Cerebellum');
+    const arbor = manifest.models.find(m => m.name === 'Arbor vitae');
+    assert.equal(cerebellum.annotation.kind, 'whole-section-outline');
+    assert.ok(cerebellum.annotation.outline.length > 10);
+    assert.match(cerebellum.questions[0].question, /entire section/);
+    assert.equal(arbor.annotation.kind, 'branching-network-markers');
+    assert.equal(arbor.annotation.targets.length, 3);
+    assert.match(arbor.questions[0].question, /branching network/);
+    assert.notEqual(arbor.expectedImageFile, cerebellum.expectedImageFile);
 });

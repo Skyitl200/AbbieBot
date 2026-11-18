@@ -2,7 +2,7 @@
 
 Open `/quiz` (or `/test`) → Anatomy and Physiology Lab → Nervous System → 3D Model of the Structures of the Brain - Left Sagittal View.
 
-Includes all 26 user-specified terms, with multiple-choice and typed-answer identification questions. Each question shows a separate marked version of the original photo with one high-contrast cyan arrow and open ring. The prompt asks the member to identify the marked structure. Common synonyms are accepted in typed mode. The question selector supports choosing a smaller subset.
+Includes all 26 user-specified terms, with multiple-choice and typed-answer identification questions. Each question shows a separate marked version of the original photo with high-contrast cyan markers. Cerebellum uses an outline around its full section; arbor vitae uses three pointers on separate white-matter branches. Other structures use a single arrow and open ring. The prompt asks the member to identify the marked structure. Common synonyms are accepted in typed mode. The question selector supports choosing a smaller subset.
 
 Source: `Head.jpg` from the user's `Head.jpg.zip`, plus the user's term list and reference screenshot. The JPEG is stored byte-for-byte as `study-assets/lab-models/brain-left-sagittal-original.jpg`; the manifest records its SHA-256. The renderer `scripts/renderBrainMarkers.py` applies one pointer overlay to each card; every pixel outside that overlay remains identical to the decoded original photograph. Small central structures have separate, precise marker locations.
 

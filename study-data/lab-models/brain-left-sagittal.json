@@ -2,7 +2,7 @@
   "course": "Anatomy and Physiology Lab",
   "category": "Nervous System",
   "modelGroup": "3D Model of the Structures of the Brain - Left Sagittal View",
-  "source": "User-provided Head.jpg, 26-term vocabulary list, and reference screenshot. One cyan arrow and open ring identify the target on each card. Original source anatomy is preserved outside the pointer overlay.",
+  "source": "User-provided Head.jpg, 26-term vocabulary list, and reference screenshot. Cyan pointers identify individual targets; the cerebellum uses a whole-section outline and arbor vitae uses markers on multiple white-matter branches. Original source anatomy is preserved outside the pointer overlay.",
   "sourceImageFile": "brain-left-sagittal-original.jpg",
   "sourceImageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
   "models": [
@@ -697,13 +697,13 @@
       "id": "brain-left-sagittal-15",
       "name": "Cerebellum",
       "expectedImageFile": "brain-left-sagittal/brain-15.png",
-      "renderMethod": "original-photo-arrow-and-ring-overlay",
-      "imageSha256": "a74f9972ac55c6e81090b2c3d9ee0bfc2754f22ae4130a048416e89ce49f85c6",
+      "renderMethod": "original-photo-section-outline",
+      "imageSha256": "e3d72eaf34120600a9e52d58172412012dcaed55f1fdd077ac4448f3242c3691",
       "questions": [
         {
           "id": "lab-brain-left-sagittal-15",
-          "question": "Identify the structure indicated by the cyan arrow and open ring.",
-          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "question": "Identify the entire section outlined in cyan.",
+          "typedQuestion": "Identify the entire section outlined in cyan.",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
@@ -723,21 +723,82 @@
         }
       ],
       "annotation": {
-        "kind": "arrow-and-open-ring",
-        "target": [
-          592,
-          461
+        "kind": "whole-section-outline",
+        "outline": [
+          [
+            547,
+            354
+          ],
+          [
+            572,
+            359
+          ],
+          [
+            597,
+            378
+          ],
+          [
+            619,
+            405
+          ],
+          [
+            635,
+            435
+          ],
+          [
+            630,
+            463
+          ],
+          [
+            607,
+            487
+          ],
+          [
+            573,
+            505
+          ],
+          [
+            531,
+            518
+          ],
+          [
+            476,
+            523
+          ],
+          [
+            479,
+            500
+          ],
+          [
+            489,
+            472
+          ],
+          [
+            498,
+            440
+          ],
+          [
+            495,
+            412
+          ],
+          [
+            502,
+            390
+          ],
+          [
+            523,
+            369
+          ],
+          [
+            547,
+            354
+          ]
         ],
-        "tail": [
-          651,
-          418
-        ],
-        "radius": 7,
         "overlayBounds": [
-          580,
-          412,
-          657,
-          473
+          470,
+          348,
+          641,
+          529
         ]
       }
     },
@@ -745,13 +806,13 @@
       "id": "brain-left-sagittal-16",
       "name": "Arbor vitae",
       "expectedImageFile": "brain-left-sagittal/brain-16.png",
-      "renderMethod": "original-photo-arrow-and-ring-overlay",
-      "imageSha256": "bb53a73086cb84bf6d8f4d761dcf9ae535ce185acbb98c473ea448b95b8ea0ca",
+      "renderMethod": "original-photo-branching-network-markers",
+      "imageSha256": "8f0d5088e3270062cad70d7211e4badc3b7fddaa014e9cd5db99145464fc6a81",
       "questions": [
         {
           "id": "lab-brain-left-sagittal-16",
-          "question": "Identify the structure indicated by the cyan arrow and open ring.",
-          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "question": "Identify the branching network indicated by the cyan markers.",
+          "typedQuestion": "Identify the branching network indicated by the cyan markers.",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
@@ -773,21 +834,40 @@
         }
       ],
       "annotation": {
-        "kind": "arrow-and-open-ring",
-        "target": [
-          550,
-          406
+        "kind": "branching-network-markers",
+        "targets": [
+          [
+            539,
+            389
+          ],
+          [
+            581,
+            425
+          ],
+          [
+            547,
+            468
+          ]
         ],
-        "tail": [
-          609,
-          363
+        "tails": [
+          [
+            606,
+            354
+          ],
+          [
+            656,
+            411
+          ],
+          [
+            623,
+            514
+          ]
         ],
-        "radius": 7,
         "overlayBounds": [
-          538,
-          357,
-          615,
-          418
+          530,
+          345,
+          665,
+          523
         ]
       }
     },
