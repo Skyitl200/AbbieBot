@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { EventEmitter } from 'node:events';
-import { newRecord, addCredit, addVoiceInterval, checkpointVoice, totalsFor, sumTotals, monthKey, tierFor, studyStreak } from '../src/services/studyTime/model.js';
+import { newRecord, addCredit, addVoiceInterval, checkpointVoice, totalsFor, sumTotals, monthKey, tierFor, dayKey, studyStreaks } from '../src/services/studyTime/model.js';
 import { creditActivity, recordsForGuild, saveVoice, profileKey } from '../src/services/studyTime/store.js';
 import { eligibleVoice, trackVoiceState, startStudyTime, creditTestQuestion } from '../src/services/studyTime/tracking.js';
-import { rankRecords, studyTimeMessage, monthlyLevelMessage, personalStatsMessage, openPersonalStats, openMonthlyLevel, createStudyResourceMessage, handleStudyTime } from '../src/services/studyTime/interface.js';
+import { rankRecords, studyTimeMessage, monthlyLevelMessage, openMonthlyLevel, personalStudyMessage, openPersonalStudy, createStudyResourceMessage, handleStudyTime } from '../src/services/studyTime/interface.js';
 import { withProfile } from '../src/services/microbemon/store.js';
 import { newProfile } from '../src/services/microbemon/engine.js';
 
@@ -202,78 +202,83 @@ test('monthly level card uses previous calendar month, tier rank and hours to pr
     addCredit(record, 'test', 145 * 3600000, Date.parse('2026-10-15T12:00:00Z'));
     const data = monthlyLevelMessage(record, 'u', now).embeds[0].toJSON();
     assert.equal(data.title, '☕ Monthly Level Statistics (November 2026)');
-    const panel = data.fields[0].value;
-    assert.ok(panel.startsWith('```ansi\n'));
+    const panel = data.description;
+    assert.ok(panel.includes('**Current monthly level:**'));
+    assert.ok(!panel.includes('```'));
     for (const text of ['Current monthly level', 'Last monthly level', 'Level rank', 'Level promotion in', 'Master (60–80h)', 'Study Sage (140–200h)', '8/11', '14.3 hours until Grandmaster']) assert.ok(panel.includes(text));
-    assert.ok(panel.includes('\u001b[1;34m'));
-    assert.ok(panel.includes('\u001b[1;33m'));
+    assert.equal(data.fields, undefined);
     assert.equal(data.color, undefined);
 });
 test('monthly history handles January rollover, missing history and highest level', () => {
     const at = Date.parse('2027-01-01T05:00:00Z'), record = newRecord();
     addCredit(record, 'voice', 200 * 3600000, at);
     addCredit(record, 'voice', 20 * 3600000, Date.parse('2026-12-31T23:00:00Z'));
-    const fields = monthlyLevelMessage(record, 'u', at).embeds[0].data.fields;
-    assert.ok(fields[0].value.includes('Exam Expert (20–40h)'));
-    assert.match(fields[0].value, /Highest level reached/);
-    const empty = monthlyLevelMessage(undefined, 'u', at).embeds[0].data.fields;
-    assert.match(empty[0].value, /No study time recorded last month/);
-    assert.ok(empty[0].value.includes('1.0 hours until Budding Bookworm'));
+    const panel = monthlyLevelMessage(record, 'u', at).embeds[0].data.description;
+    assert.ok(panel.includes('Exam Expert (20–40h)'));
+    assert.match(panel, /Highest level reached/);
+    const empty = monthlyLevelMessage(undefined, 'u', at).embeds[0].data.description;
+    assert.match(empty, /No study time recorded last month/);
+    assert.ok(empty.includes('1.0 hours until Budding Bookworm'));
 });
-test('/stats exposes me, level and bot, and me rejects direct messages before loading storage', async () => {
+test('/stats exposes me and bot, and me rejects direct messages before loading storage', async () => {
     const command = (await import('../src/commands/Core/stats.js')).default;
     assert.deepEqual(command.data.toJSON().options.map(o => o.name), ['me', 'level', 'bot']);
     let response;
     await command.execute({ options: { getSubcommand: () => 'me' }, deferReply: async () => {}, editReply: async value => { response = value; } });
     assert.match(response.content, /inside a server/);
 });
-test('/stats level loads the invoking member from persistent server records', async () => {
+test('/stats me loads the invoking member from persistent server records', async () => {
     const { client } = database();
     await creditActivity(client, 'g', 'u', 'test', 'stats-question', now);
     let response;
-    await openMonthlyLevel({ client, guildId: 'g', user: { id: 'u', username: 'Student' }, deferReply: async () => {}, editReply: async value => { response = value; } });
+    await openPersonalStudy({ client, guildId: 'g', user: { id: 'u', username: 'Student' }, deferReply: async () => {}, editReply: async value => { response = value; } });
     assert.equal(response.embeds[0].data.author.name, 'Student');
     assert.equal(response.embeds[0].data.description, '<@u>');
-    assert.equal(response.embeds[0].data.fields.length, 1);
+    assert.equal(response.embeds[0].data.fields.length, 2);
 });
 
-test('daily and Monday-based weekly credits split at Eastern midnight, including DST', () => {
-    const record = newRecord();
-    addVoiceInterval(record, Date.parse('2026-11-16T04:59:30Z'), Date.parse('2026-11-16T05:00:30Z'));
-    const at = Date.parse('2026-11-16T12:00:00Z');
-    assert.equal(sumTotals(totalsFor(record, 'day', at)), 30000);
-    assert.equal(sumTotals(totalsFor(record, 'week', at)), 30000);
-    assert.equal(sumTotals(totalsFor(record, 'all', at)), 60000);
-    const dst = newRecord();
-    addVoiceInterval(dst, Date.parse('2026-11-01T04:00:00Z'), Date.parse('2026-11-02T05:00:00Z'));
-    assert.equal(sumTotals(dst.days['2026-11-01']), 25 * 3600000);
+
+test('day and Monday week totals split live voice at Eastern midnight and preserve legacy totals', () => {
+    const record = newRecord(), midnight = Date.parse('2026-11-16T05:00:00Z');
+    addVoiceInterval(record, midnight - 30000, midnight + 30000);
+    assert.equal(sumTotals(totalsFor(record, 'day', midnight + 30000)), 30000);
+    assert.equal(sumTotals(totalsFor(record, 'week', midnight + 30000)), 30000);
+    assert.equal(sumTotals(totalsFor(record, 'month', midnight + 30000)), 60000);
+    assert.equal(dayKey(midnight - 1), '2026-11-15');
+    const legacy = { version: 1, totals: { voice: 3600000 }, months: { '2026-11': { voice: 3600000 } }, voice: null };
+    assert.equal(sumTotals(totalsFor(legacy, 'day', midnight)), 0);
+    assert.equal(sumTotals(totalsFor(legacy, 'all', midnight)), 3600000);
+    addCredit(legacy, 'test', 30000, midnight);
+    assert.equal(sumTotals(totalsFor(legacy, 'day', midnight)), 30000);
 });
-test('streaks bridge yesterday, reset after a missed day, and retain the longest run', () => {
+test('streaks use calendar days, allow yesterday, break gaps and handle DST', () => {
     const record = newRecord();
-    for (const day of [10, 11, 12, 15, 16]) addCredit(record, 'test', 30000, Date.parse(`2026-11-${day}T17:00:00Z`));
-    assert.deepEqual(studyStreak(record, Date.parse('2026-11-17T17:00:00Z')), { current: 2, longest: 3 });
-    assert.deepEqual(studyStreak(record, Date.parse('2026-11-18T17:00:00Z')), { current: 0, longest: 3 });
+    for (const date of ['2026-10-30', '2026-10-31', '2026-11-01', '2026-11-03']) addCredit(record, 'test', 30000, Date.parse(date + 'T17:00:00Z'));
+    assert.deepEqual(studyStreaks(record, Date.parse('2026-11-02T17:00:00Z')), { current: 3, longest: 3 });
+    assert.deepEqual(studyStreaks(record, Date.parse('2026-11-04T17:00:00Z')), { current: 1, longest: 3 });
+    assert.deepEqual(studyStreaks(record, Date.parse('2026-11-05T17:00:00Z')), { current: 0, longest: 3 });
 });
-test('personal stats uses actual hours, server ranks and elapsed calendar days for the average', () => {
-    const at = Date.parse('2026-11-17T17:00:00Z');
+test('personal stats show all four periods, placements, daily average and live voice streak', () => {
     const record = newRecord(), other = newRecord();
-    addCredit(record, 'voice', 34 * 3600000, at);
-    addCredit(other, 'voice', 40 * 3600000, at);
-    const data = personalStatsMessage([{ userId: 'u', record }, { userId: 'v', record: other }], 'u', at).embeds[0].toJSON();
-    assert.match(data.fields[0].value, /Monthly:.*34.0h.*#2/);
-    assert.match(data.fields[0].value, /Average\/day \(November\): 2.0 h/);
-    assert.match(data.fields[1].value, /Current study streak: 1 days/);
-    const legacy = { version: 1, totals: record.totals, months: record.months, voice: null };
-    assert.equal(sumTotals(totalsFor(legacy, 'day', at)), 0);
-    assert.equal(sumTotals(totalsFor(legacy, 'all', at)), 34 * 3600000);
-    addCredit(legacy, 'test', 30000, at);
-    assert.equal(sumTotals(totalsFor(legacy, 'day', at)), 30000);
+    addCredit(record, 'voice', 2 * 3600000, now);
+    addCredit(other, 'voice', 3 * 3600000, now);
+    checkpointVoice(record, 'v', now);
+    const data = personalStudyMessage([{ userId: 'u', record }, { userId: 'other', record: other }], 'u', now + 60000).embeds[0].toJSON();
+    assert.equal(data.title, '👑 Personal Study Statistics');
+    assert.equal(data.color, undefined);
+    assert.deepEqual(data.fields.map(f => f.name), ['Statistics', 'Streak']);
+    for (const text of ['Daily', 'Weekly', 'Monthly', 'Alltime', '#2', 'Average/day (November)']) assert.ok(data.fields[0].value.includes(text));
+    assert.ok(data.fields[0].value.startsWith('```ansi'));
+    assert.ok(data.fields[1].value.includes('1'));
+    assert.ok(data.fields.every(f => f.value.length <= 1024));
+    assert.deepEqual(studyStreaks(undefined, now), { current: 0, longest: 0 });
 });
-test('/stats me routes to the personal statistics card from storage', async () => {
-    const { client } = database();
+test('/stats level routes to clean monthly card and /stats me routes to personal statistics', async () => {
     const command = (await import('../src/commands/Core/stats.js')).default;
-    let response;
-    await command.execute({ client, guildId: 'g', options: { getSubcommand: () => 'me' }, user: { id: 'u' }, deferReply: async () => {}, editReply: async value => { response = value; } });
-    assert.match(response.embeds[0].data.title, /Personal Study Statistics/);
-    assert.equal(response.embeds[0].data.fields.length, 2);
+    const { client } = database();
+    for (const subcommand of ['level', 'me']) {
+        let response;
+        await command.execute({ client, guildId: 'g', user: { id: 'u', username: 'Student' }, options: { getSubcommand: () => subcommand }, deferReply: async () => {}, editReply: async value => { response = value; } });
+        assert.ok(response.embeds[0].data.title.includes(subcommand === 'level' ? 'Monthly Level Statistics' : 'Personal Study Statistics'));
+    }
 });
