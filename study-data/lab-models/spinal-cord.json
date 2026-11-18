@@ -13,37 +13,27 @@
       "expectedImageFile": "spinal-cord/sc-01.png",
       "renderMethod": "original-photo-marker-overlay",
       "annotation": {
-        "kind": "bracket",
-        "points": [
-          [
-            158,
-            233
-          ],
-          [
-            154,
-            233
-          ],
-          [
-            154,
-            288
-          ],
-          [
-            158,
-            288
-          ]
+        "kind": "arrow",
+        "target": [
+          175,
+          261
+        ],
+        "tail": [
+          210,
+          236
         ],
         "bounds": [
-          148,
-          227,
-          164,
-          294
+          165,
+          226,
+          220,
+          271
         ]
       },
       "questions": [
         {
           "id": "lab-spinal-cord-01",
-          "question": "Identify the structure or region marked in cyan.",
-          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
@@ -64,15 +54,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "bff6b3b559b8081653a536917c6687a0a5527e81879e96352937153ef339e651",
+      "imageSha256": "6e5ee7c9a1a1880fed5d591486e04aece6902baa46c8ac3abea8c19767c1aed8",
       "view": {
         "crop": [
-          65,
           130,
-          320,
-          345
+          210,
+          230,
+          310
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -131,15 +121,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "1992eb443558c86b61dd66f9be8534585a4b9cff2b5cce4201d9e424e033636b",
+      "imageSha256": "a4aa6c6ba18f1d288504bfd2cb83e5fecd154aa7885735775ed86df9d3851117",
       "view": {
         "crop": [
-          65,
-          130,
-          320,
-          345
+          100,
+          140,
+          195,
+          250
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -148,37 +138,27 @@
       "expectedImageFile": "spinal-cord/sc-03.png",
       "renderMethod": "original-photo-marker-overlay",
       "annotation": {
-        "kind": "bracket",
-        "points": [
-          [
-            171,
-            609
-          ],
-          [
-            165,
-            609
-          ],
-          [
-            165,
-            652
-          ],
-          [
-            171,
-            652
-          ]
+        "kind": "arrow",
+        "target": [
+          182,
+          631
+        ],
+        "tail": [
+          220,
+          606
         ],
         "bounds": [
-          159,
-          603,
-          177,
-          658
+          172,
+          596,
+          230,
+          641
         ]
       },
       "questions": [
         {
           "id": "lab-spinal-cord-03",
-          "question": "Identify the structure or region marked in cyan.",
-          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
@@ -200,15 +180,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "437af663c5b2e2911915cad4eb37daac904783d7e744a71bb9438f28a68486ba",
+      "imageSha256": "8776c7d11713b525712acce2152aec59acd9102f26e1a9499d32ffa9578f30a9",
       "view": {
         "crop": [
-          90,
-          555,
-          310,
-          735
+          135,
+          580,
+          240,
+          680
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -223,13 +203,13 @@
           677
         ],
         "tail": [
-          273,
-          648
+          235,
+          650
         ],
         "bounds": [
           174,
-          638,
-          283,
+          640,
+          245,
           687
         ]
       },
@@ -258,15 +238,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "4f8b8cab4a1a7512c6b28640d27473b575d2a3f27a72f4f7419103974e27ea29",
+      "imageSha256": "c29308e337e950737b58fc700627abb1d6a3d5a777bb1ebe645e5dfbe963627e",
       "view": {
         "crop": [
-          90,
-          590,
-          310,
-          785
+          140,
+          620,
+          260,
+          720
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -325,15 +305,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "3e45fd025af66062b761941c702ab7ef6d007d3294699b62ab4c37cc8e4533a7",
+      "imageSha256": "28792d981f878b425d031f0ddc070a109d2a234749da2bd1add4130d339f1da2",
       "view": {
         "crop": [
-          90,
-          655,
-          315,
-          915
+          130,
+          690,
+          230,
+          840
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -385,15 +365,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "27f9bd17d3a52c2d108348638c7799d15c4583474b97d46b0cbd793eba857eea",
+      "imageSha256": "2be5014026f12cc021bbd898e92d63415e5bd02c9d9e069eb13c484580db915e",
       "view": {
         "crop": [
-          90,
-          715,
-          315,
-          950
+          140,
+          770,
+          230,
+          890
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -442,15 +422,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "30e4c97240afb9e8c2ffb9ac1b813e2f3248adf6c5d4e437cf071e23566d4c09",
+      "imageSha256": "bd3bfd3a28791ee7d2df54acc9ef951962707902f95a0162ac85c702b5d809ea",
       "view": {
         "crop": [
-          120,
-          715,
-          345,
-          920
+          195,
+          750,
+          340,
+          855
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -500,15 +480,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "95afd73bc2eee9591a543998b97dc54a586c3f7db8e655768e5c49b111ee3d10",
+      "imageSha256": "489fc8b590be80208ddc0c291da84955c230555463a7d9f6de219439ce616c11",
       "view": {
         "crop": [
-          120,
-          805,
+          210,
+          870,
           345,
-          1005
+          970
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -559,15 +539,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "b259b97fc99a02e5927b3b448ad7dd4bfa86196e1242828846761d03f1a403a7",
+      "imageSha256": "01ed4842d64f50308193c7bcef7e4029d2a4e030171c8f069ec99e7100add81f",
       "view": {
         "crop": [
-          65,
-          185,
-          320,
-          370
+          160,
+          245,
+          240,
+          345
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -627,15 +607,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "d8fd3520f8e4de13accb6ce87126bb9a759f653a5df9814eba322b4be5d663ca",
+      "imageSha256": "e80cd3479871dee07d53e839d9320f9cc24347a460d1739e475073454132d0f5",
       "view": {
         "crop": [
-          65,
-          160,
-          320,
-          355
+          170,
+          220,
+          280,
+          320
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -695,15 +675,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "0d046b0d99efb9aea84526ab983fb4881e61ccef76caa4eb957b7389ebc29826",
+      "imageSha256": "6480112f7bac7b9425e35d3f3d05fab79375ce0b896a9322bb86ba14c6ba68ca",
       "view": {
         "crop": [
-          95,
-          760,
-          315,
-          975
+          160,
+          830,
+          255,
+          940
         ],
-        "scale": 2
+        "scale": 4
       }
     },
     {
@@ -763,15 +743,15 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "52cf47ae79d705be94c88f4d2ca6049084eecbcfa0a08a010d299a19d0f364bd",
+      "imageSha256": "65a100c3bf91892084d0b2315696276e8b882f0cf72e65cb8b8d44f108d13aee",
       "view": {
         "crop": [
-          85,
-          595,
-          315,
-          835
+          165,
+          660,
+          265,
+          800
         ],
-        "scale": 2
+        "scale": 4
       }
     }
   ]
