@@ -2,7 +2,7 @@
 
 Use `/studytime` to open the monthly server leaderboard. The buttons switch between this month, all time, and personal statistics. `/studytime view:stats` shows the member's tier, next tier, leaderboard rank, tier rank, time until promotion, and source breakdown. Use `member` to inspect another member or `period:all` for all-time statistics. Rankings show ten people per page.
 
-`/stats level` opens the clean monthly level card with regular Discord text and bold labels: current level, previous calendar month’s level, tier rank out of 11, and hours remaining until promotion (rounded up to one decimal). Missing previous-month history is labeled honestly. It has no colored side bar.
+`/stats level` opens the clean monthly level card with regular Discord text and bold labels: current level, next level, tier rank out of 11, and hours remaining until promotion (rounded up to one decimal). Missing previous-month history is labeled honestly. It has no colored side bar.
 
 `/stats me` shows Personal Study Statistics with boxed blue/gold text: daily, Monday-based weekly, monthly and all-time hours and server placements; average hours per calendar day of the current month; current and longest study streaks. A streak remains current through the next day, allowing the member to study that day. Daily history begins with this update; existing monthly and all-time totals are preserved, and unrecorded historical days are not invented. Live voice time is included. `/stats bot` retains bot system statistics.
 
@@ -50,3 +50,7 @@ Voice tracking has a two-minute checkpoint lease. Startup clears old active-sess
 `/studytime` is a server command and does not consume an additional global slash-command slot. Existing XP `/leaderboard` behavior is unchanged. No schema migration or new environment variables are required.
 
 Validation: `node --test tests/study-time.test.js` covers month/DST splits, concurrent receipt deduplication, rollback/retry, atomic game saves, answered-question retries, voice joins/moves/leaves and restart recovery, ranking and pagination, resource credit and invalid URLs, owner-bound controls, and unavailable persistence.
+
+`/stats level` displays Current monthly level and Next monthly level as mentions of matching existing server roles, with hour ranges. Decorated role names such as `🌱 Fresh Scholar (0–1h)` are supported. Missing roles fall back to tier names; the card does not create, assign, or notify roles. The highest tier displays “Highest level reached.”
+
+The 11 supplied study-tier role IDs take priority over name matching, so renamed roles still display correctly. `/stats me` also includes a Current monthly level role field. IDs are only used when present in the current server, avoiding references to another server’s roles.
