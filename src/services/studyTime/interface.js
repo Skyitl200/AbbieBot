@@ -71,6 +71,8 @@ export function studyTierRoleLabel(tier, roles = []) {
     return role ? `<@&${role.id}> ${label.slice(tier.name.length).trim()}` : label;
 }
 export function monthlyLevelMessage(record, userId, at = Date.now(), roles = []) {
+    // Discord Collection.values() is a single-use iterator; reuse it for both tiers.
+    roles = [...roles];
     const ms = sumTotals(totalsFor(record, 'month', at));
     const tier = tierFor(ms);
     const remaining = tier.next ? Math.ceil(Math.max(0, tier.next.ms - ms) / 360000) / 10 : null;
