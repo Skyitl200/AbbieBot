@@ -46,18 +46,23 @@ export function studyTimeMessage(rows, owner, { period = 'month', view = 'leader
     ));
     return { embeds: [embed], components: nav, allowedMentions: { parse: [] } };
 }
-export function monthlyLevelMessage(record, userId, at = Date.now()) {
-    const currentMonth = monthKey(at);
-    const [year, month] = currentMonth.split('-').map(Number);
-    const previousMonth = `${month === 1 ? year - 1 : year}-${String(month === 1 ? 12 : month - 1).padStart(2, '0')}`;
+// Match existing server roles, including decorated names and hour-range suffixes.
+export function studyTierRoleLabel(tier, roles = []) {
+    const normalize = name => String(name).normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+    const name = normalize(tier.name);
+    const candidates = [...roles].filter(role => role.name !== '@everyone');
+    const role = candidates.find(role => normalize(role.name) === name)
+        || candidates.find(role => normalize(role.name).startsWith(`${name} `));
+    const label = tierLabel(tier);
+    return role ? `<@&${role.id}> ${label.slice(tier.name.length).trim()}` : label;
+}
+export function monthlyLevelMessage(record, userId, at = Date.now(), roles = []) {
     const ms = sumTotals(totalsFor(record, 'month', at));
     const tier = tierFor(ms);
-    const previous = record?.months?.[previousMonth];
-    const lastLevel = previous ? tierLabel(tierFor(sumTotals(previous)).current) : 'No study time recorded last month';
     const remaining = tier.next ? Math.ceil(Math.max(0, tier.next.ms - ms) / 360000) / 10 : null;
     const lines = [
-        ['Current monthly level', tierLabel(tier.current)],
-        ['Last monthly level', lastLevel],
+        ['Current monthly level', studyTierRoleLabel(tier.current, roles)],
+        ['Next monthly level', tier.next ? studyTierRoleLabel(tier.next, roles) : 'Highest level reached'],
         ['Level rank', `${tier.rank}/${tier.count}`],
         ['Level promotion in', tier.next ? `${remaining.toFixed(1)} hours until ${tier.next.name}` : 'Highest level reached — Mythic Mind!'],
     ];
@@ -75,7 +80,12 @@ export async function openMonthlyLevel(interaction) {
         if (!interaction.guildId) throw new Error('Use /stats level inside a server.');
         const rows = await recordsForGuild(interaction.client, interaction.guildId);
         const record = rows.find(row => row.userId === interaction.user.id)?.record;
-        const message = monthlyLevelMessage(record, interaction.user.id);
+        let roles = interaction.guild?.roles?.cache;
+        if (interaction.guild?.roles?.fetch) {
+            try { roles = await interaction.guild.roles.fetch(); }
+            catch (error) { logger.warn(`Study level role lookup: ${error.message}`); }
+        }
+        const message = monthlyLevelMessage(record, interaction.user.id, Date.now(), roles?.values() || []);
         const avatar = interaction.user.displayAvatarURL?.();
         message.embeds[0].setAuthor({ name: interaction.user.globalName || interaction.user.username || 'Your study level', ...(avatar ? { iconURL: avatar } : {}) });
         await interaction.editReply(message);

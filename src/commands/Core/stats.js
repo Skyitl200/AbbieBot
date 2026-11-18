@@ -9,7 +9,7 @@ export default {
     .setName("stats")
     .setDescription("View your study level or bot statistics")
     .addSubcommand(command => command.setName("me").setDescription("Your study hours, placements, daily average and streaks"))
-    .addSubcommand(command => command.setName("level").setDescription("Your current and last monthly level and promotion progress"))
+    .addSubcommand(command => command.setName("level").setDescription("Your current and next monthly level and promotion progress"))
     .addSubcommand(command => command.setName("bot").setDescription("View bot system statistics")),
 
   async execute(interaction) {

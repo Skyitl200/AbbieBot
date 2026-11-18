@@ -196,7 +196,7 @@ test('disconnected gateways pause voice checkpoints instead of trusting stale vo
 });
 
 
-test('monthly level card uses previous calendar month, tier rank and hours to promotion', () => {
+test('monthly level card uses current and next tiers, tier rank and hours to promotion', () => {
     const record = newRecord();
     addCredit(record, 'voice', 65.75 * 3600000, now);
     addCredit(record, 'test', 145 * 3600000, Date.parse('2026-10-15T12:00:00Z'));
@@ -205,19 +205,20 @@ test('monthly level card uses previous calendar month, tier rank and hours to pr
     const panel = data.description;
     assert.ok(panel.includes('**Current monthly level:**'));
     assert.ok(!panel.includes('```'));
-    for (const text of ['Current monthly level', 'Last monthly level', 'Level rank', 'Level promotion in', 'Master (60–80h)', 'Study Sage (140–200h)', '8/11', '14.3 hours until Grandmaster']) assert.ok(panel.includes(text));
+    for (const text of ['Current monthly level', 'Next monthly level', 'Level rank', 'Level promotion in', 'Master (60–80h)', 'Grandmaster (80–140h)', '8/11', '14.3 hours until Grandmaster']) assert.ok(panel.includes(text));
     assert.equal(data.fields, undefined);
     assert.equal(data.color, undefined);
 });
-test('monthly history handles January rollover, missing history and highest level', () => {
+test('monthly level handles a new month and highest level', () => {
     const at = Date.parse('2027-01-01T05:00:00Z'), record = newRecord();
     addCredit(record, 'voice', 200 * 3600000, at);
     addCredit(record, 'voice', 20 * 3600000, Date.parse('2026-12-31T23:00:00Z'));
     const panel = monthlyLevelMessage(record, 'u', at).embeds[0].data.description;
-    assert.ok(panel.includes('Exam Expert (20–40h)'));
+    assert.ok(!panel.includes('Exam Expert (20–40h)'));
+    assert.ok(panel.includes('**Next monthly level:** Highest level reached'));
     assert.match(panel, /Highest level reached/);
     const empty = monthlyLevelMessage(undefined, 'u', at).embeds[0].data.description;
-    assert.match(empty, /No study time recorded last month/);
+    assert.match(empty, /Next monthly level:.*Budding Bookworm/);
     assert.ok(empty.includes('1.0 hours until Budding Bookworm'));
 });
 test('/stats exposes me and bot, and me rejects direct messages before loading storage', async () => {
@@ -281,4 +282,16 @@ test('/stats level routes to clean monthly card and /stats me routes to personal
         await command.execute({ client, guildId: 'g', user: { id: 'u', username: 'Student' }, options: { getSubcommand: () => subcommand }, deferReply: async () => {}, editReply: async value => { response = value; } });
         assert.ok(response.embeds[0].data.title.includes(subcommand === 'level' ? 'Monthly Level Statistics' : 'Personal Study Statistics'));
     }
+});
+
+test('monthly levels mention matching server roles and fall back to tier names', () => {
+    const roles = [{ id: '111', name: '🌱 Fresh Scholar (0–1h)' }, { id: '222', name: 'Budding Bookworm' }];
+    const message = monthlyLevelMessage(undefined, 'u', now, roles);
+    const description = message.embeds[0].toJSON().description;
+    assert.match(description, /Current monthly level:\*\* <@&111> \(0–1h\)/);
+    assert.match(description, /Next monthly level:\*\* <@&222> \(1–3h\)/);
+    assert.ok(!description.includes('Last monthly level'));
+    assert.deepEqual(message.allowedMentions, { parse: [] });
+    const fallback = monthlyLevelMessage(undefined, 'u', now, []).embeds[0].toJSON().description;
+    assert.match(fallback, /Fresh Scholar \(0–1h\)/);
 });
