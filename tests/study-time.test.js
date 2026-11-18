@@ -310,3 +310,13 @@ test('explicit role IDs take priority over names and appear on both statistics c
     const otherServer = personalStudyMessage([], 'u', now, []).embeds[0].toJSON();
     assert.equal(otherServer.fields.at(-1).value, 'Fresh Scholar (0–1h)');
 });
+
+test('both level roles resolve from the single-use iterator supplied by Discord', () => {
+    const roles = new Map([
+        ['1572340048647426230', { id: '1572340048647426230', name: 'Fresh Scholar' }],
+        ['1572340340399145030', { id: '1572340340399145030', name: 'Budding Bookworm' }],
+    ]);
+    const description = monthlyLevelMessage(undefined, 'u', now, roles.values()).embeds[0].toJSON().description;
+    assert.match(description, /Current monthly level:\*\* <@&1572340048647426230>/);
+    assert.match(description, /Next monthly level:\*\* <@&1572340340399145030>/);
+});
