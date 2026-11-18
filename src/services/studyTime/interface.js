@@ -1,6 +1,6 @@
 import { randomBytes } from 'node:crypto';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, MessageFlags, PermissionFlagsBits, escapeMarkdown } from 'discord.js';
-import { totalsFor, sumTotals, duration, tierFor, monthKey, ZONE } from './model.js';
+import { totalsFor, sumTotals, duration, tierFor, monthKey, dayKey, studyStreaks, ZONE } from './model.js';
 import { recordsForGuild, putResource, getResource, creditActivity } from './store.js';
 import { logger } from '../../utils/logger.js';
 const row = (...buttons) => new ActionRowBuilder().addComponents(buttons);
@@ -61,21 +61,18 @@ export function monthlyLevelMessage(record, userId, at = Date.now()) {
         ['Level rank', `${tier.rank}/${tier.count}`],
         ['Level promotion in', tier.next ? `${remaining.toFixed(1)} hours until ${tier.next.name}` : 'Highest level reached — Mythic Mind!'],
     ];
-    // Discord renders ANSI code fences as a boxed, monospace panel. Values and
-    // labels use separate colors; the embed deliberately has no accent color.
-    const panel = '```ansi\n' + lines.map(([label, value]) =>
-        `\u001b[1;34m${label}:\u001b[0m\n\u001b[1;33m${value}\u001b[0m`).join('\n\n') + '\n```';
+    const detail = lines.map(([label, value]) => `**${label}:** ${label === 'Level rank' ? '👑 ' : ''}${value}`).join('\n\n');
     const embed = new EmbedBuilder({
         title: `☕ Monthly Level Statistics (${periodLabel('month', at)})`,
-        fields: [{ name: 'Monthly levels', value: panel }],
-    }).setDescription(`<@${userId}>`).setTimestamp(at)
-        .setFooter({ text: 'Monthly levels reset on the first of each month · Eastern time' });
+        description: `<@${userId}>\n\n${detail}`,
+        footer: { text: 'Monthly levels reset on the first of each month · Eastern time' },
+    }).setTimestamp(at);
     return { embeds: [embed], allowedMentions: { parse: [] } };
 }
 export async function openMonthlyLevel(interaction) {
     await interaction.deferReply();
     try {
-        if (!interaction.guildId) throw new Error('Use /stats me inside a server.');
+        if (!interaction.guildId) throw new Error('Use /stats level inside a server.');
         const rows = await recordsForGuild(interaction.client, interaction.guildId);
         const record = rows.find(row => row.userId === interaction.user.id)?.record;
         const message = monthlyLevelMessage(record, interaction.user.id);
@@ -84,6 +81,43 @@ export async function openMonthlyLevel(interaction) {
         await interaction.editReply(message);
     } catch (error) {
         logger.warn(`Monthly level command: ${error.message}`);
+        await interaction.editReply({ content: error.message, allowedMentions: { parse: [] } });
+    }
+}
+export function personalStudyMessage(rows, userId, at = Date.now()) {
+    const record = rows.find(row => row.userId === userId)?.record;
+    const esc = '\u001b', blue = `${esc}[1;34m`, gold = `${esc}[1;33m`, reset = `${esc}[0m`;
+    const periods = [['Daily', 'day'], ['Weekly', 'week'], ['Monthly', 'month'], ['Alltime', 'all']];
+    const lines = periods.map(([label, period]) => {
+        const ranked = rankRecords(rows, period, at), index = ranked.findIndex(row => row.userId === userId);
+        const hours = (sumTotals(totalsFor(record, period, at)) / 3600000).toFixed(1);
+        return `${label.padEnd(9)} ${gold}${hours.padStart(7)}${reset}h  ${gold}${index < 0 ? '—' : '#' + (index + 1)}${reset}`;
+    });
+    const day = Number(dayKey(at).slice(-2));
+    const average = (sumTotals(totalsFor(record, 'month', at)) / 3600000 / day).toFixed(1);
+    const month = new Intl.DateTimeFormat('en-US', { month: 'long', timeZone: ZONE }).format(at);
+    const stats = '```ansi\n' + `${blue}Timeframe   Hours   Place${reset}\n\n` + lines.join('\n') + `\n\n${blue}Average/day (${month}):${reset} ${gold}${average}${reset} h\n` + '```';
+    const streak = studyStreaks({ ...record, days: { ...record?.days } }, at);
+    // Include live voice credit in today's streak without changing stored history.
+    if (sumTotals(totalsFor(record, 'day', at)) > 0) {
+        const live = { days: { ...record?.days, [dayKey(at)]: totalsFor(record, 'day', at) } };
+        Object.assign(streak, studyStreaks(live, at));
+    }
+    const streakPanel = '```ansi\n' + `Current study streak: ${gold}${streak.current}${reset} days\nLongest study streak: ${gold}${streak.longest}${reset} days\n` + '```';
+    return { embeds: [new EmbedBuilder({ title: '👑 Personal Study Statistics', description: `<@${userId}>`, fields: [
+        { name: 'Statistics', value: stats }, { name: 'Streak', value: streakPanel },
+    ], footer: { text: 'Eastern time · Weeks start Monday · Daily history and streaks tracked from this update' } }).setTimestamp(at)], allowedMentions: { parse: [] } };
+}
+export async function openPersonalStudy(interaction) {
+    await interaction.deferReply();
+    try {
+        if (!interaction.guildId) throw new Error('Use /stats me inside a server.');
+        const rows = await recordsForGuild(interaction.client, interaction.guildId);
+        const message = personalStudyMessage(rows, interaction.user.id);
+        message.embeds[0].setAuthor({ name: interaction.user.globalName || interaction.user.username || 'Your study statistics', ...(interaction.user.displayAvatarURL ? { iconURL: interaction.user.displayAvatarURL() } : {}) });
+        await interaction.editReply(message);
+    } catch (error) {
+        logger.warn(`Personal study command: ${error.message}`);
         await interaction.editReply({ content: error.message, allowedMentions: { parse: [] } });
     }
 }

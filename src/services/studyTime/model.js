@@ -7,26 +7,34 @@ export function monthKey(at = Date.now()) {
     const parts = Object.fromEntries(monthFormatter.formatToParts(at).map(p => [p.type, p.value]));
     return `${parts.year}-${parts.month}`;
 }
-export const dayKey = (at = Date.now()) => new Intl.DateTimeFormat('en-CA', { timeZone: ZONE, year: 'numeric', month: '2-digit', day: '2-digit' }).format(at);
+const dayFormatter = new Intl.DateTimeFormat('en-CA', { timeZone: ZONE, year: 'numeric', month: '2-digit', day: '2-digit' });
+export function dayKey(at = Date.now()) {
+    const parts = Object.fromEntries(dayFormatter.formatToParts(at).map(p => [p.type, p.value]));
+    return `${parts.year}-${parts.month}-${parts.day}`;
+}
 export const emptyTotals = () => Object.fromEntries(SOURCES.map(s => [s, 0]));
-export const newRecord = () => ({ version: 1, totals: emptyTotals(), months: {}, voice: null });
+export const newRecord = () => ({ version: 1, totals: emptyTotals(), months: {}, days: {}, voice: null });
 export function addCredit(record, source, ms, at) {
     if (!SOURCES.includes(source) || !Number.isSafeInteger(ms) || ms < 0) throw new Error('Invalid study credit');
     const month = monthKey(at);
+    record.days ||= {};
+    const day = dayKey(at);
+    record.days[day] ||= emptyTotals();
+    record.days[day][source] = (record.days[day][source] || 0) + ms;
     record.months[month] ||= emptyTotals();
     record.totals[source] = (record.totals[source] || 0) + ms;
     record.months[month][source] = (record.months[month][source] || 0) + ms;
 }
-// Split real voice intervals at Eastern calendar-month boundaries (including DST).
+// Split real voice intervals at Eastern calendar-day boundaries (including DST).
 export function addVoiceInterval(record, start, end) {
     if (!Number.isFinite(start) || !Number.isFinite(end) || end <= start) return;
     let cursor = start;
     while (cursor < end) {
         let boundary = end;
-        if (monthKey(cursor) !== monthKey(end - 1)) {
+        if (dayKey(cursor) !== dayKey(end - 1)) {
             let lo = cursor + 1, hi = end;
-            const current = monthKey(cursor);
-            while (lo < hi) { const mid = Math.floor((lo + hi) / 2); if (monthKey(mid) === current) lo = mid + 1; else hi = mid; }
+            const current = dayKey(cursor);
+            while (lo < hi) { const mid = Math.floor((lo + hi) / 2); if (dayKey(mid) === current) lo = mid + 1; else hi = mid; }
             boundary = lo;
         }
         addCredit(record, 'voice', boundary - cursor, cursor);
@@ -42,6 +50,14 @@ export function checkpointVoice(record, channelId, at = Date.now()) {
 export function totalsFor(record, period = 'month', at = Date.now()) {
     const copy = structuredClone(record || newRecord());
     if (copy.voice) addVoiceInterval(copy, copy.voice.at, Math.min(at, copy.voice.at + VOICE_LEASE_MS));
+    if (period === 'day') return { ...emptyTotals(), ...copy.days?.[dayKey(at)] };
+    if (period === 'week') {
+        const today = dayKey(at), date = new Date(`${today}T12:00:00Z`);
+        date.setUTCDate(date.getUTCDate() - (date.getUTCDay() + 6) % 7);
+        const start = date.toISOString().slice(0, 10), totals = emptyTotals();
+        for (const [day, values] of Object.entries(copy.days || {})) if (day >= start && day <= today) for (const source of SOURCES) totals[source] += values[source] || 0;
+        return totals;
+    }
     return { ...emptyTotals(), ...(period === 'all' ? copy.totals : copy.months[monthKey(at)]) };
 }
 export const sumTotals = totals => SOURCES.reduce((sum, s) => sum + (totals[s] || 0), 0);
@@ -56,4 +72,15 @@ export const TIERS = [
 export function tierFor(ms) {
     const index = TIERS.findLastIndex(t => ms >= t.ms);
     return { current: TIERS[index], next: TIERS[index + 1], rank: index + 1, count: TIERS.length };
+}
+
+export function studyStreaks(record, at = Date.now()) {
+    const active = Object.entries(record?.days || {}).filter(([day, totals]) => day <= dayKey(at) && sumTotals(totals) > 0).map(([day]) => day).sort();
+    let longest = 0, run = 0, previous;
+    for (const day of active) { const date = Date.parse(`${day}T12:00:00Z`); run = previous === date - 86400000 ? run + 1 : 1; longest = Math.max(longest, run); previous = date; }
+    const today = dayKey(at), todayDate = Date.parse(`${today}T12:00:00Z`);
+    let cursor = active.includes(today) ? todayDate : todayDate - 86400000, current = 0;
+    const days = new Set(active);
+    while (days.has(new Date(cursor).toISOString().slice(0, 10))) { current++; cursor -= 86400000; }
+    return { current, longest };
 }
