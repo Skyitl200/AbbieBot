@@ -1,0 +1,778 @@
+{
+  "course": "Anatomy and Physiology Lab",
+  "category": "Nervous System",
+  "modelGroup": "3D Spinal Cord",
+  "source": "eree.jpg from the user upload, the user's 12-term list, and the matching diagram screenshot. Cyan brackets indicate regions or plexuses; arrows indicate discrete targets; longitudinal lines indicate slender structures. Markers retain the source photograph outside their overlays.",
+  "sourceImageFile": "spinal-cord-original.jpg",
+  "sourceImageSha256": "d2aaae1275c3cf6c1f290ae4e6216cb75834da6da75e1f3e21850d83c14bd0a9",
+  "referenceUrl": "https://quizlet.com/1033412225/3d-spinal-cord-diagram/",
+  "models": [
+    {
+      "id": "spinal-cord-01",
+      "name": "Cervical enlargement",
+      "expectedImageFile": "spinal-cord/sc-01.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "points": [
+          [
+            158,
+            233
+          ],
+          [
+            154,
+            233
+          ],
+          [
+            154,
+            288
+          ],
+          [
+            158,
+            288
+          ]
+        ],
+        "bounds": [
+          148,
+          227,
+          164,
+          294
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-01",
+          "question": "Identify the structure or region marked in cyan.",
+          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cervical enlargement",
+            "Cervical plexus",
+            "Cauda equina",
+            "Sciatic nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "cervical enlargement",
+            "cervical intumescence",
+            "intumescentia cervicalis"
+          ],
+          "explanation": "The cervical enlargement supplies neurons serving the upper limbs.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "bff6b3b559b8081653a536917c6687a0a5527e81879e96352937153ef339e651",
+      "view": {
+        "crop": [
+          65,
+          130,
+          320,
+          345
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-02",
+      "name": "Cervical plexus",
+      "expectedImageFile": "spinal-cord/sc-02.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "points": [
+          [
+            151,
+            165
+          ],
+          [
+            145,
+            165
+          ],
+          [
+            145,
+            229
+          ],
+          [
+            151,
+            229
+          ]
+        ],
+        "bounds": [
+          139,
+          159,
+          157,
+          235
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-02",
+          "question": "Identify the structure or region marked in cyan.",
+          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Brachial plexus (C5 - T1)",
+            "Cervical plexus",
+            "Sacral plexus (L4 - S4)",
+            "Lumbar plexus"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "cervical plexus",
+            "cervical plexus c1 c4"
+          ],
+          "explanation": "The cervical plexus is formed primarily by anterior rami C1\u2013C4.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "1992eb443558c86b61dd66f9be8534585a4b9cff2b5cce4201d9e424e033636b",
+      "view": {
+        "crop": [
+          65,
+          130,
+          320,
+          345
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-03",
+      "name": "Lumbar enlargement",
+      "expectedImageFile": "spinal-cord/sc-03.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "points": [
+          [
+            171,
+            609
+          ],
+          [
+            165,
+            609
+          ],
+          [
+            165,
+            652
+          ],
+          [
+            171,
+            652
+          ]
+        ],
+        "bounds": [
+          159,
+          603,
+          177,
+          658
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-03",
+          "question": "Identify the structure or region marked in cyan.",
+          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Conus medullaris",
+            "Femoral nerve",
+            "Lumbar enlargement",
+            "Brachial plexus (C5 - T1)"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "lumbar enlargement",
+            "lumbosacral enlargement",
+            "lumbar intumescence",
+            "lumbosacral intumescence"
+          ],
+          "explanation": "The lumbar (lumbosacral) enlargement supplies neurons serving the lower limbs.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "437af663c5b2e2911915cad4eb37daac904783d7e744a71bb9438f28a68486ba",
+      "view": {
+        "crop": [
+          90,
+          555,
+          310,
+          735
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-04",
+      "name": "Conus medullaris",
+      "expectedImageFile": "spinal-cord/sc-04.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          184,
+          677
+        ],
+        "tail": [
+          273,
+          648
+        ],
+        "bounds": [
+          174,
+          638,
+          283,
+          687
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-04",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cauda equina",
+            "Sciatic nerve",
+            "Sacral plexus (L4 - S4)",
+            "Conus medullaris"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "conus medullaris",
+            "conus",
+            "medullary cone"
+          ],
+          "explanation": "The conus medullaris is the tapered inferior end of the adult spinal cord.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "4f8b8cab4a1a7512c6b28640d27473b575d2a3f27a72f4f7419103974e27ea29",
+      "view": {
+        "crop": [
+          90,
+          590,
+          310,
+          785
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-05",
+      "name": "Cauda equina",
+      "expectedImageFile": "spinal-cord/sc-05.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "points": [
+          [
+            168,
+            718
+          ],
+          [
+            160,
+            718
+          ],
+          [
+            160,
+            811
+          ],
+          [
+            168,
+            811
+          ]
+        ],
+        "bounds": [
+          154,
+          712,
+          174,
+          817
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-05",
+          "question": "Identify the structure or region marked in cyan.",
+          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cauda equina",
+            "Filum terminale",
+            "Phrenic nerve",
+            "Lumbar plexus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "cauda equina",
+            "cauda equina nerve roots"
+          ],
+          "explanation": "The cauda equina is the bundle of lumbar, sacral, and coccygeal nerve roots below the conus.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "3e45fd025af66062b761941c702ab7ef6d007d3294699b62ab4c37cc8e4533a7",
+      "view": {
+        "crop": [
+          90,
+          655,
+          315,
+          915
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-06",
+      "name": "Filum terminale",
+      "expectedImageFile": "spinal-cord/sc-06.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "line",
+        "points": [
+          [
+            177,
+            799
+          ],
+          [
+            177,
+            864
+          ]
+        ],
+        "bounds": [
+          171,
+          793,
+          183,
+          870
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-06",
+          "question": "Identify the structure or region marked in cyan.",
+          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Femoral nerve",
+            "Filum terminale",
+            "Brachial plexus (C5 - T1)",
+            "Cervical enlargement"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "filum terminale",
+            "terminal filum",
+            "filum"
+          ],
+          "explanation": "The filum terminale is the slender fibrous continuation of pia mater that anchors the cord inferiorly.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "27f9bd17d3a52c2d108348638c7799d15c4583474b97d46b0cbd793eba857eea",
+      "view": {
+        "crop": [
+          90,
+          715,
+          315,
+          950
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-07",
+      "name": "Femoral nerve",
+      "expectedImageFile": "spinal-cord/sc-07.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          242,
+          817
+        ],
+        "tail": [
+          319,
+          776
+        ],
+        "bounds": [
+          232,
+          766,
+          329,
+          827
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-07",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Sciatic nerve",
+            "Sacral plexus (L4 - S4)",
+            "Femoral nerve",
+            "Cervical plexus"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "femoral nerve",
+            "femoral"
+          ],
+          "explanation": "The femoral nerve arises from the lumbar plexus (L2\u2013L4) and supplies the anterior thigh.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "30e4c97240afb9e8c2ffb9ac1b813e2f3248adf6c5d4e437cf071e23566d4c09",
+      "view": {
+        "crop": [
+          120,
+          715,
+          345,
+          920
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-08",
+      "name": "Sciatic nerve",
+      "expectedImageFile": "spinal-cord/sc-08.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          257,
+          934
+        ],
+        "tail": [
+          321,
+          898
+        ],
+        "bounds": [
+          247,
+          888,
+          331,
+          944
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-08",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Phrenic nerve",
+            "Lumbar plexus",
+            "Lumbar enlargement",
+            "Sciatic nerve"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "sciatic nerve",
+            "sciatic",
+            "ischiadic nerve"
+          ],
+          "explanation": "The sciatic nerve arises from the sacral plexus (L4\u2013S3) and continues toward the posterior thigh.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "95afd73bc2eee9591a543998b97dc54a586c3f7db8e655768e5c49b111ee3d10",
+      "view": {
+        "crop": [
+          120,
+          805,
+          345,
+          1005
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-09",
+      "name": "Phrenic nerve",
+      "expectedImageFile": "spinal-cord/sc-09.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "line",
+        "points": [
+          [
+            198,
+            276
+          ],
+          [
+            202,
+            323
+          ]
+        ],
+        "bounds": [
+          192,
+          270,
+          208,
+          329
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-09",
+          "question": "Identify the structure or region marked in cyan.",
+          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Phrenic nerve",
+            "Brachial plexus (C5 - T1)",
+            "Cervical enlargement",
+            "Conus medullaris"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "phrenic nerve",
+            "phrenic"
+          ],
+          "explanation": "The phrenic nerve is derived mainly from C3\u2013C5 and provides motor innervation to the diaphragm.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "b259b97fc99a02e5927b3b448ad7dd4bfa86196e1242828846761d03f1a403a7",
+      "view": {
+        "crop": [
+          65,
+          185,
+          320,
+          370
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-10",
+      "name": "Brachial plexus (C5 - T1)",
+      "expectedImageFile": "spinal-cord/sc-10.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "points": [
+          [
+            222,
+            247
+          ],
+          [
+            231,
+            247
+          ],
+          [
+            231,
+            288
+          ],
+          [
+            222,
+            288
+          ]
+        ],
+        "bounds": [
+          216,
+          241,
+          237,
+          294
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-10",
+          "question": "Identify the structure or region marked in cyan.",
+          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cervical plexus",
+            "Brachial plexus (C5 - T1)",
+            "Sacral plexus (L4 - S4)",
+            "Lumbar plexus"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "brachial plexus",
+            "brachial plexus c5 t1",
+            "brachial plexus c5 through t1"
+          ],
+          "explanation": "The brachial plexus is formed by anterior rami C5\u2013T1 and supplies the upper limb.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "d8fd3520f8e4de13accb6ce87126bb9a759f653a5df9814eba322b4be5d663ca",
+      "view": {
+        "crop": [
+          65,
+          160,
+          320,
+          355
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-11",
+      "name": "Sacral plexus (L4 - S4)",
+      "expectedImageFile": "spinal-cord/sc-11.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "points": [
+          [
+            197,
+            863
+          ],
+          [
+            207,
+            863
+          ],
+          [
+            207,
+            909
+          ],
+          [
+            197,
+            909
+          ]
+        ],
+        "bounds": [
+          191,
+          857,
+          213,
+          915
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-11",
+          "question": "Identify the structure or region marked in cyan.",
+          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cervical plexus",
+            "Brachial plexus (C5 - T1)",
+            "Sacral plexus (L4 - S4)",
+            "Lumbar plexus"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "sacral plexus",
+            "sacral plexus l4 s4",
+            "sacral plexus l4 through s4"
+          ],
+          "explanation": "The sacral plexus includes contributions from L4\u2013S4 and supplies much of the pelvis and lower limb.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "0d046b0d99efb9aea84526ab983fb4881e61ccef76caa4eb957b7389ebc29826",
+      "view": {
+        "crop": [
+          95,
+          760,
+          315,
+          975
+        ],
+        "scale": 2
+      }
+    },
+    {
+      "id": "spinal-cord-12",
+      "name": "Lumbar plexus",
+      "expectedImageFile": "spinal-cord/sc-12.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "points": [
+          [
+            208,
+            691
+          ],
+          [
+            217,
+            691
+          ],
+          [
+            217,
+            763
+          ],
+          [
+            208,
+            763
+          ]
+        ],
+        "bounds": [
+          202,
+          685,
+          223,
+          769
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-spinal-cord-12",
+          "question": "Identify the structure or region marked in cyan.",
+          "typedQuestion": "Identify the structure or region marked in cyan.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cervical plexus",
+            "Brachial plexus (C5 - T1)",
+            "Sacral plexus (L4 - S4)",
+            "Lumbar plexus"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "lumbar plexus",
+            "lumbar plexus l1 l4",
+            "lumbar plexus l1 through l4"
+          ],
+          "explanation": "The lumbar plexus is formed primarily by anterior rami L1\u2013L4 within the psoas major region.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "52cf47ae79d705be94c88f4d2ca6049084eecbcfa0a08a010d299a19d0f364bd",
+      "view": {
+        "crop": [
+          85,
+          595,
+          315,
+          835
+        ],
+        "scale": 2
+      }
+    }
+  ]
+}

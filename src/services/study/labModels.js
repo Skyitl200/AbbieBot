@@ -34,6 +34,7 @@ export const LAB_SETS = [
     { id: 'urinary-system', title: '3D Model of Urinary System', category: 'urinary', models: loadModels('urinary-system.json') },
     { id: 'kidney', title: 'Kidney 3D Model', category: 'urinary', models: loadModels('kidney.json') },
     { id: 'bronchial-tree', title: 'Bronchial Tree 3D Model', category: 'respiratory', models: loadModels('bronchial-tree.json') },
+    { id: 'spinal-cord', title: '3D Spinal Cord', category: 'nervous', showStructureList: true, models: loadModels('spinal-cord.json') },
     { id: 'brain-left-sagittal', title: '3D Model of the Structures of the Brain - Left Sagittal View', category: 'nervous', showStructureList: true, models: loadModels('brain-left-sagittal.json') },
     { id: 'spinal-nerves', title: '3D Spinal Nerves and Plexuses', category: 'nervous', showStructureList: true, models: loadModels('spinal-nerves.json') },
     { id: 'inner-ear', title: '3D Structure of the Inner Ear', category: 'special-senses', showStructureList: true, models: loadModels('inner-ear.json') },
