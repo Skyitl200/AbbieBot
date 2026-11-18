@@ -34,6 +34,7 @@ export const LAB_SETS = [
     { id: 'urinary-system', title: '3D Model of Urinary System', category: 'urinary', models: loadModels('urinary-system.json') },
     { id: 'kidney', title: 'Kidney 3D Model', category: 'urinary', models: loadModels('kidney.json') },
     { id: 'bronchial-tree', title: 'Bronchial Tree 3D Model', category: 'respiratory', models: loadModels('bronchial-tree.json') },
+    { id: 'brain-left-sagittal', sharedPhoto: true, title: '3D Model of the Structures of the Brain - Left Sagittal View', category: 'nervous', showStructureList: true, models: loadModels('brain-left-sagittal.json') },
     { id: 'spinal-nerves', title: '3D Spinal Nerves and Plexuses', category: 'nervous', showStructureList: true, models: loadModels('spinal-nerves.json') },
     { id: 'inner-ear', title: '3D Structure of the Inner Ear', category: 'special-senses', showStructureList: true, models: loadModels('inner-ear.json') },
     { id: 'eye-anatomy', title: '3D Model of Eye Anatomy', category: 'special-senses', showStructureList: true, models: eyeAnatomyModels.filter(model => model.verificationStatus !== 'pending'), pendingStructures: eyeAnatomyModels.filter(model => model.verificationStatus === 'pending').map(model => model.name) },
@@ -80,14 +81,14 @@ export function labModelsMessage(owner, categoryId = 'reproductive') {
     const sets = LAB_SETS.filter(set => set.category === category.id);
     const missing = sets.some(set => set.models.some(model => !labModelImage({ labModelId: model.id })));
     return { content: '', embeds: [new EmbedBuilder({ title: `${category.title} · Model Sets`, description: 'Choose a set to study its images together.\n\n' + (missing ? 'Some model photos are unavailable. Sets need all their photos before a quiz can start.' : 'Identify the model or the structure indicated by the arrow. Use multiple choice or type your answer.') })], components: [
-        row(new StringSelectMenuBuilder().setCustomId(`study:labmodels:${owner}`).setPlaceholder('Choose a model set').addOptions(sets.map(set => ({ label: set.title, value: set.id, description: `${set.models.length} images studied together` })))),
+        row(new StringSelectMenuBuilder().setCustomId(`study:labmodels:${owner}`).setPlaceholder('Choose a model set').addOptions(sets.map(set => ({ label: set.title, value: set.id, description: `${set.models.length} ${set.sharedPhoto ? 'structures · 1 original photo' : 'images studied together'}` })))),
         row(new ButtonBuilder().setCustomId(`study:labhome:${owner}`).setLabel('Back to Anatomy and Physiology Lab').setStyle(ButtonStyle.Secondary)),
     ] };
 }
 export function labModeMessage(owner, selection) {
     const models = selectedLabModels(selection);
     const set = labSetForSelection(selection);
-    return { content: '', embeds: [new EmbedBuilder({ title: 'Choose your answer mode', description: `${set.title} — all ${models.length} photos studied together. Choose how you want to answer.${set.showStructureList ? `\n\nIncluded structures: ${models.map(model => model.name).join(', ')}.` : ''}${set.pendingStructures?.length ? `\n\nAwaiting a labeled reference: ${set.pendingStructures.join(', ')}. These structures are not included in this quiz yet.` : ''}` })], components: [
+    return { content: '', embeds: [new EmbedBuilder({ title: 'Choose your answer mode', description: `${set.title} — ${set.sharedPhoto ? '' : 'all '}${models.length} ${set.sharedPhoto ? 'structures studied from one original photo' : 'photos studied together'}. Choose how you want to answer.${set.showStructureList ? `\n\nIncluded structures: ${models.map(model => model.name).join(', ')}.` : ''}${set.pendingStructures?.length ? `\n\nAwaiting a labeled reference: ${set.pendingStructures.join(', ')}. These structures are not included in this quiz yet.` : ''}` })], components: [
         row(new StringSelectMenuBuilder().setCustomId(`study:labmode:${owner}:${selection}`).setPlaceholder('Multiple choice or type in').addOptions(
             { label: 'Multiple choice', value: 'multiple_choice', description: 'Answer using A, B, C, or D' },
             { label: 'Type in answer', value: 'typed', description: 'Type a short answer; synonyms and minor typos accepted' })),

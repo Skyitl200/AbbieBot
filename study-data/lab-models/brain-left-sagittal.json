@@ -1,0 +1,823 @@
+{
+  "course": "Anatomy and Physiology Lab",
+  "category": "Nervous System",
+  "modelGroup": "3D Model of the Structures of the Brain - Left Sagittal View",
+  "source": "User-provided Head.jpg and 26-term vocabulary list, with a screenshot of the corresponding diagram hotspots. Original photograph retained byte-for-byte. Each prompt specifies the target using printed model labels or anatomical location; no synthetic arrows or altered anatomy.",
+  "sourceImageFile": "brain-left-sagittal-original.jpg",
+  "sourceImageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+  "models": [
+    {
+      "id": "brain-left-sagittal-01",
+      "name": "Parietal lobe",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-01",
+          "question": "Which cerebral lobe occupies the upper posterior part of the hemisphere, behind the frontal lobe?",
+          "typedQuestion": "Which cerebral lobe occupies the upper posterior part of the hemisphere, behind the frontal lobe?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Parietal lobe",
+            "Frontal lobe",
+            "Occipital lobe",
+            "Cingulate gyrus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "parietal lobe",
+            "parietal"
+          ],
+          "explanation": "Integrates somatic sensation and spatial information.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-02",
+      "name": "Frontal lobe",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-02",
+          "question": "Which cerebral lobe lies at the anterior end of this model, immediately behind the forehead?",
+          "typedQuestion": "Which cerebral lobe lies at the anterior end of this model, immediately behind the forehead?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Parietal lobe",
+            "Frontal lobe",
+            "Occipital lobe",
+            "Cingulate gyrus"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "frontal lobe",
+            "frontal"
+          ],
+          "explanation": "Supports voluntary motor control, planning, and executive functions.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-03",
+      "name": "Corpus callosum",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-03",
+          "question": "Identify the thick, pale C-shaped band marked 4 in the center of the hemisphere.",
+          "typedQuestion": "Identify the thick, pale C-shaped band marked 4 in the center of the hemisphere.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Fornix",
+            "Septum pellucidum",
+            "Corpus callosum",
+            "Anterior commissure"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "corpus callosum"
+          ],
+          "explanation": "This large commissural white-matter tract connects the cerebral hemispheres.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-04",
+      "name": "Septum pellucidum",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-04",
+          "question": "Identify the thin partition marked 5, between the corpus callosum above and the fornix below.",
+          "typedQuestion": "Identify the thin partition marked 5, between the corpus callosum above and the fornix below.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cingulate gyrus",
+            "Midbrain",
+            "Occipital lobe",
+            "Septum pellucidum"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "septum pellucidum",
+            "septum lucidum"
+          ],
+          "explanation": "The septum pellucidum separates portions of the lateral ventricles.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-05",
+      "name": "Cingulate gyrus",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-05",
+          "question": "Identify the curved strip of cerebral cortex immediately superior to and following the arch of the corpus callosum.",
+          "typedQuestion": "Identify the curved strip of cerebral cortex immediately superior to and following the arch of the corpus callosum.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cingulate gyrus",
+            "Anterior commissure",
+            "Medulla oblongata",
+            "Inferior colliculus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "cingulate gyrus",
+            "cingulate cortex"
+          ],
+          "explanation": "This medial cortical gyrus forms part of the limbic system.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-06",
+      "name": "Anterior commissure",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-06",
+          "question": "Identify the small commissural white-matter bundle in the anterior wall of the third ventricle, near the anterior column of the fornix.",
+          "typedQuestion": "Identify the small commissural white-matter bundle in the anterior wall of the third ventricle, near the anterior column of the fornix.",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "options": [
+            "Optic chiasma",
+            "Anterior commissure",
+            "Spinal cord",
+            "Superior colliculus"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "anterior commissure"
+          ],
+          "explanation": "The anterior commissure connects regions of the two cerebral hemispheres.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-07",
+      "name": "Optic chiasma",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-07",
+          "question": "Identify the optic-pathway crossing at the base of the brain, anterior to the pituitary stalk (near label 15).",
+          "typedQuestion": "Identify the optic-pathway crossing at the base of the brain, anterior to the pituitary stalk (near label 15).",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Pituitary gland",
+            "Cerebellum",
+            "Optic chiasma",
+            "Pineal body (gland)"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "optic chiasma",
+            "optic chiasm"
+          ],
+          "explanation": "Some optic nerve fibers cross here before continuing in the optic tracts.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-08",
+      "name": "Pituitary gland",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-08",
+          "question": "Identify the rounded gland marked 16, hanging beneath the hypothalamus in the sella turcica.",
+          "typedQuestion": "Identify the rounded gland marked 16, hanging beneath the hypothalamus in the sella turcica.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Mammillary body",
+            "Arbor vitae",
+            "Thalamus",
+            "Pituitary gland"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "pituitary gland",
+            "pituitary",
+            "hypophysis",
+            "hypophysis cerebri"
+          ],
+          "explanation": "The pituitary is an endocrine gland connected to the hypothalamus by the infundibulum.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-09",
+      "name": "Mammillary body",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-09",
+          "question": "Identify the small rounded projection on the inferior surface of the hypothalamus, just posterior to the pituitary stalk.",
+          "typedQuestion": "Identify the small rounded projection on the inferior surface of the hypothalamus, just posterior to the pituitary stalk.",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "options": [
+            "Mammillary body",
+            "Hypothalamus",
+            "Fourth ventricle",
+            "Intermediate mass"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "mammillary body",
+            "mammillary bodies",
+            "mamillary body"
+          ],
+          "explanation": "Mammillary bodies participate in limbic memory pathways.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-10",
+      "name": "Hypothalamus",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-10",
+          "question": "Identify the region inferior to the thalamus and superior to the pituitary stalk, forming the floor of the third ventricle.",
+          "typedQuestion": "Identify the region inferior to the thalamus and superior to the pituitary stalk, forming the floor of the third ventricle.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Pons",
+            "Hypothalamus",
+            "Cerebral aqueduct",
+            "Choroid plexus"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "hypothalamus"
+          ],
+          "explanation": "Coordinates homeostasis, autonomic regulation, and endocrine control.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-11",
+      "name": "Pons",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-11",
+          "question": "Identify the prominent rounded bulge of the brainstem marked 20, anterior to the cerebellum.",
+          "typedQuestion": "Identify the prominent rounded bulge of the brainstem marked 20, anterior to the cerebellum.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Midbrain",
+            "Medulla oblongata",
+            "Pons",
+            "Spinal cord"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "pons",
+            "pons varolii"
+          ],
+          "explanation": "The pons lies between the midbrain and medulla oblongata.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-12",
+      "name": "Midbrain",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-12",
+          "question": "Identify the superior brainstem segment between the diencephalon and pons (the region labeled III).",
+          "typedQuestion": "Identify the superior brainstem segment between the diencephalon and pons (the region labeled III).",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Medulla oblongata",
+            "Inferior colliculus",
+            "Parietal lobe",
+            "Midbrain"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "midbrain",
+            "mesencephalon"
+          ],
+          "explanation": "Contains the cerebral aqueduct and the superior and inferior colliculi.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-13",
+      "name": "Medulla oblongata",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-13",
+          "question": "Identify the tapering brainstem segment marked 21, inferior to the pons and continuous with the spinal cord.",
+          "typedQuestion": "Identify the tapering brainstem segment marked 21, inferior to the pons and continuous with the spinal cord.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Medulla oblongata",
+            "Pons",
+            "Midbrain",
+            "Spinal cord"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "medulla oblongata",
+            "medulla",
+            "myelencephalon"
+          ],
+          "explanation": "Contains important autonomic centers for cardiovascular and respiratory regulation.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-14",
+      "name": "Spinal cord",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-14",
+          "question": "Identify the long nervous-system structure marked 22 within the vertebral canal, continuing inferiorly from the medulla.",
+          "typedQuestion": "Identify the long nervous-system structure marked 22 within the vertebral canal, continuing inferiorly from the medulla.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Medulla oblongata",
+            "Spinal cord",
+            "Pons",
+            "Midbrain"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "spinal cord",
+            "medulla spinalis"
+          ],
+          "explanation": "Conducts information between the brain and body and supports spinal reflexes.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-15",
+      "name": "Cerebellum",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-15",
+          "question": "Identify the large, folded posterior-inferior brain structure behind the pons and medulla.",
+          "typedQuestion": "Identify the large, folded posterior-inferior brain structure behind the pons and medulla.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Arbor vitae",
+            "Thalamus",
+            "Cerebellum",
+            "Septum pellucidum"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "cerebellum"
+          ],
+          "explanation": "Coordinates movement, balance, and motor learning.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-16",
+      "name": "Arbor vitae",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-16",
+          "question": "Identify the branching, tree-like white matter visible within the sectioned cerebellum.",
+          "typedQuestion": "Identify the branching, tree-like white matter visible within the sectioned cerebellum.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cerebellum",
+            "Corpus callosum",
+            "Fornix",
+            "Arbor vitae"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "arbor vitae",
+            "arbor vitae cerebelli",
+            "cerebellar white matter"
+          ],
+          "explanation": "The arbor vitae is cerebellar white matter surrounded by cerebellar cortex.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-17",
+      "name": "Fourth ventricle",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-17",
+          "question": "Identify the ventricular space between the pons and upper medulla anteriorly and the cerebellum posteriorly.",
+          "typedQuestion": "Identify the ventricular space between the pons and upper medulla anteriorly and the cerebellum posteriorly.",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "options": [
+            "Fourth ventricle",
+            "Cerebral aqueduct",
+            "Choroid plexus",
+            "Anterior commissure"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "fourth ventricle",
+            "4th ventricle",
+            "ventricle iv"
+          ],
+          "explanation": "This cerebrospinal-fluid cavity connects with the cerebral aqueduct superiorly.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-18",
+      "name": "Cerebral aqueduct",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-18",
+          "question": "Identify the narrow cerebrospinal-fluid passage through the midbrain that connects the third and fourth ventricles.",
+          "typedQuestion": "Identify the narrow cerebrospinal-fluid passage through the midbrain that connects the third and fourth ventricles.",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "options": [
+            "Occipital lobe",
+            "Cerebral aqueduct",
+            "Fornix",
+            "Optic chiasma"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "cerebral aqueduct",
+            "aqueduct of sylvius",
+            "mesencephalic aqueduct",
+            "aqueduct of the midbrain"
+          ],
+          "explanation": "The cerebral aqueduct passes through the midbrain rather than the pons.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-19",
+      "name": "Occipital lobe",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-19",
+          "question": "Which cerebral lobe occupies the posterior tip of the hemisphere, above the cerebellum at the back of this model?",
+          "typedQuestion": "Which cerebral lobe occupies the posterior tip of the hemisphere, above the cerebellum at the back of this model?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Inferior colliculus",
+            "Parietal lobe",
+            "Occipital lobe",
+            "Pituitary gland"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "occipital lobe",
+            "occipital"
+          ],
+          "explanation": "The occipital lobe contains the primary visual cortex.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-20",
+      "name": "Inferior colliculus",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-20",
+          "question": "Identify the lower of the two dorsal midbrain elevations, inferior to the superior colliculus; it participates in auditory processing.",
+          "typedQuestion": "Identify the lower of the two dorsal midbrain elevations, inferior to the superior colliculus; it participates in auditory processing.",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "options": [
+            "Superior colliculus",
+            "Pineal body (gland)",
+            "Thalamus",
+            "Inferior colliculus"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "inferior colliculus",
+            "inferior colliculi"
+          ],
+          "explanation": "The inferior colliculi are paired auditory relay structures in the midbrain tectum.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-21",
+      "name": "Superior colliculus",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-21",
+          "question": "Identify the upper dorsal midbrain elevation, below the pineal region and superior to the inferior colliculus; it helps orient the eyes and head toward visual stimuli.",
+          "typedQuestion": "Identify the upper dorsal midbrain elevation, below the pineal region and superior to the inferior colliculus; it helps orient the eyes and head toward visual stimuli.",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "options": [
+            "Superior colliculus",
+            "Inferior colliculus",
+            "Pineal body (gland)",
+            "Thalamus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "superior colliculus",
+            "superior colliculi"
+          ],
+          "explanation": "The superior colliculi participate in visual orienting responses.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-22",
+      "name": "Pineal body (gland)",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-22",
+          "question": "Identify the small posterior projection from the roof of the diencephalon, behind the thalamus and above the superior colliculus.",
+          "typedQuestion": "Identify the small posterior projection from the roof of the diencephalon, behind the thalamus and above the superior colliculus.",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "options": [
+            "Thalamus",
+            "Pineal body (gland)",
+            "Septum pellucidum",
+            "Pons"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "pineal body",
+            "pineal gland",
+            "pineal body gland",
+            "pineal"
+          ],
+          "explanation": "The pineal gland is part of the epithalamus and secretes melatonin.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-23",
+      "name": "Thalamus",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-23",
+          "question": "Identify the central diencephalic gray-matter mass surrounding the intermediate mass and superior to the hypothalamus.",
+          "typedQuestion": "Identify the central diencephalic gray-matter mass surrounding the intermediate mass and superior to the hypothalamus.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Intermediate mass",
+            "Cingulate gyrus",
+            "Thalamus",
+            "Midbrain"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "thalamus"
+          ],
+          "explanation": "The thalamus relays most sensory information to the cerebral cortex.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-24",
+      "name": "Intermediate mass",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-24",
+          "question": "Identify the small round central bridge marked 8 within the thalamic region.",
+          "typedQuestion": "Identify the small round central bridge marked 8 within the thalamic region.",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "options": [
+            "Choroid plexus",
+            "Anterior commissure",
+            "Medulla oblongata",
+            "Intermediate mass"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "intermediate mass",
+            "interthalamic adhesion",
+            "interthalamic mass",
+            "massa intermedia"
+          ],
+          "explanation": "The intermediate mass is the interthalamic adhesion, connecting the medial surfaces of the thalami in many brains.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-25",
+      "name": "Choroid plexus",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-25",
+          "question": "Identify the vascular red-purple strip along the ventricular region above the thalamus, associated with cerebrospinal-fluid production.",
+          "typedQuestion": "Identify the vascular red-purple strip along the ventricular region above the thalamus, associated with cerebrospinal-fluid production.",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "options": [
+            "Choroid plexus",
+            "Fornix",
+            "Optic chiasma",
+            "Spinal cord"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "choroid plexus",
+            "choroid plexuses"
+          ],
+          "explanation": "Choroid plexuses contain specialized epithelium that produces most cerebrospinal fluid.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-left-sagittal-26",
+      "name": "Fornix",
+      "expectedImageFile": "brain-left-sagittal-original.jpg",
+      "renderMethod": "original-photo-unmodified",
+      "imageSha256": "b34786beaca1975a77f2653f7cad0ed014fc01cfcefad559e586ae7881e73186",
+      "questions": [
+        {
+          "id": "lab-brain-left-sagittal-26",
+          "question": "Identify the slender pale arch marked 6, inferior to the septum pellucidum and corpus callosum.",
+          "typedQuestion": "Identify the slender pale arch marked 6, inferior to the septum pellucidum and corpus callosum.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Corpus callosum",
+            "Fornix",
+            "Septum pellucidum",
+            "Anterior commissure"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "fornix",
+            "fornix cerebri"
+          ],
+          "explanation": "The fornix is a major limbic white-matter pathway associated with the hippocampus.",
+          "requiresModelImage": true
+        }
+      ]
+    }
+  ]
+}

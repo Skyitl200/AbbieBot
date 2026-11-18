@@ -697,7 +697,7 @@ test('every authored question renders valid Discord payloads with hidden answers
     }
 });
 
-test('test replaces quiz within the 100-command limit and all interaction routes load', async () => {
+test('test and server-only quiz share the study flow within the 100-command limit', async () => {
     const { Collection } = await import('discord.js');
     const { loadCommands } = await import('../src/handlers/loaders/commandLoader.js');
     const { default: loadInteractions } = await import('../src/handlers/loaders/interactions.js');
@@ -705,7 +705,9 @@ test('test replaces quiz within the 100-command limit and all interaction routes
     await loadCommands(client);
     await loadInteractions(client);
     assert.ok(client.commands.has('test'));
-    assert.ok(!client.commands.has('quiz'));
+    assert.ok(client.commands.has('quiz'));
+    assert.equal(client.commands.get('quiz').guildOnly, true);
+    assert.equal(client.commands.get('quiz').execute, client.commands.get('test').execute);
     assert.ok([...client.commands.values()].filter(command => !command.guildOnly).length <= 100, 'Discord permits 100 global commands');
     const command = client.commands.get('test').data.toJSON();
     assert.deepEqual(command.options ?? [], [], '/test should have no slash-command options');
