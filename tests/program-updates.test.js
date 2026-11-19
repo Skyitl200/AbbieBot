@@ -412,7 +412,9 @@ test('Find information shows retrieved text immediately, with separate subscript
     // Select a directory school. It need not already be approved for monitoring.
     const state=[...d.data.values()].find(s=>s.owner === '456' && s.step === 'schools');
     const school=state.schools.find(s=>!s.tracked);assert.ok(school);await choose(i,school.id);
-    assert.equal(i.followups.length,0);
+    assert.equal(i.followups.length,1);
+    assert.equal(i.followups[0].flags,0);
+    assert.match(i.followups[0].embeds[0].data.description,/November 23/);
     assert.match(i.replies.at(-1).embeds[0].data.description,/November 23/);
     assert.ok(i.replies.at(-1).components.flatMap(row=>row.components).some(c=>c.data.label === 'Subscribe to these updates'));
     assert.equal(i.replies.at(-1).content,'');
@@ -425,4 +427,17 @@ test('subscription confirmation offers a direct View requested information butto
     const view=renderBrowser(session);i.replies.push(view);
     await handleProgramBrowser(i,d.client,control(view,'view-info'),{information:async()=>[{title:'Prerequisites',description:'Biology and chemistry are required.'}]});
     assert.match(i.replies.at(-1).embeds[0].data.description,/Biology and chemistry/);
+});
+
+test('public results support requester pagination without sharing private menu state', async()=>{
+    const {publishInformation,handlePublicInformation}=await import('../src/services/programUpdates/publicInformation.js');
+    const d=database(),i=browserInteraction(d.client);i.channelId='channel';
+    i.followUp=async payload=>{i.followups.push(payload);return {id:'public1'};};
+    await publishInformation(i,[{title:'Page one',description:'Deadlines'},{title:'Page two',description:'Prerequisites'}]);
+    const posted=i.followups[0];assert.equal(posted.flags,0);assert.ok(!JSON.stringify(posted).includes('settings'));
+    const args=posted.components[0].components[1].data.custom_id.split(':').slice(1);
+    const other=browserInteraction(d.client);other.user.id='999';await handlePublicInformation(other,d.client,args);
+    assert.match(other.followups[0].content,/Only the requester/);
+    i.message={id:'public1'};await handlePublicInformation(i,d.client,args);
+    assert.equal(i.replies.at(-1).embeds[0].data.title,'Page two');
 });
