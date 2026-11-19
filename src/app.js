@@ -5,6 +5,7 @@ import { REST } from '@discordjs/rest';
 import express from 'express';
 import crypto from 'crypto';
 import cron from 'node-cron';
+import { runProgramChecks } from './services/programUpdates/service.js';
 
 import config from './config/application.js';
 import { initializeDatabase } from './utils/database.js';
@@ -401,6 +402,7 @@ app.get('/subscribe', async (req, res) => {
   }
 
   setupCronJobs() {
+    cron.schedule('0 */12 * * *', runSafeTask('program_updates', () => runProgramChecks(this)), { timezone: 'UTC' });
     cron.schedule('* * * * *', runSafeTask('membership_expiry', () => reconcileMemberships(this, logger)));
     cron.schedule('0 6 * * *', runSafeTask('birthday_check', () => checkBirthdays(this)));
     cron.schedule('* * * * *', runSafeTask('giveaway_check', () => checkGiveaways(this)));
