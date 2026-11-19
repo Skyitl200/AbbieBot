@@ -7,9 +7,10 @@ import { key, poolFor } from '../src/services/programUpdates/store.js';
 import { checkSource, reviewChange, changeMessage } from '../src/services/programUpdates/service.js';
 import { openProgramUpdates, handleProgramUpdates } from '../src/services/programUpdates/interface.js';
 import command from '../src/commands/Community/programupdates.js';
+import { directorySchools, DIRECTORY_INFO } from '../src/services/programUpdates/directory.js';
 import adminCommand from '../src/commands/Community/programupdatesadmin.js';
 import { COUNTRIES, regionsFor } from '../src/services/programUpdates/locations.js';
-import { renderBrowser, openProgramBrowser, handleProgramBrowser } from '../src/services/programUpdates/browser.js';
+import { renderBrowser, openProgramBrowser, handleProgramBrowser, schoolChoices, groupedSchools } from '../src/services/programUpdates/browser.js';
 const filter = preferences({ program: 'nursing', country: 'CA', region: 'Ontario', school: 'Example University', topic: 'prerequisites', applicant: 'international' });
 const source = { ...filter, id: 'abc123', url: 'https://example.edu/nursing', selector: '#requirements' };
 const textA = 'Applicants require biology and chemistry. International applicants must provide official transcripts. Applications close March 15, 2027.';
@@ -156,10 +157,12 @@ test('subscriptions require owner confirmation, survive new interactions and fil
     assert.ok(stored.includes('456'));
     const view = interaction(d.client,'subscriptions'); await openProgramUpdates(view); assert.match(view.replies[0].content,/Example University/);
 });
-test('worldwide discovery is explicitly optional and results are candidates, not requirements', async () => {
-    assert.deepEqual(await discoverSchools(filter,{ token: '' }),[]);
-    const results = await discoverSchools(filter,{ token: 'test', fetcher: async () => ({ ok: true, json: async () => ({ web: { results: [{ title: 'University', url: source.url }] } }) }) });
-    assert.deepEqual(results,[{ title: 'University', url: source.url }]);
+test('worldwide discovery works offline with no search token and does not verify programme offerings', async () => {
+    const results=await discoverSchools({country:'CA',school:'University of Toronto'});
+    assert.ok(results.length > 0);
+    assert.ok(results.every(item=>item.provider === 'directory' && item.programVerified === false));
+    assert.ok(results.every(item=>item.url.startsWith('https://')));
+    assert.ok(DIRECTORY_INFO.institutions > 10000);
 });
 test('Discord command schemas fit limits and expose search, compare, subscriptions and moderation', () => {
     const data = command.data.toJSON(); assert.ok(command.guildOnly);
@@ -243,6 +246,8 @@ test('member completes programme, country, region and subscription entirely with
     const index=regionsFor('CA').findIndex(region=>region.name === 'Ontario');
     assert.ok(index >= 0);
     await choose(i,String(index));await choose(i,'prerequisites');await choose(i,'international');
+    const browserState=[...d.data.values()].find(value=>value.owner === '456' && value.step === 'school-group');
+    if(browserState) await choose(i,'all');
     await choose(i,source.id);
     const args=control(i.replies.at(-1),'save');
     await handleProgramBrowser(i,i.client,args);
@@ -286,4 +291,34 @@ test('empty and paginated school menus remain valid for search, comparison and a
             for (const row of view.components) row.toJSON();
         }
     }
+});
+
+test('directory respects countries and known regions, labels missing region data and never invents programme URLs', () => {
+    const fixture=[
+        {name:'Alpha College',alpha_two_code:'CA','state-province':'ON',web_pages:['http://alpha.example/']},
+        {name:'Quebec College',alpha_two_code:'CA','state-province':'Quebec',web_pages:['https://quebec.example/']},
+        {name:'Unknown Region College',alpha_two_code:'CA','state-province':null,web_pages:['https://unknown.example/']},
+        {name:'American College',alpha_two_code:'US',web_pages:['https://us.example/']},
+        {name:'Unsafe',alpha_two_code:'CA',web_pages:['https://127.0.0.1/','javascript:alert(1)']},
+    ];
+    const result=directorySchools({country:'CA',region:'Ontario'},{directory:fixture});
+    assert.deepEqual(result.map(item=>item.title),['Alpha College','Unknown Region College']);
+    assert.equal(result[0].url,'https://alpha.example/');
+    assert.equal(result[1].regionVerified,false);
+    assert.ok(result.every(item=>!item.url.includes('/nursing')));
+    assert.equal(directorySchools({country:'CA',school:'alpha'},{directory:fixture}).length,1);
+});
+test('tracked sources do not hide other directory schools and directory selections are labelled', async () => {
+    const d=database(),s={mode:'find',filter:{...filter},owner:'456',id:'session',revision:0};
+    await schoolChoices(d.client,'123',s,{discover:async()=>[{title:'Other College',url:'https://other.example/',provider:'directory',regionVerified:false}]});
+    assert.ok(s.schools.some(item=>item.tracked));
+    assert.ok(s.schools.some(item=>item.school === 'Other College' && item.provider === 'directory'));
+    const result=renderBrowser(s);
+    assert.match(result.components[0].toJSON().components[0].options.find(option=>option.label === 'Other College').description,/region\/programme not verified/);
+});
+test('alphabet groups let members navigate large free school directories', () => {
+    const s={owner:'456',id:'session',revision:0,step:'school-group',schoolGroup:'abc',mode:'find',filter:{program:'nursing',country:'US'},schools:[{school:'Alpha University',id:'1'},{school:'Zulu College',id:'2'}]};
+    assert.deepEqual(groupedSchools(s).map(item=>item.id),['1']);
+    const message=renderBrowser(s);message.components.forEach(row=>row.toJSON());
+    assert.ok(message.components[0].toJSON().components[0].options.some(option=>option.value === 'vwxyz'));
 });

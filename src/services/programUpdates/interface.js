@@ -43,12 +43,12 @@ export async function findPrograms(client, guildId, filter, { db = null } = {}) 
         const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle('🌍 Find programme requirements').setDescription(clean(summary(filter),1600))
             .addFields({ name: 'Coverage', value: 'No matching official sources are tracked yet. You can save a subscription and request coverage with the Request coverage menu in /programupdates.' });
         let candidates = [];
-        try { candidates = await discoverSchools({ ...filter, program: program(filter.program).name, country: countryName(filter.country) }); }
+        try { candidates = await discoverSchools({ ...filter, program: program(filter.program).name, countryCode: filter.country }); }
         catch (error) { embed.addFields({ name: 'School search', value: clean(error.message) }); }
         if (candidates.length) {
-            embed.addFields({ name: 'Found on request · not verified or monitored', value: candidates.map(candidate => `• ${clean(candidate.title,150)}\n${candidate.url}`).join('\n').slice(0,1024) });
-        } else if (!process.env.BRAVE_SEARCH_API_KEY) {
-            embed.addFields({ name: 'Worldwide discovery', value: 'Live school search is not configured yet. A moderator can add an official school page with /programupdatesadmin add-source.' });
+            embed.addFields({ name: 'Directory-listed schools · programme availability not verified', value: candidates.map(candidate => `• ${clean(candidate.title,150)}\n${candidate.url}`).join('\n').slice(0,1024) });
+        } else {
+            embed.addFields({ name: 'Free school directory', value: 'No matching directory entries found. No search key is needed. Request coverage or explore the official directory links below.' });
         }
         const directories = (DIRECTORIES[filter.program] || []).filter(([country]) => country === filter.country);
         if (directories.length) embed.addFields({ name: 'Official directories · explore schools', value: directories.map(([,name,url]) => `${name}\n${url}`).join('\n') });

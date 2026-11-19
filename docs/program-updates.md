@@ -1,6 +1,6 @@
 # Programme updates
 
-Members open **`/programupdates` with no typed options**. The ephemeral menu guides them through actions, programme, country, state/province/region, topic, applicant type, and available school/source selections. A 249-country location catalogue supplies country and regional dropdowns with Previous/Next pagination. Entire country is always an option. This catalogue does not mean every school in every location is monitored.
+Members open **`/programupdates` with no typed options**. The ephemeral menu guides them through actions, programme, country, state/province/region, topic, applicant type, and available school/source selections. A 249-country location catalogue supplies country and regional dropdowns with Previous/Next pagination. The bundled free Hipo institution directory supplies school choices without an API key, and large lists have alphabetical group selection. Entire country is always an option. This catalogue does not mean every school in every location is monitored.
 
 The nine programmes are Nursing, Dental Hygiene, Dental Assisting, X-Ray Technology, Ultrasound Technology, Respiratory Therapy, Physical Therapist Assistant, Physician Assistant, and Medicine.
 
@@ -12,19 +12,19 @@ The nine programmes are Nursing, Dental Hygiene, Dental Assisting, X-Ray Technol
 - Manage subscriptions: select a saved subscription to remove it. Existing subscriptions from the original typed command remain available.
 - Request coverage: choose programme and location, then Request coverage. Requests are limited to one per hour and go to the review channel when configured.
 
-Only the menu owner can use its controls. Sessions expire after an hour of inactivity. Stale or replayed controls are rejected. Users are not asked to paste URLs. Links come from tracked official sources, the configured school-search service, or built-in official directories. A generated Google school-search link is offered when no school results are available; it is a search link, not a fabricated school address.
+Only the menu owner can use its controls. Sessions expire after an hour of inactivity. Stale or replayed controls are rejected. Users are not asked to paste URLs. Links come from tracked sources, website addresses in the bundled institution directory, or built-in official directories. No admissions/program URL is fabricated. A generated Google school-search link is offered when no school results are available; it is a search link, not a fabricated school address.
 
 ## Railway and moderator setup
 
 1. Deploy with the existing persistent PostgreSQL database. The existing `temp_data` table is reused; no migration is required. Server commands register at startup.
 2. Run **`/programupdatesadmin setup`** and select the public updates channel and moderator review channel from Discord's channel selectors. The bot needs View Channel, Send Messages and Embed Links in both.
-3. Set **`BRAVE_SEARCH_API_KEY`** in Railway to enable live worldwide school-page discovery. Without this key, members can still browse tracked sources, subscribe, request coverage and use directory/search links, but the bot cannot populate new school pages through live search.
-4. Moderators can select **Find and approve an official source** in the programme menu, or open **`/programupdatesadmin add-source`**. Choose programme, country, region, topic, applicant type and a discovered page. The bot finds the URL. Verify that it is the official organisation page and applies to the selected scope, then press **Approve official source**. A first snapshot is saved as a baseline.
+3. No search API key or search subscription is required. School lists are supplied by a bundled directory snapshot and are available even if the upstream directory is temporarily unavailable. Existing Brave keys are no longer used by this feature.
+4. Moderators can select **Find and approve an official source** in the programme menu, or open **`/programupdatesadmin add-source`**. Choose programme, country, region, topic, applicant type and a directory-listed school website. The bot finds the URL. Verify that it is the official organisation page and applies to the selected scope, then press **Approve official source**. A first snapshot is saved as a baseline.
 5. Run **`/programupdatesadmin check`** to check immediately. Checks run in the background; use **`/programupdatesadmin sources`** for status.
 
 Administration is separated from the member menu. The admin command defaults to Manage Server permission, and source approval/change review check permissions on every interaction. Additional commands: `/programupdatesadmin requests`, `/programupdatesadmin source-remove id:<source ID>`. List commands support optional page numbers. No URL field is exposed in either command.
 
-No initial school catalogue is populated. Source discovery is not automatic approval, and source requests do not begin monitoring until a moderator approves a page. Official directories are navigation aids, not comprehensive school requirements databases. There is no claim of worldwide school completeness.
+The bundled directory contains 10,272 institution records across 200 countries before URL validation and deduplication. It is not exhaustive and includes different institution types; it does not certify programme offerings, accreditation, or requirements. Known mismatched regions are excluded. Listings without state/province data remain country-level candidates and are explicitly labelled as region-unverified. Source discovery is not automatic approval, and source requests do not begin monitoring until a moderator approves a page. Official directories are navigation aids, not comprehensive school requirements databases. There is no claim of worldwide school completeness.
 
 ## Scheduled checks and review
 
@@ -43,3 +43,11 @@ This version supports readable HTML/text and RSS/Atom. PDF extraction, authentic
 ## Validation
 
 Run `npm run test:program-updates`. Coverage includes worldwide dropdown pagination, member-owned/stale/expired sessions, subscription workflows, permission checks, empty school results, source discovery, HTML/RSS extraction, network validation, change/review lifecycle and notification retries. `tests/study-time.test.js` covers the existing statistics feature.
+
+## Free directory provenance and refresh
+
+Institution names, countries, optional state/province data and listed websites come from [Hipo university-domains-list](https://github.com/Hipo/university-domains-list), revision `d7d2ebe27a53cd7037aab3ee091c5ce6f7e331bb`, bundled on 2026-11-19. The MIT licence and attribution are included in `src/assets/program-updates/UNIVERSITY-DIRECTORY-LICENSE.txt`. The source snapshot contains 10,272 records / 200 country codes; malformed URLs and duplicates are excluded at runtime, so selectable counts are lower.
+
+School website entries are not verified admissions links. HTTP-listed websites are attempted via HTTPS; availability is verified when approving monitoring. Newly selected directory entries show the homepage and verification limits, not invented prerequisite text. Government/accreditor directory links remain available as navigation aids; those directories are not automatically scraped in this version. No Wikidata service is required.
+
+To update the bundled snapshot, run `node scripts/refreshSchoolDirectory.js`, inspect the directory changes and manifest, run programme-update tests, then commit them with a bot release. This refresh does not approve new sources or change members' subscriptions. Programme-source checks still run every 12 hours independently of the school-directory snapshot.
