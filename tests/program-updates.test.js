@@ -6,9 +6,8 @@ import { publicAddress, safeUrl, fetchPage, extractText, changes, discoverSchool
 import { key, poolFor } from '../src/services/programUpdates/store.js';
 import { checkSource, reviewChange, changeMessage } from '../src/services/programUpdates/service.js';
 import { openProgramUpdates, handleProgramUpdates } from '../src/services/programUpdates/interface.js';
-import command from '../src/commands/Community/programupdates.js';
+import command from '../src/commands/Community/programs.js';
 import { directorySchools, DIRECTORY_INFO, US_INSTITUTIONS, countiesForUS } from '../src/services/programUpdates/directory.js';
-import adminCommand from '../src/commands/Community/programupdatesadmin.js';
 import { COUNTRIES, regionsFor } from '../src/services/programUpdates/locations.js';
 import { renderBrowser, openProgramBrowser, handleProgramBrowser, schoolChoices, groupedSchools } from '../src/services/programUpdates/browser.js';
 const filter = preferences({ program: 'nursing', country: 'CA', region: 'Ontario', school: 'Example University', topic: 'prerequisites', applicant: 'international' });
@@ -167,10 +166,9 @@ test('worldwide discovery works offline with no search token and does not verify
 test('Discord command schemas fit limits and expose search, compare, subscriptions and moderation', () => {
     const data = command.data.toJSON(); assert.ok(command.guildOnly);
     assert.deepEqual(data.options, []);
-    const adminData = adminCommand.data.toJSON();
-    assert.ok(adminData.options.some(option => option.name === 'add-source'));
-    assert.ok(!JSON.stringify(adminData).includes('\"url\"'));
-    for (const sub of adminData.options) {
+    assert.equal(data.name,'programs');
+    assert.ok(!JSON.stringify(data).includes('\"url\"'));
+    for (const sub of data.options) {
         assert.ok(sub.options?.length <= 25 || !sub.options);
         let optional = false;
         for (const option of sub.options || []) { if (!option.required) optional = true; else assert.equal(optional,false,`${sub.name} required options first`); }
@@ -361,4 +359,45 @@ test('US browser guides members through state and county before selecting school
     assert.equal(i.followups.length,0);
     const sub=[...d.data.entries()].find(([key])=>key.startsWith('program-updates:123:subscription:'))[1];
     assert.equal(sub.county,'Broward County');assert.equal(sub.school,'Broward College');
+});
+
+test('/programs exposes all member actions with settings visible only to moderators', () => {
+    const s={owner:'456',id:'session',revision:0,step:'mode',filter:{}};
+    const options=renderBrowser(s,false).components[0].toJSON().components[0].options.map(option=>option.value);
+    for(const action of ['find','compare','subscribe','manage','request','help']) assert.ok(options.includes(action));
+    assert.ok(!options.includes('settings'));
+    assert.ok(renderBrowser(s,true).components[0].toJSON().components[0].options.some(option=>option.value === 'settings'));
+});
+test('moderators configure both channels entirely within /programs settings', async () => {
+    const d=database(),i=browserInteraction(d.client);i.memberPermissions={has:()=>true};
+    i.guild={channels:{fetch:async()=>new Map([['public',{id:'public',name:'program-updates',type:0}],['review',{id:'review',name:'moderator-review',type:0}]])}};
+    await openProgramBrowser(i);await choose(i,'settings');await choose(i,'channels');await choose(i,'public');await choose(i,'review');
+    assert.equal(i.followups.length,0);
+    assert.deepEqual(d.data.get(key('123','config')),{channel:'public',reviewChannel:'review'});
+    assert.match(i.replies.at(-1).embeds[0].data.fields[0].value,/Channels saved/);
+});
+test('settings reject forged access and recheck revoked permissions on every interaction', async () => {
+    const d=database(),i=browserInteraction(d.client);await openProgramBrowser(i);await choose(i,'settings');
+    assert.match(i.followups.at(-1).content,/Manage Server/);
+    i.memberPermissions={has:()=>true};await choose(i,'settings');
+    i.memberPermissions={has:()=>false};await choose(i,'sources');
+    assert.match(i.followups.at(-1).content,/Manage Server/);
+});
+test('moderators can view and remove a selected source without another command', async () => {
+    const d=database(),i=browserInteraction(d.client);i.memberPermissions={has:()=>true};
+    await openProgramBrowser(i);await choose(i,'settings');await choose(i,'remove');await choose(i,source.id);
+    assert.ok(d.data.has(key('123','source',source.id)));
+    await handleProgramBrowser(i,d.client,control(i.replies.at(-1),'settings-remove'));
+    assert.equal(i.followups.length,0);assert.ok(!d.data.has(key('123','source',source.id)));
+});
+test('registration creates /programs before deleting only the two obsolete programme commands', async () => {
+    const {registerGuildCommands}=await import('../src/handlers/loaders/commandLoader.js');
+    const calls=[];
+    const client={commands:new Map([['programs',command]]),guilds:{fetch:async()=>new Map([['123',{}]])},rest:{
+        post:async(url,{body})=>calls.push(['post',body.name]),
+        get:async()=>[{id:'1',name:'programupdates'},{id:'2',name:'programupdatesadmin'},{id:'3',name:'stats'},{id:'4',name:'programs'}],
+        delete:async url=>calls.push(['delete',url.split('/').at(-1)]),
+    }};
+    await registerGuildCommands(client,'app');
+    assert.deepEqual(calls,[['post','programs'],['delete','1'],['delete','2']]);
 });

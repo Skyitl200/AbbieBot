@@ -280,6 +280,19 @@ export async function registerGuildCommands(client, clientId) {
             for (const body of payloads) {
                 await client.rest.post(`/applications/${clientId}/guilds/${guildId}/commands`, { body });
             }
+            // /programs replaces only these two legacy server commands. Create
+            // the new command first, then remove the obsolete entries so the
+            // Discord command menu does not retain unusable duplicates.
+            if (payloads.some(body => body.name === 'programs') && client.rest.get && client.rest.delete) {
+                try {
+                    const existing = await client.rest.get(`/applications/${clientId}/guilds/${guildId}/commands`);
+                    for (const command of existing) {
+                        if (['programupdates', 'programupdatesadmin'].includes(command.name)) {
+                            await client.rest.delete(`/applications/${clientId}/guilds/${guildId}/commands/${command.id}`);
+                        }
+                    }
+                } catch (error) { logger.warn(`Could not remove legacy programme commands in ${guildId}: ${error.message}`); }
+            }
         }
         after = guilds.size === 200 ? [...guilds.keys()].at(-1) : null;
     } while (after);

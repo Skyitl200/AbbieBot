@@ -41,7 +41,7 @@ export async function findPrograms(client, guildId, filter, { db = null } = {}) 
     }
     if (!selected.length) {
         const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle('🌍 Find programme requirements').setDescription(clean(summary(filter),1600))
-            .addFields({ name: 'Coverage', value: 'No matching official sources are tracked yet. You can save a subscription and request coverage with the Request coverage menu in /programupdates.' });
+            .addFields({ name: 'Coverage', value: 'No matching official sources are tracked yet. You can save a subscription and request coverage with the Request coverage menu in /programs.' });
         let candidates = [];
         try { candidates = await discoverSchools({ ...filter, program: program(filter.program).name, countryCode: filter.country }); }
         catch (error) { embed.addFields({ name: 'School search', value: clean(error.message) }); }
@@ -59,7 +59,7 @@ export async function findPrograms(client, guildId, filter, { db = null } = {}) 
 export async function openProgramUpdates(interaction) {
     await interaction.deferReply({ flags: MessageFlags.Ephemeral });
     try {
-        if (!interaction.guildId) throw new Error('Use /programupdates inside a server.');
+        if (!interaction.guildId) throw new Error('Use /programs inside a server.');
         const { client, guildId, user } = interaction;
         const action = interaction.options.getSubcommand();
         if (action === 'find' || action === 'compare') {
@@ -111,7 +111,7 @@ export async function openProgramUpdates(interaction) {
                     const state = await get(db, key(guildId, 'state', source.id));
                     lines.push(`**${source.id} · ${clean(source.school,80)}**\n${source.country} · ${source.program} · ${state?.lastError ? 'Check failed' : state?.pending ? 'Awaiting review' : state?.checkedAt ? 'Checked ' + new Date(state.checkedAt).toISOString() : 'Not checked yet'}`);
                 }
-                return lines.join('\n\n') || 'No sources tracked yet. Moderators can add official sources with /programupdatesadmin add-source.';
+                return lines.join('\n\n') || 'No sources tracked yet. Moderators can add official sources with /programs → Moderator settings → Find and approve an official source.';
             });
             return await interaction.editReply({ content: text.slice(0,1900), allowedMentions: { parse: [] } });
         }
@@ -136,7 +136,7 @@ export async function openProgramUpdates(interaction) {
             extractText(await fetchPage(url), selector);
             const source = { ...filter, id: id(), url, selector, approvedBy: user.id, approvedAt: Date.now() };
             await requireLock(client, key(guildId, 'source-admin'), async db => {
-                if (!await get(db, key(guildId, 'config'))) throw new Error('Run /programupdatesadmin setup first.');
+                if (!await get(db, key(guildId, 'config'))) throw new Error('Run /programs → Moderator settings → Set update and review channels first.');
                 const sources = await sourcesFor(db, guildId);
                 if (sources.length >= 50) throw new Error('This server supports up to 50 monitored sources.');
                 if (sources.some(s => s.url === url && s.program === filter.program && s.topic === filter.topic)) throw new Error('That source is already monitored for this programme and topic.');
@@ -161,7 +161,7 @@ export async function openProgramUpdates(interaction) {
             });
             if (result.busy) return await interaction.editReply('A check is already running.');
             void checkGuild(client, guildId).catch(error => logger.warn(`Manual programme check: ${error.message}`));
-            return await interaction.editReply('Source check started. Changes will appear in the moderator review channel. Use /programupdatesadmin sources for check status.');
+            return await interaction.editReply('Source check started. Changes will appear in the moderator review channel. Use /programs → Moderator settings → View monitored sources for check status.');
         }
     } catch (error) { logger.warn(`Programme updates command: ${error.message}`); await interaction.editReply({ content: error.message, allowedMentions: { parse: [] } }); }
 }
@@ -171,9 +171,9 @@ export async function handleProgramUpdates(interaction, client, args) {
         if (!interaction.guildId) throw new Error('Use programme updates inside a server.');
         const [action, target, token] = args;
         if (action === 'subscribe') {
-            if (target !== interaction.user.id) throw new Error('Open your own preferences with /programupdates.');
+            if (target !== interaction.user.id) throw new Error('Open your own preferences with /programs.');
             const result = await requireLock(client, key(interaction.guildId, 'subscriptions', target), async db => {
-                if (!await get(db, key(interaction.guildId, 'config'))) throw new Error('A moderator needs to run /programupdatesadmin setup before subscriptions can be saved.');
+                if (!await get(db, key(interaction.guildId, 'config'))) throw new Error('A moderator needs to run /programs → Moderator settings → Set update and review channels before subscriptions can be saved.');
                 const draft = await get(db, key(interaction.guildId, 'draft', `${target}:${token}`));
                 if (!draft || draft.expiresAt < Date.now()) throw new Error('This preference preview expired. Open a new subscription.');
                 const rows = await list(db, key(interaction.guildId, 'subscription', target) + ':');
