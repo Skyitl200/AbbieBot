@@ -2,7 +2,7 @@
   "course": "Anatomy and Physiology Lab",
   "category": "Nervous System",
   "modelGroup": "3D Neuron Model",
-  "source": "Neuron.jpg from the user upload, the user-provided term list, with the whole Schwann cell question removed at the user's request, and matching diagram reference screenshot. The repeated Axon term is retained as two distinct image views. All markings are overlays on the original anatomy. Every card displays the full, uncropped original model photograph at its native resolution, with no enlargement.",
+  "source": "Neuron.jpg from the user upload, the user-provided term list, and matching diagram reference screenshot. The axon question uses the long exposed segment on the left. All markings are overlays on the original anatomy. Every card displays the full, uncropped original model photograph at its native resolution, with no enlargement.",
   "sourceImageFile": "neuron-original.jpg",
   "sourceImageSha256": "114b9c4ac634614c4fce5f3b38a2ef9231af9f1f59a7bb3b8b8b591d7e9a8d5d",
   "referenceUrl": "https://quizlet.com/1033183462/3d-neuron-model-diagram/",
@@ -377,72 +377,6 @@
         }
       ],
       "imageSha256": "97c4c386c352c090e031ecc0bad8bcd6fa31b3c5ef2ee11b7fef13c1bb09df21"
-    },
-    {
-      "id": "neuron-07",
-      "name": "Axon",
-      "viewLabel": "bare axon",
-      "expectedImageFile": "neuron/neuron-07.png",
-      "renderMethod": "original-photo-marker-overlay",
-      "annotation": {
-        "kind": "axon-long-line",
-        "points": [
-          [
-            434,
-            473
-          ],
-          [
-            437,
-            520
-          ],
-          [
-            441,
-            609
-          ]
-        ],
-        "bounds": [
-          428,
-          467,
-          447,
-          615
-        ]
-      },
-      "view": {
-        "crop": [
-          0,
-          0,
-          646,
-          1024
-        ],
-        "scale": 1
-      },
-      "questions": [
-        {
-          "id": "lab-neuron-07",
-          "question": "Identify the entire segment indicated by the long blue line.",
-          "typedQuestion": "Identify the entire segment indicated by the long blue line.",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Dendrite",
-            "Myelin sheath",
-            "Axon",
-            "Initial segment"
-          ],
-          "correct": [
-            2
-          ],
-          "typedAnswers": [
-            "axon",
-            "axons",
-            "nerve fiber",
-            "nerve fibre"
-          ],
-          "explanation": "The axon conducts action potentials away from the cell body. This view shows the bare axon extending from the soma.",
-          "requiresModelImage": true
-        }
-      ],
-      "imageSha256": "663dd310a0051e4691901f7385e935cc566b3d76017153dfae3d033699fc6578"
     },
     {
       "id": "neuron-08",
