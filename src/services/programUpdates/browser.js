@@ -6,6 +6,7 @@ import { id, checkSource, writableChannel } from './service.js';
 import { discoverSchools, fetchPage, extractText, safeUrl } from './fetch.js';
 import { findPrograms } from './interface.js';
 import { logger } from '../../utils/logger.js';
+import { DIRECTORY_INFO } from './directory.js';
 const clean = (value, length = 1000) => escapeMarkdown(String(value || '')).slice(0,length);
 const isAdmin = i => i.memberPermissions?.has(PermissionFlagsBits.ManageGuild);
 function requireAdmin(i) { if (!isAdmin(i)) throw new Error('Manage Server permission is required to approve official sources.'); }
@@ -16,6 +17,14 @@ const button = (s, label, action, style = ButtonStyle.Secondary) => new ButtonBu
 function select(s, placeholder, options, max = 1) {
     return row(new StringSelectMenuBuilder().setCustomId(tokenFor(s,'choose')).setPlaceholder(placeholder.slice(0,150))
         .setMinValues(max).setMaxValues(max).addOptions(options));
+}
+export const SCHOOL_GROUPS = [ ['abc','A–C'], ['def','D–F'], ['ghi','G–I'], ['jkl','J–L'], ['mno','M–O'], ['pqr','P–R'], ['stu','S–U'], ['vwxyz','V–Z'], ['other','Other names'] ];
+export function groupedSchools(s) {
+    if (!s.schoolGroup || s.schoolGroup === 'all') return s.schools || [];
+    return (s.schools || []).filter(school => {
+        const first=school.school.normalize('NFKD').replace(/\p{M}/gu,'').trim().toLowerCase()[0] || '';
+        return s.schoolGroup === 'other' ? !/^[a-z]$/.test(first) : s.schoolGroup.includes(first);
+    });
 }
 const summary = s => [program(s.filter.program)?.name, s.filter.country ? countryName(s.filter.country) : '', s.filter.region,
     s.filter.topic, s.filter.applicant].filter(Boolean).join(' · ');
@@ -47,23 +56,26 @@ export function renderBrowser(s, manager = false) {
         ...(s.mode === 'source' ? [] : [{ label:'All topics',value:'all' }]), ...TOPICS.map(value => ({ label:value,value })),
     ]));
     else if (s.step === 'applicant') controls.push(select(s,'Choose applicant type',APPLICANTS.map(value => ({ label:value === 'all' ? 'All applicant types' : value,value }))));
-    else if (s.step === 'schools') {
-        page = pageOf(s.schools || [],s.page,s.mode === 'compare' ? 25 : 24);
+    else if (s.step === 'school-group') {
+        const groups=[{label:'All schools',value:'all'},...SCHOOL_GROUPS.filter(([group]) => groupedSchools({...s,schoolGroup:group}).length).map(([group,label])=>({label,value:group}))];
+        controls.push(select(s,'Choose a school-name group',groups));
+    } else if (s.step === 'schools') {
+        page = pageOf(groupedSchools(s),s.page,s.mode === 'compare' ? 25 : 24);
         if (s.mode === 'request') {
             // Coverage requests use the selected location; no URL or school text is required.
         } else if (s.mode === 'compare' && page.items.length) {
             // Two independent selections allow comparisons across school-list pages.
-            controls.push(select(s,s.compareFirst ? 'Choose the second school / source' : 'Choose the first school / source',page.items.map(candidate => ({label:candidate.school.slice(0,100),value:candidate.id,description:candidate.tracked ? 'Tracked official source' : 'Discovered page · verify official status'}))));
+            controls.push(select(s,s.compareFirst ? 'Choose the second school / source' : 'Choose the first school / source',page.items.map(candidate => ({label:candidate.school.slice(0,100),value:candidate.id,description:candidate.tracked ? 'Tracked official source' : candidate.provider === 'directory' ? (candidate.regionVerified ? 'Directory-listed · programme not verified' : 'Directory-listed · region/programme not verified') : 'Discovered page · verify official status'}))));
         } else if (s.mode !== 'compare') {
             const all = s.mode === 'source' ? [] : [{label:'All tracked schools in this location',value:'all'}];
-            options.push(...all,...page.items.map(candidate => ({label:candidate.school.slice(0,100),value:candidate.id,description:candidate.tracked ? 'Tracked official source' : 'Discovered page · not yet verified'})));
+            options.push(...all,...page.items.map(candidate => ({label:candidate.school.slice(0,100),value:candidate.id,description:candidate.tracked ? 'Tracked official source' : candidate.provider === 'directory' ? (candidate.regionVerified ? 'Directory-listed · programme not verified' : 'Directory-listed · region/programme not verified') : 'Discovered page · not yet verified'})));
             if (options.length) controls.push(select(s,'Choose a school or source',options));
         }
         if (s.compareFirst) embed.addFields({name:'First school / source',value:clean(s.compareFirst.school,300)});
-        embed.addFields({name:'Source coverage',value:'Tracked entries are approved sources. Newly discovered pages are search candidates, not verified school requirements.'});
-        if (s.searchError) embed.addFields({name:'Live school search',value:clean(s.searchError,800)});
+        embed.addFields({name:'Source coverage',value:`Tracked entries are approved sources. Free directory: ${DIRECTORY_INFO.institutions.toLocaleString('en-US')} institutions across ${DIRECTORY_INFO.countries} countries. Directory entries do not verify programme offerings; entries missing region data are labelled.`});
+        if (s.searchError) embed.addFields({name:'School directory',value:clean(s.searchError,800)});
         if (!s.schools?.length) {
-            embed.addFields({name:'No school sources found',value:process.env.BRAVE_SEARCH_API_KEY ? 'No matching school pages were found. Request coverage or explore the generated school-search link.' : 'No matching schools are tracked yet. School discovery needs BRAVE_SEARCH_API_KEY configured in Railway; tracked sources and directory links remain available.'});
+            embed.addFields({name:'No school sources found',value:'No matching schools are listed in the bundled free directory or tracked sources. No API key is needed. Request coverage or use the school-search and official directory links below.'});
             if (s.mode === 'source' || s.mode === 'compare') controls.push(row(button(s,'Request coverage','request',ButtonStyle.Primary)));
         }
         if (!s.schools?.length) {
@@ -94,6 +106,7 @@ export function renderBrowser(s, manager = false) {
     }
     const nav = new ActionRowBuilder().addComponents(button(s,'Start over','restart'));
     if (s.step !== 'mode' && s.step !== 'done') nav.addComponents(button(s,'Back','back'));
+    if (s.step === 'schools' && s.schools?.length > 100) nav.addComponents(button(s,'School name groups','group'));
     if (s.step === 'schools' && !['source','compare'].includes(s.mode)) nav.addComponents(button(s,'Request coverage','request'));
     controls.push(nav);
     return {embeds:[embed],components:controls,allowedMentions:{parse:[]}};
@@ -114,13 +127,13 @@ export async function schoolChoices(client,guildId,s,{discover = discoverSchools
     const tracked = sources.filter(source => matches(source,filter)).map(source => ({id:source.id,school:source.school,url:source.url,tracked:true}));
     let found = [];
     s.searchError = '';
-    if (s.mode === 'source' || !tracked.length) {
-        try { found = await discover({...filter,program:program(filter.program).name,country:countryName(filter.country)}); }
+    { // Always combine directory schools with monitored schools, without an API key.
+        try { found = await discover({...filter,program:program(filter.program).name,countryCode:filter.country}); }
         catch(error) { s.searchError = error.message; }
     }
-    s.schools = [...tracked,...found.map((candidate,index) => ({id:`web${index}`,school:candidate.title.slice(0,120),url:safeUrl(candidate.url).href,tracked:false}))]
+    s.schools = [...tracked,...found.map((candidate,index) => ({id:`web${index}`,school:candidate.title.slice(0,120),url:safeUrl(candidate.url).href,tracked:false,provider:candidate.provider,regionVerified:candidate.regionVerified,directorySource:candidate.directorySource}))]
         .filter((candidate,index,all) => all.findIndex(item => s.mode === 'source' ? item.url === candidate.url : item.school.toLowerCase() === candidate.school.toLowerCase()) === index);
-    s.step = 'schools'; s.page = 0;
+    s.step = s.schools.length > 100 ? 'school-group' : 'schools'; s.schoolGroup='all'; s.page = 0;
 }
 async function saveSubscription(client,guildId,s,existingDb) {
     return locked(client,key(guildId,'subscriptions',s.owner),async db => {
@@ -188,7 +201,7 @@ export async function handleProgramBrowser(interaction,client,args) {
             let response;
             if (action === 'restart') { s.step='mode';s.mode=null;s.filter={};s.selected=[];s.compareFirst=null;s.page=0; }
             else if (action === 'back') {
-                const order=['mode','program','country','region','topic','applicant','schools','confirm'];
+                const order=['mode','program','country','region','topic','applicant','school-group','schools','confirm'];
                 s.step=order[Math.max(0,order.indexOf(s.step)-1)];s.page=0;s.compareFirst=null;s.selected=[];
             } else if (action === 'prev' || action === 'next') { s.page=Math.max(0,s.page+(action === 'prev' ? -1 : 1)); }
             else if (action === 'save' && s.step === 'confirm' && s.mode !== 'source') {
@@ -224,6 +237,9 @@ export async function handleProgramBrowser(interaction,client,args) {
                     s.filter.applicant=value;
                     if (s.mode === 'request') { s.step='schools';s.schools=[]; }
                     else await schoolChoices(client,interaction.guildId,s,{db});
+                } else if (s.step === 'school-group') {
+                    if (value !== 'all' && !SCHOOL_GROUPS.some(([group])=>group === value)) throw new Error('Choose a listed school-name group.');
+                    s.schoolGroup=value;s.step='schools';s.page=0;
                 } else if (s.step === 'schools') {
                     const candidate=value === 'all' && !['source','compare'].includes(s.mode) ? null : s.schools.find(item=>item.id === value);
                     if (!candidate && value !== 'all') throw new Error('Choose a listed school or source.');
@@ -236,7 +252,7 @@ export async function handleProgramBrowser(interaction,client,args) {
                         if (s.mode === 'find' || s.mode === 'compare') {
                             const responses=[];
                             for (const selected of s.selected.length ? s.selected : [null]) {
-                                if (selected && !selected.tracked) responses.push({embeds:[new EmbedBuilder().setColor(0x8b5cf6).setTitle(clean(selected.school,200)).setDescription(`**Found on request · not verified or monitored**\n${selected.url}\n\nThis page was found by school search. A moderator must verify it before requirements are treated as official or monitored.`)]});
+                                if (selected && !selected.tracked) responses.push({embeds:[new EmbedBuilder().setColor(0x8b5cf6).setTitle(clean(selected.school,200)).setDescription(`**${selected.provider === 'directory' ? 'Directory-listed institution' : 'Found on request'} · not verified or monitored**\n${selected.url}\n\n${selected.provider === 'directory' ? 'The directory lists this institution and website, but does not confirm it offers the selected programme. ' + (!selected.regionVerified ? 'State/province information is missing; this is a country-level candidate. ' : '') : ''}A moderator must verify the programme page before requirements are treated as official or monitored.`).setFooter({text:selected.provider === 'directory' ? 'Institution data: Hipo university-domains-list · free bundled directory' : 'Discovered source · verification required'})]});
                                 else responses.push(await findPrograms(client,interaction.guildId,preferences({...s.filter,school:selected?.school || ''}),{db}));
                             }
                             response={embeds:responses.flatMap(item=>item.embeds).slice(0,6),allowedMentions:{parse:[]}};

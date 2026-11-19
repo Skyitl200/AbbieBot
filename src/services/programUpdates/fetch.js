@@ -1,3 +1,4 @@
+import { directorySchools } from './directory.js';
 import https from 'node:https';
 import { lookup } from 'node:dns/promises';
 import { isIP, BlockList } from 'node:net';
@@ -76,15 +77,8 @@ export function changes(before, after) {
     const oldLines = new Set(before.split('\n')), newLines = new Set(after.split('\n'));
     return { added: [...newLines].filter(line => !oldLines.has(line)).slice(0, 8), removed: [...oldLines].filter(line => !newLines.has(line)).slice(0, 8) };
 }
-// Optional worldwide discovery. Search results are candidates, never approved
-// sources or verified requirements, and are never automatically monitored.
-export async function discoverSchools(filter, { token = process.env.BRAVE_SEARCH_API_KEY, fetcher = fetch } = {}) {
-    if (!token) return [];
-    const url = new URL('https://api.search.brave.com/res/v1/web/search');
-    url.searchParams.set('q', `${filter.school || ''} ${filter.program} admissions prerequisites university ${filter.country} ${filter.region || ''} ${filter.applicant}`);
-    url.searchParams.set('count', '5');
-    const response = await fetcher(url, { headers: { 'X-Subscription-Token': token, Accept: 'application/json' }, signal: AbortSignal.timeout(10000) });
-    if (!response.ok) throw new Error('Worldwide school search is temporarily unavailable.');
-    const data = await response.json();
-    return (data.web?.results || []).slice(0,5).filter(r => { try { safeUrl(r.url); return true; } catch { return false; } }).map(r => ({ title: String(r.title).slice(0,150), url: r.url }));
+// Free, bundled worldwide directory. Institutions are candidates, not proof of
+// a programme offering or verified admission requirements. No API key is used.
+export async function discoverSchools(filter, options = {}) {
+    return directorySchools(filter, options);
 }
