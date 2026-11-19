@@ -1,6 +1,10 @@
-# Programme updates
+# Programs
 
-Members open **`/programupdates` with no typed options**. The ephemeral menu guides them through actions, programme, country, state/province/region, topic, applicant type, and available school/source selections. A 249-country location catalogue supplies country and regional dropdowns with Previous/Next pagination. The bundled free Hipo institution directory supplies school choices without an API key, and large lists have alphabetical group selection. Entire country is always an option. This catalogue does not mean every school in every location is monitored.
+## One command, all options
+
+Open `/programs` with no arguments. Member options are Find schools and requirements, Compare two school sources, Subscribe to updates, Manage my subscriptions, Request coverage, and How it works. Moderators additionally see Moderator settings. All configuration is handled through that menu.
+
+Members open **`/programs` with no typed options**. The ephemeral menu guides them through actions, programme, country, state/province/region, topic, applicant type, and available school/source selections. A 249-country location catalogue supplies country and regional dropdowns with Previous/Next pagination. The bundled free Hipo institution directory supplies school choices without an API key, and large lists have alphabetical group selection. Entire country is always an option. This catalogue does not mean every school in every location is monitored.
 
 The nine programmes are Nursing, Dental Hygiene, Dental Assisting, X-Ray Technology, Ultrasound Technology, Respiratory Therapy, Physical Therapist Assistant, Physician Assistant, and Medicine.
 
@@ -17,12 +21,14 @@ Only the menu owner can use its controls. Sessions expire after an hour of inact
 ## Railway and moderator setup
 
 1. Deploy with the existing persistent PostgreSQL database. The existing `temp_data` table is reused; no migration is required. Server commands register at startup.
-2. Run **`/programupdatesadmin setup`** and select the public updates channel and moderator review channel from Discord's channel selectors. The bot needs View Channel, Send Messages and Embed Links in both.
+2. Run **`/programs` → **Moderator settings → Set update and review channels**** and select the public updates channel and moderator review channel from Discord's channel selectors. The bot needs View Channel, Send Messages and Embed Links in both.
 3. No search API key or search subscription is required. School lists are supplied by a bundled directory snapshot and are available even if the upstream directory is temporarily unavailable. Existing Brave keys are no longer used by this feature.
-4. Moderators can select **Find and approve an official source** in the programme menu, or open **`/programupdatesadmin add-source`**. Choose programme, country, region, topic, applicant type and a directory-listed school website. The bot finds the URL. Verify that it is the official organisation page and applies to the selected scope, then press **Approve official source**. A first snapshot is saved as a baseline.
-5. Run **`/programupdatesadmin check`** to check immediately. Checks run in the background; use **`/programupdatesadmin sources`** for status.
+4. Moderators select **`/programs` → **Moderator settings → Find and approve an official source****. Choose programme, country, region, topic, applicant type and a directory-listed school website. The bot finds the URL. Verify that it is the official organisation page and applies to the selected scope, then press **Approve official source**. A first snapshot is saved as a baseline.
+5. Run **`/programs` → **Moderator settings → Check sources now**** to check immediately. Checks run in the background; use **`/programs` → **Moderator settings → View monitored sources**** for status.
 
-Administration is separated from the member menu. The admin command defaults to Manage Server permission, and source approval/change review check permissions on every interaction. Additional commands: `/programupdatesadmin requests`, `/programupdatesadmin source-remove id:<source ID>`. List commands support optional page numbers. No URL field is exposed in either command.
+Administration is inside the **Moderator settings** option, visible only to members with Manage Server permission. Permissions are rechecked on every settings interaction. Settings include channel configuration, finding/approving sources, source status, coverage requests, checking sources now, and source removal with confirmation. Channel and source selections are dropdowns; no separate administrative slash command or URL entry is required.
+
+The bot creates `/programs` before deleting only the obsolete `/programupdates` and `/programupdatesadmin` server command entries. Existing database records, subscriptions and pending-review buttons retain their internal keys and continue to work.
 
 The bundled directory contains 10,272 institution records across 200 countries before URL validation and deduplication. It is not exhaustive and includes different institution types; it does not certify programme offerings, accreditation, or requirements. Known mismatched regions are excluded. Listings without state/province data remain country-level candidates and are explicitly labelled as region-unverified. Source discovery is not automatic approval, and source requests do not begin monitoring until a moderator approves a page. Official directories are navigation aids, not comprehensive school requirements databases. There is no claim of worldwide school completeness.
 

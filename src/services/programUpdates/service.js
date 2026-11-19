@@ -33,7 +33,7 @@ export async function checkSource(client, guildId, source, { pageFetcher = fetch
         const stateKey = key(guildId, 'state', source.id);
         const state = await get(db, stateKey) || {};
         const config = await get(db, key(guildId, 'config'));
-        if (!config) throw new Error('Configure updates and review channels with /programupdatesadmin setup.');
+        if (!config) throw new Error('Configure updates and review channels with /programs → Moderator settings → Set update and review channels.');
         if (state.pending) {
             if (state.pending.notified) return { pending: true };
             const channel = await writableChannel(client, config.reviewChannel, guildId);

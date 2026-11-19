@@ -6,6 +6,7 @@ import { id, checkSource, writableChannel } from './service.js';
 import { discoverSchools, fetchPage, extractText, safeUrl } from './fetch.js';
 import { findPrograms } from './interface.js';
 import { logger } from '../../utils/logger.js';
+import { SETTINGS_STEPS, requireSettingsPermission, settingsView, settingsChoice, removeSettingsSource } from './settings.js';
 import { DIRECTORY_INFO, countiesForUS } from './directory.js';
 const clean = (value, length = 1000) => escapeMarkdown(String(value || '')).slice(0,length);
 const isAdmin = i => i.memberPermissions?.has(PermissionFlagsBits.ManageGuild);
@@ -30,14 +31,16 @@ const summary = s => [program(s.filter.program)?.name, s.filter.country ? countr
     s.filter.topic, s.filter.applicant].filter(Boolean).join(' · ');
 const filterFor = s => preferences({ ...s.filter, school: s.selected?.[0]?.school || '' });
 export function renderBrowser(s, manager = false) {
-    const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle('🌍 Programme updates').setDescription(clean(summary(s) || 'Choose what you would like to do. No typed country codes, regions, or URLs needed.'));
+    const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle('🌍 Programs').setDescription(clean(summary(s) || 'Choose what you would like to do. No typed country codes, regions, or URLs needed.'));
     const controls = [], options = [];
     let page;
-    if (s.step === 'mode') {
+    if (SETTINGS_STEPS.has(s.step)) page=settingsView(s,{embed,controls,select,row,button,clean});
+    else if (s.step === 'help') embed.setTitle('How Programs works').setDescription('Find schools, compare school information, subscribe to updates, or request coverage using dropdowns. US listings include states, counties, and reported programme data. International listings identify institutions; programme availability and current requirements still need verification. Moderators configure channels and monitoring through Settings. No search key or typed URL is needed.');
+    else if (s.step === 'mode') {
         options.push({ label: 'Find schools and requirements', value: 'find' }, { label: 'Subscribe to updates', value: 'subscribe' },
             { label: 'Compare two school sources', value: 'compare' }, { label: 'Manage my subscriptions', value: 'manage' },
-            { label: 'Request coverage for a location', value: 'request' });
-        if (manager) options.push({ label: 'Find and approve an official source', value: 'source' });
+            { label: 'Request coverage for a location', value: 'request' }, {label:'How it works',value:'help'});
+        if (manager) options.push({label:'Moderator settings',value:'settings'});
         controls.push(select(s,'Choose an action',options));
     } else if (s.step === 'program') controls.push(select(s,'Choose your programme',PROGRAMS.map(p => ({ label:p.name,value:p.id,emoji:{id:p.emoji} }))));
     else if (s.step === 'country') {
@@ -105,7 +108,7 @@ export function renderBrowser(s, manager = false) {
         else embed.addFields({name:'Subscriptions',value:'You have no saved subscriptions.'});
     } else if (s.step === 'done') embed.addFields({name:'Saved',value:s.notice || 'Done.'});
     if (page) {
-        embed.setFooter({text:`Page ${page.current + 1}/${page.pages} · Location coverage does not imply all schools are monitored`});
+        embed.setFooter({text:`Page ${page.current + 1}/${page.pages}${SETTINGS_STEPS.has(s.step) ? '' : ' · Location coverage does not imply all schools are monitored'}`});
         if (page.pages > 1) controls.push(new ActionRowBuilder().addComponents(button(s,'Previous page','prev').setDisabled(page.current === 0),button(s,'Next page','next').setDisabled(page.current + 1 === page.pages)));
     }
     const nav = new ActionRowBuilder().addComponents(button(s,'Start over','restart'));
@@ -141,7 +144,7 @@ export async function schoolChoices(client,guildId,s,{discover = discoverSchools
 }
 async function saveSubscription(client,guildId,s,existingDb) {
     return locked(client,key(guildId,'subscriptions',s.owner),async db => {
-        if (!await get(db,key(guildId,'config'))) throw new Error('A moderator needs to configure update channels with /programupdatesadmin setup first.');
+        if (!await get(db,key(guildId,'config'))) throw new Error('A moderator needs to configure update channels with /programs → Moderator settings → Set update and review channels first.');
         const filters = s.mode === 'compare' ? s.selected.map(candidate => preferences({...s.filter,school:candidate.school})) : [filterFor(s)];
         const rows = await list(db,key(guildId,'subscription',s.owner)+':');
         const pending = filters.filter(filter => !rows.some(row => JSON.stringify(preferences(row.value)) === JSON.stringify(filter)));
@@ -164,7 +167,7 @@ async function approveSource(interaction,s,existingDb) {
     extractText(await fetchPage(url));
     const source = {...filter,id:id(),url,selector:'',approvedBy:s.owner,approvedAt:Date.now()};
     const result = await locked(interaction.client,key(interaction.guildId,'source-admin'),async db => {
-        if (!await get(db,key(interaction.guildId,'config'))) throw new Error('Configure channels with /programupdatesadmin setup first.');
+        if (!await get(db,key(interaction.guildId,'config'))) throw new Error('Configure channels with /programs → Moderator settings → Set update and review channels first.');
         const old = await sourcesFor(db,interaction.guildId);
         if (old.some(item => item.url === url && item.program === source.program && item.topic === source.topic)) throw new Error('This source is already tracked.');
         if (old.length >= 50) throw new Error('This server supports up to 50 tracked sources.');
@@ -194,22 +197,25 @@ async function coverageRequest(interaction,s,existingDb) {
 }
 export async function handleProgramBrowser(interaction,client,args) {
     const [owner,sessionId,revision,action] = args;
-    if (owner !== interaction.user.id || !interaction.guildId) return interaction.reply({content:'Open your own menu with /programupdates.',flags:MessageFlags.Ephemeral});
+    if (owner !== interaction.user.id || !interaction.guildId) return interaction.reply({content:'Open your own menu with /programs.',flags:MessageFlags.Ephemeral});
     await interaction.deferUpdate();
     try {
         const result = await locked(client,sessionKey(interaction.guildId,owner,sessionId),async db => {
             const s = await get(db,sessionKey(interaction.guildId,owner,sessionId));
-            if (!s || s.expiresAt < Date.now()) throw new Error('This menu expired. Open /programupdates again.');
+            if (!s || s.expiresAt < Date.now()) throw new Error('This menu expired. Open /programs again.');
             if (String(s.revision) !== revision) throw new Error('This menu changed. Use its latest buttons.');
             if (s.mode === 'source') requireAdmin(interaction);
+            if (s.mode === 'settings' || SETTINGS_STEPS.has(s.step)) requireSettingsPermission(interaction);
             let response;
             if (action === 'restart') { s.step='mode';s.mode=null;s.filter={};s.selected=[];s.compareFirst=null;s.page=0; }
+            else if (action === 'back' && SETTINGS_STEPS.has(s.step)) {s.step=s.step === 'settings' ? 'mode' : 'settings';s.mode=s.step === 'mode' ? null : 'settings';s.page=0;}
             else if (action === 'back') {
                 const order=['mode','program','country','region','county','topic','applicant','school-group','schools','confirm'];
                 s.step=order[Math.max(0,order.indexOf(s.step)-1)];
                 if(s.step === 'county' && (s.filter.country !== 'US' || !s.filter.region)) s.step='region';
                 s.page=0;s.compareFirst=null;s.selected=[];
             } else if (action === 'prev' || action === 'next') { s.page=Math.max(0,s.page+(action === 'prev' ? -1 : 1)); }
+            else if (action === 'settings-remove') await removeSettingsSource(interaction,s,db);
             else if (action === 'save' && s.step === 'confirm' && s.mode !== 'source') {
                 const saved=await saveSubscription(client,interaction.guildId,s,db);
                 if (saved?.busy) throw new Error('A subscription update is in progress. Try again.');
@@ -218,11 +224,15 @@ export async function handleProgramBrowser(interaction,client,args) {
             else if (action === 'request' && s.step === 'schools') { s.notice=await coverageRequest(interaction,s,db);s.step='done'; }
             else if (action === 'choose') {
                 const value=interaction.values?.[0];
-                if (s.step === 'mode') {
-                    if (!['find','subscribe','compare','request','source','manage'].includes(value)) throw new Error('Choose a listed action.');
+                if (SETTINGS_STEPS.has(s.step)) await settingsChoice(interaction,s,value,db);
+                else if (s.step === 'mode') {
+                    if (!['find','subscribe','compare','request','source','manage','settings','help'].includes(value)) throw new Error('Choose a listed action.');
                     if (value === 'source') requireAdmin(interaction);
+                    if (value === 'settings') requireSettingsPermission(interaction);
                     s.mode=value;s.filter={};s.page=0;s.selected=[];s.compareFirst=null;
-                    if (value === 'manage') {
+                    if(value === 'settings') s.step='settings';
+                    else if(value === 'help') s.step='help';
+                    else if (value === 'manage') {
                         s.subscriptions=(await list(db,key(interaction.guildId,'subscription',owner)+':')).map(row=>row.value);s.step='manage';
                     } else s.step='program';
                 } else if (s.step === 'program') {
