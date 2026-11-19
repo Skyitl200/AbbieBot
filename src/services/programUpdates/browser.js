@@ -6,6 +6,7 @@ import { id, checkSource, writableChannel } from './service.js';
 import { discoverSchools, fetchPage, extractText, safeUrl } from './fetch.js';
 import { findPrograms } from './interface.js';
 import { logger } from '../../utils/logger.js';
+import { schoolInformation } from './information.js';
 import { SETTINGS_STEPS, requireSettingsPermission, settingsView, settingsChoice, removeSettingsSource } from './settings.js';
 import { DIRECTORY_INFO, countiesForUS } from './directory.js';
 const clean = (value, length = 1000) => escapeMarkdown(String(value || '')).slice(0,length);
@@ -34,10 +35,14 @@ export function renderBrowser(s, manager = false) {
     const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle('🌍 Programs').setDescription(clean(summary(s) || 'Choose what you would like to do. No typed country codes, regions, or URLs needed.'));
     const controls = [], options = [];
     let page;
-    if (SETTINGS_STEPS.has(s.step)) page=settingsView(s,{embed,controls,select,row,button,clean});
+    if (s.step === 'information') {
+        controls.push(new ActionRowBuilder().addComponents(button(s,'Previous page','info-prev').setDisabled(s.infoIndex === 0),button(s,'Next page','info-next').setDisabled(s.infoIndex + 1 >= s.infoPages.length)));
+        controls.push(row(button(s,'Subscribe to these updates','save',ButtonStyle.Primary)));
+    }
+    else if (SETTINGS_STEPS.has(s.step)) page=settingsView(s,{embed,controls,select,row,button,clean});
     else if (s.step === 'help') embed.setTitle('How Programs works').setDescription('Find schools, compare school information, subscribe to updates, or request coverage using dropdowns. US listings include states, counties, and reported programme data. International listings identify institutions; programme availability and current requirements still need verification. Moderators configure channels and monitoring through Settings. No search key or typed URL is needed.');
     else if (s.step === 'mode') {
-        options.push({ label: 'Find schools and requirements', value: 'find' }, { label: 'Subscribe to updates', value: 'subscribe' },
+        options.push({ label: 'Find program information', value: 'find' }, { label: 'Subscribe to updates', value: 'subscribe' },
             { label: 'Compare two school sources', value: 'compare' }, { label: 'Manage my subscriptions', value: 'manage' },
             { label: 'Request coverage for a location', value: 'request' }, {label:'How it works',value:'help'});
         if (manager) options.push({label:'Moderator settings',value:'settings'});
@@ -100,7 +105,8 @@ export function renderBrowser(s, manager = false) {
             controls.push(row(button(s,'Approve official source','approve',ButtonStyle.Success)));
         } else {
             embed.addFields({name:'Schools',value:clean(s.selected?.map(item=>item.school).join(' · ') || 'All tracked schools in this location',500)});
-            controls.push(row(button(s,'Save subscription','save',ButtonStyle.Primary)));
+            if(s.selected?.length) controls.push(row(button(s,'View requested information','view-info',ButtonStyle.Primary)));
+            controls.push(row(button(s,'Save subscription','save',ButtonStyle.Secondary)));
         }
     } else if (s.step === 'manage') {
         page = pageOf(s.subscriptions || [],s.page);
@@ -116,7 +122,7 @@ export function renderBrowser(s, manager = false) {
     if (s.step === 'schools' && s.schools?.length > 100) nav.addComponents(button(s,'School name groups','group'));
     if (s.step === 'schools' && !['source','compare'].includes(s.mode)) nav.addComponents(button(s,'Request coverage','request'));
     controls.push(nav);
-    return {embeds:[embed],components:controls,allowedMentions:{parse:[]}};
+    return {embeds:s.step === 'information' ? [new EmbedBuilder(s.infoPages[s.infoIndex])] : [embed],components:controls,allowedMentions:{parse:[]}};
 }
 export async function openProgramBrowser(interaction, mode = null) {
     await interaction.deferReply({flags:MessageFlags.Ephemeral});
@@ -138,7 +144,7 @@ export async function schoolChoices(client,guildId,s,{discover = discoverSchools
         try { found = await discover({...filter,program:program(filter.program).name,countryCode:filter.country}); }
         catch(error) { s.searchError = error.message; }
     }
-    s.schools = [...tracked,...found.map((candidate,index) => ({id:`web${index}`,school:candidate.title.slice(0,120),url:safeUrl(candidate.url).href,tracked:false,provider:candidate.provider,regionVerified:candidate.regionVerified,programReportedYear:candidate.programReportedYear,county:candidate.county,directorySource:candidate.directorySource}))]
+    s.schools = [...tracked,...found.map((candidate,index) => ({id:`web${index}`,school:candidate.title.slice(0,120),url:safeUrl(candidate.url).href,tracked:false,provider:candidate.provider,regionVerified:candidate.regionVerified,programReportedYear:candidate.programReportedYear,county:candidate.county,directorySource:candidate.directorySource,admissionsUrl:candidate.admissionsUrl,applicationUrl:candidate.applicationUrl}))]
         .filter((candidate,index,all) => all.findIndex(item => s.mode === 'source' ? item.url === candidate.url : item.school.toLowerCase() === candidate.school.toLowerCase()) === index);
     s.step = s.schools.length > 100 ? 'school-group' : 'schools'; s.schoolGroup='all'; s.page = 0;
 }
@@ -195,7 +201,7 @@ async function coverageRequest(interaction,s,existingDb) {
     }
     return 'Coverage request saved. A moderator can find and approve official source links through the programme menu.';
 }
-export async function handleProgramBrowser(interaction,client,args) {
+export async function handleProgramBrowser(interaction,client,args,{information=schoolInformation}={}) {
     const [owner,sessionId,revision,action] = args;
     if (owner !== interaction.user.id || !interaction.guildId) return interaction.reply({content:'Open your own menu with /programs.',flags:MessageFlags.Ephemeral});
     await interaction.deferUpdate();
@@ -208,6 +214,7 @@ export async function handleProgramBrowser(interaction,client,args) {
             if (s.mode === 'settings' || SETTINGS_STEPS.has(s.step)) requireSettingsPermission(interaction);
             let response;
             if (action === 'restart') { s.step='mode';s.mode=null;s.filter={};s.selected=[];s.compareFirst=null;s.page=0; }
+            else if (action === 'back' && s.step === 'information') s.step='confirm';
             else if (action === 'back' && SETTINGS_STEPS.has(s.step)) {s.step=s.step === 'settings' ? 'mode' : 'settings';s.mode=s.step === 'mode' ? null : 'settings';s.page=0;}
             else if (action === 'back') {
                 const order=['mode','program','country','region','county','topic','applicant','school-group','schools','confirm'];
@@ -216,7 +223,14 @@ export async function handleProgramBrowser(interaction,client,args) {
                 s.page=0;s.compareFirst=null;s.selected=[];
             } else if (action === 'prev' || action === 'next') { s.page=Math.max(0,s.page+(action === 'prev' ? -1 : 1)); }
             else if (action === 'settings-remove') await removeSettingsSource(interaction,s,db);
-            else if (action === 'save' && s.step === 'confirm' && s.mode !== 'source') {
+            else if (action === 'view-info' && s.step === 'confirm' && s.selected?.length) {
+                s.infoPages=[];
+                await interaction.editReply({content:'Reading the school website for your requested information…',embeds:[],components:[]});
+                for(const selected of s.selected) s.infoPages.push(...await information(selected,preferences(s.filter)));
+                s.infoIndex=0;s.step='information';
+            }
+            else if ((action === 'info-prev' || action === 'info-next') && s.step === 'information') s.infoIndex=Math.max(0,Math.min(s.infoPages.length-1,s.infoIndex+(action === 'info-next' ? 1 : -1)));
+            else if (action === 'save' && ['confirm','information'].includes(s.step) && s.mode !== 'source') {
                 const saved=await saveSubscription(client,interaction.guildId,s,db);
                 if (saved?.busy) throw new Error('A subscription update is in progress. Try again.');
                 s.step='done';s.notice=saved;
@@ -270,14 +284,12 @@ export async function handleProgramBrowser(interaction,client,args) {
                         if (s.mode === 'compare' && s.compareFirst.id === candidate.id) throw new Error('Choose a different second source.');
                         s.selected=s.mode === 'compare' ? [s.compareFirst,candidate] : candidate ? [candidate] : [];
                         s.step='confirm';
-                        if (s.mode === 'find' || s.mode === 'compare') {
-                            const responses=[];
-                            for (const selected of s.selected.length ? s.selected : [null]) {
-                                if (selected && !selected.tracked) responses.push({embeds:[new EmbedBuilder().setColor(0x8b5cf6).setTitle(clean(selected.school,200)).setDescription(`**${selected.provider === 'directory' ? 'Directory-listed institution' : 'Found on request'} · not verified or monitored**\n${selected.url}\n\n${selected.provider === 'directory' ? (selected.programReportedYear ? `Federal IPEDS data lists this school and its reported programme in ${selected.programReportedYear}. This does not confirm current admission requirements or accreditation. ` : 'The directory lists this institution and website, but does not confirm it offers the selected programme. ') + (!selected.regionVerified ? 'State/province information is missing; this is a country-level candidate. ' : '') : ''}A moderator must verify the programme page before requirements are treated as official or monitored.`).setFooter({text:selected.provider === 'directory' ? selected.programReportedYear ? `Institution/programme data: NCES IPEDS ${selected.programReportedYear} · verify current requirements` : 'Institution data: public directory · verify programme availability' : 'Discovered source · verification required'})]});
-                                else responses.push(await findPrograms(client,interaction.guildId,preferences({...s.filter,school:selected?.school || ''}),{db}));
-                            }
-                            response={embeds:responses.flatMap(item=>item.embeds).slice(0,6),allowedMentions:{parse:[]}};
-                        }
+                        if ((s.mode === 'find' || s.mode === 'compare') && s.selected.length) {
+                            s.infoPages=[];
+                            await interaction.editReply({content:'Reading the school website for your requested information…',embeds:[],components:[]});
+                            for(const selected of s.selected) s.infoPages.push(...await information(selected,preferences(s.filter)));
+                            s.infoIndex=0;s.step='information';
+                        } else if(s.mode === 'find' && !s.selected.length) response=await findPrograms(client,interaction.guildId,preferences(s.filter),{db});
                     }
                 } else if (s.step === 'manage') {
                     if (!s.subscriptions.some(sub=>sub.id === value)) throw new Error('Choose one of your subscriptions.');
@@ -292,6 +304,6 @@ export async function handleProgramBrowser(interaction,client,args) {
             return view;
         });
         if (result?.busy) throw new Error('Your menu is already updating. Try again shortly.');
-        await interaction.editReply(result);
+        await interaction.editReply({...result,content:''});
     } catch(error) { logger.warn(`Programme browser: ${error.message}`);await interaction.followUp({content:error.message,flags:MessageFlags.Ephemeral,allowedMentions:{parse:[]}}); }
 }

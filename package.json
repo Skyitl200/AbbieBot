@@ -23,7 +23,7 @@
     "test:microbemon": "node --test tests/microbemon*.test.js",
     "test:discovery": "node --test tests/discovery.test.js",
     "test:study-time": "node --test tests/study-time.test.js",
-    "test:program-updates": "node --test tests/program-updates.test.js"
+    "test:program-updates": "node --test tests/program-updates.test.js tests/program-information.test.js"
   },
   "dependencies": {
     "@discordjs/rest": "^2.6.1",

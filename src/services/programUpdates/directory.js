@@ -53,6 +53,8 @@ export function directorySchools(filter, { directory = UNIVERSITIES } = {}) {
         if (!url) continue;
         results.push({ title: school.name.slice(0,150), url, provider: 'directory', countryCode: code,
             region: location || '', county: school.county || '', regionVerified: Boolean(location), programVerified: false,
+            admissionsUrl: listedWebsite({web_pages:school.admissionsUrl ? [school.admissionsUrl] : []}),
+            applicationUrl: listedWebsite({web_pages:school.applicationUrl ? [school.applicationUrl] : []}),
             programReportedYear: selectedProgram && school.programs?.includes(selectedProgram) ? US_DIRECTORY_INFO.year : null,
             directorySource: school.unitId ? DIRECTORY_INFO.usSource : DIRECTORY_INFO.source });
     }
