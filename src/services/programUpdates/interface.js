@@ -14,7 +14,7 @@ const admin = interaction => {
     if (!interaction.memberPermissions?.has(PermissionFlagsBits.ManageGuild)) throw new Error('Manage Server permission is required for this action.');
 };
 function input(interaction) { return preferences(Object.fromEntries(['program','country','region','school','topic','applicant'].map(name => [name, interaction.options.getString(name)]))); }
-const summary = filter => `${program(filter.program).name} · ${countryName(filter.country)}${filter.region ? ' · ' + filter.region : ''}\nSchool: ${filter.school || 'All tracked schools'}\nTopics: ${filter.topic || 'All'} · Applicants: ${filter.applicant}`;
+const summary = filter => `${program(filter.program).name} · ${countryName(filter.country)}${filter.region ? ' · ' + filter.region : ''}${filter.county ? ' · ' + filter.county : ''}\nSchool: ${filter.school || 'All tracked schools'}\nTopics: ${filter.topic || 'All'} · Applicants: ${filter.applicant}`;
 async function subscriptionPreview(interaction, filter) {
     const draftId = id();
     await withDb(interaction.client, db => put(db, key(interaction.guildId, 'draft', `${interaction.user.id}:${draftId}`), { ...filter, expiresAt: Date.now() + 3600000 }));
@@ -28,7 +28,7 @@ export async function findPrograms(client, guildId, filter, { db = null } = {}) 
     const embeds = [], buttons = [];
     for (const source of selected) {
         const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle(`${program(source.program).name} · ${source.school}`.slice(0,250))
-            .setDescription(`${countryName(source.country)}${source.region ? ' · ' + clean(source.region,80) : ''}\nTopic: ${source.topic} · Applicants: ${source.applicant}`)
+            .setDescription(`${countryName(source.country)}${source.region ? ' · ' + clean(source.region,80) : ''}${source.county ? ' · ' + clean(source.county,80) : ''}\nTopic: ${source.topic} · Applicants: ${source.applicant}`)
             .addFields({ name: 'Official source', value: source.url });
         try {
             const snapshot = extractText(await fetchPage(source.url), source.selector);
