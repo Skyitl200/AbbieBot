@@ -17,12 +17,13 @@ export async function list(db, prefix) {
 export async function withDb(client, fn) { const db = await poolFor(client).connect(); try { return await fn(db); } finally { db.release(); } }
 // Session lock avoids concurrent checks/reviews across Railway replicas. Never
 // hold a transaction open while fetching websites or sending Discord messages.
-export async function locked(client, name, fn) {
-    return withDb(client, async db => {
+export async function locked(client, name, fn, existingDb = null) {
+    const run = async db => {
         const result = await db.query('SELECT pg_try_advisory_lock(hashtextextended($1,0)) AS acquired', [name]);
         if (!result.rows[0]?.acquired) return { busy: true };
         try { return await fn(db); }
         finally { await db.query('SELECT pg_advisory_unlock(hashtextextended($1,0))', [name]); }
-    });
+    };
+    return existingDb ? run(existingDb) : withDb(client, run);
 }
 export const sourcesFor = (db, guild) => list(db, key(guild, 'source') + ':').then(rows => rows.map(row => row.value));
