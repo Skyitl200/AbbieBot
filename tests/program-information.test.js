@@ -38,7 +38,7 @@ test('crawler follows relevant school links, skips external sites and relays evi
 });
 test('crawler limits scope, does not invent information when blocked, and labels empty results',async()=>{
     const result=await schoolInformation({school:'Example College',url:root},filter,{pageFetcher:async()=>{throw Error('HTTP 403');}});
-    assert.match(result[0].description,/could not retrieve/);assert.ok(!result[0].description.includes('November 23'));
+    assert.match(result[0].description,/could not be retrieved/);assert.ok(!result[0].description.includes('November 23'));
     assert.match(result[0].fields.find(f=>f.name === 'Retrieval status').value,/403/);
     assert.equal(sameSchool('https://evil.example/nursing',root),false);
     assert.equal(sameSchool('https://catalog.example.edu/nursing',root),true);

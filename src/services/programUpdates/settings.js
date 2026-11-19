@@ -10,7 +10,7 @@ export function requireSettingsPermission(i) {
 export function settingsView(s,{embed,controls,select,row,button,clean}) {
     let page;
     if (s.step === 'settings') {
-        embed.setTitle('⚙️ Programs · Moderator settings');
+        embed.setTitle('Programs · Settings');
         if(s.notice) embed.addFields({name:'Status',value:clean(s.notice)});
         controls.push(select(s,'Choose a setting',[
             {label:'Set update and review channels',value:'channels'},

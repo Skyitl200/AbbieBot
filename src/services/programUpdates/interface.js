@@ -18,7 +18,7 @@ const summary = filter => `${program(filter.program).name} · ${countryName(filt
 async function subscriptionPreview(interaction, filter) {
     const draftId = id();
     await withDb(interaction.client, db => put(db, key(interaction.guildId, 'draft', `${interaction.user.id}:${draftId}`), { ...filter, expiresAt: Date.now() + 3600000 }));
-    return { embeds: [new EmbedBuilder().setColor(0x8b5cf6).setTitle('🌍 Your programme update preferences').setDescription(clean(summary(filter), 1600))
+    return { embeds: [new EmbedBuilder().setColor(0x000000).setTitle('Your program preferences').setDescription(clean(summary(filter), 1600))
         .setFooter({ text: 'Only approved, tracked sources are monitored. You can unsubscribe at any time.' })],
     components: [new ActionRowBuilder().addComponents(new ButtonBuilder().setCustomId(`programupdates:subscribe:${interaction.user.id}:${draftId}`).setLabel('Save subscription').setStyle(ButtonStyle.Primary))], allowedMentions: { parse: [] } };
 }
@@ -27,7 +27,7 @@ export async function findPrograms(client, guildId, filter, { db = null } = {}) 
     const selected = sources.filter(source => matches(source, filter)).slice(0,3);
     const embeds = [], buttons = [];
     for (const source of selected) {
-        const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle(`${program(source.program).name} · ${source.school}`.slice(0,250))
+        const embed = new EmbedBuilder().setColor(0x000000).setTitle(`${program(source.program).name} · ${source.school}`.slice(0,250))
             .setDescription(`${countryName(source.country)}${source.region ? ' · ' + clean(source.region,80) : ''}${source.county ? ' · ' + clean(source.county,80) : ''}\nTopic: ${source.topic} · Applicants: ${source.applicant}`)
             .addFields({ name: 'Official source', value: source.url });
         try {
@@ -40,7 +40,7 @@ export async function findPrograms(client, guildId, filter, { db = null } = {}) 
         embeds.push(embed);
     }
     if (!selected.length) {
-        const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle('🌍 Find programme requirements').setDescription(clean(summary(filter),1600))
+        const embed = new EmbedBuilder().setColor(0x000000).setTitle('Program information').setDescription(clean(summary(filter),1600))
             .addFields({ name: 'Coverage', value: 'No matching official sources are tracked yet. You can save a subscription and request coverage with the Request coverage menu in /programs.' });
         let candidates = [];
         try { candidates = await discoverSchools({ ...filter, program: program(filter.program).name, countryCode: filter.country }); }

@@ -104,6 +104,18 @@ function chunks(text, max=2800) {
     while(remaining.length>max) {let split=remaining.lastIndexOf(' ',max);if(split<max/2)split=max;out.push(remaining.slice(0,split));remaining=remaining.slice(split).trim();}
     if(remaining)out.push(remaining);return out;
 }
+export function formatInformationText(text) {
+    let previousHeading='';
+    return text.split('\n\n').map(paragraph=>{
+        const newline=paragraph.indexOf('\n');
+        if(newline<0)return escapeMarkdown(paragraph);
+        const heading=paragraph.slice(0,newline);
+        const body=escapeMarkdown(paragraph.slice(newline+1).replace(/:(?=[A-Za-z])/g,': '));
+        const label=heading === previousHeading ? '' : `**${escapeMarkdown(heading)}**\n`;
+        previousHeading=heading;
+        return label+body;
+    }).join('\n\n');
+}
 export async function schoolInformation(candidate, filter, { pageFetcher=fetchPage, maxPages=7, at=Date.now() }={}) {
     const root=safeUrl(candidate.url).href;
     const queue=[{url:root,score:100,depth:0}],seen=new Set(),evidence=[],errors=[];
@@ -131,15 +143,15 @@ export async function schoolInformation(candidate, filter, { pageFetcher=fetchPa
         }
     }
     if(!pages.length) {
-        const embed=new EmbedBuilder().setColor(0x8b5cf6).setTitle(`${program(filter.program).name} · ${candidate.school}`.slice(0,250))
-            .setDescription(`I could not retrieve readable ${filter.topic || 'programme'} information for this request. I will not substitute another programme’s requirements or invent a deadline. The information may be in a PDF, a restricted portal, or a page outside this bounded check.`)
+        const embed=new EmbedBuilder().setColor(0x000000).setTitle(candidate.school.slice(0,250)).setAuthor({name:`${program(filter.program).name} · ${filter.topic ? filter.topic.charAt(0).toUpperCase()+filter.topic.slice(1) : 'Program information'}`})
+            .setDescription(`The requested ${filter.topic || 'program'} information could not be retrieved. It may be in a PDF, a restricted portal, or another school page.`)
             .addFields({name:'Pages checked',value:String(seen.size)}, {name:'Source reference',value:root});
         if(errors.length) embed.addFields({name:'Retrieval status',value:escapeMarkdown(errors[0]).slice(0,700)});
         return [embed.setTimestamp(at).toJSON()];
     }
-    return pages.map((page,index)=>new EmbedBuilder().setColor(0x8b5cf6).setTitle(`${program(filter.program).name} · ${candidate.school}`.slice(0,250))
-        .setDescription(escapeMarkdown(page.text).slice(0,3600))
-        .addFields({name:'Scope',value:page.general ? 'General school information, not a confirmed programme-specific requirement.' : 'Text retrieved from a matching programme section. Confirm the applicable intake and applicant category.'},
+    return pages.map((page,index)=>new EmbedBuilder().setColor(0x000000).setTitle(candidate.school.slice(0,250)).setAuthor({name:`${program(filter.program).name} · ${filter.topic ? filter.topic.charAt(0).toUpperCase()+filter.topic.slice(1) : 'Program information'}`})
+        .setDescription(formatInformationText(page.text).slice(0,3600))
+        .addFields({name:'Applies to',value:page.general ? 'General school information. Program-specific requirements are not confirmed.' : 'The program and intake named above. Dates are shown as published.'},
             {name:'Source reference',value:page.url})
-        .setFooter({text:`${filter.topic || 'Programme information'} · Page ${index+1}/${pages.length} · Dates/years relayed as published; older intakes may not apply`}).setTimestamp(at).toJSON());
+        .setFooter({text:`Page ${index+1}/${pages.length} · Check intake dates · Retrieved`}).setTimestamp(at).toJSON());
 }

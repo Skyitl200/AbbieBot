@@ -8,7 +8,7 @@ export function publicInformationMessage(snapshot, page=0) {
         new ButtonBuilder().setLabel('Previous page').setStyle(ButtonStyle.Secondary).setCustomId(`programinfo:${snapshot.owner}:${snapshot.id}:${index-1}`).setDisabled(index===0),
         new ButtonBuilder().setLabel('Next page').setStyle(ButtonStyle.Secondary).setCustomId(`programinfo:${snapshot.owner}:${snapshot.id}:${index+1}`).setDisabled(index+1===snapshot.pages.length),
     ));
-    return {embeds:[new EmbedBuilder(snapshot.pages[index])],components,allowedMentions:{parse:[]}};
+    return {embeds:[new EmbedBuilder(snapshot.pages[index]).setColor(0x000000)],components,allowedMentions:{parse:[]}};
 }
 export async function publishInformation(interaction,pages) {
     const snapshot={id:id(),owner:interaction.user.id,guildId:interaction.guildId,channelId:interaction.channelId,pages,expiresAt:Date.now()+86400000};

@@ -29,11 +29,18 @@ export function groupedSchools(s) {
         return s.schoolGroup === 'other' ? !/^[a-z]$/.test(first) : s.schoolGroup.includes(first);
     });
 }
-const summary = s => [program(s.filter.program)?.name, s.filter.country ? countryName(s.filter.country) : '', s.filter.region, s.filter.county,
-    s.filter.topic, s.filter.applicant].filter(Boolean).join(' · ');
+const summary = s => {
+    const lines=[];
+    if(s.filter.program) lines.push(`**Program**  ${clean(program(s.filter.program).name,100)}`);
+    const location=[s.filter.country ? countryName(s.filter.country) : '',s.filter.region,s.filter.county].filter(Boolean).join(' · ');
+    if(location)lines.push(`**Location**  ${clean(location,250)}`);
+    if(s.filter.topic)lines.push(`**Information**  ${s.filter.topic.charAt(0).toUpperCase()+s.filter.topic.slice(1)}`);
+    if(s.filter.applicant)lines.push(`**Applicant**  ${s.filter.applicant.charAt(0).toUpperCase()+s.filter.applicant.slice(1)}`);
+    return lines.join('\n\n');
+};
 const filterFor = s => preferences({ ...s.filter, school: s.selected?.[0]?.school || '' });
 export function renderBrowser(s, manager = false) {
-    const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle('🌍 Programs').setDescription(clean(summary(s) || 'Choose what you would like to do. No typed country codes, regions, or URLs needed.'));
+    const embed = new EmbedBuilder().setColor(0x000000).setTitle('Programs').setDescription(summary(s) || 'Choose an option below to explore schools, requirements, and updates.');
     const controls = [], options = [];
     let page;
     if (s.step === 'information') {
@@ -41,7 +48,7 @@ export function renderBrowser(s, manager = false) {
         controls.push(row(button(s,'Subscribe to these updates','save',ButtonStyle.Primary)));
     }
     else if (SETTINGS_STEPS.has(s.step)) page=settingsView(s,{embed,controls,select,row,button,clean});
-    else if (s.step === 'help') embed.setTitle('How Programs works').setDescription('Find schools, compare school information, subscribe to updates, or request coverage using dropdowns. US listings include states, counties, and reported programme data. International listings identify institutions; programme availability and current requirements still need verification. Moderators configure channels and monitoring through Settings. No search key or typed URL is needed.');
+    else if (s.step === 'help') embed.setTitle('How Programs works').setDescription('**Find information**\nChoose a program, location, and school to read matching website information.\n\n**Follow updates**\nSave your preferences to receive reviewed announcements.\n\n**Source coverage**\nUS listings include reported program data. International program availability and current requirements need verification.\n\nModerators manage channels and sources in Settings.');
     else if (s.step === 'mode') {
         options.push({ label: 'Find program information', value: 'find' }, { label: 'Subscribe to updates', value: 'subscribe' },
             { label: 'Compare two school sources', value: 'compare' }, { label: 'Manage my subscriptions', value: 'manage' },
@@ -115,7 +122,7 @@ export function renderBrowser(s, manager = false) {
         else embed.addFields({name:'Subscriptions',value:'You have no saved subscriptions.'});
     } else if (s.step === 'done') embed.addFields({name:'Saved',value:s.notice || 'Done.'});
     if (page) {
-        embed.setFooter({text:`Page ${page.current + 1}/${page.pages}${SETTINGS_STEPS.has(s.step) ? '' : ' · Location coverage does not imply all schools are monitored'}`});
+        embed.setFooter({text:`Page ${page.current + 1}/${page.pages}${SETTINGS_STEPS.has(s.step) ? '' : ' · Directory coverage varies by location'}`});
         if (page.pages > 1) controls.push(new ActionRowBuilder().addComponents(button(s,'Previous page','prev').setDisabled(page.current === 0),button(s,'Next page','next').setDisabled(page.current + 1 === page.pages)));
     }
     const nav = new ActionRowBuilder().addComponents(button(s,'Start over','restart'));
@@ -123,7 +130,7 @@ export function renderBrowser(s, manager = false) {
     if (s.step === 'schools' && s.schools?.length > 100) nav.addComponents(button(s,'School name groups','group'));
     if (s.step === 'schools' && !['source','compare'].includes(s.mode)) nav.addComponents(button(s,'Request coverage','request'));
     controls.push(nav);
-    return {embeds:s.step === 'information' ? [new EmbedBuilder(s.infoPages[s.infoIndex])] : [embed],components:controls,allowedMentions:{parse:[]}};
+    return {embeds:s.step === 'information' ? [new EmbedBuilder(s.infoPages[s.infoIndex]).setColor(0x000000)] : [embed],components:controls,allowedMentions:{parse:[]}};
 }
 export async function openProgramBrowser(interaction, mode = null) {
     await interaction.deferReply({flags:MessageFlags.Ephemeral});
@@ -197,7 +204,7 @@ async function coverageRequest(interaction,s,existingDb) {
     if (result.busy) throw new Error('Another request is in progress. Try again shortly.');
     const config = await get(existingDb,key(interaction.guildId,'config'));
     if (config) {
-        try { const channel = await writableChannel(interaction.client,config.reviewChannel,interaction.guildId); await channel.send({content:`**Programme coverage requested**\n${clean(summary(s))}\n${clean(filter.school || 'All schools')}\nRequest ${requestId}`,allowedMentions:{parse:[]}}); }
+        try { const channel = await writableChannel(interaction.client,config.reviewChannel,interaction.guildId); await channel.send({content:`**Programme coverage requested**\n${clean(summary(s).replace(/\*\*/g,''))}\n${clean(filter.school || 'All schools')}\nRequest ${requestId}`,allowedMentions:{parse:[]}}); }
         catch(error) { logger.warn(`Coverage notification: ${error.message}`); }
     }
     return 'Coverage request saved. A moderator can find and approve official source links through the programme menu.';
