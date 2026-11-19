@@ -1,0 +1,766 @@
+{
+  "course": "Anatomy and Physiology Lab",
+  "category": "Nervous System",
+  "modelGroup": "3D Neuron Model",
+  "source": "Neuron.jpg from the user upload, the user-provided term list, and matching diagram reference screenshot. The axon question uses the long exposed segment on the left. All markings are overlays on the original anatomy. Every card displays the full, uncropped original model photograph at its native resolution, with no enlargement.",
+  "sourceImageFile": "neuron-original.jpg",
+  "sourceImageSha256": "114b9c4ac634614c4fce5f3b38a2ef9231af9f1f59a7bb3b8b8b591d7e9a8d5d",
+  "referenceUrl": "https://quizlet.com/1033183462/3d-neuron-model-diagram/",
+  "models": [
+    {
+      "id": "neuron-01",
+      "name": "Soma",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-01.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "outline",
+        "points": [
+          [
+            315,
+            270
+          ],
+          [
+            447,
+            158
+          ],
+          [
+            541,
+            270
+          ],
+          [
+            467,
+            383
+          ],
+          [
+            315,
+            270
+          ]
+        ],
+        "bounds": [
+          309,
+          152,
+          547,
+          389
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-01",
+          "question": "Identify the cell-body region outlined in cyan.",
+          "typedQuestion": "Identify the cell-body region outlined in cyan.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Soma",
+            "Nissl bodies",
+            "Axon hillock",
+            "Dendrite"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "soma",
+            "cell body",
+            "neuronal cell body",
+            "perikaryon"
+          ],
+          "explanation": "The soma is the neuronal cell body, containing the nucleus and most organelles.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "3e73b9376543ffc803b50b0de6256e75422089cc1b83e1f3eba9339ab5c3104f"
+    },
+    {
+      "id": "neuron-02",
+      "name": "Nissl bodies",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-02.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "target": [
+          361,
+          220
+        ],
+        "tail": [
+          295,
+          188
+        ],
+        "kind": "arrow",
+        "bounds": [
+          285,
+          178,
+          371,
+          230
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-02",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Soma",
+            "Nissl bodies",
+            "Myelin sheath",
+            "Schwann cell nucleus"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "nissl bodies",
+            "nissl body",
+            "nissl substance",
+            "chromatophilic substance"
+          ],
+          "explanation": "Nissl bodies represent rough endoplasmic reticulum and ribosomes in the soma and dendrites.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "8681dc2ea6fe1a14ff6041c40abb775a2abf02032b1de4d90c2013ef60efb346"
+    },
+    {
+      "id": "neuron-03",
+      "name": "Dendrite",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-03.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "target": [
+          239,
+          252
+        ],
+        "tail": [
+          227,
+          311
+        ],
+        "kind": "arrow",
+        "bounds": [
+          217,
+          242,
+          249,
+          321
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-03",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Soma",
+            "Nissl bodies",
+            "Dendrite",
+            "Synaptic knob"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "dendrite",
+            "dendrites"
+          ],
+          "explanation": "Dendrites receive signals and conduct graded potentials toward the soma.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "c342cee8cde7e2c93799c56a7ccb5fb43bf262edadeee4ca794776db01c5e1bc"
+    },
+    {
+      "id": "neuron-04",
+      "name": "Synaptic knob",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-04.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "target": [
+          602,
+          234
+        ],
+        "tail": [
+          604,
+          302
+        ],
+        "kind": "arrow",
+        "bounds": [
+          592,
+          224,
+          614,
+          312
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-04",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Soma",
+            "Nissl bodies",
+            "Dendrite",
+            "Synaptic knob"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "synaptic knob",
+            "synaptic bouton",
+            "terminal bouton",
+            "synaptic terminal",
+            "axon terminal"
+          ],
+          "explanation": "The synaptic knob is an axon terminal that releases neurotransmitter onto a target cell.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "088af9fff092b3cf50698d0724fcdb98b48a526fbcbfcc59303bf887b781d519"
+    },
+    {
+      "id": "neuron-05",
+      "name": "Axon hillock",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-05.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "target": [
+          427,
+          425
+        ],
+        "tail": [
+          520,
+          409
+        ],
+        "kind": "arrow",
+        "bounds": [
+          417,
+          399,
+          530,
+          435
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-05",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Axon hillock",
+            "Initial segment",
+            "Axon",
+            "Soma"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "axon hillock",
+            "hillock"
+          ],
+          "explanation": "The axon hillock is the tapered origin of the axon from the soma.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "7320a179128bbec6eb1efbdc91cb3334512c7cecde1a4728ec1bee823681a1a8"
+    },
+    {
+      "id": "neuron-06",
+      "name": "Initial segment",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-06.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "target": [
+          434,
+          491
+        ],
+        "tail": [
+          518,
+          478
+        ],
+        "kind": "arrow",
+        "bounds": [
+          424,
+          468,
+          528,
+          501
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-06",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Axon hillock",
+            "Initial segment",
+            "Node of Ranvier",
+            "Myelin sheath"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "initial segment",
+            "axon initial segment",
+            "initial axon segment",
+            "ais"
+          ],
+          "explanation": "The initial segment is the proximal axon just beyond the hillock and is a major action-potential initiation zone.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "97c4c386c352c090e031ecc0bad8bcd6fa31b3c5ef2ee11b7fef13c1bb09df21"
+    },
+    {
+      "id": "neuron-08",
+      "name": "Axon",
+      "viewLabel": "longitudinal myelinated axon",
+      "expectedImageFile": "neuron/neuron-08.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "axon-long-line",
+        "points": [
+          [
+            143,
+            110
+          ],
+          [
+            148,
+            180
+          ],
+          [
+            151,
+            430
+          ],
+          [
+            151,
+            603
+          ],
+          [
+            148,
+            676
+          ]
+        ],
+        "bounds": [
+          137,
+          104,
+          157,
+          682
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-08",
+          "question": "Identify the entire segment indicated by the long blue line.",
+          "typedQuestion": "Identify the entire segment indicated by the long blue line.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Dendrite",
+            "Myelin sheath",
+            "Initial segment",
+            "Axon"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "axon",
+            "axons",
+            "nerve fiber",
+            "nerve fibre"
+          ],
+          "explanation": "This longitudinal view exposes the axon running inside the surrounding myelin sheath.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "46eba356ec66457fd154b5219757ccc4e04d860a6486c88731cf2abcde9303de"
+    },
+    {
+      "id": "neuron-09",
+      "name": "Schwann cell nucleus",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-09.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "target": [
+          100,
+          648
+        ],
+        "tail": [
+          50,
+          623
+        ],
+        "kind": "arrow",
+        "bounds": [
+          40,
+          613,
+          110,
+          658
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-09",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Schwann cell nucleus",
+            "Soma",
+            "Neurolemma",
+            "Nissl bodies"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "schwann cell nucleus",
+            "nucleus of schwann cell",
+            "schwann nucleus",
+            "neurolemmocyte nucleus"
+          ],
+          "explanation": "The elongated peripheral nucleus belongs to a Schwann cell surrounding a peripheral axon.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "1053aba0cd09053bbbd2227ccb1cd6691d2115f200b6269705b1e3fe9b315a3a"
+    },
+    {
+      "id": "neuron-10",
+      "name": "Neurolemma",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-10.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "target": [
+          107,
+          576
+        ],
+        "tail": [
+          54,
+          555
+        ],
+        "kind": "arrow",
+        "bounds": [
+          44,
+          545,
+          117,
+          586
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-10",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Myelin sheath",
+            "Neurolemma",
+            "Endoneurium",
+            "Schwann cell nucleus"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "neurolemma",
+            "neurilemma",
+            "neurolemmal sheath",
+            "sheath of schwann"
+          ],
+          "explanation": "The neurolemma (neurilemma) is the outer nucleated cytoplasmic layer of a Schwann cell, external to the myelin.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "3f0d35d7ccfb6691318ba474eec8281ff92de78412986c4cba522cbc88ef535a"
+    },
+    {
+      "id": "neuron-11",
+      "name": "Endoneurium",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-11.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "target": [
+          143,
+          946
+        ],
+        "tail": [
+          216,
+          922
+        ],
+        "kind": "arrow",
+        "bounds": [
+          133,
+          912,
+          226,
+          956
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-11",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Neurolemma",
+            "Myelin sheath",
+            "Endoneurium",
+            "Soma"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "endoneurium",
+            "endoneurial connective tissue"
+          ],
+          "explanation": "Endoneurium is the delicate connective tissue surrounding an individual peripheral nerve fiber.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "241862838dd7a14bb4ce382bec5ed2098f57c15416d94088874a9882b1481d65"
+    },
+    {
+      "id": "neuron-12",
+      "name": "Node of Ranvier",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-12.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "target": [
+          145,
+          825
+        ],
+        "tail": [
+          218,
+          800
+        ],
+        "kind": "arrow",
+        "bounds": [
+          135,
+          790,
+          228,
+          835
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-12",
+          "question": "Identify the structure indicated by the cyan arrow and open ring.",
+          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Soma",
+            "Nissl bodies",
+            "Dendrite",
+            "Node of Ranvier"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "node of ranvier",
+            "nodes of ranvier",
+            "ranvier node",
+            "ranvier nodes"
+          ],
+          "explanation": "A node of Ranvier is the gap between adjacent myelin-forming Schwann cells.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "47f6b654f06a7d0d2e5058992b30bf35942f3e3282d58e9acb190e2f083697af"
+    },
+    {
+      "id": "neuron-14",
+      "name": "Myelin sheath",
+      "viewLabel": null,
+      "expectedImageFile": "neuron/neuron-14.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "myelin-long-line",
+        "points": [
+          [
+            176,
+            458
+          ],
+          [
+            184,
+            488
+          ],
+          [
+            186,
+            540
+          ],
+          [
+            185,
+            594
+          ],
+          [
+            181,
+            667
+          ]
+        ],
+        "bounds": [
+          170,
+          452,
+          192,
+          673
+        ]
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          646,
+          1024
+        ],
+        "scale": 1
+      },
+      "questions": [
+        {
+          "id": "lab-neuron-14",
+          "question": "Identify the layered covering indicated by the long blue line.",
+          "typedQuestion": "Identify the layered covering indicated by the long blue line.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Neurolemma",
+            "Myelin sheath",
+            "Endoneurium",
+            "Axon"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "myelin sheath",
+            "myelin"
+          ],
+          "explanation": "The myelin sheath consists of concentric membrane layers that electrically insulate the axon.",
+          "requiresModelImage": true
+        }
+      ],
+      "imageSha256": "121a3888521bb7b4977deb70f4fa361c60eb47254e68884d20bee1e8acd277df"
+    }
+  ]
+}
