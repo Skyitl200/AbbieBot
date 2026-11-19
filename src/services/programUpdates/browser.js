@@ -6,6 +6,7 @@ import { id, checkSource, writableChannel } from './service.js';
 import { discoverSchools, fetchPage, extractText, safeUrl } from './fetch.js';
 import { findPrograms } from './interface.js';
 import { logger } from '../../utils/logger.js';
+import { publishInformation } from './publicInformation.js';
 import { schoolInformation } from './information.js';
 import { SETTINGS_STEPS, requireSettingsPermission, settingsView, settingsChoice, removeSettingsSource } from './settings.js';
 import { DIRECTORY_INFO, countiesForUS } from './directory.js';
@@ -205,6 +206,7 @@ export async function handleProgramBrowser(interaction,client,args,{information=
     const [owner,sessionId,revision,action] = args;
     if (owner !== interaction.user.id || !interaction.guildId) return interaction.reply({content:'Open your own menu with /programs.',flags:MessageFlags.Ephemeral});
     await interaction.deferUpdate();
+    let publicPages;
     try {
         const result = await locked(client,sessionKey(interaction.guildId,owner,sessionId),async db => {
             const s = await get(db,sessionKey(interaction.guildId,owner,sessionId));
@@ -227,7 +229,7 @@ export async function handleProgramBrowser(interaction,client,args,{information=
                 s.infoPages=[];
                 await interaction.editReply({content:'Reading the school website for your requested information…',embeds:[],components:[]});
                 for(const selected of s.selected) s.infoPages.push(...await information(selected,preferences(s.filter)));
-                s.infoIndex=0;s.step='information';
+                s.infoIndex=0;s.step='information';publicPages=s.infoPages;
             }
             else if ((action === 'info-prev' || action === 'info-next') && s.step === 'information') s.infoIndex=Math.max(0,Math.min(s.infoPages.length-1,s.infoIndex+(action === 'info-next' ? 1 : -1)));
             else if (action === 'save' && ['confirm','information'].includes(s.step) && s.mode !== 'source') {
@@ -288,7 +290,7 @@ export async function handleProgramBrowser(interaction,client,args,{information=
                             s.infoPages=[];
                             await interaction.editReply({content:'Reading the school website for your requested information…',embeds:[],components:[]});
                             for(const selected of s.selected) s.infoPages.push(...await information(selected,preferences(s.filter)));
-                            s.infoIndex=0;s.step='information';
+                            s.infoIndex=0;s.step='information';publicPages=s.infoPages;
                         } else if(s.mode === 'find' && !s.selected.length) response=await findPrograms(client,interaction.guildId,preferences(s.filter),{db});
                     }
                 } else if (s.step === 'manage') {
@@ -305,5 +307,9 @@ export async function handleProgramBrowser(interaction,client,args,{information=
         });
         if (result?.busy) throw new Error('Your menu is already updating. Try again shortly.');
         await interaction.editReply({...result,content:''});
+        if(publicPages?.length) {
+            try {await publishInformation(interaction,publicPages);}
+            catch(error) {await interaction.followUp({content:'The information is available in your private menu, but I could not post it publicly. Check Send Messages and Embed Links permissions, then use View requested information to retry.',flags:MessageFlags.Ephemeral,allowedMentions:{parse:[]}});}
+        }
     } catch(error) { logger.warn(`Programme browser: ${error.message}`);await interaction.followUp({content:error.message,flags:MessageFlags.Ephemeral,allowedMentions:{parse:[]}}); }
 }
