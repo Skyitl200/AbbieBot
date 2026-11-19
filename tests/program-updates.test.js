@@ -7,6 +7,9 @@ import { key, poolFor } from '../src/services/programUpdates/store.js';
 import { checkSource, reviewChange, changeMessage } from '../src/services/programUpdates/service.js';
 import { openProgramUpdates, handleProgramUpdates } from '../src/services/programUpdates/interface.js';
 import command from '../src/commands/Community/programupdates.js';
+import adminCommand from '../src/commands/Community/programupdatesadmin.js';
+import { COUNTRIES, regionsFor } from '../src/services/programUpdates/locations.js';
+import { renderBrowser, openProgramBrowser, handleProgramBrowser } from '../src/services/programUpdates/browser.js';
 const filter = preferences({ program: 'nursing', country: 'CA', region: 'Ontario', school: 'Example University', topic: 'prerequisites', applicant: 'international' });
 const source = { ...filter, id: 'abc123', url: 'https://example.edu/nursing', selector: '#requirements' };
 const textA = 'Applicants require biology and chemistry. International applicants must provide official transcripts. Applications close March 15, 2027.';
@@ -160,8 +163,11 @@ test('worldwide discovery is explicitly optional and results are candidates, not
 });
 test('Discord command schemas fit limits and expose search, compare, subscriptions and moderation', () => {
     const data = command.data.toJSON(); assert.ok(command.guildOnly);
-    for (const expected of ['find','compare','subscribe','setup','source-add','request']) assert.ok(data.options.some(option => option.name === expected));
-    for (const sub of data.options) {
+    assert.deepEqual(data.options, []);
+    const adminData = adminCommand.data.toJSON();
+    assert.ok(adminData.options.some(option => option.name === 'add-source'));
+    assert.ok(!JSON.stringify(adminData).includes('\"url\"'));
+    for (const sub of adminData.options) {
         assert.ok(sub.options?.length <= 25 || !sub.options);
         let optional = false;
         for (const option of sub.options || []) { if (!option.required) optional = true; else assert.equal(optional,false,`${sub.name} required options first`); }
@@ -200,4 +206,84 @@ test('publication resumes after a notification failure without repeating the pub
     await reviewChange(d.client,'123',source.id,pending.id,true);
     assert.equal(d.sent.length,3);
     assert.equal(d.data.get(key('123','state',source.id)).pending,undefined);
+});
+
+test('dropdowns page every country and region within Discord limits', () => {
+    assert.ok(COUNTRIES.length >= 240);
+    for (const country of COUNTRIES) {
+        const regions = regionsFor(country.countryShortCode);
+        const pages = Math.max(1,Math.ceil(regions.length/24));
+        for (let page=0;page<pages;page++) {
+            const state={owner:'456',id:'session',revision:0,step:'region',page,mode:'subscribe',filter:{program:'nursing',country:country.countryShortCode}};
+            const message=renderBrowser(state);
+            assert.ok(message.components.length <= 5);
+            const select=message.components[0].toJSON().components[0];
+            assert.ok(select.options.length <= 25);
+            assert.equal(select.options[0].value,'all');
+        }
+    }
+});
+function browserInteraction(client) {
+    const i=interaction(client,'');
+    i.followups=[];
+    i.deferUpdate=async()=>{};
+    i.reply=async value=>i.followups.push(value);
+    i.followUp=async value=>i.followups.push(value);
+    return i;
+}
+const control = (message, action='choose') => message.components.flatMap(row=>row.components).find(component=>component.data?.custom_id?.endsWith(':'+action)).data.custom_id.split(':').slice(1);
+async function choose(i,value) {
+    const args=control(i.replies.at(-1));i.values=[value];
+    await handleProgramBrowser(i,i.client,args);
+}
+test('member completes programme, country, region and subscription entirely with dropdowns', async () => {
+    const d=database(),i=browserInteraction(d.client);
+    await openProgramBrowser(i);
+    await choose(i,'subscribe');await choose(i,'nursing');await choose(i,'CA');
+    const index=regionsFor('CA').findIndex(region=>region.name === 'Ontario');
+    assert.ok(index >= 0);
+    await choose(i,String(index));await choose(i,'prerequisites');await choose(i,'international');
+    await choose(i,source.id);
+    const args=control(i.replies.at(-1),'save');
+    await handleProgramBrowser(i,i.client,args);
+    assert.equal(i.followups.length,0);
+    assert.match(i.replies.at(-1).embeds[0].data.fields[0].value,/Subscription saved/);
+    const subscription=[...d.data.entries()].find(([key])=>key.startsWith('program-updates:123:subscription:'))[1];
+    assert.equal(subscription.region,'Ontario');assert.equal(subscription.school,'Example University');
+});
+test('browser rejects another member, expired sessions and stale selections', async () => {
+    const d=database(),i=browserInteraction(d.client);await openProgramBrowser(i);
+    const args=control(i.replies.at(-1));
+    const other=browserInteraction(d.client);other.user.id='999';
+    await handleProgramBrowser(other,d.client,args);
+    assert.match(other.followups[0].content,/own menu/);
+    await choose(i,'subscribe');
+    i.values=['find'];await handleProgramBrowser(i,d.client,args);
+    assert.match(i.followups.at(-1).content,/menu changed/);
+    const session=[...d.data].find(([key])=>key.includes(':browser:'));
+    session[1].expiresAt=0;
+    await handleProgramBrowser(i,d.client,control(i.replies.at(-1)));
+    assert.match(i.followups.at(-1).content,/expired/);
+});
+test('source approval is a dropdown workflow, with no URL entry and checked moderator permissions', async () => {
+    const d=database(),i=browserInteraction(d.client);
+    await openProgramBrowser(i,'source');assert.match(i.replies.at(-1).content,/Manage Server/);
+    i.memberPermissions={has:()=>true};await openProgramBrowser(i,'source');
+    const session=[...d.data.values()].find(value=>value.step === 'program');
+    session.step='confirm';session.filter={...filter};session.selected=[{school:'Example School',url:'https://example.edu/program'}];session.mode='source';
+    const view=renderBrowser(session,true);
+    assert.ok(view.components[0].components[0].data.custom_id.endsWith(':approve'));
+    assert.match(view.embeds[0].data.fields[0].value,/https:\/\/example.edu\/program/);
+    i.memberPermissions={has:()=>false};await handleProgramBrowser(i,d.client,control(view,'approve'));
+    assert.match(i.followups.at(-1).content,/Manage Server/);
+});
+test('empty and paginated school menus remain valid for search, comparison and approval', () => {
+    for (const mode of ['find','subscribe','compare','source','request']) {
+        for (const count of [0,1,26]) {
+            const s={owner:'456',id:'session',revision:0,step:'schools',page:0,mode,filter:{program:'nursing',country:'US'},schools:Array.from({length:count},(_,index)=>({id:String(index),school:'School '+index,url:'https://example.edu/'+index,tracked:false}))};
+            const view=renderBrowser(s,true);
+            assert.ok(view.components.length <= 5);
+            for (const row of view.components) row.toJSON();
+        }
+    }
 });

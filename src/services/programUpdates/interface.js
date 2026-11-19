@@ -22,8 +22,8 @@ async function subscriptionPreview(interaction, filter) {
         .setFooter({ text: 'Only approved, tracked sources are monitored. You can unsubscribe at any time.' })],
     components: [new ActionRowBuilder().addComponents(new ButtonBuilder().setCustomId(`programupdates:subscribe:${interaction.user.id}:${draftId}`).setLabel('Save subscription').setStyle(ButtonStyle.Primary))], allowedMentions: { parse: [] } };
 }
-export async function findPrograms(client, guildId, filter) {
-    const sources = await withDb(client, db => sourcesFor(db, guildId));
+export async function findPrograms(client, guildId, filter, { db = null } = {}) {
+    const sources = db ? await sourcesFor(db, guildId) : await withDb(client, connection => sourcesFor(connection, guildId));
     const selected = sources.filter(source => matches(source, filter)).slice(0,3);
     const embeds = [], buttons = [];
     for (const source of selected) {
@@ -41,14 +41,14 @@ export async function findPrograms(client, guildId, filter) {
     }
     if (!selected.length) {
         const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle('🌍 Find programme requirements').setDescription(clean(summary(filter),1600))
-            .addFields({ name: 'Coverage', value: 'No matching official sources are tracked yet. You can save a subscription and request coverage with /programupdates request.' });
+            .addFields({ name: 'Coverage', value: 'No matching official sources are tracked yet. You can save a subscription and request coverage with the Request coverage menu in /programupdates.' });
         let candidates = [];
         try { candidates = await discoverSchools({ ...filter, program: program(filter.program).name, country: countryName(filter.country) }); }
         catch (error) { embed.addFields({ name: 'School search', value: clean(error.message) }); }
         if (candidates.length) {
             embed.addFields({ name: 'Found on request · not verified or monitored', value: candidates.map(candidate => `• ${clean(candidate.title,150)}\n${candidate.url}`).join('\n').slice(0,1024) });
         } else if (!process.env.BRAVE_SEARCH_API_KEY) {
-            embed.addFields({ name: 'Worldwide discovery', value: 'Live school search is not configured yet. A moderator can add an official school page with /programupdates source-add.' });
+            embed.addFields({ name: 'Worldwide discovery', value: 'Live school search is not configured yet. A moderator can add an official school page with /programupdatesadmin add-source.' });
         }
         const directories = (DIRECTORIES[filter.program] || []).filter(([country]) => country === filter.country);
         if (directories.length) embed.addFields({ name: 'Official directories · explore schools', value: directories.map(([,name,url]) => `${name}\n${url}`).join('\n') });
@@ -111,7 +111,7 @@ export async function openProgramUpdates(interaction) {
                     const state = await get(db, key(guildId, 'state', source.id));
                     lines.push(`**${source.id} · ${clean(source.school,80)}**\n${source.country} · ${source.program} · ${state?.lastError ? 'Check failed' : state?.pending ? 'Awaiting review' : state?.checkedAt ? 'Checked ' + new Date(state.checkedAt).toISOString() : 'Not checked yet'}`);
                 }
-                return lines.join('\n\n') || 'No sources tracked yet. Moderators can add official sources with /programupdates source-add.';
+                return lines.join('\n\n') || 'No sources tracked yet. Moderators can add official sources with /programupdatesadmin add-source.';
             });
             return await interaction.editReply({ content: text.slice(0,1900), allowedMentions: { parse: [] } });
         }
@@ -136,7 +136,7 @@ export async function openProgramUpdates(interaction) {
             extractText(await fetchPage(url), selector);
             const source = { ...filter, id: id(), url, selector, approvedBy: user.id, approvedAt: Date.now() };
             await requireLock(client, key(guildId, 'source-admin'), async db => {
-                if (!await get(db, key(guildId, 'config'))) throw new Error('Run /programupdates setup first.');
+                if (!await get(db, key(guildId, 'config'))) throw new Error('Run /programupdatesadmin setup first.');
                 const sources = await sourcesFor(db, guildId);
                 if (sources.length >= 50) throw new Error('This server supports up to 50 monitored sources.');
                 if (sources.some(s => s.url === url && s.program === filter.program && s.topic === filter.topic)) throw new Error('That source is already monitored for this programme and topic.');
@@ -161,7 +161,7 @@ export async function openProgramUpdates(interaction) {
             });
             if (result.busy) return await interaction.editReply('A check is already running.');
             void checkGuild(client, guildId).catch(error => logger.warn(`Manual programme check: ${error.message}`));
-            return await interaction.editReply('Source check started. Changes will appear in the moderator review channel. Use /programupdates sources for check status.');
+            return await interaction.editReply('Source check started. Changes will appear in the moderator review channel. Use /programupdatesadmin sources for check status.');
         }
     } catch (error) { logger.warn(`Programme updates command: ${error.message}`); await interaction.editReply({ content: error.message, allowedMentions: { parse: [] } }); }
 }
@@ -171,9 +171,9 @@ export async function handleProgramUpdates(interaction, client, args) {
         if (!interaction.guildId) throw new Error('Use programme updates inside a server.');
         const [action, target, token] = args;
         if (action === 'subscribe') {
-            if (target !== interaction.user.id) throw new Error('Open your own preferences with /programupdates subscribe.');
+            if (target !== interaction.user.id) throw new Error('Open your own preferences with /programupdates.');
             const result = await requireLock(client, key(interaction.guildId, 'subscriptions', target), async db => {
-                if (!await get(db, key(interaction.guildId, 'config'))) throw new Error('A moderator needs to run /programupdates setup before subscriptions can be saved.');
+                if (!await get(db, key(interaction.guildId, 'config'))) throw new Error('A moderator needs to run /programupdatesadmin setup before subscriptions can be saved.');
                 const draft = await get(db, key(interaction.guildId, 'draft', `${target}:${token}`));
                 if (!draft || draft.expiresAt < Date.now()) throw new Error('This preference preview expired. Open a new subscription.');
                 const rows = await list(db, key(interaction.guildId, 'subscription', target) + ':');

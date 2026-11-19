@@ -27,13 +27,13 @@ export async function writableChannel(client, channelId, guildId) {
     if (!channel || channel.guildId !== guildId || !channel.isTextBased() || !channel.send) throw new Error('Choose a text channel in this server that StudyBot can access.');
     return channel;
 }
-export async function checkSource(client, guildId, source, { pageFetcher = fetchPage, at = Date.now() } = {}) {
+export async function checkSource(client, guildId, source, { pageFetcher = fetchPage, at = Date.now(), db: existingDb = null } = {}) {
     return locked(client, key(guildId, 'check', source.id), async db => {
         if (!await get(db, key(guildId, 'source', source.id))) return { removed: true };
         const stateKey = key(guildId, 'state', source.id);
         const state = await get(db, stateKey) || {};
         const config = await get(db, key(guildId, 'config'));
-        if (!config) throw new Error('Configure updates and review channels with /programupdates setup.');
+        if (!config) throw new Error('Configure updates and review channels with /programupdatesadmin setup.');
         if (state.pending) {
             if (state.pending.notified) return { pending: true };
             const channel = await writableChannel(client, config.reviewChannel, guildId);
@@ -59,7 +59,7 @@ export async function checkSource(client, guildId, source, { pageFetcher = fetch
         pending.notified = message.id;
         await put(db, stateKey, { ...state, checkedAt: at, lastError: null, pending });
         return { changed: true };
-    });
+    }, existingDb);
 }
 export async function reviewChange(client, guildId, sourceId, pendingId, approve) {
     return locked(client, key(guildId, 'check', sourceId), async db => {
