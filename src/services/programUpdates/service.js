@@ -11,7 +11,7 @@ export function changeMessage(source, pending, review = true) {
     const p = program(source.program);
     const change = changes(pending.before, pending.after);
     const embed = new EmbedBuilder().setColor(0x8b5cf6).setTitle(`${p.name} · ${source.school}`.slice(0,250))
-        .setDescription(`<:program:${p.emoji}> ${review ? '**Review required: official-source content changed.**' : '**Source change reviewed by a server moderator.**'}\n${countryName(source.country)}${source.region ? ' · ' + clip(source.region, 80) : ''} · ${source.topic}\nApplicant category: ${source.applicant}\n\nChanges below are excerpts, not a complete requirements list. Confirm intake year, applicability, and deadlines on the official page.`)
+        .setDescription(`<:program:${p.emoji}> ${review ? '**Review required: official-source content changed.**' : '**Source change reviewed by a server moderator.**'}\n${countryName(source.country)}${source.region ? ' · ' + clip(source.region, 80) : ''}${source.county ? ' · ' + clip(source.county,80) : ''} · ${source.topic}\nApplicant category: ${source.applicant}\n\nChanges below are excerpts, not a complete requirements list. Confirm intake year, applicability, and deadlines on the official page.`)
         .addFields({ name: 'Added or revised text', value: clip(change.added.join('\n') || 'No new text; see removals.') || '—' },
             { name: 'Removed text', value: clip(change.removed.join('\n') || 'None detected.') || '—' },
             { name: 'Official source', value: source.url })

@@ -6,7 +6,7 @@ import { id, checkSource, writableChannel } from './service.js';
 import { discoverSchools, fetchPage, extractText, safeUrl } from './fetch.js';
 import { findPrograms } from './interface.js';
 import { logger } from '../../utils/logger.js';
-import { DIRECTORY_INFO } from './directory.js';
+import { DIRECTORY_INFO, countiesForUS } from './directory.js';
 const clean = (value, length = 1000) => escapeMarkdown(String(value || '')).slice(0,length);
 const isAdmin = i => i.memberPermissions?.has(PermissionFlagsBits.ManageGuild);
 function requireAdmin(i) { if (!isAdmin(i)) throw new Error('Manage Server permission is required to approve official sources.'); }
@@ -26,7 +26,7 @@ export function groupedSchools(s) {
         return s.schoolGroup === 'other' ? !/^[a-z]$/.test(first) : s.schoolGroup.includes(first);
     });
 }
-const summary = s => [program(s.filter.program)?.name, s.filter.country ? countryName(s.filter.country) : '', s.filter.region,
+const summary = s => [program(s.filter.program)?.name, s.filter.country ? countryName(s.filter.country) : '', s.filter.region, s.filter.county,
     s.filter.topic, s.filter.applicant].filter(Boolean).join(' · ');
 const filterFor = s => preferences({ ...s.filter, school: s.selected?.[0]?.school || '' });
 export function renderBrowser(s, manager = false) {
@@ -52,6 +52,10 @@ export function renderBrowser(s, manager = false) {
         page = pageOf(regions,s.page);
         controls.push(select(s,'Choose a state / province / region',[{ label:'Entire country / all regions',value:'all' },
             ...page.items.map(region => ({ label:region.name.slice(0,100),value:String(regions.indexOf(region)) }))]));
+    } else if (s.step === 'county') {
+        const counties = countiesForUS(s.filter.region,s.filter.program);
+        page = pageOf(counties,s.page);
+        controls.push(select(s,'Choose a county',[{label:'All counties in this state',value:'all'},...page.items.map(county=>({label:county.slice(0,100),value:String(counties.indexOf(county))}))]));
     } else if (s.step === 'topic') controls.push(select(s,'Choose an update topic',[
         ...(s.mode === 'source' ? [] : [{ label:'All topics',value:'all' }]), ...TOPICS.map(value => ({ label:value,value })),
     ]));
@@ -65,14 +69,14 @@ export function renderBrowser(s, manager = false) {
             // Coverage requests use the selected location; no URL or school text is required.
         } else if (s.mode === 'compare' && page.items.length) {
             // Two independent selections allow comparisons across school-list pages.
-            controls.push(select(s,s.compareFirst ? 'Choose the second school / source' : 'Choose the first school / source',page.items.map(candidate => ({label:candidate.school.slice(0,100),value:candidate.id,description:candidate.tracked ? 'Tracked official source' : candidate.provider === 'directory' ? (candidate.regionVerified ? 'Directory-listed · programme not verified' : 'Directory-listed · region/programme not verified') : 'Discovered page · verify official status'}))));
+            controls.push(select(s,s.compareFirst ? 'Choose the second school / source' : 'Choose the first school / source',page.items.map(candidate => ({label:candidate.school.slice(0,100),value:candidate.id,description:candidate.tracked ? 'Tracked official source' : candidate.provider === 'directory' ? (candidate.regionVerified ? (candidate.programReportedYear ? `Programme reported in ${candidate.programReportedYear} · confirm current entry` : 'Directory-listed · programme not verified') : 'Directory-listed · region/programme not verified') : 'Discovered page · verify official status'}))));
         } else if (s.mode !== 'compare') {
             const all = s.mode === 'source' ? [] : [{label:'All tracked schools in this location',value:'all'}];
-            options.push(...all,...page.items.map(candidate => ({label:candidate.school.slice(0,100),value:candidate.id,description:candidate.tracked ? 'Tracked official source' : candidate.provider === 'directory' ? (candidate.regionVerified ? 'Directory-listed · programme not verified' : 'Directory-listed · region/programme not verified') : 'Discovered page · not yet verified'})));
+            options.push(...all,...page.items.map(candidate => ({label:candidate.school.slice(0,100),value:candidate.id,description:candidate.tracked ? 'Tracked official source' : candidate.provider === 'directory' ? (candidate.regionVerified ? (candidate.programReportedYear ? `Programme reported in ${candidate.programReportedYear} · confirm current entry` : 'Directory-listed · programme not verified') : 'Directory-listed · region/programme not verified') : 'Discovered page · not yet verified'})));
             if (options.length) controls.push(select(s,'Choose a school or source',options));
         }
         if (s.compareFirst) embed.addFields({name:'First school / source',value:clean(s.compareFirst.school,300)});
-        embed.addFields({name:'Source coverage',value:`Tracked entries are approved sources. Free directory: ${DIRECTORY_INFO.institutions.toLocaleString('en-US')} institutions across ${DIRECTORY_INFO.countries} countries. Directory entries do not verify programme offerings; entries missing region data are labelled.`});
+        embed.addFields({name:'Source coverage',value:`Tracked entries are approved sources. Free directory: ${DIRECTORY_INFO.institutions.toLocaleString('en-US')} institutions across ${DIRECTORY_INFO.countries} countries. US schools use federal state/county records and ${DIRECTORY_INFO.usYear} reported programme data. International entries do not confirm programme offerings; missing region data is labelled.`});
         if (s.searchError) embed.addFields({name:'School directory',value:clean(s.searchError,800)});
         if (!s.schools?.length) {
             embed.addFields({name:'No school sources found',value:'No matching schools are listed in the bundled free directory or tracked sources. No API key is needed. Request coverage or use the school-search and official directory links below.'});
@@ -131,7 +135,7 @@ export async function schoolChoices(client,guildId,s,{discover = discoverSchools
         try { found = await discover({...filter,program:program(filter.program).name,countryCode:filter.country}); }
         catch(error) { s.searchError = error.message; }
     }
-    s.schools = [...tracked,...found.map((candidate,index) => ({id:`web${index}`,school:candidate.title.slice(0,120),url:safeUrl(candidate.url).href,tracked:false,provider:candidate.provider,regionVerified:candidate.regionVerified,directorySource:candidate.directorySource}))]
+    s.schools = [...tracked,...found.map((candidate,index) => ({id:`web${index}`,school:candidate.title.slice(0,120),url:safeUrl(candidate.url).href,tracked:false,provider:candidate.provider,regionVerified:candidate.regionVerified,programReportedYear:candidate.programReportedYear,county:candidate.county,directorySource:candidate.directorySource}))]
         .filter((candidate,index,all) => all.findIndex(item => s.mode === 'source' ? item.url === candidate.url : item.school.toLowerCase() === candidate.school.toLowerCase()) === index);
     s.step = s.schools.length > 100 ? 'school-group' : 'schools'; s.schoolGroup='all'; s.page = 0;
 }
@@ -201,8 +205,10 @@ export async function handleProgramBrowser(interaction,client,args) {
             let response;
             if (action === 'restart') { s.step='mode';s.mode=null;s.filter={};s.selected=[];s.compareFirst=null;s.page=0; }
             else if (action === 'back') {
-                const order=['mode','program','country','region','topic','applicant','school-group','schools','confirm'];
-                s.step=order[Math.max(0,order.indexOf(s.step)-1)];s.page=0;s.compareFirst=null;s.selected=[];
+                const order=['mode','program','country','region','county','topic','applicant','school-group','schools','confirm'];
+                s.step=order[Math.max(0,order.indexOf(s.step)-1)];
+                if(s.step === 'county' && (s.filter.country !== 'US' || !s.filter.region)) s.step='region';
+                s.page=0;s.compareFirst=null;s.selected=[];
             } else if (action === 'prev' || action === 'next') { s.page=Math.max(0,s.page+(action === 'prev' ? -1 : 1)); }
             else if (action === 'save' && s.step === 'confirm' && s.mode !== 'source') {
                 const saved=await saveSubscription(client,interaction.guildId,s,db);
@@ -228,7 +234,12 @@ export async function handleProgramBrowser(interaction,client,args) {
                 } else if (s.step === 'region') {
                     const region=value === 'all' ? '' : regionsFor(s.filter.country)[Number(value)]?.name;
                     if (region === undefined) throw new Error('Choose a listed region.');
-                    s.filter.region=region;s.step='topic';
+                    s.filter.region=region;s.filter.county='';s.step=s.filter.country === 'US' && region ? 'county' : 'topic';s.page=0;
+                } else if (s.step === 'county') {
+                    const counties=countiesForUS(s.filter.region,s.filter.program);
+                    const county=value === 'all' ? '' : counties[Number(value)];
+                    if(county === undefined) throw new Error('Choose a listed county.');
+                    s.filter.county=county;s.step='topic';s.page=0;
                 } else if (s.step === 'topic') {
                     if ((!TOPICS.includes(value) && value !== 'all') || (s.mode === 'source' && value === 'all')) throw new Error('Choose a listed topic.');
                     s.filter.topic=value === 'all' ? '' : value;s.step='applicant';
@@ -252,7 +263,7 @@ export async function handleProgramBrowser(interaction,client,args) {
                         if (s.mode === 'find' || s.mode === 'compare') {
                             const responses=[];
                             for (const selected of s.selected.length ? s.selected : [null]) {
-                                if (selected && !selected.tracked) responses.push({embeds:[new EmbedBuilder().setColor(0x8b5cf6).setTitle(clean(selected.school,200)).setDescription(`**${selected.provider === 'directory' ? 'Directory-listed institution' : 'Found on request'} · not verified or monitored**\n${selected.url}\n\n${selected.provider === 'directory' ? 'The directory lists this institution and website, but does not confirm it offers the selected programme. ' + (!selected.regionVerified ? 'State/province information is missing; this is a country-level candidate. ' : '') : ''}A moderator must verify the programme page before requirements are treated as official or monitored.`).setFooter({text:selected.provider === 'directory' ? 'Institution data: Hipo university-domains-list · free bundled directory' : 'Discovered source · verification required'})]});
+                                if (selected && !selected.tracked) responses.push({embeds:[new EmbedBuilder().setColor(0x8b5cf6).setTitle(clean(selected.school,200)).setDescription(`**${selected.provider === 'directory' ? 'Directory-listed institution' : 'Found on request'} · not verified or monitored**\n${selected.url}\n\n${selected.provider === 'directory' ? (selected.programReportedYear ? `Federal IPEDS data lists this school and its reported programme in ${selected.programReportedYear}. This does not confirm current admission requirements or accreditation. ` : 'The directory lists this institution and website, but does not confirm it offers the selected programme. ') + (!selected.regionVerified ? 'State/province information is missing; this is a country-level candidate. ' : '') : ''}A moderator must verify the programme page before requirements are treated as official or monitored.`).setFooter({text:selected.provider === 'directory' ? selected.programReportedYear ? `Institution/programme data: NCES IPEDS ${selected.programReportedYear} · verify current requirements` : 'Institution data: public directory · verify programme availability' : 'Discovered source · verification required'})]});
                                 else responses.push(await findPrograms(client,interaction.guildId,preferences({...s.filter,school:selected?.school || ''}),{db}));
                             }
                             response={embeds:responses.flatMap(item=>item.embeds).slice(0,6),allowedMentions:{parse:[]}};

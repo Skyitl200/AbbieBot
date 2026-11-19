@@ -7,7 +7,7 @@ import { key, poolFor } from '../src/services/programUpdates/store.js';
 import { checkSource, reviewChange, changeMessage } from '../src/services/programUpdates/service.js';
 import { openProgramUpdates, handleProgramUpdates } from '../src/services/programUpdates/interface.js';
 import command from '../src/commands/Community/programupdates.js';
-import { directorySchools, DIRECTORY_INFO } from '../src/services/programUpdates/directory.js';
+import { directorySchools, DIRECTORY_INFO, US_INSTITUTIONS, countiesForUS } from '../src/services/programUpdates/directory.js';
 import adminCommand from '../src/commands/Community/programupdatesadmin.js';
 import { COUNTRIES, regionsFor } from '../src/services/programUpdates/locations.js';
 import { renderBrowser, openProgramBrowser, handleProgramBrowser, schoolChoices, groupedSchools } from '../src/services/programUpdates/browser.js';
@@ -321,4 +321,44 @@ test('alphabet groups let members navigate large free school directories', () =>
     assert.deepEqual(groupedSchools(s).map(item=>item.id),['1']);
     const message=renderBrowser(s);message.components.forEach(row=>row.toJSON());
     assert.ok(message.components[0].toJSON().components[0].options.some(option=>option.value === 'vwxyz'));
+});
+
+test('US directory covers all 50 states and returns Broward with Florida county and programme metadata', () => {
+    const states='AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY'.split(' ');
+    for (const state of states) assert.ok(US_INSTITUTIONS.some(s=>s['state-province'] === state),state);
+    const florida=directorySchools({country:'US',region:'Florida',program:'nursing'});
+    assert.ok(florida.length > 100);
+    assert.ok(florida.every(s=>s.region === 'FL' && s.regionVerified));
+    const broward=florida.find(s=>s.title === 'Broward College');
+    assert.ok(broward);assert.equal(broward.county,'Broward County');assert.equal(broward.programReportedYear,2024);
+    for (const name of ['Miami Dade College','Palm Beach State College','Valencia College']) assert.ok(florida.some(s=>s.title === name),name);
+    assert.ok(!directorySchools({country:'US',region:'Florida',program:'medicine'}).some(s=>s.title === 'Broward College'));
+});
+test('county filters show only matching programme institutions and keep dropdowns below 25 options', () => {
+    const schools=directorySchools({country:'US',region:'Florida',county:'Broward County',program:'nursing'});
+    assert.ok(schools.some(s=>s.title === 'Broward College'));
+    assert.ok(schools.every(s=>s.county === 'Broward County'));
+    const counties=countiesForUS('Florida','nursing');assert.ok(counties.includes('Broward County'));
+    for (let page=0;page<Math.ceil(counties.length/24);page++) {
+        const s={owner:'456',id:'session',revision:0,step:'county',page,mode:'subscribe',filter:{program:'nursing',country:'US',region:'Florida'}};
+        const view=renderBrowser(s);view.components.forEach(row=>row.toJSON());
+        assert.ok(view.components[0].toJSON().components[0].options.length <= 25);
+    }
+    assert.equal(matches({...source,county:'Broward County'},{...filter,county:'Miami-Dade County'}),false);
+});
+test('US browser guides members through state and county before selecting schools', async () => {
+    const d=database(),i=browserInteraction(d.client);await openProgramBrowser(i);
+    await choose(i,'subscribe');await choose(i,'nursing');await choose(i,'US');
+    const fl=regionsFor('US').findIndex(r=>r.name === 'Florida');await choose(i,String(fl));
+    assert.ok(i.replies.at(-1).components[0].toJSON().components[0].placeholder.includes('county'));
+    const county=countiesForUS('Florida','nursing').indexOf('Broward County');await choose(i,String(county));
+    await choose(i,'all');await choose(i,'all');
+    const state=[...d.data.values()].find(value=>value.owner === '456' && value.step === 'schools');
+    assert.ok(state);assert.equal(state.filter.county,'Broward County');
+    const candidate=state.schools.find(s=>s.school === 'Broward College');assert.ok(candidate);
+    await choose(i,candidate.id);
+    await handleProgramBrowser(i,d.client,control(i.replies.at(-1),'save'));
+    assert.equal(i.followups.length,0);
+    const sub=[...d.data.entries()].find(([key])=>key.startsWith('program-updates:123:subscription:'))[1];
+    assert.equal(sub.county,'Broward County');assert.equal(sub.school,'Broward College');
 });

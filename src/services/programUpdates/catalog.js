@@ -24,12 +24,13 @@ export function preferences(input) {
     if (!program(input.program)) throw new Error('Choose one of the nine supported programs.');
     if (input.topic && !TOPICS.includes(input.topic)) throw new Error('Choose a supported update topic.');
     if (input.applicant && !APPLICANTS.includes(input.applicant)) throw new Error('Choose a supported applicant type.');
-    return { program: input.program, country: countryCode(input.country), region: String(input.region || '').trim().slice(0, 80),
+    return { program: input.program, country: countryCode(input.country), region: String(input.region || '').trim().slice(0, 80), county: String(input.county || '').trim().slice(0, 80),
         school: String(input.school || '').trim().slice(0, 120), topic: input.topic || '', applicant: input.applicant || 'all' };
 }
 export function matches(source, filter) {
     return source.program === filter.program && source.country === filter.country
         && (!filter.region || !source.region || normalized(source.region) === normalized(filter.region))
+        && (!filter.county || !source.county || normalized(source.county) === normalized(filter.county))
         && (!filter.school || normalized(source.school).includes(normalized(filter.school)))
         && (!filter.topic || source.topic === filter.topic)
         && (filter.applicant === 'all' || !source.applicant || source.applicant === 'all' || source.applicant === filter.applicant);
