@@ -235,7 +235,7 @@ function browserInteraction(client) {
 const control = (message, action='choose') => message.components.flatMap(row=>row.components).find(component=>component.data?.custom_id?.endsWith(':'+action)).data.custom_id.split(':').slice(1);
 async function choose(i,value) {
     const args=control(i.replies.at(-1));i.values=[value];
-    await handleProgramBrowser(i,i.client,args);
+    await handleProgramBrowser(i,i.client,args,i.programDependencies);
 }
 test('member completes programme, country, region and subscription entirely with dropdowns', async () => {
     const d=database(),i=browserInteraction(d.client);
@@ -400,4 +400,29 @@ test('registration creates /programs before deleting only the two obsolete progr
     }};
     await registerGuildCommands(client,'app');
     assert.deepEqual(calls,[['post','programs'],['delete','1'],['delete','2']]);
+});
+
+test('Find information shows retrieved text immediately, with separate subscription controls', async () => {
+    const d=database(),i=browserInteraction(d.client);
+    i.programDependencies={information:async()=>[{title:'Nursing deadlines',description:'Applications open September 1 and close November 23.'}]};
+    await openProgramBrowser(i);await choose(i,'find');await choose(i,'nursing');await choose(i,'CA');
+    const region=regionsFor('CA').findIndex(r=>r.name === 'Ontario');await choose(i,String(region));
+    await choose(i,'deadlines');await choose(i,'domestic');
+    const grouped=[...d.data.values()].find(s=>s.owner === '456' && s.step === 'school-group');if(grouped)await choose(i,'all');
+    // Select a directory school. It need not already be approved for monitoring.
+    const state=[...d.data.values()].find(s=>s.owner === '456' && s.step === 'schools');
+    const school=state.schools.find(s=>!s.tracked);assert.ok(school);await choose(i,school.id);
+    assert.equal(i.followups.length,0);
+    assert.match(i.replies.at(-1).embeds[0].data.description,/November 23/);
+    assert.ok(i.replies.at(-1).components.flatMap(row=>row.components).some(c=>c.data.label === 'Subscribe to these updates'));
+    assert.equal(i.replies.at(-1).content,'');
+});
+test('subscription confirmation offers a direct View requested information button', async () => {
+    const d=database(),i=browserInteraction(d.client);await openProgramBrowser(i);
+    const [sessionKey,session]=[...d.data].find(([key])=>key.includes(':browser:'));
+    session.step='confirm';session.mode='subscribe';session.filter={...filter};session.selected=[{school:'Example University',url:'https://example.edu/'}];
+    d.data.set(sessionKey,session);
+    const view=renderBrowser(session);i.replies.push(view);
+    await handleProgramBrowser(i,d.client,control(view,'view-info'),{information:async()=>[{title:'Prerequisites',description:'Biology and chemistry are required.'}]});
+    assert.match(i.replies.at(-1).embeds[0].data.description,/Biology and chemistry/);
 });
