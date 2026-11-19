@@ -81,3 +81,5 @@ On shared health-science criteria pages, matching programme cards/accordions or 
 The extraction was smoke-tested on captured live Broward home, Health Sciences Admissions and admissions-criteria pages: Nursing results contain the source's January 2027 application period and November 23 date, without the Dental Hygiene March 31 date. Automated tests use synthetic fixtures, not a brittle live deadline assertion.
 
 Requested information results are now published as public channel follow-ups. The dropdown workflow, subscriptions and moderator settings stay ephemeral. Public results have separate requester-owned page controls, valid for 24 hours, and include only the school-information snapshot. Publication failures leave the private result readable and explain the channel-permission requirement.
+
+Programs cards use a black accent and native Discord typography. Filter summaries separate program, location, topic and applicant type onto spaced lines. Website results use the school as the title, program/topic as the author line, bold section headings with repeated headings removed within a page, and short provenance footers.
