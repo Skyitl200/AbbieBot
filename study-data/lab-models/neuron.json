@@ -697,20 +697,34 @@
       "expectedImageFile": "neuron/neuron-14.png",
       "renderMethod": "original-photo-marker-overlay",
       "annotation": {
-        "target": [
-          183,
-          553
+        "kind": "myelin-long-line",
+        "points": [
+          [
+            176,
+            458
+          ],
+          [
+            184,
+            488
+          ],
+          [
+            186,
+            540
+          ],
+          [
+            185,
+            594
+          ],
+          [
+            181,
+            667
+          ]
         ],
-        "tail": [
-          240,
-          527
-        ],
-        "kind": "arrow",
         "bounds": [
-          173,
-          517,
-          250,
-          563
+          170,
+          452,
+          192,
+          673
         ]
       },
       "view": {
@@ -725,8 +739,8 @@
       "questions": [
         {
           "id": "lab-neuron-14",
-          "question": "Identify the structure indicated by the cyan arrow and open ring.",
-          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "question": "Identify the layered covering indicated by the long blue line.",
+          "typedQuestion": "Identify the layered covering indicated by the long blue line.",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
@@ -746,7 +760,7 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "b0fe8caf2612cbdd0526f090733c1be1c905caf3f288fa1a686c360d246b5d6f"
+      "imageSha256": "121a3888521bb7b4977deb70f4fa361c60eb47254e68884d20bee1e8acd277df"
     }
   ]
 }

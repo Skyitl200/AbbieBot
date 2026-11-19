@@ -52,3 +52,12 @@ test('axon cards mark the entire segment with long blue lines and retain the nuc
  assert.ok(manifest.models.some(m=>m.name==='Schwann cell nucleus'));
  for(const model of manifest.models)for(const q of model.questions)assert.ok(!q.options.includes('Schwann cell'));
 });
+
+
+test('myelin sheath uses a long line along the layered covering, distinct from the axon',()=>{
+ const sheath=manifest.models.find(m=>m.name==='Myelin sheath'),axon=manifest.models.find(m=>m.name==='Axon');
+ assert.equal(sheath.annotation.kind,'myelin-long-line');
+ const ys=sheath.annotation.points.map(p=>p[1]);assert.ok(Math.max(...ys)-Math.min(...ys)>150);
+ assert.ok(sheath.annotation.points.every(p=>p[0]>Math.max(...axon.annotation.points.map(a=>a[0]))));
+ assert.match(sheath.questions[0].question,/layered covering.*long blue line/);
+});
