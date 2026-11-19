@@ -2,7 +2,7 @@
   "course": "Anatomy and Physiology Lab",
   "category": "Nervous System",
   "modelGroup": "3D Neuron Model",
-  "source": "Neuron.jpg from the user upload, the user-provided 14-entry term list, and matching diagram reference screenshot. The repeated Axon term is retained as two distinct image views. All markings are overlays on the original anatomy. Every card displays the full, uncropped original model photograph at its native resolution, with no enlargement.",
+  "source": "Neuron.jpg from the user upload, the user-provided term list, with the whole Schwann cell question removed at the user's request, and matching diagram reference screenshot. The repeated Axon term is retained as two distinct image views. All markings are overlays on the original anatomy. Every card displays the full, uncropped original model photograph at its native resolution, with no enlargement.",
   "sourceImageFile": "neuron-original.jpg",
   "sourceImageSha256": "114b9c4ac634614c4fce5f3b38a2ef9231af9f1f59a7bb3b8b8b591d7e9a8d5d",
   "referenceUrl": "https://quizlet.com/1033183462/3d-neuron-model-diagram/",
@@ -385,20 +385,26 @@
       "expectedImageFile": "neuron/neuron-07.png",
       "renderMethod": "original-photo-marker-overlay",
       "annotation": {
-        "target": [
-          440,
-          553
+        "kind": "axon-long-line",
+        "points": [
+          [
+            434,
+            473
+          ],
+          [
+            437,
+            520
+          ],
+          [
+            441,
+            609
+          ]
         ],
-        "tail": [
-          511,
-          530
-        ],
-        "kind": "arrow",
         "bounds": [
-          430,
-          520,
-          521,
-          563
+          428,
+          467,
+          447,
+          615
         ]
       },
       "view": {
@@ -413,8 +419,8 @@
       "questions": [
         {
           "id": "lab-neuron-07",
-          "question": "Identify the structure indicated by the cyan arrow and open ring.",
-          "typedQuestion": "Identify the structure indicated by the cyan arrow and open ring.",
+          "question": "Identify the entire segment indicated by the long blue line.",
+          "typedQuestion": "Identify the entire segment indicated by the long blue line.",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
@@ -436,7 +442,7 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "5983f83d4769f8a30df6a3dbe7afab4a2939c64773d6154879d3f89dcef05329"
+      "imageSha256": "663dd310a0051e4691901f7385e935cc566b3d76017153dfae3d033699fc6578"
     },
     {
       "id": "neuron-08",
@@ -445,34 +451,34 @@
       "expectedImageFile": "neuron/neuron-08.png",
       "renderMethod": "original-photo-marker-overlay",
       "annotation": {
-        "kind": "outline",
+        "kind": "axon-long-line",
         "points": [
           [
-            139,
-            443
+            143,
+            110
           ],
           [
-            165,
-            443
+            148,
+            180
           ],
           [
-            167,
-            599
+            151,
+            430
           ],
           [
-            139,
-            605
+            151,
+            603
           ],
           [
-            139,
-            443
+            148,
+            676
           ]
         ],
         "bounds": [
-          133,
-          437,
-          173,
-          611
+          137,
+          104,
+          157,
+          682
         ]
       },
       "view": {
@@ -487,8 +493,8 @@
       "questions": [
         {
           "id": "lab-neuron-08",
-          "question": "Identify the entire elongated fiber region outlined in cyan.",
-          "typedQuestion": "Identify the entire elongated fiber region outlined in cyan.",
+          "question": "Identify the entire segment indicated by the long blue line.",
+          "typedQuestion": "Identify the entire segment indicated by the long blue line.",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
@@ -510,7 +516,7 @@
           "requiresModelImage": true
         }
       ],
-      "imageSha256": "f787885a9beb2205e5b22f888320197981ce807b4f8a25ac1d3716b9f4feb287"
+      "imageSha256": "46eba356ec66457fd154b5219757ccc4e04d860a6486c88731cf2abcde9303de"
     },
     {
       "id": "neuron-09",
@@ -553,7 +559,7 @@
           "difficulty": "easy",
           "options": [
             "Schwann cell nucleus",
-            "Schwann cell",
+            "Soma",
             "Neurolemma",
             "Nissl bodies"
           ],
@@ -675,7 +681,7 @@
             "Neurolemma",
             "Myelin sheath",
             "Endoneurium",
-            "Schwann cell"
+            "Soma"
           ],
           "correct": [
             2
@@ -749,76 +755,6 @@
         }
       ],
       "imageSha256": "47f6b654f06a7d0d2e5058992b30bf35942f3e3282d58e9acb190e2f083697af"
-    },
-    {
-      "id": "neuron-13",
-      "name": "Schwann cell",
-      "viewLabel": null,
-      "expectedImageFile": "neuron/neuron-13.png",
-      "renderMethod": "original-photo-marker-overlay",
-      "annotation": {
-        "kind": "bracket",
-        "points": [
-          [
-            214,
-            445
-          ],
-          [
-            222,
-            445
-          ],
-          [
-            222,
-            806
-          ],
-          [
-            214,
-            806
-          ]
-        ],
-        "bounds": [
-          208,
-          439,
-          228,
-          812
-        ]
-      },
-      "view": {
-        "crop": [
-          0,
-          0,
-          646,
-          1024
-        ],
-        "scale": 1
-      },
-      "questions": [
-        {
-          "id": "lab-neuron-13",
-          "question": "Identify the entire cell indicated by the cyan bracket.",
-          "typedQuestion": "Identify the entire cell indicated by the cyan bracket.",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Schwann cell",
-            "Schwann cell nucleus",
-            "Myelin sheath",
-            "Soma"
-          ],
-          "correct": [
-            0
-          ],
-          "typedAnswers": [
-            "schwann cell",
-            "schwann cells",
-            "neurolemmocyte",
-            "neurolemmocytes"
-          ],
-          "explanation": "One myelinating Schwann cell forms one internode of myelin around a peripheral axon.",
-          "requiresModelImage": true
-        }
-      ],
-      "imageSha256": "5386681d0267218d9cb414b8eba153ea1ef81321eaad0a19010e5276a4e0213a"
     },
     {
       "id": "neuron-14",

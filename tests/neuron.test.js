@@ -6,17 +6,17 @@ import { execFileSync } from 'node:child_process';
 import { LAB_SETS, labModelsMessage, labQuestions, labModelImage } from '../src/services/study/labModels.js';
 import { matchesLabAnswer } from '../src/services/study/answerMatching.js';
 const manifest=JSON.parse(readFileSync(new URL('../study-data/lab-models/neuron.json',import.meta.url)));
-test('3D Neuron Model contains all 14 requested entries, including two distinct axon views',()=>{
- const set=LAB_SETS.find(s=>s.id==='neuron');assert.equal(set.title,'3D Neuron Model');assert.equal(set.category,'nervous');assert.equal(set.models.length,14);
- assert.deepEqual(set.models.map(m=>m.name),['Soma','Nissl bodies','Dendrite','Synaptic knob','Axon hillock','Initial segment','Axon','Axon','Schwann cell nucleus','Neurolemma','Endoneurium','Node of Ranvier','Schwann cell','Myelin sheath']);
- assert.equal(new Set(set.models.map(m=>m.id)).size,14);assert.equal(new Set(set.models.map(m=>m.expectedImageFile)).size,14);
+test('3D Neuron Model contains 13 entries without the removed Schwann cell question, including two distinct axon views',()=>{
+ const set=LAB_SETS.find(s=>s.id==='neuron');assert.equal(set.title,'3D Neuron Model');assert.equal(set.category,'nervous');assert.equal(set.models.length,13);
+ assert.deepEqual(set.models.map(m=>m.name),['Soma','Nissl bodies','Dendrite','Synaptic knob','Axon hillock','Initial segment','Axon','Axon','Schwann cell nucleus','Neurolemma','Endoneurium','Node of Ranvier','Myelin sheath']);
+ assert.equal(new Set(set.models.map(m=>m.id)).size,13);assert.equal(new Set(set.models.map(m=>m.expectedImageFile)).size,13);
  const axons=set.models.filter(m=>m.name==='Axon');assert.notEqual(axons[0].viewLabel,axons[1].viewLabel);
  const ids=labModelsMessage('u','nervous').components[0].toJSON().components[0].options.map(o=>o.value);
  assert.ok(ids.includes('neuron'));assert.ok(ids.includes('brain-left-sagittal'));assert.ok(ids.includes('spinal-nerves'));assert.ok(!ids.includes('spinal-cord'));
 });
 test('both answer modes use the marked full photo and accept anatomical aliases without duplicate axon choices',()=>{
  for(const mode of ['multiple_choice','typed']){
-  const qs=labQuestions('neuron',mode);assert.equal(qs.length,14);
+  const qs=labQuestions('neuron',mode);assert.equal(qs.length,13);
   for(const q of qs){const model=manifest.models.find(m=>m.id===q.labModelId),image=labModelImage(q);assert.ok(image);
    assert.equal(createHash('sha256').update(readFileSync(image.path)).digest('hex'),model.imageSha256);
    if(mode==='multiple_choice'){assert.equal(q.options.length,4);assert.equal(new Set(q.options).size,4);assert.equal(q.options[q.correct[0]],q.modelName);}
@@ -41,6 +41,14 @@ for model in data['models']:
  card=Image.open(root/'study-assets/lab-models'/model['expectedImageFile']).convert('RGB');assert card.size==original.size
  box=ImageChops.difference(original,card).getbbox();assert box
  b=model['annotation']['bounds'];assert b[0]<=box[0]<box[2]<=b[2] and b[1]<=box[1]<box[3]<=b[3],model['name']
-print('14 complete, unscaled, pixel-preserving model photos verified')
-`],{cwd:new URL('..',import.meta.url),encoding:'utf8'});assert.match(result,/14 complete, unscaled/);
+print('13 complete, unscaled, pixel-preserving model photos verified')
+`],{cwd:new URL('..',import.meta.url),encoding:'utf8'});assert.match(result,/13 complete, unscaled/);
+});
+
+
+test('axon cards mark the entire segment with long blue lines and retain the nucleus question',()=>{
+ const axons=manifest.models.filter(m=>m.name==='Axon');assert.equal(axons.length,2);
+ for(const model of axons){assert.equal(model.annotation.kind,'axon-long-line');const ys=model.annotation.points.map(p=>p[1]);assert.ok(Math.max(...ys)-Math.min(...ys)>100);assert.match(model.questions[0].question,/entire segment.*long blue line/);}
+ assert.ok(manifest.models.some(m=>m.name==='Schwann cell nucleus'));
+ for(const model of manifest.models)for(const q of model.questions)assert.ok(!q.options.includes('Schwann cell'));
 });

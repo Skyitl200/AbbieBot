@@ -14,6 +14,8 @@ def main():
    tip=(x-ux*8,y-uy*8);base=(tip[0]-ux*12,tip[1]-uy*12);tri=[tip,(base[0]-uy*6,base[1]+ux*6),(base[0]+uy*6,base[1]-ux*6)]
    draw.line([tuple(tail),base],fill='black',width=7);draw.line([tuple(tail),base],fill='#00edff',width=3);draw.polygon(tri,fill='#00edff',outline='black',width=1)
    draw.ellipse((x-7,y-7,x+7,y+7),outline='black',width=3);draw.ellipse((x-5,y-5,x+5,y+5),outline='#00edff',width=2)
+  elif a['kind']=='axon-long-line':
+   points=[tuple(p) for p in a['points']];draw.line(points,fill='black',width=7,joint='curve');draw.line(points,fill='#3979ff',width=4,joint='curve')
   else:
    points=[tuple(p) for p in a['points']];draw.line(points,fill='black',width=7,joint='curve');draw.line(points,fill='#00edff',width=3,joint='curve')
   assert model['view']=={'crop':[0,0,646,1024],'scale':1}
