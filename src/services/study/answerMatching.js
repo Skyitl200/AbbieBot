@@ -37,3 +37,17 @@ export function matchesLabAnswer(answer, accepted, competing = []) {
     // A typo must be closer to the correct term than to any other structure in the set.
     return Number.isFinite(best) && best < Math.min(...competing.map(score));
 }
+
+// Match each required part independently so a correct name cannot hide a wrong action.
+export function matchesLabParts(answer, parts) {
+    if (typeof answer !== 'string' || answer.length > 300) return false;
+    const words = answer.replace(/(?:->|→|—|–|[,:;])/g, ' ').replace(/\s+/g, ' ').trim().split(' ');
+    if (parts.length !== 2) return false;
+    for (let split = 1; split < words.length; split++) {
+        const left = words.slice(0, split).join(' ');
+        const right = words.slice(split).join(' ').replace(/^(?:and|it|which)\s+/i, '');
+        if (matchesLabAnswer(left, parts[0].accepted, parts[0].competing) && matchesLabAnswer(right, parts[1].accepted, parts[1].competing)) return true;
+        if (matchesLabAnswer(left, parts[1].accepted, parts[1].competing) && matchesLabAnswer(right, parts[0].accepted, parts[0].competing)) return true;
+    }
+    return false;
+}

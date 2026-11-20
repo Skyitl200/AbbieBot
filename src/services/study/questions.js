@@ -1,5 +1,5 @@
 import { buildLectureChoiceContext, prepareLectureChoice } from './lectureChoices.js';
-import { matchesLabAnswer } from './answerMatching.js';
+import { matchesLabAnswer, matchesLabParts } from './answerMatching.js';
 import { readFile } from 'node:fs/promises';
 import { TOPIC_BY_ID, STUDY_TOPICS } from './topics.js';
 
@@ -77,6 +77,7 @@ export async function loadQuestionBanks(directory = defaultDirectory, { complete
 }
 
 export function gradeQuestion(question, answer) {
+    if (question.type === 'fill_blank' && question.labModelId && question.answerParts) return matchesLabParts(answer, question.answerParts);
     if (question.type === 'fill_blank' && question.labModelId) return matchesLabAnswer(answer, question.answers, question.competingAnswers);
     if (question.type === 'fill_blank') return question.answers.some(a => normalizeAnswer(a) === normalizeAnswer(answer));
     if (!Array.isArray(answer) || answer.some(i => !Number.isInteger(i)) || new Set(answer).size !== answer.length) return false;

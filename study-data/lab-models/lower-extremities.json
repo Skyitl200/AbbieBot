@@ -2,7 +2,7 @@
   "course": "Anatomy and Physiology Lab",
   "category": "Muscles",
   "modelGroup": "3D Muscles of the lower extremities (hip, thigh, knee, leg, ankle, and foot)",
-  "source": "User-provided separately named marked photographs. Images are preserved byte-for-byte with their original arrows or star and natural framing. Identity and action prompts are separate; Iliacus and Psoas major have identity-only prompts as requested. Missing source photographs are not invented.",
+  "source": "User-provided marked photographs preserved byte-for-byte. Each muscle has one combined identification and action question.",
   "requestedTerms": [
     "Sartorius",
     "Tensor fasciae latae",
@@ -39,56 +39,94 @@
       "sourceUpload": "sartorius.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-01-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-01-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Sartorius",
-            "Rectus femoris",
-            "Gracilis",
-            "Adductor longus"
+            "Sartorius \u2014 Flexes the thigh at the hip",
+            "Rectus femoris \u2014 Extends the knee",
+            "Gracilis \u2014 Extends the knee",
+            "Adductor longus \u2014 Extends the knee"
           ],
           "correct": [
             0
           ],
           "typedAnswers": [
-            "sartorius"
+            "Sartorius \u2014 flexes the thigh at the hip"
           ],
           "explanation": "Sartorius flexes the thigh at the hip. It also abducts and laterally rotates the thigh and flexes the knee.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-01-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Flexes the thigh at the hip",
-            "Extends the knee"
-          ],
-          "correct": [
-            2
-          ],
-          "typedAnswers": [
-            "flexes the thigh at the hip",
-            "flexes the thigh",
-            "flexes thigh",
-            "hip flexion",
-            "thigh flexion",
-            "flexion of the thigh",
-            "flexes the hip",
-            "flexes hip",
-            "flexion at the hip"
-          ],
-          "explanation": "Sartorius flexes the thigh at the hip. It also abducts and laterally rotates the thigh and flexes the knee.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "sartorius"
+              ],
+              "competing": [
+                "tensor fasciae latae",
+                "tensor fascia lata",
+                "tensor fascia latae",
+                "tfl",
+                "pectineus",
+                "adductor longus",
+                "gracilis",
+                "adductor magnus",
+                "vastus intermedius",
+                "biceps femoris",
+                "bicep femoris",
+                "semitendinosus",
+                "semimembranosus",
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "flexes the thigh at the hip",
+                "flexes the thigh",
+                "flexes thigh",
+                "hip flexion",
+                "thigh flexion",
+                "flexion of the thigh",
+                "flexes the hip",
+                "flexes hip",
+                "flexion at the hip"
+              ],
+              "competing": [
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -101,59 +139,94 @@
       "sourceUpload": "tensor-fasciae-latae.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-02-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-02-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Adductor longus",
-            "Tensor fasciae latae",
-            "Fibularis longus",
-            "Gluteus maximus"
+            "Adductor longus \u2014 Extends the knee",
+            "Tensor fasciae latae \u2014 Flexes the thigh at the hip",
+            "Fibularis longus \u2014 Extends the knee",
+            "Gluteus maximus \u2014 Extends the knee"
           ],
           "correct": [
             1
           ],
           "typedAnswers": [
-            "tensor fasciae latae",
-            "tensor fascia lata",
-            "tensor fascia latae",
-            "tfl"
+            "Tensor fasciae latae \u2014 flexes the thigh at the hip"
           ],
           "explanation": "The tensor fasciae latae assists thigh flexion and stabilizes the iliotibial tract.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-02-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Flexes the thigh at the hip",
-            "Extends the knee"
-          ],
-          "correct": [
-            2
-          ],
-          "typedAnswers": [
-            "flexes the thigh at the hip",
-            "flexes the thigh",
-            "flexes thigh",
-            "hip flexion",
-            "thigh flexion",
-            "flexion of the thigh",
-            "flexes the hip",
-            "flexes hip",
-            "flexion at the hip"
-          ],
-          "explanation": "The tensor fasciae latae assists thigh flexion and stabilizes the iliotibial tract.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "tensor fasciae latae",
+                "tensor fascia lata",
+                "tensor fascia latae",
+                "tfl"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "pectineus",
+                "adductor longus",
+                "gracilis",
+                "adductor magnus",
+                "vastus intermedius",
+                "biceps femoris",
+                "bicep femoris",
+                "semitendinosus",
+                "semimembranosus",
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "flexes the thigh at the hip",
+                "flexes the thigh",
+                "flexes thigh",
+                "hip flexion",
+                "thigh flexion",
+                "flexion of the thigh",
+                "flexes the hip",
+                "flexes hip",
+                "flexion at the hip"
+              ],
+              "competing": [
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -166,61 +239,94 @@
       "sourceUpload": "pectineus.jpg",
       "questions": [
         {
-          "id": "lab-lower-extremities-03-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-03-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Gracilis",
-            "Iliacus",
-            "Pectineus",
-            "Gluteus medius"
+            "Gracilis \u2014 Plantar flexes the foot at the ankle",
+            "Iliacus \u2014 Plantar flexes the foot at the ankle",
+            "Pectineus \u2014 Adducts the thigh at the hip",
+            "Gluteus medius \u2014 Plantar flexes the foot at the ankle"
           ],
           "correct": [
             2
           ],
           "typedAnswers": [
-            "pectineus"
-          ],
-          "explanation": "Pectineus adducts the thigh and also assists hip flexion.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-03-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Extends the knee",
-            "Adducts the thigh at the hip"
-          ],
-          "correct": [
-            3
-          ],
-          "typedAnswers": [
-            "adducts the thigh at the hip",
-            "adducts the thigh",
-            "adducts thigh",
-            "hip adduction",
-            "thigh adduction",
-            "adduction of the thigh",
-            "adducts the hip"
+            "Pectineus \u2014 adducts the thigh at the hip"
           ],
           "explanation": "Pectineus adducts the thigh and also assists hip flexion.",
           "requiresModelImage": true,
-          "incorrectAnswers": [
-            "hip abduction",
-            "thigh abduction",
-            "abduction of the thigh",
-            "abducts the thigh",
-            "abducts thigh",
-            "abduction"
+          "answerParts": [
+            {
+              "accepted": [
+                "pectineus"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "adductor longus",
+                "gracilis",
+                "adductor magnus",
+                "vastus intermedius",
+                "biceps femoris",
+                "bicep femoris",
+                "semitendinosus",
+                "semimembranosus",
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "adducts the thigh at the hip",
+                "adducts the thigh",
+                "adducts thigh",
+                "hip adduction",
+                "thigh adduction",
+                "adduction of the thigh",
+                "adducts the hip"
+              ],
+              "competing": [
+                "hip abduction",
+                "thigh abduction",
+                "abduction of the thigh",
+                "abducts the thigh",
+                "abducts thigh",
+                "abduction",
+                "flexes the thigh",
+                "extends the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
           ]
         }
       ]
@@ -234,61 +340,94 @@
       "sourceUpload": "adductor-longus.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-04-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-04-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Adductor magnus",
-            "Psoas major",
-            "Tibialis anterior",
-            "Adductor longus"
+            "Adductor magnus \u2014 Plantar flexes the foot at the ankle",
+            "Psoas major \u2014 Plantar flexes the foot at the ankle",
+            "Tibialis anterior \u2014 Plantar flexes the foot at the ankle",
+            "Adductor longus \u2014 Adducts the thigh at the hip"
           ],
           "correct": [
             3
           ],
           "typedAnswers": [
-            "adductor longus"
-          ],
-          "explanation": "Adductor longus is a medial-thigh muscle that adducts the thigh.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-04-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Adducts the thigh at the hip",
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Extends the knee"
-          ],
-          "correct": [
-            0
-          ],
-          "typedAnswers": [
-            "adducts the thigh at the hip",
-            "adducts the thigh",
-            "adducts thigh",
-            "hip adduction",
-            "thigh adduction",
-            "adduction of the thigh",
-            "adducts the hip"
+            "Adductor longus \u2014 adducts the thigh at the hip"
           ],
           "explanation": "Adductor longus is a medial-thigh muscle that adducts the thigh.",
           "requiresModelImage": true,
-          "incorrectAnswers": [
-            "hip abduction",
-            "thigh abduction",
-            "abduction of the thigh",
-            "abducts the thigh",
-            "abducts thigh",
-            "abduction"
+          "answerParts": [
+            {
+              "accepted": [
+                "adductor longus"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "gracilis",
+                "adductor magnus",
+                "vastus intermedius",
+                "biceps femoris",
+                "bicep femoris",
+                "semitendinosus",
+                "semimembranosus",
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "adducts the thigh at the hip",
+                "adducts the thigh",
+                "adducts thigh",
+                "hip adduction",
+                "thigh adduction",
+                "adduction of the thigh",
+                "adducts the hip"
+              ],
+              "competing": [
+                "hip abduction",
+                "thigh abduction",
+                "abduction of the thigh",
+                "abducts the thigh",
+                "abducts thigh",
+                "abduction",
+                "flexes the thigh",
+                "extends the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
           ]
         }
       ]
@@ -302,61 +441,94 @@
       "sourceUpload": "gracilis.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-05-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-05-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Gracilis",
-            "Vastus intermedius",
-            "Iliopsoas",
-            "Extensor digitorum longus"
+            "Gracilis \u2014 Adducts the thigh at the hip",
+            "Vastus intermedius \u2014 Dorsiflexes the foot at the ankle",
+            "Iliopsoas \u2014 Dorsiflexes the foot at the ankle",
+            "Extensor digitorum longus \u2014 Dorsiflexes the foot at the ankle"
           ],
           "correct": [
             0
           ],
           "typedAnswers": [
-            "gracilis"
-          ],
-          "explanation": "Gracilis is the long, superficial medial-thigh muscle; it adducts the thigh and also assists knee flexion.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-05-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Adducts the thigh at the hip",
-            "Dorsiflexes the foot at the ankle",
-            "Extends the knee"
-          ],
-          "correct": [
-            1
-          ],
-          "typedAnswers": [
-            "adducts the thigh at the hip",
-            "adducts the thigh",
-            "adducts thigh",
-            "hip adduction",
-            "thigh adduction",
-            "adduction of the thigh",
-            "adducts the hip"
+            "Gracilis \u2014 adducts the thigh at the hip"
           ],
           "explanation": "Gracilis is the long, superficial medial-thigh muscle; it adducts the thigh and also assists knee flexion.",
           "requiresModelImage": true,
-          "incorrectAnswers": [
-            "hip abduction",
-            "thigh abduction",
-            "abduction of the thigh",
-            "abducts the thigh",
-            "abducts thigh",
-            "abduction"
+          "answerParts": [
+            {
+              "accepted": [
+                "gracilis"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "adductor magnus",
+                "vastus intermedius",
+                "biceps femoris",
+                "bicep femoris",
+                "semitendinosus",
+                "semimembranosus",
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "adducts the thigh at the hip",
+                "adducts the thigh",
+                "adducts thigh",
+                "hip adduction",
+                "thigh adduction",
+                "adduction of the thigh",
+                "adducts the hip"
+              ],
+              "competing": [
+                "hip abduction",
+                "thigh abduction",
+                "abduction of the thigh",
+                "abducts the thigh",
+                "abducts thigh",
+                "abduction",
+                "flexes the thigh",
+                "extends the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
           ]
         }
       ]
@@ -370,61 +542,94 @@
       "sourceUpload": "adductor-magnus.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-06-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-06-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Biceps femoris",
-            "Adductor magnus",
-            "Rectus femoris",
-            "Gastrocnemius"
+            "Biceps femoris \u2014 Extends the knee",
+            "Adductor magnus \u2014 Adducts the thigh at the hip",
+            "Rectus femoris \u2014 Extends the knee",
+            "Gastrocnemius \u2014 Extends the knee"
           ],
           "correct": [
             1
           ],
           "typedAnswers": [
-            "adductor magnus"
-          ],
-          "explanation": "Adductor magnus adducts the thigh. Its hamstring portion also extends the thigh.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-06-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Adducts the thigh at the hip",
-            "Extends the knee"
-          ],
-          "correct": [
-            2
-          ],
-          "typedAnswers": [
-            "adducts the thigh at the hip",
-            "adducts the thigh",
-            "adducts thigh",
-            "hip adduction",
-            "thigh adduction",
-            "adduction of the thigh",
-            "adducts the hip"
+            "Adductor magnus \u2014 adducts the thigh at the hip"
           ],
           "explanation": "Adductor magnus adducts the thigh. Its hamstring portion also extends the thigh.",
           "requiresModelImage": true,
-          "incorrectAnswers": [
-            "hip abduction",
-            "thigh abduction",
-            "abduction of the thigh",
-            "abducts the thigh",
-            "abducts thigh",
-            "abduction"
+          "answerParts": [
+            {
+              "accepted": [
+                "adductor magnus"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "vastus intermedius",
+                "biceps femoris",
+                "bicep femoris",
+                "semitendinosus",
+                "semimembranosus",
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "adducts the thigh at the hip",
+                "adducts the thigh",
+                "adducts thigh",
+                "hip adduction",
+                "thigh adduction",
+                "adduction of the thigh",
+                "adducts the hip"
+              ],
+              "competing": [
+                "hip abduction",
+                "thigh abduction",
+                "abduction of the thigh",
+                "abducts the thigh",
+                "abducts thigh",
+                "abduction",
+                "flexes the thigh",
+                "extends the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
           ]
         }
       ]
@@ -438,59 +643,92 @@
       "sourceUpload": "vastus-intermedius.jpg",
       "questions": [
         {
-          "id": "lab-lower-extremities-07-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-07-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Semitendinosus",
-            "Vastus lateralis",
-            "Vastus intermedius",
-            "Soleus"
+            "Semitendinosus \u2014 Plantar flexes the foot at the ankle",
+            "Vastus lateralis \u2014 Plantar flexes the foot at the ankle",
+            "Vastus intermedius \u2014 Extends the knee",
+            "Soleus \u2014 Plantar flexes the foot at the ankle"
           ],
           "correct": [
             2
           ],
           "typedAnswers": [
-            "vastus intermedius"
-          ],
-          "explanation": "Vastus intermedius lies deep to rectus femoris and extends the knee.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-07-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Adducts the thigh at the hip",
-            "Extends the knee"
-          ],
-          "correct": [
-            3
-          ],
-          "typedAnswers": [
-            "extends the knee",
-            "extends knee",
-            "knee extension",
-            "extension of the knee",
-            "extends the leg at the knee",
-            "extends the leg"
+            "Vastus intermedius \u2014 extends the knee"
           ],
           "explanation": "Vastus intermedius lies deep to rectus femoris and extends the knee.",
           "requiresModelImage": true,
-          "incorrectAnswers": [
-            "knee flexion",
-            "flexion of the knee",
-            "flexes the knee",
-            "flexes knee",
-            "flexes the leg"
+          "answerParts": [
+            {
+              "accepted": [
+                "vastus intermedius"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "biceps femoris",
+                "bicep femoris",
+                "semitendinosus",
+                "semimembranosus",
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "extends the knee",
+                "extends knee",
+                "knee extension",
+                "extension of the knee",
+                "extends the leg at the knee",
+                "extends the leg"
+              ],
+              "competing": [
+                "knee flexion",
+                "flexion of the knee",
+                "flexes the knee",
+                "flexes knee",
+                "flexes the leg",
+                "flexes the thigh",
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
           ]
         }
       ]
@@ -504,56 +742,90 @@
       "sourceUpload": "biceps-femoris.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-08-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-08-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Semimembranosus",
-            "Vastus medialis",
-            "Sartorius",
-            "Biceps femoris"
+            "Semimembranosus \u2014 Plantar flexes the foot at the ankle",
+            "Vastus medialis \u2014 Plantar flexes the foot at the ankle",
+            "Sartorius \u2014 Plantar flexes the foot at the ankle",
+            "Biceps femoris \u2014 Extends the thigh at the hip"
           ],
           "correct": [
             3
           ],
           "typedAnswers": [
-            "biceps femoris",
-            "bicep femoris"
+            "Biceps femoris \u2014 extends the thigh at the hip"
           ],
           "explanation": "Biceps femoris is the lateral hamstring. Its long head extends the thigh; its short head does not cross the hip. Both heads flex the knee.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-08-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Extends the thigh at the hip",
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Medially rotates the thigh at the hip"
-          ],
-          "correct": [
-            0
-          ],
-          "typedAnswers": [
-            "extends the thigh at the hip",
-            "extends the thigh",
-            "extends thigh",
-            "hip extension",
-            "thigh extension",
-            "extension of the thigh",
-            "extends the hip",
-            "extends hip"
-          ],
-          "explanation": "Biceps femoris is the lateral hamstring. Its long head extends the thigh; its short head does not cross the hip. Both heads flex the knee.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "biceps femoris",
+                "bicep femoris"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "semitendinosus",
+                "semimembranosus",
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "extends the thigh at the hip",
+                "extends the thigh",
+                "extends thigh",
+                "hip extension",
+                "thigh extension",
+                "extension of the thigh",
+                "extends the hip",
+                "extends hip"
+              ],
+              "competing": [
+                "flexes the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -566,55 +838,89 @@
       "sourceUpload": "semitendinosus.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-09-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-09-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Semitendinosus",
-            "Fibularis longus",
-            "Gluteus maximus",
-            "Tensor fasciae latae"
+            "Semitendinosus \u2014 Extends the thigh at the hip",
+            "Fibularis longus \u2014 Dorsiflexes the foot at the ankle",
+            "Gluteus maximus \u2014 Dorsiflexes the foot at the ankle",
+            "Tensor fasciae latae \u2014 Dorsiflexes the foot at the ankle"
           ],
           "correct": [
             0
           ],
           "typedAnswers": [
-            "semitendinosus"
+            "Semitendinosus \u2014 extends the thigh at the hip"
           ],
           "explanation": "Semitendinosus is a medial hamstring that extends the thigh and flexes the knee.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-09-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Extends the thigh at the hip",
-            "Dorsiflexes the foot at the ankle",
-            "Medially rotates the thigh at the hip"
-          ],
-          "correct": [
-            1
-          ],
-          "typedAnswers": [
-            "extends the thigh at the hip",
-            "extends the thigh",
-            "extends thigh",
-            "hip extension",
-            "thigh extension",
-            "extension of the thigh",
-            "extends the hip",
-            "extends hip"
-          ],
-          "explanation": "Semitendinosus is a medial hamstring that extends the thigh and flexes the knee.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "semitendinosus"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "semimembranosus",
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "extends the thigh at the hip",
+                "extends the thigh",
+                "extends thigh",
+                "hip extension",
+                "thigh extension",
+                "extension of the thigh",
+                "extends the hip",
+                "extends hip"
+              ],
+              "competing": [
+                "flexes the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -627,55 +933,89 @@
       "sourceUpload": "semimembranosus.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-10-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-10-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Iliacus",
-            "Semimembranosus",
-            "Gluteus medius",
-            "Pectineus"
+            "Iliacus \u2014 Medially rotates the thigh at the hip",
+            "Semimembranosus \u2014 Extends the thigh at the hip",
+            "Gluteus medius \u2014 Medially rotates the thigh at the hip",
+            "Pectineus \u2014 Medially rotates the thigh at the hip"
           ],
           "correct": [
             1
           ],
           "typedAnswers": [
-            "semimembranosus"
+            "Semimembranosus \u2014 extends the thigh at the hip"
           ],
           "explanation": "Semimembranosus is a broad medial hamstring that extends the thigh and flexes the knee.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-10-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Extends the thigh at the hip",
-            "Medially rotates the thigh at the hip"
-          ],
-          "correct": [
-            2
-          ],
-          "typedAnswers": [
-            "extends the thigh at the hip",
-            "extends the thigh",
-            "extends thigh",
-            "hip extension",
-            "thigh extension",
-            "extension of the thigh",
-            "extends the hip",
-            "extends hip"
-          ],
-          "explanation": "Semimembranosus is a broad medial hamstring that extends the thigh and flexes the knee.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "semimembranosus"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "extends the thigh at the hip",
+                "extends the thigh",
+                "extends thigh",
+                "hip extension",
+                "thigh extension",
+                "extension of the thigh",
+                "extends the hip",
+                "extends hip"
+              ],
+              "competing": [
+                "flexes the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -688,57 +1028,89 @@
       "sourceUpload": "fibularis-longus.jpg",
       "questions": [
         {
-          "id": "lab-lower-extremities-11-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-11-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Psoas major",
-            "Tibialis anterior",
-            "Fibularis longus",
-            "Adductor longus"
+            "Psoas major \u2014 Dorsiflexes the foot at the ankle",
+            "Tibialis anterior \u2014 Dorsiflexes the foot at the ankle",
+            "Fibularis longus \u2014 Plantar flexes the foot at the ankle",
+            "Adductor longus \u2014 Dorsiflexes the foot at the ankle"
           ],
           "correct": [
             2
           ],
           "typedAnswers": [
-            "fibularis longus",
-            "peroneus longus",
-            "peroneal longus"
+            "Fibularis longus \u2014 plantar flexes the foot at the ankle"
           ],
           "explanation": "Fibularis (peroneus) longus plantar flexes and everts the foot.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-11-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Dorsiflexes the foot at the ankle",
-            "Flexes the thigh at the hip",
-            "Extends the knee",
-            "Plantar flexes the foot at the ankle"
-          ],
-          "correct": [
-            3
-          ],
-          "typedAnswers": [
-            "plantar flexes the foot at the ankle",
-            "plantar flexion",
-            "plantarflexion",
-            "plantar flexes the foot",
-            "plantarflexes the foot",
-            "plantar flexes foot",
-            "ankle plantar flexion",
-            "plantar flexion of the ankle"
-          ],
-          "explanation": "Fibularis (peroneus) longus plantar flexes and everts the foot.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "fibularis longus",
+                "peroneus longus",
+                "peroneal longus"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "iliacus",
+                "illiacus",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "plantar flexes the foot at the ankle",
+                "plantar flexion",
+                "plantarflexion",
+                "plantar flexes the foot",
+                "plantarflexes the foot",
+                "plantar flexes foot",
+                "ankle plantar flexion",
+                "plantar flexion of the ankle"
+              ],
+              "competing": [
+                "flexes the thigh",
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -751,27 +1123,88 @@
       "sourceUpload": "iliacus.jpg",
       "questions": [
         {
-          "id": "lab-lower-extremities-12-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-12-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Iliopsoas",
-            "Extensor digitorum longus",
-            "Gracilis",
-            "Iliacus"
+            "Iliopsoas \u2014 Extends the knee",
+            "Extensor digitorum longus \u2014 Extends the knee",
+            "Gracilis \u2014 Extends the knee",
+            "Iliacus \u2014 Flexes the thigh at the hip"
           ],
           "correct": [
             3
           ],
           "typedAnswers": [
-            "iliacus",
-            "illiacus"
+            "Iliacus \u2014 flexes the thigh at the hip"
           ],
-          "explanation": "Iliacus occupies the iliac fossa and joins psoas major to form iliopsoas.",
-          "requiresModelImage": true
+          "explanation": "Iliacus flexes the thigh at the hip; iliacus and psoas major together form the iliopsoas.",
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "iliacus",
+                "illiacus"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "psoas major",
+                "psoas",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "flexes the thigh at the hip",
+                "flexes the thigh",
+                "flexes thigh",
+                "hip flexion",
+                "thigh flexion",
+                "flexion of the thigh",
+                "flexes the hip",
+                "flexes hip",
+                "flexion at the hip"
+              ],
+              "competing": [
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -784,27 +1217,87 @@
       "sourceUpload": "psoas-major.jpg",
       "questions": [
         {
-          "id": "lab-lower-extremities-13-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-13-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Psoas major",
-            "Rectus femoris",
-            "Gastrocnemius",
-            "Adductor magnus"
+            "Psoas major \u2014 Flexes the thigh at the hip",
+            "Rectus femoris \u2014 Extends the knee",
+            "Gastrocnemius \u2014 Extends the knee",
+            "Adductor magnus \u2014 Extends the knee"
           ],
           "correct": [
             0
           ],
           "typedAnswers": [
-            "psoas major",
-            "psoas"
+            "Psoas major \u2014 flexes the thigh at the hip"
           ],
-          "explanation": "Psoas major joins iliacus to form iliopsoas, a major hip-flexor group.",
-          "requiresModelImage": true
+          "explanation": "Psoas major flexes the thigh at the hip; iliacus and psoas major together form the iliopsoas.",
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "psoas major",
+                "psoas"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "iliopsoas",
+                "iliopsoas muscle",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "flexes the thigh at the hip",
+                "flexes the thigh",
+                "flexes thigh",
+                "hip flexion",
+                "thigh flexion",
+                "flexion of the thigh",
+                "flexes the hip",
+                "flexes hip",
+                "flexion at the hip"
+              ],
+              "competing": [
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -817,57 +1310,86 @@
       "sourceUpload": "iliopsoas.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-14-identify",
-          "question": "What are the marked muscles called collectively?",
-          "typedQuestion": "What are the marked muscles called collectively?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-14-identify-action",
+          "question": "What are the marked muscles called collectively, and what do they do?",
+          "typedQuestion": "What are the marked muscles called collectively, and what do they do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Iliacus",
-            "Psoas major",
-            "Iliopsoas",
-            "Rectus femoris"
+            "Iliacus \u2014 Extends the knee",
+            "Psoas major \u2014 Extends the knee",
+            "Iliopsoas \u2014 Flexes the thigh at the hip",
+            "Rectus femoris \u2014 Extends the knee"
           ],
           "correct": [
             2
           ],
           "typedAnswers": [
-            "iliopsoas",
-            "iliopsoas muscle"
+            "Iliopsoas \u2014 flexes the thigh at the hip"
           ],
           "explanation": "Iliacus and psoas major are collectively called iliopsoas; together they flex the thigh at the hip.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-14-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Flexes the thigh at the hip",
-            "Extends the knee"
-          ],
-          "correct": [
-            2
-          ],
-          "typedAnswers": [
-            "flexes the thigh at the hip",
-            "flexes the thigh",
-            "flexes thigh",
-            "hip flexion",
-            "thigh flexion",
-            "flexion of the thigh",
-            "flexes the hip",
-            "flexes hip",
-            "flexion at the hip"
-          ],
-          "explanation": "Iliacus and psoas major are collectively called iliopsoas; together they flex the thigh at the hip.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "iliopsoas",
+                "iliopsoas muscle"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "Psoas major \u2014 flexes the thigh at the hip",
+                "rectus femoris",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "flexes the thigh at the hip",
+                "flexes the thigh",
+                "flexes thigh",
+                "hip flexion",
+                "thigh flexion",
+                "flexion of the thigh",
+                "flexes the hip",
+                "flexes hip",
+                "flexion at the hip"
+              ],
+              "competing": [
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -880,59 +1402,86 @@
       "sourceUpload": "rectus-femoris.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-15-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-15-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Vastus medialis",
-            "Sartorius",
-            "Rectus femoris",
-            "Biceps femoris"
+            "Vastus medialis \u2014 Plantar flexes the foot at the ankle",
+            "Sartorius \u2014 Plantar flexes the foot at the ankle",
+            "Rectus femoris \u2014 Extends the knee",
+            "Biceps femoris \u2014 Plantar flexes the foot at the ankle"
           ],
           "correct": [
             2
           ],
           "typedAnswers": [
-            "rectus femoris"
-          ],
-          "explanation": "Rectus femoris extends the knee and also flexes the hip; it is part of quadriceps femoris.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-15-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Adducts the thigh at the hip",
-            "Extends the knee"
-          ],
-          "correct": [
-            3
-          ],
-          "typedAnswers": [
-            "extends the knee",
-            "extends knee",
-            "knee extension",
-            "extension of the knee",
-            "extends the leg at the knee",
-            "extends the leg"
+            "Rectus femoris \u2014 extends the knee"
           ],
           "explanation": "Rectus femoris extends the knee and also flexes the hip; it is part of quadriceps femoris.",
           "requiresModelImage": true,
-          "incorrectAnswers": [
-            "knee flexion",
-            "flexion of the knee",
-            "flexes the knee",
-            "flexes knee",
-            "flexes the leg"
+          "answerParts": [
+            {
+              "accepted": [
+                "rectus femoris"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "Psoas major \u2014 flexes the thigh at the hip",
+                "Iliopsoas \u2014 flexes the thigh at the hip",
+                "vastus lateralis",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "extends the knee",
+                "extends knee",
+                "knee extension",
+                "extension of the knee",
+                "extends the leg at the knee",
+                "extends the leg"
+              ],
+              "competing": [
+                "knee flexion",
+                "flexion of the knee",
+                "flexes the knee",
+                "flexes knee",
+                "flexes the leg",
+                "flexes the thigh",
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
           ]
         }
       ]
@@ -946,59 +1495,86 @@
       "sourceUpload": "vastus-lateralis.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-16-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-16-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Vastus lateralis",
-            "Rectus femoris",
-            "Gracilis",
-            "Adductor longus"
+            "Vastus lateralis \u2014 Extends the knee",
+            "Rectus femoris \u2014 Dorsiflexes the foot at the ankle",
+            "Gracilis \u2014 Dorsiflexes the foot at the ankle",
+            "Adductor longus \u2014 Dorsiflexes the foot at the ankle"
           ],
           "correct": [
             0
           ],
           "typedAnswers": [
-            "vastus lateralis"
-          ],
-          "explanation": "Vastus lateralis is the lateral quadriceps muscle and extends the knee.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-16-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Extends the knee",
-            "Dorsiflexes the foot at the ankle",
-            "Adducts the thigh at the hip"
-          ],
-          "correct": [
-            1
-          ],
-          "typedAnswers": [
-            "extends the knee",
-            "extends knee",
-            "knee extension",
-            "extension of the knee",
-            "extends the leg at the knee",
-            "extends the leg"
+            "Vastus lateralis \u2014 extends the knee"
           ],
           "explanation": "Vastus lateralis is the lateral quadriceps muscle and extends the knee.",
           "requiresModelImage": true,
-          "incorrectAnswers": [
-            "knee flexion",
-            "flexion of the knee",
-            "flexes the knee",
-            "flexes knee",
-            "flexes the leg"
+          "answerParts": [
+            {
+              "accepted": [
+                "vastus lateralis"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "Psoas major \u2014 flexes the thigh at the hip",
+                "Iliopsoas \u2014 flexes the thigh at the hip",
+                "Rectus femoris \u2014 extends the knee",
+                "vastus medialis",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "extends the knee",
+                "extends knee",
+                "knee extension",
+                "extension of the knee",
+                "extends the leg at the knee",
+                "extends the leg"
+              ],
+              "competing": [
+                "knee flexion",
+                "flexion of the knee",
+                "flexes the knee",
+                "flexes knee",
+                "flexes the leg",
+                "flexes the thigh",
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
           ]
         }
       ]
@@ -1012,59 +1588,86 @@
       "sourceUpload": "vastus-medialis.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-17-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-17-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Vastus medialis",
-            "Gluteus medius",
-            "Pectineus",
-            "Semimembranosus"
+            "Vastus medialis \u2014 Extends the knee",
+            "Gluteus medius \u2014 Dorsiflexes the foot at the ankle",
+            "Pectineus \u2014 Dorsiflexes the foot at the ankle",
+            "Semimembranosus \u2014 Dorsiflexes the foot at the ankle"
           ],
           "correct": [
             0
           ],
           "typedAnswers": [
-            "vastus medialis"
-          ],
-          "explanation": "Vastus medialis is the medial quadriceps muscle, with a prominent distal teardrop-shaped portion; it extends the knee.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-17-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Extends the knee",
-            "Dorsiflexes the foot at the ankle",
-            "Adducts the thigh at the hip"
-          ],
-          "correct": [
-            1
-          ],
-          "typedAnswers": [
-            "extends the knee",
-            "extends knee",
-            "knee extension",
-            "extension of the knee",
-            "extends the leg at the knee",
-            "extends the leg"
+            "Vastus medialis \u2014 extends the knee"
           ],
           "explanation": "Vastus medialis is the medial quadriceps muscle, with a prominent distal teardrop-shaped portion; it extends the knee.",
           "requiresModelImage": true,
-          "incorrectAnswers": [
-            "knee flexion",
-            "flexion of the knee",
-            "flexes the knee",
-            "flexes knee",
-            "flexes the leg"
+          "answerParts": [
+            {
+              "accepted": [
+                "vastus medialis"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "Psoas major \u2014 flexes the thigh at the hip",
+                "Iliopsoas \u2014 flexes the thigh at the hip",
+                "Rectus femoris \u2014 extends the knee",
+                "Vastus lateralis \u2014 extends the knee",
+                "gluteus maximus",
+                "glute maximus",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "extends the knee",
+                "extends knee",
+                "knee extension",
+                "extension of the knee",
+                "extends the leg at the knee",
+                "extends the leg"
+              ],
+              "competing": [
+                "knee flexion",
+                "flexion of the knee",
+                "flexes the knee",
+                "flexes knee",
+                "flexes the leg",
+                "flexes the thigh",
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
           ]
         }
       ]
@@ -1078,56 +1681,84 @@
       "sourceUpload": "gluteus-maximus.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-18-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-18-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Tibialis anterior",
-            "Gluteus maximus",
-            "Adductor longus",
-            "Fibularis longus"
+            "Tibialis anterior \u2014 Medially rotates the thigh at the hip",
+            "Gluteus maximus \u2014 Extends the thigh at the hip",
+            "Adductor longus \u2014 Medially rotates the thigh at the hip",
+            "Fibularis longus \u2014 Medially rotates the thigh at the hip"
           ],
           "correct": [
             1
           ],
           "typedAnswers": [
-            "gluteus maximus",
-            "glute maximus"
+            "Gluteus maximus \u2014 extends the thigh at the hip"
           ],
           "explanation": "Gluteus maximus powerfully extends the thigh and also laterally rotates it.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-18-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Extends the thigh at the hip",
-            "Medially rotates the thigh at the hip"
-          ],
-          "correct": [
-            2
-          ],
-          "typedAnswers": [
-            "extends the thigh at the hip",
-            "extends the thigh",
-            "extends thigh",
-            "hip extension",
-            "thigh extension",
-            "extension of the thigh",
-            "extends the hip",
-            "extends hip"
-          ],
-          "explanation": "Gluteus maximus powerfully extends the thigh and also laterally rotates it.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "gluteus maximus",
+                "glute maximus"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "Psoas major \u2014 flexes the thigh at the hip",
+                "Iliopsoas \u2014 flexes the thigh at the hip",
+                "Rectus femoris \u2014 extends the knee",
+                "Vastus lateralis \u2014 extends the knee",
+                "Vastus medialis \u2014 extends the knee",
+                "gluteus medius",
+                "glute medius",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "extends the thigh at the hip",
+                "extends the thigh",
+                "extends thigh",
+                "hip extension",
+                "thigh extension",
+                "extension of the thigh",
+                "extends the hip",
+                "extends hip"
+              ],
+              "competing": [
+                "flexes the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1140,65 +1771,90 @@
       "sourceUpload": "gluteus-medius.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-19-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-19-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Extensor digitorum longus",
-            "Gracilis",
-            "Gluteus medius",
-            "Iliacus"
+            "Extensor digitorum longus \u2014 Plantar flexes the foot at the ankle",
+            "Gracilis \u2014 Plantar flexes the foot at the ankle",
+            "Gluteus medius \u2014 Medially rotates the thigh at the hip",
+            "Iliacus \u2014 Plantar flexes the foot at the ankle"
           ],
           "correct": [
             2
           ],
           "typedAnswers": [
-            "gluteus medius",
-            "glute medius"
-          ],
-          "explanation": "Gluteus medius abducts the thigh and stabilizes the pelvis; its anterior fibers assist medial rotation of the thigh.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-19-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Extends the knee",
-            "Medially rotates the thigh at the hip"
-          ],
-          "correct": [
-            3
-          ],
-          "typedAnswers": [
-            "medially rotates the thigh at the hip",
-            "medially rotates the thigh",
-            "medially rotates thigh",
-            "medial rotation of the thigh",
-            "internal rotation of the hip",
-            "internally rotates the thigh",
-            "hip internal rotation",
-            "medial rotation",
-            "internal rotation"
+            "Gluteus medius \u2014 medially rotates the thigh at the hip"
           ],
           "explanation": "Gluteus medius abducts the thigh and stabilizes the pelvis; its anterior fibers assist medial rotation of the thigh.",
           "requiresModelImage": true,
-          "incorrectAnswers": [
-            "hip external rotation",
-            "external rotation of the hip",
-            "external rotation",
-            "lateral rotation",
-            "lateral rotation of the thigh",
-            "laterally rotates the thigh",
-            "externally rotates the thigh"
+          "answerParts": [
+            {
+              "accepted": [
+                "gluteus medius",
+                "glute medius"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "Psoas major \u2014 flexes the thigh at the hip",
+                "Iliopsoas \u2014 flexes the thigh at the hip",
+                "Rectus femoris \u2014 extends the knee",
+                "Vastus lateralis \u2014 extends the knee",
+                "Vastus medialis \u2014 extends the knee",
+                "Gluteus maximus \u2014 extends the thigh at the hip",
+                "tibialis anterior",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "medially rotates the thigh at the hip",
+                "medially rotates the thigh",
+                "medially rotates thigh",
+                "medial rotation of the thigh",
+                "internal rotation of the hip",
+                "internally rotates the thigh",
+                "hip internal rotation",
+                "medial rotation",
+                "internal rotation"
+              ],
+              "competing": [
+                "hip external rotation",
+                "external rotation of the hip",
+                "external rotation",
+                "lateral rotation",
+                "lateral rotation of the thigh",
+                "laterally rotates the thigh",
+                "externally rotates the thigh",
+                "flexes the thigh",
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "dorsiflexion",
+                "laterally rotates the thigh"
+              ]
+            }
           ]
         }
       ]
@@ -1212,53 +1868,80 @@
       "sourceUpload": "tibialis-anterior.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-20-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-20-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Gastrocnemius",
-            "Adductor magnus",
-            "Psoas major",
-            "Tibialis anterior"
+            "Gastrocnemius \u2014 Plantar flexes the foot at the ankle",
+            "Adductor magnus \u2014 Plantar flexes the foot at the ankle",
+            "Psoas major \u2014 Plantar flexes the foot at the ankle",
+            "Tibialis anterior \u2014 Dorsiflexes the foot at the ankle"
           ],
           "correct": [
             3
           ],
           "typedAnswers": [
-            "tibialis anterior"
+            "Tibialis anterior \u2014 dorsiflexes the foot at the ankle"
           ],
           "explanation": "Tibialis anterior dorsiflexes and inverts the foot.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-20-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Dorsiflexes the foot at the ankle",
-            "Plantar flexes the foot at the ankle",
-            "Flexes the thigh at the hip",
-            "Extends the knee"
-          ],
-          "correct": [
-            0
-          ],
-          "typedAnswers": [
-            "dorsiflexes the foot at the ankle",
-            "dorsiflexion",
-            "dorsiflexes the foot",
-            "dorsiflexes foot",
-            "ankle dorsiflexion",
-            "dorsiflexion of the ankle"
-          ],
-          "explanation": "Tibialis anterior dorsiflexes and inverts the foot.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "tibialis anterior"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "Psoas major \u2014 flexes the thigh at the hip",
+                "Iliopsoas \u2014 flexes the thigh at the hip",
+                "Rectus femoris \u2014 extends the knee",
+                "Vastus lateralis \u2014 extends the knee",
+                "Vastus medialis \u2014 extends the knee",
+                "Gluteus maximus \u2014 extends the thigh at the hip",
+                "Gluteus medius \u2014 medially rotates the thigh at the hip",
+                "extensor digitorum longus",
+                "edl",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "dorsiflexes the foot at the ankle",
+                "dorsiflexion",
+                "dorsiflexes the foot",
+                "dorsiflexes foot",
+                "ankle dorsiflexion",
+                "dorsiflexion of the ankle"
+              ],
+              "competing": [
+                "flexes the thigh",
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1271,54 +1954,80 @@
       "sourceUpload": "extensor-digitorum-longus.jpg",
       "questions": [
         {
-          "id": "lab-lower-extremities-21-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-21-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Extensor digitorum longus",
-            "Soleus",
-            "Vastus intermedius",
-            "Iliopsoas"
+            "Extensor digitorum longus \u2014 Dorsiflexes the foot at the ankle",
+            "Soleus \u2014 Flexes the thigh at the hip",
+            "Vastus intermedius \u2014 Flexes the thigh at the hip",
+            "Iliopsoas \u2014 Flexes the thigh at the hip"
           ],
           "correct": [
             0
           ],
           "typedAnswers": [
-            "extensor digitorum longus",
-            "edl"
+            "Extensor digitorum longus \u2014 dorsiflexes the foot at the ankle"
           ],
           "explanation": "Extensor digitorum longus dorsiflexes the foot and extends toes 2\u20135.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-21-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Plantar flexes the foot at the ankle",
-            "Dorsiflexes the foot at the ankle",
-            "Flexes the thigh at the hip",
-            "Extends the knee"
-          ],
-          "correct": [
-            1
-          ],
-          "typedAnswers": [
-            "dorsiflexes the foot at the ankle",
-            "dorsiflexion",
-            "dorsiflexes the foot",
-            "dorsiflexes foot",
-            "ankle dorsiflexion",
-            "dorsiflexion of the ankle"
-          ],
-          "explanation": "Extensor digitorum longus dorsiflexes the foot and extends toes 2\u20135.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "extensor digitorum longus",
+                "edl"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "Psoas major \u2014 flexes the thigh at the hip",
+                "Iliopsoas \u2014 flexes the thigh at the hip",
+                "Rectus femoris \u2014 extends the knee",
+                "Vastus lateralis \u2014 extends the knee",
+                "Vastus medialis \u2014 extends the knee",
+                "Gluteus maximus \u2014 extends the thigh at the hip",
+                "Gluteus medius \u2014 medially rotates the thigh at the hip",
+                "Tibialis anterior \u2014 dorsiflexes the foot at the ankle",
+                "gastrocnemius",
+                "gastrocnemius muscle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "dorsiflexes the foot at the ankle",
+                "dorsiflexion",
+                "dorsiflexes the foot",
+                "dorsiflexes foot",
+                "ankle dorsiflexion",
+                "dorsiflexion of the ankle"
+              ],
+              "competing": [
+                "flexes the thigh",
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "plantar flexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1331,56 +2040,81 @@
       "sourceUpload": "gastrocnemius.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-22-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-22-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Sartorius",
-            "Gastrocnemius",
-            "Biceps femoris",
-            "Rectus femoris"
+            "Sartorius \u2014 Extends the knee",
+            "Gastrocnemius \u2014 Plantar flexes the foot at the ankle",
+            "Biceps femoris \u2014 Extends the knee",
+            "Rectus femoris \u2014 Extends the knee"
           ],
           "correct": [
             1
           ],
           "typedAnswers": [
-            "gastrocnemius",
-            "gastrocnemius muscle"
+            "Gastrocnemius \u2014 plantar flexes the foot at the ankle"
           ],
           "explanation": "Gastrocnemius plantar flexes the foot and also assists knee flexion.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-22-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Dorsiflexes the foot at the ankle",
-            "Flexes the thigh at the hip",
-            "Plantar flexes the foot at the ankle",
-            "Extends the knee"
-          ],
-          "correct": [
-            2
-          ],
-          "typedAnswers": [
-            "plantar flexes the foot at the ankle",
-            "plantar flexion",
-            "plantarflexion",
-            "plantar flexes the foot",
-            "plantarflexes the foot",
-            "plantar flexes foot",
-            "ankle plantar flexion",
-            "plantar flexion of the ankle"
-          ],
-          "explanation": "Gastrocnemius plantar flexes the foot and also assists knee flexion.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "gastrocnemius",
+                "gastrocnemius muscle"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "Psoas major \u2014 flexes the thigh at the hip",
+                "Iliopsoas \u2014 flexes the thigh at the hip",
+                "Rectus femoris \u2014 extends the knee",
+                "Vastus lateralis \u2014 extends the knee",
+                "Vastus medialis \u2014 extends the knee",
+                "Gluteus maximus \u2014 extends the thigh at the hip",
+                "Gluteus medius \u2014 medially rotates the thigh at the hip",
+                "Tibialis anterior \u2014 dorsiflexes the foot at the ankle",
+                "Extensor digitorum longus \u2014 dorsiflexes the foot at the ankle",
+                "soleus"
+              ]
+            },
+            {
+              "accepted": [
+                "plantar flexes the foot at the ankle",
+                "plantar flexion",
+                "plantarflexion",
+                "plantar flexes the foot",
+                "plantarflexes the foot",
+                "plantar flexes foot",
+                "ankle plantar flexion",
+                "plantar flexion of the ankle"
+              ],
+              "competing": [
+                "flexes the thigh",
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1393,55 +2127,80 @@
       "sourceUpload": "soleus.png",
       "questions": [
         {
-          "id": "lab-lower-extremities-23-identify",
-          "question": "What muscle is indicated by the marker in this image?",
-          "typedQuestion": "What muscle is indicated by the marker in this image?",
-          "targetType": "identification",
+          "id": "lab-lower-extremities-23-identify-action",
+          "question": "What muscle is marked, and what does it do?",
+          "typedQuestion": "What muscle is marked, and what does it do? Give the name and action (for example: muscle name \u2014 action).",
+          "targetType": "identity_action",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
-            "Tensor fasciae latae",
-            "Semitendinosus",
-            "Soleus",
-            "Vastus lateralis"
+            "Tensor fasciae latae \u2014 Dorsiflexes the foot at the ankle",
+            "Semitendinosus \u2014 Dorsiflexes the foot at the ankle",
+            "Soleus \u2014 Plantar flexes the foot at the ankle",
+            "Vastus lateralis \u2014 Dorsiflexes the foot at the ankle"
           ],
           "correct": [
             2
           ],
           "typedAnswers": [
-            "soleus"
+            "Soleus \u2014 plantar flexes the foot at the ankle"
           ],
           "explanation": "Soleus plantar flexes the foot and contributes to postural control; it does not cross the knee.",
-          "requiresModelImage": true
-        },
-        {
-          "id": "lab-lower-extremities-23-action",
-          "question": "Which listed action can the marked muscle perform?",
-          "typedQuestion": "What action of the marked muscle is emphasized in this set?",
-          "targetType": "action",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "options": [
-            "Dorsiflexes the foot at the ankle",
-            "Flexes the thigh at the hip",
-            "Extends the knee",
-            "Plantar flexes the foot at the ankle"
-          ],
-          "correct": [
-            3
-          ],
-          "typedAnswers": [
-            "plantar flexes the foot at the ankle",
-            "plantar flexion",
-            "plantarflexion",
-            "plantar flexes the foot",
-            "plantarflexes the foot",
-            "plantar flexes foot",
-            "ankle plantar flexion",
-            "plantar flexion of the ankle"
-          ],
-          "explanation": "Soleus plantar flexes the foot and contributes to postural control; it does not cross the knee.",
-          "requiresModelImage": true
+          "requiresModelImage": true,
+          "answerParts": [
+            {
+              "accepted": [
+                "soleus"
+              ],
+              "competing": [
+                "Sartorius \u2014 flexes the thigh at the hip",
+                "Tensor fasciae latae \u2014 flexes the thigh at the hip",
+                "Pectineus \u2014 adducts the thigh at the hip",
+                "Adductor longus \u2014 adducts the thigh at the hip",
+                "Gracilis \u2014 adducts the thigh at the hip",
+                "Adductor magnus \u2014 adducts the thigh at the hip",
+                "Vastus intermedius \u2014 extends the knee",
+                "Biceps femoris \u2014 extends the thigh at the hip",
+                "Semitendinosus \u2014 extends the thigh at the hip",
+                "Semimembranosus \u2014 extends the thigh at the hip",
+                "Fibularis longus \u2014 plantar flexes the foot at the ankle",
+                "Iliacus \u2014 flexes the thigh at the hip",
+                "Psoas major \u2014 flexes the thigh at the hip",
+                "Iliopsoas \u2014 flexes the thigh at the hip",
+                "Rectus femoris \u2014 extends the knee",
+                "Vastus lateralis \u2014 extends the knee",
+                "Vastus medialis \u2014 extends the knee",
+                "Gluteus maximus \u2014 extends the thigh at the hip",
+                "Gluteus medius \u2014 medially rotates the thigh at the hip",
+                "Tibialis anterior \u2014 dorsiflexes the foot at the ankle",
+                "Extensor digitorum longus \u2014 dorsiflexes the foot at the ankle",
+                "Gastrocnemius \u2014 plantar flexes the foot at the ankle"
+              ]
+            },
+            {
+              "accepted": [
+                "plantar flexes the foot at the ankle",
+                "plantar flexion",
+                "plantarflexion",
+                "plantar flexes the foot",
+                "plantarflexes the foot",
+                "plantar flexes foot",
+                "ankle plantar flexion",
+                "plantar flexion of the ankle"
+              ],
+              "competing": [
+                "flexes the thigh",
+                "extends the thigh",
+                "adducts the thigh",
+                "abducts the thigh",
+                "extends the knee",
+                "flexes the knee",
+                "dorsiflexion",
+                "medially rotates the thigh",
+                "laterally rotates the thigh"
+              ]
+            }
+          ]
         }
       ]
     }
