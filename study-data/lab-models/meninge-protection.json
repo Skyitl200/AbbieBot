@@ -1,0 +1,533 @@
+{
+  "course": "Anatomy and Physiology Lab",
+  "category": "Nervous System",
+  "modelGroup": "3D Meninge Protection of the Brain",
+  "source": "User-provided original model diagram and matching Quizlet screenshot. Full native-resolution diagram retained; one cyan pointer per question, with a bracket grouping the two cranial dura layers. External periosteum distinguished from periosteal dura.",
+  "sourceImageFile": "meninge-protection-original.png",
+  "sourceImageSha256": "06550f2a745045b101eb72dd5861c250c4fd7f13f33f8507794255f4b1caa464",
+  "referenceUrl": "https://quizlet.com/1214127448/3d-meninge-protection-of-the-brain-diagram/",
+  "models": [
+    {
+      "id": "meninge-protection-01",
+      "name": "Periosteum",
+      "expectedImageFile": "meninge-protection/mp-01.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          380,
+          180
+        ],
+        "tail": [
+          300,
+          85
+        ]
+      },
+      "imageSha256": "9dd92db04fba52dcab8b31636969ca995b8b102d08064203719fd09595710a31",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-01",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Periosteum",
+            "Bone of skull",
+            "Dura mater",
+            "Blood vessels"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "periosteum",
+            "pericranium",
+            "cranial periosteum"
+          ],
+          "explanation": "The periosteum (pericranium) is the thin connective-tissue covering on the external surface of the skull, beneath the scalp.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-02",
+      "name": "Skin of scalp",
+      "expectedImageFile": "meninge-protection/mp-02.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          460,
+          113
+        ],
+        "tail": [
+          390,
+          45
+        ]
+      },
+      "imageSha256": "bf15d1db12732b4e56a11f6699e7f7d2fcf7bf76ba319881e431c5b56cd5889b",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-02",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Periosteal",
+            "Skin of scalp",
+            "Arachnoid mater",
+            "Vein"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "skin of scalp",
+            "scalp skin",
+            "skin",
+            "scalp"
+          ],
+          "explanation": "The skin of the scalp is the superficial hair-bearing covering.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-03",
+      "name": "Bone of skull",
+      "expectedImageFile": "meninge-protection/mp-03.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          390,
+          201
+        ],
+        "tail": [
+          280,
+          170
+        ]
+      },
+      "imageSha256": "eacd7a487d2e80c78b0dc62d252bd9e85ea235fa5bfa53fb19a0510cd61cf92d",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-03",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Meningeal",
+            "Pia mater",
+            "Bone of skull",
+            "Arachnoid villus"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "bone of skull",
+            "skull bone",
+            "cranial bone",
+            "cranium",
+            "skull"
+          ],
+          "explanation": "The skull bone is the rigid bony layer containing a spongy interior between compact bony tables.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-04",
+      "name": "Periosteal",
+      "expectedImageFile": "meninge-protection/mp-04.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          368,
+          233
+        ],
+        "tail": [
+          300,
+          185
+        ]
+      },
+      "imageSha256": "f00cec2076d7541fd159fe6b82ffce27b8a9146d6f1aae07ff9beda4caa844a2",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-04",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Dura mater",
+            "Blood vessels",
+            "Subarachnoid space",
+            "Periosteal"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "periosteal",
+            "periosteal layer",
+            "periosteal layer of dura mater",
+            "periosteal dura",
+            "endosteal layer",
+            "endosteal dura"
+          ],
+          "explanation": "The periosteal layer is the outer cranial dura layer, adherent to the internal surface of the skull. It differs from the external periosteum.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-05",
+      "name": "Meningeal",
+      "expectedImageFile": "meninge-protection/mp-05.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          350,
+          246
+        ],
+        "tail": [
+          270,
+          230
+        ]
+      },
+      "imageSha256": "965ea39ea7360da6e47622482c3912cd73b42acf89d3d9e373ea3997459b2401",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-05",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Meningeal",
+            "Arachnoid mater",
+            "Vein",
+            "Periosteum"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "meningeal",
+            "meningeal layer",
+            "meningeal layer of dura mater",
+            "meningeal dura"
+          ],
+          "explanation": "The meningeal layer is the inner layer of cranial dura mater. Together with the periosteal layer it forms the dura mater.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-06",
+      "name": "Dura mater",
+      "expectedImageFile": "meninge-protection/mp-06.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "bracket",
+        "points": [
+          [
+            256,
+            207
+          ],
+          [
+            236,
+            201
+          ],
+          [
+            232,
+            218
+          ],
+          [
+            252,
+            225
+          ]
+        ]
+      },
+      "imageSha256": "e017093b1b4e90b0d580b6cf37c5d9a94887586bde7c15a11c1ea1b9809653b1",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-06",
+          "question": "What structure is indicated by the cyan bracket grouping both layers?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Pia mater",
+            "Dura mater",
+            "Arachnoid villus",
+            "Skin of scalp"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "dura mater",
+            "dura",
+            "cranial dura mater"
+          ],
+          "explanation": "The bracket groups the periosteal and meningeal layers together as cranial dura mater.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-07",
+      "name": "Arachnoid mater",
+      "expectedImageFile": "meninge-protection/mp-07.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          250,
+          281
+        ],
+        "tail": [
+          160,
+          230
+        ]
+      },
+      "imageSha256": "05f353202388cc092e35ca943d94568119a4d95becdf64d791de4dd4ad346707",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-07",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Blood vessels",
+            "Subarachnoid space",
+            "Arachnoid mater",
+            "Bone of skull"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "arachnoid mater",
+            "arachnoid",
+            "arachnoid membrane"
+          ],
+          "explanation": "The arachnoid mater is the thin membrane deep to the dura; it bridges across the brain surface over the subarachnoid space.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-08",
+      "name": "Pia mater",
+      "expectedImageFile": "meninge-protection/mp-08.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          280,
+          378
+        ],
+        "tail": [
+          347,
+          348
+        ]
+      },
+      "imageSha256": "79aacd1b0e9943063a577e802362ec7ccb1a025eee1dcdf701bfaa293938fda9",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-08",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Vein",
+            "Periosteum",
+            "Periosteal",
+            "Pia mater"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "pia mater",
+            "pia"
+          ],
+          "explanation": "The pia mater is the delicate membrane directly adhering to the brain surface and following its folds.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-09",
+      "name": "Blood vessels",
+      "expectedImageFile": "meninge-protection/mp-09.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          294,
+          433
+        ],
+        "tail": [
+          380,
+          465
+        ]
+      },
+      "imageSha256": "4454e4fe52aa6d87e2cdc2fd7c828c5413ce9b072dc51dd7320b976570c40728",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-09",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Blood vessels",
+            "Arachnoid villus",
+            "Skin of scalp",
+            "Meningeal"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "blood vessels",
+            "blood vessel",
+            "cerebral blood vessels",
+            "cerebral vessels",
+            "vessels"
+          ],
+          "explanation": "These blood vessels travel along the brain surface within the subarachnoid space.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-10",
+      "name": "Vein",
+      "expectedImageFile": "meninge-protection/mp-10.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          225,
+          355
+        ],
+        "tail": [
+          135,
+          300
+        ]
+      },
+      "imageSha256": "306170248d4299f33e841cf4b9e35dc3106b82ab361d6da379525614e55bb9cf",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-10",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Subarachnoid space",
+            "Vein",
+            "Bone of skull",
+            "Dura mater"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "vein",
+            "cerebral vein",
+            "bridging vein"
+          ],
+          "explanation": "The blue vessel is a vein draining toward a dural venous sinus.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-11",
+      "name": "Arachnoid villus",
+      "expectedImageFile": "meninge-protection/mp-11.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          758,
+          247
+        ],
+        "tail": [
+          675,
+          164
+        ]
+      },
+      "imageSha256": "1611378f9fa59a0f515ac68a2d33e24b2f05bda2a89f5f29ac8e3c875e9b919f",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-11",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Periosteum",
+            "Periosteal",
+            "Arachnoid villus",
+            "Arachnoid mater"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "arachnoid villus",
+            "arachnoid villi",
+            "arachnoid granulation",
+            "arachnoid granulations"
+          ],
+          "explanation": "An arachnoid villus projects into a dural venous sinus and participates in cerebrospinal-fluid return to venous blood.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "meninge-protection-12",
+      "name": "Subarachnoid space",
+      "expectedImageFile": "meninge-protection/mp-12.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          255,
+          310
+        ],
+        "tail": [
+          350,
+          320
+        ]
+      },
+      "imageSha256": "d271e6cbd9d97d01992c9cf9a5684ff9cc4b0d7b2b3d017db8cabb19a3beb373",
+      "questions": [
+        {
+          "id": "lab-meninge-protection-12",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Skin of scalp",
+            "Meningeal",
+            "Pia mater",
+            "Subarachnoid space"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "subarachnoid space",
+            "subarachnoid"
+          ],
+          "explanation": "The subarachnoid space lies between arachnoid mater and pia mater and contains cerebrospinal fluid, vessels, and arachnoid trabeculae.",
+          "requiresModelImage": true
+        }
+      ]
+    }
+  ]
+}
