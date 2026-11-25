@@ -465,21 +465,19 @@
       "expectedImageFile": "sheep-brain/sb-12.png",
       "renderMethod": "original-photo-marker-overlay",
       "annotation": {
-        "kind": "arrow",
-        "tip": [
-          181,
-          247
-        ],
-        "tail": [
-          85,
-          190
+        "kind": "ellipse",
+        "bounds": [
+          88,
+          180,
+          441,
+          509
         ]
       },
-      "imageSha256": "610dd302a45254bed0c43122cdfbb0b126a8c2ce083f7ac3359f7ce81c164a9c",
+      "imageSha256": "3e40c4f501813a2ac8a303397784bed3c38072df0fd5156bf7fe9b2df705a103",
       "questions": [
         {
           "id": "lab-sheep-brain-12",
-          "question": "What structure is indicated by the cyan pointer?",
+          "question": "Identify the entire region circled in cyan.",
           "type": "multiple_choice",
           "difficulty": "easy",
           "options": [
@@ -494,7 +492,7 @@
           "typedAnswers": [
             "cerebellum"
           ],
-          "explanation": "The cerebellum is the posterior, finely folded region. The marker indicates its outer folded tissue rather than the internal arbor vitae.",
+          "explanation": "The entire circled region is the cerebellum. Its internal branching white matter is the arbor vitae, which is marked separately in this set.",
           "requiresModelImage": true
         }
       ]

@@ -26,5 +26,5 @@ test('all sheep brain pictures attach in both modes and answers tolerate case an
 test('colliculi have distinct targets and arbor vitae marks branching separately from outer cerebellum',()=>{
  const byName=n=>data.models.find(m=>m.name===n).annotation;
  assert.ok(byName('Superior colliculus').tip[1]<byName('Inferior colliculus').tip[1]);
- assert.equal(byName('Arbor vitae').kind,'line');assert.notDeepEqual(byName('Arbor vitae').points[0],byName('Cerebellum').tip);
+ assert.equal(byName('Arbor vitae').kind,'line');assert.equal(byName('Cerebellum').kind,'ellipse');assert.deepEqual(byName('Cerebellum').bounds,[88,180,441,509]);
 });
