@@ -1,0 +1,754 @@
+{
+  "course": "Anatomy and Physiology Lab",
+  "category": "Nervous System",
+  "modelGroup": "3D Sheep's Brain Structures",
+  "source": "User-provided Sheep Brain.png and matching Quizlet diagram screenshot. Native full-frame photo with one cyan pointer per question; arbor vitae marked along its branching white matter.",
+  "sourceImageFile": "sheep-brain-original.png",
+  "sourceImageSha256": "e5e94482477b74130c395559a98a113b78c633919bb1b700369e571397bc49f7",
+  "referenceUrl": "https://quizlet.com/1214139613/3d-sheep-brain-structures-diagram/",
+  "models": [
+    {
+      "id": "sheep-brain-01",
+      "name": "Mammillary body",
+      "expectedImageFile": "sheep-brain/sb-01.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          595,
+          537
+        ],
+        "tail": [
+          560,
+          640
+        ]
+      },
+      "imageSha256": "7da5e259ba9cf4cb5fa2e7752e190566a0d75e353a66674f02f742e881a29da8",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-01",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Mammillary body",
+            "Hypothalamus",
+            "Cerebrum",
+            "Pineal gland"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "mammillary body",
+            "mammillary bodies",
+            "mamillary body"
+          ],
+          "explanation": "The mammillary body is a rounded hypothalamic structure on the ventral surface, posterior to the pituitary stalk.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-02",
+      "name": "Thalamus",
+      "expectedImageFile": "sheep-brain/sb-02.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          622,
+          443
+        ],
+        "tail": [
+          733,
+          465
+        ]
+      },
+      "imageSha256": "d5df020cfed07ab0ef6378f8fc395bfca4dcc032fe65ee15d1b4b4298f45b4ad",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-02",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Optic chiasma",
+            "Thalamus",
+            "Corpus callosum",
+            "Superior colliculus"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "thalamus"
+          ],
+          "explanation": "The thalamus is the large central mass inferior to the fornix and corpus callosum.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-03",
+      "name": "Hypothalamus",
+      "expectedImageFile": "sheep-brain/sb-03.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          690,
+          507
+        ],
+        "tail": [
+          810,
+          595
+        ]
+      },
+      "imageSha256": "6deb1f053c29a75a61b9fb4753f3ff9e74893777983640ccadefdd0a5d98a12c",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-03",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Septum pellucidum",
+            "Fornix",
+            "Hypothalamus",
+            "Pituitary gland"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "hypothalamus"
+          ],
+          "explanation": "The hypothalamus lies ventral to the thalamus and regulates homeostasis and pituitary activity.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-04",
+      "name": "Optic chiasma",
+      "expectedImageFile": "sheep-brain/sb-04.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          728,
+          547
+        ],
+        "tail": [
+          845,
+          631
+        ]
+      },
+      "imageSha256": "d1a4934adddebf12a4fc92c917173d9e86901265e5323b3d2a3f808f135979e4",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-04",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cerebrum",
+            "Pineal gland",
+            "Cerebellum",
+            "Optic chiasma"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "optic chiasma",
+            "optic chiasm"
+          ],
+          "explanation": "The optic chiasma lies anterior to the hypothalamic region, where some optic nerve fibers cross.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-05",
+      "name": "Septum pellucidum",
+      "expectedImageFile": "sheep-brain/sb-05.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          778,
+          380
+        ],
+        "tail": [
+          897,
+          382
+        ]
+      },
+      "imageSha256": "5733e1ce2d595fd1305725c3879e4a9ad666b588a2cbd05f7872ea4887de66aa",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-05",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Septum pellucidum",
+            "Corpus callosum",
+            "Superior colliculus",
+            "Arbor vitae"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "septum pellucidum",
+            "septum"
+          ],
+          "explanation": "The septum pellucidum is the thin partition between the corpus callosum and fornix.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-06",
+      "name": "Cerebrum",
+      "expectedImageFile": "sheep-brain/sb-06.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          873,
+          278
+        ],
+        "tail": [
+          945,
+          163
+        ]
+      },
+      "imageSha256": "13c17cd7ef2e9f99a1d1ee1abe22001816199bcc10d5ecd3a550353a7afd89c2",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-06",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Fornix",
+            "Cerebrum",
+            "Pituitary gland",
+            "Spinal cord"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "cerebrum",
+            "cerebral hemisphere",
+            "cerebral hemispheres"
+          ],
+          "explanation": "The cerebrum is the large folded portion of the brain.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-07",
+      "name": "Corpus callosum",
+      "expectedImageFile": "sheep-brain/sb-07.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          644,
+          356
+        ],
+        "tail": [
+          700,
+          247
+        ]
+      },
+      "imageSha256": "34d86e48b6fcf5cfee3833b9c80cc904845a0cc1c76dfe118e376c3cf828d9dd",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-07",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Pineal gland",
+            "Cerebellum",
+            "Corpus callosum",
+            "Medulla oblongata"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "corpus callosum"
+          ],
+          "explanation": "The corpus callosum is the prominent pale arch of white matter connecting the cerebral hemispheres.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-08",
+      "name": "Fornix",
+      "expectedImageFile": "sheep-brain/sb-08.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          780,
+          412
+        ],
+        "tail": [
+          895,
+          456
+        ]
+      },
+      "imageSha256": "a9fcafe8ef7073416d675ce5a2c6afd7f7c88263a3fb33216fadd49945148e56",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-08",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Superior colliculus",
+            "Arbor vitae",
+            "Pons",
+            "Fornix"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "fornix"
+          ],
+          "explanation": "The fornix is the white-matter tract arching below the septum pellucidum and corpus callosum.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-09",
+      "name": "Pineal gland",
+      "expectedImageFile": "sheep-brain/sb-09.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          547,
+          365
+        ],
+        "tail": [
+          589,
+          271
+        ]
+      },
+      "imageSha256": "9837e03567f8af93f67d39a992a59d172fd1ce84e2432bb3b6001b4a4f640b57",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-09",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Pineal gland",
+            "Pituitary gland",
+            "Spinal cord",
+            "Cerebral aqueduct"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "pineal gland",
+            "pineal body",
+            "epiphysis cerebri"
+          ],
+          "explanation": "The pineal gland is the small projection posterior to the thalamus and above the colliculi.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-10",
+      "name": "Superior colliculus",
+      "expectedImageFile": "sheep-brain/sb-10.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          485,
+          372
+        ],
+        "tail": [
+          440,
+          280
+        ]
+      },
+      "imageSha256": "bfb7d8e4e5d8fea5c42a41d430123a28d4bede67aa728cfca8ec68dfe533cece",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-10",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cerebellum",
+            "Superior colliculus",
+            "Medulla oblongata",
+            "Inferior colliculus"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "superior colliculus",
+            "superior colliculi"
+          ],
+          "explanation": "The superior colliculus is the rostral tectal elevation, below the pineal gland; it participates in visual orienting reflexes.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-11",
+      "name": "Pituitary gland",
+      "expectedImageFile": "sheep-brain/sb-11.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          609,
+          583
+        ],
+        "tail": [
+          665,
+          665
+        ]
+      },
+      "imageSha256": "7c7e7b460be272778f5cc3d3f015b4034d85e34383d080cac3abc40af5a2dca3",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-11",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Arbor vitae",
+            "Pons",
+            "Pituitary gland",
+            "Mammillary body"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "pituitary gland",
+            "pituitary",
+            "hypophysis",
+            "hypophysis cerebri"
+          ],
+          "explanation": "The pituitary gland projects ventrally from the hypothalamic region.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-12",
+      "name": "Cerebellum",
+      "expectedImageFile": "sheep-brain/sb-12.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          181,
+          247
+        ],
+        "tail": [
+          85,
+          190
+        ]
+      },
+      "imageSha256": "610dd302a45254bed0c43122cdfbb0b126a8c2ce083f7ac3359f7ce81c164a9c",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-12",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Spinal cord",
+            "Cerebral aqueduct",
+            "Thalamus",
+            "Cerebellum"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "cerebellum"
+          ],
+          "explanation": "The cerebellum is the posterior, finely folded region. The marker indicates its outer folded tissue rather than the internal arbor vitae.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-13",
+      "name": "Arbor vitae",
+      "expectedImageFile": "sheep-brain/sb-13.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "line",
+        "points": [
+          [
+            243,
+            336
+          ],
+          [
+            275,
+            360
+          ],
+          [
+            312,
+            386
+          ]
+        ]
+      },
+      "imageSha256": "e857d1bbefd97973ab16cf31522d4fe0a0f71a7adeef514ab3f3f48cb6f2aa40",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-13",
+          "question": "Identify the branching white matter marked by the cyan line.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Arbor vitae",
+            "Medulla oblongata",
+            "Inferior colliculus",
+            "Hypothalamus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "arbor vitae",
+            "arborvitae"
+          ],
+          "explanation": "The arbor vitae is the branching white matter within the cerebellum.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-14",
+      "name": "Spinal cord",
+      "expectedImageFile": "sheep-brain/sb-14.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          101,
+          476
+        ],
+        "tail": [
+          48,
+          586
+        ]
+      },
+      "imageSha256": "a7be9a42e3d835663396e3cd086dc82fd15fee19235305bb8656b3ab4a7434e7",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-14",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Pons",
+            "Spinal cord",
+            "Mammillary body",
+            "Optic chiasma"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "spinal cord"
+          ],
+          "explanation": "The spinal cord continues caudally from the medulla oblongata.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-15",
+      "name": "Medulla oblongata",
+      "expectedImageFile": "sheep-brain/sb-15.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          256,
+          571
+        ],
+        "tail": [
+          200,
+          671
+        ]
+      },
+      "imageSha256": "03b3d238d4dc5a41634fbb13bf1abb7d3ff8c9ffa308578b2696e3be062e13a5",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-15",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cerebral aqueduct",
+            "Thalamus",
+            "Medulla oblongata",
+            "Septum pellucidum"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "medulla oblongata",
+            "medulla"
+          ],
+          "explanation": "The medulla oblongata is the caudal brainstem between the pons and spinal cord.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-16",
+      "name": "Pons",
+      "expectedImageFile": "sheep-brain/sb-16.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          401,
+          603
+        ],
+        "tail": [
+          395,
+          689
+        ]
+      },
+      "imageSha256": "b32e4a67e35963c1be1f0288e4c08487b0af55567457e8f0911b892f19e6e58e",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-16",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Inferior colliculus",
+            "Hypothalamus",
+            "Cerebrum",
+            "Pons"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "pons"
+          ],
+          "explanation": "The pons is the ventral brainstem bulge rostral to the medulla.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-17",
+      "name": "Cerebral aqueduct",
+      "expectedImageFile": "sheep-brain/sb-17.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          458,
+          412
+        ],
+        "tail": [
+          381,
+          348
+        ]
+      },
+      "imageSha256": "6a27e78c3dd0b839dc62d6bf29ba6d2d7ae047e698e807383409eb03799ac12d",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-17",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cerebral aqueduct",
+            "Mammillary body",
+            "Optic chiasma",
+            "Corpus callosum"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "cerebral aqueduct",
+            "aqueduct of sylvius",
+            "mesencephalic aqueduct"
+          ],
+          "explanation": "The cerebral aqueduct is the narrow channel through the midbrain ventral to the colliculi, connecting the third and fourth ventricles.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "sheep-brain-18",
+      "name": "Inferior colliculus",
+      "expectedImageFile": "sheep-brain/sb-18.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          480,
+          433
+        ],
+        "tail": [
+          393,
+          469
+        ]
+      },
+      "imageSha256": "9fa8422804355ddba7623379e6ceaccc6c613dee6fbb550869feda12db204bc9",
+      "questions": [
+        {
+          "id": "lab-sheep-brain-18",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Thalamus",
+            "Inferior colliculus",
+            "Septum pellucidum",
+            "Fornix"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "inferior colliculus",
+            "inferior colliculi"
+          ],
+          "explanation": "The inferior colliculus is the caudal tectal elevation, below and behind the superior colliculus; it participates in auditory processing.",
+          "requiresModelImage": true
+        }
+      ]
+    }
+  ]
+}
