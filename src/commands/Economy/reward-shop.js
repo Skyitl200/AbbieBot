@@ -15,6 +15,7 @@ const rewards = [
     ["Choose a Server Emoji",5000,"Added for 1 month"],
     ["24h Double XP",8000],
     ["Role Color Pass · 30 days",10000],
+    ["Sun or Moon I Study (Role)",200000],
     ["1 Hour Study or TEAS Review Session",350000],
     ["HealthScienceGuild Bracelet",450000],
     ["HealthScienceGuild Pin",450000],
