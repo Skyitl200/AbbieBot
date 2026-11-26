@@ -2,12 +2,10 @@ import {
     ActionRowBuilder,
     ButtonBuilder,
     ButtonStyle,
-    AttachmentBuilder,
-    EmbedBuilder,
+    StringSelectMenuBuilder,
     MessageFlags,
     SlashCommandBuilder,
 } from 'discord.js';
-import { fileURLToPath } from 'node:url';
 import { pgConfig } from '../../config/database/postgres.js';
 import { pgDb } from '../../utils/database.js';
 import { logger } from '../../utils/logger.js';
@@ -18,13 +16,21 @@ const STUDY_ROLE_ID = '1575576483668295840';
 const STUDY_ROLE_NAME = 'Sun or Moon I Study';
 const STUDY_ROLE_COST = 200_000;
 
-const POSTER_NAME = 'hsg-reward-shop.png';
-const POSTER_PATH = fileURLToPath(new URL('../../assets/hsg-reward-shop.png', import.meta.url));
-const POSTER_ALT = 'HSG Reward Shop prices in Merit Coins. Bonus /lfg Post and Study Streak Freeze: ' +
-    '500 each. Choose a Server Emoji: 5,000. 24h Double XP: 8,000. Role Color Pass: 10,000. ' +
-    'Sun or Moon I Study: 200,000. One-hour Study or TEAS Review: 350,000. ' +
-    'HSG Bracelet and Pin: 450,000 each. One month of Premium: 500,000. HSG backpack: 1,000,000.';
+const rewards = [
+    ["lfg","Bonus /lfg Post",500],
+    ["freeze","Study Streak Freeze",5000],
+    ["emoji","Choose a Server Emoji",7000],
+    ["xp","24h Double XP",8000],
+    ["color","Role Color Pass · 30 days",10000],
+    ['study-role', STUDY_ROLE_NAME, STUDY_ROLE_COST],
+    ["review","1 Hour Study or TEAS Review Session",350000],
+    ["bracelet","HealthScienceGuild Bracelet",450000],
+    ["pin","HealthScienceGuild Pin",450000],
+    ["premium","1 Month of Premium Membership",500000],
+    ["backpack","Large Transparent Waterproof Backpack",1000000],
+];
 
+export const REWARD_PICKER_ID = 'hsg_reward_picker';
 const formatCoins = new Intl.NumberFormat('en-US');
 
 export async function redeemStudyRole(interaction) {
@@ -92,6 +98,29 @@ export async function redeemStudyRole(interaction) {
     return interaction.editReply(`You redeemed **${STUDY_ROLE_NAME}** for **${formatCoins.format(STUDY_ROLE_COST)} Merit Coins**. Your role has been added.`);
 }
 
+export async function selectReward(interaction) {
+    const reward = rewards.find(([id]) => id === interaction.values[0]);
+    if (interaction.channelId !== REWARD_SHOP_CHANNEL_ID || !reward) {
+        return interaction.reply({ content: 'Open the HSG Reward Shop to choose a reward.', flags: MessageFlags.Ephemeral });
+    }
+
+    const [id, label, price] = reward;
+    if (id !== 'study-role') {
+        return interaction.reply({ content: `**${label}** is coming soon. No Merit Coins were charged.`, flags: MessageFlags.Ephemeral });
+    }
+
+    return interaction.reply({
+        content: `Redeem **${label}** for **${formatCoins.format(price)} Merit Coins**?`,
+        components: [new ActionRowBuilder().addComponents(
+            new ButtonBuilder()
+                .setCustomId('hsg_reward_shop_role')
+                .setLabel('Confirm redemption')
+                .setStyle(ButtonStyle.Success),
+        )],
+        flags: MessageFlags.Ephemeral,
+    });
+}
+
 export default {
     slashOnly: true,
     guildOnly: true,
@@ -115,33 +144,18 @@ export default {
             return redeemStudyRole(interaction);
         }
 
-        await interaction.deferReply();
+        const picker = new StringSelectMenuBuilder()
+            .setCustomId(REWARD_PICKER_ID)
+            .setPlaceholder('Choose a reward')
+            .addOptions(rewards.map(([id, label, price]) => ({
+                label,
+                value: id,
+                description: `${formatCoins.format(price)} Merit Coins${id === 'study-role' ? '' : ' · Coming soon'}`,
+            })));
 
-        const poster = new AttachmentBuilder(POSTER_PATH, {
-            name: POSTER_NAME,
-            description: POSTER_ALT,
-        });
-        const embed = new EmbedBuilder()
-            .setTitle('HealthScienceGuild Reward Shop')
-            .setColor(0x91e6ca)
-            .setImage('attachment://' + POSTER_NAME)
-            .setFooter({ text: 'Role redemption is open. Other rewards and chest sellback are coming soon.' });
-        const actions = new ActionRowBuilder().addComponents(
-            new ButtonBuilder()
-                .setCustomId('hsg_reward_shop_role')
-                .setLabel('Redeem Sun or Moon I Study')
-                .setStyle(ButtonStyle.Success),
-            new ButtonBuilder()
-                .setCustomId('hsg_reward_shop:sell')
-                .setLabel('Sell Chest Items')
-                .setStyle(ButtonStyle.Secondary)
-                .setDisabled(true),
-        );
-
-        await interaction.editReply({
-            embeds: [embed],
-            components: [actions],
-            files: [poster],
+        await interaction.reply({
+            content: '**Redeem a reward**\nChoose an item below.',
+            components: [new ActionRowBuilder().addComponents(picker)],
         });
     },
 };
