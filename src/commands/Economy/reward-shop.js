@@ -2,10 +2,14 @@ import {
     ActionRowBuilder,
     ButtonBuilder,
     ButtonStyle,
-    EmbedBuilder,
+    AttachmentBuilder,
+    MediaGalleryBuilder,
+    MediaGalleryItemBuilder,
+    TextDisplayBuilder,
     MessageFlags,
     SlashCommandBuilder,
 } from 'discord.js';
+import { fileURLToPath } from 'node:url';
 import { pgConfig } from '../../config/database/postgres.js';
 import { pgDb } from '../../utils/database.js';
 import { logger } from '../../utils/logger.js';
@@ -16,40 +20,21 @@ const STUDY_ROLE_ID = '1575576483668295840';
 const STUDY_ROLE_NAME = 'Sun or Moon I Study';
 const STUDY_ROLE_COST = 200_000;
 
-const rewards = [
-    ["Bonus /lfg Post",500,"After reaching the 24-hour limit"],
-    ["Study Streak Freeze",500],
-    ["Choose a Server Emoji",5000,"Added for 1 month"],
-    ["24h Double XP",8000],
-    ["Role Color Pass · 30 days",10000],
-    [STUDY_ROLE_NAME + ' (Role)', STUDY_ROLE_COST],
-    ["1 Hour Study or TEAS Review Session",350000],
-    ["HealthScienceGuild Bracelet",450000],
-    ["HealthScienceGuild Pin",450000],
-    ["1 Month of Premium Membership",500000],
-    ["Large Transparent Waterproof Backpack",1000000,"With HSG Logo"]
-];
+const POSTER_NAME = 'hsg-reward-shop.png';
+const POSTER_PATH = fileURLToPath(new URL('../../assets/hsg-reward-shop.png', import.meta.url));
+const POSTER_ALT = 'HSG Reward Shop prices in Merit Coins. Bonus /lfg Post and Study Streak Freeze: ' +
+    '500 each. Choose a Server Emoji: 5,000. 24h Double XP: 8,000. Role Color Pass: 10,000. ' +
+    'Sun or Moon I Study: 200,000. One-hour Study or TEAS Review: 350,000. ' +
+    'HSG Bracelet and Pin: 450,000 each. One month of Premium: 500,000. HSG backpack: 1,000,000.';
 
 const formatCoins = new Intl.NumberFormat('en-US');
 
-function formatCatalog() {
-    const nameWidth = 38;
-    const priceWidth = 11;
-    const rows = [
-        'Reward'.padEnd(nameWidth) + 'Merit Coins'.padStart(priceWidth),
-        '─'.repeat(nameWidth + priceWidth),
-    ];
-
-    for (const [name, price, detail] of rewards) {
-        rows.push(name.padEnd(nameWidth) + formatCoins.format(price).padStart(priceWidth));
-        if (detail) rows.push('  ' + detail);
+export async function redeemStudyRole(interaction) {
+    await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+    if (interaction.channelId !== REWARD_SHOP_CHANNEL_ID || !interaction.guild) {
+        return interaction.editReply('Open the HSG Reward Shop in <#' + REWARD_SHOP_CHANNEL_ID + '>.');
     }
 
-    return ['```', ...rows, '```'].join('\n');
-}
-
-async function redeemStudyRole(interaction) {
-    await interaction.deferReply({ flags: MessageFlags.Ephemeral });
     const { guild, user } = interaction;
     const args = [guild.id, user.id, STUDY_ROLE_COST];
     let db;
@@ -132,31 +117,17 @@ export default {
             return redeemStudyRole(interaction);
         }
 
-        const embed = new EmbedBuilder()
-            .setTitle('HealthScienceGuild Reward Shop')
-            .setColor(0x38a4cf)
-            .setDescription(formatCatalog())
-            .setFooter({ text: 'Sun or Moon I Study is available to redeem' });
-
-        const earning = new EmbedBuilder()
-            .setTitle('How Merit Coins Work')
-            .setColor(0x38a4cf)
-            .setDescription(
-                'Earn **15–50 Merit Coins** for participating in HSG learning activities. ' +
-                'Premium members earn **double**. Save your coins for Discord perks, study sessions, and HSG gear.',
-            );
-
-        const redemption = new EmbedBuilder()
-            .setTitle('Redeem Rewards & Sell Chest Items')
-            .setColor(0x38a4cf)
-            .setDescription(
-                'Use `/reward-shop redeem-study-role:True` to claim the **Sun or Moon I Study** role. ' +
-                'Other rewards are still in preview.\n\n' +
-                'When chest sellback opens, choose **Sell Chest Items** to see the offer for an eligible item ' +
-                'like the **Petri Dish Emblem**, then confirm the sale.',
-            );
-
+        const poster = new AttachmentBuilder(POSTER_PATH, { name: POSTER_NAME });
+        const gallery = new MediaGalleryBuilder().addItems(
+            new MediaGalleryItemBuilder()
+                .setURL('attachment://' + POSTER_NAME)
+                .setDescription(POSTER_ALT),
+        );
         const actions = new ActionRowBuilder().addComponents(
+            new ButtonBuilder()
+                .setCustomId('hsg_reward_shop_role')
+                .setLabel('Redeem Sun or Moon I Study')
+                .setStyle(ButtonStyle.Success),
             new ButtonBuilder()
                 .setCustomId('hsg_reward_shop:sell')
                 .setLabel('Sell Chest Items')
@@ -165,8 +136,13 @@ export default {
         );
 
         await interaction.reply({
-            embeds: [embed, earning, redemption],
-            components: [actions],
+            components: [
+                gallery,
+                actions,
+                new TextDisplayBuilder().setContent('-# Role redemption is open. Other rewards and chest sellback are coming soon.'),
+            ],
+            files: [poster],
+            flags: MessageFlags.IsComponentsV2,
         });
     },
 };
