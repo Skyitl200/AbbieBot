@@ -7,6 +7,8 @@ import {
     SlashCommandBuilder,
 } from 'discord.js';
 
+const REWARD_SHOP_CHANNEL_ID = '1551091551726342144';
+
 const rewards = [
     ["Bonus /lfg Post",500,"After reaching the 24-hour limit"],
     ["Study Streak Freeze",500],
@@ -45,6 +47,14 @@ export default {
         .setDescription('Browse HealthScienceGuild rewards priced in Merit Coins.'),
 
     async execute(interaction) {
+        if (interaction.channelId !== REWARD_SHOP_CHANNEL_ID) {
+            await interaction.reply({
+                content: 'Open the HSG Reward Shop in <#' + REWARD_SHOP_CHANNEL_ID + '>.',
+                flags: MessageFlags.Ephemeral,
+            });
+            return;
+        }
+
         const embed = new EmbedBuilder()
             .setTitle('HealthScienceGuild Reward Shop')
             .setColor(0x38a4cf)
@@ -80,7 +90,6 @@ export default {
         await interaction.reply({
             embeds: [embed, earning, redemption],
             components: [actions],
-            flags: MessageFlags.Ephemeral,
         });
     },
 };
