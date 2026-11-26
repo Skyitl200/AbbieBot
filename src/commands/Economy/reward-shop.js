@@ -51,6 +51,24 @@ export default {
             .setDescription(formatCatalog())
             .setFooter({ text: 'Catalog preview · Redemptions open after setup' });
 
+        const earning = new EmbedBuilder()
+            .setTitle('How Merit Coins Work')
+            .setColor(0x38a4cf)
+            .setDescription(
+                'Earn **15–50 Merit Coins** for participating in HSG learning activities. ' +
+                'Premium members earn **double**. Save your coins for Discord perks, study sessions, and HSG gear.',
+            );
+
+        const redemption = new EmbedBuilder()
+            .setTitle('Redeem Rewards & Sell Chest Items')
+            .setColor(0x38a4cf)
+            .setDescription(
+                'When redemptions open, use Merit Coins to claim rewards from the list above. ' +
+                'The shop will guide you through gear and study session requests.\n\n' +
+                'When chest sellback opens, choose **Sell Chest Items** to see the offer for an eligible item ' +
+                'like the **Petri Dish Emblem**, then confirm the sale.',
+            );
+
         const actions = new ActionRowBuilder().addComponents(
             new ButtonBuilder()
                 .setCustomId('hsg_reward_shop:sell')
@@ -60,7 +78,7 @@ export default {
         );
 
         await interaction.reply({
-            embeds: [embed],
+            embeds: [embed, earning, redemption],
             components: [actions],
             flags: MessageFlags.Ephemeral,
         });
