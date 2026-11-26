@@ -43,22 +43,18 @@ const catalogLabels = {
 };
 
 function formatShop(guild) {
-    const emoji = (name, fallback) =>
-        guild?.emojis?.cache?.find(item => item.name === name)?.toString() ?? fallback;
-    const gift = emoji('2755presentbox', '🎁');
-    const meritHeadingEmojiId = '1575596549600321557';
-    const coins = guild?.emojis?.cache?.get(meritHeadingEmojiId)?.toString() ??
-        `<a:ManyMerits:${meritHeadingEmojiId}>`;
-    const meritCoinEmojiId = '1575596433170632805';
-    const coin = guild?.emojis?.cache?.get(meritCoinEmojiId)?.toString() ??
-        `<a:MeritCoins:${meritCoinEmojiId}>`;
+    const emoji = (id, name) =>
+        guild?.client?.emojis?.cache?.get(id)?.toString() ?? `<a:${name}:${id}>`;
+    const gift = emoji('1575591241557479434', '2755presentbox');
+    const coins = emoji('1553716009456898098', 'ManyMerits');
+    const coin = emoji('1553709164012900404', 'MeritCoins');
     const space = '\u2002';
-    const padding = [38, 62, 32, 68, 56, 49, 42, 50, 58, 49, 21];
+    const padding = [27, 49, 25, 54, 45, 40, 34, 41, 46, 39, 18];
 
     return [
         '**__Reward Shop:__**',
-        gift + ' Rewards:' + space.repeat(61) + coins + ' Merit Coins it Cost:',
-        '\\' + '-'.repeat(100),
+        gift + ' Rewards:' + space.repeat(53) + coins + ' Merit Coins it Cost:',
+        '\\' + '-'.repeat(91),
         ...rewards.map(([id, label, price], index) =>
             '**' + (catalogLabels[id] ?? label) + '**' + (catalogDetails[id] ?? '') +
             space.repeat(padding[index]) + ' ' + coin + ' ' + formatCoins.format(price) + ' Merits'
