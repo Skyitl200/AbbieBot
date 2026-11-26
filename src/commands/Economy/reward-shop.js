@@ -111,6 +111,7 @@ async function redeemStudyRole(interaction) {
 
 export default {
     slashOnly: true,
+    guildOnly: true,
     data: new SlashCommandBuilder()
         .setName('reward-shop')
         .setDescription('Browse HealthScienceGuild rewards priced in Merit Coins.')
