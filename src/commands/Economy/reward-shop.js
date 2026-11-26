@@ -33,6 +33,36 @@ const rewards = [
 export const REWARD_PICKER_ID = 'hsg_reward_picker';
 const formatCoins = new Intl.NumberFormat('en-US');
 
+const catalogDetails = {
+    lfg: ' (after 24 hour limit is reached)',
+    emoji: ' (to be added for 1 month)',
+};
+const catalogLabels = {
+    'study-role': 'Role Sun or Moon I Study (Role)',
+    backpack: 'Large Transparent Waterproof Backpack with HSG Logo',
+};
+
+function formatShop(guild) {
+    const emoji = (name, fallback) =>
+        guild?.emojis?.cache?.find(item => item.name === name)?.toString() ?? fallback;
+    const gift = emoji('2755presentbox', '🎁');
+    const coins = emoji('ManyMerits', '🪙');
+    const coin = emoji('MeritCoins', '🪙');
+    const space = '\u2002';
+    const padding = [38, 62, 32, 68, 56, 49, 42, 50, 58, 49, 21];
+
+    return [
+        '**__Reward Shop:__**',
+        gift + ' Rewards:' + space.repeat(61) + coins + ' Merit Coins it Cost:',
+        '\\' + '-'.repeat(100),
+        ...rewards.map(([id, label, price], index) =>
+            '**' + (catalogLabels[id] ?? label) + '**' + (catalogDetails[id] ?? '') +
+            space.repeat(padding[index]) + ' ' + coin + ' ' + formatCoins.format(price) + ' Merits'
+        ),
+    ].join('\n');
+}
+
+
 export async function redeemStudyRole(interaction) {
     await interaction.deferReply({ flags: MessageFlags.Ephemeral });
     if (interaction.channelId !== REWARD_SHOP_CHANNEL_ID || !interaction.guild) {
@@ -154,7 +184,7 @@ export default {
             })));
 
         await interaction.reply({
-            content: '**Redeem a reward**\nChoose an item below.',
+            content: formatShop(interaction.guild),
             components: [new ActionRowBuilder().addComponents(picker)],
         });
     },
