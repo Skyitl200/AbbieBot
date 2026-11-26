@@ -3,9 +3,7 @@ import {
     ButtonBuilder,
     ButtonStyle,
     AttachmentBuilder,
-    MediaGalleryBuilder,
-    MediaGalleryItemBuilder,
-    TextDisplayBuilder,
+    EmbedBuilder,
     MessageFlags,
     SlashCommandBuilder,
 } from 'discord.js';
@@ -117,12 +115,17 @@ export default {
             return redeemStudyRole(interaction);
         }
 
-        const poster = new AttachmentBuilder(POSTER_PATH, { name: POSTER_NAME });
-        const gallery = new MediaGalleryBuilder().addItems(
-            new MediaGalleryItemBuilder()
-                .setURL('attachment://' + POSTER_NAME)
-                .setDescription(POSTER_ALT),
-        );
+        await interaction.deferReply();
+
+        const poster = new AttachmentBuilder(POSTER_PATH, {
+            name: POSTER_NAME,
+            description: POSTER_ALT,
+        });
+        const embed = new EmbedBuilder()
+            .setTitle('HealthScienceGuild Reward Shop')
+            .setColor(0x91e6ca)
+            .setImage('attachment://' + POSTER_NAME)
+            .setFooter({ text: 'Role redemption is open. Other rewards and chest sellback are coming soon.' });
         const actions = new ActionRowBuilder().addComponents(
             new ButtonBuilder()
                 .setCustomId('hsg_reward_shop_role')
@@ -135,14 +138,10 @@ export default {
                 .setDisabled(true),
         );
 
-        await interaction.reply({
-            components: [
-                gallery,
-                actions,
-                new TextDisplayBuilder().setContent('-# Role redemption is open. Other rewards and chest sellback are coming soon.'),
-            ],
+        await interaction.editReply({
+            embeds: [embed],
+            components: [actions],
             files: [poster],
-            flags: MessageFlags.IsComponentsV2,
         });
     },
 };
