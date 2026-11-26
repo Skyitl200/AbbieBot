@@ -46,7 +46,9 @@ function formatShop(guild) {
     const emoji = (name, fallback) =>
         guild?.emojis?.cache?.find(item => item.name === name)?.toString() ?? fallback;
     const gift = emoji('2755presentbox', '🎁');
-    const coins = emoji('ManyMerits', '🪙');
+    const meritHeadingEmojiId = '1575596549600321557';
+    const coins = guild?.emojis?.cache?.get(meritHeadingEmojiId)?.toString() ??
+        `<a:ManyMerits:${meritHeadingEmojiId}>`;
     const meritCoinEmojiId = '1575596433170632805';
     const coin = guild?.emojis?.cache?.get(meritCoinEmojiId)?.toString() ??
         `<a:MeritCoins:${meritCoinEmojiId}>`;
