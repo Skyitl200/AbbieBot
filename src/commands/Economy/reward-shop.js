@@ -10,7 +10,7 @@ import { pgConfig } from '../../config/database/postgres.js';
 import { pgDb } from '../../utils/database.js';
 import { logger } from '../../utils/logger.js';
 
-const REWARD_SHOP_CHANNEL_ID = '1551091551726342144';
+const REWARD_SHOP_CHANNEL_ID = '1551092723698770062';
 
 const STUDY_ROLE_ID = '1575576483668295840';
 const STUDY_ROLE_NAME = 'Sun or Moon I Study';
