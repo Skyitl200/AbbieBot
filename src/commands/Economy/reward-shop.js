@@ -47,7 +47,9 @@ function formatShop(guild) {
         guild?.emojis?.cache?.find(item => item.name === name)?.toString() ?? fallback;
     const gift = emoji('2755presentbox', '🎁');
     const coins = emoji('ManyMerits', '🪙');
-    const coin = emoji('MeritCoins', '🪙');
+    const meritCoinEmojiId = '1575596433170632805';
+    const coin = guild?.emojis?.cache?.get(meritCoinEmojiId)?.toString() ??
+        `<a:MeritCoins:${meritCoinEmojiId}>`;
     const space = '\u2002';
     const padding = [38, 62, 32, 68, 56, 49, 42, 50, 58, 49, 21];
 
