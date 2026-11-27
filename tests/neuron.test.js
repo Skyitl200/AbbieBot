@@ -12,7 +12,7 @@ test('3D Neuron Model contains 12 structures with only the long left-segment axo
  assert.equal(new Set(set.models.map(m=>m.id)).size,12);assert.equal(new Set(set.models.map(m=>m.expectedImageFile)).size,12);
  const axons=set.models.filter(m=>m.name==='Axon');assert.equal(axons.length,1);assert.equal(axons[0].id,'neuron-08');
  const ids=labModelsMessage('u','nervous').components[0].toJSON().components[0].options.map(o=>o.value);
- assert.ok(ids.includes('neuron'));assert.ok(ids.includes('brain-left-sagittal'));assert.ok(ids.includes('spinal-nerves'));assert.ok(!ids.includes('spinal-cord'));
+ assert.ok(ids.includes('neuron'));assert.ok(ids.includes('brain-left-sagittal'));assert.ok(!ids.includes('spinal-nerves'));assert.ok(!ids.includes('spinal-cord'));
 });
 test('both answer modes use the marked full photo and accept anatomical aliases without duplicate axon choices',()=>{
  for(const mode of ['multiple_choice','typed']){

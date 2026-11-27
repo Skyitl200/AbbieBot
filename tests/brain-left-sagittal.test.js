@@ -15,7 +15,7 @@ test('left sagittal brain set contains all 26 requested structures under Nervous
     assert.deepEqual(set.models.map(m => m.name), ['Parietal lobe', 'Frontal lobe', 'Corpus callosum', 'Septum pellucidum', 'Cingulate gyrus', 'Anterior commissure', 'Optic chiasma', 'Pituitary gland', 'Mammillary body', 'Hypothalamus', 'Pons', 'Midbrain', 'Medulla oblongata', 'Spinal cord', 'Cerebellum', 'Arbor vitae', 'Fourth ventricle', 'Cerebral aqueduct', 'Occipital lobe', 'Inferior colliculus', 'Superior colliculus', 'Pineal body (gland)', 'Thalamus', 'Intermediate mass', 'Choroid plexus', 'Fornix']);
     const options = labModelsMessage('u', 'nervous').components[0].toJSON().components[0].options;
     assert.ok(options.some(o => o.value === id && o.description.includes('26 images')));
-    assert.ok(options.some(o => o.value === 'spinal-nerves'));
+    assert.ok(!options.some(o => o.value === 'spinal-nerves'));
     assert.ok(labModeMessage('u', id).embeds[0].toJSON().description.includes('all 26 photos studied together'));
 });
 test('each identification card has its own marked image and supports both answer modes', () => {

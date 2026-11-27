@@ -69,7 +69,7 @@ test('setup controls are present for lecture, saved classes, empty sets, and lab
   assert.ok(countMessage('u','Lecture',50,'study:count:u:urinary').components.flatMap(r=>r.toJSON().components).some(b=>b.custom_id==='study:configurelecture:u:urinary'));
   assert.ok(countMessage('u','Chemistry',5,'study:coursecount:u:chem_lecture:random').components.flatMap(r=>r.toJSON().components).some(b=>b.custom_id==='study:configurecourse:u:chem_lecture:random'));
   assert.ok(countMessage('u','Empty',0,'study:count:u:urinary').components.flatMap(r=>r.toJSON().components).some(b=>b.label==='Choose questions'));
-  assert.ok(labModeMessage('u','spinal-nerves').components.flatMap(r=>r.toJSON().components).some(b=>b.custom_id==='study:configurelab:u:spinal-nerves'));
+  assert.ok(labModeMessage('u','ear-model').components.flatMap(r=>r.toJSON().components).some(b=>b.custom_id==='study:configurelab:u:ear-model'));
 });
 
 test('question picker paginates all questions and shows exact ON/OFF target states',()=>{
@@ -89,7 +89,7 @@ test('question picker paginates all questions and shows exact ON/OFF target stat
 test('before-set choices filter both lab modes and can be restored in a later visit',async()=>{
   const s=storage();
   const open=interaction();
-  await handleStudyInteraction(open,s.client,['configurelab','u','spinal-nerves']);
+  await handleStudyInteraction(open,s.client,['configurelab','u','ear-model']);
   const payload=open.calls.at(-1)[1];
   const menu=payload.components[0].toJSON().components[0];
   assert.equal(menu.options.length,10);
@@ -103,16 +103,16 @@ test('before-set choices filter both lab modes and can be restored in a later vi
   await handleStudyInteraction(interaction({values:[offValue]}),s.client,['configselect','u',token,'0']);
   for(const mode of ['multiple_choice','typed']){
     const start=interaction({values:[mode]});
-    await handleStudyInteraction(start,s.fresh(),['labmode','u','spinal-nerves']);
+    await handleStudyInteraction(start,s.fresh(),['labmode','u','ear-model']);
     const published=start.calls.find(([type])=>type==='followUp')[1];
     const control=published.components[0].toJSON().components[0].custom_id.split(':');
     const session=getStudySession('g','u',control[3]);
-    assert.equal(session.questions.length,16);
+    assert.equal(session.questions.length,13);
     assert.equal(session.questions.some(question=>question.id===id),false);
   }
   await handleStudyInteraction(interaction({values:[`on|${id}`]}),s.client,['configselect','u',token,'0']);
   assert.deepEqual(await getQuestionPreferences(s.fresh(),'g','u'),{});
-  assert.equal(enabledQuestions(labQuestions('spinal-nerves','typed'),{}).length,17);
+  assert.equal(enabledQuestions(labQuestions('ear-model','typed'),{}).length,14);
 });
 
 test('foreign controls cannot change saved settings or view another member picker',async()=>{
@@ -139,13 +139,13 @@ test('during-test button saves choice without scoring, skipping, or affecting an
 
 test('all questions OFF leaves a setup recovery button instead of an empty session',async()=>{
   const s=storage();
-  for(const question of labQuestions('spinal-nerves','multiple_choice'))await setQuestionEnabled(s.client,'g','u',question,false);
+  for(const question of labQuestions('ear-model','multiple_choice'))await setQuestionEnabled(s.client,'g','u',question,false);
   const start=interaction({values:['typed']});
-  await handleStudyInteraction(start,s.client,['labmode','u','spinal-nerves']);
+  await handleStudyInteraction(start,s.client,['labmode','u','ear-model']);
   assert.equal(start.calls.some(([type])=>type==='followUp'),false);
   const payload=start.calls.at(-1)[1];
   assert.match(payload.embeds[0].toJSON().description,/No enabled questions/);
-  assert.ok(payload.components.flatMap(r=>r.toJSON().components).some(b=>b.custom_id==='study:configurelab:u:spinal-nerves'));
+  assert.ok(payload.components.flatMap(r=>r.toJSON().components).some(b=>b.custom_id==='study:configurelab:u:ear-model'));
 });
 
 test('saved-bank SQL excludes disabled IDs before random LIMIT; picker loads full pool',async()=>{

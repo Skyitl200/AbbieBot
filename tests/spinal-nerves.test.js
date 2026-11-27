@@ -3,50 +3,16 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { PNG } from 'pngjs';
-import { LAB_SETS, LAB_CATEGORIES, labQuestions, labModelImage, labCategoryMessage, labModelsMessage } from '../src/services/study/labModels.js';
-import { matchesLabAnswer } from '../src/services/study/answerMatching.js';
+import { LAB_SETS, LAB_CATEGORIES, labModelsMessage } from '../src/services/study/labModels.js';
 
 const manifest = JSON.parse(readFileSync(new URL('../study-data/lab-models/spinal-nerves.json', import.meta.url)));
 const asset = file => readFileSync(new URL(`../study-assets/lab-models/${file}`, import.meta.url));
 const hash = data => createHash('sha256').update(data).digest('hex');
 
-test('Nervous System menu exposes the spinal nerves set in both answer modes', () => {
+test('removed spinal nerves and plexuses set is absent from the lab menu', () => {
   assert.ok(LAB_CATEGORIES.some(category => category.id === 'nervous'));
-  assert.ok(labCategoryMessage('u').components[0].toJSON().components[0].options.some(option => option.value === 'nervous'));
-  assert.ok(labModelsMessage('u', 'nervous').components[0].toJSON().components[0].options.some(option => option.value === 'spinal-nerves'));
-  const set = LAB_SETS.find(set => set.id === 'spinal-nerves');
-  assert.equal(set.models.length, 17);
-  assert.equal(new Set(set.models.map(model => model.id)).size, 17);
-  for (const mode of ['multiple_choice', 'typed']) {
-    const questions = labQuestions('spinal-nerves', mode);
-    assert.equal(questions.length, 17);
-    for (const q of questions) {
-      assert.ok(labModelImage(q));
-      if (mode === 'multiple_choice') {
-        assert.equal(q.options.length, 4);
-        assert.equal(new Set(q.options).size, 4);
-        assert.equal(q.options[q.correct[0]], q.modelName);
-      } else {
-        assert.equal(q.type, 'fill_blank');
-        assert.ok(matchesLabAnswer(q.modelName, q.answers, q.competingAnswers));
-      }
-    }
-  }
-});
-
-test('typed grading keeps adjacent nerves and plexuses distinct and accepts peroneal alias', () => {
-  const qs = labQuestions('spinal-nerves', 'typed');
-  const find = text => qs.find(q => q.modelName.startsWith(text));
-  for (const [target, wrong] of [['Median nerve', 'radial nerve'], ['Ulnar nerve', 'median nerve'], ['Lumbar plexus', 'sacral plexus'], ['Cervical plexus', 'cervical nerves']]) {
-    const q = find(target);
-    assert.equal(matchesLabAnswer(wrong, q.answers, q.competingAnswers), false);
-  }
-  const fibular = find('Common fibular');
-  assert.ok(matchesLabAnswer('common peroneal nerve', fibular.answers, fibular.competingAnswers));
-  assert.match(find('Phrenic').question, /side of the neck/);
-  assert.match(find('Femoral').question, /lumbar plexus origin/);
-  assert.ok(manifest.models.every(model => model.reference?.startsWith('User supplied individual')));
-  assert.match(manifest.models.find(model => model.name === 'Cervical plexus').questions[0].explanation, /usual core is C1–C4/);
+  assert.equal(labModelsMessage('u', 'nervous').components[0].toJSON().components[0].options.some(option => option.value === 'spinal-nerves'), false);
+  assert.equal(LAB_SETS.some(set => set.id === 'spinal-nerves'), false);
 });
 
 test('every card preserves original photo pixels outside the recorded overlay', () => {
