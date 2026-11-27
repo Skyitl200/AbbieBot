@@ -49,18 +49,18 @@ function formatShop(guild) {
     const gift = emoji('1575591241557479434', '2755presentbox');
     const coins = emoji('1553716009456898098', 'ManyMerits');
     const coin = emoji('1553709164012900404', 'MeritCoins');
-    const description = [
-        '**' + gift + ' Rewards** · ' + coins + ' **Merit Coin Cost**',
-        ...rewards.map(([id, label, price]) =>
-            '**' + (catalogLabels[id] ?? label) + '**' + (catalogDetails[id] ?? '') +
-            ' · ' + coin + ' ' + formatCoins.format(price)
-        ),
-        '**Choose a reward below to redeem.**',
-    ].join('\n\n');
-
     return new EmbedBuilder()
+        .setColor(0x526e91)
         .setTitle('✦ HEALTHSCIENCEGUILD REWARD SHOP ✦')
-        .setDescription(description);
+        .setDescription(gift + ' **Rewards**   ·   ' + coins + ' **Merit Coin Cost**')
+        .addFields(rewards.map(([id, label, price]) => ({
+            name: catalogLabels[id] ?? label,
+            value: [coin + ' **' + formatCoins.format(price) + ' Merits**', catalogDetails[id]?.trim()]
+                .filter(Boolean)
+                .join('\n'),
+            inline: false,
+        })))
+        .setFooter({ text: 'Choose a reward from the dropdown below.' });
 }
 
 
