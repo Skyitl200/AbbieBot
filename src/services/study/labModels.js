@@ -39,6 +39,7 @@ export const LAB_SETS = [
     { id: 'sheep-brain', title: "3D Sheep's Brain Structures", category: 'nervous', showStructureList: true, models: loadModels('sheep-brain.json') },
     { id: 'brain-left-sagittal', title: '3D Model of the Structures of the Brain - Left Sagittal View', category: 'nervous', showStructureList: true, models: loadModels('brain-left-sagittal.json') },
     { id: 'spinal-nerves', title: '3D Spinal Nerves and Plexuses', category: 'nervous', showStructureList: true, models: loadModels('spinal-nerves.json') },
+    { id: 'ear-model', title: '3D Model of the Ear', category: 'special-senses', showStructureList: true, models: loadModels('ear-model.json') },
     { id: 'inner-ear', title: '3D Structure of the Inner Ear', category: 'special-senses', showStructureList: true, models: loadModels('inner-ear.json') },
     { id: 'eye-anatomy', title: '3D Model of Eye Anatomy', category: 'special-senses', showStructureList: true, models: eyeAnatomyModels.filter(model => model.verificationStatus !== 'pending'), pendingStructures: eyeAnatomyModels.filter(model => model.verificationStatus === 'pending').map(model => model.name) },
     { id: 'lower-extremities', title: '3D Muscles of the lower extremities (hip, thigh, knee, leg, ankle, and foot)', category: 'muscular', showStructureList: true, models: loadModels('lower-extremities.json') },

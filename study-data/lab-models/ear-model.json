@@ -1,0 +1,595 @@
+{
+  "course": "Anatomy and Physiology Lab",
+  "category": "Special Senses",
+  "modelGroup": "3D Model of the Ear",
+  "models": [
+    {
+      "id": "ear-model-01",
+      "name": "Helix",
+      "questions": [
+        {
+          "id": "lab-ear-model-01",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Helix",
+            "Lobule",
+            "Tympanic membrane",
+            "Stapes"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "helix"
+          ],
+          "explanation": "The helix forms the curved outer rim of the auricle.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-01.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          139,
+          63
+        ],
+        "tail": [
+          64,
+          24
+        ]
+      },
+      "imageSha256": "276bf1e2b1ff08ace425ca72e128507d59265f7ba4982b6b09b87bc76d4bef99"
+    },
+    {
+      "id": "ear-model-02",
+      "name": "Auricle",
+      "questions": [
+        {
+          "id": "lab-ear-model-02",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "External auditory canal",
+            "Auricle",
+            "Malleus",
+            "Oval window"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "auricle",
+            "pinna"
+          ],
+          "explanation": "The auricle, or pinna, is the external flap of the ear that collects sound.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-02.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          125,
+          215
+        ],
+        "tail": [
+          48,
+          258
+        ]
+      },
+      "imageSha256": "97e4b2715396955be3ec0558eea3a3cf9ae9c7182cabb0e9ac7b6972ce4d2e65"
+    },
+    {
+      "id": "ear-model-03",
+      "name": "Lobule",
+      "questions": [
+        {
+          "id": "lab-ear-model-03",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Tympanic membrane",
+            "Incus",
+            "Lobule",
+            "Cochlea"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "lobule",
+            "earlobe",
+            "ear lobe"
+          ],
+          "explanation": "The lobule is the soft inferior portion of the auricle.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-03.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          196,
+          494
+        ],
+        "tail": [
+          107,
+          527
+        ]
+      },
+      "imageSha256": "9f6012b2af4a2471569e005fdf18f676bbbee32382ee1c6325ea23ca9cc2bf79"
+    },
+    {
+      "id": "ear-model-04",
+      "name": "External auditory canal",
+      "questions": [
+        {
+          "id": "lab-ear-model-04",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Malleus",
+            "Stapes",
+            "Vestibule",
+            "External auditory canal"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "external auditory canal",
+            "external acoustic meatus",
+            "external auditory meatus",
+            "ear canal"
+          ],
+          "explanation": "The external auditory canal conducts sound toward the tympanic membrane.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-04.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          343,
+          343
+        ],
+        "tail": [
+          366,
+          421
+        ]
+      },
+      "imageSha256": "f8c4649495c96f4c74fe24519ef5c1b99c289b45737aee7bba6f7e568096e36e"
+    },
+    {
+      "id": "ear-model-05",
+      "name": "Tympanic membrane",
+      "questions": [
+        {
+          "id": "lab-ear-model-05",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Tympanic membrane",
+            "Incus",
+            "Oval window",
+            "Semicircular canals"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "tympanic membrane",
+            "eardrum",
+            "ear drum"
+          ],
+          "explanation": "The tympanic membrane separates the external auditory canal from the middle ear and vibrates with sound.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-05.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          553,
+          306
+        ],
+        "tail": [
+          493,
+          365
+        ]
+      },
+      "imageSha256": "0447fd9a6c41132734e53064d6c16cdcd6aba7b2153ca6ac886ed0e572581ca6"
+    },
+    {
+      "id": "ear-model-06",
+      "name": "Malleus",
+      "questions": [
+        {
+          "id": "lab-ear-model-06",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Stapes",
+            "Malleus",
+            "Cochlea",
+            "Auditory tube"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "malleus",
+            "hammer"
+          ],
+          "explanation": "The malleus is the ossicle attached to the tympanic membrane; it transmits vibration to the incus.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-06.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          552,
+          218
+        ],
+        "tail": [
+          487,
+          181
+        ]
+      },
+      "imageSha256": "e67a19f7da4108caa78543eb337be5fcf00b134acc6ee6447a4032036d035bb3"
+    },
+    {
+      "id": "ear-model-07",
+      "name": "Incus",
+      "questions": [
+        {
+          "id": "lab-ear-model-07",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Oval window",
+            "Vestibule",
+            "Incus",
+            "Vestibulocochlear nerve (CN VIII)"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "incus",
+            "anvil"
+          ],
+          "explanation": "The incus is the middle ossicle, connecting the malleus to the stapes.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-07.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          571,
+          246
+        ],
+        "tail": [
+          508,
+          275
+        ]
+      },
+      "imageSha256": "2dff30aafdf34f3bb0faee1eaa995a7a62f4dbd62ee383e9966b48aea718bf69"
+    },
+    {
+      "id": "ear-model-08",
+      "name": "Stapes",
+      "questions": [
+        {
+          "id": "lab-ear-model-08",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cochlea",
+            "Semicircular canals",
+            "Helix",
+            "Stapes"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "stapes",
+            "stirrup"
+          ],
+          "explanation": "The stapes has a footplate that transmits vibration to the oval window.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-08.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          594,
+          234
+        ],
+        "tail": [
+          648,
+          290
+        ]
+      },
+      "imageSha256": "52fd7e455bf6646fce4f42faaaa8c3ff37628b476f07d7856ac8f746babf2773"
+    },
+    {
+      "id": "ear-model-09",
+      "name": "Oval window",
+      "questions": [
+        {
+          "id": "lab-ear-model-09",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Oval window",
+            "Vestibule",
+            "Auditory tube",
+            "Auricle"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "oval window",
+            "vestibular window",
+            "fenestra vestibuli"
+          ],
+          "explanation": "The oval window is the opening into the vestibule occupied by the footplate of the stapes.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-09.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          600,
+          218
+        ],
+        "tail": [
+          656,
+          255
+        ]
+      },
+      "imageSha256": "2b1e1d277fe2d1c7d7bd2bfecb05669cc3e078fa2caca336fe103bf858546c1f"
+    },
+    {
+      "id": "ear-model-10",
+      "name": "Cochlea",
+      "questions": [
+        {
+          "id": "lab-ear-model-10",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Semicircular canals",
+            "Cochlea",
+            "Vestibulocochlear nerve (CN VIII)",
+            "Lobule"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "cochlea"
+          ],
+          "explanation": "The cochlea is the spiral-shaped part of the inner ear involved in hearing.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-10.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          683,
+          224
+        ],
+        "tail": [
+          772,
+          209
+        ]
+      },
+      "imageSha256": "1a7d2eb2225591d92b79fc6160d6670412ab41bbf0d405160a0957d026550f72"
+    },
+    {
+      "id": "ear-model-11",
+      "name": "Vestibule",
+      "questions": [
+        {
+          "id": "lab-ear-model-11",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Auditory tube",
+            "Helix",
+            "Vestibule",
+            "External auditory canal"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "vestibule"
+          ],
+          "explanation": "The vestibule is the central part of the bony labyrinth between the cochlea and semicircular canals.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-11.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          636,
+          197
+        ],
+        "tail": [
+          706,
+          142
+        ]
+      },
+      "imageSha256": "e5605a859afa42c86b96c8d17a3e88f0eabea5c47c2a9820a3ebbf1dd3408965"
+    },
+    {
+      "id": "ear-model-12",
+      "name": "Semicircular canals",
+      "questions": [
+        {
+          "id": "lab-ear-model-12",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Vestibulocochlear nerve (CN VIII)",
+            "Auricle",
+            "Tympanic membrane",
+            "Semicircular canals"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "semicircular canals",
+            "semicircular canal"
+          ],
+          "explanation": "The semicircular canals contain ducts whose receptors detect rotational head movement.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-12.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          579,
+          151
+        ],
+        "tail": [
+          510,
+          101
+        ]
+      },
+      "imageSha256": "4af14ea72c3cfdd09cbc9c92e26d4fb643a42f9470512ae92f791353327aa0f1"
+    },
+    {
+      "id": "ear-model-13",
+      "name": "Auditory tube",
+      "questions": [
+        {
+          "id": "lab-ear-model-13",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Auditory tube",
+            "Helix",
+            "Lobule",
+            "Malleus"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "auditory tube",
+            "eustachian tube",
+            "pharyngotympanic tube",
+            "pharyngo tympanic tube"
+          ],
+          "explanation": "The auditory tube connects the middle ear to the nasopharynx and helps equalize pressure.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-13.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          819,
+          440
+        ],
+        "tail": [
+          898,
+          395
+        ]
+      },
+      "imageSha256": "ef8017047bb93d45f699aee1f1d884a8973fa89b4f7aa92f06dd8fd75a6e932b"
+    },
+    {
+      "id": "ear-model-14",
+      "name": "Vestibulocochlear nerve (CN VIII)",
+      "questions": [
+        {
+          "id": "lab-ear-model-14",
+          "question": "What structure is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Auricle",
+            "Vestibulocochlear nerve (CN VIII)",
+            "External auditory canal",
+            "Incus"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "vestibulocochlear nerve",
+            "vestibulocochlear nerve cn viii",
+            "vestibulocochlear nerve cn 8",
+            "vestibulocochlear nerve 8",
+            "cranial nerve viii",
+            "cranial nerve 8",
+            "cn viii",
+            "cn 8"
+          ],
+          "explanation": "The vestibulocochlear nerve is cranial nerve VIII and carries hearing and balance information.",
+          "requiresModelImage": true
+        }
+      ],
+      "expectedImageFile": "ear-model/em-14.png",
+      "renderMethod": "original-photo-marker-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          730,
+          201
+        ],
+        "tail": [
+          803,
+          152
+        ]
+      },
+      "imageSha256": "a08915d21a8a79c0660f389f50e32b1a44c67daca7d3ce08a7df21c5ad87c4cf"
+    }
+  ],
+  "sourceImageFile": "ear-model-original.png",
+  "sourceImageSha256": "29eddfc4a570b9749586f0f009bef10b6579d5134f94b90ea2ebf113fbdd4620",
+  "source": "User-provided ok111.png and matching Quizlet reference screenshot. Full original photograph retained; each question shows one cyan pointer. This set includes external, middle, and inner ear structures and is separate from the detailed inner-ear model set.",
+  "referenceUrl": "https://quizlet.com/1032066460/3d-model-of-the-ear-diagram/"
+}
