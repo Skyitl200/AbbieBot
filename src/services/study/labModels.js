@@ -5,6 +5,7 @@ import { shuffle } from './questions.js';
 
 const loadModels = file => JSON.parse(readFileSync(new URL(`../../../study-data/lab-models/${file}`, import.meta.url), 'utf8')).models;
 export const LAB_MODELS = loadModels('early-development.json');
+const nerveModels = loadModels('nerves.json');
 const eyeAnatomyModels = loadModels('eye-anatomy.json');
 export const LAB_SETS = [
     { id: 'early-development', title: 'Early Development Models', category: 'reproductive', models: LAB_MODELS },
@@ -34,6 +35,7 @@ export const LAB_SETS = [
     { id: 'urinary-system', title: '3D Model of Urinary System', category: 'urinary', models: loadModels('urinary-system.json') },
     { id: 'kidney', title: 'Kidney 3D Model', category: 'urinary', models: loadModels('kidney.json') },
     { id: 'bronchial-tree', title: 'Bronchial Tree 3D Model', category: 'respiratory', models: loadModels('bronchial-tree.json') },
+    { id: 'nerves', title: '3D Model of the Nerves', category: 'nervous', showStructureList: true, models: nerveModels.filter(model => model.verificationStatus !== 'pending'), pendingStructures: nerveModels.filter(model => model.verificationStatus === 'pending').map(model => model.name) },
     { id: 'neuron', title: '3D Neuron Model', category: 'nervous', showStructureList: true, models: loadModels('neuron.json') },
     { id: 'brain-ventricles', title: '3D Model of the Brain Ventricles', category: 'nervous', showStructureList: true, models: loadModels('brain-ventricles.json') },
     { id: 'meninge-protection', title: '3D Meninge Protection of the Brain', category: 'nervous', showStructureList: true, models: loadModels('meninge-protection.json') },

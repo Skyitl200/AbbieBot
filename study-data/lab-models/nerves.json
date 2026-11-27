@@ -1,0 +1,500 @@
+{
+  "course": "Anatomy and Physiology Lab",
+  "category": "Nervous System",
+  "modelGroup": "3D Model of the Nerves",
+  "source": "Three user-provided model photographs from Archive 2.zip. Original photos are preserved at native dimensions; only cyan/black pointer overlays are added. Coccygeal nerve awaits a labelled reference.",
+  "sources": {
+    "upper": {
+      "file": "nerves-upper-original.webp",
+      "sha256": "0e18aa38ef59c5a3a9df8af5aac96dbdc5dee4760ac04134bee82eb09e2cff86"
+    },
+    "middle": {
+      "file": "nerves-middle-original.webp",
+      "sha256": "582a9299491f1f582785a2933131749affdceb95eb9239dd1fcd341a9e94fcf4"
+    },
+    "lower": {
+      "file": "nerves-lower-original.webp",
+      "sha256": "23c075dae75dd347e6c090c18b93e603594e7479a47885ce42336efc551b4a66"
+    }
+  },
+  "models": [
+    {
+      "id": "nerves-01",
+      "name": "Thoracic nerves",
+      "sourceKey": "upper",
+      "verificationStatus": "ready",
+      "expectedImageFile": "nerves/nerves-01.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          548,
+          727
+        ],
+        "tail": [
+          688,
+          751
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-nerves-01",
+          "question": "Which nerve or nerve group is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Thoracic nerves",
+            "Sciatic nerve",
+            "Tibial nerve",
+            "Common fibular nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "thoracic nerves",
+            "thoracic nerve",
+            "thoracic spinal nerves"
+          ],
+          "explanation": "Thoracic spinal nerves T1\u2013T12 supply the thoracic region; most ventral rami run along the intercostal spaces.",
+          "requiresModelImage": true
+        }
+      ],
+      "view": {
+        "crop": [
+          0,
+          0,
+          928,
+          928
+        ],
+        "scale": 1
+      },
+      "imageSha256": "bd38e3cad5b48b08dc35410050c5914277e9fbc309950f70407c4a016e69bbf2"
+    },
+    {
+      "id": "nerves-02",
+      "name": "Sciatic nerve",
+      "sourceKey": "middle",
+      "verificationStatus": "ready",
+      "expectedImageFile": "nerves/nerves-02.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          575,
+          707
+        ],
+        "tail": [
+          685,
+          742
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-nerves-02",
+          "question": "Which nerve or nerve group is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Sciatic nerve",
+            "Tibial nerve",
+            "Common fibular nerve",
+            "Femoral nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "sciatic nerve",
+            "sciatic"
+          ],
+          "explanation": "The sciatic nerve arises from the sacral plexus and continues through the posterior thigh.",
+          "requiresModelImage": true
+        }
+      ],
+      "view": {
+        "crop": [
+          0,
+          0,
+          942,
+          942
+        ],
+        "scale": 1
+      },
+      "imageSha256": "14588d28ced60c47c7733af6123c793e32abc15bcede95bde720c451e51e6532"
+    },
+    {
+      "id": "nerves-03",
+      "name": "Tibial nerve",
+      "sourceKey": "lower",
+      "verificationStatus": "ready",
+      "expectedImageFile": "nerves/nerves-03.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          346,
+          186
+        ],
+        "tail": [
+          448,
+          207
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-nerves-03",
+          "question": "Which nerve or nerve group is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Tibial nerve",
+            "Common fibular nerve",
+            "Femoral nerve",
+            "Radial nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "tibial nerve",
+            "tibial"
+          ],
+          "explanation": "The tibial nerve supplies the posterior leg and continues behind the medial malleolus.",
+          "requiresModelImage": true
+        }
+      ],
+      "view": {
+        "crop": [
+          0,
+          0,
+          600,
+          600
+        ],
+        "scale": 1
+      },
+      "imageSha256": "95e02e6d3cf701e1ac57a3d36367d1615d0c6beeba83cdf8e5e6198ebac55dda"
+    },
+    {
+      "id": "nerves-04",
+      "name": "Common fibular nerve",
+      "sourceKey": "lower",
+      "verificationStatus": "ready",
+      "expectedImageFile": "nerves/nerves-04.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          191,
+          124
+        ],
+        "tail": [
+          102,
+          146
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-nerves-04",
+          "question": "Which nerve or nerve group is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Common fibular nerve",
+            "Femoral nerve",
+            "Radial nerve",
+            "Median nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "common fibular nerve",
+            "common peroneal nerve",
+            "common fibular",
+            "common peroneal"
+          ],
+          "explanation": "The common fibular nerve passes toward the lateral knee and fibular neck before dividing into superficial and deep branches.",
+          "requiresModelImage": true
+        }
+      ],
+      "view": {
+        "crop": [
+          0,
+          0,
+          600,
+          600
+        ],
+        "scale": 1
+      },
+      "imageSha256": "22d579f37e46c3e1554a223be0a5857cae420999e7771d14238ace339333e4f1"
+    },
+    {
+      "id": "nerves-05",
+      "name": "Femoral nerve",
+      "sourceKey": "middle",
+      "verificationStatus": "ready",
+      "expectedImageFile": "nerves/nerves-05.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          325,
+          596
+        ],
+        "tail": [
+          429,
+          626
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-nerves-05",
+          "question": "Which nerve or nerve group is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Femoral nerve",
+            "Radial nerve",
+            "Median nerve",
+            "Ulnar nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "femoral nerve",
+            "femoral"
+          ],
+          "explanation": "The femoral nerve arises from the lumbar plexus and branches through the anterior thigh.",
+          "requiresModelImage": true
+        }
+      ],
+      "view": {
+        "crop": [
+          0,
+          0,
+          942,
+          942
+        ],
+        "scale": 1
+      },
+      "imageSha256": "cfabf64ec56fefd558329faa326f9a16b24b7cfeedc12886662b2ddcbefb7651"
+    },
+    {
+      "id": "nerves-06",
+      "name": "Radial nerve",
+      "sourceKey": "middle",
+      "verificationStatus": "ready",
+      "expectedImageFile": "nerves/nerves-06.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          183,
+          338
+        ],
+        "tail": [
+          105,
+          366
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-nerves-06",
+          "question": "Which nerve or nerve group is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Radial nerve",
+            "Median nerve",
+            "Ulnar nerve",
+            "Axillary nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "radial nerve",
+            "radial"
+          ],
+          "explanation": "The radial nerve continues toward the lateral elbow and divides into branches supplying the forearm.",
+          "requiresModelImage": true
+        }
+      ],
+      "view": {
+        "crop": [
+          0,
+          0,
+          942,
+          942
+        ],
+        "scale": 1
+      },
+      "imageSha256": "e76ea414ea24eaf895ac60a32b9e9a197f34de9a96d7100f89e0ca0f4cee67a2"
+    },
+    {
+      "id": "nerves-07",
+      "name": "Median nerve",
+      "sourceKey": "middle",
+      "verificationStatus": "ready",
+      "expectedImageFile": "nerves/nerves-07.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          216,
+          372
+        ],
+        "tail": [
+          290,
+          399
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-nerves-07",
+          "question": "Which nerve or nerve group is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Median nerve",
+            "Ulnar nerve",
+            "Axillary nerve",
+            "Thoracic nerves"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "median nerve",
+            "median"
+          ],
+          "explanation": "The median nerve runs centrally down the anterior forearm toward the carpal tunnel.",
+          "requiresModelImage": true
+        }
+      ],
+      "view": {
+        "crop": [
+          0,
+          0,
+          942,
+          942
+        ],
+        "scale": 1
+      },
+      "imageSha256": "34b9126aad2907a2d341ccae75e0375daca9ee1723ee28e8683d4f8f48a8b4d4"
+    },
+    {
+      "id": "nerves-08",
+      "name": "Ulnar nerve",
+      "sourceKey": "middle",
+      "verificationStatus": "ready",
+      "expectedImageFile": "nerves/nerves-08.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          238,
+          368
+        ],
+        "tail": [
+          306,
+          340
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-nerves-08",
+          "question": "Which nerve or nerve group is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Ulnar nerve",
+            "Axillary nerve",
+            "Thoracic nerves",
+            "Sciatic nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "ulnar nerve",
+            "ulnar"
+          ],
+          "explanation": "The ulnar nerve passes the medial elbow and continues along the ulnar side of the forearm.",
+          "requiresModelImage": true
+        }
+      ],
+      "view": {
+        "crop": [
+          0,
+          0,
+          942,
+          942
+        ],
+        "scale": 1
+      },
+      "imageSha256": "a5c03fc68a0e98993042c217d96caeae85a03e6e33c122d722692b175751f293"
+    },
+    {
+      "id": "nerves-09",
+      "name": "Axillary nerve",
+      "sourceKey": "upper",
+      "verificationStatus": "ready",
+      "expectedImageFile": "nerves/nerves-09.png",
+      "renderMethod": "original-photo-arrow-overlay",
+      "annotation": {
+        "kind": "arrow",
+        "target": [
+          228,
+          644
+        ],
+        "tail": [
+          121,
+          612
+        ]
+      },
+      "questions": [
+        {
+          "id": "lab-nerves-09",
+          "question": "Which nerve or nerve group is indicated by the cyan pointer?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Axillary nerve",
+            "Thoracic nerves",
+            "Sciatic nerve",
+            "Tibial nerve"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "axillary nerve",
+            "axillary"
+          ],
+          "explanation": "The axillary nerve passes around the surgical neck of the humerus near the shoulder.",
+          "requiresModelImage": true
+        }
+      ],
+      "view": {
+        "crop": [
+          0,
+          0,
+          928,
+          928
+        ],
+        "scale": 1
+      },
+      "imageSha256": "94b8749962f41467bcc4b2ec9b3766598897d38137759a9aef83d943a4db0ed4"
+    },
+    {
+      "id": "nerves-10",
+      "name": "Coccygeal nerve",
+      "verificationStatus": "pending",
+      "reason": "A labelled reference is needed to distinguish the tiny coccygeal nerve from adjacent sacral roots and the filum terminale in the supplied photos.",
+      "questions": []
+    }
+  ]
+}
