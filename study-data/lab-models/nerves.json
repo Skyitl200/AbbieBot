@@ -2,7 +2,7 @@
   "course": "Anatomy and Physiology Lab",
   "category": "Nervous System",
   "modelGroup": "3D Model of the Nerves",
-  "source": "Three user-provided model photographs from Archive 2.zip. Original photos are preserved at native dimensions; only cyan/black pointer overlays are added. Coccygeal nerve awaits a labelled reference.",
+  "source": "Three user-provided model photographs from Archive 2.zip. Original photos are preserved at native dimensions; only cyan/black pointer overlays are added. Coccygeal region matched to the user-supplied yellow-circle reference; its prompt identifies the nerve associated with the region, not the filum terminale.",
   "sources": {
     "upper": {
       "file": "nerves-upper-original.webp",
@@ -492,9 +492,54 @@
     {
       "id": "nerves-10",
       "name": "Coccygeal nerve",
-      "verificationStatus": "pending",
-      "reason": "A labelled reference is needed to distinguish the tiny coccygeal nerve from adjacent sacral roots and the filum terminale in the supplied photos.",
-      "questions": []
+      "verificationStatus": "ready",
+      "questions": [
+        {
+          "id": "lab-nerves-10",
+          "question": "Which spinal nerve is associated with the highlighted coccygeal region at the base of the sacrum?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Coccygeal nerve",
+            "Femoral nerve",
+            "Sciatic nerve",
+            "Thoracic nerves"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "coccygeal nerve",
+            "coccygeal spinal nerve",
+            "coccygeal",
+            "co1"
+          ],
+          "explanation": "The coccygeal spinal nerve pair (Co1) is associated with the inferior sacral/coccygeal region marked in the supplied reference. The central filum terminale is connective tissue, not the coccygeal nerve.",
+          "requiresModelImage": true
+        }
+      ],
+      "sourceKey": "middle",
+      "expectedImageFile": "nerves/nerves-10.png",
+      "renderMethod": "original-photo-region-overlay",
+      "reference": "User-supplied Quizlet screenshot highlights the inferior sacral/coccygeal region with a yellow circle. A region marker is used rather than identifying the central filum terminale as a nerve.",
+      "annotation": {
+        "kind": "region",
+        "target": [
+          470,
+          492
+        ],
+        "radius": 28
+      },
+      "view": {
+        "crop": [
+          0,
+          0,
+          942,
+          942
+        ],
+        "scale": 1
+      },
+      "imageSha256": "e4880d237a8d53c0f0c3dbffbff9868f46dea722230c21ca442ec7106165fca6"
     }
   ]
 }
