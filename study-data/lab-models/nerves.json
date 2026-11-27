@@ -239,12 +239,12 @@
       "annotation": {
         "kind": "arrow",
         "target": [
-          603,
-          701
+          337,
+          602
         ],
         "tail": [
-          711,
-          723
+          260,
+          578
         ]
       },
       "questions": [
@@ -279,8 +279,8 @@
         ],
         "scale": 1
       },
-      "imageSha256": "797769bf8a1626ccffc0af0e10c6a03c097bc4dd984e56b4a3d15881df45655d",
-      "reference": "User clarified anatomical left, not image-left: pointer targets the nerve lying over the femur on the image-right thigh (model anatomical left)."
+      "imageSha256": "a1884eef76921ea91fa111c2a818810ca1aca29860c927787df94aa7ec5f184c",
+      "reference": "User-supplied latest Quizlet screenshot: femoral marker matched to the yellow-circled proximal thigh nerve immediately below the hip, beside the femur. This supersedes prior left/right interpretations."
     },
     {
       "id": "nerves-06",
