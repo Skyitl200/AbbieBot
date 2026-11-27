@@ -239,12 +239,12 @@
       "annotation": {
         "kind": "arrow",
         "target": [
-          292,
-          700
+          603,
+          701
         ],
         "tail": [
-          221,
-          714
+          711,
+          723
         ]
       },
       "questions": [
@@ -279,8 +279,8 @@
         ],
         "scale": 1
       },
-      "imageSha256": "dcc349bc2b83729729b1ab8c09614fbcc27b16c4ad229939f2ed265deafdec9e",
-      "reference": "User correction: use the nerve on the image-left side sitting directly over the femur; marker moved from the medial proximal thigh to that nerve on the femoral shaft."
+      "imageSha256": "797769bf8a1626ccffc0af0e10c6a03c097bc4dd984e56b4a3d15881df45655d",
+      "reference": "User clarified anatomical left, not image-left: pointer targets the nerve lying over the femur on the image-right thigh (model anatomical left)."
     },
     {
       "id": "nerves-06",
