@@ -2,6 +2,7 @@ import {
     ActionRowBuilder,
     ButtonBuilder,
     ButtonStyle,
+    EmbedBuilder,
     StringSelectMenuBuilder,
     MessageFlags,
     SlashCommandBuilder,
@@ -48,18 +49,18 @@ function formatShop(guild) {
     const gift = emoji('1575591241557479434', '2755presentbox');
     const coins = emoji('1553716009456898098', 'ManyMerits');
     const coin = emoji('1553709164012900404', 'MeritCoins');
-    const space = '\u2002';
-    const padding = [27, 49, 25, 54, 45, 40, 34, 41, 46, 39, 18];
-
-    return [
-        '**__Reward Shop:__**',
-        gift + ' Rewards:' + space.repeat(53) + coins + ' Merit Coins it Cost:',
-        '\\' + '-'.repeat(91),
-        ...rewards.map(([id, label, price], index) =>
+    const description = [
+        '**' + gift + ' Rewards** · ' + coins + ' **Merit Coin Cost**',
+        ...rewards.map(([id, label, price]) =>
             '**' + (catalogLabels[id] ?? label) + '**' + (catalogDetails[id] ?? '') +
-            space.repeat(padding[index]) + ' ' + coin + ' ' + formatCoins.format(price) + ' Merits'
+            ' · ' + coin + ' ' + formatCoins.format(price)
         ),
-    ].join('\n');
+        '**Choose a reward below to redeem.**',
+    ].join('\n\n');
+
+    return new EmbedBuilder()
+        .setTitle('✦ HEALTHSCIENCEGUILD REWARD SHOP ✦')
+        .setDescription(description);
 }
 
 
@@ -184,7 +185,7 @@ export default {
             })));
 
         await interaction.reply({
-            content: formatShop(interaction.guild),
+            embeds: [formatShop(interaction.guild)],
             components: [new ActionRowBuilder().addComponents(picker)],
         });
     },
