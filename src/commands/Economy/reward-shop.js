@@ -34,13 +34,22 @@ const rewards = [
 export const REWARD_PICKER_ID = 'hsg_reward_picker';
 const formatCoins = new Intl.NumberFormat('en-US');
 
-const catalogDetails = {
-    lfg: ' (after 24 hour limit is reached)',
-    emoji: ' (to be added for 1 month)',
+const compactLabels = {
+    review: '1-Hour Study or TEAS Review',
+    bracelet: 'HSG Bracelet',
+    pin: 'HSG Pin',
+    premium: '1 Month of Premium',
+    backpack: 'Clear Waterproof HSG Backpack',
 };
-const catalogLabels = {
-    'study-role': 'Role Sun or Moon I Study (Role)',
-    backpack: 'Large Transparent Waterproof Backpack with HSG Logo',
+
+const rewardDetails = {
+    lfg: 'After reaching the 24-hour limit',
+    emoji: 'Added for 1 month',
+    'study-role': 'Discord role',
+    review: '1-hour study or TEAS review session',
+    bracelet: 'HealthScienceGuild Bracelet',
+    pin: 'HealthScienceGuild Pin',
+    backpack: 'Large transparent waterproof backpack with HSG logo',
 };
 
 function formatShop(guild) {
@@ -49,24 +58,23 @@ function formatShop(guild) {
     const gift = emoji('1575591241557479434', '2755presentbox');
     const coins = emoji('1553716009456898098', 'ManyMerits');
     const coin = emoji('1553709164012900404', 'MeritCoins');
-    const space = '\u2002';
-    const padding = [27, 49, 25, 54, 45, 40, 34, 41, 46, 39, 18];
-
-    const description = [
-        gift + ' Rewards:' + space.repeat(53) + coins + ' Merit Coins it Cost:',
-        '\\' + '-'.repeat(91),
-        ...rewards.map(([id, label, price], index) =>
-            '**' + (catalogLabels[id] ?? label) + '**' + (catalogDetails[id] ?? '') +
-            space.repeat(padding[index]) + ' ' + coin + ' ' + formatCoins.format(price) + ' Merits'
-        ),
-    ].join('\n');
 
     return new EmbedBuilder()
-        .setColor(0x526e91)
+        .setColor(0x9b59b6)
         .setTitle('✦ HEALTHSCIENCEGUILD REWARD SHOP ✦')
-        .setDescription(description);
+        .addFields(
+            {
+                name: gift + ' Rewards',
+                value: rewards.map(([id, label]) => compactLabels[id] ?? label).join('\n'),
+                inline: true,
+            },
+            {
+                name: coins + ' Merit Coin Cost',
+                value: rewards.map(([, , price]) => coin + ' ' + formatCoins.format(price)).join('\n'),
+                inline: true,
+            },
+        );
 }
-
 
 export async function redeemStudyRole(interaction) {
     await interaction.deferReply({ flags: MessageFlags.Ephemeral });
@@ -185,7 +193,11 @@ export default {
             .addOptions(rewards.map(([id, label, price]) => ({
                 label,
                 value: id,
-                description: `${formatCoins.format(price)} Merit Coins${id === 'study-role' ? '' : ' · Coming soon'}`,
+                description: [
+                    formatCoins.format(price) + ' Merit Coins',
+                    id === 'study-role' ? null : 'Coming soon',
+                    rewardDetails[id],
+                ].filter(Boolean).join(' · '),
             })));
 
         await interaction.reply({
