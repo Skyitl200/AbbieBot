@@ -1,0 +1,361 @@
+{
+  "course": "Anatomy and Physiology Lab",
+  "category": "Nervous System",
+  "modelGroup": "3D Model of the Brain Ventricles",
+  "source": "Two user-provided photographs of a SOMSO BS 24 ventricular cavity cast. Gray wall and tabletop backgrounds requested by user. All requested terms included: seven model-structure questions and one clearly worded normal-position question for septum pellucidum, which is not itself represented on this cavity cast. Cerebral aqueduct visible as the narrow connection between third and fourth ventricles.",
+  "referenceUrl": "https://www.somso.de/en/anatomy/brain-spinal-cord/brain-models/ventricular-cavities-of-the-brain/ventricular-cavities-of-the-brain-bs-24",
+  "models": [
+    {
+      "id": "brain-ventricles-01",
+      "name": "Lateral ventricle",
+      "expectedImageFile": "brain-ventricles/bv-01.png",
+      "renderMethod": "gray-background-photo-marker-overlay",
+      "sourceImageFile": "brain-ventricles-gray-0.jpg",
+      "imageSha256": "7b62edbbb85bf11a6794afea9cd638dba8676585feefa04d3a4c3541a61fd064",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          400,
+          86
+        ],
+        "tail": [
+          487,
+          40
+        ]
+      },
+      "targetType": "model-structure",
+      "questions": [
+        {
+          "id": "lab-brain-ventricles-01",
+          "question": "What structure is represented by the cyan pointer on this ventricular cavity model?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Lateral ventricle",
+            "Third ventricle",
+            "Cerebral aqueduct",
+            "Interventricular foramen"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "lateral ventricle",
+            "lateral ventricles"
+          ],
+          "explanation": "The lateral ventricles are the paired C-shaped cavities represented by the large upper casts.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-ventricles-02",
+      "name": "Septum pellucidum",
+      "expectedImageFile": "brain-ventricles/bv-02.png",
+      "renderMethod": "gray-background-photo-marker-overlay",
+      "sourceImageFile": "brain-ventricles-gray-2.jpg",
+      "imageSha256": "1b649e884eea869eef9c65514859038f7c2c2d4e4d0e160ae0e5f1de0463fa76",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          373,
+          77
+        ],
+        "tail": [
+          494,
+          64
+        ]
+      },
+      "targetType": "normal-anatomical-position",
+      "questions": [
+        {
+          "id": "lab-brain-ventricles-02",
+          "question": "Which membrane normally separates the lateral ventricles at the marked midline? The membrane itself is not shown on this cavity cast.",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Fourth ventricle",
+            "Septum pellucidum",
+            "Anterior horn",
+            "Central canal"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "septum pellucidum",
+            "septum"
+          ],
+          "explanation": "The septum pellucidum normally separates the anterior portions of the lateral ventricles. This model casts the ventricular spaces; the membrane itself is not represented. The pointer marks its usual midline position.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-ventricles-03",
+      "name": "Third ventricle",
+      "expectedImageFile": "brain-ventricles/bv-03.png",
+      "renderMethod": "gray-background-photo-marker-overlay",
+      "sourceImageFile": "brain-ventricles-gray-2.jpg",
+      "imageSha256": "cd22fe2fea43a4467906a75e9d19ae84b7aae55cfc61118be73d4a026ef1d2b5",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          357,
+          147
+        ],
+        "tail": [
+          454,
+          166
+        ]
+      },
+      "targetType": "model-structure",
+      "questions": [
+        {
+          "id": "lab-brain-ventricles-03",
+          "question": "What structure is represented by the cyan pointer on this ventricular cavity model?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cerebral aqueduct",
+            "Interventricular foramen",
+            "Third ventricle",
+            "Lateral ventricle"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "third ventricle",
+            "3rd ventricle",
+            "ventricle 3"
+          ],
+          "explanation": "The third ventricle is the central cavity communicating with the lateral ventricles through the interventricular foramina.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-ventricles-04",
+      "name": "Fourth ventricle",
+      "expectedImageFile": "brain-ventricles/bv-04.png",
+      "renderMethod": "gray-background-photo-marker-overlay",
+      "sourceImageFile": "brain-ventricles-gray-2.jpg",
+      "imageSha256": "c71e8b9e0b0fb60f1923ee8f10b9c6d7fb60564941dc3399dcc0678e646c39cf",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          354,
+          354
+        ],
+        "tail": [
+          457,
+          367
+        ]
+      },
+      "targetType": "model-structure",
+      "questions": [
+        {
+          "id": "lab-brain-ventricles-04",
+          "question": "What structure is represented by the cyan pointer on this ventricular cavity model?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Anterior horn",
+            "Central canal",
+            "Septum pellucidum",
+            "Fourth ventricle"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "fourth ventricle",
+            "4th ventricle",
+            "ventricle 4"
+          ],
+          "explanation": "The fourth ventricle is the caudal cavity below the cerebral aqueduct; it continues inferiorly toward the central canal.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-ventricles-05",
+      "name": "Cerebral aqueduct",
+      "expectedImageFile": "brain-ventricles/bv-05.png",
+      "renderMethod": "gray-background-photo-marker-overlay",
+      "sourceImageFile": "brain-ventricles-gray-2.jpg",
+      "imageSha256": "ef325a6c275adb1284f3e48884a62493160c76d3209a189dcdcf07d8a3e66fe9",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          350,
+          238
+        ],
+        "tail": [
+          444,
+          239
+        ]
+      },
+      "targetType": "model-structure",
+      "questions": [
+        {
+          "id": "lab-brain-ventricles-05",
+          "question": "What structure is represented by the cyan pointer on this ventricular cavity model?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Cerebral aqueduct",
+            "Interventricular foramen",
+            "Lateral ventricle",
+            "Third ventricle"
+          ],
+          "correct": [
+            0
+          ],
+          "typedAnswers": [
+            "cerebral aqueduct",
+            "aqueduct of sylvius",
+            "mesencephalic aqueduct"
+          ],
+          "explanation": "The cerebral aqueduct is the narrow connection between the third and fourth ventricles, clearly represented by the slender central segment.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-ventricles-06",
+      "name": "Anterior horn",
+      "expectedImageFile": "brain-ventricles/bv-06.png",
+      "renderMethod": "gray-background-photo-marker-overlay",
+      "sourceImageFile": "brain-ventricles-gray-0.jpg",
+      "imageSha256": "56c0319fd78f9dc387e7262a4684105371a3cef24e57222f992604e07cd8f6eb",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          210,
+          116
+        ],
+        "tail": [
+          131,
+          152
+        ]
+      },
+      "targetType": "model-structure",
+      "questions": [
+        {
+          "id": "lab-brain-ventricles-06",
+          "question": "What structure is represented by the cyan pointer on this ventricular cavity model?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Central canal",
+            "Anterior horn",
+            "Septum pellucidum",
+            "Fourth ventricle"
+          ],
+          "correct": [
+            1
+          ],
+          "typedAnswers": [
+            "anterior horn",
+            "frontal horn",
+            "anterior horn of lateral ventricle",
+            "frontal horn of lateral ventricle"
+          ],
+          "explanation": "The anterior (frontal) horn is the anterior extension of a lateral ventricle.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-ventricles-07",
+      "name": "Interventricular foramen",
+      "expectedImageFile": "brain-ventricles/bv-07.png",
+      "renderMethod": "gray-background-photo-marker-overlay",
+      "sourceImageFile": "brain-ventricles-gray-2.jpg",
+      "imageSha256": "4be96192a6fa6c585831196d8ec0c6f7c286b761be0bd21b233e874c3db23387",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          337,
+          116
+        ],
+        "tail": [
+          231,
+          98
+        ]
+      },
+      "targetType": "model-structure",
+      "questions": [
+        {
+          "id": "lab-brain-ventricles-07",
+          "question": "What structure is represented by the cyan pointer on this ventricular cavity model?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Lateral ventricle",
+            "Third ventricle",
+            "Interventricular foramen",
+            "Cerebral aqueduct"
+          ],
+          "correct": [
+            2
+          ],
+          "typedAnswers": [
+            "interventricular foramen",
+            "interventricular foramina",
+            "foramen of monro",
+            "foramina of monro"
+          ],
+          "explanation": "An interventricular foramen connects a lateral ventricle to the third ventricle. On this cavity cast the connection is represented by a narrow bridge.",
+          "requiresModelImage": true
+        }
+      ]
+    },
+    {
+      "id": "brain-ventricles-08",
+      "name": "Central canal",
+      "expectedImageFile": "brain-ventricles/bv-08.png",
+      "renderMethod": "gray-background-photo-marker-overlay",
+      "sourceImageFile": "brain-ventricles-gray-2.jpg",
+      "imageSha256": "3e803f82bce3f3c2c82c6ee095d385d5b11d6072f3d330851234f9c8bb6762f7",
+      "annotation": {
+        "kind": "arrow",
+        "tip": [
+          354,
+          431
+        ],
+        "tail": [
+          459,
+          435
+        ]
+      },
+      "targetType": "model-structure",
+      "questions": [
+        {
+          "id": "lab-brain-ventricles-08",
+          "question": "What structure is represented by the cyan pointer on this ventricular cavity model?",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "options": [
+            "Septum pellucidum",
+            "Fourth ventricle",
+            "Anterior horn",
+            "Central canal"
+          ],
+          "correct": [
+            3
+          ],
+          "typedAnswers": [
+            "central canal",
+            "central canal of spinal cord",
+            "spinal central canal"
+          ],
+          "explanation": "The narrow inferior continuation beyond the fourth ventricle represents the central canal of the spinal cord, not the metal support stand.",
+          "requiresModelImage": true
+        }
+      ]
+    }
+  ]
+}

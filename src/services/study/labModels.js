@@ -35,6 +35,7 @@ export const LAB_SETS = [
     { id: 'kidney', title: 'Kidney 3D Model', category: 'urinary', models: loadModels('kidney.json') },
     { id: 'bronchial-tree', title: 'Bronchial Tree 3D Model', category: 'respiratory', models: loadModels('bronchial-tree.json') },
     { id: 'neuron', title: '3D Neuron Model', category: 'nervous', showStructureList: true, models: loadModels('neuron.json') },
+    { id: 'brain-ventricles', title: '3D Model of the Brain Ventricles', category: 'nervous', showStructureList: true, models: loadModels('brain-ventricles.json') },
     { id: 'meninge-protection', title: '3D Meninge Protection of the Brain', category: 'nervous', showStructureList: true, models: loadModels('meninge-protection.json') },
     { id: 'sheep-brain', title: "3D Sheep's Brain Structures", category: 'nervous', showStructureList: true, models: loadModels('sheep-brain.json') },
     { id: 'brain-left-sagittal', title: '3D Model of the Structures of the Brain - Left Sagittal View', category: 'nervous', showStructureList: true, models: loadModels('brain-left-sagittal.json') },
